@@ -1,7 +1,7 @@
 <template>
     <i-navbar>
         <i-navbar-brand :to="{ name: 'index' }">
-            <img id="logo" src="~/assets/images/logo1.png" alt="logo"/>
+            <img id="logo" src="/images/logo1.png" alt="logo"/>
             <strong id="logo-name">opvizor</strong>
         </i-navbar-brand>
         <i-navbar-items class="_justify-content-end">
