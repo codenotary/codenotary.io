@@ -1,7 +1,6 @@
 <template>
     <section class="section">
-        <slot>
-        </slot>
+        <slot />
     </section>
 </template>
 
@@ -14,7 +13,7 @@
 </style>
 
 <script>
-    export default {
-        name: 'PageSection'
-    }
+export default {
+    name: 'PageSection'
+}
 </script>

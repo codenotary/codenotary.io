@@ -28,9 +28,7 @@ export default {
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [
-        './plugins/inkline'
-    ],
+    plugins: [],
     /*
     ** Nuxt.js dev-modules
     */
@@ -44,14 +42,15 @@ export default {
     ** Nuxt.js modules
     */
     modules: [
-        '@nuxtjs/style-resources'
+        '@nuxtjs/style-resources',
+        '@inkline/nuxt'
     ],
     /*
     ** Build configuration
     */
 
     styleResources: {
-        // scss: ['~/assets/variables.scss']
+        scss: ['~/assets/variables.scss']
     },
 
     build: {

@@ -4,31 +4,33 @@
             <i-row>
                 <i-column>
                     <h1>Integrations</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua
+                    </p>
                 </i-column>
             </i-row>
             <i-row>
                 <i-column>
-                   <ul class="list -inline button-list">
-                       <li class="_margin-bottom-1">
-                           <i-button @click="filterIntegrations()">
-                               All
-                           </i-button>
-                       </li><!--
-                    --><li class="_margin-bottom-1"
-                           :key="category.id" v-for="category in categories">
-                           <i-button @click="filterIntegrations(category.id)">
-                               {{category.title}}
-                           </i-button>
-                       </li>
-                   </ul>
+                    <ul class="list -inline button-list">
+                        <li class="_margin-bottom-1">
+                            <i-button @click="filterIntegrations()">
+                                All
+                            </i-button>
+                        </li><!--
+                    --> <li v-for="category in categories" :key="category.id"
+                            class="_margin-bottom-1">
+                            <i-button @click="filterIntegrations(category.id)">
+                                {{ category.title }}
+                            </i-button>
+                        </li>
+                    </ul>
                 </i-column>
             </i-row>
             <i-row>
-                <i-column md="3" :key="integration.title" v-for="integration in filteredIntegrations">
+                <i-column v-for="integration in filteredIntegrations" :key="integration.title" md="3">
                     <i-card class="integration-item">
-                       <img :src="integration.image" :alt="integration.title"/>
+                        <img :src="integration.image" :alt="integration.title">
                     </i-card>
                 </i-column>
             </i-row>
@@ -37,7 +39,8 @@
 </template>
 
 <script>
-import PageSection from './PageSection';
+import PageSection from '~/components/layout/PageSection';
+
 export default {
     name: 'IntegrationsSection',
     components: {
@@ -239,11 +242,6 @@ export default {
             ]
         };
     },
-    methods: {
-        filterIntegrations(categoryId) {
-            this.activeCategory = categoryId;
-        }
-    },
     computed: {
         filteredIntegrations() {
             if (!this.activeCategory) {
@@ -252,6 +250,11 @@ export default {
             return this.integrations.filter((item) => {
                 return item.categories.includes(this.activeCategory)
             });
+        }
+    },
+    methods: {
+        filterIntegrations(categoryId) {
+            this.activeCategory = categoryId;
         }
     }
 }
@@ -262,11 +265,13 @@ export default {
     display: block;
     text-align: center;
 }
+
 .button-list {
     li {
         margin-right: 0.35rem;
     }
 }
+
 .integration-item {
     img {
         height: 40px;

@@ -18,8 +18,9 @@ module.exports = {
       "vue/html-closing-bracket-spacing": "off",
       'semi': 'off',
       "no-multiple-empty-lines": 'off',
+      "vue/html-closing-bracket-newline": 'off',
       "vue/singleline-html-element-content-newline": 'off',
       "vue/max-attributes-per-line": 'off',
       "space-before-function-paren": 'off'
   }
-}
+};

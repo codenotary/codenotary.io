@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Contactbar from '../components/Contactbar';
-import Navbar from '~/components/Navbar';
+import Contactbar from '~/components/layout/Contactbar';
+import Navbar from '~/components/layout/Navbar';
 
 export default {
     components: {

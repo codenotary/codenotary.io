@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import PageSection from '../components/PageSection';
 import Feature from './Feature';
+import PageSection from '~/components/layout/PageSection';
 
 export default {
     components: {

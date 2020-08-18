@@ -1,26 +1,23 @@
 <template>
     <div>
-        <Header/>
+        <HomeHeader/>
         <FeaturesSection/>
         <IntegrationsSection/>
     </div>
 </template>
 
 <script>
-
-import Header from '../components/Header';
-import FeaturesSection from '../components/FeaturesSection';
-import IntegrationsSection from '../components/IntegrationsSection';
+import HomeHeader from '~/components/headers/HomeHeader';
+import FeaturesSection from '~/components/sections/features/FeaturesSection';
+import IntegrationsSection from '~/components/sections/integrations/IntegrationsSection';
 
 export default {
     components: {
         IntegrationsSection,
-        Header,
+        HomeHeader,
         FeaturesSection
     }
 }
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
