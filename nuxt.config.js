@@ -43,7 +43,20 @@ export default {
     */
     modules: [
         '@nuxtjs/style-resources',
-        '@inkline/nuxt'
+        '@inkline/nuxt',
+        ['nuxt-fontawesome', {
+            component: 'fa',
+            imports: [
+                // {
+                //     set: '@fortawesome/free-solid-svg-icons',
+                //     icons: ['faFacebookSquare', 'faTwitterSquare']
+                // },
+                {
+                    set: '@fortawesome/free-brands-svg-icons',
+                    icons: ['faFacebookSquare', 'faTwitterSquare']
+                }
+            ]
+        }]
     ],
     /*
     ** Build configuration
@@ -59,5 +72,9 @@ export default {
             app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
             chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
         }
+    },
+
+    router: {
+        linkActiveClass: '-active'
     }
 }

@@ -1,2 +1,8 @@
-//$color-primary: #178bb2;
+$color-primary: #244484;
+$color-primary-light: lighten($color-primary, 10%);
 //$color-secondary: #5d65b9;
+
+$border-radius-base: 3px;
+$font-size-base: 1.1rem;
+
+//$button-padding-base: $spacer * 0.5 $spacer * 1.5;

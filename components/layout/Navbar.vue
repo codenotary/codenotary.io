@@ -1,27 +1,33 @@
 <template>
     <i-navbar>
         <i-navbar-brand :to="{ name: 'index' }">
-            <img id="logo" src="/images/logo1.png" alt="logo"/>
-            <strong id="logo-name">opvizor</strong>
+            <img class="logo" src="/images/logo.svg" alt="CodeNotary">
         </i-navbar-brand>
-        <i-navbar-items class="_justify-content-end">
+        <i-navbar-items class="_justify-content-start">
             <i-nav>
-                <i-nav-item :to="{ name: 'index' }">How it works</i-nav-item>
-                <i-nav-item :to="{ name: 'about' }">Pricing</i-nav-item>
-                <i-nav-item :to="{ name: 'contact' }">Customers</i-nav-item>
+                <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
+                <i-nav-item :to="{ name: 'blog' }">Blog</i-nav-item>
                 <i-dropdown trigger="hover">
-                    <i-nav-item>About us</i-nav-item>
+                    <i-nav-item>Products</i-nav-item>
                     <i-dropdown-menu>
-                        <i-dropdown-item href="">Opvizor team</i-dropdown-item>
-                        <i-dropdown-item href="">Partner and reseller</i-dropdown-item>
-                        <i-dropdown-item href="">Technology partner</i-dropdown-item>
+                        <i-dropdown-item href="">CodeNotary Ledger Compliance</i-dropdown-item>
                     </i-dropdown-menu>
                 </i-dropdown>
+                <i-dropdown trigger="hover">
+                    <i-nav-item>Technologies</i-nav-item>
+                    <i-dropdown-menu>
+                        <i-dropdown-item href="https://immudb.io">immudb</i-dropdown-item>
+                        <i-dropdown-item :to="{ name: 'cicd' }">Immutability for CI/CD</i-dropdown-item>
+                        <i-dropdown-item href="https://zerotrustconsortium.org/">Zero-Trust Consortium</i-dropdown-item>
+                    </i-dropdown-menu>
+                </i-dropdown>
+                <i-nav-item :to="{ name: 'about' }">About us</i-nav-item>
+                <i-nav-item :to="{ name: 'partners' }">Partners</i-nav-item>
                 <i-nav-item :to="{ name: 'contact' }">Contact us</i-nav-item>
             </i-nav>
-            <i-nav>
-                <i-button variant="primary">Start free trial</i-button>
-            </i-nav>
+            <!--i-nav>
+                <i-button variant="primary">Sign up</i-button>
+            </i-nav-->
         </i-navbar-items>
     </i-navbar>
 </template>
@@ -33,12 +39,18 @@ export default {
 </script>
 
 <style lang="scss">
-#logo {
-    height: 40px;
-    width: auto;
-    margin-right: 8px;
-}
-#logo-name {
-    font-size: large;
+@import '~@inkline/inkline/src/css/config';
+
+.navbar {
+    .logo {
+        height: 40px;
+        width: auto;
+        margin-right: 8px;
+    }
+
+    &.-light {
+        border-bottom: 1px solid $border-color-light;
+        background: white !important;
+    }
 }
 </style>

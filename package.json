@@ -1,7 +1,7 @@
 {
-  "name": "opvizor.com",
+  "name": "codenotary.io",
   "version": "1.0.0",
-  "description": "My mind-blowing Nuxt.js project",
+  "description": "Immutable recording of data and processes.",
   "author": "Opvizor",
   "private": true,
   "scripts": {
@@ -13,6 +13,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@inkline/inkline": "^2.3.0",
     "nuxt": "^2.14.3"
   },
@@ -30,6 +34,7 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "jest": "^24.1.0",
     "node-sass": "^4.14.1",
+    "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^8.0.2",
     "stylelint": "^10.1.0",
     "vue-jest": "^4.0.0-beta.5"
