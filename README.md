@@ -1,4 +1,4 @@
-# opvizor.com
+# codenotary.io
 
 > My mind-blowing Nuxt.js project
 
