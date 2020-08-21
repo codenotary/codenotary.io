@@ -77,6 +77,11 @@ export default {
         h6 {
             margin: 0;
         }
+
+        @include breakpoint-down(md) {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #dee2e6;
+        }
     }
 }
 </style>
