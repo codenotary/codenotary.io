@@ -45,14 +45,21 @@ export default {
         // Doc: https://github.com/nuxt-community/eslint-module
         '@nuxtjs/eslint-module',
         // Doc: https://github.com/nuxt-community/stylelint-module
-        '@nuxtjs/stylelint-module'
+        '@nuxtjs/stylelint-module',
+        // Doc: https://github.com/nuxt-community/analytics-module
+        ['@nuxtjs/google-analytics', {
+            id: 'UA-136167888-1'
+        }]
     ],
     /*
     ** Nuxt.js modules
     */
     modules: [
+        // Doc: https://github.com/nuxt-community/style-resources-module
         '@nuxtjs/style-resources',
+        // Doc: https://inkline.io
         '@inkline/nuxt',
+        // Doc: https://github.com/vaso2/nuxt-fontawesome
         ['nuxt-fontawesome', {
             component: 'fa',
             imports: [
