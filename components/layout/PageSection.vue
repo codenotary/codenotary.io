@@ -6,8 +6,8 @@
 
 <style lang="scss">
 .section{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     width: 100%;
 }
 </style>

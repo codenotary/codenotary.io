@@ -2,7 +2,7 @@
     <div>
         <page-section>
             <page-section-header>
-                <h1 slot="title" class="_margin-top-0">Contact us</h1>
+                <h1 slot="title">Contact us</h1>
             </page-section-header>
             <i-container>
                 <i-row>

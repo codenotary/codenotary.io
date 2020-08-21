@@ -16,11 +16,12 @@
 .section-header {
     text-align: center;
     max-width: 760px;
-    margin: 0 auto 5rem;
+    margin: 0 auto 6rem;
 
     h1,
     h2,
     h3 {
+        margin-top: 0;
         font-weight: bold;
         color: $color-primary;
     }
