@@ -36,13 +36,19 @@
                     <h4>Technologies</h4>
                     <ul class="list -unstyled">
                         <li>
-                            <a href="https://immudb.io">immudb</a>
+                            <router-link :to="{ name: 'technologies-immudb' }">
+                                immudb
+                            </router-link>
                         </li>
                         <li>
-                            <router-link :to="{ name: 'technologies-ci-cd' }">Immutability for CI/CD</router-link>
+                            <router-link :to="{ name: 'technologies-ci-cd' }">
+                                Immutability for CI/CD
+                            </router-link>
                         </li>
                         <li>
-                            <a href="https://zerotrustconsortium.org">ZTC</a>
+                            <router-link :to="{ name: 'technologies-ztc' }">
+                                ZTC
+                            </router-link>
                         </li>
                     </ul>
                 </i-column>

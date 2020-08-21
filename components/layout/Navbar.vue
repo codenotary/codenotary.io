@@ -16,9 +16,9 @@
                 <i-dropdown trigger="hover" class="_visible-lg-and-up">
                     <i-nav-item>Technologies</i-nav-item>
                     <i-dropdown-menu>
-                        <i-dropdown-item href="https://immudb.io">immudb</i-dropdown-item>
+                        <i-dropdown-item :to="{ name: 'technologies-immudb' }">immudb</i-dropdown-item>
                         <i-dropdown-item :to="{ name: 'technologies-ci-cd' }">Immutability for CI/CD</i-dropdown-item>
-                        <i-dropdown-item href="https://zerotrustconsortium.org/">Zero-Trust Consortium</i-dropdown-item>
+                        <i-dropdown-item :to="{ name: 'technologies-ztc' }">Zero-Trust Consortium</i-dropdown-item>
                     </i-dropdown-menu>
                 </i-dropdown>
                 <i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>

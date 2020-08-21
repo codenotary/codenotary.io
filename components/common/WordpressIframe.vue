@@ -14,12 +14,15 @@ export default {
         path: {
             type: String,
             default: ''
+        },
+        domain: {
+            type: String,
+            default: 'wp.codenotary.io'
         }
     },
     computed: {
         url() {
-            return `https://wp.codenotary.io/${this.path}`
-            // return 'http://localhost:3000';
+            return `https://${this.domain}/${this.path}`
         }
     },
     methods: {
