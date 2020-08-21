@@ -11,7 +11,9 @@
                         processing millions of transactions a second.
                     </p>
                     <div class="button-wrapper">
-                        <i-button variant="primary" size="lg">Read more</i-button>
+                        <i-button v-scroll-to="'#codenotary-ledger-compliance-section'" variant="primary" size="lg">
+                            Read more
+                        </i-button>
                     </div>
                 </i-column>
                 <i-column id="video-column" lg="6" :class="{ 'playing': playing }">
@@ -50,6 +52,14 @@ export default {
         },
         onPauseVideo() {
             this.playing = false;
+        },
+        scrollToCNLCSection() {
+            const element = document.getElementById('codenotary-ledger-compliance-section');
+
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            });
         }
     }
 }

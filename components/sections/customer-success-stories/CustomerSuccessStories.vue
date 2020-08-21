@@ -4,8 +4,8 @@
             <i-row>
                 <i-column>
                     <page-section-header title="Customer Success Stories">
-                        With CodeNotary Ledger Compliance &reg; you can easily build immutable,
-                        tamper-proof solutions and comply with requirements of your auditors regulations and laws.
+                        With CodeNotary Ledger Compliance&reg; you can easily build immutable,
+                        tamper-proof solutions and comply with requirements of your auditors' regulations and laws.
                     </page-section-header>
                 </i-column>
             </i-row>

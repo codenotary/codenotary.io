@@ -29,7 +29,7 @@
             </i-form-group>
             <i-form-group class="_field1">
                 <i-form-label class="_form-label">
-                    Other information
+                    Message
                 </i-form-label>
                 <i-textarea name="field[1]" placeholder="" />
             </i-form-group>

@@ -2,7 +2,7 @@
     <PricingTablesWrapper>
         <PricingTable title="Demo Container">
             <PricingTableRow>10GB storage</PricingTableRow>
-            <PricingTableRow>100000 transactions per second</PricingTableRow>
+            <PricingTableRow>100,000 transactions per second</PricingTableRow>
             <PricingTableRow>1 database</PricingTableRow>
         </PricingTable>
         <PricingTable title="Virtual Appliance">

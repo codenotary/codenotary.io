@@ -19,7 +19,7 @@
             <i-row class="_text-center _margin-top-2">
                 <i-column>
                     <webinar-modal v-model="contactModalOpen" />
-                    <i-button variant="success" size="lg" @click="contactModalOpen = true">Schedule a Webinar</i-button>
+                    <i-button variant="primary" size="lg" @click="contactModalOpen = true">Schedule a Webinar</i-button>
                 </i-column>
             </i-row>
             <i-row class="_text-center">

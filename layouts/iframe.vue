@@ -16,20 +16,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-$navbar-height: 80px;
-
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    height: $navbar-height;
-}
-
-#content {
-    margin-top: $navbar-height;
-}
-</style>

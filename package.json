@@ -19,6 +19,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@inkline/inkline": "^2.3.0",
     "nuxt": "^2.14.3",
+    "vue-scrollto": "^2.18.2",
     "vue-youtube": "^1.4.0"
   },
   "devDependencies": {

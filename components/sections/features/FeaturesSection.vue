@@ -44,7 +44,7 @@
                                 Sign your data using <strong>Public-Key Cryptography</strong>.
                             </li>
                             <li>
-                                Keys additions and revocations is immutably stored into the database.
+                                Keys additions and revocations are immutably stored into the database.
                             </li>
                         </ul>
                     </Feature>

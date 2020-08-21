@@ -60,6 +60,8 @@ export default {
         '@nuxtjs/style-resources',
         // Doc: https://inkline.io
         '@inkline/nuxt',
+        // Doc: https://github.com/rigor789/vue-scrollto
+        'vue-scrollto/nuxt',
         // Doc: https://github.com/vaso2/nuxt-fontawesome
         ['nuxt-fontawesome', {
             component: 'fa',

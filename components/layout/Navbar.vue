@@ -13,7 +13,7 @@
                         <i-dropdown-item href="">CodeNotary Ledger Compliance</i-dropdown-item>
                     </i-dropdown-menu>
                 </i-dropdown-->
-                <i-dropdown trigger="hover">
+                <i-dropdown trigger="hover" class="_visible-lg-and-up">
                     <i-nav-item>Technologies</i-nav-item>
                     <i-dropdown-menu>
                         <i-dropdown-item href="https://immudb.io">immudb</i-dropdown-item>
@@ -21,6 +21,13 @@
                         <i-dropdown-item href="https://zerotrustconsortium.org/">Zero-Trust Consortium</i-dropdown-item>
                     </i-dropdown-menu>
                 </i-dropdown>
+                <i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
+                    <i-nav-item class="header" disabled>Technologies</i-nav-item>
+                    <i-nav-item href="https://immudb.io">immudb</i-nav-item>
+                    <i-nav-item :to="{ name: 'technologies-ci-cd' }">Immutability for CI/CD</i-nav-item>
+                    <i-nav-item href="https://zerotrustconsortium.org/">Zero-Trust Consortium</i-nav-item>
+                </i-nav>
+
                 <i-nav-item :to="{ name: 'about' }">About us</i-nav-item>
                 <!--i-nav-item :to="{ name: 'partners' }">Partners</i-nav-item-->
                 <i-nav-item :to="{ name: 'contact' }">Contact us</i-nav-item>
@@ -33,11 +40,23 @@
 </template>
 
 <script>
+import { breakpoints } from '@inkline/inkline/src/constants/breakpoints';
+
 export default {
     name: 'Navbar',
+    data() {
+        return {
+            isNavbarCollapsed: false
+        }
+    },
     computed: {
         cicd() {
             return this.$route.name.indexOf('technologies-ci-cd') === 0;
+        }
+    },
+    methods: {
+        onWindowResize() {
+            this.isNavbarCollapsed = window.innerWidth <= breakpoints.md[1];
         }
     }
 }
@@ -45,12 +64,19 @@ export default {
 
 <style lang="scss">
 @import '~@inkline/inkline/src/css/config';
+@import '~@inkline/inkline/src/css/mixins';
 
 .navbar {
+    background: white !important;
+
     .logo {
         height: 40px;
         width: auto;
         margin-right: 8px;
+
+        @include breakpoint-down(sm) {
+            height: 32px;
+        }
     }
 
     &.-light {
@@ -58,6 +84,66 @@ export default {
         background: white !important;
     }
 
-    background: white !important;
+    .dropdown-fallback-nav {
+        width: 100%;
+        display: block;
+        border-top: 1px solid $color-gray-40;
+        border-bottom: 1px solid $color-gray-40;
+
+        > .header {
+            font-weight: 600;
+            font-size: 80%;
+        }
+
+        > .item {
+            width: 100%;
+        }
+    }
+
+    @include breakpoint-down(md) {
+        max-height: 100%;
+
+        .container {
+            height: 100%;
+            max-height: 100%;
+            position: relative;
+        }
+
+        .navbar-items {
+            > .nav {
+                > .dropdown {
+                    display: none !important;
+                    width: 100%;
+                    background: transparent !important;
+                    border-top: 1px solid $color-gray-40;
+                    border-bottom: 1px solid $color-gray-40;
+
+                    > .item {
+                        font-weight: 600;
+                        font-size: 80%;
+                        background: transparent !important;
+                        color: $text-muted !important;
+                        cursor: default !important;
+                    }
+
+                    .menu {
+                        display: block !important;
+                        position: relative !important;
+                        width: 100% !important;
+                        background: transparent !important;
+                        border-width: 0 !important;
+                        padding: 0 !important;
+
+                        .item {
+                            &:hover,
+                            &:focus {
+                                background: #ced4db !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 </style>
