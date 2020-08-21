@@ -1,4 +1,4 @@
-const title = 'CodeNotary - Immutable Recording of Data and Processes';
+const title = 'Immutable Recording of Data and Processes - CodeNotary';
 const description = 'Immutable recording of data and processes with CodeNotary Ledger Compliance®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.';
 
 export default {

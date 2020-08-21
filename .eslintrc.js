@@ -15,9 +15,11 @@ module.exports = {
   rules: {
       indent: ["warn",4],
       "vue/html-indent": ["warn",4],
+      "arrow-parens": ["warn", "always"],
       "vue/html-closing-bracket-spacing": "off",
       'semi': 'off',
       "no-multiple-empty-lines": 'off',
+      "vue/order-in-components": 'off',
       "vue/html-closing-bracket-newline": 'off',
       "vue/singleline-html-element-content-newline": 'off',
       "vue/max-attributes-per-line": 'off',

@@ -19,8 +19,14 @@
 import ContactForm from '~/components/common/forms/ContactForm';
 import PageSection from '~/components/layout/PageSection';
 import PageSectionHeader from '~/components/layout/PageSectionHeader';
+import { title } from '~/helpers/meta';
 
 export default {
+    head() {
+        return {
+            title: title('Contact')
+        };
+    },
     components: {
         PageSectionHeader,
         PageSection,
