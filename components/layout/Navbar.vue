@@ -3,38 +3,43 @@
         <i-navbar-brand :to="{ name: 'index' }">
             <img class="logo" src="/images/logo.svg" alt="CodeNotary">
         </i-navbar-brand>
-        <i-navbar-items class="_justify-content-start">
+        <i-navbar-items class="_justify-content-space-between">
             <i-nav>
                 <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
                 <i-nav-item :to="{ name: 'blog' }">Blog</i-nav-item>
-                <i-dropdown trigger="hover">
+                <!--i-dropdown trigger="hover">
                     <i-nav-item>Products</i-nav-item>
                     <i-dropdown-menu>
                         <i-dropdown-item href="">CodeNotary Ledger Compliance</i-dropdown-item>
                     </i-dropdown-menu>
-                </i-dropdown>
+                </i-dropdown-->
                 <i-dropdown trigger="hover">
                     <i-nav-item>Technologies</i-nav-item>
                     <i-dropdown-menu>
                         <i-dropdown-item href="https://immudb.io">immudb</i-dropdown-item>
-                        <i-dropdown-item :to="{ name: 'cicd' }">Immutability for CI/CD</i-dropdown-item>
+                        <i-dropdown-item :to="{ name: 'technologies-ci-cd' }">Immutability for CI/CD</i-dropdown-item>
                         <i-dropdown-item href="https://zerotrustconsortium.org/">Zero-Trust Consortium</i-dropdown-item>
                     </i-dropdown-menu>
                 </i-dropdown>
                 <i-nav-item :to="{ name: 'about' }">About us</i-nav-item>
-                <i-nav-item :to="{ name: 'partners' }">Partners</i-nav-item>
+                <!--i-nav-item :to="{ name: 'partners' }">Partners</i-nav-item-->
                 <i-nav-item :to="{ name: 'contact' }">Contact us</i-nav-item>
             </i-nav>
-            <!--i-nav>
-                <i-button variant="primary">Sign up</i-button>
-            </i-nav-->
+            <i-nav v-show="cicd">
+                <i-button variant="primary" href="https://dashboard.codenotary.io/auth/signup">Sign up</i-button>
+            </i-nav>
         </i-navbar-items>
     </i-navbar>
 </template>
 
 <script>
 export default {
-    name: 'Navbar'
+    name: 'Navbar',
+    computed: {
+        cicd() {
+            return this.$route.name.indexOf('technologies-ci-cd') === 0;
+        }
+    }
 }
 </script>
 
@@ -52,5 +57,7 @@ export default {
         border-bottom: 1px solid $border-color-light;
         background: white !important;
     }
+
+    background: white !important;
 }
 </style>

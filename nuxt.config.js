@@ -28,7 +28,9 @@ export default {
     /*
     ** Plugins to load before mounting the App
     */
-    plugins: [],
+    plugins: [
+        '~/plugins/youtube'
+    ],
     /*
     ** Nuxt.js dev-modules
     */
@@ -47,13 +49,13 @@ export default {
         ['nuxt-fontawesome', {
             component: 'fa',
             imports: [
-                // {
-                //     set: '@fortawesome/free-solid-svg-icons',
-                //     icons: ['faFacebookSquare', 'faTwitterSquare']
-                // },
+                {
+                    set: '@fortawesome/free-solid-svg-icons',
+                    icons: ['faCheckSquare']
+                },
                 {
                     set: '@fortawesome/free-brands-svg-icons',
-                    icons: ['faFacebookSquare', 'faTwitterSquare']
+                    icons: ['faFacebookSquare', 'faTwitterSquare', 'faLinkedin', 'faGithubSquare']
                 }
             ]
         }]
@@ -75,6 +77,6 @@ export default {
     },
 
     router: {
-        linkActiveClass: '-active'
+        linkExactActiveClass: '-active'
     }
 }

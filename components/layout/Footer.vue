@@ -1,5 +1,5 @@
 <template>
-    <PageSection class="footer">
+    <page-section class="footer">
         <i-container>
             <i-row>
                 <i-column lg="6">
@@ -11,13 +11,23 @@
                     </p>
                     <ul class="social-links list -inline">
                         <li>
-                            <a href="https://facebook.com/codenotary">
+                            <a href="https://github.com/vchain-us">
+                                <fa :icon="['fab', 'github-square']" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/vChain_US">
+                                <fa :icon="['fab', 'twitter-square']" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/VChain-Inc-1991995727783433/">
                                 <fa :icon="['fab', 'facebook-square']" />
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/codenotary">
-                                <fa :icon="['fab', 'twitter-square']" />
+                            <a href="https://www.linkedin.com/company/codenotary/">
+                                <fa :icon="['fab', 'linkedin']" />
                             </a>
                         </li>
                     </ul>
@@ -29,7 +39,7 @@
                             <a href="https://immudb.io">immudb</a>
                         </li>
                         <li>
-                            <router-link :to="{ name: 'cicd' }">Immutability for CI/CD</router-link>
+                            <router-link :to="{ name: 'technologies-ci-cd' }">Immutability for CI/CD</router-link>
                         </li>
                         <li>
                             <a href="https://zerotrustconsortium.org">ZTC</a>
@@ -43,7 +53,7 @@
                             <router-link :to="{ name: 'about' }">About us</router-link>
                         </li>
                         <li>
-                            <router-link :to="{ name: 'partners' }">Partners</router-link>
+                            <router-link :to="{ name: 'careers' }">Careers</router-link>
                         </li>
                         <li>
                             <router-link :to="{ name: 'contact' }">Contact us</router-link>
@@ -52,7 +62,7 @@
                 </i-column>
             </i-row>
         </i-container>
-    </PageSection>
+    </page-section>
 </template>
 
 <script>

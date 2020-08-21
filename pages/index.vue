@@ -1,21 +1,24 @@
 <template>
     <div>
-        <HomeHeader/>
-        <FeaturesSection/>
-        <IntegrationsSection/>
+        <home-header />
+        <features-section />
+        <customer-success-stories />
+        <code-notary-ledger-compliance />
     </div>
 </template>
 
 <script>
-import HomeHeader from '~/components/headers/HomeHeader';
+import HomeHeader from '~/components/sections/headers/HomeHeader';
 import FeaturesSection from '~/components/sections/features/FeaturesSection';
-import IntegrationsSection from '~/components/sections/integrations/IntegrationsSection';
+import CustomerSuccessStories from '~/components/sections/customer-success-stories/CustomerSuccessStories';
+import CodeNotaryLedgerCompliance from '~/components/sections/products/CodeNotaryLedgerCompliance';
 
 export default {
     components: {
-        IntegrationsSection,
+        CodeNotaryLedgerCompliance,
         HomeHeader,
-        FeaturesSection
+        FeaturesSection,
+        CustomerSuccessStories
     }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <PageSection class="copyright">
+    <page-section class="copyright">
         <i-container>
             <i-row>
                 <i-column>
@@ -7,7 +7,7 @@
                 </i-column>
             </i-row>
         </i-container>
-    </PageSection>
+    </page-section>
 </template>
 
 <script>

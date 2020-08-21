@@ -2,7 +2,7 @@
   "name": "codenotary.io",
   "version": "1.0.0",
   "description": "Immutable recording of data and processes.",
-  "author": "Opvizor",
+  "author": "CodeNotary",
   "private": true,
   "scripts": {
     "dev": "nuxt",
@@ -18,7 +18,8 @@
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@inkline/inkline": "^2.3.0",
-    "nuxt": "^2.14.3"
+    "nuxt": "^2.14.3",
+    "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.11.0",

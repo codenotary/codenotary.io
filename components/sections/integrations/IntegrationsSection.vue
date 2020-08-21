@@ -1,5 +1,5 @@
 <template>
-    <PageSection class="integration-section">
+    <page-section id="integration-section">
         <i-container>
             <i-row>
                 <i-column>
@@ -35,7 +35,7 @@
                 </i-column>
             </i-row>
         </i-container>
-    </PageSection>
+    </page-section>
 </template>
 
 <script>
@@ -261,7 +261,7 @@ export default {
 </script>
 
 <style lang="scss">
-.integration-section {
+#integration-section {
     display: block;
     text-align: center;
 }
