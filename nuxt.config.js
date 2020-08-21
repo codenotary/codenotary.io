@@ -37,7 +37,6 @@ export default {
     plugins: [
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
-        { src: '~plugins/youtube', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' }
     ],
     /*

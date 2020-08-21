@@ -19,7 +19,10 @@
                 </i-column>
                 <i-column id="video-column" lg="6" :class="{ 'playing': playing }">
                     <div id="video" class="_embed _embed-16by9">
-                        <video src="/videos/ci-cd.mp4" width="1280" height="720" controls
+                        <video src="/videos/ci-cd.mp4"
+                               poster="/videos/ci-cd.jpg"
+                               width="1280" height="720"
+                               controls
                                @playing="onPlayVideo"
                                @pause="onPauseVideo"
                                @ended="onPauseVideo" />
@@ -43,13 +46,7 @@ export default {
         return {
             webinarModalOpen: false,
             playing: false,
-            videoId: 'EPbYwTd-M3A',
             timeout: null
-        }
-    },
-    computed: {
-        player() {
-            return this.$refs.youtube.player
         }
     },
     methods: {
