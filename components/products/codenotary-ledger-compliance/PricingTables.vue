@@ -66,6 +66,8 @@ export default {
         background: white;
         padding: 2rem 1rem;
         text-align: center;
+        border: 1px solid #dee2e6;
+        border-bottom: none;
 
         h1,
         h2,
