@@ -1,6 +1,8 @@
 <template>
     <header class="section-header" :class="classes">
-        <h2>{{ title }}</h2>
+        <slot name="title">
+            <h2>{{ title }}</h2>
+        </slot>
         <div class="lead">
             <slot />
         </div>
@@ -16,7 +18,9 @@
     max-width: 760px;
     margin: 0 auto 5rem;
 
-    h2 {
+    h1,
+    h2,
+    h3 {
         font-weight: bold;
         color: $color-primary;
     }

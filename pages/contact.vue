@@ -1,16 +1,30 @@
 <template>
     <div>
-        <wordpress-iframe path="contact-us" />
+        <page-section>
+            <page-section-header>
+                <h1 slot="title" class="_margin-top-0">Contact us</h1>
+            </page-section-header>
+            <i-container>
+                <i-row>
+                    <i-column>
+                        <contact-form />
+                    </i-column>
+                </i-row>
+            </i-container>
+        </page-section>
     </div>
 </template>
 
 <script>
-import WordpressIframe from '~/components/common/WordpressIframe';
+import ContactForm from '~/components/common/forms/ContactForm';
+import PageSection from '~/components/layout/PageSection';
+import PageSectionHeader from '~/components/layout/PageSectionHeader';
 
 export default {
-    layout: 'iframe',
     components: {
-        WordpressIframe
+        PageSectionHeader,
+        PageSection,
+        ContactForm
     }
 }
 </script>
