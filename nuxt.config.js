@@ -35,7 +35,7 @@ export default {
     ** Plugins to load before mounting the App
     */
     plugins: [
-        { src: '~plugins/vgo.js', mode: 'client' },
+        { src: '~plugins/vgo', mode: 'client' },
         { src: '~plugins/youtube', mode: 'client' }
     ],
     /*
