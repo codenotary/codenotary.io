@@ -1,8 +1,8 @@
 <template>
-    <i-header id="home-header" class="_text-center">
+    <i-header id="home-header">
         <i-container>
             <i-row class="_align-items-center">
-                <i-column class="_text-left" md="6">
+                <i-column lg="6">
                     <h1 class="h2 _font-weight-bold">
                         Immutable recording of data and processes with CodeNotary Ledger Compliance&reg;
                     </h1>
@@ -10,9 +10,11 @@
                         On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification,
                         processing millions of transactions a second.
                     </p>
-                    <i-button variant="primary" size="lg" class="_margin-right-1">Read more</i-button>
+                    <div class="button-wrapper">
+                        <i-button variant="primary" size="lg">Read more</i-button>
+                    </div>
                 </i-column>
-                <i-column id="video-column" md="6" :class="{ 'playing': playing }">
+                <i-column id="video-column" lg="6" :class="{ 'playing': playing }">
                     <div id="video" class="_embed _embed-16by9">
                         <youtube ref="youtube"
                                  class="_rounded"
@@ -54,6 +56,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 $mascot-width: 175px;
 
 #home-header {
@@ -69,6 +74,16 @@ $mascot-width: 175px;
 
     h1 {
         margin-top: 0;
+    }
+
+    @include breakpoint-down(md) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+
+        .button-wrapper {
+            margin-bottom: $spacer * 2;
+        }
     }
 }
 

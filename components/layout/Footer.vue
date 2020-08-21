@@ -32,7 +32,7 @@
                         </li>
                     </ul>
                 </i-column>
-                <i-column lg="3">
+                <i-column lg="3" sm="6">
                     <h4>Technologies</h4>
                     <ul class="list -unstyled">
                         <li>
@@ -46,7 +46,7 @@
                         </li>
                     </ul>
                 </i-column>
-                <i-column lg="3">
+                <i-column lg="3" sm="6">
                     <h4>Company</h4>
                     <ul class="list -unstyled">
                         <li>

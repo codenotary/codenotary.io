@@ -1,9 +1,9 @@
 <template>
-    <i-column class="feature">
+    <div class="feature">
         <img class="image -responsive" :src="image" :alt="title">
         <h3 class="title _text-primary">{{ title }}</h3>
         <p><slot/></p>
-    </i-column>
+    </div>
 </template>
 
 <script>

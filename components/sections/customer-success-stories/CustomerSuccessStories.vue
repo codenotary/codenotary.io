@@ -10,24 +10,22 @@
                 </i-column>
             </i-row>
             <i-row>
-                <i-column>
+                <i-column md="6" lg="4">
                     <story-card title="IT Compliance" variant="blue" image="/images/use-cases/it-compliance.svg" />
                 </i-column>
-                <i-column>
+                <i-column md="6" lg="4">
                     <story-card title="Finance" variant="green" image="/images/use-cases/finance.svg" />
                 </i-column>
-                <i-column>
+                <i-column md="6" lg="4">
                     <story-card title="Healthcare" variant="red" image="/images/use-cases/healthcare.svg" />
                 </i-column>
-            </i-row>
-            <i-row>
-                <i-column>
+                <i-column md="6" lg="4">
                     <story-card title="Government" variant="purple" image="/images/use-cases/government.svg" />
                 </i-column>
-                <i-column>
+                <i-column md="6" lg="4">
                     <story-card title="CI / CD Integrity" variant="gray-70" image="/images/use-cases/cicd.svg" />
                 </i-column>
-                <i-column>
+                <i-column md="6" lg="4">
                     <story-card title="Regulatory Compliance" variant="orange" image="/images/use-cases/regulations.svg" />
                 </i-column>
             </i-row>
@@ -50,6 +48,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 #customer-success-stories-section {
     background-color: white;
     overflow: hidden;
