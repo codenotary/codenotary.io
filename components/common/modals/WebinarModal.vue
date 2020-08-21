@@ -1,15 +1,18 @@
 <template>
     <i-modal class="contact-modal" size="lg" :value="value" @input="$emit('input', $event)">
-        <template slot="header">Contact us</template>
-        <contact-form />
+        <template slot="header">Schedule a Webinar</template>
+        <webinar-form />
     </i-modal>
 </template>
+
 <script>
-import ContactForm from '~/components/common/forms/ContactForm';
+import WebinarForm from '~/components/common/forms/WebinarForm';
 
 export default {
-    name: 'ContactModal',
-    components: { ContactForm },
+    name: 'WebinarModal',
+    components: {
+        WebinarForm
+    },
     props: {
         value: {
             type: Boolean,

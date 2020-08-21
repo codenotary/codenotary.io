@@ -18,8 +18,8 @@
             </i-row>
             <i-row class="_text-center _margin-top-2">
                 <i-column>
-                    <contact-modal v-model="contactModalOpen" />
-                    <i-button variant="success" size="lg" @click="contactModalOpen = true">Schedule a webinar</i-button>
+                    <webinar-modal v-model="contactModalOpen" />
+                    <i-button variant="success" size="lg" @click="contactModalOpen = true">Schedule a Webinar</i-button>
                 </i-column>
             </i-row>
             <i-row class="_text-center">
@@ -32,14 +32,14 @@
 </template>
 
 <script>
-import ContactModal from '~/components/common/modals/ContactModal';
+import WebinarModal from '~/components/common/modals/WebinarModal';
 import PageSection from '~/components/layout/PageSection';
 import PageSectionHeader from '~/components/layout/PageSectionHeader';
 import PricingTables from '~/components/products/codenotary-ledger-compliance/PricingTables';
 
 export default {
     components: {
-        ContactModal,
+        WebinarModal,
         PricingTables,
         PageSection,
         PageSectionHeader

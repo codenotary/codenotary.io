@@ -1,27 +1,27 @@
 <template>
-    <form id="_form_10_" method="POST" action="https://vchain.activehosted.com/proc.php" class="_form _form_10 _inline-form _dark" novalidate>
-        <input type="hidden" name="u" value="10" >
-        <input type="hidden" name="f" value="10" >
-        <input type="hidden" name="s" >
-        <input type="hidden" name="c" value="0" >
-        <input type="hidden" name="m" value="0" >
-        <input type="hidden" name="act" value="sub" >
-        <input type="hidden" name="v" value="2" >
+    <form id="_form_16_" method="POST" action="https://vchain.activehosted.com/proc.php" class="_form _form_16 _inline-form _dark" novalidate>
+        <input type="hidden" name="u" value="16">
+        <input type="hidden" name="f" value="16">
+        <input type="hidden" name="s">
+        <input type="hidden" name="c" value="0">
+        <input type="hidden" name="m" value="0">
+        <input type="hidden" name="act" value="sub">
+        <input type="hidden" name="v" value="2">
 
         <div class="_form-content">
-            <i-form-group class="_x97690377" >
+            <i-form-group class="_x97690377">
                 <i-form-label class="_form-label">
                     Full Name*
                 </i-form-label>
                 <i-input type="text" name="fullname" placeholder="Type your name" />
             </i-form-group>
-            <i-form-group class="_x53693015" >
+            <i-form-group class="_x53693015">
                 <i-form-label class="_form-label">
                     Email*
                 </i-form-label>
                 <i-input type="text" name="email" placeholder="Type your email" required />
             </i-form-group>
-            <i-form-group class="_x65882383" >
+            <i-form-group class="_x65882383">
                 <i-form-label class="_form-label">
                     Phone
                 </i-form-label>
@@ -29,7 +29,7 @@
             </i-form-group>
             <i-form-group class="_field1">
                 <i-form-label class="_form-label">
-                    Feedback
+                    Other information
                 </i-form-label>
                 <i-textarea name="field[1]" placeholder="" />
             </i-form-group>
@@ -40,7 +40,7 @@
                 <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" />
             </i-form-group>
             <i-form-group>
-                <i-button id="_form_10_submit" variant="primary" block type="submit">
+                <i-button id="_form_16_submit" variant="primary" block type="submit">
                     Submit
                 </i-button>
             </i-form-group>
@@ -89,7 +89,7 @@ function initializeActiveCampaign() {
             }
         }
         var _removed = false;
-        var form_to_submit = document.getElementById('_form_10_');
+        var form_to_submit = document.getElementById('_form_16_');
         var allInputs = form_to_submit.querySelectorAll('input, select, textarea'); var tooltips = []; var submitted = false;
 
         var getUrlParam = function(name) {
@@ -341,8 +341,8 @@ function initializeActiveCampaign() {
             e.preventDefault();
             if (validate_form()) {
                 // use this trick to get the submit button & disable it using plain javascript
-                document.querySelector('#_form_10_submit').disabled = true;
-                var serialized = _form_serialize(document.getElementById('_form_10_'));
+                document.querySelector('#_form_16_submit').disabled = true;
+                var serialized = _form_serialize(document.getElementById('_form_16_'));
                 var err = form_to_submit.querySelector('._form_error');
                 err ? err.parentNode.removeChild(err) : false;
                 _load_script('https://vchain.activehosted.com/proc.php?' + serialized + '&jsonp=true');
