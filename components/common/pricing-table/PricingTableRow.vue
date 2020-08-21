@@ -12,17 +12,19 @@ export default {}
 @import "~@inkline/inkline/src/css/config";
 
 .pricing-table {
-    .pricing-table-row {
-        border-bottom: 1px solid $border-color-light;
-        padding: 1rem 0;
+    .rows {
+        .pricing-table-row {
+            border-bottom: 1px solid $border-color-light;
+            padding: 1rem 0;
 
-        &:last-child {
-            border-bottom: 0;
-        }
+            &:last-child {
+                border-bottom: 0;
+            }
 
-        .icon {
-            margin-right: 1rem;
-            color: $color-green;
+            .icon {
+                margin-right: 1rem;
+                color: $color-green;
+            }
         }
     }
 }

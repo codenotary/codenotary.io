@@ -11,19 +11,18 @@
                         processing millions of transactions a second.
                     </p>
                     <div class="button-wrapper">
-                        <i-button v-scroll-to="'#codenotary-ledger-compliance-section'" variant="primary" size="lg">
-                            Read more
+                        <webinar-modal v-model="webinarModalOpen" />
+                        <i-button variant="primary" size="lg" @click="webinarModalOpen = true">
+                            Schedule a Webinar
                         </i-button>
                     </div>
                 </i-column>
                 <i-column id="video-column" lg="6" :class="{ 'playing': playing }">
                     <div id="video" class="_embed _embed-16by9">
-                        <youtube ref="youtube"
-                                 class="_rounded"
-                                 :video-id="videoId"
-                                 @playing="onPlayVideo"
-                                 @paused="onPauseVideo"
-                                 @ended="onPauseVideo" />
+                        <video src="/videos/ci-cd.mp4" width="1280" height="720" controls
+                               @playing="onPlayVideo"
+                               @pause="onPauseVideo"
+                               @ended="onPauseVideo" />
                     </div>
                     <img id="mascot" src="/images/codenotary_mascot.png" alt="CodeNotary Mascot">
                 </i-column>
@@ -33,12 +32,19 @@
 </template>
 
 <script>
+import WebinarModal from '~/components/common/modals/WebinarModal';
+
 export default {
     name: 'Header',
+    components: {
+        WebinarModal
+    },
     data() {
         return {
+            webinarModalOpen: false,
             playing: false,
-            videoId: 'EPbYwTd-M3A'
+            videoId: 'EPbYwTd-M3A',
+            timeout: null
         }
     },
     computed: {
@@ -48,10 +54,14 @@ export default {
     },
     methods: {
         onPlayVideo() {
+            clearTimeout(this.timeout);
             this.playing = true;
         },
         onPauseVideo() {
-            this.playing = false;
+            clearTimeout(this.timeout);
+            this.timeout = setTimeout(() => {
+                this.playing = false;
+            }, 500);
         },
         scrollToCNLCSection() {
             const element = document.getElementById('codenotary-ledger-compliance-section');

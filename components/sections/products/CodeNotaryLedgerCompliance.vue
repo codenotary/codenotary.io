@@ -6,8 +6,8 @@
                     <page-section-header title="CodeNotary Ledger Compliance®" block>
                         With CodeNotary Ledger Compliance&reg; you can start keeping a tamper-proof and indelible
                         ledger for your mission-critical and sensitive applications. Whether you use Java, Node.js, Python,
-                        Go, .NET, on-premise or in the cloud, CodeNotary Ledger Compliance® is there for you processing
-                        millions of transactions per second reliably and with cryptographic verification.
+                        Go, .NET, on-premise or in the cloud, CodeNotary Ledger Compliance® processes millions of
+                        transactions per second reliably and with cryptographic verification.
                     </page-section-header>
                 </i-column>
             </i-row>
@@ -16,12 +16,13 @@
                     <PricingTables />
                 </i-column>
             </i-row>
-            <i-row class="_text-center _margin-top-2">
+            <!--i-row class="_text-center _margin-top-2">
                 <i-column>
-                    <webinar-modal v-model="contactModalOpen" />
-                    <i-button variant="primary" size="lg" @click="contactModalOpen = true">Schedule a Webinar</i-button>
+                    <i-button v-scroll-to="'#codenotary-ledger-compliance-section'" variant="primary" size="lg">
+                        Read more
+                    </i-button>
                 </i-column>
-            </i-row>
+            </i-row-->
             <i-row class="_text-center">
                 <i-column>
                     <img id="tree-image" src="/images/word-tree.png" alt="CodeNotary Word Cloud" class="image -responsive" width="650">
@@ -32,22 +33,15 @@
 </template>
 
 <script>
-import WebinarModal from '~/components/common/modals/WebinarModal';
 import PageSection from '~/components/layout/PageSection';
 import PageSectionHeader from '~/components/layout/PageSectionHeader';
 import PricingTables from '~/components/products/codenotary-ledger-compliance/PricingTables';
 
 export default {
     components: {
-        WebinarModal,
         PricingTables,
         PageSection,
         PageSectionHeader
-    },
-    data() {
-        return {
-            contactModalOpen: false
-        }
     }
 }
 </script>

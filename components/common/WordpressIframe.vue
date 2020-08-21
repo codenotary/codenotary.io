@@ -18,7 +18,7 @@ export default {
     },
     computed: {
         url() {
-            return `https://codenotary.io/${this.path}`
+            return `https://wp.codenotary.io/${this.path}`
             // return 'http://localhost:3000';
         }
     },
