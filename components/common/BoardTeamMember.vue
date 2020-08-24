@@ -1,16 +1,19 @@
 <template>
-    <div class="feature">
-        <img v-if="image" class="image -responsive" :src="image" :alt="title">
-        <h3 class="title _text-primary">{{ title }}</h3>
-        <div><slot/></div>
+    <div class="board-team-member">
+        <h4 class="title">{{ name }}</h4>
+        <span>{{ position }}</span>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Feature',
+    name: 'BoardTeamMember',
     props: {
-        title: {
+        name: {
+            type: String,
+            default: ''
+        },
+        position: {
             type: String,
             default: ''
         },
@@ -25,19 +28,14 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-.feature {
+.board-team-member {
     text-align: center;
 
     .title {
         font-weight: bold;
+        font-size: 24px;
         color: $color-primary;
-    }
-
-    img {
-        width: 80px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
+        margin: 1rem 0 0.5rem;
     }
 }
 </style>

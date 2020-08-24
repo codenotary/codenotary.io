@@ -19,7 +19,7 @@
                 <PricingTableRow>No transactions limit</PricingTableRow>
                 <PricingTableRow>5 databases</PricingTableRow>
                 <template slot="price">
-                    <sub>Starting at</sub>
+                    <small>Starting at</small>
                     <strong class="price">1200</strong>
                     <sup>$</sup><small>/month</small>
                 </template>

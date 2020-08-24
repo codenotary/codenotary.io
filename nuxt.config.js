@@ -1,3 +1,5 @@
+import wordPressRoutes from './wp';
+
 const title = 'Immutable Recording of Data and Processes - CodeNotary';
 const description = 'Immutable recording of data and processes with CodeNotary Ledger Compliance®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.';
 
@@ -94,6 +96,15 @@ export default {
     },
 
     router: {
-        linkExactActiveClass: '-active'
+        linkExactActiveClass: '-active',
+        extendRoutes(routes, resolve) {
+            Object.keys(wordPressRoutes).forEach((path) => {
+                routes.push({
+                    name: wordPressRoutes[path],
+                    path,
+                    component: resolve(__dirname, 'pages/wp.vue')
+                })
+            });
+        }
     }
 }

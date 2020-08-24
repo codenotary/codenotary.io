@@ -1,36 +1,34 @@
 <template>
     <i-header id="home-header">
-        <i-container>
-            <i-row class="_align-items-center">
-                <i-column lg="6">
-                    <h1 class="h2 _font-weight-bold">
-                        Immutable recording of data and processes with CodeNotary Ledger Compliance&reg;
-                    </h1>
-                    <p class="lead">
-                        On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification,
-                        processing millions of transactions a second.
-                    </p>
-                    <div class="button-wrapper">
-                        <webinar-modal v-model="webinarModalOpen" />
-                        <i-button variant="primary" size="lg" @click="webinarModalOpen = true">
-                            Schedule a Webinar
-                        </i-button>
-                    </div>
-                </i-column>
-                <i-column id="video-column" lg="6" :class="{ 'playing': playing }">
-                    <div id="video" class="_embed _embed-16by9">
-                        <video src="/videos/ci-cd.mp4"
-                               poster="/videos/ci-cd.jpg"
-                               width="1280" height="720"
-                               controls
-                               @playing="onPlayVideo"
-                               @pause="onPauseVideo"
-                               @ended="onPauseVideo" />
-                    </div>
-                    <img id="mascot" src="/images/codenotary_mascot.png" alt="CodeNotary Mascot">
-                </i-column>
-            </i-row>
-        </i-container>
+        <i-row class="_align-items-center">
+            <i-column lg="6">
+                <h1 class="h2 _font-weight-bold">
+                    Immutable recording of data and processes with CodeNotary Ledger Compliance&reg;
+                </h1>
+                <p class="lead">
+                    On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification,
+                    processing millions of transactions a second.
+                </p>
+                <div class="button-wrapper">
+                    <webinar-modal v-model="webinarModalOpen" />
+                    <i-button variant="primary" size="lg" @click="webinarModalOpen = true">
+                        Schedule a Webinar
+                    </i-button>
+                </div>
+            </i-column>
+            <i-column id="video-column" lg="6" :class="{ 'playing': playing }">
+                <div id="video" class="_embed _embed-16by9">
+                    <video src="/videos/ci-cd.mp4"
+                           poster="/videos/ci-cd.jpg"
+                           width="1280" height="720"
+                           controls
+                           @playing="onPlayVideo"
+                           @pause="onPauseVideo"
+                           @ended="onPauseVideo" />
+                </div>
+                <img id="mascot" src="/images/codenotary_mascot.png" alt="CodeNotary Mascot">
+            </i-column>
+        </i-row>
     </i-header>
 </template>
 
@@ -38,7 +36,7 @@
 import WebinarModal from '~/components/common/modals/WebinarModal';
 
 export default {
-    name: 'Header',
+    name: 'HomeHeader',
     components: {
         WebinarModal
     },

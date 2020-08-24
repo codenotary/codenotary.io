@@ -2,7 +2,7 @@
     <div>
         <page-section>
             <page-section-header>
-                <h1 slot="title">Contact us</h1>
+                <h1 slot="title" class="d6">Contact us</h1>
             </page-section-header>
             <i-container>
                 <i-row>
