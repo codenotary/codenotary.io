@@ -3,7 +3,7 @@
         <i-container>
             <i-row>
                 <i-column>
-                    Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
+                    Copyright &copy; {{ year }} vChain, Inc. All rights reserved.
                 </i-column>
             </i-row>
         </i-container>
