@@ -39,9 +39,9 @@ export default {
     plugins: [
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
-        { src: '~plugins/tawk', mode: 'client' },
-        '~plugins/inkline',
-        '~plugins/global'
+        { src: '~plugins/tawk', mode: 'client' }
+        // '~plugins/inkline',
+        // '~plugins/global'
     ],
     /*
     ** Nuxt.js dev-modules
@@ -60,6 +60,7 @@ export default {
     ** Nuxt.js modules
     */
     modules: [
+        '@inkline/nuxt',
         // Doc: https://content.nuxtjs.org/
         '@nuxt/content',
         // Doc: https://github.com/nuxt-community/style-resources-module
