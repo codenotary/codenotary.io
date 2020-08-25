@@ -39,7 +39,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #about-features-section {
-    background-color: #e9ecef;
+    background-color: #ffffff;
 
     .feature {
         text-align: left;
