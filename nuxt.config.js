@@ -40,7 +40,8 @@ export default {
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
-        '~plugins/inkline'
+        '~plugins/inkline',
+        '~plugins/global'
     ],
     /*
     ** Nuxt.js dev-modules
