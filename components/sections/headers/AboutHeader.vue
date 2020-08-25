@@ -13,7 +13,6 @@
                 </p>
             </i-column>
             <i-column md="4" class="_text-center">
-                <img src="/images/vchain-logo.svg" alt="vChain Inc" class="image -responsive" width="200">
                 <img src="/images/cncf.png" alt="CNCF" class="image -responsive _margin-top-2" width="200">
             </i-column>
         </i-row>
