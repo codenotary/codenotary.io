@@ -6,7 +6,7 @@
                     vChain Inc
                 </h1>
                 <h2 class="_font-weight-bold _margin-top-1">
-                    The leading company for immutable recording of data and processes.
+                    is the leading company for immutable recording of data and processes.
                 </h2>
                 <p class="lead _margin-bottom-0">
                     Our solutions can be used on-premise or in the cloud, are always easy to use and can process millions of transactions a second with cryptographic verification.

@@ -4,17 +4,17 @@
             <i-row>
                 <i-column lg="4">
                     <Feature title="Who are we?">
-                        vChain is a young software firm with headquarters in Houston, Texas, and a team of engineers, researcher, analysts, marketers, managers, and customer satisfaction heroes spread out across the globe.
+                        vChain is a young software company founded by a team of very experienced and passionate engineers and entrepreneurs, with headquarters in Houston, Texas, and a team of engineers, researchers, marketers, managers, and customer satisfaction heroes spread out across the globe.
                     </Feature>
                 </i-column>
                 <i-column lg="4">
                     <Feature title="What do we do?">
-                        We create Open Source solutions to easily record sensitive data and processes in a tamperproof and immutable way, to ensure compliance with industry security standards and regulations like PCI and GDPR and to bring back trust and integrity to the digital world.
+                        We restore trust and integrity in digital solutions by making it possible for organizations to keep tamper-proof, indelible, and immutable ledgers of transactions and data transitions.
                     </Feature>
                 </i-column>
                 <i-column lg="4">
                     <Feature title="How do we do it?">
-                        Our tamperproof solution CodeNotary Ledger Compliance&reg; is processing millions of transactions per second reliably, on-premise or in the cloud, and with cryptographic verification. It is based on our Open Source lightweight, high-speed immutable database <nuxt-link :to="{ name: 'technologies-immudb' }">immudb</nuxt-link>.
+                        Based on our award-winning <nuxt-link :to="{ name: 'technologies-immudb' }">immudb</nuxt-link> Open Source immutable database, vChain’s CodeNotary Ledger Compliance® provides a tamper-proof and indelible solution for processing millions of transactions per second, on-premise or in the cloud, and with cryptographic verification.
                     </Feature>
                 </i-column>
             </i-row>
