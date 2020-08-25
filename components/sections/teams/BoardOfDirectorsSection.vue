@@ -23,14 +23,10 @@
 
 <script>
 import BoardTeamMember from '~/components/common/BoardTeamMember';
-import PageSection from '~/components/layout/PageSection';
-import PageSectionHeader from '~/components/layout/PageSectionHeader';
 
 export default {
     components: {
-        BoardTeamMember,
-        PageSection,
-        PageSectionHeader
+        BoardTeamMember
     }
 }
 </script>

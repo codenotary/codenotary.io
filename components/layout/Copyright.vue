@@ -11,12 +11,7 @@
 </template>
 
 <script>
-import PageSection from '~/components/layout/PageSection';
-
 export default {
-    components: {
-        PageSection
-    },
     data() {
         return {
             year: new Date().getFullYear()

@@ -25,6 +25,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.11.0",
     "@inkline/nuxt": "^2.3.0",
+    "@nuxt/content": "^1.7.0",
     "@nuxtjs/eslint-config": "^2.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/google-analytics": "^2.4.0",

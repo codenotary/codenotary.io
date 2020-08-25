@@ -65,12 +65,10 @@
 
 <script>
 import Feature from '~/components/common/Feature';
-import PageSection from '~/components/layout/PageSection';
 
 export default {
     components: {
-        Feature,
-        PageSection
+        Feature
     }
 }
 </script>

@@ -26,7 +26,7 @@
                            @pause="onPauseVideo"
                            @ended="onPauseVideo" />
                 </div>
-                <img id="mascot" src="/images/codenotary_mascot.png" alt="CodeNotary Mascot">
+                <img id="mascot" src="/images/mascot.png" alt="CodeNotary Mascot">
             </i-column>
         </i-row>
     </i-header>

@@ -35,14 +35,10 @@
 
 <script>
 import StoryCard from '~/components/common/cards/StoryCard';
-import PageSection from '~/components/layout/PageSection';
-import PageSectionHeader from '~/components/layout/PageSectionHeader';
 
 export default {
     components: {
-        StoryCard,
-        PageSection,
-        PageSectionHeader
+        StoryCard
     }
 }
 </script>

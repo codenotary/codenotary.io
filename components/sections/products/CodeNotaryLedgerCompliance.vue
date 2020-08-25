@@ -33,15 +33,11 @@
 </template>
 
 <script>
-import PageSection from '~/components/layout/PageSection';
-import PageSectionHeader from '~/components/layout/PageSectionHeader';
 import PricingTables from '~/components/products/codenotary-ledger-compliance/PricingTables';
 
 export default {
     components: {
-        PricingTables,
-        PageSection,
-        PageSectionHeader
+        PricingTables
     }
 }
 </script>
