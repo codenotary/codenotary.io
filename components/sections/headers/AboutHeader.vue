@@ -13,7 +13,9 @@
                 </p>
             </i-column>
             <i-column md="4" class="_text-center">
-                <img src="/images/cncf.png" alt="CNCF" class="image -responsive _margin-top-2" width="200">
+                <a href="https://www.cncf.io/about/members/">
+                    <img src="/images/cncf.png" alt="CNCF" class="image -responsive _margin-top-2" width="200">
+                </a>
             </i-column>
         </i-row>
     </i-header>
