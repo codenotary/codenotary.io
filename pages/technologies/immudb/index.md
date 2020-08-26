@@ -1,13 +1,12 @@
 <page-section id="easy-setup-section">
 <i-container>
 <i-row>
-<i-column>
-<h2>Easy setup</h2>
-<p>
-Build Docker images based on the Dockerfiles in the GitHub repository
-for the most common architectures or use the prebuild ones on Dockerhub for Linux.
-</p>
-</i-column>
+    <i-column>
+        <page-section-header title="Easy setup">
+            Build Docker images based on the Dockerfiles in the GitHub repository
+            for the most common architectures or use the prebuild ones on Dockerhub for Linux.
+        </page-section-header>
+    </i-column>
 </i-row>
 <i-row>
 <i-column>
@@ -21,19 +20,11 @@ docker run -it -d -p 3322:3322 -p 9497:9497 --name immudb codenotary/immudb:late
 </i-container>    
 </page-section>
 
-<page-section class="section _background-gray-10" id="performance">
+<page-section class="_background-gray-20" id="performance-section">
+<page-section-header title="Unmatched performance">
+    immudb has been designed with read and write performance in mind while being tamper-proof. The benchmarks we've done show great results.
+</page-section-header>
 <i-container>
-<i-row>
-<i-column>
-<div class="section-center _padding-bottom-4">
-
-## Unmatched performance
-immudb has been designed with read and write performance in mind while being tamper-proof. The benchmarks we've done show great results.
-
-</div>
-</i-column>
-</i-row>
-
 <i-row>
 <i-column md="6">
 
@@ -60,43 +51,41 @@ Throughput: 2772181 tx/sec
 
 </i-column>
 </i-row>
-
 <i-row>
 <i-column class="_text-center _padding-top-1 _padding-bottom-6">
-<ul class="list -inline _text-muted _font-size-sm">
-    <li>4 cores</li>
-    <li>&middot;</li>
-    <li>16GB memory</li>
-    <li>&middot;</li>
-    <li>single SSD drive</li>
-</ul>
+    <ul class="list -inline _text-muted _font-size-sm">
+        <li>4 cores</li>
+        <li>&middot;</li>
+        <li>16GB memory</li>
+        <li>&middot;</li>
+        <li>single SSD drive</li>
+    </ul>
 </i-column>
 </i-row>
-
 <i-row>
 <i-column>
-<div class="section-center lead" id="qldb-comparison">
-<font-awesome-icon icon="bolt" class="_text-primary" />
-
-immudb is often compared to Amazon QLDB. We compared the performance using a simple demo application to write data (without using any unfair optimization).
-
-</div>
+    <page-section-header id="qldb-comparison-section">
+        <template #title>
+        <fa icon="bolt" class="_text-primary"></fa>
+        </template>
+        immudb is often compared to Amazon QLDB. We compared the performance using a simple demo application to write data (without using any unfair optimization).
+    </page-section-header>
 </i-column>
 </i-row>
 <i-row>
     <i-column md="6">
-        <img class="image -responsive" src="/benchmark/throughput_read.png" alt="Immudb - Throughput read" />
+        <img class="image -responsive" src="/images/immudb/benchmark/throughput_read.png" alt="Immudb - Throughput read" />
     </i-column>
     <i-column md="6">
-        <img class="image -responsive" src="/benchmark/throughput_write.png" alt="Immudb - Throughput write" />
+        <img class="image -responsive" src="/images/immudb/benchmark/throughput_write.png" alt="Immudb - Throughput write" />
     </i-column>
 </i-row>
 <i-row>
     <i-column md="6">
-        <img class="image -responsive" src="/benchmark/exectime.png" alt="Immudb - Written records per ms" />
+        <img class="image -responsive" src="/images/immudb/benchmark/exectime.png" alt="Immudb - Written records per ms" />
     </i-column>
     <i-column md="6">
-        <img class="image -responsive" src="/benchmark/query_bm.png" alt="Immudb - Queried records per ms" />
+        <img class="image -responsive" src="/images/immudb/benchmark/query_bm.png" alt="Immudb - Queried records per ms" />
     </i-column>
 </i-row>
 </i-container>
@@ -127,23 +116,23 @@ immudb is a ledger database that has been developed with performance, scalabilit
         </div>
         <ul>
             <li>
-                <font-awesome-icon icon="check-circle" />
+                <fa icon="check-circle"></fa>
                 Easy setup
             </li>
             <li>
-                <font-awesome-icon icon="check-circle" />
+                <fa icon="check-circle"></fa>
                 Fast and reliable immutable database
             </li>
             <li>
-                <font-awesome-icon icon="check-circle" />
+                <fa icon="check-circle"></fa>
                 Secure REST API gateway
             </li>
             <li>
-                <font-awesome-icon icon="check-circle" />
+                <fa icon="check-circle"></fa>
                 Powerful, easy to use admin
             </li>
             <li>
-                <font-awesome-icon icon="check-circle" />
+                <fa icon="check-circle"></fa>
                 Open source
             </li>
         </ul>
@@ -155,13 +144,12 @@ immudb is a ledger database that has been developed with performance, scalabilit
 
 
 <!-- TERMINAL SECTIONS START -->
-<page-section id="code-examples">
+<page-section id="code-examples-section">
 <i-container>
-
 <!-- TERMINAL SECTION 1 START -->
-<i-row class="section _padding-top-0">
+<i-row>
 <i-column lg="5">
-<img src="/features/real-world.svg" alt="Immudb - Made for the real world" />
+<img src="/images/immudb/features/real-world.svg" alt="Immudb - Made for the real world" />
 
 ## Very high throughput, immutable database with cryptographic verification
 immudb is an indispensable asset when it comes to tamper-proof data:
@@ -189,9 +177,8 @@ printItem(key2, value2, verifiedIndex)
 </i-column>
 </i-row>
 <!-- TERMINAL SECTION 1 END -->
-
 <!-- TERMINAL SECTION 2 START -->
-<i-row class="section inverse _padding-top-0">
+<i-row>
 <i-column lg="7">
 <terminal title="immudb">
 
@@ -212,7 +199,7 @@ printItem(key2, value2, verifiedIndex)
 </terminal>
 </i-column>
 <i-column lg="5">
-<img src="/features/intuitive-setup4.svg" alt="immudb - intuitive setup" />
+<img src="/images/immudb/features/intuitive-setup4.svg" alt="immudb - intuitive setup" />
 
 ## Intuitive setup 
 immudb is built with simplicity in mind:
@@ -225,12 +212,11 @@ immudb is built with simplicity in mind:
 </i-column>
 </i-row>
 <!-- TERMINAL SECTION 2 END -->
-
 <!-- TERMINAL SECTION 3 START -->
 <i-row>
 <i-column lg="5">
-<img src="/features/consistency-check2.svg" alt="Immudb - Made for the real world" />
-    
+<img src="/images/immudb/features/consistency-check2.svg" alt="Immudb - Made for the real world" />
+
 ## Consistency check built-in
 immudb architecture has built-in verification and audit functionality:
 - immudb server is continuously checking disk/memory consistency 
@@ -256,25 +242,20 @@ printItem(nil, nil, verifiedItem)
 </i-column>
 </i-row>
 <!-- TERMINAL SECTION 3 END -->
-
 </i-container>
 </page-section>
 <!-- TERMINAL SECTIONS END -->
 
 <hr/>
 
-<page-section id="comingsoon">
+<page-section id="comingsoon-section">
 <i-container>
 <i-row>
 <i-column>
-<div class="section-center _padding-bottom-4">
-
-<img class="image -responsive _margin-bottom-4" width="400" src="/rocket.jpg" alt="Coming Soon" />
-
-## Coming soon
-We're working hard every day to improve immudb and everything it has to offer. Here are some of the features we're planning to release:
-
-</div>
+    <img class="image -responsive _margin-bottom-4" width="400" src="/images/immudb/rocket.jpg" alt="Coming Soon" />
+    <page-section-header title="Coming soon">
+        We're working hard every day to improve immudb and everything it has to offer. Here are some of the features we're planning to release:
+    </page-section-header>
 </i-column>
 </i-row>
 <i-row>
@@ -295,39 +276,39 @@ We're working hard every day to improve immudb and everything it has to offer. H
 
 <hr class="_margin-0"/>
 
-<page-section id="usedby">
+<page-section id="usedby-section">
     <i-container>
         <i-row>
             <i-column>
                 <a href="https://codenotary.io" target="_blank">
-                    <img src="/logos/codenotary.png" alt="CodeNotary" />
+                    <img src="/images/immudb/logos/codenotary.png" alt="CodeNotary" />
                 </a>
                 <a href="https://opvizor.com" target="_blank">
-                    <img src="/logos/opvizor.png" alt="Opvizor" />
+                    <img src="/images/immudb/logos/opvizor.png" alt="Opvizor" />
                 </a>
                 <a href="https://www.ta.capital/" target="_blank" rel="nofollow">
-                    <img src="/logos/tacapital.png" alt="TA Captial" />
+                    <img src="/images/immudb/logos/tacapital.png" alt="TA Captial" />
                 </a>
                 <a href="https://www.esoftthings.com/en/" target="_blank" rel="nofollow">
-                    <img src="/logos/esoftthings.png" alt="eSoftThings" />
+                    <img src="/images/immudb/logos/esoftthings.png" alt="eSoftThings" />
                 </a>
                 <a href="https://www.greentube.com/" target="_blank" rel="nofollow">
-                    <img src="/logos/greentube.svg" alt="GreenTube" />
+                    <img src="/images/immudb/logos/greentube.svg" alt="GreenTube" />
                 </a>
                 <a href="https://www.tinaba.bancaprofilo.it/" target="_blank" rel="nofollow">
-                    <img src="/logos/tinaba.png" alt="Tinaba" />
+                    <img src="/images/immudb/logos/tinaba.png" alt="Tinaba" />
                 </a>
                 <a rel="nofollow">
-                    <img src="/logos/la-logo.png" alt="Lord Abbett" />
+                    <img src="/images/immudb/logos/la-logo.png" alt="Lord Abbett" />
                 </a>
                 <a href="https://naveum.ch/" target="_blank" rel="nofollow">
-                    <img src="/logos/logo_naveum.svg" alt="Naveum" />
+                    <img src="/images/immudb/logos/logo_naveum.svg" alt="Naveum" />
                 </a>
                 <a href="https://truecore.ch/" target="_blank" rel="nofollow">
-                    <img src="/logos/logo_truecore.svg" alt="TrueCore" />
+                    <img src="/images/immudb/logos/logo_truecore.svg" alt="TrueCore" />
                 </a>
                 <a rel="nofollow">
-                    <img src="/logos/rs-logo.svg" alt="TrueCore" />
+                    <img src="/images/immudb/logos/rs-logo.svg" alt="TrueCore" />
                 </a>
             </i-column>
         </i-row>
@@ -336,19 +317,12 @@ We're working hard every day to improve immudb and everything it has to offer. H
 
 <hr class="_margin-bottom-0" />
 
-<page-section id="code-tabs">
+<page-section id="code-tabs-section">
+<page-section-header title="By developers, for developers">
+    We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
+</page-section-header>
 <i-container>
 <i-row>
-<i-column>
-<div class="section-center">
-
-## By developers, for developers
-We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
-
-</div>
-</i-column>
-</i-row>
-<i-row class="_margin-top-6">
 <i-column>
 <i-tabs custom class="-code">
 <i-tab title="Connect to immudb">
@@ -395,21 +369,14 @@ printItem(nil, nil, verifiedItem)
 
 <hr class="_margin-top-0" />
 
-<page-section id="get-started-end">
+<page-section id="get-started-end-section">
+<page-section-header title="The open-source immutable database">
+    Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
+</page-section-header>
 <i-container>
 <i-row>
 <i-column>
-<div class="section-center">
-
-## The open-source immutable database
-Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
-
-</div>
-</i-column>
-</i-row>
-<i-row class="_text-center">
-<i-column>
-    <i-button variant="primary" size="lg" href="docs/">Get started today</i-button>
+    <i-button variant="primary" size="lg" href="https://docs.immudb.io">Get started today</i-button>
 </i-column>
 </i-row>
 </i-container>

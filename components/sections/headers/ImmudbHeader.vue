@@ -1,6 +1,6 @@
 <template>
     <i-header id="immudb-header">
-        <research-paper v-model="researchPaperModalVisible" />
+        <research-paper-modal v-model="researchPaperModalVisible" />
 
         <img src="/images/immudb/mascot.png" alt="immudb mascot">
 
@@ -12,6 +12,14 @@
         <p class="action">
             <i-button size="lg" variant="primary">Get immudb now</i-button>
         </p>
+
+        <i-nav class="header-nav">
+            <i-nav-item href="https://docs.immudb.io">Documentation</i-nav-item>
+            <i-nav-item class="dot _hidden-sm-and-down">&middot;</i-nav-item>
+            <i-nav-item :to="{ name: 'technologies-immudb-immutable-data-science' }">Immutable Data Science</i-nav-item>
+            <i-nav-item class="dot _hidden-sm-and-down">&middot;</i-nav-item>
+            <i-nav-item href="https://github.com/codenotary/immudb">GitHub</i-nav-item>
+        </i-nav>
 
         <p class="_margin-top-3">
             <i-button id="research-paper-button" link variant="primary" @click="researchPaperModalVisible = true">
@@ -31,8 +39,20 @@
 </template>
 
 <script>
+import GithubButton from 'vue-github-button';
+import ResearchPaperModal from '~/components/common/modals/ResearchPaperModal';
+
 export default {
-    name: 'ImmudbHeader'
+    name: 'ImmudbHeader',
+    components: {
+        ResearchPaperModal,
+        GithubButton
+    },
+    data() {
+        return {
+            researchPaperModalVisible: false
+        };
+    }
 }
 </script>
 
@@ -59,6 +79,14 @@ export default {
     .description {
         margin: 2rem auto;
         max-width: 35rem;
+    }
+
+    .header-nav {
+        justify-content: center;
+
+        .dot {
+            color: $text-muted;
+        }
     }
 }
 </style>

@@ -5,6 +5,7 @@ const description = 'Immutable recording of data and processes with CodeNotary L
 
 export default {
     mode: 'universal',
+    components: true,
 
     /*
     ** Headers of the page
@@ -39,9 +40,8 @@ export default {
     plugins: [
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
-        { src: '~plugins/tawk', mode: 'client' }
-        // '~plugins/inkline',
-        // '~plugins/global'
+        { src: '~plugins/tawk', mode: 'client' },
+        '~plugins/inkline'
     ],
     /*
     ** Nuxt.js dev-modules
@@ -60,7 +60,6 @@ export default {
     ** Nuxt.js modules
     */
     modules: [
-        '@inkline/nuxt',
         // Doc: https://content.nuxtjs.org/
         '@nuxt/content',
         // Doc: https://github.com/nuxt-community/style-resources-module
@@ -73,7 +72,7 @@ export default {
             imports: [
                 {
                     set: '@fortawesome/free-solid-svg-icons',
-                    icons: ['faCheckSquare']
+                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faBolt', 'faChevronRight']
                 },
                 {
                     set: '@fortawesome/free-brands-svg-icons',
@@ -88,7 +87,12 @@ export default {
     */
 
     content: {
-        dir: 'pages'
+        dir: 'pages',
+        markdown: {
+            prism: {
+                theme: 'prism-themes/themes/prism-dracula.css'
+            }
+        }
     },
 
     styleResources: {
@@ -96,7 +100,10 @@ export default {
     },
 
     build: {
-        transpile: ['@inkline/inkline'],
+        transpile: [
+            '@inkline/inkline',
+            'vue-github-button'
+        ],
         filenames: {
             app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
             chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
