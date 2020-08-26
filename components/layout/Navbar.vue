@@ -13,8 +13,8 @@
                         <i-dropdown-item href="">CodeNotary Ledger Compliance</i-dropdown-item>
                     </i-dropdown-menu>
                 </i-dropdown-->
-                <i-dropdown trigger="hover" class="_visible-lg-and-up">
-                    <i-nav-item>Technologies</i-nav-item>
+                <i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
+                    <i-nav-item :class="{ '-active': subRouteActive('/technologies') }">Technologies</i-nav-item>
                     <i-dropdown-menu>
                         <i-dropdown-item :to="{ name: 'technologies-immudb' }">immudb</i-dropdown-item>
                         <i-dropdown-item :to="{ name: 'technologies-ci-cd' }">Immutability for CI/CD</i-dropdown-item>
@@ -57,6 +57,13 @@ export default {
     methods: {
         onWindowResize() {
             this.isNavbarCollapsed = window.innerWidth <= breakpoints.md[1];
+        },
+        subRouteActive(input) {
+            const paths = Array.isArray(input) ? input : [input];
+
+            return paths.some((path) => {
+                return this.$route.path.indexOf(path) === 0;
+            });
         }
     }
 }
@@ -82,6 +89,10 @@ export default {
     &.-light {
         border-bottom: 1px solid $border-color-light;
         background: white !important;
+    }
+
+    .dropdown .menu .item.-active {
+        font-weight: 600 !important;
     }
 
     .dropdown-fallback-nav {
