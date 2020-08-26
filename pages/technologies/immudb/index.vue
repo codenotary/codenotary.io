@@ -10,8 +10,14 @@
 /* eslint-disable vue/no-unused-components */
 import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
 import ImmudbFeaturesSection from '~/components/sections/features/ImmudbFeaturesSection';
+import { title } from '~/helpers/meta';
 
 export default {
+    head() {
+        return {
+            title: title('immudb')
+        };
+    },
     components: {
         ImmudbFeaturesSection,
         ImmudbHeader

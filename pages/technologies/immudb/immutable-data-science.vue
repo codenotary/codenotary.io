@@ -33,7 +33,14 @@
 </template>
 
 <script>
+import { title } from '~/helpers/meta';
+
 export default {
+    head() {
+        return {
+            title: title('Blog')
+        };
+    }
 }
 </script>
 

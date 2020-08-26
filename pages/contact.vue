@@ -22,7 +22,7 @@ import { title } from '~/helpers/meta';
 export default {
     head() {
         return {
-            title: title('Contact')
+            title: title('Contact us')
         };
     },
     components: {
