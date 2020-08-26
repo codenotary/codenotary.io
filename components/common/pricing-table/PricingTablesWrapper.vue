@@ -16,7 +16,7 @@ export default {}
     display: flex;
     flex: 1;
 
-    @include breakpoint-down(lg) {
+    @include breakpoint-down(md) {
         flex-direction: column;
 
         .pricing-table {

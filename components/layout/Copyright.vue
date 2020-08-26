@@ -11,12 +11,7 @@
 </template>
 
 <script>
-import PageSection from '~/components/layout/PageSection';
-
 export default {
-    components: {
-        PageSection
-    },
     data() {
         return {
             year: new Date().getFullYear()
@@ -29,7 +24,7 @@ export default {
 @import '~@inkline/inkline/src/css/config/colors';
 
 .copyright {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 !important;
     background: $color-gray-80;
     color: $color-gray-30;
     text-align: center;

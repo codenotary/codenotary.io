@@ -17,8 +17,6 @@
 
 <script>
 import ContactForm from '~/components/common/forms/ContactForm';
-import PageSection from '~/components/layout/PageSection';
-import PageSectionHeader from '~/components/layout/PageSectionHeader';
 import { title } from '~/helpers/meta';
 
 export default {
@@ -28,8 +26,6 @@ export default {
         };
     },
     components: {
-        PageSectionHeader,
-        PageSection,
         ContactForm
     }
 }

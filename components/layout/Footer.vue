@@ -72,13 +72,7 @@
 </template>
 
 <script>
-import PageSection from '~/components/layout/PageSection';
-
-export default {
-    components: {
-        PageSection
-    }
-}
+export default {}
 </script>
 
 <style lang="scss">

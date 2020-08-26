@@ -39,13 +39,8 @@
 </template>
 
 <script>
-import PageSection from '~/components/layout/PageSection';
-
 export default {
     name: 'IntegrationsSection',
-    components: {
-        PageSection
-    },
     data () {
         return {
             activeCategory: '',

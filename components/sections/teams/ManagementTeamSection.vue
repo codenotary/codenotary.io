@@ -67,14 +67,10 @@
 
 <script>
 import TeamMember from '~/components/common/TeamMember';
-import PageSection from '~/components/layout/PageSection';
-import PageSectionHeader from '~/components/layout/PageSectionHeader';
 
 export default {
     components: {
-        TeamMember,
-        PageSection,
-        PageSectionHeader
+        TeamMember
     }
 }
 </script>
