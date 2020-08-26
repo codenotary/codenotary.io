@@ -87,6 +87,10 @@ export default {
         .dot {
             color: $text-muted;
         }
+
+        @include breakpoint-up(sm) {
+            margin-left: -62px;
+        }
     }
 }
 </style>

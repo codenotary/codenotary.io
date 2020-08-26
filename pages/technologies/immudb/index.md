@@ -20,7 +20,7 @@ docker run -it -d -p 3322:3322 -p 9497:9497 --name immudb codenotary/immudb:late
 </i-container>    
 </page-section>
 
-<page-section class="_background-gray-20" id="performance-section">
+<page-section id="performance-section">
 <page-section-header title="Unmatched performance">
     immudb has been designed with read and write performance in mind while being tamper-proof. The benchmarks we've done show great results.
 </page-section-header>
@@ -38,7 +38,8 @@ Throughput: 326626 tx/sec
 ~~~
 
 </i-column>
-<i-column md="6" class="_margin-top-sm-1 _margin-top-xs-1">
+<i-column md="6">
+<div class="_margin-top-sm-1 _margin-top-xs-1">
 
 ~~~bash
 batch write (async commit)
@@ -49,17 +50,20 @@ Elapsed t.: 0.36 sec
 Throughput: 2772181 tx/sec
 ~~~
 
+</div>
 </i-column>
 </i-row>
 <i-row>
-<i-column class="_text-center _padding-top-1 _padding-bottom-6">
-    <ul class="list -inline _text-muted _font-size-sm">
-        <li>4 cores</li>
-        <li>&middot;</li>
-        <li>16GB memory</li>
-        <li>&middot;</li>
-        <li>single SSD drive</li>
-    </ul>
+<i-column>
+    <div class="_text-center _padding-top-1">
+        <ul class="list -inline _text-muted _font-size-sm">
+            <li>4 cores</li>
+            <li>&middot;</li>
+            <li>16GB memory</li>
+            <li>&middot;</li>
+            <li>single SSD drive</li>
+        </ul>
+    </div>
 </i-column>
 </i-row>
 <i-row>
@@ -259,16 +263,18 @@ printItem(nil, nil, verifiedItem)
 </i-column>
 </i-row>
 <i-row>
-<i-column class="_text-center lead  _font-weight-semibold">
-    <ul class="list -inline">
-        <li>rsyslog support</li>
-        <li class="_text-muted">&middot;</li>
-        <li>Log4j integration</li>
-        <li class="_text-muted">&middot;</li>
-        <li>PostgreSQL listener</li>
-        <li class="_text-muted">&middot;</li>
-        <li>Managed ledger DBMS</li>
-    </ul>
+<i-column>
+    <div class="_text-center lead  _font-weight-semibold">
+        <ul class="list -inline">
+            <li>rsyslog support</li>
+            <li class="_text-muted">&middot;</li>
+            <li>Log4j integration</li>
+            <li class="_text-muted">&middot;</li>
+            <li>PostgreSQL listener</li>
+            <li class="_text-muted">&middot;</li>
+            <li>Managed ledger DBMS</li>
+        </ul>
+    </div>
 </i-column>
 </i-row>
 </i-container>
@@ -324,7 +330,7 @@ printItem(nil, nil, verifiedItem)
 <i-container>
 <i-row>
 <i-column>
-<i-tabs custom class="-code">
+<i-tabs custom>
 <i-tab title="Connect to immudb">
 
 ~~~go
