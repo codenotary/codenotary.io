@@ -1,5 +1,5 @@
 <template>
-    <i-modal class="contact-modal" size="lg" :value="value" @input="$emit('input', $event)">
+    <i-modal class="webinar-modal" size="lg" :value="value" @input="$emit('input', $event)">
         <template slot="header">Schedule a Webinar</template>
         <webinar-form />
     </i-modal>
