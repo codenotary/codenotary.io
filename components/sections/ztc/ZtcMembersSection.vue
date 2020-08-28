@@ -133,12 +133,12 @@ export default {}
 
     .image {
         max-width: 100%;
-        width: 160px;
+        width: 150px;
         height: auto;
         margin: 0 auto 1rem;
 
         &.-vertical {
-            width: 120px;
+            width: 100px;
         }
     }
 }
