@@ -6,8 +6,10 @@
 
 <script>
 import WordpressIframe from '~/components/common/WordpressIframe';
+import IframeView from '~/components/layout/IframeView';
 
 export default {
+    extends: IframeView,
     layout: 'iframe',
     components: {
         WordpressIframe

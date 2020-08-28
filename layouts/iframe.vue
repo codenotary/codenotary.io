@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="iframe-layout">
         <Navbar id="navbar" />
         <div id="content">
             <nuxt/>
@@ -16,3 +16,15 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.iframe-layout {
+    height: 100vh;
+    height: 100%;
+    width: 100%;
+}
+
+.iframe-body{
+    overflow: hidden;
+}
+</style>
