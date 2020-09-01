@@ -52,13 +52,18 @@
             </i-row>
             <i-row>
                 <i-column class="_text-center _text-muted _margin-top-4">
-                    immutability by perimeter defence is proven not to work - immutability needs to be embedded in the data structure
-                    </br></br>
+                    <ul class="list -unstyled">
+                    <li>
+                    <strong>Immutability</strong> by perimeter defence is proven not to work, <strong>Immutability</strong> needs to be embedded in the data structure!
+                    </li>
+                    <li>
                     Powered by
                     <a href="https://immudb.io">
                         <img width="28" src="/images/immudb-logo.svg" alt="immudb">
                         <strong class="_text-black">immudb</strong>
                     </a>
+                    </li>
+                    </ul>
                 </i-column>
             </i-row>
         </i-container>
