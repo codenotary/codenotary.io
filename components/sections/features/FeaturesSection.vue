@@ -54,7 +54,7 @@
                 <i-column class="_text-center _text-muted _margin-top-4">
                     <ul class="list -unstyled">
                     <li>
-                    <strong>Immutability</strong> by perimeter defence is proven not to work, <strong>Immutability</strong> needs to be embedded in the data structure!
+                    <strong>Immutability</strong> by perimeter defense is proven not to work, <strong>Immutability</strong> needs to be embedded in the data structure!
                     </li>
                     <li>
                     Powered by
