@@ -32,10 +32,9 @@
                 <PricingTableRow>Managed service</PricingTableRow>
                 <PricingTableRow>24/7 support</PricingTableRow>
                 <template slot="price">
-                    <nuxt-link :to="{ name: 'contact' }">
-                        Contact us
-                    </nuxt-link>
-                    for details
+                    <i-button variant="primary" :to="{ name: 'contact' }">
+                        Contact us for details
+                    </i-button>
                 </template>
             </PricingTable>
         </PricingTablesWrapper>
