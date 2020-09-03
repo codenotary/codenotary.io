@@ -286,9 +286,6 @@ printItem(nil, nil, verifiedItem)
     <i-container>
         <i-row>
             <i-column>
-                <a href="https://codenotary.io" target="_blank">
-                    <img src="/images/immudb/logos/codenotary.png" alt="CodeNotary" />
-                </a>
                 <a href="https://opvizor.com" target="_blank">
                     <img src="/images/immudb/logos/opvizor.png" alt="Opvizor" />
                 </a>

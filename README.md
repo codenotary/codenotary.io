@@ -1,22 +1,6 @@
 # codenotary.io
 
-> My mind-blowing Nuxt.js project
+CodeNotary - Immutable recording of data and processes with CodeNotary Ledger Compliance®
+On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.
 
-## Build Setup
-
-```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+documentation and homepage is built with Vuepress and publicly hosted on GitHub Pages.
