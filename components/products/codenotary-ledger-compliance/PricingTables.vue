@@ -28,7 +28,8 @@
                 <PricingTableRow>No storage limit</PricingTableRow>
                 <PricingTableRow>No transactions limit</PricingTableRow>
                 <PricingTableRow>Unlimited databases</PricingTableRow>
-                <PricingTableRow>Hardware-based acceleration</PricingTableRow>
+                <PricingTableRow>Cryptographic Hardware Accelerator</PricingTableRow>
+                <PricingTableRow>Tamper-resistant smart card</PricingTableRow>
                 <PricingTableRow>Managed service</PricingTableRow>
                 <PricingTableRow>24/7 support</PricingTableRow>
                 <template slot="price">
