@@ -7,11 +7,12 @@
             <i-container>
                 <i-row class="_align-items-center">
                     <i-column>
-					<h1 slot="title" class="d6">vChain, Inc.</h1>			
+					<h1>vChain, Inc.</h1>			
      				<h2 class="_font-weight-bold _margin-top-1">
                     4141 Southwest Fwy, Suite 340
 					</br>
                     Houston, TX 77027, United States
+                    </br>
 					</h2>
                     </i-column>
                 </i-row>
