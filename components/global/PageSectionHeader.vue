@@ -1,7 +1,7 @@
 <template>
     <header class="section-header" :class="classes">
         <slot name="title">
-            <h2>{{ title }}</h2>
+            <h2 :is="tag">{{ title }}</h2>
         </slot>
         <div class="lead">
             <slot />
@@ -39,6 +39,10 @@ export default {
         title: {
             type: String,
             default: ''
+        },
+        tag: {
+            type: String,
+            default: 'h2'
         },
         block: {
             type: Boolean,

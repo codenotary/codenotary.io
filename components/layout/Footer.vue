@@ -62,6 +62,12 @@
                             <router-link :to="{ name: 'careers' }">Careers</router-link>
                         </li>
                         <li>
+                            <router-link :to="{ name: 'privacy-statement' }">Privacy Statement</router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'terms-of-service' }">Terms of Service</router-link>
+                        </li>
+                        <li>
                             <router-link :to="{ name: 'contact' }">Contact us</router-link>
                         </li>
                     </ul>
