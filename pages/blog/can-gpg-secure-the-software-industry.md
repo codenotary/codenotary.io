@@ -5,7 +5,7 @@ date: "2019-04-29"
 
  
 
-![digital lock unlocked](/images/blog/digital-lock-unlocked-1024x649)
+![digital lock unlocked](/images/blog/digital-lock-unlocked-1024x649.jpg)
 
  
 
