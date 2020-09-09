@@ -1,6 +1,7 @@
 ---
 title: "$410m Microservices Security Market Validation and the CICD Pipeline"
 date: "2019-06-04"
+image: "/images/blog/Continous_Delivery_by_Jez_Humble_and_David_Farley_sketch-cartoon-300x212.jpg"
 ---
 
  
