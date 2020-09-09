@@ -1,6 +1,7 @@
 ---
 title: "First steps to use Java SDK for immudb — the open source immutable database"
 date: "2020-08-20"
+image: "/images/blog/java-640x360.jpg"
 ---
 
 **immudb** is **lightweight, high-speed immutable database** for systems and applications. immudb is open source under the [Apache v2.0 License](https://github.com/codenotary/immudb/blob/master/LICENSE).
