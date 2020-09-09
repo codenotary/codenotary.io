@@ -41,7 +41,7 @@
                 </template>
             </PricingTable>
         </PricingTablesWrapper>
-        <div class="header">
+        <div>
 			<PricingTablesWrapper>
             <PricingTable title="All products include">
                 <PricingTableRow>Transactional integrity</PricingTableRow>
