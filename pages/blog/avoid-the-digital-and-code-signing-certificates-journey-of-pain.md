@@ -2,7 +2,6 @@
 title: "Avoid the Digital and Code Signing Certificates' Journey of Pain"
 date: "2019-02-27"
 image: /images/blog/bigstock-Portrait-of-an-upset-businessm-138045524.jpg
-
 ---
 
 Moshe and Dennis co-founded [vChain](https://www.vchain.us/company/?utm_source=codenotary&utm_medium=blog&utm_campaign=avoid.the.digital.certificates.journey.of.pain), the company that created [CodeNotary </>](https://codenotary.io/), out of their frustration with digital and code signing certificates.  As most people reading this blog post will surely agree, digital certificates are a constant source of pain and hassle.
