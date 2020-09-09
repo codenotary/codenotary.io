@@ -30,6 +30,8 @@
                 <PricingTableRow>Unlimited databases</PricingTableRow>
                 <PricingTableRow>Cryptographic Hardware Accelerator</PricingTableRow>
                 <PricingTableRow>Tamper-resistant smart card</PricingTableRow>
+                <PricingTableRow>Blockchain-protected audit dumps</PricingTableRow>
+                <PricingTableRow>Blockchain-protected backup/restore</PricingTableRow>
                 <PricingTableRow>Managed service</PricingTableRow>
                 <PricingTableRow>24/7 support</PricingTableRow>
                 <template slot="price">
@@ -39,6 +41,19 @@
                 </template>
             </PricingTable>
         </PricingTablesWrapper>
+        <div class="header">
+			<PricingTablesWrapper>
+            <PricingTable title="All products include">
+                <PricingTableRow>Transactional integrity</PricingTableRow>
+                <PricingTableRow>ACID compliance</PricingTableRow>
+                <PricingTableRow>Encryption</PricingTableRow>
+				<PricingTableRow>Python SDK</PricingTableRow>
+				<PricingTableRow>Node.js SDK</PricingTableRow>
+   				<PricingTableRow>Java SDK</PricingTableRow>
+				<PricingTableRow>Go SDK</PricingTableRow>
+			</PricingTable>
+		</PricingTablesWrapper>
+        </div>
     </div>
 </template>
 
