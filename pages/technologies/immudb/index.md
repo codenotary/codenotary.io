@@ -272,13 +272,9 @@ printItem(nil, nil, verifiedItem)
             <li class="_text-muted">&middot;</li>
             <li>Encryption</li>
             <li class="_text-muted">&middot;</li>
-            <li>Python SDK</li>
+            <li>Auditor</li>
             <li class="_text-muted">&middot;</li>
-            <li>Node.js SDK</li>
-            <li class="_text-muted">&middot;</li>
-            <li>Java SDK</li>
-            <li class="_text-muted">&middot;</li>
-            <li>Go SDK</li>
+            <li>SDKs for Python, Node.js, Java, Go</li>
         </ul>
     </div>
 </i-column>
