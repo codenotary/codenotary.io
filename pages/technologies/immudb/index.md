@@ -256,9 +256,9 @@ printItem(nil, nil, verifiedItem)
 <i-container>
 <i-row>
 <i-column>
-    <img class="image -responsive _margin-bottom-4" width="400" src="/images/immudb/rocket.jpg" alt="Coming Soon" />
-    <page-section-header title="Coming soon">
-        We're working hard every day to improve immudb and everything it has to offer. Here are some of the features we're planning to release:
+    <img class="image -responsive _margin-bottom-4" width="400" src="/images/immudb/rocket.jpg" alt="Features" />
+    <page-section-header title="Features">
+        A super-fast, immutable, and cryptographically verifiable ledger database that provides::
     </page-section-header>
 </i-column>
 </i-row>
@@ -266,13 +266,19 @@ printItem(nil, nil, verifiedItem)
 <i-column>
     <div class="_text-center lead  _font-weight-semibold">
         <ul class="list -inline">
-            <li>rsyslog support</li>
+            <li>Transactional integrity</li>
             <li class="_text-muted">&middot;</li>
-            <li>Log4j integration</li>
+            <li>ACID compliance</li>
             <li class="_text-muted">&middot;</li>
-            <li>PostgreSQL listener</li>
+            <li>Encryption</li>
             <li class="_text-muted">&middot;</li>
-            <li>Managed ledger DBMS</li>
+            <li>Python SDK</li>
+            <li class="_text-muted">&middot;</li>
+            <li>Node.js SDK</li>
+            <li class="_text-muted">&middot;</li>
+            <li>Java SDK</li>
+            <li class="_text-muted">&middot;</li>
+            <li>Go SDK</li>
         </ul>
     </div>
 </i-column>
