@@ -270,8 +270,6 @@ printItem(nil, nil, verifiedItem)
             <li class="_text-muted">&middot;</li>
             <li>ACID compliance</li>
             <li class="_text-muted">&middot;</li>
-            <li>Encryption</li>
-            <li class="_text-muted">&middot;</li>
             <li>Auditor</li>
             <li class="_text-muted">&middot;</li>
             <li>SDKs for Python, Node.js, Java, Go</li>
