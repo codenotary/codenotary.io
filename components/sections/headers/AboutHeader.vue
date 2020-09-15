@@ -11,6 +11,9 @@
                 <p class="lead _margin-bottom-0">
                     Our solutions can be used on-premise or in the cloud, are easy to use and can process millions of transactions a second with cryptographic verification.
                 </p>
+                <p class="lead _margin-bottom-0">
+                    <a href="https://www.prnewswire.com/news-releases/vchain-inc-the-immutable-data-specialist-announces-new-equity-financing-301129660.html" target="_blank"><b>Latest News</b>: New Equity Financing</a>
+                </p>
             </i-column>
             <i-column md="4" class="_text-center">
                 <a href="https://www.cncf.io/about/members/">
