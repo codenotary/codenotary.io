@@ -6,7 +6,7 @@
                 <i-row>
                     <i-column v-for="article of articles" :key="article.slug" md="4">
                         <i-card class="blog-post">
-                            <img :src="article.image || `/images/blog-post.svg`" class="image-responsive"
+                            <img :src="article.image || `/images/blog-post.svg`" class="image -responsive"
                                 :alt="article.title" onerror="this.src='/images/blog-post.svg'"
                             >
                             <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
