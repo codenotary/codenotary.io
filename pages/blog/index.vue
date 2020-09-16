@@ -6,7 +6,9 @@
                 <i-row>
                     <i-column v-for="article of articles" :key="article.slug" md="4">
                         <i-card class="blog-post">
-                            <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :alt="article.title">
+                            <img :src="article.image || `/images/blog-post.svg`" class="image-responsive"
+                                :alt="article.title" onerror="this.src='/images/blog-post.svg'"
+                            >
                             <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
                                 <div class="title">
                                     {{ article.title }}
@@ -34,7 +36,7 @@ export default {
     },
     async asyncData ({ $content }) {
         const articles = await $content('blog')
-            .only(['title', 'date', 'img', 'slug'])
+            .only(['title', 'date', 'image', 'slug'])
             .sortBy('date', 'desc')
             .fetch();
 
