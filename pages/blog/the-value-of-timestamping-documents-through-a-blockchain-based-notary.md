@@ -1,5 +1,6 @@
 ---
 title: "The Value of Timestamping Documents Through a Blockchain-based Notary"
+image: /images/blog/Timestamp-Digital-Sig-232x300.png
 date: "2019-08-29"
 ---
 

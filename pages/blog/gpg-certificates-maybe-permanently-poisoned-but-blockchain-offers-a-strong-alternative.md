@@ -1,5 +1,6 @@
 ---
 title: "GPG Certificates Maybe Permanently Poisoned but Blockchain Offers a Strong Alternative"
+image: /images/blog/lock-unlocked-with-fingerprint.jpeg
 date: "2019-08-20"
 ---
 

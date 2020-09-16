@@ -1,5 +1,6 @@
 ---
 title: "PowerShell File Trust without digital certificates"
+image: /images/blog/env-1024x619.png
 date: "2019-10-28"
 ---
 

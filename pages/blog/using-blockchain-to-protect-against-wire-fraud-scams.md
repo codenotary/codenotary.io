@@ -1,5 +1,6 @@
 ---
 title: "Using Blockchain to Protect Against Wire Fraud Scams"
+image: /images/blog/Attacker-walking-through-a-key-hole-300x169.jpg
 date: "2019-08-08"
 ---
 

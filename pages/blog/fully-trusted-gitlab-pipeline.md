@@ -1,5 +1,6 @@
 ---
 title: "Fully trusted GitLab Pipeline"
+image: /images/blog/vars-1024x969.png
 date: "2019-11-13"
 ---
 

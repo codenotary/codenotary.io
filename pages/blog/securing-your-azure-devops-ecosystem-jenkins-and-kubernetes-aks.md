@@ -1,5 +1,6 @@
 ---
 title: "Securing your Azure DevOps Ecosystem - Part 2"
+image: /images/blog/azure-kubectl-1024x432.png
 date: "2019-10-23"
 ---
 

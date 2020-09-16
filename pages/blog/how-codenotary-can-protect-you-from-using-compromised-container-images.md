@@ -1,5 +1,6 @@
 ---
 title: "How CodeNotary Can Protect You From Using Compromised Container Images"
+image: /images/blog/190530-How-CodeNotary-Can-Protect-You-From-Using-Compromised-Container-Images-300x181.png
 date: "2019-05-29"
 ---
 

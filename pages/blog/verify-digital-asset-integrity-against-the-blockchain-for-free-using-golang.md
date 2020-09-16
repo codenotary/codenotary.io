@@ -1,5 +1,6 @@
 ---
 title: "Verify Digital Asset Integrity Against the Blockchain For Free Using Golang"
+image: /images/blog/Golang-logo-300x108.png
 date: "2019-06-19"
 ---
 

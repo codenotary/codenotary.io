@@ -1,5 +1,6 @@
 ---
 title: "The Problem with Using a Download Link"
+image: /images/blog/Download-Links-3-236x300.png
 date: "2019-05-28"
 ---
 

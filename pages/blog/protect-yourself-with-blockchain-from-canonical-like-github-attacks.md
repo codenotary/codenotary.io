@@ -1,5 +1,6 @@
 ---
 title: "Protect Yourself with Blockchain from Canonical-like GitHub Attacks"
+image: /images/blog/Hacked-300x200.jpg
 date: "2019-07-15"
 ---
 

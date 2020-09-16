@@ -1,5 +1,6 @@
 ---
 title: "immudb release candidate 0.6.0"
+image: /images/blog/immudb-mascot-small.png)](https://github.com/codenotary/immudb/blob/master/img/immudb-mascot-small.png
 date: "2020-05-11"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Use GitHub Actions for validated builds"
+image: /images/blog/secrets-1024x696.png
 date: "2019-11-25"
 ---
 

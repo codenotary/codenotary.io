@@ -1,5 +1,6 @@
 ---
 title: "Dos and Don'ts in Ethereum Parity Aura Genesis"
+image: /images/blog/ethereum-parity-300x150.png
 date: "2019-05-15"
 ---
 

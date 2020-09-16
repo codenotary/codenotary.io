@@ -1,5 +1,6 @@
 ---
 title: "What Docker Notary Doesn’t Do"
+image: /images/blog/Global-Verification-Blockchain-Based-Code-Signing-300x232.png
 date: "2019-06-12"
 ---
 

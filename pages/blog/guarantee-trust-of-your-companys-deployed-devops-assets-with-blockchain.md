@@ -1,5 +1,6 @@
 ---
 title: "Guarantee Trust of Your Company's Deployed DevOps Assets with Blockchain"
+image: /images/blog/Blockchain-Based-Code-Authentication-300x232.png
 date: "2019-07-10"
 ---
 

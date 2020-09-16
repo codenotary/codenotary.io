@@ -1,5 +1,6 @@
 ---
 title: "Staying Safe When Pulling from Maven Central and Other Repos"
+image: /images/blog/CodeNotary-Maven-Integration-Graphic-300x232.png
 date: "2019-05-22"
 ---
 

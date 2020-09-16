@@ -1,5 +1,6 @@
 ---
 title: "What is Docker and How Does It Work?"
+image: /images/blog/docker-logo-posters-talisso-redbubble-docker-logo-300x300.jpg
 date: "2019-06-03"
 ---
 

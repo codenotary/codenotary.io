@@ -1,5 +1,6 @@
 ---
 title: "CodeNotary Product Update - July 2019"
+image: /images/blog/CodeNotary-Product-Update-July-2019.v2-300x232.png
 date: "2019-07-11"
 ---
 

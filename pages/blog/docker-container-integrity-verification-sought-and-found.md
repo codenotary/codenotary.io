@@ -1,5 +1,6 @@
 ---
 title: "Free Docker Container Integrity Verification Sought and Found"
+image: /images/blog/check-mark-green-300x164.jpg
 date: "2019-06-11"
 ---
 

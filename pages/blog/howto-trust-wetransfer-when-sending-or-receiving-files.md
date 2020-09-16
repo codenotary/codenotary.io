@@ -1,5 +1,6 @@
 ---
 title: "How to trust WeTransfer when sending or receiving files"
+image: /images/blog/wetransfer_send-1-1024x879.png
 date: "2020-01-13"
 ---
 

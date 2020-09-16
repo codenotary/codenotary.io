@@ -1,5 +1,6 @@
 ---
 title: "Free Continuous Integrity Verification of your Docker Containers"
+image: /images/blog/Screenshot-2019-05-10-14.05.43-291x300.png
 date: "2019-05-10"
 ---
 

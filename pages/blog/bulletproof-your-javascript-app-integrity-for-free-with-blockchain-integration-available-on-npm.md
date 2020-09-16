@@ -1,5 +1,6 @@
 ---
 title: "Bulletproof Your JavaScript App Integrity for Free with Blockchain - Integration Available on NPM"
+image: /images/blog/JS-NPM-and-Blockchain_3-300x232.png
 date: "2019-07-02"
 ---
 

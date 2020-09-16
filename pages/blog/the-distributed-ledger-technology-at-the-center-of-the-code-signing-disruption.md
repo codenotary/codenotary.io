@@ -1,5 +1,6 @@
 ---
 title: "The Distributed Ledger Technology at the Center of the Code Signing Disruption"
+image: /images/blog/new-dashboard.png
 date: "2019-04-01"
 ---
 

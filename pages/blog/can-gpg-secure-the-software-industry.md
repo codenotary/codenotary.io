@@ -1,5 +1,6 @@
 ---
 title: "Can GPG Secure the Software Industry?"
+image: /images/blog/digital-lock-unlocked-1024x649.jpg
 date: "2019-04-29"
 ---
 

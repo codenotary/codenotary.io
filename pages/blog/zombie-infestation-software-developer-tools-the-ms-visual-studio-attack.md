@@ -1,5 +1,6 @@
 ---
 title: "Zombie Infestation, Software Developer Tools, & the MS Visual Studio Attack"
+image: /images/blog/zombie-code-300x141.jpeg
 date: "2019-05-31"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Securing your Azure DevOps Ecosystem, Jenkins and Kubernetes (AKS) using CodeNotary - Part 1"
+image: /images/blog/jenkins_output_azure-1024x630.png
 date: "2019-10-11"
 ---
 

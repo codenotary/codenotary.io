@@ -1,5 +1,6 @@
 ---
 title: "Jenkins Build Deployment Pipeline: A How To for Ensuring Integrity"
+image: /images/blog/Jenkins-Automation.2-300x96.png
 date: "2019-04-24"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "The Cumbersome Nature of GPG vs an Easy to Use Blockchain Alternative"
+image: /images/blog/GPG-vs-CodeNotary-300x126.png
 date: "2019-08-26"
 ---
 

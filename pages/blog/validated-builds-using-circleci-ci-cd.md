@@ -1,5 +1,6 @@
 ---
 title: "Validated builds using CircleCI"
+image: /images/blog/repo-1024x497.png
 date: "2019-11-08"
 ---
 

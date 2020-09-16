@@ -1,5 +1,6 @@
 ---
 title: "Code Signing Certificates' Journey of Pain #3: When Even Signing Isn’t Enough"
+image: /images/blog/Picture1-300x64.png
 date: "2019-05-10"
 ---
 
