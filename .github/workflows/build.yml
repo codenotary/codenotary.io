@@ -12,5 +12,6 @@ jobs:
             - name: Build
               run: |
                   npm install
+                  npm run update-blog-images  
                   npm run build
                   npm run generate
