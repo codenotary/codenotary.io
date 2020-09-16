@@ -42,17 +42,17 @@
             </PricingTable>
         </PricingTablesWrapper>
         <div>
-			<PricingTablesWrapper>
-            <PricingTable title="All products include">
-                <PricingTableRow>Transactional integrity</PricingTableRow>
-                <PricingTableRow>ACID compliance</PricingTableRow>
-                <PricingTableRow>Encryption</PricingTableRow>
-				<PricingTableRow>Python SDK</PricingTableRow>
-				<PricingTableRow>Node.js SDK</PricingTableRow>
-   				<PricingTableRow>Java SDK</PricingTableRow>
-				<PricingTableRow>Go SDK</PricingTableRow>
-			</PricingTable>
-		</PricingTablesWrapper>
+            <PricingTablesWrapper>
+                <PricingTable title="All products include">
+                    <PricingTableRow>Transactional integrity</PricingTableRow>
+                    <PricingTableRow>ACID compliance</PricingTableRow>
+                    <PricingTableRow>Encryption</PricingTableRow>
+                    <PricingTableRow>Python SDK</PricingTableRow>
+                    <PricingTableRow>Node.js SDK</PricingTableRow>
+                    <PricingTableRow>Java SDK</PricingTableRow>
+                    <PricingTableRow>Go SDK</PricingTableRow>
+                </PricingTable>
+            </PricingTablesWrapper>
         </div>
     </div>
 </template>
