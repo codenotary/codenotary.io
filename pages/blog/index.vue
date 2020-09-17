@@ -4,21 +4,23 @@
             <page-section-header title="Blog" tag="h1" />
             <i-container>
                 <i-row>
-                    <i-column v-for="article of articles" :key="article.slug" md="4">
-                        <i-card class="blog-post">
-                            <img :src="article.image || `/images/blog-post.svg`" class="image -responsive"
-                                :alt="article.title" onerror="this.src='/images/blog-post.svg'"
-                            >
-                            <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
-                                <div class="title">
-                                    {{ article.title }}
+                    <masonry :cols="{default: 4, 1000: 3, 700: 2, 400: 1}" :gutter="{default: '1rem', 700: '1rem'}">
+                        <div v-for="article in articles" :key="article.slug" v-masonry-tile class="item" column-width="33px" >
+                            <i-card class="blog-post">
+                                <div class="image-wrapper">
+                                    <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :alt="article.title" onerror="this.src='/images/blog-post.svg'">
                                 </div>
-                            </nuxt-link>
-                            <div class="date">
-                                {{ article.date }}
-                            </div>
-                        </i-card>
-                    </i-column>
+                                <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
+                                    <div class="title">
+                                        {{ article.title }}
+                                    </div>
+                                </nuxt-link>
+                                <div class="date">
+                                    {{ article.date }}
+                                </div>
+                            </i-card>
+                        </div>
+                    </masonry>
                 </i-row>
             </i-container>
         </page-section>
@@ -51,10 +53,19 @@ export default {
 @import '~@inkline/inkline/src/css/config';
 
 .blog-post {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
-    .image {
-        margin-bottom: 1rem;
+    .image-wrapper {
+        width: 100%;
+        text-align: center;
+
+        .image {
+            object-fit: cover;
+            max-height: 80px;
+            margin-bottom: 1rem;
+            text-align: center;
+            background-position: center center;
+        }
     }
 
     .date {
