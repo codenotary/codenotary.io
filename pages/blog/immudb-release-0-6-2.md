@@ -1,6 +1,7 @@
 ---
 title: "immudb release 0.6.2"
 date: "2020-06-16"
+tags: ["release", "0.6.2"]
 ---
 
 Dear community. immudb has just been released as v0.6.2

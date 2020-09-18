@@ -2,6 +2,7 @@
 title: "immudb release v0.8.0!"
 date: "2020-09-15"
 image: "/images/blog/immudb-mascot-small.png"
+tags: ["release", "0.8"]
 ---
 
 Release v0.8.0 - atomic multi-key operations, cryptographic root signing and new SDKs

@@ -1,8 +1,9 @@
 ---
 title: "immudb release 0.6.1"
 date: "2020-06-10"
+tags: ["release", "0.6.1"]
 ---
-
+lorem
 Dear community. immudb has just been released as v0.6.1
 
 Release v0.6.1 fixes some important bugs and has many improvements - we recommend updating to it

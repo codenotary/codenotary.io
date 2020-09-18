@@ -1,6 +1,7 @@
 ---
 title: "immudb release 0.7 is around the corner"
 date: "2020-08-05"
+tags: ["release", "0.7"]
 ---
 
 immudb is getting faster and stronger! The next release brings new features, even better performance and more resilience to immudb!
