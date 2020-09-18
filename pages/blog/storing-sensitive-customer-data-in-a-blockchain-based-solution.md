@@ -1,5 +1,6 @@
 ---
 title: "Storing Sensitive Customer Data in a Blockchain-based Solution"
+image: /images/blog/blockchain-data-records-300x200.jpg
 date: "2019-06-26"
 ---
 

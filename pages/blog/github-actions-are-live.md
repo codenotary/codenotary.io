@@ -1,5 +1,6 @@
 ---
 title: "GitHub Actions go live Nov 13th and so do our Verify actions"
+image: /images/blog/marketplace-1024x599.png
 date: "2019-10-31"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "What are Checksums and How to Calculate Them for Downloads?"
+image: /images/blog/File-fingerprint-300x211.png
 date: "2019-06-05"
 ---
 

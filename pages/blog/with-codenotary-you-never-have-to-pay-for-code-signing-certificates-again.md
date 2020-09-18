@@ -1,5 +1,6 @@
 ---
 title: "Stop paying for code signing certificates again with CodeNotary"
+image: /images/blog/dashboard_vchain-1024x226.png
 date: "2019-03-27"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Protect Yourself from the Recent dockerhub.com Attack"
+image: /images/blog/1280px-Docker_container_engine_logo.svg.png
 date: "2019-05-01"
 ---
 

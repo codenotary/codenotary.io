@@ -1,5 +1,6 @@
 ---
 title: "Notarizing for the First Time - Report from the Frontline - Customer Feedback"
+image: /images/blog/Customer-Feedback-300x232.png
 date: "2019-09-27"
 ---
 

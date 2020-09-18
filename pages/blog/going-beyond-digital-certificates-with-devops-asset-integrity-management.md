@@ -1,5 +1,6 @@
 ---
 title: "Going Beyond Digital Certificates with DevOps Asset Integrity Management"
+image: /images/blog/truth-puzzle-2-300x94.jpg
 date: "2019-06-13"
 ---
 

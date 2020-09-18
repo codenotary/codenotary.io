@@ -1,5 +1,6 @@
 ---
 title: "Find & Continuously Monitor Your Kubernetes Environment for Unwanted Docker Images"
+image: /images/blog/K8s-Grafana-CodeNotary-300x232.png
 date: "2019-05-19"
 ---
 

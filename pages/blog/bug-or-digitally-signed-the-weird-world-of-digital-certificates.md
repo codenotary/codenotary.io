@@ -1,5 +1,6 @@
 ---
 title: "Bug or digitally signed? The weird world of digital certificates!"
+image: /images/blog/code-signing-with-digicert-utility-4-768x497-1.png
 date: "2019-12-27"
 ---
 

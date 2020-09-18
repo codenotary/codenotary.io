@@ -1,5 +1,6 @@
 ---
 title: "Developers unite against the expensive and cumbersome code signing certificates!"
+image: /images/blog/Don-Ho-post.png
 date: "2019-03-12"
 ---
 

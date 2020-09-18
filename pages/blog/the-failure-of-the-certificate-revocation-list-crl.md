@@ -1,5 +1,6 @@
 ---
 title: "The Failure of the Certificate Revocation List (CRL)"
+image: /images/blog/Screenshot-2019-04-23-19.06.51-300x152.png
 date: "2019-04-24"
 ---
 

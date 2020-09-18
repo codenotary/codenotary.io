@@ -1,5 +1,6 @@
 ---
 title: "The granularity of Digital Certificates"
+image: /images/blog/codenotary-dashboard.png
 date: "2019-03-25"
 ---
 

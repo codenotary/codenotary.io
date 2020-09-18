@@ -1,5 +1,6 @@
 ---
 title: "Before Running a Docker Container Image, Know What’s in the Box"
+image: /images/blog/Container-3-287x300.jpg
 date: "2019-06-06"
 ---
 

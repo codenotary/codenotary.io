@@ -3,7 +3,7 @@
         <i-row class="_align-items-center">
             <i-column lg="6">
                 <h1 class="h2 _font-weight-bold">
-                    Immutable recording of data and processes with CodeNotary Ledger Compliance&reg;
+                    Immutable recording of business data with CodeNotary Ledger Compliance&reg;
                 </h1>
                 <p class="lead">
                     On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification,

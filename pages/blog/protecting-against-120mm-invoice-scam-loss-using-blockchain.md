@@ -1,5 +1,6 @@
 ---
 title: "Protecting Against $120mm Invoice Scam Loss Using Blockchain"
+image: /images/blog/Invoice-Authentication-v4-300x232.png
 date: "2019-07-17"
 ---
 

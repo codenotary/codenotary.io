@@ -1,5 +1,6 @@
 ---
 title: "Protecting the Integrity of Your Downloads (Part #3)"
+image: /images/blog/Lock-in-front-of-2-comps-and-a-globe-in-between-300x168.jpeg
 date: "2019-06-14"
 ---
 

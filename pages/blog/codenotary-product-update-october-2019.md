@@ -1,5 +1,6 @@
 ---
 title: "CodeNotary Product Update – October 2019"
+image: /images/blog/codenotary_mascot_final-oicljfj7ltjgxnmn3023a3ip293np0m2c1rvwo1yu2.png
 date: "2019-10-25"
 ---
 

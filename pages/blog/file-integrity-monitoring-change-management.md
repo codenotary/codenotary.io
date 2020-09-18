@@ -1,5 +1,6 @@
 ---
 title: "File Integrity Monitoring & Change Management"
+image: /images/blog/login.png
 date: "2020-02-11"
 ---
 

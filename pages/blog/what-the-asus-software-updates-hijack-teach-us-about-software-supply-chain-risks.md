@@ -1,5 +1,6 @@
 ---
 title: "What the ASUS Software Updates Hijack Teaches Us About the Risks of Software Supply Chains"
+image: /images/blog/operation-shadowhammer.png
 date: "2019-04-17"
 ---
 

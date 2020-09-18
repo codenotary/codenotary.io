@@ -1,5 +1,6 @@
 ---
 title: "Security? With What Time? My Continuous Integration Backlog is Overflowing"
+image: /images/blog/hacking-300x200.jpg
 date: "2019-05-16"
 ---
 

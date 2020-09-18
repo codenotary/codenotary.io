@@ -1,5 +1,6 @@
 ---
 title: "What are Digital Signatures and How do They Work?"
+image: /images/blog/Digital-Sig-300x161.png
 date: "2019-08-15"
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Integrating Blockchain-based Code Signing into Your Application Using Golang"
+image: /images/blog/Code-Signing-300x261.png
 date: "2019-06-26"
 ---
 

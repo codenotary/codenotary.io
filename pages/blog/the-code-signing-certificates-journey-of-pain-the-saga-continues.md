@@ -1,5 +1,6 @@
 ---
 title: "The Code Signing Certificates' Journey of Pain: The Saga Continues"
+image: /images/blog/img1-1.jpg
 date: "2019-03-11"
 ---
 

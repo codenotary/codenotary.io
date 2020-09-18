@@ -1,5 +1,6 @@
 ---
 title: "Linux: protecting configuration files"
+image: /images/blog/vcn_notarize.png
 date: "2019-12-03"
 ---
 

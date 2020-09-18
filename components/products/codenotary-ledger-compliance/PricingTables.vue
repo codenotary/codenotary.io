@@ -9,7 +9,7 @@
             <PricingTable title="Demo Container">
                 <PricingTableRow>10GB storage</PricingTableRow>
                 <PricingTableRow>100,000 transactions per second</PricingTableRow>
-                <PricingTableRow>1 database</PricingTableRow>
+                <PricingTableRow>1 ledger</PricingTableRow>
                 <template slot="price">
                     <strong class="price">FREE</strong>
                 </template>
@@ -17,7 +17,7 @@
             <PricingTable title="Virtual Appliance" subtitle="Or direct install">
                 <PricingTableRow>No storage limit</PricingTableRow>
                 <PricingTableRow>No transactions limit</PricingTableRow>
-                <PricingTableRow>5 databases</PricingTableRow>
+                <PricingTableRow>5 ledgers</PricingTableRow>
                 <template slot="price">
                     <small>Starting at</small>
                     <strong class="price">1200</strong>
@@ -27,7 +27,7 @@
             <PricingTable title="Hardware Appliance">
                 <PricingTableRow>No storage limit</PricingTableRow>
                 <PricingTableRow>No transactions limit</PricingTableRow>
-                <PricingTableRow>Unlimited databases</PricingTableRow>
+                <PricingTableRow>Unlimited ledgers</PricingTableRow>
                 <PricingTableRow>Cryptographic Hardware Accelerator</PricingTableRow>
                 <PricingTableRow>Tamper-resistant smart card</PricingTableRow>
                 <PricingTableRow>Blockchain-protected audit dumps</PricingTableRow>
