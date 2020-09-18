@@ -47,7 +47,7 @@
                     <template slot="short-row">
                         <PricingTableRow class="_margin-right-1">Transactional integrity</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">ACID compliance</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Transactional integrity</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Cryptographic verification</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">Encryption</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">SDKs (Python, Node.js, Java, Go)</PricingTableRow>
                     </template>
