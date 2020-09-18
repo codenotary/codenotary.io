@@ -12,9 +12,9 @@ export default {}
 @import "~@inkline/inkline/src/css/config";
 
 .pricing-table {
-    .rows {
+    .rows,
+    .row {
         .pricing-table-row {
-            border-bottom: 1px solid $border-color-light;
             padding: 1rem 0;
 
             &:last-child {
@@ -27,5 +27,12 @@ export default {}
             }
         }
     }
+
+    .rows {
+        .pricing-table-row {
+            border-bottom: 1px solid $border-color-light;
+        }
+    }
+
 }
 </style>

@@ -6,7 +6,7 @@
             </h5>
         </div>
         <PricingTablesWrapper>
-            <PricingTable title="Demo Container">
+            <PricingTable title="Demo Container" subtitle="&nbsp;">
                 <PricingTableRow>10GB storage</PricingTableRow>
                 <PricingTableRow>100,000 transactions per second</PricingTableRow>
                 <PricingTableRow>1 ledger</PricingTableRow>
@@ -24,7 +24,7 @@
                     <sup>$</sup><small>/month</small>
                 </template>
             </PricingTable>
-            <PricingTable title="Hardware Appliance">
+            <PricingTable title="Hardware Appliance" subtitle="&nbsp;">
                 <PricingTableRow>No storage limit</PricingTableRow>
                 <PricingTableRow>No transactions limit</PricingTableRow>
                 <PricingTableRow>Unlimited ledgers</PricingTableRow>
@@ -44,13 +44,13 @@
         <div>
             <PricingTablesWrapper>
                 <PricingTable title="All products include">
-                    <PricingTableRow>Transactional integrity</PricingTableRow>
-                    <PricingTableRow>ACID compliance</PricingTableRow>
-                    <PricingTableRow>Encryption</PricingTableRow>
-                    <PricingTableRow>Python SDK</PricingTableRow>
-                    <PricingTableRow>Node.js SDK</PricingTableRow>
-                    <PricingTableRow>Java SDK</PricingTableRow>
-                    <PricingTableRow>Go SDK</PricingTableRow>
+                    <template slot="short-row">
+                        <PricingTableRow class="_margin-right-1">Transactional integrity</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">ACID compliance</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Transactional integrity</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Encryption</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">SDKs (Python, Node.js, Java, Go)</PricingTableRow>
+                    </template>
                 </PricingTable>
             </PricingTablesWrapper>
         </div>

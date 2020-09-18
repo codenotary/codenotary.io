@@ -1,10 +1,13 @@
 <template>
     <div class="pricing-table">
         <h4 class="title">{{ title }}</h4>
-        <div class="subtitle">{{ subtitle }}&nbsp;</div>
+        <div v-value="subtitle" class="subtitle" />
         <div class="body">
             <div class="rows">
                 <slot />
+            </div>
+            <div class="row _justify-content-center">
+                <slot name="short-row" />
             </div>
             <div class="price-wrapper">
                 <slot name="price" />
@@ -56,6 +59,8 @@ export default {
         flex: 1;
         display: flex;
         flex-direction: column;
+        // flex-direction: row;
+        // flex-wrap: wrap;
         justify-content: space-between;
     }
 
