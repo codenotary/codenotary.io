@@ -43,13 +43,18 @@
         </PricingTablesWrapper>
         <div>
             <PricingTablesWrapper>
-                <PricingTable title="All products include">
+                <PricingTable title="CodeNotary Ledger Compliance features">
                     <template slot="short-row">
+                        <PricingTableRow class="_margin-right-1">ACID</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">Transactional integrity</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">ACID compliance</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Batch operations</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">Cryptographic verification</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Inclusion detection</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">Encryption</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">SDKs (Python, Node.js, Java, Go)</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">SDK (Python, Node.js, Java, Go)</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Backup/Restore</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Tamperproof dump</PricingTableRow>
+                       <PricingTableRow class="_margin-right-1">and much more</PricingTableRow>
                     </template>
                 </PricingTable>
             </PricingTablesWrapper>
