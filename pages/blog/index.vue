@@ -4,23 +4,25 @@
             <page-section-header title="Blog" tag="h1" />
             <i-container>
                 <i-row>
-                    <masonry :cols="{default: 4, 1000: 3, 700: 2, 400: 1}" :gutter="{default: '1rem', 700: '1rem'}">
-                        <div v-for="article in articles" :key="article.slug" v-masonry-tile class="item" column-width="33px" >
-                            <i-card class="blog-post">
-                                <div class="image-wrapper">
-                                    <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :alt="article.title" onerror="this.src='/images/blog-post.svg'">
-                                </div>
-                                <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
-                                    <div class="title">
-                                        {{ article.title }}
+                    <no-ssr>
+                        <masonry :cols="{default: 4, 1000: 3, 700: 2, 400: 1}" :gutter="{default: '1rem', 700: '1rem'}">
+                            <div v-for="article in articles" :key="article.slug" v-masonry-tile class="item" column-width="33px" >
+                                <i-card class="blog-post">
+                                    <div class="image-wrapper">
+                                        <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :alt="article.title" onerror="this.src='/images/blog-post.svg'">
                                     </div>
-                                </nuxt-link>
-                                <div class="date">
-                                    {{ article.date }}
-                                </div>
-                            </i-card>
-                        </div>
-                    </masonry>
+                                    <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
+                                        <div class="title">
+                                            {{ article.title }}
+                                        </div>
+                                    </nuxt-link>
+                                    <div class="date">
+                                        {{ article.date }}
+                                    </div>
+                                </i-card>
+                            </div>
+                        </masonry>
+                    </no-ssr>
                 </i-row>
             </i-container>
         </page-section>
@@ -28,9 +30,13 @@
 </template>
 
 <script>
+import NoSSR from 'vue-no-ssr'
 import { title } from '~/helpers/meta';
 
 export default {
+    components: {
+        'no-ssr': NoSSR
+    },
     head() {
         return {
             title: title('Blog')
@@ -45,6 +51,11 @@ export default {
         return {
             articles
         };
+    },
+    mounted () {
+        if (typeof this.$redrawVueMasonry === 'function') {
+            this.$redrawVueMasonry()
+        }
     }
 }
 </script>

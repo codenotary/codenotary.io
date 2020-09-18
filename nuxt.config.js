@@ -41,7 +41,7 @@ export default {
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
-        { src: '~plugins/vue-masonry-css', ssr: false  },
+        { src: '~plugins/vue-masonry-css', ssr: false },
         '~plugins/inkline'
     ],
     /*
