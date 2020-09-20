@@ -1,6 +1,8 @@
 ---
 title: "Immutably store or guarantee the immutability of documents and invoices for compliance reasons"
 date: "2020-08-12"
+image: "/images/blog/bookkeeper.jpg"
+tags: ["GoBD", "immutability", "compliance"]
 ---
 
 In most countries, invoices, contracts and important documents relating to the operation and running of businesses must be stored in a forgery-proof manner.
