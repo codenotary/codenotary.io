@@ -4,9 +4,16 @@ const title = 'Immutable Recording of Data and Processes - CodeNotary';
 const description = 'Immutable recording of data and processes with CodeNotary Ledger Compliance®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.';
 
 export default {
-    mode: 'universal',
+    /*
+    ** ssr propery
+    ** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
+    */
+    ssr: true,
+    /*
+    ** components propery
+    ** Doc: https://nuxtjs.org/api/configuration-components/
+    */
     components: true,
-
     /*
     ** Headers of the page
     */
@@ -113,14 +120,14 @@ export default {
 
     router: {
         linkExactActiveClass: '-active',
-        extendRoutes(routes, resolve) {
-            Object.keys(wordPressRoutes).forEach((path) => {
-                routes.push({
-                    name: wordPressRoutes[path],
-                    path,
-                    component: resolve(__dirname, 'pages/wp.vue')
-                })
-            });
-        }
+        // extendRoutes(routes, resolve) {
+        //     Object.keys(wordPressRoutes).forEach((path) => {
+        //         routes.push({
+        //             name: wordPressRoutes[path],
+        //             path,
+        //             component: resolve(__dirname, 'pages/wp.vue')
+        //         })
+        //     });
+        // }
     }
 }
