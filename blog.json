@@ -56,6 +56,7 @@
   "use-github-actions-for-validated-builds.md": "use-github-actions-for-validated-builds.md",
   "using-blockchain-to-protect-against-wire-fraud-scams.md": "using-blockchain-to-protect-against-wire-fraud-scams.md",
   "validated-builds-using-circleci-ci-cd.md": "validated-builds-using-circleci-ci-cd.md",
+  "vchain-new-equity-financing.md": "vchain-new-equity-financing.md",
   "vchain-the-global-standard-for-enabling-high-integrity-verifiable-software-distribution-opens-its-european-research-and-development-center-in-vienna.md": "vchain-the-global-standard-for-enabling-high-integrity-verifiable-software-distribution-opens-its-european-research-and-development-center-in-vienna.md",
   "verify-digital-asset-integrity-against-the-blockchain-for-free-using-golang.md": "verify-digital-asset-integrity-against-the-blockchain-for-free-using-golang.md",
   "verify-the-integrity-of-a-docker-image-for-free-with-codenotary.md": "verify-the-integrity-of-a-docker-image-for-free-with-codenotary.md",
