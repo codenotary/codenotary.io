@@ -1,4 +1,5 @@
-import wordPressRoutes from './wp';
+// import blogRoutes from './wp';
+import blogRoutes from './blog';
 
 const title = 'Immutable Recording of Data and Processes - CodeNotary';
 const description = 'Immutable recording of data and processes with CodeNotary Ledger Compliance®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.';
@@ -133,16 +134,15 @@ export default {
 
     generate: {
         routes: () => {
-            if (wordPressRoutes) {
-                const map = Object.keys(wordPressRoutes);
-                console.log(map, map.length);
+            if (blogRoutes) {
+                console.log('==================');
+                console.log(blogRoutes);
+                const map = Object.keys(blogRoutes);
                 if (map && map.length) {
-                    return map.map((path) => {
-                        return {
-                            route: `/blog/${wordPressRoutes[path]}`,
-                            payload: path
-                        }
-                    });                    
+                    return map.map((path) => ({
+                        route: `/blog/${blogRoutes[path]}`,
+                        payload: path
+                    }));                    
                 }
             }
         }

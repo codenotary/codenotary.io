@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "updating blog json list file"
+
 # change directory temporaly to ./pages/blog
 pushd './pages/blog/'
 
@@ -15,24 +17,29 @@ length=`find "." -type f -name "*.md" | wc -l`
 echo "{" >> $BLOG_FILE
 
 i=1
-for f in *.md; do
+for filename in *.md; do
     # if filename path is valid
-    [ -e "$f" ] || continue
+    [ -e "$filename" ] || continue
     
+    f=$(echo "$filename" | cut -f 1 -d '.')
+    echo "---"
     echo $f
+    echo "---"
 
     if [[ $i == $length ]]
     then
-        echo "  \"$f\": \"$f\"" >> $BLOG_FILE
+        echo "  \"/$f\": \"$f\"" >> $BLOG_FILE
         break
     else 
-        echo "  \"$f\": \"$f\"," >> $BLOG_FILE
+        echo "  \"/$f\": \"$f\"," >> $BLOG_FILE
     fi 
     ((i=i+1))
 done
 
 # append json end character
 echo "}" >> $BLOG_FILE
+
+echo "new file has {$length} entries"
 
 # goes back to starting directory
 popd
