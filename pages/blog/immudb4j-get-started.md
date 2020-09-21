@@ -117,7 +117,7 @@ Setting `immudb` url and port:
 Customizing the `Root Holder`:
 
     FileRootHolder rootHolder = FileRootHolder.newBuilder()
-                                    .setRootsFolder("./my\_immuapp\_roots")
+                                    .setRootsFolder("./my_immuapp_roots")
                                     .build();
 
     ImmuClient immuClient = ImmuClient.newBuilder()
