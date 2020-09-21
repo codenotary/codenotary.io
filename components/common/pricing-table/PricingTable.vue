@@ -3,10 +3,10 @@
         <h4 class="title">{{ title }}</h4>
         <div v-value="subtitle" class="subtitle" />
         <div class="body">
-            <div class="rows">
+            <div class="rows line">
                 <slot />
             </div>
-            <div class="row _justify-content-center">
+            <div class="rows flex _justify-content-center">
                 <slot name="short-row" />
             </div>
             <div class="price-wrapper">
