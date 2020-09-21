@@ -1,4 +1,3 @@
-// import blogRoutes from './wp';
 import blogRoutes from './blog';
 
 const title = 'Immutable Recording of Data and Processes - CodeNotary';
