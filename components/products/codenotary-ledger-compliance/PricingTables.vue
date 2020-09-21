@@ -46,6 +46,7 @@
                 <PricingTable title="CodeNotary Ledger Compliance features">
                     <template slot="short-row">
                         <PricingTableRow class="_margin-right-1">ACID</PricingTableRow>
+                        <PricingTableRow class="_margin-right-1">Sharding</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">Transactional integrity</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">Batch operations</PricingTableRow>
                         <PricingTableRow class="_margin-right-1">Cryptographic verification</PricingTableRow>
