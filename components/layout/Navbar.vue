@@ -51,7 +51,10 @@ export default {
     },
     computed: {
         cicd() {
-            return this.$route.name.indexOf('technologies-ci-cd') === 0;
+            if (this.$route.name) {
+                return this.$route.name.indexOf('technologies-ci-cd') === 0;
+            }
+            return false;
         }
     },
     methods: {
