@@ -129,5 +129,22 @@ export default {
         //         })
         //     });
         // }
+    },
+
+    generate: {
+        routes: () => {
+            if (wordPressRoutes) {
+                const map = Object.keys(wordPressRoutes);
+                console.log(map, map.length);
+                if (map && map.length) {
+                    return map.map((path) => {
+                        return {
+                            route: `/blog/${wordPressRoutes[path]}`,
+                            payload: path
+                        }
+                    });                    
+                }
+            }
+        }
     }
 }
