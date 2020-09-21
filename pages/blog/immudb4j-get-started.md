@@ -105,22 +105,22 @@ The following code snippets shows how to create a client.
 
 Using default configuration:
 
-    ImmuClient immuClient \= ImmuClient.newBuilder().build();
+    ImmuClient immuClient = ImmuClient.newBuilder().build();
 
 Setting `immudb` url and port:
 
-    ImmuClient immuClient \= ImmuClient.newBuilder()
+    ImmuClient immuClient = ImmuClient.newBuilder()
                                 .setServerUrl("localhost")
                                 .setServerPort(3322)
                                 .build();
 
 Customizing the `Root Holder`:
 
-    FileRootHolder rootHolder \= FileRootHolder.newBuilder()
+    FileRootHolder rootHolder = FileRootHolder.newBuilder()
                                     .setRootsFolder("./my\_immuapp\_roots")
                                     .build();
 
-    ImmuClient immuClient \= ImmuClient.newBuilder()
+    ImmuClient immuClient = ImmuClient.newBuilder()
                                       .withRootHolder(rootHolder)
                                       .build();
 
@@ -150,18 +150,18 @@ Specify the active database with:
 
 immudb provides read and write operations that behave as a traditional key-value store i.e. no cryptographic verification is done. This operation may be used when validations can be postponed:
 
-    client.set("k123", new byte\[\]{1, 2, 3});
+    client.set("k123", new byte[]{1, 2, 3});
     
-    byte\[\] v \= client.get("k123");
+    byte[] v = client.get("k123");
 
 ### [](https://github.com/codenotary/immudb.io/blob/master/src/_blog/2020-08-20-immudb4j-get-started.md#verified-or-safe-read-and-write)Verified or Safe read and write
 
 immudb provides built-in cryptographic verification for any entry. The client implements the mathematical validations while the application uses as a traditional read or write operation:
 
     try {
-        client.safeSet("k123", new byte\[\]{1, 2, 3});
+        client.safeSet("k123", new byte[]{1, 2, 3});
     
-        byte\[\] v \= client.safeGet("k123");
+        byte[] v \= client.safeGet("k123");
 
     } (catch VerificationException e) {
 
