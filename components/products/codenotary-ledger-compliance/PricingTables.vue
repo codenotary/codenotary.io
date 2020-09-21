@@ -95,8 +95,8 @@ export default {
         this.showMore = null;
     },
     mounted () {
-        // this.isMobile = this.$device.isMobile;
-        // this.isMobile && (this.limit = MOBILE_LIMIT);
+        this.isMobile = this.$device.isMobile;
+        this.isMobile && (this.limit = MOBILE_LIMIT);
     },
     computed: {
         parsedFeatures () {

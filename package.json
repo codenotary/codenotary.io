@@ -19,6 +19,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@inkline/inkline": "^2.3.0",
+    "@nuxtjs/device": "^1.2.7",
     "axios": "^0.20.0",
     "nuxt": "^2.14.3",
     "prism-themes": "^1.4.0",

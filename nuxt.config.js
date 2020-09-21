@@ -75,6 +75,8 @@ export default {
         '@nuxtjs/style-resources',
         // Doc: https://github.com/rigor789/vue-scrollto
         'vue-scrollto/nuxt',
+        // Doc: https://www.npmjs.com/package/@nuxtjs/device
+        '@nuxtjs/device',
         // Doc: https://github.com/vaso2/nuxt-fontawesome
         ['nuxt-fontawesome', {
             component: 'fa',
@@ -120,23 +122,12 @@ export default {
     },
 
     router: {
-        linkExactActiveClass: '-active',
-        // extendRoutes(routes, resolve) {
-        //     Object.keys(wordPressRoutes).forEach((path) => {
-        //         routes.push({
-        //             name: wordPressRoutes[path],
-        //             path,
-        //             component: resolve(__dirname, 'pages/wp.vue')
-        //         })
-        //     });
-        // }
+        linkExactActiveClass: '-active'
     },
 
     generate: {
         routes: () => {
             if (blogRoutes) {
-                console.log('==================');
-                console.log(blogRoutes);
                 const map = Object.keys(blogRoutes);
                 if (map && map.length) {
                     return map.map((path) => ({
