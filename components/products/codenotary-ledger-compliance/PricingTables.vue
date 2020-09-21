@@ -45,17 +45,10 @@
             <PricingTablesWrapper>
                 <PricingTable title="CodeNotary Ledger Compliance features">
                     <template slot="short-row">
-                        <PricingTableRow class="_margin-right-1">ACID</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Sharding</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Transactional integrity</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Batch operations</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Cryptographic verification</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Inclusion detection</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Encryption</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">SDK (Python, Node.js, Java, Go)</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Tamperproof backup/restore</PricingTableRow>
-                        <PricingTableRow class="_margin-right-1">Tamperproof dump</PricingTableRow>
-                       <PricingTableRow class="_margin-right-1">and much more</PricingTableRow>
+                        <PricingTableRow v-for="(item, idx) in parsedFeatures" :key="idx" class="_margin-right-1" :fill="isMobile">
+                            {{ item && item.label }}
+                        </PricingTableRow>
+                        <i-button link variant="secondary" @click="showMore = !showMore">show {{ showMore ? 'less...' : 'more...' }}</i-button>
                     </template>
                 </PricingTable>
             </PricingTablesWrapper>
@@ -68,12 +61,50 @@ import PricingTable from '~/components/common/pricing-table/PricingTable';
 import PricingTableRow from '~/components/common/pricing-table/PricingTableRow';
 import PricingTablesWrapper from '~/components/common/pricing-table/PricingTablesWrapper';
 
+const DESKTOP_LIMIT = 5;
+const MOBILE_LIMIT = 3;
+
 export default {
     name: 'CodeNotaryLedgerCompliancePricing',
     components: {
         PricingTable,
         PricingTableRow,
         PricingTablesWrapper
+    },
+    data: () => ({
+        isMobile: false,
+        features: [
+            { label: 'ACID' },
+            { label: 'Sharding' },
+            { label: 'Transactional integrity' },
+            { label: 'Batch operations' },
+            { label: 'Cryptographic verification' },
+            { label: 'Inclusion detection' },
+            { label: 'Encryption' },
+            { label: 'SDKs (Python, Node.js, Java, Go)' },
+            { label: 'Tamperproof backup/restore' },
+            { label: 'Tamperproof dump' }
+        ],
+        limit: DESKTOP_LIMIT,
+        showMore: false
+    }),
+    beforeDestroy () {
+        this.isMobile = null;
+        this.featues = null;
+        this.limit = null;
+        this.showMore = null;
+    },
+    mounted () {
+        // this.isMobile = this.$device.isMobile;
+        // this.isMobile && (this.limit = MOBILE_LIMIT);
+    },
+    computed: {
+        parsedFeatures () {
+            if (this.features && this.features.length) {
+                return this.showMore ? this.features : this.features.slice(0, this.limit);
+            }
+            return [];
+        }
     }
 }
 </script>
