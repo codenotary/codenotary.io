@@ -108,15 +108,5 @@ export default {
             }
         }
     }
-
-    .VueCarousel-pagination {
-        button.VueCarousel-dot {
-            outline: none !important;
-
-            &.VueCarousel-dot--active {
-                background-color: #5FB072 !important;
-            }
-        }
-    }
 }
 </style>
