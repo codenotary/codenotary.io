@@ -6,83 +6,50 @@
                     <page-section-header title="Features" />
                 </i-column>
             </i-row>
-            <VueSlickCarousel v-bind="settings">
-                <div>
+            <i-row center top>
+                <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
                         <img slot="image" src="/images/ci-cd/features/easy_to_use.svg" alt="Easy to use" >
                         <h4 class="title _text-primary">Easy to use</h4>
                         <p>Unlike cumbersome and expensive digital certificates CodeNotary allows you to notarize your digital assets yourself in a split second, without any intermediary.</p>
                     </i-card>
-                </div>
-                <div>
+                </i-column>
+                <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
                         <img slot="image" src="/images/ci-cd/features/tamperproof.svg" alt="Tamperproof" >
                         <h4 class="title _text-primary">Tamperproof</h4>
                         <p>Your notarizations are written in stone, in a blockchain and you can easily revoke any of your notarized assets in seconds. The blockchain is spread around the globe and is always up.</p>
                     </i-card>
-                </div>
-                <div>
+                </i-column>
+                <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
                         <img slot="image" src="/images/ci-cd/features/full_transparency.svg" alt="Full transparency" >
                         <h4 class="title _text-primary">Full transparency</h4>
                         <p>Anyone can authenticate the authenticity and provenance of any of your notarized assets using cryptographic verification of their SHA256 hashes stored in the blockchain.</p>
                     </i-card>
-                </div>
-                <div>
+                </i-column>
+                <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
                         <img slot="image" src="/images/ci-cd/features/notarize.svg" alt="Notarize" >
                         <h4 class="title _text-primary">Notarize</h4>
                         <p>Notarize your source code, documents, libraries, builds, and containers onto the blockchain in one simple step and immutably attach your identity, reputation, and trust to them, independently or as an organization.</p>
                     </i-card>
-                </div>
-                <div>
+                </i-column>
+                <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
                         <img slot="image" src="/images/ci-cd/features/authenticate.svg" alt="Authenticate" >
                         <h4 class="title _text-primary">Authenticate</h4>
                         <p>Automate and continuously authenticate the integrity of any digital asset in your environment. Enable anyone, anywhere, at any time to verify the authenticity of your solutions simply and for free.</p>
                     </i-card>
-                </div>
-            </VueSlickCarousel>
+                </i-column>
+            </i-row>
         </i-container>
     </page-section>
 </template>
 
 <script>
 export default {
-    name: 'CiCdFeatures',
-    data: () => ({
-        settings: {
-            slidesToShow: 3,
-            arrows: true,
-            dots: true,
-            centerMode: true,
-            focusOnSelect: true,
-            lazyLoad: 'progressive',
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 10000,
-            pauseOnDotsHover: true,
-            pauseOnFocus: true,
-            pauseOnHover: true,
-            responsive: [
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        }
-    }),
-    beforeDestroy () {
-        this.settings = null;
-    }
+    name: 'CiCdFeatures'
 }
 </script>
 
@@ -113,16 +80,6 @@ export default {
 
             p {
                 font-weight: 300;
-            }
-        }
-    }
-
-    .VueCarousel-pagination {
-        button.VueCarousel-dot {
-            outline: none !important;
-
-            &.VueCarousel-dot--active {
-                background-color: #5FB072 !important;
             }
         }
     }
