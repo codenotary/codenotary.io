@@ -51,12 +51,25 @@ export default {
     name: 'CiCdHowItWorks',
     data: () => ({
         settings: {
-            slidesPerRow: 2,
+            slidesToShow: 2,
             arrows: true,
             dots: true,
-            centerMode: true,
             focusOnSelect: true,
-            lazyLoad: 'progressive'
+            lazyLoad: 'progressive',
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
         }
     }),
     beforeDestroy () {

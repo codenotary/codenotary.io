@@ -57,7 +57,27 @@ export default {
             dots: true,
             centerMode: true,
             focusOnSelect: true,
-            lazyLoad: 'progressive'
+            lazyLoad: 'progressive',
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 10000,
+            pauseOnDotsHover: true,
+            pauseOnFocus: true,
+            pauseOnHover: true,
+            responsive: [
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
         }
     }),
     beforeDestroy () {
