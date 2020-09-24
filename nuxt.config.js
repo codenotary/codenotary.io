@@ -40,6 +40,8 @@ export default {
     ** Global CSS
     */
     css: [
+        'vue-slick-carousel/dist/vue-slick-carousel.css',
+        'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
     ],
     /*
     ** Plugins to load before mounting the App
@@ -49,6 +51,7 @@ export default {
         { src: '~plugins/vgo', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
         { src: '~plugins/vue-masonry-css', ssr: false },
+        '~plugins/vue-slick-carousel',
         '~plugins/inkline'
     ],
     /*

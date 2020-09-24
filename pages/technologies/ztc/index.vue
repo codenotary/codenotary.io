@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ZtcHeader from '~/components/sections/ztc/ZtcHeader';
+import ZtcHeader from '~/components/sections/headers/ZtcHeader';
 import ZtcAboutSection from '~/components/sections/ztc/ZtcAboutSection';
 import ZtcTechnologyPlatformSection from '~/components/sections/ztc/ZtcTechnologyPlatformSection';
 import ZtcMonitoringSection from '~/components/sections/ztc/ZtcMonitoringSection';

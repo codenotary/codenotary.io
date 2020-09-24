@@ -1,7 +1,7 @@
 <template>
     <i-header id="about-header">
         <i-row class="_align-items-center">
-            <i-column md="8">
+            <i-column xs="12" md="8">
                 <h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
                     We are vChain Inc
                 </h1>

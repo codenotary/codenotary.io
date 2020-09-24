@@ -32,9 +32,6 @@
                 <!--i-nav-item :to="{ name: 'partners' }">Partners</i-nav-item-->
                 <i-nav-item :to="{ name: 'contact' }">Contact us</i-nav-item>
             </i-nav>
-            <i-nav v-show="cicd">
-                <i-button variant="primary" href="https://dashboard.codenotary.io/auth/signup">Sign up</i-button>
-            </i-nav>
         </i-navbar-items>
     </i-navbar>
 </template>
@@ -47,14 +44,6 @@ export default {
     data() {
         return {
             isNavbarCollapsed: false
-        }
-    },
-    computed: {
-        cicd() {
-            if (this.$route.name) {
-                return this.$route.name.indexOf('technologies-ci-cd') === 0;
-            }
-            return false;
         }
     },
     methods: {
