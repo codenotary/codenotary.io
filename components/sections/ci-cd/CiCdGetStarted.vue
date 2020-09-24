@@ -4,7 +4,7 @@
             <i-row>
                 <i-column>
                     <h5 class="description _text-center _margin-bottom-3">
-                        Ready to try? get started in a fistful of clicks
+                        Ready to try? Get started in a fistful of clicks!
                     </h5>
                     <p class="action _text-center">
                         <i-button size="lg" variant="primary" href="https://dashboard.codenotary.io/auth/signup" target="_blank">Get started</i-button>

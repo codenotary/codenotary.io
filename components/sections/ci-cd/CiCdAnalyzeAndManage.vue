@@ -3,7 +3,7 @@
         <i-container>
             <i-tabs class="analyze-and-manage-tabs" stretch>
                 <i-tab title="Main Dashboard">
-                    <h5 class="title _text-primary"><strong>Gain insights into your DevOps environment. Which container is run on which server by which build</strong></h5>
+                    <h5 class="title _text-primary"><strong>Gain insights into your Devops environment: which container is run on which server by which build</strong></h5>
                     <img src="/images/ci-cd/analyze-and-manage/main_dashboard.png" alt="Gain insights into your DevOps environment. Which container is run on which server by which build">
                 </i-tab>
                 <i-tab title="My Assets">

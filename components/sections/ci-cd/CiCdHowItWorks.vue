@@ -19,15 +19,15 @@
                         <div>
                             <i-card>
                                 <h5 class="title _text-primary"><strong>2. Create a unique identity</strong></h5>
-                                <p>No matter if its an user of your software or a reader of one of your documents.</p>
-                                <p>Start sharing your identity within the authenticate process.</p>
+                                <p>No matter if it is a user of your software or a reader of one of your documents.</p>
+                                <p>Start sharing your identity within the authentication process.</p>
                             </i-card>
                         </div>
                         <div>
                             <i-card>
                                 <h5 class="title _text-primary"><strong>3. Notarize your digital asset</strong></h5>
                                 <p>Use our modern dashboard to individually notarize and manage all of your notarized digital assets.</p>
-                                <p>We at CodeNotary did everything to enable a highly secure (Blockchain-strong) service that timestamps an unique digital asset identity together with your unique identity (notarization).</p>
+                                <p>We at CodeNotary did everything to enable a highly secure (Blockchain-strong) service that timestamps a unique digital asset identity together with your unique identity (notarization).</p>
                                 <p><strong>Your file is never uploaded!</strong></p>
                             </i-card>
                         </div>
@@ -35,7 +35,7 @@
                             <i-card>
                                 <h5 class="title _text-primary"><strong>4. Authenticate</strong></h5>
                                 <p>Authenticate (no install).</p>
-                                <p>The moment a digital asset like a document or a docker image has been notarized. Everyone from anywhere in the world can authenticate that asset without uploading the file itself. <a href="https://authenticate.codenotary.io" target="_blank" rel="noopener">https://authenticate.codenotary.io</a></p>
+                                <p>From the moment a digital asset like a document or a docker image has been notarized, everyone from anywhere in the world can authenticate that asset without uploading the file itself. <a href="https://authenticate.codenotary.io" target="_blank" rel="noopener">https://authenticate.codenotary.io</a></p>
                                 <p>You can use our command line interface as well. Just think about only starting software or container that are trusted by you (notarized).</p>
                             </i-card>
                         </div>
