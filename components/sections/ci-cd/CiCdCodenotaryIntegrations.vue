@@ -4,7 +4,7 @@
             <i-row>
                 <i-column>
                     <page-section-header title="CodeNotary Integrations">
-                        <span>CodeNotary integrates easily the most popular CI, CI/CD and DevOps tools, and you can add new ones in a flash with our API and command line tools.</span>
+                        <p class="lead">CodeNotary integrates easily the most popular CI, CI/CD and DevOps tools, and you can add new ones in a flash with our API and command line tools.</p>
                     </page-section-header>
                 </i-column>
             </i-row>

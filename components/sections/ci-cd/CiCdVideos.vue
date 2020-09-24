@@ -5,8 +5,8 @@
                 <div>
                     <i-row middle class="_padding-1">
                         <i-column xs="12" sm="12" md="4">
-                            <h4 class="title _text-primary"><strong>immudb is a lightweight, high-speed immutable database for systems and applications.</strong></h4>
-                            <p style="font-weight: 300">With immudb you can track changes in sensitive data in your transactional databases and then record those changes indelibly in a the tamperproof immudb database. This allows you to keep an indelible history of, say, your debit/credit transactions.</p>
+                            <h4 class="title _font-weight-bold _text-primary">immudb is a lightweight, high-speed immutable database for systems and applications.</h4>
+                            <p class="lead">With immudb you can track changes in sensitive data in your transactional databases and then record those changes indelibly in a the tamperproof immudb database. This allows you to keep an indelible history of, say, your debit/credit transactions.</p>
                         </i-column>
                         <i-column xs="12" sm="12" md="8">
                             <div v-if="page === 2" class="_embed _embed-16by9">
@@ -19,8 +19,8 @@
                 <div>
                     <i-row middle class="_padding-1">
                         <i-column xs="12" sm="12" md="4">
-                            <h4 class="title _text-primary"><strong>immudb is a lightweight, high-speed immutable database for systems and applications.</strong></h4>
-                            <p style="font-weight: 300">With immudb you can track changes in sensitive data in your transactional databases and then record those changes indelibly in a the tamperproof immudb database. This allows you to keep an indelible history of, say, your debit/credit transactions.</p>
+                            <h4 class="title _font-weight-bold _text-primary">Email and Attachment Trust & Integrity</h4>
+                            <p class="lead">Protect yourself and your colleagues by enabling file integrity and origin verification (email, wetransfer, aso).</p>
                         </i-column>
                         <i-column xs="12" sm="12" md="8">
                             <div v-if="page === 0" class="_embed _embed-16by9">
@@ -33,8 +33,8 @@
                 <div>
                     <i-row middle class="_padding-1">
                         <i-column xs="12" sm="12" md="4">
-                            <h4 class="title _text-primary"><strong>immudb is a lightweight, high-speed immutable database for systems and applications</strong>.</h4>
-                            <p style="font-weight: 300">With immudb you can track changes in sensitive data in your transactional databases and then record those changes indelibly in a the tamperproof immudb database. This allows you to keep an indelible history of, say, your debit/credit transactions.</p>
+                            <h4 class="title _font-weight-bold _text-primary">Trusted DevOps and CI/CD using CodeNotary.</h4>
+                            <p class="lead">CodeNotary enables any company, developer, automation engineer, DevOps engineer ... to secure a single or all stages of a Continous Integration & Continuous Deployment pipeline. Authenticate all incoming data and notarize all results including metadata on a Blockchain using the CodeNotary.io service.</p>
                         </i-column>
                         <i-column xs="12" sm="12" md="8">
                             <div v-if="page === 1" class="_embed _embed-16by9">
@@ -89,14 +89,6 @@ export default {
         .body {
             border: none;
             text-align: center;
-
-            h4 {
-                font-weight: bold;
-            }
-
-            p {
-                font-weight: 300;
-            }
         }
     }
 

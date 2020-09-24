@@ -3,7 +3,7 @@
         <i-container>
             <i-row>
                 <i-column>
-                    <h5 class="description _text-center _margin-bottom-3">
+                    <h5 class="description lead _text-center _margin-bottom-3">
                         Ready to try? Get started in a fistful of clicks!
                     </h5>
                     <p class="action _text-center">
@@ -28,9 +28,5 @@ export default {
 #ci-cd-get-started-section {
     background-color: white;
     overflow: hidden;
-
-    h5 {
-        font-weight: 300;
-    }
 }
 </style>
