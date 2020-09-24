@@ -4,7 +4,7 @@
             <i-row>
                 <i-column>
                     <page-section-header title="Monitoring the Network" block>
-                        The ZTC has implemented a monitoring infrastructure using <a href="http://www.opvizor.com/">Opvizor Performance Analyzer</a> to ensure nodes and their configurations at runtime, as well as mining activities of the blockchain and the blocks themselve
+                        The ZTC has implemented a monitoring infrastructure using <a href="http://www.opvizor.com/">Opvizor Performance Analyzer</a> to ensure nodes health, valid runtime configurations and working mining activities.
                     </page-section-header>
                 </i-column>
             </i-row>

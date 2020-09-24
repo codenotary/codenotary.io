@@ -13,7 +13,7 @@
                                 <strong>No data mutation APIs</strong> are provided.
                             </li>
                             <li>
-                                Data is never overwritten, so multiple versions of the same key co-exist and are verfiable.
+                                Data is never overwritten, so multiple versions of the same key co-exist and are verifiable.
                             </li>
                         </ul>
                     </Feature>
