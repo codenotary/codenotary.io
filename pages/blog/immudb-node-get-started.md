@@ -25,7 +25,7 @@ tags: ["SDK", "Node", "Node.js"]
 
 ## Introduction
 
-[immudb-node](https://github.com/codenotary/immudb-node) implements a [grpc] immudb client. A minimalist API is exposed for applications while cryptographic verifications and state update protocol implementation are fully implemented by this client.  Latest validated immudb state may be keep in the local filesystem when initialising the client with the rootPath option, please read [immudb research paper] for details of how immutability is ensured by [immudb].
+[immudb-node](https://www.npmjs.com/package/immudb-node) implements a [grpc] immudb client. A minimalist API is exposed for applications while cryptographic verifications and state update protocol implementation are fully implemented by this client.  Latest validated immudb state may be keep in the local filesystem when initialising the client with the rootPath option, please read [immudb research paper] for details of how immutability is ensured by [immudb].
 
 [grpc]: https://grpc.io/
 [immudb research paper]: https://immudb.io/
@@ -54,7 +54,7 @@ immudb-node supports the [latest immudb release].
 
 Check out some [examples]
 
-[examples]: https://github.com/codenotary/immudb-node/tree/master/examples/
+[examples]: https://github.com/codenotary/immudb-client-examples/tree/master/node
 
 ## Step by step guide
 
