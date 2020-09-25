@@ -12,10 +12,7 @@
                     Secure your sensitive data by creating immutable ledger proofs of existence, notarizations and seals.
                 </p>
                 <p class="lead _margin-bottom-0">
-                    Our highly scalable service already processes well over ten million transactions every single month.
-                </p>
-                <p class="lead _margin-bottom-0">
-                    From vChain Inc, the Immutability Company
+                    Our highly scalable service already processes tens of millions of transactions every single month.
                 </p>
                 <p class="action">
                     <i-button size="lg" outline variant="primary" href="https://dashboard.codenotary.io/auth/signin" target="_blank">Sign in</i-button>
