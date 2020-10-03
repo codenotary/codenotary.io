@@ -6,7 +6,9 @@ tags: ["Partnership", "Altea", "Ledger Compliance"]
 
 ---
 vChain has announced today a new partnership with [Altea Federation](https://alteafederation.it/) of Italy with the aim of offering complete security of sensitive data.  
-  
+
+![Altea Federation and vChain together for cybersecurity](/images/blog/altea.jfif)
+
 A black swan is a rare and unpredictable event because it falls outside the range of normal human expectations. It is no coincidence that the Covid-19 pandemic is often associated with this concept, a formula coined to describe how the improbable governs our lives.  
   
 Today, more than ever, the issue of information security is the top priority in organizations looking to the future. The partnership agreement on the Italian market between **vChain Inc.** the **Altea Federation Group** was created precisely to give concrete support to companies and ensure that they manage "hacker-proof" sensitive data.  
