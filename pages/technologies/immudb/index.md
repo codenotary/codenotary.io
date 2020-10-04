@@ -283,6 +283,8 @@ printItem(nil, nil, verifiedItem)
     </page-section-header>
 </i-column>
 </i-row>
+</i-container>
+<i-container>
 <i-row>
 <i-column>
     <div class="_text-center lead  _font-weight-semibold">
@@ -298,7 +300,6 @@ printItem(nil, nil, verifiedItem)
     </div>
 </i-column>
 </i-row>
-
 </i-container>
 </page-section>
 
