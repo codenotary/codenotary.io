@@ -296,7 +296,9 @@ printItem(nil, nil, verifiedItem)
             <li>ARM</li>
             <li class="_text-muted">&middot;</li>
             <li>s390x</li>
-        </ul>
+            <li class="_text-muted">&middot;</li>
+            <li>RISC-V</li>
+      </ul>
     </div>
 </i-column>
 </i-row>
