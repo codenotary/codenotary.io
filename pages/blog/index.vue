@@ -14,19 +14,23 @@
                         <no-ssr>
                             <masonry class="_width-100" :cols="{default: 4, 1000: 3, 700: 2, 400: 1}" :gutter="{default: '1rem', 700: '1rem'}">
                                 <div v-for="article in filteredArticles" :key="article.slug" class="item" column-width="33px" >
-                                    <i-card class="blog-post">
-                                        <div class="image-wrapper">
-                                            <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :alt="article.title" onerror="this.src='/images/blog-post.svg'">
-                                        </div>
-                                        <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
-                                            <div class="title">
-                                                {{ article.title }}
+                                    <i-card class="blog-post _display-flex _flex-direction-column _justify-content-space-between">
+                                        <div>
+                                            <div class="image-wrapper">
+                                                <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :alt="article.title" onerror="this.src='/images/blog-post.svg'">
                                             </div>
-                                        </nuxt-link>
-                                        <div class="date">
-                                            {{ article.date }}
+                                            <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
+                                                <div class="title">
+                                                    {{ article.title | truncate(48) }}
+                                                </div>
+                                            </nuxt-link>
+                                            <div class="date">
+                                                {{ article.date }}
+                                            </div>
                                         </div>
-                                        <i-badge v-for="(tag, idx) in article.tags" :key="`${tag}-${idx}`" class="_margin-top-1-4 _margin-right-1-4" size="sm" @click.stop.prevent="filter=tag">{{ tag }}</i-badge>
+                                        <div>
+                                            <i-badge v-for="(tag, idx) in article.tags" :key="`${tag}-${idx}`" class="_margin-top-1-4 _margin-right-1-4" size="sm" @click.stop.prevent="filter=tag">{{ tag }}</i-badge>
+                                        </div>
                                     </i-card>
                                 </div>
                             </masonry>
@@ -122,17 +126,25 @@ export default {
 
 .blog-post {
     margin-bottom: 1rem;
+    height: 320px;
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     .image-wrapper {
         width: 100%;
         text-align: center;
 
         .image {
-            object-fit: cover;
-            max-height: 80px;
+            object-fit: contain;
+            height: 112px;
             margin-bottom: 1rem;
             text-align: center;
             background-position: center center;
+            background: #FFF;
         }
     }
 

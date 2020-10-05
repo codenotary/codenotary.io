@@ -51,6 +51,7 @@ export default {
         { src: '~plugins/vgo', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
         { src: '~plugins/vue-masonry-css', ssr: false },
+        { src: '~plugins/vue-truncate-filter', ssr: false },
         '~plugins/vue-slick-carousel',
         '~plugins/inkline'
     ],
