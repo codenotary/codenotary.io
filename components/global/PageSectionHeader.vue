@@ -1,5 +1,5 @@
 <template>
-    <header class="section-header" :class="classes">
+    <header class="section-header" :class="{'block': block, [`_margin-top-${top}`]: true, [`_margin-bottom-${bottom}`]: true}">
         <slot name="title">
             <h2 :is="tag">{{ title }}</h2>
         </slot>
@@ -9,14 +9,25 @@
     </header>
 </template>
 
+<script>
+export default {
+    name: 'PageSectionHeader',
+    props: {
+        title: { type: String, default: '' },
+        tag: { type: String, default: 'h2' },
+        block: { type: Boolean, default: false },
+        top: { type: Number, default: 0 },
+        bottom: { type: Number, default: 6 }
+    }
+}
+</script>
+
 <style lang="scss">
 @import '~@inkline/inkline/src/css/config/colors';
 @import '../../assets/variables';
 
 .section-header {
     text-align: center;
-    max-width: 760px;
-    margin: 0 auto 6rem;
 
     h1,
     h2,
@@ -31,30 +42,3 @@
     }
 }
 </style>
-
-<script>
-export default {
-    name: 'PageSectionHeader',
-    props: {
-        title: {
-            type: String,
-            default: ''
-        },
-        tag: {
-            type: String,
-            default: 'h2'
-        },
-        block: {
-            type: Boolean,
-            default: false
-        }
-    },
-    computed: {
-        classes() {
-            return {
-                '-block': this.block
-            }
-        }
-    }
-}
-</script>

@@ -257,7 +257,7 @@ printItem(nil, nil, verifiedItem)
 <i-row>
 <i-column>
     <img class="image -responsive _margin-bottom-4" width="400" src="/images/immudb/rocket.jpg" alt="Features" />
-    <page-section-header title="Features">
+    <page-section-header :bottom="2" title="Features">
         A super-fast, immutable, and cryptographically verifiable ledger database that provides::
     </page-section-header>
 </i-column>
@@ -279,7 +279,7 @@ printItem(nil, nil, verifiedItem)
 </i-row>
 <i-row>
 <i-column>
-    <page-section-header title="Supported Architectures">
+    <page-section-header :top="4" :bottom="2" title="Supported Architectures">
     </page-section-header>
 </i-column>
 </i-row>
@@ -296,8 +296,6 @@ printItem(nil, nil, verifiedItem)
             <li>ARM</li>
             <li class="_text-muted">&middot;</li>
             <li>s390x</li>
-            <li class="_text-muted">&middot;</li>
-            <li>RISC-V</li>
         </ul>
     </div>
 </i-column>
