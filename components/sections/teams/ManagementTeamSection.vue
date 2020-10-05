@@ -65,7 +65,7 @@
                 <i-column lg="4">
                     <team-member name="Giacomo Russo" position="Software Engineering Team Lead" image="/images/teams/giacomo-russo.jpg">
                         <p>
-                             Giacomo Russo is a Tech Lead and Software Engineer and has covered different positions ranging from mid-sized Web shops, to IT consultancy and finally as a manager in startup companies. Giacomo has led international development teams in different project fields, mainly related to Banking, RetailTech, Blockchain and DevOps/Agile.
+                            Giacomo Russo is a Tech Lead and Software Engineer and has covered different positions ranging from mid-sized Web shops, to IT consultancy and finally as a manager in startup companies. Giacomo has led international development teams in different project fields, mainly related to Banking, RetailTech, Blockchain and DevOps/Agile.
                         </p>
                         <p>
                             Giacomo holds a MSc in Computer Engineering and he is a PSM-I certified Scrum Master.
