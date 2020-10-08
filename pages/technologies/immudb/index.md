@@ -277,29 +277,6 @@ printItem(nil, nil, verifiedItem)
     </div>
 </i-column>
 </i-row>
-<i-row>
-<i-column>
-    <page-section-header :top="4" :bottom="2" title="Supported Architectures">
-    </page-section-header>
-</i-column>
-</i-row>
-</i-container>
-<i-container>
-<i-row>
-<i-column>
-    <div class="_text-center lead  _font-weight-semibold">
-        <ul class="list -inline">
-            <li>x86</li>
-            <li class="_text-muted">&middot;</li>
-            <li>x86-64</li>
-            <li class="_text-muted">&middot;</li>
-            <li>ARM</li>
-            <li class="_text-muted">&middot;</li>
-            <li>s390x</li>
-        </ul>
-    </div>
-</i-column>
-</i-row>
 </i-container>
 </page-section>
 

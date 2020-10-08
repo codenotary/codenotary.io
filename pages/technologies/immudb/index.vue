@@ -2,6 +2,7 @@
     <article class="immudb">
         <immudb-header />
         <immudb-features-section />
+        <immudb-runs-on-section />
         <nuxt-content :document="page" />
     </article>
 </template>
@@ -10,6 +11,7 @@
 /* eslint-disable vue/no-unused-components */
 import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
 import ImmudbFeaturesSection from '~/components/sections/features/ImmudbFeaturesSection';
+import ImmudbRunsOnSection from '~/components/sections/immudb/ImmudbRunsOnSection';
 import { title } from '~/helpers/meta';
 
 export default {
@@ -20,7 +22,8 @@ export default {
     },
     components: {
         ImmudbFeaturesSection,
-        ImmudbHeader
+        ImmudbHeader,
+        ImmudbRunsOnSection
     },
     async asyncData ({ $content }) {
         const page = await $content('technologies/immudb/index').fetch();
