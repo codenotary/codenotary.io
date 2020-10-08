@@ -121,6 +121,11 @@ export default {
         filenames: {
             app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
             chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js'
+        },
+        babel: {
+            plugins: [
+              '@babel/plugin-proposal-optional-chaining'
+            ]
         }
     },
 
