@@ -11,22 +11,22 @@
             </i-row>
             <i-row>
                 <i-column md="6" lg="4">
-                    <story-card title="IT Compliance" variant="blue" image="/images/use-cases/it-compliance.svg" />
+                    <story-card title="IT Compliance" :color="getColor(5)" image="/images/use-cases/it-compliance.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Finance" variant="green" image="/images/use-cases/finance.svg" />
+                    <story-card title="Finance" :color="getColor(6)" image="/images/use-cases/finance.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Healthcare" variant="red" image="/images/use-cases/healthcare.svg" />
+                    <story-card title="Healthcare" :color="getColor(1)" image="/images/use-cases/healthcare.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Government" variant="purple" image="/images/use-cases/government.svg" />
+                    <story-card title="Government" :color="getColor(3)" image="/images/use-cases/government.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="CI / CD Integrity" variant="gray-70" image="/images/use-cases/cicd.svg" />
+                    <story-card title="CI / CD Integrity" :color="getColor(0)" image="/images/use-cases/cicd.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Regulatory Compliance" variant="orange" image="/images/use-cases/regulations.svg" />
+                    <story-card title="Regulatory Compliance" :color="getColor(8)" image="/images/use-cases/regulations.svg" />
                 </i-column>
             </i-row>
         </i-container>
@@ -34,9 +34,12 @@
 </template>
 
 <script>
+import colorUtils from '~/mixins/colorUtils';
 import StoryCard from '~/components/common/cards/StoryCard';
 
 export default {
+    mixins: [colorUtils],
+
     components: {
         StoryCard
     }
