@@ -99,11 +99,17 @@ export default {}
     }
 
     p {
-        color: $color-gray-60;
+        color: $color-gray-50;
     }
 
     a {
-        color: $color-primary-light;
+        color: $color-primary-lightest;
+
+        &.-active,
+        &:hover,
+        &:active {
+            color: $color-gray-10;
+        }
     }
 
     .logo {
