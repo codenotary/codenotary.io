@@ -12,7 +12,7 @@
                         <i-tab v-for="item in items" :key="item.title" class="_padding-top-2" :title="item.title">
                             <i-row>
                                 <i-column v-for="(subitem, idx) in item.subitems" :key="`${subitem}-${idx}`" xs="6" sm="4" md="3" lg="3">
-                                    <story-card :title="subitem" :color="getColor(idx)" outlined />
+                                    <story-card :title="subitem" :color="getColor(6)" outlined />
                                 </i-column>
                             </i-row>
                         </i-tab>
