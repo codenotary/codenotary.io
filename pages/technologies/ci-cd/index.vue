@@ -1,7 +1,7 @@
 <template>
     <div>
         <ci-cd-header />
-        <ci-cd-codenotary-integrations />
+        <ci-cd-integrations />
         <ci-cd-features />
         <ci-cd-how-it-works />
         <ci-cd-get-started />
@@ -12,7 +12,7 @@
 
 <script>
 import CiCdHeader from '~/components/sections/headers/CiCdHeader';
-import CiCdCodenotaryIntegrations from '~/components/sections/ci-cd/CiCdCodenotaryIntegrations';
+import CiCdIntegrations from '~/components/sections/ci-cd/CiCdIntegrations';
 import CiCdFeatures from '~/components/sections/ci-cd/CiCdFeatures';
 import CiCdHowItWorks from '~/components/sections/ci-cd/CiCdHowItWorks';
 import CiCdGetStarted from '~/components/sections/ci-cd/CiCdGetStarted';
@@ -22,7 +22,7 @@ import CiCdVideos from '~/components/sections/ci-cd/CiCdVideos';
 export default {
     components: {
         CiCdHeader,
-        CiCdCodenotaryIntegrations,
+        CiCdIntegrations,
         CiCdFeatures,
         CiCdHowItWorks,
         CiCdGetStarted,

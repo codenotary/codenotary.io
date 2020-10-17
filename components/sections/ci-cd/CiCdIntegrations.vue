@@ -1,5 +1,5 @@
 <template>
-    <page-section id="codenotary-integrations-section">
+    <page-section id="integrations-section">
         <i-container>
             <i-row>
                 <i-column>
@@ -55,7 +55,7 @@ import colorUtils from '~/mixins/colorUtils';
 import StoryCard from '~/components/common/cards/StoryCard';
 
 export default {
-    name: 'CiCdCodenotaryIntegrations',
+    name: 'CiCdIntegrations',
 
     mixins: [colorUtils],
 
@@ -69,7 +69,7 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-#codenotary-integrations-section {
+#integrations-section {
     background-color: $color-gray-10;
     overflow: hidden;
 
