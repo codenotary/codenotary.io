@@ -7,12 +7,8 @@
             <i-nav>
                 <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
                 <i-nav-item :to="{ name: 'blog' }">Blog</i-nav-item>
-                <!--i-dropdown trigger="hover">
-                    <i-nav-item>Products</i-nav-item>
-                    <i-dropdown-menu>
-                        <i-dropdown-item href="">CodeNotary Ledger Compliance</i-dropdown-item>
-                    </i-dropdown-menu>
-                </i-dropdown-->
+
+                <!-- TECHNOLOGIES -->
                 <i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
                     <i-nav-item :class="{ '-active': subRouteActive('/technologies') }">Technologies</i-nav-item>
                     <i-dropdown-menu>
@@ -28,8 +24,9 @@
                     <i-nav-item href="https://zerotrustconsortium.org/">Zero-Trust Consortium</i-nav-item>
                 </i-nav>
 
+                <!-- COMPANY -->
                 <i-nav-item :to="{ name: 'about' }">About us</i-nav-item>
-                <!--i-nav-item :to="{ name: 'partners' }">Partners</i-nav-item-->
+                <i-nav-item :to="{ name: 'partners' }">Partners</i-nav-item>
                 <i-nav-item :to="{ name: 'contact' }">Contact us</i-nav-item>
             </i-nav>
         </i-navbar-items>

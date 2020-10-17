@@ -59,6 +59,9 @@
                             <router-link :to="{ name: 'about' }">About us</router-link>
                         </li>
                         <li>
+                            <router-link :to="{ name: 'partners' }">Partners</router-link>
+                        </li>
+                        <li>
                             <router-link :to="{ name: 'careers' }">Careers</router-link>
                         </li>
                         <li>
