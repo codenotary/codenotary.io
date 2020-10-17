@@ -199,6 +199,20 @@ export default {
                 tag: 'Europe',
                 link: { url: 'http://www.dch-it.de/', target: '_blank' },
                 text: ''
+            },
+            {
+                title: 'Altea',
+                image: 'images/partners/white/altea.png',
+                tag: 'Europe',
+                link: { url: 'https://alteafederation.it/', target: '_blank' },
+                text: ''
+            },
+            {
+                title: 'Truecore',
+                image: 'images/partners/white/truecore.png',
+                tag: 'Europe',
+                link: { url: 'https://truecore.ch/', target: '_blank' },
+                text: ''
             }
         ]
     })
