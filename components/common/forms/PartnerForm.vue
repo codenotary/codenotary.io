@@ -1,38 +1,49 @@
 <template>
-    <form :id="`_form_${FORM_ID}_`" method="POST" action="https://vchain.activehosted.com/proc.php" :class="`_form _form_${FORM_ID} _inline-form _dark`" novalidate>
-        <input type="hidden" name="u" :value="FORM_ID">
-        <input type="hidden" name="f" :value="FORM_ID">
-        <input type="hidden" name="s">
-        <input type="hidden" name="c" value="0">
-        <input type="hidden" name="m" value="0">
-        <input type="hidden" name="act" value="sub">
-        <input type="hidden" name="v" value="2">
-
+    <form id="_form_18_" method="POST" action="https://vchain.activehosted.com/proc.php" class="_form _form_18 _inline-form  _dark" novalidate>
+        <input type="hidden" name="u" value="18" />
+        <input type="hidden" name="f" value="18" />
+        <input type="hidden" name="s" />
+        <input type="hidden" name="c" value="0" />
+        <input type="hidden" name="m" value="0" />
+        <input type="hidden" name="act" value="sub" />
+        <input type="hidden" name="v" value="2" />
         <div class="_form-content">
             <i-form-group class="_x97690377">
                 <i-form-label class="_form-label">
                     Full Name*
                 </i-form-label>
-                <i-input type="text" name="fullname" placeholder="Type your name" />
+                <i-input type="text" name="fullname" placeholder="Type your name" required/>
             </i-form-group>
             <i-form-group class="_x53693015">
                 <i-form-label class="_form-label">
                     Email*
                 </i-form-label>
-                <i-input type="text" name="email" placeholder="Type your email" required />
+                <i-input type="text" name="email" placeholder="Type your email" required/>
             </i-form-group>
-            <i-form-group class="_margin-bottom-2">
+            <i-form-group class="_x65882383">
+                <i-form-label class="_form-label">
+                    Phone
+                </i-form-label>
+                <i-input type="text" name="phone" placeholder="Type your phone number" />
+            </i-form-group>
+            <i-form-group class="_field1">
+                <i-form-label class="_form-label">
+                    other information
+                </i-form-label>
+                <i-textarea name="field[1]" placeholder="" />
+            </i-form-group>
+            <i-form-group class="_x71095595">
                 <i-form-label>
                     Please verify your request*
                 </i-form-label>
-                <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" />
+                <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
             </i-form-group>
-            <i-form-group>
-                <i-button :id="`_form_${FORM_ID}_submit`" variant="primary" block type="submit">
+            <i-form-group class="_button-wrapper _full_width">
+                <i-button id="_form_18_submit" class="_submit" variant="primary" block type="submit">
                     Submit
                 </i-button>
             </i-form-group>
-            <div class="_clear-element"/>
+            <div class="_clear-element" />
         </div>
         <div class="lead _form-thank-you _text-center" style="display:none;" />
     </form>
