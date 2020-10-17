@@ -1,12 +1,12 @@
 <template>
     <form id="_form_18_" method="POST" action="https://vchain.activehosted.com/proc.php" class="_form _form_18 _inline-form  _dark" novalidate>
-        <input type="hidden" name="u" value="18" />
-        <input type="hidden" name="f" value="18" />
-        <input type="hidden" name="s" />
-        <input type="hidden" name="c" value="0" />
-        <input type="hidden" name="m" value="0" />
-        <input type="hidden" name="act" value="sub" />
-        <input type="hidden" name="v" value="2" />
+        <input type="hidden" name="u" value="18" >
+        <input type="hidden" name="f" value="18" >
+        <input type="hidden" name="s" >
+        <input type="hidden" name="c" value="0" >
+        <input type="hidden" name="m" value="0" >
+        <input type="hidden" name="act" value="sub" >
+        <input type="hidden" name="v" value="2" >
         <div class="_form-content">
             <i-form-group class="_x97690377">
                 <i-form-label class="_form-label">
@@ -36,7 +36,7 @@
                 <i-form-label>
                     Please verify your request*
                 </i-form-label>
-                <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go">
+                <div class="g-recaptcha" data-sitekey="6LcwIw8TAAAAACP1ysM08EhCgzd6q5JAOUR1a0Go" />
             </i-form-group>
             <i-form-group class="_button-wrapper _full_width">
                 <i-button id="_form_18_submit" class="_submit" variant="primary" block type="submit">
@@ -58,12 +58,15 @@ const FORM_ID = 18;
 
 export default {
     name: 'PartnerForm',
+
     data: () => ({
         FORM_ID
     }),
+
     beforeDestroy () {
         this.FORM_ID = null;
     },
+
     mounted() {
         initializeActiveCampaign();
     }
