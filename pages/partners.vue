@@ -213,6 +213,27 @@ export default {
                 tag: 'Europe',
                 link: { url: 'https://truecore.ch/', target: '_blank' },
                 text: ''
+            },
+            {
+                title: 'Deloitte',
+                image: '/images/partners/white/deloitte.png',
+                tag: 'Europe',
+                link: { url: 'https://www2.deloitte.com/it/it.html', target: '_blank' },
+                text: ''
+            },
+            {
+                title: 'EY',
+                image: '/images/partners/white/ey.png',
+                tag: 'Europe',
+                link: { url: 'http://www.ey.com/', target: '_blank' },
+                text: ''
+            },
+            {
+                title: 'Webscience',
+                image: '/images/partners/white/webscience.png',
+                tag: 'Europe',
+                link: { url: 'https://www.webscience.it/', target: '_blank' },
+                text: ''
             }
         ]
     })
