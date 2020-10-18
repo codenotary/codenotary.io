@@ -42,7 +42,7 @@ export default {
             autoplay: false,
             autoplaySpeed: 3000,
             speed: 600,
-            slideToScroll: 1,
+            slidesToScroll: 3,
             swipeToSlide: true,
             pauseOnDotsHover: true,
             pauseOnFocus: true,
