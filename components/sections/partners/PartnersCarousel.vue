@@ -34,8 +34,8 @@ export default {
     },
     data: () => ({
         settings: {
-            slidesToShow: 3,
-            rows: 3,
+            slidesToShow: 4,
+            rows: 4,
             arrows: true,
             dots: true,
             infinite: true,
@@ -52,13 +52,13 @@ export default {
                 {
                     breakpoint: 900,
                     settings: {
-                        slidesToShow: 2
+                        slidesToShow: 3
                     }
                 },
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 1
+                        slidesToShow: 2
                     }
                 },
                 {
