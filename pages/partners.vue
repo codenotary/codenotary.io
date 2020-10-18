@@ -255,7 +255,7 @@ export default {
                 tag: 'Europe',
                 link: { url: 'http://www.anacapamicro.com/anacapa/', target: '_blank' },
                 text: ''
-            }                                    
+            }
         ]
     })
 }
