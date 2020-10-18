@@ -85,7 +85,8 @@ export default {
     overflow: hidden;
 
     a {
-        &:hover {
+        &:hover,
+        &:active {
             text-decoration: none !important;
             opacity: .9 !important;
 
