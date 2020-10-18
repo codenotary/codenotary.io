@@ -234,7 +234,28 @@ export default {
                 tag: 'Europe',
                 link: { url: 'https://www.webscience.it/', target: '_blank' },
                 text: ''
-            }
+            },
+            {
+                title: 'Sci',
+                image: '/images/partners/white/shi.png',
+                tag: 'Europe',
+                link: { url: 'https://www.shi.com/', target: '_blank' },
+                text: ''
+            },
+            {
+                title: 'SoftwareONE',
+                image: '/images/partners/white/software_one.png',
+                tag: 'Europe',
+                link: { url: 'https://www.softwareone.com/en-ch/', target: '_blank' },
+                text: ''
+            },
+            {
+                title: 'Anacapa',
+                image: '/images/partners/white/anacapa.png',
+                tag: 'Europe',
+                link: { url: 'http://www.anacapamicro.com/anacapa/', target: '_blank' },
+                text: ''
+            }                                    
         ]
     })
 }
