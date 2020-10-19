@@ -96,7 +96,7 @@ immudb4j hosted on [Maven Central].
 
 ## Supported Versions
 
-immudb4j supports the [latest immudb release](https://github.com/codenotary/immudb/releases/tag/v0.7.1).
+immudb4j supports the [latest immudb release](https://github.com/codenotary/immudb/releases/latest).
 
 ## Quickstart
 
