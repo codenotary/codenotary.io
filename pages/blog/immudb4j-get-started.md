@@ -76,21 +76,23 @@ immudb4j implements a [grpc](https://grpc.io/) immudb client. A minimalist API
 
 Just include immudb4j as a dependency in your project:
 
-if using `Maven`:
+if using `Maven`:
+```xml
+    <dependency>
+        <groupId>io.codenotary</groupId>
+        <artifactId>immudb4j</artifactId>
+        <version>0.1.8</version>
+    </dependency> 
+```
 
-    <dependency\>
-        <groupId\>io.codenotary</groupId\>
-        <artifactId\>immudb4j</artifactId\>
-        <version\>0.1.6</version\>
-    </dependency\>
+if using `Gradle`:
+```groovy
+    compile 'io.codenotary:immudb4j:0.1.8'
+```
 
-if using `Gradle`:
+immudb4j hosted on [Maven Central].
 
-    compile 'io.codenotary:immudb4j:0.1.6'
-
-Note: immudb4j is currently hosted in [Github Packages](https://docs.github.com/en/packages).
-
-Thus `immudb4j Github Package repository` needs to be included with authentication. When using maven it means to include immudb4j Github Package in your `~/.m2/settings.xml` file. See "Configuring Apache Maven for use with GitHub Packages" and "Configuring Gradle for use with GitHub Packages" at [Github Packages](https://docs.github.com/en/packages).
+[Maven Central]: https://search.maven.org/artifact/io.codenotary/immudb4j
 
 ## Supported Versions
 
