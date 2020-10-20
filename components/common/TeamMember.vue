@@ -44,7 +44,7 @@ export default {
     }
 
     img {
-        width: 260px;
+        width: 200px;
         height: auto;
         border-radius: 100%;
     }
