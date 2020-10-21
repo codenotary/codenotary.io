@@ -100,18 +100,6 @@ export default {
     .header-nav {
         justify-content: center;
 
-        .underline {
-            text-decoration: underline;
-
-            .dont-underline {
-                text-decoration: none !important;
-            }
-        }
-
-        .dont-underline {
-            text-decoration: none !important;
-        }
-
         .dot {
             color: $text-muted;
         }
@@ -119,6 +107,18 @@ export default {
         @include breakpoint-up(sm) {
             margin-left: -62px;
         }
+    }
+
+    .underline {
+        text-decoration: underline;
+
+        .dont-underline {
+            text-decoration: none !important;
+        }
+    }
+
+    .dont-underline {
+        text-decoration: none !important;
     }
 }
 </style>
