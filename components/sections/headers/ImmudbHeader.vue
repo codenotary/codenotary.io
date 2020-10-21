@@ -10,7 +10,7 @@
         </p>
 
         <p class="action">
-            <i-button size="lg" variant="primary" href="https://docs.immudb.io">Get immudb now</i-button>
+            <i-button size="lg" variant="primary" href="https://docs.immudb.io">Get started now</i-button>
         </p>
 
         <i-nav class="header-nav">
