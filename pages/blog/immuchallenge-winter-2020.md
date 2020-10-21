@@ -7,11 +7,11 @@ tags: ["immuchallenge", "immutability", "document data model"]
 ---
 
 # The immudb Coding Challenge - Winter 2020 Edition
-[#immuchallenge](https://github.com/codenotary/immuchallenge/)
+More info at [immuchallenge](https://github.com/codenotary/immuchallenge/) repository.
 
 <img align="right" src="https://codenotary.io/images/immudb/mascot.png" width="160px" /> 
 To all Gophers and data modeling wizards out there: do we have a challenge for you!!
-Today we announce our first #immuchallenge coding competition - Winter 2020 Edition. 
+Today we announce our first #immuchallenge coding competition - Winter 2020 Edition.
 
 The challenge: **Design and implement a document-like data model on immudb** 
 
