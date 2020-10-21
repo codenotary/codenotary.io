@@ -23,8 +23,8 @@
         </p>
 
         <i-nav class="header-nav">
-            <i-button id="research-paper-button underline" link variant="primary" @click="researchPaperModalVisible = true">
-                <span>Research Paper</span>
+            <i-button id="research-paper-button" link variant="primary" @click="researchPaperModalVisible = true">
+                <span class="underline">Research Paper</span>
             </i-button>
             <i-nav-item class="dot _hidden-sm-and-down">&middot;</i-nav-item>
             <i-nav-item class="underline" :to="{ name: 'technologies-immudb-immutable-data-science' }">Immutable Data Science</i-nav-item>
@@ -33,13 +33,13 @@
         </i-nav>
 
         <p class="_margin-top-3">
-            <i-button id="research-paper-button" class="underline" link variant="primary" @click="openCodingChallenge()">
+            <i-button id="research-paper-button" link variant="primary" @click="openCodingChallenge()">
                 <!-- <i-badge size="sm" variant="success" class="_margin-right-1-2">New</i-badge> -->
-                <i-badge size="sm" variant="danger" class="_margin-right-1-2">
+                <i-badge size="sm" variant="danger" class="_margin-right-1-2 dont-underline">
                     <fa icon="fire" style="margin-right: .15rem" />
-                    Hot
+                    <span class="dont-underline">Hot</span>
                 </i-badge>
-                <span>immudb Coding Challenge</span>
+                <span class="underline">immudb Coding Challenge</span>
             </i-button>
         </p>
     </i-header>
@@ -102,6 +102,14 @@ export default {
 
         .underline {
             text-decoration: underline;
+
+            .dont-underline {
+                text-decoration: none !important;
+            }
+        }
+
+        .dont-underline {
+            text-decoration: none !important;
         }
 
         .dot {
