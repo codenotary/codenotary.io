@@ -7,7 +7,7 @@
         </i-row>
         <i-container>
             <i-row class="team-member-items">
-                <i-column lg="6">
+                <i-column lg="4">
                     <team-member name="Moshe Bar" position="CEO" image="/images/teams/moshe-bar.jpg">
                         <p>
                             Moshe Bar is a serial entrepreneur. He was previously co-founder of Qumranet (sold to Red Hat) which created the industry standard KVM hypervisor, which today powers nearly all cloud offerings. He also co-founded software company XenSource, the makers of the Xen hypervisor (sold to Citrix).
@@ -20,7 +20,7 @@
                         </p>
                     </team-member>
                 </i-column>
-                <i-column lg="6">
+                <i-column lg="4">
                     <team-member name="Dennis Zimmer" position="CTO" image="/images/teams/dennis-zimmer.jpg">
                         <p>
                             Dennis Zimmer has a strong reputation as a technology visionary across the Globe. He’s the founder of Opvizor Inc., a virtualization monitoring company. He’s been working for over 20 years in the IT industry, wrote 10 books and hundreds of magazine articles and video trainings, that are read and used by leading IT professionals.
@@ -30,8 +30,6 @@
                         </p>
                     </team-member>
                 </i-column>
-            </i-row>
-            <i-row class="team-member-items">
                 <i-column lg="4">
                     <team-member name="Amelie Scheuermeyer" position="Head of Operations Europe" image="/images/teams/amelie-scheuermeyer.jpg">
                         <p>
@@ -42,6 +40,8 @@
                         </p>
                     </team-member>
                 </i-column>
+            </i-row>
+            <i-row class="team-member-items">
                 <i-column lg="4">
                     <team-member name="Filippo De Montis" position="VP Product Marketing" image="/images/teams/filippo-de-montis.jpg">
                         <p>
@@ -60,8 +60,6 @@
                         </p>
                     </team-member>
                 </i-column>
-            </i-row>
-            <i-row class="team-member-items">
                 <i-column lg="4">
                     <team-member name="Giacomo Russo" position="Software Engineering Team Lead" image="/images/teams/giacomo-russo.jpg">
                         <p>

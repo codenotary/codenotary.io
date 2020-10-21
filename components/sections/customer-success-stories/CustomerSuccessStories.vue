@@ -3,7 +3,7 @@
         <i-container>
             <i-row>
                 <i-column>
-                    <page-section-header title="Customer Success Stories">
+                    <page-section-header title="Customer Use Cases">
                         With CodeNotary Ledger Compliance&reg; you can easily build immutable,
                         tamper-proof solutions and comply with auditor requirements and regulations and laws.
                     </page-section-header>
