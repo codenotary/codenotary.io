@@ -10,7 +10,7 @@
             <i-row center top>
                 <i-column xs="12" class="_margin-top-2">
                     <i-card>
-                        <img slot="image" src="images/careers/map.png" alt="Remote friendly map" >
+                        <img slot="image" src="/images/careers/map.png" alt="Remote friendly map" >
                     </i-card>
                 </i-column>
             </i-row>
