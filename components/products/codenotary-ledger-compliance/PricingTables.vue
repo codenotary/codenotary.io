@@ -17,6 +17,7 @@
             <PricingTable title="Virtual Appliance" subtitle="Or direct install">
                 <PricingTableRow>No storage limit</PricingTableRow>
                 <PricingTableRow>No transactions limit</PricingTableRow>
+                <PricingTableRow>Data lineage</PricingTableRow>
                 <PricingTableRow>5 ledgers</PricingTableRow>
                 <template slot="price">
                     <small>Starting at</small>
@@ -28,6 +29,7 @@
                 <PricingTableRow>No storage limit</PricingTableRow>
                 <PricingTableRow>No transactions limit</PricingTableRow>
                 <PricingTableRow>Unlimited ledgers</PricingTableRow>
+                <PricingTableRow>Data lineage</PricingTableRow>
                 <PricingTableRow>Cryptographic Hardware Accelerator</PricingTableRow>
                 <PricingTableRow>Tamper-resistant smart card</PricingTableRow>
                 <PricingTableRow>Blockchain-protected audit dumps</PricingTableRow>
