@@ -10,21 +10,21 @@
             <i-row class="_margin-top-4" center top>
                 <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
-                        <img slot="image" src="images/careers/hearth.svg" alt="Intellectual Honesty" >
+                        <img slot="image" src="/images/careers/hearth.svg" alt="Intellectual Honesty" >
                         <h4 class="title _font-weight-bold _text-primary">Intellectual Honesty</h4>
                         <p class="lead">We ask ourselves the tough questions. We don't take easy shortcuts. We are honest and truthful to each other and the people we communicate with.</p>
                     </i-card>
                 </i-column>
                 <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
-                        <img slot="image" src="images/careers/lightning.svg" alt="Speed" >
+                        <img slot="image" src="/images/careers/lightning.svg" alt="Speed" >
                         <h4 class="title _font-weight-bold _text-primary">Speed</h4>
                         <p class="lead">As a startup, our only advantages are speed of execution and excellence. We do what we do quickly and we get things done in a flash. And we do it right, each time.</p>
                     </i-card>
                 </i-column>
                 <i-column xs="12" sm="6" md="6" lg="4">
                     <i-card>
-                        <img slot="image" src="images/careers/star.svg" alt="Excellence" >
+                        <img slot="image" src="/images/careers/star.svg" alt="Excellence" >
                         <h4 class="title _font-weight-bold _text-primary">Excellence</h4>
                         <p class="lead">We are a team of highly intelligent and capable people. We find amazing solutions to complex problems and we are an example to each other and the community.</p>
                     </i-card>
