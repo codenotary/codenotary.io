@@ -11,7 +11,7 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
-    "scripts": "./scripts/update_blog_file.sh && ./scripts/update_blog_images.sh"
+    "scripts": "./scripts/update_blog_files.sh && ./scripts/update_blog_images.sh"
   },
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.11.0",
