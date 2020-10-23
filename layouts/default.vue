@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <section class="default-layout">
         <Navbar id="navbar" />
         <div id="content">
             <nuxt/>
         </div>
         <Footer />
         <Copyright />
-    </div>
+    </section>
 </template>
 
 <script>
@@ -24,17 +24,19 @@ export default {
 </script>
 
 <style lang="scss">
-$navbar-height: 80px;
+$navbar-height: 80;
 
-#navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-}
+section.default-layout {
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
 
-#content {
-    margin-top: $navbar-height;
+    #content {
+        margin-top: #{$navbar-height}px;
+    }
 }
 </style>

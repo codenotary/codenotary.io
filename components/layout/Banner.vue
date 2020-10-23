@@ -1,12 +1,12 @@
 <template>
-    <section class="banner _justify-content-center">
+    <section class="banner _justify-content-center" :class="{ scrolled }">
         <div class="_display-flex _align-items-center">
             <span class="lead">
                 vChain announces acquisition of Opvizor! Now offers CodeNotary for DevOps and Ops.
             </span>
         </div>
         <div class="_display-flex _align-items-center">
-            <i-button class="_margin-left-2" variant="white" outline size="sm" @click="learnMore">Learn more</i-button>
+            <i-button class="_margin-left-2" variant="white" outline size="sm" :to="{ name: 'products-lc-for-ops' }" nuxt-link>Learn more</i-button>
         </div>
     </section>
 </template>
@@ -15,10 +15,8 @@
 export default {
     name: 'Banner',
 
-    methods: {
-        learnMore() {
-            // console.log('learn more clicked');
-        }
+    props: {
+        scrolled: { type: Boolean, default: false }
     }
 }
 </script>
@@ -35,14 +33,23 @@ section.banner {
         background: white !important;
     }
 
-    span {
+    span,
+    .button {
         font-size: 90% !important;
         color: $color-gray-10;
     }
 
-    .i-button {
-        font-size: 90% !important;
-        color: $color-gray-10;
+    &.scrolled {
+        span,
+        .button {
+            font-size: 80% !important;
+        }
+
+        .button {
+            padding: 0;
+            border: none;
+            text-decoration: underline;
+        }
     }
 }
 </style>
