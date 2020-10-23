@@ -17,7 +17,12 @@ for filename in *.md; do
     echo $f
     echo "---"
 
+    # update image path
     sed -i 's/(images\//(\/images\/blog\//' $filename
+
+    # add the tags meta on 2nd line
+    META="tags: [\"Ops\", \"opvizor\"]"
+    sed -n -i "p;2a $META" $filename
 done
 
 echo "blog files imported succefully"
