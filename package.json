@@ -24,6 +24,7 @@
     "axios": "^0.20.0",
     "nuxt": "^2.14.3",
     "prism-themes": "^1.4.0",
+    "vue-cool-lightbox": "^2.6.2",
     "vue-github-button": "^1.2.0",
     "vue-masonry-css": "^1.0.3",
     "vue-no-ssr": "^1.1.1",
@@ -31,6 +32,7 @@
     "vue-scrollto": "^2.18.2",
     "vue-slick-carousel": "^1.0.6",
     "vue-truncate-filter": "^1.1.7",
+    "vue-typer": "^1.2.0",
     "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
