@@ -220,12 +220,15 @@ export default {
             max-width: 140px !important;
             width: auto;
             margin: 0 .75rem 2rem;
-            opacity: .5;
+            opacity: .75;
             transition: opacity .3s ease;
             object-fit: contain;
 
+            transition: transform .2s ease-in-out;
+
             &:hover {
                 opacity: .95;
+                transform: translateY(-16%) scale(1.15);
             }
         }
     }
