@@ -215,15 +215,17 @@ export default {
         }
 
         img {
-            margin: 0 auto 2rem;
             display: block;
-            opacity: 0.5;
-            transition: opacity 0.3s ease;
-            height: 45px;
+            height: 80px !important;
+            max-width: 140px !important;
             width: auto;
+            margin: 0 .75rem 2rem;
+            opacity: .5;
+            transition: opacity .3s ease;
+            object-fit: contain;
 
             &:hover {
-                opacity: 0.6;
+                opacity: .95;
             }
         }
     }
