@@ -10,10 +10,12 @@
 <script>
 import HomeHeader from '~/components/sections/headers/HomeHeader';
 import FeaturesSection from '~/components/sections/features/FeaturesSection';
-import CustomerSuccessStories from '~/components/sections/customer-success-stories/CustomerSuccessStories';
-import CodeNotaryLedgerCompliance from '~/components/sections/products/CodeNotaryLedgerCompliance';
+import CustomerSuccessStories from '~/components/sections/homepage/CustomerSuccessStories';
+import CodeNotaryLedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
+    layout: 'banner',
+
     components: {
         CodeNotaryLedgerCompliance,
         HomeHeader,
