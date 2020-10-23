@@ -16,13 +16,6 @@
                     <PricingTables />
                 </i-column>
             </i-row>
-            <!--i-row class="_text-center _margin-top-2">
-                <i-column>
-                    <i-button v-scroll-to="'#codenotary-ledger-compliance-section'" variant="primary" size="lg">
-                        Read more
-                    </i-button>
-                </i-column>
-            </i-row-->
             <i-row class="_text-center">
                 <i-column>
                     <img id="tree-image" src="/images/word-tree.png" alt="CodeNotary Word Cloud" class="image -responsive" width="650">
@@ -33,9 +26,11 @@
 </template>
 
 <script>
-import PricingTables from '~/components/products/codenotary-ledger-compliance/PricingTables';
+import PricingTables from '~/components/sections/products/PricingTables';
 
 export default {
+    name: 'LedgerComplianceForOps',
+
     components: {
         PricingTables
     }

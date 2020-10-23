@@ -1,7 +1,9 @@
 <template>
     <div class="pricing-table">
         <h4 class="title">{{ title }}</h4>
-        <div v-value="subtitle" class="subtitle" />
+        <div class="subtitle">
+            {{ subtitle }}
+        </div>
         <div class="body">
             <div class="rows line">
                 <slot />
