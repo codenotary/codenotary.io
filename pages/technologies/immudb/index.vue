@@ -10,8 +10,8 @@
 <script>
 /* eslint-disable vue/no-unused-components */
 import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
-import ImmudbFeaturesSection from '~/components/sections/features/ImmudbFeaturesSection';
-import ImmudbRunsOnSection from '~/components/sections/immudb/ImmudbRunsOnSection';
+import ImmudbFeaturesSection from '~/components/sections/technologies/immudb/ImmudbFeaturesSection';
+import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/ImmudbRunsOnSection';
 import { title } from '~/helpers/meta';
 
 export default {

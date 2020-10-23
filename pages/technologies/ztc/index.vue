@@ -13,12 +13,12 @@
 
 <script>
 import ZtcHeader from '~/components/sections/headers/ZtcHeader';
-import ZtcAboutSection from '~/components/sections/ztc/ZtcAboutSection';
-import ZtcTechnologyPlatformSection from '~/components/sections/ztc/ZtcTechnologyPlatformSection';
-import ZtcMonitoringSection from '~/components/sections/ztc/ZtcMonitoringSection';
-import ZtcConsortiumBlockchainSection from '~/components/sections/ztc/ZtcConsortiumBlockchainSection';
-import ZtcMembersSection from '~/components/sections/ztc/ZtcMembersSection';
-import ZtcJoinSection from '~/components/sections/ztc/ZtcJoinSection';
+import ZtcAboutSection from '~/components/sections/technologies/ztc/ZtcAboutSection';
+import ZtcTechnologyPlatformSection from '~/components/sections/technologies/ztc/ZtcTechnologyPlatformSection';
+import ZtcMonitoringSection from '~/components/sections/technologies/ztc/ZtcMonitoringSection';
+import ZtcConsortiumBlockchainSection from '~/components/sections/technologies/ztc/ZtcConsortiumBlockchainSection';
+import ZtcMembersSection from '~/components/sections/technologies/ztc/ZtcMembersSection';
+import ZtcJoinSection from '~/components/sections/technologies/ztc/ZtcJoinSection';
 
 export default {
     components: {
