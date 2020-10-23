@@ -50,8 +50,10 @@ export default {
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
+        { src: '~plugins/vue-cool-lightbox', mode: 'client' },
         { src: '~plugins/vue-masonry-css', ssr: false },
         { src: '~plugins/vue-truncate-filter', ssr: false },
+        { src: '~plugins/vue-typer', ssr: false },
         '~plugins/vue-slick-carousel',
         '~plugins/inkline'
     ],
@@ -86,7 +88,7 @@ export default {
             imports: [
                 {
                     set: '@fortawesome/free-solid-svg-icons',
-                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faBolt', 'faChevronRight', 'faFire', 'faGlobe', 'faAward']
+                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faBolt', 'faChevronRight', 'faFire', 'faQuoteLeft', 'faGlobe', 'faAward']
                 },
                 {
                     set: '@fortawesome/free-brands-svg-icons',
@@ -130,7 +132,8 @@ export default {
     },
 
     router: {
-        linkExactActiveClass: '-active'
+        linkExactActiveClass: '-active',
+        // base: '/'
     },
 
     generate: {
