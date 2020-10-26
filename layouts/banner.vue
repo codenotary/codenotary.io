@@ -1,6 +1,6 @@
 <template>
-    <section class="banner-layout" :class="{ scrolled }">
-        <Banner id="banner" :scrolled="scrolled" />
+    <section class="banner-layout" :class="{ scrolled, hover }">
+        <Banner id="banner" @mouseenter.native="hover = true" @mouseleave.native="hover = false"/>
         <Navbar id="navbar" />
         <div id="content">
             <nuxt/>
@@ -27,11 +27,13 @@ export default {
     },
 
     data: () => ({
-        scrolled: false
+        scrolled: false,
+        hover: false
     }),
 
     beforeDestroy () {
         this.scrolled = null;
+        this.hover = null;
     },
 
     mounted () {
@@ -59,6 +61,7 @@ export default {
 
 $navbar-height: 80;
 $banner-height: 60;
+$banner-hover-height: 80;
 $banner-scrolled-height: 40;
 
 section.banner-layout {
@@ -73,6 +76,11 @@ section.banner-layout {
         width: 100%;
         z-index: 999;
         transition: all .15s ease-out;
+
+        span,
+        .button {
+            transition: all .3s ease-out;
+        }
     }
 
     #navbar {
@@ -81,6 +89,7 @@ section.banner-layout {
         left: 0;
         width: 100%;
         z-index: 999;
+        transition: all .15s ease-out;
     }
 
     #content {
@@ -88,17 +97,58 @@ section.banner-layout {
     }
 
     &.scrolled {
-
         #banner {
             height: #{$banner-scrolled-height}px  !important;
+
+            span,
+            .button {
+                font-size: 80% !important;
+            }
+
+            .button {
+                padding: 0;
+                border: none;
+                text-decoration: underline;
+
+                &:hover,
+                &:active,
+                &.nuxt-link-active {
+                    background-color: transparent !important;
+                }
+            }
         }
 
         #navbar {
-            top: #{$banner-scrolled-height}px  !important;
+            top: #{$banner-scrolled-height}px !important;
         }
 
         #content {
             margin-top: #{$banner-scrolled-height + $navbar-height}px;
+        }
+    }
+
+    &.hover {
+        #banner {
+            height: #{$banner-hover-height}px  !important;
+
+            span,
+            .button {
+                font-size: 100% !important;
+            }
+
+            .button {
+                padding: .4rem .8rem;
+                border: 1px solid white;
+                text-decoration: none;
+            }
+        }
+
+        #navbar {
+            top: #{$banner-hover-height}px  !important;
+        }
+
+        #content {
+            margin-top: #{$banner-hover-height + $navbar-height}px;
         }
     }
 }

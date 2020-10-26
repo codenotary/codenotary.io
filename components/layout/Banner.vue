@@ -1,5 +1,5 @@
 <template>
-    <section class="banner _justify-content-center" :class="{ scrolled }">
+    <section class="banner _justify-content-center">
         <div class="_display-flex _align-items-center">
             <span class="lead">
                 vChain announces acquisition of Opvizor! Now offers CodeNotary for DevOps and Ops.
@@ -13,11 +13,7 @@
 
 <script>
 export default {
-    name: 'Banner',
-
-    props: {
-        scrolled: { type: Boolean, default: false }
-    }
+    name: 'Banner'
 }
 </script>
 
@@ -53,19 +49,6 @@ section.banner {
         &:active,
         &.nuxt-link-active {
             background: rgba(255, 255, 255, .05) !important;
-        }
-    }
-
-    &.scrolled {
-        span,
-        .button {
-            font-size: 80% !important;
-        }
-
-        .button {
-            padding: 0;
-            border: none;
-            text-decoration: underline;
         }
     }
 }
