@@ -9,7 +9,7 @@
                     the leading company for immutable recording of business data.
                 </h2>
                 <p class="lead _margin-bottom-0">
-                    Immutable ledgers are a requirement to enable businesses to succesfully move to cloud solutions without loosing trust and integrity.
+                    Immutable ledgers are a requirement to enable businesses to successfully move to cloud solutions without compromising trust and integrity.
                 </p>
                 <p class="lead _margin-bottom-0">
                     <a href="https://www.prnewswire.com/news-releases/vchain-inc-the-immutable-data-specialist-announces-new-equity-financing-301129660.html" target="_blank"><b>Latest News</b>: New Equity Financing</a>
