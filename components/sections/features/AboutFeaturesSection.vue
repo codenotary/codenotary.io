@@ -14,7 +14,7 @@
                 </i-column>
                 <i-column lg="4">
                     <Feature title="How do we do it?">
-                        Based on our award-winning <nuxt-link :to="{ name: 'technologies-immudb' }">immudb</nuxt-link> Open Source immutable database, vChain’s CodeNotary Ledger Compliance® provides a tamper-proof and indelible solution for processing millions of transactions per second, on-premise or in the cloud, and with cryptographic verification.
+                        Based on our widely acclaimed <nuxt-link :to="{ name: 'technologies-immudb' }">immudb</nuxt-link> Open Source immutable database, vChain’s CodeNotary Ledger Compliance® provides a tamper-proof and indelible solution for processing millions of transactions per second, on-premise or in the cloud, and with cryptographic verification.
                     </Feature>
                 </i-column>
             </i-row>
