@@ -22,6 +22,7 @@
     "@inkline/inkline": "^2.3.0",
     "@nuxtjs/device": "^1.2.7",
     "axios": "^0.20.0",
+    "cookie-universal-nuxt": "^2.1.4",
     "nuxt": "^2.14.3",
     "prism-themes": "^1.4.0",
     "vue-github-button": "^1.2.0",

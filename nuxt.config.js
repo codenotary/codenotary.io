@@ -80,13 +80,15 @@ export default {
         'vue-scrollto/nuxt',
         // Doc: https://www.npmjs.com/package/@nuxtjs/device
         '@nuxtjs/device',
+        // https://www.npmjs.com/package/cookie-universal-nuxt
+        'cookie-universal-nuxt',
         // Doc: https://github.com/vaso2/nuxt-fontawesome
         ['nuxt-fontawesome', {
             component: 'fa',
             imports: [
                 {
                     set: '@fortawesome/free-solid-svg-icons',
-                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faBolt', 'faChevronRight', 'faFire', 'faGlobe', 'faAward']
+                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faStar', 'faBolt', 'faChevronRight', 'faFire', 'faGlobe', 'faAward']
                 },
                 {
                     set: '@fortawesome/free-brands-svg-icons',
