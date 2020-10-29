@@ -1,5 +1,5 @@
 <template>
-    <section class="immudb-star-banner-layout" :class="{ scrolled, hover, closed }">
+    <section class="immudb-star-banner-layout" :class="{ hover, closed }">
         <ImmudbStarBanner id="immudbStarBanner" @mouseenter.native="hover = true" @mouseleave.native="hover = false" @submit="cta()" @close="cta(true)" />
         <Navbar id="navbar" />
         <div id="content">
@@ -43,13 +43,6 @@ export default {
         this.closed = !!this.$cookies.get(IMMUDB_STAR_COOKIE);
     },
 
-    mounted () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-
-    destroyed () {
-        window.removeEventListener('scroll', this.handleScroll);
-    },
 
     methods: {
         handleScroll (event) {
