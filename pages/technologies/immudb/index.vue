@@ -15,6 +15,7 @@ import ImmudbRunsOnSection from '~/components/sections/immudb/ImmudbRunsOnSectio
 import { title } from '~/helpers/meta';
 
 export default {
+    layout: 'immudb-star-banner',
     head() {
         return {
             title: title('immudb')
