@@ -3,7 +3,7 @@
         <i-container>
             <i-row>
                 <i-column lg="6">
-                    <img class="logo" src="/images/logo/logo_white.svg" alt="CodeNotary">
+                    <img class="logo" src="/images/logo/logo_white.png" alt="CodeNotary">
                     <p>
                         Immutable notarization for all your sensitive data. On-premise or in the cloud, easy to use
                         tamperproof storage with cryptographic verification, processing millions of transactions a

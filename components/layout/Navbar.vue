@@ -1,7 +1,7 @@
 <template>
     <i-navbar>
         <i-navbar-brand :to="{ name: 'index' }" class="_padding-0">
-            <img class="logo" src="/images/logo/logo_blue.svg" alt="CodeNotary">
+            <img class="logo" src="/images/logo/logo_blue.png" alt="CodeNotary">
         </i-navbar-brand>
         <i-navbar-items class="_justify-content-space-between">
             <i-nav>
