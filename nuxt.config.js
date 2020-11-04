@@ -49,6 +49,7 @@ export default {
     plugins: [
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
+        { src: '~plugins/leadfeeder', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
         { src: '~plugins/vue-masonry-css', ssr: false },
         { src: '~plugins/vue-truncate-filter', ssr: false },
@@ -95,7 +96,9 @@ export default {
                     icons: ['faFacebookSquare', 'faTwitterSquare', 'faLinkedin', 'faGithubSquare']
                 }
             ]
-        }]
+        }],
+        // Doc: https://github.com/Developmint/nuxt-webfontloader
+        'nuxt-webfontloader'
     ],
 
     /*
@@ -113,6 +116,13 @@ export default {
 
     styleResources: {
         scss: ['~/assets/variables.scss']
+    },
+
+    webfontloader: {
+        google: {
+            // Loads Open Sans font with weights 300 and 400 + display font as swap
+            families: ['Open+Sans:100,300,400,500,600,700&display=swap']
+        }
     },
 
     build: {

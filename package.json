@@ -24,6 +24,7 @@
     "axios": "^0.20.0",
     "cookie-universal-nuxt": "^2.1.4",
     "nuxt": "^2.14.3",
+    "nuxt-webfontloader": "^1.1.0",
     "prism-themes": "^1.4.0",
     "vue-github-button": "^1.2.0",
     "vue-masonry-css": "^1.0.3",
