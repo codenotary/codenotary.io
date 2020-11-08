@@ -3,19 +3,20 @@
         <i-row class="_align-items-center">
             <i-column xs="12" md="8">
                 <h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
-                    We are vChain Inc
+                    vChain Inc. - The Immutability Specialists
                 </h1>
                 <h2 class="_font-weight-bold _margin-top-1">
                     the leading company for immutable recording of business data.
                 </h2>
                 <p class="lead _margin-bottom-0">
-                    Our solutions can be used on-premise or in the cloud, are easy to use and can process millions of transactions a second with cryptographic verification.
+                    Immutable ledgers are a requirement to enable businesses to successfully move to cloud solutions without compromising trust and integrity.
                 </p>
                 <p class="lead _margin-bottom-0">
                     <a href="https://www.prnewswire.com/news-releases/vchain-inc-the-immutable-data-specialist-announces-new-equity-financing-301129660.html" target="_blank"><b>Latest News</b>: New Equity Financing</a>
                 </p>
             </i-column>
             <i-column md="4" class="_text-center">
+                <img src="/images/logo/logo_black.png" alt="CodeNotary" class="image -responsive _margin-top-2" width="220">
                 <a href="https://www.cncf.io/about/members/">
                     <img src="/images/cncf.png" alt="CNCF" class="image -responsive _margin-top-2" width="200">
                 </a>

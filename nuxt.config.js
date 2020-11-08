@@ -49,6 +49,7 @@ export default {
     plugins: [
         { src: '~plugins/activecampaign', mode: 'client' },
         { src: '~plugins/vgo', mode: 'client' },
+        { src: '~plugins/leadfeeder', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
         { src: '~plugins/vue-cool-lightbox', mode: 'client' },
         { src: '~plugins/vue-masonry-css', ssr: false },
@@ -82,20 +83,24 @@ export default {
         'vue-scrollto/nuxt',
         // Doc: https://www.npmjs.com/package/@nuxtjs/device
         '@nuxtjs/device',
+        // https://www.npmjs.com/package/cookie-universal-nuxt
+        'cookie-universal-nuxt',
         // Doc: https://github.com/vaso2/nuxt-fontawesome
         ['nuxt-fontawesome', {
             component: 'fa',
             imports: [
                 {
                     set: '@fortawesome/free-solid-svg-icons',
-                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faBolt', 'faChevronRight', 'faFire', 'faQuoteLeft', 'faGlobe', 'faAward']
+                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faStar', 'faBolt', 'faChevronRight', 'faQuoteLeft', 'faFire', 'faGlobe', 'faAward']
                 },
                 {
                     set: '@fortawesome/free-brands-svg-icons',
                     icons: ['faFacebookSquare', 'faTwitterSquare', 'faLinkedin', 'faGithubSquare']
                 }
             ]
-        }]
+        }],
+        // Doc: https://github.com/Developmint/nuxt-webfontloader
+        'nuxt-webfontloader'
     ],
 
     /*
@@ -113,6 +118,13 @@ export default {
 
     styleResources: {
         scss: ['~/assets/variables.scss']
+    },
+
+    webfontloader: {
+        google: {
+            // Loads Open Sans font with weights 300 and 400 + display font as swap
+            families: ['Open+Sans:100,300,400,500,600,700&display=swap']
+        }
     },
 
     build: {

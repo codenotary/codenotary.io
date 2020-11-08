@@ -39,7 +39,7 @@
                     <i-card>
                         <img slot="image" src="/images/ci-cd/features/authenticate.svg" alt="Authenticate" >
                         <h4 class="title _font-weight-bold _text-primary">Authenticate</h4>
-                        <p>Automate and continuously authenticate the integrity of any digital asset in your environment. Enable anyone, anywhere, at any time to verify the authenticity of your solutions simply and for free.</p>
+                        <p class="lead">Automate and continuously authenticate the integrity of any digital asset in your environment. Enable anyone, anywhere, at any time to verify the authenticity of your solutions simply and for free.</p>
                     </i-card>
                 </i-column>
             </i-row>

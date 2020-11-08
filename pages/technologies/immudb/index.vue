@@ -15,6 +15,7 @@ import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/Immud
 import { title } from '~/helpers/meta';
 
 export default {
+    layout: 'immudb-star-banner',
     head() {
         return {
             title: title('immudb')
@@ -215,15 +216,20 @@ export default {
         }
 
         img {
-            margin: 0 auto 2rem;
             display: block;
-            opacity: 0.5;
-            transition: opacity 0.3s ease;
-            height: 45px;
+            height: 80px !important;
+            max-width: 140px !important;
             width: auto;
+            margin: 0 .75rem 2rem;
+            opacity: .75;
+            transition: opacity .3s ease;
+            object-fit: contain;
+
+            transition: transform .2s ease-in-out;
 
             &:hover {
-                opacity: 0.6;
+                opacity: .95;
+                transform: translateY(-16%) scale(1.15);
             }
         }
     }

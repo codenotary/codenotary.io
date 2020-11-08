@@ -59,7 +59,7 @@
                         <li>
                             Powered by
                             <a href="https://immudb.io">
-                                <img width="28" src="/images/immudb-logo.svg" alt="immudb">
+                                <img width="40" src="/images/logo/icon/logo_icon_black.svg" alt="immudb">
                                 <strong class="_text-black">immudb</strong>
                             </a>
                         </li>

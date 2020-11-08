@@ -311,6 +311,13 @@ printItem(nil, nil, verifiedItem)
                     <img src="/images/immudb/logos/logo_truecore.svg" alt="TrueCore" />
                 </a>
                 <a rel="nofollow">
+                    <img src="/images/immudb/logos/fedgov.jpeg" alt="U.S. Federal Government" />
+                </a>
+                </a>
+                <a rel="nofollow">
+                    <img src="/images/immudb/logos/cog_logo.png" alt="Cognizant Technology Solutions Corporation" />
+                </a>
+                <a rel="nofollow">
                     <img src="/images/immudb/logos/rs-logo.svg" alt="TrueCore" />
                 </a>
             </i-column>

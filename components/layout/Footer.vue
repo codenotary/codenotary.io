@@ -2,8 +2,8 @@
     <page-section class="footer">
         <i-container>
             <i-row>
-                <i-column xs="12" sm="6" lg="3">
-                    <img class="logo" src="/images/logo-white.svg" alt="CodeNotary">
+                <i-column lg="6">
+                    <img class="logo" src="/images/logo/logo_white.png" alt="CodeNotary">
                     <p>
                         Immutable notarization for all your sensitive data. On-premise or in the cloud, easy to use
                         tamperproof storage with cryptographic verification, processing millions of transactions a
@@ -123,7 +123,7 @@ export default {}
         }
     }
     .logo {
-        height: 40px;
+        height: 64px;
         margin-top: -10px;
         width: auto;
     }
