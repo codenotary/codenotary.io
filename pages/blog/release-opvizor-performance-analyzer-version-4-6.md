@@ -1,5 +1,6 @@
 ---
 title: "Release - Opvizor Performance Analyzer version 4.6"
+image: /images/blog/numa_sm.png
 tags: ["Ops", "opvizor"]
 date: "2017-12-13"
 ---

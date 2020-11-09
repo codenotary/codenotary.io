@@ -1,5 +1,6 @@
 ---
 title: "Happy New Year!"
+image: /images/blog/happy-new-year-4656597_1920-1024x579.jpg
 tags: ["Ops", "opvizor"]
 date: "2019-12-31"
 ---

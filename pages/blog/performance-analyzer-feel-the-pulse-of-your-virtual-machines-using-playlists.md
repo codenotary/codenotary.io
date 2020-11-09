@@ -1,5 +1,6 @@
 ---
 title: "Performance Analyzer - feel the pulse of your virtual machines using playlists"
+image: /images/blog/button_download-performance-analyzer-2.png
 tags: ["Ops", "opvizor"]
 date: "2017-06-20"
 ---

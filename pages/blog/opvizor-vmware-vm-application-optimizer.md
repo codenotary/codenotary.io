@@ -1,5 +1,6 @@
 ---
 title: "opvizor VMware VM Application optimizer"
+image: /images/blog/application-optimizer-button.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-31"
 ---
@@ -14,7 +15,7 @@ VM Guests provisioned in the virtualization infrastructure may run with differen
 
 Hence, it is obvious that VM configuration should depend on SW running inside the Guest. The main goal of Application Optimizer is to help Virtualization Administrator to ensure that VM configuration (including configuration of related entities such as hosts, SAN) is in accordance to predefined list of Checks and generate Compliance Report. In addition, the same Report contains some instructions regarding Manual Checks and actions performed to achieve optimal performance of the VM.
 
-You can access the solution by clicking the VM Application Optimizer icon: [![VM Application optimizer Icon](/images/blog/application-optimizer-button.png)](https://www.opvizor.com/wp-content/uploads/2015/03/application-optimizer-button.png)  
+You can access the solution by clicking the VM Application Optimizer icon: ![VM Application optimizer Icon](/images/blog/application-optimizer-button.png)
 
 To use Application Optimizer:
 
@@ -33,6 +34,5 @@ Of course we're working hard on improving the profiles and even to make them cus
 
 As a **VM application optimizer** result you get informations about our checks made and how you can speed up and optimize your virtual machine for the running application.
 
-[![opvizor VM application optimizer](/images/blog/application-optimizer-result.jpg)](https://www.opvizor.com/wp-content/uploads/2015/03/application-optimizer-result.jpg)
-
+![opvizor VM application optimizer](/images/blog/application-optimizer-result.jpg)
 We've seen VM performance and application performance improvements of 60% and more, especially when old network and storage controller were used. Therefore we can recommend to take it serious what virtual hardware you use.

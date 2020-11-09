@@ -1,5 +1,6 @@
 ---
 title: "New Starter Dashboard for VMware vSphere Troubleshooting"
+image: /images/blog/Starter_VM_TroubleshootingDashboard_mini-1.png
 tags: ["Ops", "opvizor"]
 date: "2018-01-23"
 ---

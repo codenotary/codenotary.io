@@ -1,5 +1,6 @@
 ---
 title: "Expert Interview Series: Raffaele Giordanelli About Memory Ballooning"
+image: /images/blog/Raffaele.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-01-28"
 ---

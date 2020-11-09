@@ -1,5 +1,6 @@
 ---
 title: "Integrate ELK stack and filebeat into Performance Analyzer"
+image: /images/blog/elk.png
 tags: ["Ops", "opvizor"]
 date: "2019-02-19"
 ---

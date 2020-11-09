@@ -1,5 +1,6 @@
 ---
 title: "HTML5 vSphere ESXi Host client"
+image: /images/blog/wpid-ESXiHostClientFlingScreenShotNew.png
 tags: ["Ops", "opvizor"]
 date: "2015-08-19"
 ---

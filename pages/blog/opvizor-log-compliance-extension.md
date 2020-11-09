@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Log Compliance extension"
+image: /images/blog/loganalyzer-1024x598.png
 tags: ["Ops", "opvizor"]
 date: "2020-08-03"
 ---

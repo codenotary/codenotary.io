@@ -1,5 +1,6 @@
 ---
 title: "3 Things You Always Wanted to Know about Docker container but Were Afraid to Ask"
+image: /images/blog/wpid-510d0a85af1e4f0ab914d0c7baf42fae.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-10-15"
 ---

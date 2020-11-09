@@ -1,7 +1,9 @@
 ---
 title: "VMware vCenter Server Appliance VCSA filesystem is damaged"
+image: /images/blog/wpid-vcsa_grub.png
 tags: ["Ops", "opvizor"]
 date: "2015-10-05"
+top: true
 ---
 
 Although you´ve done as much as you can do (or afford) to avoid a virtual machine crash, it can always happen. Sometimes you´re storage system goes down, sometime your HBA breaks or the fabric in between. Many misconfigurations lead to a non-redundant situation you find out about when it goes down. Therefore you should run an [vSphere Health Analyzer](http://try.opvizor.com/health-analyzer/ "vSphere Health Analyzer") Test to make sure.

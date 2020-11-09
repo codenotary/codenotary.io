@@ -1,5 +1,6 @@
 ---
 title: "Is there the best Container Technology?"
+image: /images/blog/containers.png
 tags: ["Ops", "opvizor"]
 date: "2016-06-23"
 ---

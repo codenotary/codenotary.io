@@ -1,5 +1,6 @@
 ---
 title: "VMware vSphere 6 and VMware Monitoring Make Waves in the Enterprise"
+image: /images/blog/bigstock-Attractive-Businesswoman-Looki-75907184.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-01-07"
 ---

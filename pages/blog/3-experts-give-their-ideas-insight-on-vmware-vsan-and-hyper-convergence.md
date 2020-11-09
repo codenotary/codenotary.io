@@ -1,5 +1,6 @@
 ---
 title: "3 Experts Give Their Ideas & Insight on VMware VSAN and Hyper-Convergence"
+image: /images/blog/bigstock-Business-Man-Holding-Ask-An-Ex-108230930.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-02-04"
 ---

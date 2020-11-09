@@ -1,5 +1,6 @@
 ---
 title: "Opvizor released a ChatOps Bot for VMware vSphere"
+image: /images/blog/OpBot-graphic.png
 tags: ["Ops", "opvizor"]
 date: "2016-12-01"
 ---

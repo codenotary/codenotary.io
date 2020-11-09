@@ -1,7 +1,9 @@
 ---
 title: "Storage performance: IOPS, latency and throughput"
+image: /images/blog/iops.png
 tags: ["Ops", "opvizor"]
 date: "2017-02-09"
+top: true
 ---
 
 This blog post is a summary  of articles I found about IOPS, latency and throughput and why it is important when troubleshooting storage performance.

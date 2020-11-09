@@ -1,5 +1,6 @@
 ---
 title: "VMware vSphere 6 API Limitation when querying performance Data Introduction"
+image: /images/blog/wpid-01.png
 tags: ["Ops", "opvizor"]
 date: "2015-05-15"
 ---

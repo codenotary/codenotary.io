@@ -1,5 +1,6 @@
 ---
 title: "Enlarge a disk and partition of any Linux VM without a reboot"
+image: /images/blog/diagram1.png
 tags: ["Ops", "opvizor"]
 date: "2020-02-24"
 ---

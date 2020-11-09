@@ -1,5 +1,6 @@
 ---
 title: "Sneak Peek: Opvizor OpBot, Slack, VMware vSphere and Amazon Echo Dot"
+image: /images/blog/feature-simplesetup-v2.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-12-15"
 ---

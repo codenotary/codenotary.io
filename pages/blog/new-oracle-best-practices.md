@@ -1,5 +1,6 @@
 ---
 title: "New Oracle Best Practices"
+image: /images/blog/oracle2.png
 tags: ["Ops", "opvizor"]
 date: "2016-08-11"
 ---

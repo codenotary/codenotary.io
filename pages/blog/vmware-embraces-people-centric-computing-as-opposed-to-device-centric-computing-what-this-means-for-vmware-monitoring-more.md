@@ -1,5 +1,6 @@
 ---
 title: "VMware Embraces 'People-Centric' Computing as Opposed to 'Device-Centric' Computing: What This Means for VMware Monitoring & More"
+image: /images/blog/bigstock-Update-Screen-Of-Microsoft-Win-98985728_600x.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-06-02"
 ---

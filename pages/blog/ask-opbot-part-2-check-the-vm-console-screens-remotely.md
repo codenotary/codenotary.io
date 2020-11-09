@@ -1,5 +1,6 @@
 ---
 title: "Ask OpBot - Part 2: Check the VM console screens remotely?"
+image: /images/blog/screenshot.png
 tags: ["Ops", "opvizor"]
 date: "2017-03-09"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Installing vSphere 6.0 ESXi Hosts nested - install"
+image: /images/blog/wpid-vmhw_esx-300x212.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-05-12"
 ---
@@ -50,4 +51,4 @@ To remove the .iso file just go to the configuration and click the button next t
 
 Last step to finish installing vSphere 6.0 ESXi is to head back to the console and hit _Enter_ to reboot the system using the freshly installed ESXi.
 
-[Next Task is the configuration of the ESXi 6.0](https://www.opvizor.com/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/ "Next Task is the configuration of the ESXi 6.0")
+[Next Task is the configuration of the ESXi 6.0](/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/ "Next Task is the configuration of the ESXi 6.0")

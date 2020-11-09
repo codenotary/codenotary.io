@@ -1,5 +1,6 @@
 ---
 title: "Slick top 5 VM performance improvements"
+image: /images/blog/wpid-top5-perfinc1.png
 tags: ["Ops", "opvizor"]
 date: "2015-08-10"
 ---

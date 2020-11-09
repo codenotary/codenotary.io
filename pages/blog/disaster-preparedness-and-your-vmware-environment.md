@@ -1,5 +1,6 @@
 ---
 title: "Disaster Preparedness and Your VMware Environment"
+image: /images/blog/wpid-bigstock-Close-shot-of-a-tablet-compute-59390588.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-11-10"
 ---

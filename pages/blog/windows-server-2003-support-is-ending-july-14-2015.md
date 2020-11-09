@@ -1,5 +1,6 @@
 ---
 title: "Windows Server 2003 support is ending July 14, 2015"
+image: /images/blog/report-setting.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-04-13"
 ---
@@ -14,11 +15,11 @@ You can read on the official [Microsoft website](http://www.microsoft.com/en-us/
 
 Furthermore we recommend joining one of the roadshows our partner [Entisys](http://www.entisys.com) is presenting: [Skycanvas survival camp 2015 - Windows Server 2003 support](http://www.amd.com/en-us/who-we-are/corporate-information/events/serverresources#.VRA5RKiqC-M.linkedin)
 
-[![opvizor Health Analyzer Report settings](/images/blog/report-setting.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/report-setting.jpg)
+![opvizor Health Analyzer Report settings](/images/blog/report-setting.jpg)
 
 Entisys is using opvizor Health Analyzer as many other partners and customers to check for Windows 2003 VM existence with our customized Inventory report. You can track your efforts to go avoid any **Windows Server 2003 support** issues very fast.
 
-[![MS Windows Server 2003 Support report](/images/blog/w2k3eos_report-300x300.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/w2k3eos_report.jpg)
+![MS Windows Server 2003 Support report](/images/blog/w2k3eos_report-300x300.jpg)
 
   
 [Check IT yourself!](https://www.opvizor.com/register/ "Register – Sign up for the #1 VMware Health analyzer")

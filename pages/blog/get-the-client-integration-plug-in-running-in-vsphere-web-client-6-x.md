@@ -1,7 +1,9 @@
 ---
 title: "Get the Client Integration Plug-In running in vSphere Web Client 6.x"
+image: /images/blog/firefox_uninstall.png
 tags: ["Ops", "opvizor"]
 date: "2017-07-11"
+top: true
 ---
 
 The headline of this blog post might sound simple, but it can be extremely annoying to get the Client Integration Plug-in running to import virtual appliances.

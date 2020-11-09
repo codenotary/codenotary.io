@@ -1,5 +1,6 @@
 ---
 title: "VMware vMotion, how it works - Part 1 Introduction"
+image: /images/blog/wpid-03_04_001.png
 tags: ["Ops", "opvizor"]
 date: "2015-06-26"
 ---

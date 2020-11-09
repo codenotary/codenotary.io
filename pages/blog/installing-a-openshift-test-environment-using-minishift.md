@@ -1,5 +1,6 @@
 ---
 title: "Installing a OpenShift test environment using Minishift"
+image: /images/blog/minishift_start.png
 tags: ["Ops", "opvizor"]
 date: "2019-06-11"
 ---

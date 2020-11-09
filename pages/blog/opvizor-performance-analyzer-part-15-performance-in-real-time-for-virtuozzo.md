@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer: Part 15 – Performance in real time for Virtuozzo"
+image: /images/blog/1-3.png
 tags: ["Ops", "opvizor"]
 date: "2016-10-20"
 ---

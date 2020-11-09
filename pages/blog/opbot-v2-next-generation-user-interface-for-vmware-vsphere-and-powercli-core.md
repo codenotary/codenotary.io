@@ -1,5 +1,6 @@
 ---
 title: "OpBot v2 - next generation user interface for VMware vSphere and PowerCLI Core"
+image: /images/blog/opBot-1.png
 tags: ["Ops", "opvizor"]
 date: "2017-01-03"
 ---

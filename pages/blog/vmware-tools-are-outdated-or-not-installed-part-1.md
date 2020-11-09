@@ -1,5 +1,6 @@
 ---
 title: "VMware Tools Are Outdated or Not Installed (Part 1)"
+image: /images/blog/vmtoolsoutdated.png
 tags: ["Ops", "opvizor"]
 date: "2015-02-06"
 ---
@@ -8,7 +9,7 @@ The most common issue with a vSphere virtual machine is that the VMware Tools ar
 
 With each new version of vSphere, VMware also updates VMware Tools and, with some version of vSphere, administrators must proactively update Tools in each virtual machine in order to experience the benefits of the new features provided by VMware. As shown in Figure 1, "VMware Tools is out of date on this virtual machine" is a message that is very common in VMware environments in which VMware Tools is not consistently updated.
 
-[![Figure 1, VMware Tools outdated](/images/blog/vmtoolsoutdated.png)](https://www.opvizor.com/wp-content/uploads/2015/02/vmtoolsoutdated.png)
+![Figure 1, VMware Tools outdated](/images/blog/vmtoolsoutdated.png)
 
 ## Impact
 

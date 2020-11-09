@@ -1,5 +1,6 @@
 ---
 title: "Health Analyzer 10 ESXi Hosts SMB Edition - Spring Promo!"
+image: /images/blog/Dashboard-300x218-300x218.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-04-16"
 ---
@@ -21,4 +22,4 @@ Make sure to check out our Health Analyzer 10 ESXi Hosts SMB Edition Spring Prom
 - max. 10 VMware ESX/ESXi Hosts within 1 vCenter
 - max. 1 VMware vCenter (all hosts within a vCenter need to be licensed)
 
-This offer is only valid for one vCenter and a maximum of 10 ESXi hosts under the vCenter management. [Please contact us, if you need assistance with larger environments](mailto:sales@opvizor.com). [![VMware vSphere Health Analyzer](/images/blog/Dashboard-300x218-300x218.jpg)](https://www.opvizor.com/wp-content/uploads/2015/02/Dashboard-300x218.jpg)
+This offer is only valid for one vCenter and a maximum of 10 ESXi hosts under the vCenter management. [Please contact us, if you need assistance with larger environments](mailto:sales@opvizor.com). ![VMware vSphere Health Analyzer](/images/blog/Dashboard-300x218-300x218.jpg)

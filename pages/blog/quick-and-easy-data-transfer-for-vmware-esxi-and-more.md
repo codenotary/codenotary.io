@@ -1,5 +1,6 @@
 ---
 title: "Quick and easy data transfer for VMware ESXi and more"
+image: /images/blog/start_python_server.png
 tags: ["Ops", "opvizor"]
 date: "2016-03-24"
 ---

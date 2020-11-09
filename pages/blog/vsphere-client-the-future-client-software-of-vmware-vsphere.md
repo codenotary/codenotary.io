@@ -1,5 +1,6 @@
 ---
 title: "vSphere Client: The Future Client Software of VMware vSphere"
+image: /images/blog/2016-03-07_1741_H5client_-_screenshot0-1024x684.png
 tags: ["Ops", "opvizor"]
 date: "2016-06-30"
 ---

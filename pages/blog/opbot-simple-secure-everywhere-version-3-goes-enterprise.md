@@ -1,5 +1,6 @@
 ---
 title: "OpBot Simple.Secure.Everywhere - version 3 goes enterprise"
+image: /images/blog/opbot-thanks.png
 tags: ["Ops", "opvizor"]
 date: "2017-02-28"
 ---

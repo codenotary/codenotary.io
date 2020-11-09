@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Achieves Record Revenue Growth, Doubling Number of Active Clients"
+image: /images/blog/wpid-thomasreinig.png
 tags: ["Ops", "opvizor"]
 date: "2015-06-16"
 ---
@@ -46,7 +47,7 @@ Our solutions, [Snapwatcher](http://try.opvizor.com/snapwatcherent) and [Health 
 
 Engage with Opvizor:
 
-·         [Blog](https://www.opvizor.com/blog/)
+·         [Blog](/blog/)
 
 ·         [Twitter](https://twitter.com/opvizor)
 

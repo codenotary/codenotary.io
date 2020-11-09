@@ -1,5 +1,6 @@
 ---
 title: "5 Native Cloud Initiatives That Prove VMware is the Dominant Force in Virtualization and Container Technology"
+image: /images/blog/bigstock-Successful-Statistics-72689878.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-02-09"
 ---

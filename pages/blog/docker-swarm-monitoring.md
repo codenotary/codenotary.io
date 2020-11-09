@@ -1,5 +1,6 @@
 ---
 title: "Docker Swarm monitoring"
+image: /images/blog/nodes_meta.png
 tags: ["Ops", "opvizor"]
 date: "2019-08-19"
 ---

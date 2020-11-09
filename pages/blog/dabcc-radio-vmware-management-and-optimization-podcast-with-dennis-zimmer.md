@@ -1,5 +1,6 @@
 ---
 title: "DABCC Radio - VMware Management and Optimization Podcast with Dennis Zimmer"
+image: /images/blog/DABCC-RADIO-200x200.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-04-24"
 ---
@@ -8,7 +9,7 @@ In Podcast episode 232, Douglas Brown interviews Dennis Zimmer, CEO and Founder 
 
 [VMware Management and Optimization **Podcast** with Dennis Zimmer - April 23, 2015 - DABCC Radio Episode #232](http://www.dabcc.com/media.aspx?id=2823)
 
-[![VMware Management and Optimization Podcast with Dennis Zimmer - April 23, 2015 - DABCC Radio Episode #232](/images/blog/DABCC-RADIO-200x200.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/DABCC-RADIO-200x200.jpg)
+![VMware Management and Optimization Podcast with Dennis Zimmer - April 23, 2015 - DABCC Radio Episode #232](/images/blog/DABCC-RADIO-200x200.jpg)
 
 ## opvizor Health Analyzer
 

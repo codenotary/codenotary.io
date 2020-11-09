@@ -1,5 +1,6 @@
 ---
 title: "How to Solve All of Your Broken Snapshots Problems"
+image: /images/blog/snapwatcher_enterprise_smaller-300x300.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-24"
 ---
@@ -12,7 +13,7 @@ About 4 weeks ago we launched our beta version of Snapwatcher to help alleviate 
 
 We had seen from our own experience and our customers’ that **broken snapshots** were a huge pain point, but we’re very pleased with the reception of our beta launch. In less than 2 weeks we had over 700 beta testers download the free version of Snapwatcher.
 
-[![Snapwatcher Enterprise Edition - Never miss Broken Snapshots](/images/blog/snapwatcher_enterprise_smaller-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/snapwatcher_enterprise_smaller.png)
+![Snapwatcher Enterprise Edition - Never miss Broken Snapshots](/images/blog/snapwatcher_enterprise_smaller-300x300.png)
 
 Our beta users gave us great feedback and insights, and helped us discover a few more scenarios which cause broken snapshots to occur. We’ve since added additional workflows to repair these specific types of broken snapshots, and now Snapwatcher can now detect all types of normal and bad snapshots and fix 95 out of 100 broken snapshots. Our beta testers also request that Snapwatcher be able to ignore certain VMs and their snapshots. These features will be available in the paid version of Snapwatcher.
 

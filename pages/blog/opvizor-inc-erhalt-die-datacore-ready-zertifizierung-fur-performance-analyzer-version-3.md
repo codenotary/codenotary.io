@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Inc. erhält die „DataCore Ready“-Zertifizierung für Performance Analyzer Version 3"
+image: /images/blog/Orig1-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-27"
 ---

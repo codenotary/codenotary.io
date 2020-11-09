@@ -1,5 +1,6 @@
 ---
 title: "Use OpBot to find your resource hungry virtual machines"
+image: /images/blog/top3memusage.png
 tags: ["Ops", "opvizor"]
 date: "2016-12-27"
 ---

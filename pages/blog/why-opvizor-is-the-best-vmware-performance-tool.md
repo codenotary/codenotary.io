@@ -1,5 +1,6 @@
 ---
 title: "Why opvizor Is The Best VMware Performance Tool"
+image: /images/blog/foundation_performance-1024x570.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-04"
 ---
@@ -28,7 +29,7 @@ The biggest challenge is correctly setting the threshold value, since this thres
 
 ## Depth **analysis?**
 
-[![Why opvizor is the best VMware performance tool](/images/blog/foundation_performance-1024x570.png)](https://www.opvizor.com/wp-content/uploads/2015/02/foundation_performance.png)
+![Why opvizor is the best VMware performance tool](/images/blog/foundation_performance-1024x570.png)
 
 ### Removing ambiguity
 

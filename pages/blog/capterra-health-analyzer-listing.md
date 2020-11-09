@@ -1,5 +1,6 @@
 ---
 title: "Capterra Health Analyzer Listing"
+image: /images/blog/wpid-capterra.png
 tags: ["Ops", "opvizor"]
 date: "2015-08-26"
 ---

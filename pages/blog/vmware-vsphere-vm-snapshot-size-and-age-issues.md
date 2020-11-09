@@ -1,5 +1,6 @@
 ---
 title: "VMware vSphere VM Snapshot Size And Age issues"
+image: /images/blog/snapshotmanager.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-09"
 ---
@@ -18,7 +19,7 @@ Besides the performance impact, there is also the potential for vCenter to not b
 
 While you could go into the Snapshot Manager for each virtual machine and see if that virtual machine has any snapshots, this is an exceedingly inefficient process, especially in larger organizations. Furthermore if the snapshot is inconsistent you can't even see the real VM snapshot size. Additionally, there are times that backup applications are unable to complete successfully and completely remove all the snapshots that have been created. As a result, it’s easy to end up with unintended snapshots that you didn’t even know existed. Additionally, it is possible to have snapshot files consuming disk space that aren’t even displayed in the snapshot manager!
 
-[![VM Snapshot Size](/images/blog/snapshotmanager.png)](https://www.opvizor.com/wp-content/uploads/2015/03/snapshotmanager.png)
+![VM Snapshot Size](/images/blog/snapshotmanager.png)
 
  
 
@@ -36,7 +37,7 @@ Simply removing a snapshot is easy but finding snapshots can be much more challe
 
 As shown in in the figure, opvizor allows you to very quickly identify snapshots that are large or have been aging for some time. Furthermore, invalid snapshots, the silent killer of any datastore, is also detected in minutes. Armed with this information, you’ll be able to quickly remove these snapshots, if they aren’t needed.
 
-[![opvizor old VM snapshot](/images/blog/snapage2.png)](https://www.opvizor.com/wp-content/uploads/2015/03/snapage2.png)
+![opvizor old VM snapshot](/images/blog/snapage2.png)
 
 Learn more about a typical memory related issues, opvizor automatically finds in minutes:
 
@@ -44,7 +45,7 @@ Learn more about a typical memory related issues, opvizor automatically finds in
 
 Because old and large snapshots are often forgotten or even inconsistent, so incredibly hard to detect, a problem can arise quick. The problem is that a single Snapshot’s Delta-file is able to grow to the same size of the original file. Left alone for too long, they can quickly balloon and eat up all the space in your datastores.
 
-[![opvizor Snapwatcher - Say Goodbye to inconsistent VM Snapshots](/images/blog/snapwatcher_2.png)](https://www.opvizor.com/wp-content/uploads/2015/02/snapwatcher_2.png)
+![opvizor Snapwatcher - Say Goodbye to inconsistent VM Snapshots](/images/blog/snapwatcher_2.png)
 
 We have a special solution called “Snapwatcher,” a simple tool that can help you discover and remove any ugly, old, large and hard-to-find broken snapshot.
 

@@ -1,5 +1,6 @@
 ---
 title: "NSX Security: Features And Use Cases"
+image: /images/blog/3e549ef9b7ab464489158039343cd250.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-09-01"
 ---

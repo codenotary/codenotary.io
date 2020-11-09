@@ -1,5 +1,6 @@
 ---
 title: "Open-VM-Tools For VMware"
+image: /images/blog/digital-marketing.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-07-26"
 ---
@@ -50,7 +51,7 @@ Listed below are some of the major advantages of using [Open VM Tools](https://g
 - There is a significant enhancement in the experience of the end user while deploying virtual machines on the VMware virtual structure.
 - A compact footprint provides for the release of each operating system by the Open-VM-Tools which are bundled alongside the operating system.
 - Since, Open-VM-Tools are completely supported open source application of VMware Tools; there is a complete elimination of the requirement of separate installation of VMware Tools when the Open-VM-Tools are bundled with the operating system.
-- There is no requirement for separate maintenance and repair cycles for [VMware Tools](https://www.opvizor.com/blog/understanding-vmware-tools-affects-vmware-monitoring/) updates as any updates to the Open-VM-Tools bundles come along with the maintenance updates and patches for the operating system.  This leads to a significant reduction in any downtime faced by the virtual machine and any operational expenses.
+- There is no requirement for separate maintenance and repair cycles for [VMware Tools](/blog/understanding-vmware-tools-affects-vmware-monitoring/) updates as any updates to the Open-VM-Tools bundles come along with the maintenance updates and patches for the operating system.  This leads to a significant reduction in any downtime faced by the virtual machine and any operational expenses.
 - There is a complete elimination of the requirement for a compatibility matrix check for Open-VM-Tools. All that needs to be adhered to for the guest OS release, is the [VMware Compatibility Matrix](http://www.vmware.com/resources/compatibility/search.php).
 
 [![Open-VM-Tools products](/images/blog/opvizor_monitor.png)](http://try.opvizor.com/health-analyzer/)

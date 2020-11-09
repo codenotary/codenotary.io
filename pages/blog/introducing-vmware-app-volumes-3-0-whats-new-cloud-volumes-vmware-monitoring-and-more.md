@@ -1,5 +1,6 @@
 ---
 title: "Introducing VMware App Volumes 3.0: What's New? (Cloud Volumes, VMware Monitoring, and More)"
+image: /images/blog/bigstock-The-words-App-Market-on-a-whit-30130880.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-03-15"
 ---

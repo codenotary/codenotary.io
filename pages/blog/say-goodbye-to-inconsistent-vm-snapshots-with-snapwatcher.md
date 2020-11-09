@@ -1,5 +1,6 @@
 ---
 title: "Say Goodbye to inconsistent VM snapshots with Snapwatcher - fix VM snapshot"
+image: /images/blog/snapwatcher_2.png
 tags: ["Ops", "opvizor"]
 date: "2015-02-25"
 ---
@@ -10,7 +11,7 @@ Broken or **inconsistent VM snapshots** are a common problem that affects 81% of
 
 Because broken snapshots are often incredibly hard to detect and constantly occur, they are often ignored. The problem is that a single Snapshot’s Delta-file is able to grow to the same size of the original file. Left alone for too long, they can quickly balloon and eat up all the space in your datastores.
 
-[![opvizor Snapwatcher - Fix inconsistent VM Snapshots or fix VM Snapshot](/images/blog/snapwatcher_2.png)](https://www.opvizor.com/wp-content/uploads/2015/02/snapwatcher_2.png)
+![opvizor Snapwatcher - Fix inconsistent VM Snapshots or fix VM Snapshot](/images/blog/snapwatcher_2.png)
 
 After noticing that many of our customers were being plagued by inconsistent VM snapshots, as we regularly were detecting TBs of VMware broken snapshot, we began thinking of a proactive solution to protect precious disk space. We believed that VMware admins shouldn’t have an endless battle to fix VMware broken snapshots. We thought that if we could create an easy way for anyone to manage and delete their snapshots, they would be more likely to remove broken snapshots on a daily basis well before they faced disk space shortages.
 

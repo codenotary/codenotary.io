@@ -1,5 +1,6 @@
 ---
 title: "Happy Thanksgiving!"
+image: /images/blog/pumpkins-505437-1280.original.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-11-24"
 ---

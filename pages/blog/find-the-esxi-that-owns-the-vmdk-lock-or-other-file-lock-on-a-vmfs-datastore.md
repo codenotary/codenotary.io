@@ -1,5 +1,6 @@
 ---
 title: "Find the ESXi that owns the VMDK lock or other file lock on a VMFS datastore"
+image: /images/blog/wpid-snapwatcher1.png
 tags: ["Ops", "opvizor"]
 date: "2015-07-10"
 ---

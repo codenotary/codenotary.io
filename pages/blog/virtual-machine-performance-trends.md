@@ -1,5 +1,6 @@
 ---
 title: "Virtual Machine Performance Trends"
+image: /images/blog/7days-1024x210.png
 tags: ["Ops", "opvizor"]
 date: "2020-04-22"
 ---

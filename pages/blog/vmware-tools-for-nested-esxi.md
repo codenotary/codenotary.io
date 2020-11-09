@@ -1,5 +1,6 @@
 ---
 title: "VMware Tools for Nested ESXi"
+image: /images/blog/11372361034_72c276d26e.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-09-16"
 ---
@@ -47,8 +48,8 @@ _esxcli software vib remove -n esx-tools-for-esxi_
 
 We have more blog posts for further reading covering the Nested Installation of vSphere vCenter as well as ESXi.
 
-[https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/](https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/ "https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/")
+[/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/](/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/ "https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/")
 
-[https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/](https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/ "https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/")
+[/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/](/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/ "https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/")
 
-[https://www.opvizor.com/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/](https://www.opvizor.com/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/ "https://www.opvizor.com/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/")
+[/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/](/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/ "https://www.opvizor.com/blog/configuration-of-a-nested-vsphere-6-0-esxi-host/")

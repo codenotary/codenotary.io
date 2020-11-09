@@ -1,5 +1,6 @@
 ---
 title: "KB VMware: VM vMotion fails because of multiple VM registration"
+image: /images/blog/3769283867_01c3214399.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-06-22"
 ---

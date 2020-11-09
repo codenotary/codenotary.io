@@ -1,5 +1,6 @@
 ---
 title: "What Does a VMware Developer Need to Do to Get Ahead in This World?"
+image: /images/blog/wpid-725d2c70cb154cc0909bd053e465c564.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-10-13"
 ---

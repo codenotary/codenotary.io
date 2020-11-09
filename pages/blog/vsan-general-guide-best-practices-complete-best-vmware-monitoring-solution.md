@@ -1,5 +1,6 @@
 ---
 title: "VSAN General Guide & Best Practices (Complete with the Best VMware Monitoring Solution)"
+image: /images/blog/destination-1285851_640.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-05-09"
 ---

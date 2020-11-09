@@ -1,5 +1,6 @@
 ---
 title: "Are You Neglecting Disaster Recovery Testing Your VMware Environment?"
+image: /images/blog/bigstock-Notepad-with-disaster-plan-99581807.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-12-10"
 ---

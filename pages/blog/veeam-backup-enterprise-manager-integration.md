@@ -1,5 +1,6 @@
 ---
 title: "Veeam Backup Enterprise Manager Integration"
+image: /images/blog/veeam_dashboard-sm.png
 tags: ["Ops", "opvizor"]
 date: "2017-10-10"
 ---

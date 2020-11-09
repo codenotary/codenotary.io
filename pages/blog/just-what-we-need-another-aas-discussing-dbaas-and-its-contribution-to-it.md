@@ -1,5 +1,6 @@
 ---
 title: "Just What We Need ... Another \"aaS\": Discussing DBaaS and Its Contribution to IT"
+image: /images/blog/bigstock-Close-up-Of-A-Person-s-Hand-Ri-92509424.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-12-03"
 ---

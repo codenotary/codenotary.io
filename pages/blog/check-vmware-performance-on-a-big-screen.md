@@ -1,5 +1,6 @@
 ---
 title: "Check VMware Performance on a big screen"
+image: /images/blog/hernandoclerk_bigscreen.jpg
 tags: ["Ops", "opvizor"]
 date: "2017-03-02"
 ---

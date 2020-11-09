@@ -1,5 +1,6 @@
 ---
 title: "Opvizor chosen to monitor Blockchain for the Zero Trust Consortium"
+image: /images/blog/ztc-2.png
 tags: ["Ops", "opvizor"]
 date: "2019-02-12"
 ---

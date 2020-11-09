@@ -1,5 +1,6 @@
 ---
 title: "OpBot and Performance Analyzer"
+image: /images/blog/opBot-150x143.png
 tags: ["Ops", "opvizor"]
 date: "2016-12-13"
 ---

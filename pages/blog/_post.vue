@@ -3,13 +3,13 @@
         <page-section-header :title="article.title" tag="h1" />
         <i-container>
             <i-row class="_justify-content-space-between">
-                <i-column xs="12" md="8">
-                    <article>
+                <i-column xs="12" md="9">
+                    <article class="blog-post-page _padding-right-4" style="border-right: 1px solid #e6e6e6">
                         <nuxt-content :document="article" />
                     </article>
                 </i-column>
                 <i-column xs="12" md="3">
-                    <top-articles class="top-articles-wrapper" :articles="topArticles" />
+                    <most-popular class="most-popular-wrapper" :articles="mostPopular" card />
                 </i-column>
             </i-row>
         </i-container>
@@ -18,11 +18,11 @@
 
 <script>
 import { title, meta, DEFAULT_META } from '@/helpers/meta/index';
-import { TopArticles } from '@/components/global/TopArticles';
+import { MostPopular } from '@/components/global/MostPopular';
 
 export default {
     components: {
-        TopArticles
+        MostPopular
     },
     head () {
         return {
@@ -43,14 +43,11 @@ export default {
         };
     },
     async asyncData({ $content, params }) {
-        const article = await $content('blog', params.post).fetch();
-        const topArticles = await $content('blog')
-            .where({ top: true })
-            .fetch();
+        const BLOG_POST_PATH = 'blog';
+        const article = await $content(BLOG_POST_PATH, params.post).fetch();
+        const mostPopular = await $content(BLOG_POST_PATH).where({ top: true }).fetch();
 
-        console.log(topArticles);
-
-        return { article, topArticles };
+        return { article, mostPopular };
     },
     methods: {
         jsonTreeToString (data) {
@@ -85,4 +82,10 @@ export default {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+article.blog-post-page {
+    h2 {
+        margin-top: 0 !important;
+    }
+}
+</style>

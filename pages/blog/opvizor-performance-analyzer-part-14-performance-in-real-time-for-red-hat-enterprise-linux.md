@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer: Part 14 – Performance in real time for Red Hat Enterprise Linux"
+image: /images/blog/1-2.png
 tags: ["Ops", "opvizor"]
 date: "2016-10-18"
 ---

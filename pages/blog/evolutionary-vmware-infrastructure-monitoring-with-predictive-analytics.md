@@ -1,5 +1,6 @@
 ---
 title: "Evolutionary VMware Infrastructure Monitoring with Predictive Analytics"
+image: /images/blog/keep-calm-300x300.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-13"
 ---
@@ -60,7 +61,7 @@ Too many tools in the virtualization monitoring space today take the flawed desi
 
 That flawed approach is similar to a police chief saying, “If someone is murdered, they will try to find who did it” when, what you really want, is a police force that prevents the murders before they happen, right?
 
-[![predictive Analytics](/images/blog/keep-calm-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/keep-calm.png)
+![predictive Analytics](/images/blog/keep-calm-300x300.png)
 
 You don't need a virtualization monitoring tool that gives you pretty speedometers and graphs. Instead, what you need is a tool that can learn your environment, identify trends, prevent problems before they happen, and keep app-owners as well as end users happy. If, by the rare chance that a problem occurs, what you need is a tool that quickly identifies the root cause of the problem and recommends a solution, based on best practices and what other companies have done to solve it.
 
@@ -74,7 +75,7 @@ In virtualization management, collective intelligence is used when the knowledge
 
 It’s illogical to have a monitoring tool that only improves when a few developers add a few new features and then send out a patch or update, once or twice a year. Basically to stand still on an outdated version while your environment changes quickly due to growth, patches aso. Furthermore its impossible to do predictive analytics but not being up2date.
 
-[![Predictive Analytics thru Collective Intelligence](/images/blog/mind.png)](https://www.opvizor.com/wp-content/uploads/2015/03/mind.png)
+![Predictive Analytics thru Collective Intelligence](/images/blog/mind.png)
 
 SaaS applications are centralized by nature and are the ideal place to leverage the power of collective intelligence. By learning the types of problems and solutions that solved them across thousands of other virtual infrastructures, it’s very likely that this knowledge can be applied to your environment to prevent your problems before they happen.
 
@@ -90,6 +91,6 @@ To learn more about a tool that meets all of the above recommendations and is qu
 
 ## About the Author
 
-[![David Davis vExpert](/images/blog/daviddavis.jpg)](https://www.opvizor.com/wp-content/uploads/2015/03/daviddavis.jpg)
+![David Davis vExpert](/images/blog/daviddavis.jpg)
 
 David Davis is a video training author at [Pluralsight.com](http://pluralsight.com/), the global leader in video training for IT pros. He holds several certifications including VCP5, VCAP-DCA, CCIE #9369, and has been awarded the VMware vExpert award 6 years running. Additionally, David has spoken at major conferences like VMworld and authored hundreds of articles for websites and print publications, mostly around virtualization. David's personal blog is [www.VirtualizationSoftware.com](http://www.VirtualizationSoftware.com)

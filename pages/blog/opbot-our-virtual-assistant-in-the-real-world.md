@@ -1,5 +1,6 @@
 ---
 title: "OpBot - our virtual assistant in the real world"
+image: /images/blog/opBot-150x143-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-12-08"
 ---

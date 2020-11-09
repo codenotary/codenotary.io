@@ -1,5 +1,6 @@
 ---
 title: "Snapwatcher Enterprise Edition - Spring Promo!"
+image: /images/blog/snapwatcher_enterprise_smaller-300x300.png
 tags: ["Ops", "opvizor"]
 date: "2015-04-15"
 ---
@@ -16,7 +17,7 @@ Make sure to check out our Snapwatcher Enterprise Edition Spring Promo, save mon
 - Track your VMware snapshot history
 
   
-[![Snapwatcher Enterprise Edition - Never miss Broken Snapshots](/images/blog/snapwatcher_enterprise_smaller-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/snapwatcher_enterprise_smaller.png)  
+![Snapwatcher Enterprise Edition - Never miss Broken Snapshots](/images/blog/snapwatcher_enterprise_smaller-300x300.png)
 Our customers are already happy about using Snapwatcher daily:
 
 > Excellent product for admin and vSphere users to manage VM snapshot. Manage storage, manage snapshots -> go snapwatcher

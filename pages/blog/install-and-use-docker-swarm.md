@@ -1,5 +1,6 @@
 ---
 title: "Install and use Docker Swarm"
+image: /images/blog/init_master.png
 tags: ["Ops", "opvizor"]
 date: "2019-08-13"
 ---

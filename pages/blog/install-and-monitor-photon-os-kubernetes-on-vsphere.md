@@ -1,5 +1,6 @@
 ---
 title: "Install and monitor Photon OS, Kubernetes on vSphere"
+image: /images/blog/photon_image.png
 tags: ["Ops", "opvizor"]
 date: "2018-04-17"
 ---

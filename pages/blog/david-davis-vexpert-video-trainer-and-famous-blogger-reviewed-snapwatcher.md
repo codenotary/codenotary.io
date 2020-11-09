@@ -1,5 +1,6 @@
 ---
 title: "David Davis, vExpert, video trainer and famous blogger reviewed Snapwatcher"
+image: /images/blog/wpid-6f6a837a4509b60dbb7df3f3fff63bae.jpeg
 tags: ["Ops", "opvizor"]
 date: "2015-06-17"
 ---
@@ -18,7 +19,7 @@ You can find the full review here: 
 
 [Finding and Eliminating Dangerous vSphere Snapshots with Snapwatcher (Free)](http://www.virtualizationsoftware.com/finding-eliminating-dangerous-vsphere-snapshots-snapwatcher-free/ "Finding and Eliminating Dangerous vSphere Snapshots with Snapwatcher (Free)")
 
-Check out the freshly released 2.5 version of its [Snapwatcher](https://www.opvizor.com/blog/snapwatcher-2-5-released-to-solve-all-common-vm-snapshot-problems-in-vmware/ "Snapwatcher ") which discovers any hidden, inconsistent or so called ‘Zombie’ VM snapshot in the customers VMware environment. 
+Check out the freshly released 2.5 version of its [Snapwatcher](/blog/snapwatcher-2-5-released-to-solve-all-common-vm-snapshot-problems-in-vmware/ "Snapwatcher ") which discovers any hidden, inconsistent or so called ‘Zombie’ VM snapshot in the customers VMware environment. 
 
 Snapwatcher helps customers to free up more disk space and avoid possible downtime. The latest version contains new workflows to fix inconsistent snapshots, more details about snapshot hierarchy, size and the creator as well as full fixing process tracking including VM log file details.
 

@@ -1,5 +1,6 @@
 ---
 title: "DABCC Videos featuring Opvizor"
+image: /images/blog/wpid-dabcc_videos.png
 tags: ["Ops", "opvizor"]
 date: "2015-06-01"
 ---

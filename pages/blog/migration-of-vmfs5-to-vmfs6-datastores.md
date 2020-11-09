@@ -1,5 +1,6 @@
 ---
 title: "Migration of VMFS5 to VMFS6 Datastores"
+image: /images/blog/vmfs1.png
 tags: ["Ops", "opvizor"]
 date: "2018-10-30"
 ---

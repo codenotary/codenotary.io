@@ -1,5 +1,6 @@
 ---
 title: "Ask OpBot - Part 1: What is the IP of my VM?"
+image: /images/blog/vmcache.png
 tags: ["Ops", "opvizor"]
 date: "2017-03-07"
 ---

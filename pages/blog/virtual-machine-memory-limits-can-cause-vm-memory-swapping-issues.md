@@ -1,5 +1,6 @@
 ---
 title: "VM memory limit can cause VM memory swapping issues"
+image: /images/blog/memorylimit.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-02"
 ---
@@ -16,15 +17,15 @@ The impact of a **VM memory limit** is such that virtual machines may not be abl
 
 ### Ease of Detection
 
-To find a VM memory limit, you can verify the memory configuration of each virtual machine, checking for memory limits and compare this against the actual memory assigned to a virtual machine. If you have a large number of virtual machines, this can be challenging and an automated tool that can detect memory limits is needed in medium and large virtual infrastructures.[](https://www.opvizor.com/wp-content/uploads/2015/02/memorylimit.png)
+To find a VM memory limit, you can verify the memory configuration of each virtual machine, checking for memory limits and compare this against the actual memory assigned to a virtual machine. If you have a large number of virtual machines, this can be challenging and an automated tool that can detect memory limits is needed in medium and large virtual infrastructures.
 
-[![vm memory limit lower than configuration](/images/blog/memorylimit.png)](https://www.opvizor.com/wp-content/uploads/2015/02/memorylimit.png)
+![vm memory limit lower than configuration](/images/blog/memorylimit.png)
 
 ## Benefits to Solving
 
-By removing memory limits, vSphere’s built-in memory optimization techniques can more adequately perform their role and virtual machine guest operating systems can receive the memory that they need to run applications. If the virtual machine’s memory was limited when there was host RAM available, the performance of the application in the guest OS will improve as the guest is then able to access adequate RAM. You just need to select unlimited instead of setting any limit.[](https://www.opvizor.com/wp-content/uploads/2015/02/memlimit-vm1.png)
+By removing memory limits, vSphere’s built-in memory optimization techniques can more adequately perform their role and virtual machine guest operating systems can receive the memory that they need to run applications. If the virtual machine’s memory was limited when there was host RAM available, the performance of the application in the guest OS will improve as the guest is then able to access adequate RAM. You just need to select unlimited instead of setting any limit.
 
-[![VM Memory Limit - vSphere client](/images/blog/memlimit-vm1.png)](https://www.opvizor.com/wp-content/uploads/2015/02/memlimit-vm1.png)
+![VM Memory Limit - vSphere client](/images/blog/memlimit-vm1.png)
 
 ## Solution
 
@@ -34,11 +35,7 @@ Removing a VM memory limit is easily done by setting the limit back to zero. Unf
 
 opvizor helps to quickly and continually notify you of any virtual system that has memory limits and additionally started VM memory swapping. opvizor doesn't leave you alone with the finding, it provides you with instructions on how to remove them, either from the GUI or using a PowerCLI script.
 
-[
-
 ![VM memory limit causes VM memory swapping](/images/blog/memlimit.png)
-
-](https://www.opvizor.com/wp-content/uploads/2015/02/memlimit.png)
 
 Learn more about a typical memory related issues, opvizor automatically finds in minutes:[](https://www.opvizor.com/vm-memory-limit-with-ballooning-or-swapping/ "VM Memory Limit With Ballooning Or Swapping")
 

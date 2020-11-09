@@ -1,20 +1,21 @@
 ---
 title: "Pure Storage Multipathing and Best Practices"
+image: /images/blog/pure_1.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-05-14"
 ---
 
 As we´re also using Pure Storage in our own production environment, we wanted to check for best practices using it. As we´re eating our own dog food, first thing was of course analyzing our own environment with our [Health Analyzer](https://www.opvizor.com/register/ "Register – Sign up for the #1 VMware Health analyzer"). Ouch that hurts - lots of issues in our own environment... wrong or non-optimized multipathing set for some datastores. Looking deeper into it, we found out that we were using out of the box MRU (most recently used). This is the VMware vSphere default, when connecting the Pure Storage as Storage Array Type Plugin (SATP) VMW\_SATP\_ALUA is chosen automatically.
 
-[![Pure Storage  default multipathing](/images/blog/pure_1.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/pure_1.jpg)
+![Pure Storage  default multipathing](/images/blog/pure_1.jpg)
 
 As we just started using Pure Storage for some weeks, we didn´t optimize the environment in the beginning. But now was the right time.
 
-[![Pure Storage Round Robin multipathing](/images/blog/pure_2.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/pure_2.jpg)
+![Pure Storage Round Robin multipathing](/images/blog/pure_2.jpg)
 
 Therefore we made the simplest and most important change for stability and performance - Pure Storage Multipathing policy should be Round Robin. Important to know, if you don´t change the default setting in the VMware ESXi configuration you need to change this setting for each datastore on all hosts.
 
-[![Pure Storage Multipathing - all pathes used](/images/blog/pure_3-300x202.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/pure_3.jpg)
+![Pure Storage Multipathing - all pathes used](/images/blog/pure_3-300x202.jpg)
 
 After setting all ESXi Hosts and datastores correctly the performance is even better and all pathes are used! Of course you can further tune these settings changing the I/O treshold.
 

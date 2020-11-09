@@ -1,5 +1,6 @@
 ---
 title: "Annnnnd ... It's a Wrap! Wrapping Up VMworld 2015 Europe and Pre-Register for VMworld 2016"
+image: /images/blog/bigstock-Security-word-on-white-keyboar-27134375.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-01-19"
 ---

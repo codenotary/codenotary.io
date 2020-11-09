@@ -1,5 +1,6 @@
 ---
 title: "Docker Performance on top of VMware vSphere"
+image: /images/blog/scnerios.png
 tags: ["Ops", "opvizor"]
 date: "2016-06-07"
 ---

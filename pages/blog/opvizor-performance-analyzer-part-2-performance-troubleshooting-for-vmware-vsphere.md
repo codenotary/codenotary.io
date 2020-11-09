@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer: Part 2 - Performance troubleshooting for VMware vSphere"
+image: /images/blog/1.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-06"
 ---

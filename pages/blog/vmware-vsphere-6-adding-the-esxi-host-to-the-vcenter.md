@@ -1,5 +1,6 @@
 ---
 title: "VMware vSphere 6 - Adding the ESXi host to the vCenter"
+image: /images/blog/wpid-vcenter_add.png
 tags: ["Ops", "opvizor"]
 date: "2015-05-20"
 ---

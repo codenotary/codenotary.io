@@ -1,5 +1,6 @@
 ---
 title: "Getting Cranked Up with vSphere HTML5 Web Client Fling"
+image: /images/blog/bigstock-Features-Blue-Square-Grunge-St-103266527.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-04-21"
 ---

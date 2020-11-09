@@ -1,5 +1,6 @@
 ---
 title: "VMworld News: Get OpBot for VMware and Slack for FREE"
+image: /images/blog/opbotfree.png
 tags: ["Ops", "opvizor"]
 date: "2017-08-28"
 ---

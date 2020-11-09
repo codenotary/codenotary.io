@@ -1,5 +1,6 @@
 ---
 title: "THE OPVIZOR TEAM WISHES YOU HAPPY HOLIDAYS!"
+image: /images/blog/joanna-kosinska-173573-unsplash.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-12-20"
 ---

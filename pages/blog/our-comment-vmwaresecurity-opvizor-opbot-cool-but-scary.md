@@ -1,5 +1,6 @@
 ---
 title: "Our Comment VMware/Security: Opvizor OpBot cool but scary?"
+image: /images/blog/SlackBot-Security-New-Page.png
 tags: ["Ops", "opvizor"]
 date: "2017-07-20"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer 6.6.2 released"
+image: /images/blog/admin_config.png
 tags: ["Ops", "opvizor"]
 date: "2020-05-07"
 ---

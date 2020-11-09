@@ -1,5 +1,6 @@
 ---
 title: "Nutanix Prism Central and Prism Element support"
+image: /images/blog/host-highlights-2.png
 tags: ["Ops", "opvizor"]
 date: "2019-04-09"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer VMware Performance Monitoring"
+image: /images/blog/1-2.png
 tags: ["Ops", "opvizor"]
 date: "2018-01-02"
 ---

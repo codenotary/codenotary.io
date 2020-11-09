@@ -1,5 +1,6 @@
 ---
 title: "VMware Security Advisories for October 1st"
+image: /images/blog/wpid-5b210590bbdd4259ac4d6b7c22a918bf.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-10-08"
 ---

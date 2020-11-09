@@ -1,5 +1,6 @@
 ---
 title: "Is Your VMware Environment Fort Knox or Fannie Mae?"
+image: /images/blog/wpid-bigstock-Graphic-symbol-of-a-lock-on-a-94606052.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-11-05"
 ---

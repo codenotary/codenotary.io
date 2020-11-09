@@ -1,5 +1,6 @@
 ---
 title: "Blog Coverage summary OpBot"
+image: /images/blog/OpBot.png
 tags: ["Ops", "opvizor"]
 date: "2017-01-31"
 ---

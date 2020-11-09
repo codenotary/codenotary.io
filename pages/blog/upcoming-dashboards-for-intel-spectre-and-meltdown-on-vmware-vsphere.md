@@ -1,5 +1,6 @@
 ---
 title: "upcoming Dashboards for Intel Spectre and Meltdown on VMware vSphere"
+image: /images/blog/spectre_meltdown.png
 tags: ["Ops", "opvizor"]
 date: "2018-02-06"
 ---

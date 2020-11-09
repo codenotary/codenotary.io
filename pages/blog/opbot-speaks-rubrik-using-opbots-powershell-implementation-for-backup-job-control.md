@@ -1,5 +1,6 @@
 ---
 title: "OpBot speaks Rubrik - Using OpBot´s PowerShell implementation for Backup job control"
+image: /images/blog/rubrik_Backupstatus.png
 tags: ["Ops", "opvizor"]
 date: "2017-02-21"
 ---

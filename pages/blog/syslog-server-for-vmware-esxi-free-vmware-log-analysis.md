@@ -1,5 +1,6 @@
 ---
 title: "Syslog server for VMware ESXi - Free VMware Log Analysis"
+image: /images/blog/wpid-syslog.png
 tags: ["Ops", "opvizor"]
 date: "2015-06-09"
 ---

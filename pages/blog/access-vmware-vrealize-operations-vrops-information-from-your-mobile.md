@@ -1,5 +1,6 @@
 ---
 title: "Access VMware vRealize Operations (vROPs) information from your mobile"
+image: /images/blog/vrops1.png
 tags: ["Ops", "opvizor"]
 date: "2017-05-02"
 ---

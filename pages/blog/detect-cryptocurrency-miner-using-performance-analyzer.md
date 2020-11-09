@@ -1,5 +1,6 @@
 ---
 title: "Detect Cryptocurrency Miner using Performance Analyzer"
+image: /images/blog/starter_view.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-01-18"
 ---

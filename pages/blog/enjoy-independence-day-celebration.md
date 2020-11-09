@@ -1,5 +1,6 @@
 ---
 title: "Enjoy Independence Day Celebration"
+image: /images/blog/wpid-independence_day1.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-07-03"
 ---
@@ -18,6 +19,6 @@ You get **Snapwatcher Enterprise** for just **$94.50 per named user** including 
 
 Check Out the Snapwatcher Community reviews:
 
-[https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/](https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/ "https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/")
+[/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/](/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/ "https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/")
 
 [http://www.virtualizationsoftware.com/finding-eliminating-dangerous-vsphere-snapshots-snapwatcher-free/](http://www.virtualizationsoftware.com/finding-eliminating-dangerous-vsphere-snapshots-snapwatcher-free/ "http://www.virtualizationsoftware.com/finding-eliminating-dangerous-vsphere-snapshots-snapwatcher-free/")

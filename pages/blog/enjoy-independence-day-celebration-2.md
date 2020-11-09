@@ -1,5 +1,6 @@
 ---
 title: "Enjoy Independence Day Celebration"
+image: /images/blog/wpid-independence_day1.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-07-04"
 ---

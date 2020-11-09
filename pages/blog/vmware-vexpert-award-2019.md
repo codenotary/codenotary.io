@@ -1,5 +1,6 @@
 ---
 title: "VMware vExpert award 2019"
+image: /images/blog/vexpertstars.png
 tags: ["Ops", "opvizor"]
 date: "2019-03-13"
 ---

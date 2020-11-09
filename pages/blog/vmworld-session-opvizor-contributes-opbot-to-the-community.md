@@ -1,5 +1,6 @@
 ---
 title: "VMworld Session - Opvizor contributes OpBot to the community"
+image: /images/blog/IMG_3195.jpg
 tags: ["Ops", "opvizor"]
 date: "2017-09-05"
 ---

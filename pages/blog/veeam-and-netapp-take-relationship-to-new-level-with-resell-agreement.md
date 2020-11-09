@@ -1,5 +1,6 @@
 ---
 title: "Veeam and NetApp Take Relationship to New Level with Resell Agreement - what about combining monitoring?"
+image: /images/blog/button_download-performance-analyzer-2.png
 tags: ["Ops", "opvizor"]
 date: "2017-10-26"
 ---

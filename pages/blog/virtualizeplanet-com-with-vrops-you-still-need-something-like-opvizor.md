@@ -1,5 +1,6 @@
 ---
 title: "virtualizeplanet.com With vROPs you still need something like Opvizor"
+image: /images/blog/wpid-UKVMUG2014-300x153.png
 tags: ["Ops", "opvizor"]
 date: "2015-04-28"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "How to make VMware faster"
+image: /images/blog/7175577368_d2d3a0e4fb.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-07-17"
 ---
@@ -42,12 +43,12 @@ VMware vSphere provides you all the possibilities but you need to know and confi
 
 ## Some tricks how to make VMware faster
 
-1. [keep your VMware Tools updated](https://www.opvizor.com/blog/solving-vmware-tools-outdated-or-not-installed/ "keep your VMware Tools updated")
+1. [keep your VMware Tools updated](/blog/solving-vmware-tools-outdated-or-not-installed/ "keep your VMware Tools updated")
 2. Disconnect or remove all medias like Floppy Drives or CD Drives that are not needed
 3. [make sure to avoid CPU and Memory limits](https://www.opvizor.com/vm-memory-limit/ "make sure to avoid CPU and Memory limits")
-4. [avoid old VM hardware](https://www.opvizor.com/blog/old-virtual-machine-network-devices-part-2/ "avoid old VM hardware")
-5. [watch performance metrics](https://www.opvizor.com/blog/the-good-the-bad-and-the-ugly-about-vm-cpu-ready/ "watch performance metrics")
-6. [avoid VM snapshot issues](https://www.opvizor.com/blog/opvizor-handle-vmware-snapshot-issues/ "avoid VM snapshot issues")
+4. [avoid old VM hardware](/blog/old-virtual-machine-network-devices-part-2/ "avoid old VM hardware")
+5. [watch performance metrics](/blog/the-good-the-bad-and-the-ugly-about-vm-cpu-ready/ "watch performance metrics")
+6. [avoid VM snapshot issues](/blog/opvizor-handle-vmware-snapshot-issues/ "avoid VM snapshot issues")
 7. think about paravirtualized SCSI driver
 8. avoid Monster VMs that excess the capabilities of one CPU socket
 

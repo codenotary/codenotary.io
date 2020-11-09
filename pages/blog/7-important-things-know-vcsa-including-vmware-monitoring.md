@@ -1,5 +1,6 @@
 ---
 title: "The 7 Most Important Things You Should Know About vCSA"
+image: /images/blog/bigstock-Business-User-Touching-Server--120625976.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-04-12"
 ---
@@ -75,11 +76,11 @@ VMware tips and tricks guru [William Lam](https://twitter.com/lamw) has also c
 
 Or check out our own documentation:
 
-- [Installing vSphere 6 – vCSA (vCenter Server Appliance)](https://www.opvizor.com/blog/installing-vsphere-6-vcsa-vcenter-server-appliance/)[](https://www.opvizor.com/blog/installing-vsphere-6-vcsa-vcenter-server-appliance/)
-- [First Login vSphere 6 – vCSA (vCenter Server Appliance)](https://www.opvizor.com/blog/first-login-vsphere-6-vcsa-vcenter-server-appliance/)
-- [VMware vSphere 6 – Adding the ESXi host to the vCenter](https://www.opvizor.com/blog/vmware-vsphere-6-adding-the-esxi-host-to-the-vcenter/)
-- [VMware vCenter Server Appliance VCSA filesystem is damaged](https://www.opvizor.com/blog/vmware-vcenter-server-appliance-vcsa-filesystem-is-damaged/)
-- [Installing vSphere 6.0 ESXi Hosts nested – preconfiguration](https://www.opvizor.com/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/)
+- [Installing vSphere 6 – vCSA (vCenter Server Appliance)](/blog/installing-vsphere-6-vcsa-vcenter-server-appliance/)[](/blog/installing-vsphere-6-vcsa-vcenter-server-appliance/)
+- [First Login vSphere 6 – vCSA (vCenter Server Appliance)](/blog/first-login-vsphere-6-vcsa-vcenter-server-appliance/)
+- [VMware vSphere 6 – Adding the ESXi host to the vCenter](/blog/vmware-vsphere-6-adding-the-esxi-host-to-the-vcenter/)
+- [VMware vCenter Server Appliance VCSA filesystem is damaged](/blog/vmware-vcenter-server-appliance-vcsa-filesystem-is-damaged/)
+- [Installing vSphere 6.0 ESXi Hosts nested – preconfiguration](/blog/installing-vsphere-6-0-esxi-hosts-nested-preconfiguration/)
 
 ## **7\. Where to Get Your vCSA Download**
 

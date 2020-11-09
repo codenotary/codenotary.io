@@ -1,5 +1,6 @@
 ---
 title: "VMware vSphere Versus Microsoft Hyper-V: How Can You Decide? VMware Performance Monitoring and Other Considerations"
+image: /images/blog/bigstock-Small-business-owner-of-a-co-15610985.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-12-29"
 ---

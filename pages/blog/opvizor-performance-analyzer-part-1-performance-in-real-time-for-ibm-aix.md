@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer: Part 1- Performance in real time for IBM AIX"
+image: /images/blog/lpar1-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-08-30"
 ---

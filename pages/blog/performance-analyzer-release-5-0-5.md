@@ -1,5 +1,6 @@
 ---
 title: "Performance Analyzer Release 5.0.5"
+image: /images/blog/nutanix.png
 tags: ["Ops", "opvizor"]
 date: "2019-02-25"
 ---

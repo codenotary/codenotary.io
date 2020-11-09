@@ -1,5 +1,6 @@
 ---
 title: "Introducing VMware Tools 10.1 and 10.0.12"
+image: /images/blog/1-7.png
 tags: ["Ops", "opvizor"]
 date: "2016-11-15"
 ---

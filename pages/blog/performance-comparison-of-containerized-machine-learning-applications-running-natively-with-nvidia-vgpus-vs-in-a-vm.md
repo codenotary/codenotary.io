@@ -1,5 +1,6 @@
 ---
 title: "Performance Comparison of Containerized Machine Learning Applications Running Natively with Nvidia vGPUs vs. in a VM"
+image: /images/blog/1-1.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-05-15"
 ---

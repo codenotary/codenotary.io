@@ -1,5 +1,6 @@
 ---
 title: "Find orphaned vm files in your VMware vSphere environment using your mobile"
+image: /images/blog/orphan-1-262x300.jpg
 tags: ["Ops", "opvizor"]
 date: "2017-01-18"
 ---

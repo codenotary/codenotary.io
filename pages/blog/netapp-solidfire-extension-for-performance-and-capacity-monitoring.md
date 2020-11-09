@@ -1,5 +1,6 @@
 ---
 title: "NetApp SolidFire extension for Performance and Capacity monitoring"
+image: /images/blog/add_solidfire.png
 tags: ["Ops", "opvizor"]
 date: "2018-07-24"
 ---

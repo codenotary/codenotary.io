@@ -1,10 +1,11 @@
 ---
 title: "Winner for the US-A-BIZ Award 2015 aka Economy Oscar - Category Startup is opvizor"
+image: /images/blog/us-a-biz-award.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-02-20"
 ---
 
-Thank you WKÖ (Austrian Economic Chamber) for awarding us with the US-A-BIZ Award 2015 - Category Startup! That's a team effort and a team success, therefore we're very proud being awarded. [![US-A-BIZ Award 2015 - Category Startup](/images/blog/us-a-biz-award.jpg)](https://www.opvizor.com/wp-content/uploads/2015/02/us-a-biz-award.jpg)
+Thank you WKÖ (Austrian Economic Chamber) for awarding us with the US-A-BIZ Award 2015 - Category Startup! That's a team effort and a team success, therefore we're very proud being awarded. ![US-A-BIZ Award 2015 - Category Startup](/images/blog/us-a-biz-award.jpg)
 
 USA: Die Gewinner des WirtschaftsOskar 2015 Doka, FACC, Getzner, opvizor, Siemens Österreich und TTTech sind mit ihren Spitzenleistungen am US-Markt Gewinner des USABizAward 2015 Wien (OTS/PWK120) - Hollywood steht alljährlich im Brennpunkt mit der Verleihung der Oscars, der begehrtesten Trophäen des globalen Filmbusiness. Zwei Tage davor prämiert das AußenwirtschaftsCenter Los Angeles der AUSSENWIRTSCHAFT AUSTRIA mit dem USABizAward, dem "WirtschaftsOskar", Spitzenleistungen österreichischer Unternehmen am US-Markt. "Der USABizAward holt das Außergewöhnliche und Innovative auf den roten Teppich und in das mediale Rampenlicht. Vielfach sind diese Nischenweltmeister in Österreich kaum bekannt", sagt Rudolf Thaler, österreichischer Wirtschaftsdelegierter in Los Angeles. Der Award wird heuer am 20. Februar bereits zum fünften Mal vergeben.
 

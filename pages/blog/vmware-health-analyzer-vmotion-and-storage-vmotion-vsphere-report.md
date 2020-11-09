@@ -1,5 +1,6 @@
 ---
 title: "VMware Health Analyzer - vMotion and Storage vMotion vSphere report"
+image: /images/blog/wpid-vmotion_report-300x289.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-06-05"
 ---

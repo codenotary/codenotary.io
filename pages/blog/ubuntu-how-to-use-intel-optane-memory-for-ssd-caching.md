@@ -1,7 +1,9 @@
 ---
 title: "Ubuntu - How to use Intel Optane Memory for SSD Caching"
+image: /images/blog/install.png
 tags: ["Ops", "opvizor"]
 date: "2020-03-25"
+top: true
 ---
 
 ## How to use Intel Optane Memory for SSD Caching

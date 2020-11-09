@@ -1,5 +1,6 @@
 ---
 title: "VMware vSAN memory consumption and vSCSIstats dashboards"
+image: /images/blog/calculator.png
 tags: ["Ops", "opvizor"]
 date: "2019-03-19"
 ---

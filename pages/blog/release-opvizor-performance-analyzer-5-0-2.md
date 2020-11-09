@@ -1,5 +1,6 @@
 ---
 title: "Release – Opvizor Performance Analyzer 5.0.2"
+image: /images/blog/shortvscsiStats_-Cluster_VM.png
 tags: ["Ops", "opvizor"]
 date: "2019-01-10"
 ---

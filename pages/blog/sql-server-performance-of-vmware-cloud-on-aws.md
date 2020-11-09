@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Performance of VMware Cloud on AWS"
+image: /images/blog/1-1.png
 tags: ["Ops", "opvizor"]
 date: "2018-05-17"
 ---

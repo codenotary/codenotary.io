@@ -1,5 +1,6 @@
 ---
 title: "opvizor at skycanvas survival camp 2015 Windows 2003 EoS, Houston"
+image: /images/blog/skycanvas-300x300.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-04-17"
 ---
@@ -8,7 +9,7 @@ You can still register for the upcoming [skycanvas survival camp 2015](http://ww
 
 But the event in Houston was hold at the Magniola Hotel and opvizor was part of that. We received great feedback and looking forward supporting customers with the Windows 2003 EOS situation.
 
-[![Skycanvas survival camp Windows 2003 EOS](/images/blog/skycanvas-300x300.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/skycanvas.jpg)
+![Skycanvas survival camp Windows 2003 EOS](/images/blog/skycanvas-300x300.jpg)
 
 This workshop covers:
 

@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer: Part 7 – Performance in real time for Debian Linux"
+image: /images/blog/Capture.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-23"
 ---

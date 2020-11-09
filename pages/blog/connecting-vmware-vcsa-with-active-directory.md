@@ -1,5 +1,6 @@
 ---
 title: "Connecting VMware vCSA with Active Directory"
+image: /images/blog/advcsa.png
 tags: ["Ops", "opvizor"]
 date: "2017-02-07"
 ---

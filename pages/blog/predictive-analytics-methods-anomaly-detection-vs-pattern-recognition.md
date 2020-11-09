@@ -1,5 +1,6 @@
 ---
 title: "Predictive Analytics Methods - Anomaly Detection vs. Pattern Recognition"
+image: /images/blog/tact-300x300.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-26"
 ---
@@ -60,7 +61,7 @@ Anomaly detection can be great, but not if the system isn’t taking care of con
 
 Pattern recognition is the old way of detecting issues and doesn´t look very modern when compared to anomaly detection. It´s not really cool from a marketing perspective.
 
-[![opvizor time to act predictive analytics](/images/blog/tact-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/tact.png)
+![opvizor time to act predictive analytics](/images/blog/tact-300x300.png)
 
 **Pattern recognition** has some amazing benefits:
 

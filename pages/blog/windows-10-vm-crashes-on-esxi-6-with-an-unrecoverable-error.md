@@ -1,5 +1,6 @@
 ---
 title: "Windows 10 VM crashes on ESXi 6 with an unrecoverable error"
+image: /images/blog/win10error-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-02-02"
 ---

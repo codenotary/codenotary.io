@@ -1,5 +1,6 @@
 ---
 title: "Introducing vSphere 6.5"
+image: /images/blog/VCSA-highlights.png
 tags: ["Ops", "opvizor"]
 date: "2016-10-18"
 ---

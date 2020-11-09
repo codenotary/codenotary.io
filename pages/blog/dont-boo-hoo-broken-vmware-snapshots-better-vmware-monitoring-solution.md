@@ -1,5 +1,6 @@
 ---
 title: "Don't Boo Hoo Over Broken VMware Snapshots: A Better VMware Monitoring Solution is Here"
+image: /images/blog/photographer-1026441_640.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-05-05"
 ---

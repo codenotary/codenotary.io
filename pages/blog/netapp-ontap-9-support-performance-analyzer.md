@@ -1,5 +1,6 @@
 ---
 title: "NetApp ONTAP 9 support - Performance Analyzer"
+image: /images/blog/ntapiops.png
 tags: ["Ops", "opvizor"]
 date: "2016-11-17"
 ---

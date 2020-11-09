@@ -1,5 +1,6 @@
 ---
 title: "Grafana Dashboard and PowerCLI"
+image: /images/blog/wpid-nice_dashboard.png
 tags: ["Ops", "opvizor"]
 date: "2015-05-27"
 ---

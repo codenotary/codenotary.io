@@ -1,5 +1,6 @@
 ---
 title: "vCenter Appliance (VCSA) root Partition full"
+image: /images/blog/vcsa_df.png
 tags: ["Ops", "opvizor"]
 date: "2018-02-20"
 ---

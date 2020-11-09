@@ -1,5 +1,6 @@
 ---
 title: "ROI Calculator Health Analyzer SaaS"
+image: /images/blog/wpid-roi.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-07-24"
 ---

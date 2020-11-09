@@ -1,5 +1,6 @@
 ---
 title: "Expert Interview Series: Dana Bull of Leostream on Virtualization"
+image: /images/blog/Dana-Bull_600x.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-07-12"
 ---

@@ -4,7 +4,7 @@ tags: ["Ops", "opvizor"]
 date: "2016-07-07"
 ---
 
-[![](https://www.opvizor.com/wp-content/uploads/2016/07/9d29417b-461c-4455-99c8-caeb58121f14.jpg)](http://www.informationweek.com/cloud/cloud-computing-profit-requires-trust-of-technology/d/d-id/1326106)
+![](9d29417b-461c-4455-99c8-caeb58121f14.jpg)](http://www.informationweek.com/cloud/cloud-computing-profit-requires-trust-of-technology/d/d-id/1326106)
 
 A Google-backed survey conducted by the Economist Intelligence Unit finds that profiting from cloud computing requires trust in the technology.
 

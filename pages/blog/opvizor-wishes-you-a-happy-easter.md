@@ -1,12 +1,13 @@
 ---
 title: "Opvizor - Wishes you a Happy Easter!"
+image: /images/blog/ID-100317646.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-04-02"
 ---
 
 Team Opvizor wants to take this opportunity to wish all of you a very **happy Easter**! 2015 starting amazing for use as we’ve seen a great increase in the number of users, and an amazing launch of our new tool [Snapwatcher](http://try.opvizor.com/snapwatcherent).
 
-[![Happy Easter! Image courtesy of jannoon028 at FreeDigitalPhotos.net](/images/blog/ID-100317646.jpg)](https://www.opvizor.com/wp-content/uploads/2015/04/ID-100317646.jpg) Image courtesy of jannoon028 at FreeDigitalPhotos.net
+![Happy Easter! Image courtesy of jannoon028 at FreeDigitalPhotos.net](/images/blog/ID-100317646.jpg) Image courtesy of jannoon028 at FreeDigitalPhotos.net
 
 - We added dozens of new situations (rules) to [Health Analyzer](https://www.opvizor.com/register) to help you detect downtime and performance issues in your vSphere environment
 - We’ve launched a brand new product [Snapwatcher](http://try.opvizor.com/snapwatcherent) to track, remediate and fix VM snapshots

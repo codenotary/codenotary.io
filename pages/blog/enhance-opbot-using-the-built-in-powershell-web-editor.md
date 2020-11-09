@@ -1,5 +1,6 @@
 ---
 title: "Enhance OpBot using the built-in PowerShell Web editor"
+image: /images/blog/editoron.png
 tags: ["Ops", "opvizor"]
 date: "2017-04-13"
 ---

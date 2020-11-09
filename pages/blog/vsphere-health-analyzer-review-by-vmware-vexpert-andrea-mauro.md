@@ -1,5 +1,6 @@
 ---
 title: "vSphere Health Analyzer review by VMware vExpert Andrea Mauro"
+image: /images/blog/wpid-Opvizor-Usage.png
 tags: ["Ops", "opvizor"]
 date: "2015-09-11"
 ---

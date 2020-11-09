@@ -1,12 +1,13 @@
 ---
 title: "Restarting VMware vCenter service triggers large Amount of DRS vMotions"
+image: /images/blog/vmotionreport-300x300.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-27"
 ---
 
  
 
-A customer of us was affected by a large number of DRS vMotions and could find that using our vMotion/Storage vMotion report. That report tracks all vMotion and Storage vMotion activities and can be a great help to find large amounts of VM migrations and large vmdk data transfers. [![vMotion and Storage vMotion report restarting VMware vCenter](/images/blog/vmotionreport-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/vmotionreport.png)
+A customer of us was affected by a large number of DRS vMotions and could find that using our vMotion/Storage vMotion report. That report tracks all vMotion and Storage vMotion activities and can be a great help to find large amounts of VM migrations and large vmdk data transfers. ![vMotion and Storage vMotion report restarting VMware vCenter](/images/blog/vmotionreport-300x300.png)
 
 He noticed that all the vMotion tasks were triggered by the system (DRS) and at a certain time. Actually some minutes after **restarting VMware vCenter**.
 

@@ -1,5 +1,6 @@
 ---
 title: "Using OpBot to access VMware vSphere from your iPhone"
+image: /images/blog/mobile_chat-1.png
 tags: ["Ops", "opvizor"]
 date: "2017-01-12"
 ---

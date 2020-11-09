@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer - VMware Horizon View Performance"
+image: /images/blog/vmware_view-3.png
 tags: ["Ops", "opvizor"]
 date: "2018-06-05"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Performance Analyzer for Kubernetes on vSphere"
+image: /images/blog/node_numa_vm.png
 tags: ["Ops", "opvizor"]
 date: "2019-05-16"
 ---

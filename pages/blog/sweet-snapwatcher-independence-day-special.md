@@ -1,5 +1,6 @@
 ---
 title: "Sweet Snapwatcher Independence Day Special"
+image: /images/blog/wpid-independence_day.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-07-01"
 ---
@@ -16,7 +17,7 @@ You get Snapwatcher Enterprise for just $94.50 per named user including 1 year o
 
 Check Out the Snapwatcher Community reviews:
 
-[https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/](https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/ "https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/")
+[/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/](/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/ "https://www.opvizor.com/blog/ivo-beerens-vexpert-and-famous-blogger-reviewed-snapwatcher/")
 
 [http://www.virtualizationsoftware.com/finding-eliminating-dangerous-vsphere-snapshots-snapwatcher-free/](http://www.virtualizationsoftware.com/finding-eliminating-dangerous-vsphere-snapshots-snapwatcher-free/ "http://www.virtualizationsoftware.com/finding-eliminating-dangerous-vsphere-snapshots-snapwatcher-free/")
 

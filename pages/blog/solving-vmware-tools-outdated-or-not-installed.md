@@ -1,5 +1,6 @@
 ---
 title: "Solving VMware Tools Outdated or Not Installed"
+image: /images/blog/wpid-6f6a837a4509b60dbb7df3f3fff63bae.jpeg
 tags: ["Ops", "opvizor"]
 date: "2015-04-27"
 ---
@@ -46,4 +47,4 @@ Recently, Opvizor announced a free edition which can do a [free vSphere health 
 
 [Photo courtesy of](http://www.opvizor/com/register) [opvizor Inc](http://www.virtualizationsoftware.com/wp-content/uploads/2015/04/opvizor-dashboard-300x218@2x.jpg)
 
-Additionally, Opvizor just announced a new tool called [SnapWatcher](http://www.snapwatcher.com/) that allows you to monitor your vSphere snapshots and remove unneeded snapshots. You can try it free and buy it for just $199 thought the [Opvizor Spring promotion](https://www.opvizor.com/blog/snapwatcher-enterprise-edition-spring-promo/).
+Additionally, Opvizor just announced a new tool called [SnapWatcher](http://www.snapwatcher.com/) that allows you to monitor your vSphere snapshots and remove unneeded snapshots. You can try it free and buy it for just $199 thought the [Opvizor Spring promotion](/blog/snapwatcher-enterprise-edition-spring-promo/).

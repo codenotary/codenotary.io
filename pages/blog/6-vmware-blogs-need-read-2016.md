@@ -1,5 +1,6 @@
 ---
 title: "6 VMware Blogs You Need to Read in 2016"
+image: /images/blog/bigstock-Technical-drawings-with-the-be-47169388.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-03-29"
 ---
@@ -28,7 +29,7 @@ This blog is the [public face of the vCloud team](http://blogs.vmware.com/vcloud
 
 _Opvizor is a solution for monitoring VMware. They also blog about relevant industry news, VMware tips and tricks, how-to guides, and much more._ 
 
-Full of tips and tricks, news and information, and more, [the Opvizor blog](https://www.opvizor.com/blog/) covers all things involving monitoring VMware. This blog also covers notable events in the VMware universe and gives valuable perspective on things like the management shakeups following the recent merger. 
+Full of tips and tricks, news and information, and more, [the Opvizor blog](/blog/) covers all things involving monitoring VMware. This blog also covers notable events in the VMware universe and gives valuable perspective on things like the management shakeups following the recent merger. 
 
 ## **5\. Virtual Blocks** 
 

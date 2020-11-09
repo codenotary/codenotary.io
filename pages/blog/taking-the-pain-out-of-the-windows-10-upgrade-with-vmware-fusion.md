@@ -1,5 +1,6 @@
 ---
 title: "Taking the Pain Out of the Windows 10 Upgrade With VMware Fusion"
+image: /images/blog/bigstock-Hand-holds-Windows--logotype-103334195.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-03-17"
 ---

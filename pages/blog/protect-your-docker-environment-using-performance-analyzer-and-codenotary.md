@@ -1,5 +1,6 @@
 ---
 title: "Protect your docker environment using Performance Analyzer and CodeNotary"
+image: /images/blog/dockerhub-parity.png
 tags: ["Ops", "opvizor"]
 date: "2019-05-08"
 ---

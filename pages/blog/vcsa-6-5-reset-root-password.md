@@ -1,5 +1,6 @@
 ---
 title: "VCSA 6.5 reset root password"
+image: /images/blog/splash.png
 tags: ["Ops", "opvizor"]
 date: "2017-10-12"
 ---

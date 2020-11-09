@@ -1,5 +1,6 @@
 ---
 title: "VMware CPU Co-Stop and SQL Server Performance"
+image: /images/blog/costop2-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-10-31"
 ---

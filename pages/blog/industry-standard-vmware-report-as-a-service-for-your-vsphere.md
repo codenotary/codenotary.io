@@ -1,5 +1,6 @@
 ---
 title: "Instant Industry Standard VMware report as a Service for your vSphere"
+image: /images/blog/reports-as-a-service_small-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/reports-as-a-service_small.png
 tags: ["Ops", "opvizor"]
 date: "2015-04-07"
 ---

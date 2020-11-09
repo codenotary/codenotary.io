@@ -1,7 +1,9 @@
 ---
 title: "The good, the bad and the ugly about VM CPU ready"
+image: /images/blog/pacpuready.png
 tags: ["Ops", "opvizor"]
 date: "2015-05-07"
+top: true
 ---
 
 Let's go step by step into the title of this post and what is to say about VMware vSphere and VMs having CPU ready numbers.

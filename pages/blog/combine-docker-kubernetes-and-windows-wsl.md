@@ -1,5 +1,6 @@
 ---
 title: "Combine Docker, Kubernetes and Windows WSL"
+image: /images/blog/wsl-linux.png
 tags: ["Ops", "opvizor"]
 date: "2019-07-09"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer 3.0 Provides Real-Time Performance Analysis for virtual data center"
+image: /images/blog/vm_perfanalyzer.png
 tags: ["Ops", "opvizor"]
 date: "2016-06-09"
 ---

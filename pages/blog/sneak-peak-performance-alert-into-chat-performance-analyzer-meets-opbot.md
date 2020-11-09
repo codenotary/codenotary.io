@@ -1,5 +1,6 @@
 ---
 title: "Sneak Peek: Performance Alert into Chat - Performance Analyzer meets OpBot"
+image: /images/blog/alerting_opbot.png
 tags: ["Ops", "opvizor"]
 date: "2016-12-20"
 ---

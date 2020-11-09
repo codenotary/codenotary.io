@@ -1,12 +1,13 @@
 ---
 title: "VMware vMotion requirements - Part 2"
+image: /images/blog/wpid-vmotion-cpusetting.png
 tags: ["Ops", "opvizor"]
 date: "2015-07-08"
 ---
 
 As we see a lot of vMotion and Storage vMotion related issues we continue our series about VMware vMotion requirements in this part. If you want to read about the vMotion Technology itself, check out this blog post: 
 
-[VMware vMotion, how it works - Part 1 Introduction](https://www.opvizor.com/blog/vmware-vmotion-how-it-works-part-1-introduction/ "VMware vMotion, how it works - Part 1 Introduction")
+[VMware vMotion, how it works - Part 1 Introduction](/blog/vmware-vmotion-how-it-works-part-1-introduction/ "VMware vMotion, how it works - Part 1 Introduction")
 
 ## **Requirements**
 

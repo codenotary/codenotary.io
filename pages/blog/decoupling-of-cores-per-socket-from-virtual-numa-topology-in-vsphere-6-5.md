@@ -1,5 +1,6 @@
 ---
 title: "Decoupling of Cores per Socket from Virtual NUMA Topology in vSphere 6.5"
+image: /images/blog/numa-hostsingle.png
 tags: ["Ops", "opvizor"]
 date: "2018-01-16"
 ---

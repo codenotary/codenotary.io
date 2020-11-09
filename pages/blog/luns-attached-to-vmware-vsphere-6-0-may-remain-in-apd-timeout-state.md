@@ -1,5 +1,6 @@
 ---
 title: "LUNs attached to VMware vSphere 6.0 may remain in APD Timeout state"
+image: /images/blog/220645446_74e12cd2c3.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-08-03"
 ---

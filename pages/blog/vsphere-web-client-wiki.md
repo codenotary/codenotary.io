@@ -1,5 +1,6 @@
 ---
 title: "vSphere Web Client Wiki"
+image: /images/blog/wpid-wiki.png
 tags: ["Ops", "opvizor"]
 date: "2015-09-23"
 ---

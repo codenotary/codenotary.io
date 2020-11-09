@@ -1,5 +1,6 @@
 ---
 title: "You can't tune a Ferrari with Toyota Camry specs or how to achieve best VM Performance"
+image: /images/blog/wpid-foundation_performance-1024x570.png
 tags: ["Ops", "opvizor"]
 date: "2015-05-18"
 ---

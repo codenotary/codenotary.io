@@ -1,5 +1,6 @@
 ---
 title: "An Overview of the VMware 2015 State of Business Mobility Report and What it Means for VMware Monitoring"
+image: /images/blog/bigstock-Young-urban-professional-man-u-74257507.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-12-22"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Old Virtual Machine Network Devices - Low VMware Performance (Part 2)"
+image: /images/blog/vlance.png)](/wp-content/uploads/2015/02/vlance.png
 tags: ["Ops", "opvizor"]
 date: "2015-02-12"
 ---

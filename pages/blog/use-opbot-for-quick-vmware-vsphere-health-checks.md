@@ -1,5 +1,6 @@
 ---
 title: "Use OpBot for quick VMware vSphere health checks"
+image: /images/blog/badvms.png
 tags: ["Ops", "opvizor"]
 date: "2017-01-26"
 ---

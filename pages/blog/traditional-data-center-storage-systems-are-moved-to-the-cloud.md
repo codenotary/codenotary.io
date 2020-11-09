@@ -1,5 +1,6 @@
 ---
 title: "Traditional data center storage systems are moved to the cloud"
+image: /images/blog/wpid-public-cloud-storage-preferences.png
 tags: ["Ops", "opvizor"]
 date: "2015-08-17"
 ---

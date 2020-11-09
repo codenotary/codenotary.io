@@ -1,5 +1,6 @@
 ---
 title: "Born Global Champions Award - WKO"
+image: /images/blog/wpid-bornglobal.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-07-06"
 ---

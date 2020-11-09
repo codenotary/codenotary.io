@@ -1,5 +1,6 @@
 ---
 title: "static routes for VMware ESXi vmkernel ports"
+image: /images/blog/network.png
 tags: ["Ops", "opvizor"]
 date: "2016-01-21"
 ---

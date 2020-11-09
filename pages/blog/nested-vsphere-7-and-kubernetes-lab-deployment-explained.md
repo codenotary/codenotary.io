@@ -1,5 +1,6 @@
 ---
 title: "Nested vSphere 7 and  Kubernetes Lab Deployment explained"
+image: /images/blog/switch_nested.png
 tags: ["Ops", "opvizor"]
 date: "2020-05-06"
 ---

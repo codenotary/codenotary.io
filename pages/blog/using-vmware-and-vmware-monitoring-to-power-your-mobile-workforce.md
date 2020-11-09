@@ -1,5 +1,6 @@
 ---
 title: "Using VMware and VMware monitoring to Power Your Mobile Workforce"
+image: /images/blog/bigstock-Start-Up-Corporate-Identity-84809393.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-11-23"
 ---

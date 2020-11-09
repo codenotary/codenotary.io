@@ -1,5 +1,6 @@
 ---
 title: "virtual-it.pl covers Snapwatcher 2.5 release"
+image: /images/blog/wpid-logo_virtualpl.png
 tags: ["Ops", "opvizor"]
 date: "2015-06-15"
 ---

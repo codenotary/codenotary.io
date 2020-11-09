@@ -1,5 +1,6 @@
 ---
 title: "VM Gets Unresponsive When Removing A Snapshot - Snapshot Consolidation"
+image: /images/blog/snapwatcher_2.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-11"
 ---
@@ -50,7 +51,7 @@ $vmConfigSpec = New-Object VMware.Vim.VirtualMachineConfigSpec $vmConfigSpec.ext
 
 **Try Snapwatcher to manage typical snapshot related issues:**
 
-[![opvizor Snapwatcher - Say Goodbye to inconsistent VM Snapshots](/images/blog/snapwatcher_2.png)](https://www.opvizor.com/wp-content/uploads/2015/02/snapwatcher_2.png)
+![opvizor Snapwatcher - Say Goodbye to inconsistent VM Snapshots](/images/blog/snapwatcher_2.png)
 
 This is the first automated solution that constantly monitors all snapshots in the entire VMware vCenter systems to catch and repair old, broken or inconsistent VM snapshots. Our powerful grid allows you to manage actions on hundreds of snapshots in one simple dashboard view. Snapwatcher does the hard work to protect your disk space from broken snapshots so you don’t have to.
 

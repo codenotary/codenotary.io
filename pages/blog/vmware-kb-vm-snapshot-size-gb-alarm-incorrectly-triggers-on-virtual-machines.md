@@ -1,5 +1,6 @@
 ---
 title: "VMware KB VM Snapshot Size (GB) alarm incorrectly triggers on virtual machines"
+image: /images/blog/wpid-toomanysnaps-s.png
 tags: ["Ops", "opvizor"]
 date: "2015-05-19"
 ---

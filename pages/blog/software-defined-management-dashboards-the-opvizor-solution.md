@@ -1,5 +1,6 @@
 ---
 title: "Software Defined Management Dashboards - The Opvizor Solution"
+image: /images/blog/button_download-performance-analyzer-6.png
 tags: ["Ops", "opvizor"]
 date: "2017-07-18"
 ---

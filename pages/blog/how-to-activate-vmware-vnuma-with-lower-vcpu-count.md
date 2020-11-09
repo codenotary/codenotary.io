@@ -1,5 +1,6 @@
 ---
 title: "How to activate VMware vNUMA with lower vCPU count"
+image: /images/blog/numa_issues.png
 tags: ["Ops", "opvizor"]
 date: "2018-11-15"
 ---

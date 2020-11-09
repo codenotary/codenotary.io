@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer Review: Simple, Elegant, Efficient Monitoring for Your Virtual Environment"
+image: /images/blog/fig5.jpeg
 tags: ["Ops", "opvizor"]
 date: "2018-03-20"
 ---

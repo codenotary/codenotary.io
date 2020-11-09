@@ -1,5 +1,6 @@
 ---
 title: "VMware vSphere wasted resource detection and calculation"
+image: /images/blog/starter_idle.png
 tags: ["Ops", "opvizor"]
 date: "2018-10-04"
 ---

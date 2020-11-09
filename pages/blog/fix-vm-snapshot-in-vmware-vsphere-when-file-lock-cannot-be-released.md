@@ -1,5 +1,6 @@
 ---
 title: "Fix VM snapshot in VMware vSphere when file lock cannot be released"
+image: /images/blog/snapwatcher-locked-file.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-18"
 ---
@@ -57,7 +58,7 @@ After the successful datastore relocation the snapshots can be easily consilidat
 Definitely a VMware vSphere bug that can end up nasty when you don´t have any space left on a datastore to move the VM to get the file unlocked and fix a VM snapshot.
 
   
-[![opvizor Snapwatcher - Say Goodbye to Broken Snapshots](/images/blog/snapwatcher_2.png)](https://www.opvizor.com/wp-content/uploads/2015/02/snapwatcher_2.png)  
+![opvizor Snapwatcher - Say Goodbye to Broken Snapshots](/images/blog/snapwatcher_2.png)
 opvizor provides a solution called Snapwatcher that can be downloaded on the opvizor website [here at http://try.opvizor.com/snapwatcher/](http://try.opvizor.com/snapwatcher/)  
 
 **opvizor owns ten different rules for detecting different VM snapshot-related errors and problems.**

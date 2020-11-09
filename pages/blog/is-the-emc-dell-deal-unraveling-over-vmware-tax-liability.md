@@ -1,5 +1,6 @@
 ---
 title: "Is the EMC - Dell Deal Unraveling Over VMware Tax Liability?"
+image: /images/blog/bigstock-Mergers-And-Acquisitions-100572719.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-12-08"
 ---

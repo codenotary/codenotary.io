@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer 3.1.1 - Release"
+image: /images/blog/vmsnapshot_img.png
 tags: ["Ops", "opvizor"]
 date: "2016-08-16"
 ---

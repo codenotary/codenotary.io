@@ -1,5 +1,6 @@
 ---
 title: "Hey, VMware Developers, Have You Heard of Tech Field Day? Learning Better Ways to Monitor VMware"
+image: /images/blog/uss-nimitz-108622_640.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-02-18"
 ---

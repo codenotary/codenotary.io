@@ -1,5 +1,6 @@
 ---
 title: "VMware Photon OS 3 and Minikube"
+image: /images/blog/minikubeversion.png
 tags: ["Ops", "opvizor"]
 date: "2019-01-08"
 ---

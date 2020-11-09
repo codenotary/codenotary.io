@@ -1,5 +1,6 @@
 ---
 title: "cloudcomputingadmin.com featuring Opvizor products"
+image: /images/blog/wpid-logo.png
 tags: ["Ops", "opvizor"]
 date: "2015-06-10"
 ---

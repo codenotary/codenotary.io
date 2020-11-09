@@ -1,5 +1,6 @@
 ---
 title: "opvizor Health Analyzer - VMware Inventory report"
+image: /images/blog/inventory-report-300x300.png
 tags: ["Ops", "opvizor"]
 date: "2015-04-10"
 ---
@@ -15,12 +16,12 @@ We want to start with the **VMware Inventory report** that is typically used for
 - Compliance and change tracking
 - Document current status and configuration
 
-[![opvizor Health Analyzer VMware Inventory report](/images/blog/inventory-report-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/inventory-report.png)
+![opvizor Health Analyzer VMware Inventory report](/images/blog/inventory-report-300x300.png)
 
 As the report can be generated as HTML, PDF or CSV file there is no limitation in further processing or customizing to your needs.
 
 Of course you don't need to login, generate and download the report every time you need it. We offer a simple way to schedule the report generation and it will be sent to you by email.
 
-[![opvizor Health Analyzer VM Inventory settings](/images/blog/inventory-settings-300x300.png)](https://www.opvizor.com/wp-content/uploads/2015/03/inventory-settings.png)
+![opvizor Health Analyzer VM Inventory settings](/images/blog/inventory-settings-300x300.png)
 
 Last but not least, although you can access and read the VM report information with real cleartext data, our software is fully aware of anonymization. Therefore even when uploading anonymized data, you get the real data in your inbox. That is possible as our local opvizor service is owning the anonymization convertion data and is deanonymizing all report content locally (in your datacenter) before sending it out via your local mail server. Your Host names, VM names, IP addresses, Portgroup names never leave your datacenter.

@@ -1,5 +1,6 @@
 ---
 title: "Are VMware Developers Too Slow in Implementing Mobile?"
+image: /images/blog/bigstock-Young-Girl-Talking-On-Smartpho-90324650.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-01-12"
 ---

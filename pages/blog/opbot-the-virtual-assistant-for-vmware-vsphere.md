@@ -1,5 +1,6 @@
 ---
 title: "OpBot – The virtual assistant for VMware vSphere"
+image: /images/blog/opBot-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-12-06"
 ---

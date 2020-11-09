@@ -1,5 +1,6 @@
 ---
 title: "Efficient VMware Monitoring: Stop Chasing Fires"
+image: /images/blog/wpid-bigstock-Many-working-tools-in-the-box-85469660.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-09-25"
 ---
@@ -10,7 +11,7 @@ Spending too much time chasing and stomping fires in your VMware environment, an
 
 ![VMware monitoring - old VMware Tools](/images/blog/wpid-bigstock-Many-working-tools-in-the-box-85469660.jpg)
 
-_A new vSphere always means a new collection of tools. You just have to remember to go get them._The VMware tools are designed to improve the performance of guest operating systems, but the tools are updated each time a new version of vSphere is released. Unfortunately, the tools do not update automatically. Hence, each time you get a new version of VMware, you discover that those tools are outdated or missing. The symptom is usually a message that reads, 'VMware Tools is out of date on this virtual machine', or many of the features simply stop working. You can [manually update those tools](https://www.opvizor.com/blog/vmware-tools-are-outdated-or-not-installed-part-1/) each time you get a new version of VMware vSphere.**Are the VM Network Devices Old?**If performance is seriously hindered, old VM devices might be the cause. Opvizor recommends a 4-step process for updating the network devices (just to be on the safe site - after the VM has been either backed up or a snapshot has been created):1. Upgrade the virtual machine hardware by:
+_A new vSphere always means a new collection of tools. You just have to remember to go get them._The VMware tools are designed to improve the performance of guest operating systems, but the tools are updated each time a new version of vSphere is released. Unfortunately, the tools do not update automatically. Hence, each time you get a new version of VMware, you discover that those tools are outdated or missing. The symptom is usually a message that reads, 'VMware Tools is out of date on this virtual machine', or many of the features simply stop working. You can [manually update those tools](/blog/vmware-tools-are-outdated-or-not-installed-part-1/) each time you get a new version of VMware vSphere.**Are the VM Network Devices Old?**If performance is seriously hindered, old VM devices might be the cause. Opvizor recommends a 4-step process for updating the network devices (just to be on the safe site - after the VM has been either backed up or a snapshot has been created):1. Upgrade the virtual machine hardware by:
 
 - Update the VMware Tools to the latest version and restart the virtual machine
 - Shutting down the virtual machine
@@ -33,7 +34,7 @@ _A new vSphere always means a new collection of tools. You just have to remember
 
 Opvizor can help you 
 
-[quickly identify and remedy](https://www.opvizor.com/blog/old-virtual-machine-network-devices-part-2/)
+[quickly identify and remedy](/blog/old-virtual-machine-network-devices-part-2/)
 
  outdated network devices.
 
@@ -47,7 +48,7 @@ There are some other common issues that lead to problems with your VMware enviro
 
 • Inadequate 
 
-[memory limits](https://www.opvizor.com/blog/virtual-machine-memory-limits-can-cause-vm-memory-swapping-issues/)
+[memory limits](/blog/virtual-machine-memory-limits-can-cause-vm-memory-swapping-issues/)
 
 • Issues with 
 

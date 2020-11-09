@@ -1,5 +1,6 @@
 ---
 title: "3 Things You Gotta Have for Leveraging the IoT (Internet of Things)"
+image: /images/blog/wpid-bigstock-Computer-Cables-And-Plugs-Atta-96342866.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-10-27"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Configuration of a nested vSphere 6.0 ESXi Host"
+image: /images/blog/wpid-esxi6_splash.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-05-13"
 ---
@@ -56,4 +57,4 @@ All test passed except resolving the hostname (which is totally fine because it�
 
 At this point the configuration is complete. Now logging out using _Esc_ and adding the host to the vCenter is next.
 
-You can [add the vSphere 6.0 ESXi Host now to the vCenter](https://www.opvizor.com/blog/vmware-vsphere-6-adding-the-esxi-host-to-the-vcenter/ "add the vSphere 6.0 ESXi Host now to the vCenter")
+You can [add the vSphere 6.0 ESXi Host now to the vCenter](/blog/vmware-vsphere-6-adding-the-esxi-host-to-the-vcenter/ "add the vSphere 6.0 ESXi Host now to the vCenter")

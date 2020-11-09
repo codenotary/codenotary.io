@@ -1,5 +1,6 @@
 ---
 title: "VMware Tanzu projects: Octant - Kubernetes runtime overview"
+image: /images/blog/octant.png
 tags: ["Ops", "opvizor"]
 date: "2019-10-15"
 ---

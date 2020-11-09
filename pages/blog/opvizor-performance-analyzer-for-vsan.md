@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer for vSAN"
+image: /images/blog/1-5.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-07-19"
 ---

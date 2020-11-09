@@ -1,5 +1,6 @@
 ---
 title: "DABCC Webinar -  Heal your VMware vSphere - quick, simple and proactive"
+image: /images/blog/wpid-opvizor-healthcheck-250x250.png
 tags: ["Ops", "opvizor"]
 date: "2015-05-06"
 ---

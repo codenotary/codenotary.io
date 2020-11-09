@@ -1,5 +1,6 @@
 ---
 title: "What´s the performance impact of Intel Spectre and Meltdown within VMware environments"
+image: /images/blog/spectre_teaser.png
 tags: ["Ops", "opvizor"]
 date: "2018-03-13"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "extremely useful docker commands"
+image: /images/blog/docker-size.png
 tags: ["Ops", "opvizor"]
 date: "2019-03-19"
 ---

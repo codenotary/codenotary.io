@@ -1,5 +1,6 @@
 ---
 title: "Busted! Taking Down the Top 8 VMware Myths"
+image: /images/blog/wpid-bigstock-business-people-cloud-comput-79684360-1.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-10-29"
 ---

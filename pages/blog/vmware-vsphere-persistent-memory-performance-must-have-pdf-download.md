@@ -1,5 +1,6 @@
 ---
 title: "VMware vSphere Persistent Memory Performance – Must Have PDF Download"
+image: /images/blog/persistent-memory-720x357.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-08-22"
 ---

@@ -17,7 +17,7 @@
                                     <i-card class="blog-post _display-flex _flex-direction-column _justify-content-space-between">
                                         <div>
                                             <div class="image-wrapper">
-                                                <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :alt="article.title" onerror="this.src='/images/blog-post.svg'">
+                                                <img :src="article.image || `/images/blog-post.svg`" class="image -responsive" :title="article.title" :alt="article.title" onerror="this.src='/images/blog-post.svg'">
                                             </div>
                                             <nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
                                                 <div class="title">

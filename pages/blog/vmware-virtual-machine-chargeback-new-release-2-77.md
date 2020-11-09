@@ -1,5 +1,6 @@
 ---
 title: "VMware Virtual Machine Chargeback - new release 2.77"
+image: /images/blog/wpid-usage_report_csv.png
 tags: ["Ops", "opvizor"]
 date: "2015-09-14"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "6 Top VMware Tips & Tricks for the New Year"
+image: /images/blog/bigstock-Happy-With-His-Accomplish-2790844.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-03-01"
 ---
@@ -20,7 +21,7 @@ Though it took awhile for VMware's partners to jump on board, [EVO: RAIL](http:/
 
 ## 3\. VMware vSphere 6
 
-vSphere 6 comes packed with 650 new features. Among these are Virtual Volumes and long-distance vMotion, and upgrades to its existing software features, such as VMware Web Client. You can learn more about installing and using vSphere 6 at [Opvizor](https://www.opvizor.com/blog/installing-vsphere-6-vcsa-vcenter-server-appliance/).
+vSphere 6 comes packed with 650 new features. Among these are Virtual Volumes and long-distance vMotion, and upgrades to its existing software features, such as VMware Web Client. You can learn more about installing and using vSphere 6 at [Opvizor](/blog/installing-vsphere-6-vcsa-vcenter-server-appliance/).
 
 ## 4\. VMware Certifications
 

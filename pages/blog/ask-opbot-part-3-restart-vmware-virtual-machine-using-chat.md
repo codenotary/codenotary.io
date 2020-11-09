@@ -1,5 +1,6 @@
 ---
 title: "Ask OpBot - Part 3: Restart VMware virtual machine using Chat?"
+image: /images/blog/powervm.png
 tags: ["Ops", "opvizor"]
 date: "2017-03-14"
 ---

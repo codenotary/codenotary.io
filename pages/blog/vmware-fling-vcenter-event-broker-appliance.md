@@ -1,5 +1,6 @@
 ---
 title: "VMware Fling: vCenter Event Broker Appliance"
+image: /images/blog/deploy-1.png
 tags: ["Ops", "opvizor"]
 date: "2019-11-13"
 ---

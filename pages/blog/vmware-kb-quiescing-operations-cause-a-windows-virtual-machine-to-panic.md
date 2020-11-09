@@ -1,5 +1,6 @@
 ---
 title: "VMware KB Quiescing operations cause a Windows virtual machine to panic"
+image: /images/blog/528094873_35d52b3a56.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-06-11"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "PowerShell Remoting Cheatsheet by Scott Sutherland"
+image: /images/blog/5728486437_1f69302183.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-09-07"
 ---

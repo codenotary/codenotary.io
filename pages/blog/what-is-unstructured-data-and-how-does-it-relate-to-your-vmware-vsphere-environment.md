@@ -1,5 +1,6 @@
 ---
 title: "What is 'Unstructured Data' and How Does It Relate to Your VMware vSphere Environment?"
+image: /images/blog/unstructureddata.png
 tags: ["Ops", "opvizor"]
 date: "2016-01-26"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Real issue prediction goes a long way toward optimizing VMware and Docker"
+image: /images/blog/wpid-Ruxit.png
 tags: ["Ops", "opvizor"]
 date: "2015-07-29"
 ---

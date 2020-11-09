@@ -1,5 +1,6 @@
 ---
 title: "new Snapwatcher version using new CodeNotary integrity"
+image: /images/blog/build.png
 tags: ["Ops", "opvizor"]
 date: "2019-04-05"
 ---

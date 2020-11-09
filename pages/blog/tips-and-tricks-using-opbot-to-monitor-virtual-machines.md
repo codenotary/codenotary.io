@@ -1,5 +1,6 @@
 ---
 title: "Tips and Tricks: Using OpBot to Monitor Virtual Machines"
+image: /images/blog/OpBot1.png
 tags: ["Ops", "opvizor"]
 date: "2017-02-02"
 ---

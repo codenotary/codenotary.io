@@ -1,5 +1,6 @@
 ---
 title: "VMware Healthcheck-as-a-Service - HaaS"
+image: /images/blog/snapage2.png
 tags: ["Ops", "opvizor"]
 date: "2015-03-30"
 ---
@@ -16,7 +17,7 @@ But what means our **VMware Healthcheck** Service to you, I don't want you to be
 
 The best thing is, that we work with YOU - we receive daily new issue rules from customers, consultants and from vendors. These mostly harmful situation will be detected automatically as we integrate the new rules in a fast and tested way.
 
-[![VMware healthcheck rules including a description of issues](/images/blog/snapage2.png)](https://www.opvizor.com/wp-content/uploads/2015/03/snapage2.png)
+![VMware healthcheck rules including a description of issues](/images/blog/snapage2.png)
 
 But we don't leave you alone with findings, we always try to show you further information:
 

@@ -10,7 +10,7 @@ But it's important to fully understand the architecture of both solutions to run
 
 It you're interested in how we use Docker (also running on top of VMware) in our environment please check out this article:
 
-[How we use New Relic’s Docker integration at Opvizor](https://www.opvizor.com/blog/how-we-use-new-relics-docker-integration-at-opvizor/ "How we use New Relic’s Docker integration at Opvizor")
+[How we use New Relic’s Docker integration at Opvizor](/blog/how-we-use-new-relics-docker-integration-at-opvizor/ "How we use New Relic’s Docker integration at Opvizor")
 
 But that covers only one part of the overall strategy. Another great article including the links to more information can be found here, covering VMware NSX and Docker:
 

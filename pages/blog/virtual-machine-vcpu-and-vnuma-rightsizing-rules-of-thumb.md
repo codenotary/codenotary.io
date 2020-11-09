@@ -1,5 +1,6 @@
 ---
 title: "Virtual Machine vCPU and vNUMA Rightsizing – Rules of Thumb"
+image: /images/blog/numa.png
 tags: ["Ops", "opvizor"]
 date: "2018-07-10"
 ---

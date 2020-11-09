@@ -1,5 +1,6 @@
 ---
 title: "RHEL 7 the complete install in a vSphere VM"
+image: /images/blog/666727475_6c1ac1e577.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-09-04"
 ---

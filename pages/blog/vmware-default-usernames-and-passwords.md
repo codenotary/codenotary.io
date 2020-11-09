@@ -1,5 +1,6 @@
 ---
 title: "VMware default usernames and passwords"
+image: /images/blog/Password-624x416.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-05-01"
 ---

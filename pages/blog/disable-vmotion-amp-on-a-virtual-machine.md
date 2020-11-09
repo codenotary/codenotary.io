@@ -1,5 +1,6 @@
 ---
 title: "Disable vMotion & AMP On A Virtual Machine"
+image: /images/blog/d9a8ae133bc34e1b8dc60309a8c134a6.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-08-23"
 ---

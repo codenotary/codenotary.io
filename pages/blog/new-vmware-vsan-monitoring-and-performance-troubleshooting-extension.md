@@ -1,5 +1,6 @@
 ---
 title: "New VMware vSAN monitoring and performance troubleshooting extension"
+image: /images/blog/navigation-1.png
 tags: ["Ops", "opvizor"]
 date: "2018-07-10"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Your one size fits all VMware vSphere Dashboard for Performance and Monitoring"
+image: /images/blog/esxihost.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-14"
 ---

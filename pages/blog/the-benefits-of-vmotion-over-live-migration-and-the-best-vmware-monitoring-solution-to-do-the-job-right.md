@@ -1,5 +1,6 @@
 ---
 title: "The Benefits of vMotion Over Live Migration (and the Best VMware Monitoring Solution to Do the Job Right)"
+image: /images/blog/auto-racing-558065_640.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-04-19"
 ---

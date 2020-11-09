@@ -1,5 +1,6 @@
 ---
 title: "k3OS - Kubernetes on Intel Compute Stick"
+image: /images/blog/computestick-768x1024.jpg
 tags: ["Ops", "opvizor"]
 date: "2019-12-09"
 ---

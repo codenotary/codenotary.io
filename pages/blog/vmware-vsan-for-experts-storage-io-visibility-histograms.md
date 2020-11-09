@@ -1,5 +1,6 @@
 ---
 title: "VMware vSAN for experts - storage IO visibility histograms"
+image: /images/blog/vsan_diskgroups_stats_histogram.png
 tags: ["Ops", "opvizor"]
 date: "2018-08-27"
 ---

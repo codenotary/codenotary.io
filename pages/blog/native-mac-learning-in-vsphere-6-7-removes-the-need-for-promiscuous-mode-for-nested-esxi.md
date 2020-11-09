@@ -1,5 +1,6 @@
 ---
 title: "Native MAC Learning in vSphere 6.7 removes the need for Promiscuous mode for Nested ESXi"
+image: /images/blog/1.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-05-08"
 ---

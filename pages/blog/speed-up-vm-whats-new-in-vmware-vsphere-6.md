@@ -1,5 +1,6 @@
 ---
 title: "Speed up VM - what's new in VMware vSphere 6"
+image: /images/blog/15231082_c72af53490.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-08-05"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "What addition would you like to see in OpBot - ChatOps for the Data Center?"
+image: /images/blog/vrops.png
 tags: ["Ops", "opvizor"]
 date: "2017-03-20"
 ---

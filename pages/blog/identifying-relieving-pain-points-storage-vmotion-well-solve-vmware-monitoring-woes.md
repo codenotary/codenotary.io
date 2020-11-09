@@ -1,5 +1,6 @@
 ---
 title: "Identifying & Relieving the Pain Points of Storage vMotion (As Well as How to Solve Those VMware Monitoring Woes)"
+image: /images/blog/board-1226680_640.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-04-26"
 ---

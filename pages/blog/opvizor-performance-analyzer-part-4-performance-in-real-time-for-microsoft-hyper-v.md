@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Performance Analyzer: Part 4 - Performance in real time for Microsoft Hyper-V"
+image: /images/blog/1-2.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-13"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Opvizor Health Analyzer 3.0 for VMware vSphere released"
+image: /images/blog/autofix-1.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-03-22"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "What Is VMware Photon Controller – Everything You Wanted To Know About Photon Controller"
+image: /images/blog/PC-Architecture2-1024x588.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-05-31"
 ---

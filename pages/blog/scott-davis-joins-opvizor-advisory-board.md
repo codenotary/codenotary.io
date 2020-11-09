@@ -1,5 +1,6 @@
 ---
 title: "Scott Davis Joins Opvizor Advisory Board"
+image: /images/blog/12554282-scott-davis-portrait-1.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-05-03"
 ---

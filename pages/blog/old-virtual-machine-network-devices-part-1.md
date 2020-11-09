@@ -1,5 +1,6 @@
 ---
 title: "Old Virtual Machine Network Devices - low VMware performance - Part 1"
+image: /images/blog/oldnic1.png
 tags: ["Ops", "opvizor"]
 date: "2015-02-10"
 ---
@@ -10,7 +11,7 @@ No matter your situation, your network performance — which ultimately impacts 
 
 ## Impact
 
-By unknowingly using outdated virtual network devices, you could experience unexpected and unexplained poor application performance. This **poor VMware performance for network traffic** is caused by inefficiencies in the virtual network adapter in use causing a higher number of IRQ requests than needed. This is especially problematic for virtual machines with applications that create high network load and packet generation such as virtual file servers, firewalls, and transaction processing servers. Not only will end users complain about poor application performance (due to poor VMware performance) and the inability to do their job, administrators may be confounded as to why the problem exists at all. [![old VMware NIC - vmxnet2 - can cause bad VMware performance](/images/blog/oldnic1.png)](https://www.opvizor.com/wp-content/uploads/2015/02/oldnic1.png)
+By unknowingly using outdated virtual network devices, you could experience unexpected and unexplained poor application performance. This **poor VMware performance for network traffic** is caused by inefficiencies in the virtual network adapter in use causing a higher number of IRQ requests than needed. This is especially problematic for virtual machines with applications that create high network load and packet generation such as virtual file servers, firewalls, and transaction processing servers. Not only will end users complain about poor application performance (due to poor VMware performance) and the inability to do their job, administrators may be confounded as to why the problem exists at all. ![old VMware NIC - vmxnet2 - can cause bad VMware performance](/images/blog/oldnic1.png)
 
 ## Ease of Detecting
 

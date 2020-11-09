@@ -1,5 +1,6 @@
 ---
 title: "Snapwatcher For VMware – Product Review"
+image: /images/blog/wpid-501bfa43e9bce32d9e76fabbabd2dc30.jpeg
 tags: ["Ops", "opvizor"]
 date: "2015-08-12"
 ---

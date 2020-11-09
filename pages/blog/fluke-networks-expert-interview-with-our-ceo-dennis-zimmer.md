@@ -1,5 +1,6 @@
 ---
 title: "Fluke Networks - Expert Interview with our CEO, Dennis Zimmer"
+image: /images/blog/wpid-CIO_expert_interview1.jpg
 tags: ["Ops", "opvizor"]
 date: "2015-08-21"
 ---

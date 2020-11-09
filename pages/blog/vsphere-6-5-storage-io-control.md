@@ -1,5 +1,6 @@
 ---
 title: "vSphere 6.5 - Storage IO Control"
+image: /images/blog/e3680d32-vmperformance_0h707l0h707l000000-2.png
 tags: ["Ops", "opvizor"]
 date: "2016-11-29"
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Understanding VMware Tools (and how it affects VMware Monitoring)"
+image: /images/blog/printer-159612_640.jpg
 tags: ["Ops", "opvizor"]
 date: "2016-04-05"
 ---
@@ -36,7 +37,7 @@ Control Panel delivers a user-friendly, centralized place inside the guest OS in
 
 ## VMware Performance and Optimization
 
-To enable the memory saving ballooning technology, the VMware Tools installation is required. You can find more information about memory ballooning in this interview with [Raffaele Giordanelli](https://www.opvizor.com/blog/expert-interview-series-raffaele-giordanelli-about-memory-ballooning/).
+To enable the memory saving ballooning technology, the VMware Tools installation is required. You can find more information about memory ballooning in this interview with [Raffaele Giordanelli](/blog/expert-interview-series-raffaele-giordanelli-about-memory-ballooning/).
 
 VMware Snapshot - Quiescing: If the <quiesce> flag is 1 or true, and the virtual machine is powered on when the snapshot is taken, VMware Tools is used to quiesce the file system in the virtual machine. Quiescing a file system is a process of bringing the on-disk data of a physical or virtual computer into a state suitable for backups. This process might include such operations as flushing dirty buffers from the operating system's in-memory cache to disk, or other higher-level application-specific tasks. --< [VMware KB article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1015180)
 
