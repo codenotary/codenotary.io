@@ -21,6 +21,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@inkline/inkline": "^2.3.0",
     "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
     "axios": "^0.20.0",
     "cookie-universal-nuxt": "^2.1.4",
     "nuxt": "^2.14.3",

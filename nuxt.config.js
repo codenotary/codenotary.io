@@ -106,7 +106,11 @@ export default {
             ]
         }],
         // Doc: https://github.com/Developmint/nuxt-webfontloader
-        'nuxt-webfontloader'
+        'nuxt-webfontloader',
+        // Doc: https://github.com/nuxt-community/robots-module
+        '@nuxtjs/robots',
+        // Doc: https://github.com/nuxt-community/sitemap-module
+        '@nuxtjs/sitemap'
     ],
 
     /*
@@ -165,6 +169,28 @@ export default {
                     }));                    
                 }
             }
+        }
+    },
+
+    sitemap: {
+        hostname: DEFAULT_META.SITE_URL,
+        gzip: true,
+        path: '/sitemap.xml',
+        routes: () => {
+            if (blogRoutes) {
+                const map = Object.keys(blogRoutes);
+                if (map && map.length) {
+                    return map.map((path) => ({
+                        route: `/blog/${blogRoutes[path]}`,
+                        payload: path
+                    }));                    
+                }
+            }
+        },
+        defaults: {
+            changefreq: 'daily',
+            priority: 1,
+            lastmod: new Date()
         }
     }
 }
