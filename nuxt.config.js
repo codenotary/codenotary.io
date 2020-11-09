@@ -97,7 +97,7 @@ export default {
             imports: [
                 {
                     set: '@fortawesome/free-solid-svg-icons',
-                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faStar', 'faBolt', 'faChevronRight', 'faQuoteLeft', 'faFire', 'faGlobe', 'faAward']
+                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faStar', 'faBolt', 'faChevronRight', 'faQuoteLeft', 'faFire', 'faGlobe', 'faAward', 'faChartLine']
                 },
                 {
                     set: '@fortawesome/free-brands-svg-icons',
