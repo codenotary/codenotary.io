@@ -39,8 +39,8 @@
 </template>
 
 <script>
-import ContactForm from '~/components/common/forms/ContactForm';
 import { title } from '~/helpers/meta';
+import ContactForm from '~/components/common/forms/ContactForm';
 
 export default {
     head() {

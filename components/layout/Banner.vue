@@ -6,7 +6,7 @@
             </span>
         </div>
         <div class="_display-flex _align-items-center">
-            <i-button class="_margin-left-2" variant="white" outline size="sm" :to="{ name: 'products-lc-for-ops' }">Learn more</i-button>
+            <i-button class="_margin-left-2" variant="dark" outline size="sm" :to="{ name: 'products-lc-for-ops' }">Learn more</i-button>
         </div>
     </section>
 </template>
@@ -24,22 +24,23 @@ export default {
 section.banner {
     background-color: $color-warning;
 
-    &.-light {
-        border-bottom: 1px solid $border-color-light;
-        background: white !important;
-    }
+    // &.-light {
+    //     border-bottom: 1px solid $border-color-light;
+    //     background: white !important;
+    // }
 
     span,
     .button {
         font-size: 90% !important;
-        color: $color-gray-10;
+        color: rgba(0, 0, 0, 0.7);
     }
 
     .button {
         &:hover,
         &:active,
         &.nuxt-link-active {
-                color: $color-gray-30 !important;
+                color: rgba(0, 0, 0, 0.9) !important;
+                // color: $color-gray-30 !important;
         }
 
         &:hover {

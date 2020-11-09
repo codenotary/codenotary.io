@@ -11,10 +11,10 @@
 <script>
 import { title } from '~/helpers/meta';
 import LcHeader from '~/components/sections/headers/LcHeader';
-import LcFeatures from '~/components/sections/products/lc-for-ops/LcFeatures';
-import LcIntegrations from '~/components/sections/products/lc-for-ops/LcIntegrations';
-import LcInfrastructure from '~/components/sections/products/lc-for-ops/LcInfrastructure';
-import LcTestimonials from '~/components/sections/products/lc-for-ops/LcTestimonials';
+import LcFeatures from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcFeatures';
+import LcIntegrations from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcIntegrations';
+import LcInfrastructure from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcInfrastructure';
+import LcTestimonials from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcTestimonials';
 
 export default {
     layout: 'banner',

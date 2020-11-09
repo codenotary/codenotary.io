@@ -35,14 +35,14 @@
                 <i-column xs="12" sm="6" lg="3">
                     <h4>Products</h4>
                     <ul class="list -unstyled">
-                        <!-- <li>
-                            <router-link :to="{ name: 'products-lc-for-dev-ops' }">
-                                Ledger Compliance for Dev Ops
-                            </router-link>
-                        </li> -->
                         <li>
-                            <router-link :to="{ name: 'products-lc-for-ops' }">
-                                Ledger Compliance for Ops
+                            <router-link :to="{ name: 'products-ledger-compliance' }">
+                                Ledger Compliance
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+                                Ledger Compliance (Metrics and Logs)
                             </router-link>
                         </li>
                     </ul>
