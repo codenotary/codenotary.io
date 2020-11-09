@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "updating imported blog files"
+echo "stripping of links blog files"
 
 # change directory temporaly to ./pages/blog
 pushd './pages/blog/imported/'
@@ -17,18 +17,11 @@ for filename in *.md; do
     echo $f
     echo "---"
 
-    # make link to other blog posts https://www.opvizor.com/blog -> /blog
-    sed -i 's/https:\/\/www.opvizor.com\/blog/\/blog/' $filename
-
-    # update image path
-    sed -i 's/(images\//(\/images\/blog\//' $filename
-
-    # add the tags meta on 2nd line
-    META="tags: [\"Ops\", \"opvizor\"]"
-    sed -n -i "p;2a $META" $filename
+    # remove all links
+    sed -i "s/\!\{0,1\}\[[^]]*\]([^)]*)//g" $filename
 done
 
-echo "blog files imported succefully"
+echo "blog files stripped of links succefully"
 
 # goes back to starting directory
 popd
