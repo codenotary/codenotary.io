@@ -1,38 +1,28 @@
 <template>
-    <page-section id="codenotary-ledger-compliance-section">
-        <i-container>
-            <i-row>
-                <i-column>
-                    <page-section-header title="CodeNotary Ledger Compliance®" block>
-                        With CodeNotary Ledger Compliance&reg; you can start keeping a tamper-proof and indelible
-                        ledger for your mission-critical and sensitive applications. Whether you use Java, Node.js, Python,
-                        Go, .NET, on-premise or in the cloud, CodeNotary Ledger Compliance® processes millions of
-                        transactions per second reliably and with cryptographic verification.
-                    </page-section-header>
-                </i-column>
-            </i-row>
-            <i-row>
-                <i-column>
-                    <PricingTables />
-                </i-column>
-            </i-row>
-            <i-row class="_text-center">
-                <i-column>
-                    <img id="tree-image" src="/images/word-tree.png" alt="CodeNotary Word Cloud" class="image -responsive" width="650">
-                </i-column>
-            </i-row>
-        </i-container>
-    </page-section>
+    <div>
+        <LCHeader />
+        <features-section />
+        <ledger-compliance />
+    </div>
 </template>
 
 <script>
-import PricingTables from '~/components/sections/products/PricingTables';
+import { title } from '~/helpers/meta';
+import LCHeader from '~/components/sections/headers/LCHeader';
+import FeaturesSection from '~/components/sections/features/FeaturesSection';
+import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
-    name: 'LedgerComplianceForOps',
+    head() {
+        return {
+            title: title('Ledger Compliance')
+        };
+    },
 
     components: {
-        PricingTables
+        LCHeader,
+        FeaturesSection,
+        LedgerCompliance
     }
 }
 </script>

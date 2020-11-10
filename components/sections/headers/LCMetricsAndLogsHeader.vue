@@ -1,5 +1,5 @@
 <template>
-    <i-header id="cn-lc-header">
+    <i-header id="lc-metrics-and-logs-header">
         <i-row class="_align-items-center">
             <i-column xs="12" md="6">
                 <h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
@@ -48,7 +48,7 @@
 
 <script>
 export default {
-    name: 'CnLcHeader',
+    name: 'LCMetricsAndLogsHeader',
 
     components: {
         StartTrialModal: () => import('~/components/common/modals/StartTrialModal')
@@ -84,7 +84,7 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-#cn-lc-header {
+#lc-metrics-and-logs-header {
     background-color: white;
     // background-image: url('~static/images/ztc/header.jpg');
     // background-position: right top;

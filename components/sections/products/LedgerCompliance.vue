@@ -1,5 +1,5 @@
 <template>
-    <page-section id="codenotary-ledger-compliance-section">
+    <page-section id="ledger-compliance-section">
         <i-container>
             <i-row>
                 <i-column>
@@ -16,7 +16,7 @@
                     <PricingTables />
                 </i-column>
             </i-row>
-            <i-row class="_text-center">
+            <i-row v-if="tree" class="_text-center">
                 <i-column>
                     <img id="tree-image" src="/images/word-tree.png" alt="CodeNotary Word Cloud" class="image -responsive" width="650">
                 </i-column>
@@ -29,10 +29,14 @@
 import PricingTables from '~/components/sections/products/PricingTables';
 
 export default {
-    name: 'LedgerComplianceForOps',
+    name: 'LedgerCompliance',
 
     components: {
         PricingTables
+    },
+
+    props: {
+        tree: { type: Boolean, default: false }
     }
 }
 </script>
@@ -40,7 +44,7 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config/colors";
 
-#codenotary-ledger-compliance-section {
+#ledger-compliance-section {
     background-color: $color-gray-20;
 }
 

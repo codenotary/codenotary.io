@@ -1,6 +1,6 @@
 <template>
     <div>
-        <lc-header />
+        <LCMetricsAndLogsHeader />
         <lc-features />
         <lc-integrations :integrations="integrations" />
         <lc-infrastructure />
@@ -10,7 +10,7 @@
 
 <script>
 import { title } from '~/helpers/meta';
-import LcHeader from '~/components/sections/headers/LcHeader';
+import LCMetricsAndLogsHeader from '~/components/sections/headers/LCMetricsAndLogsHeader';
 import LcFeatures from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcFeatures';
 import LcIntegrations from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcIntegrations';
 import LcInfrastructure from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcInfrastructure';
@@ -21,12 +21,12 @@ export default {
 
     head() {
         return {
-            title: title('Ledger Compliance for Ops')
+            title: title('Ledger Compliance Metrics and Logs')
         };
     },
 
     components: {
-        LcHeader,
+        LCMetricsAndLogsHeader,
         LcFeatures,
         LcIntegrations,
         LcInfrastructure,
