@@ -8,11 +8,11 @@
 </template>
 
 <script>
+import { title } from '~/helpers/meta';
 /* eslint-disable vue/no-unused-components */
 import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
-import ImmudbFeaturesSection from '~/components/sections/features/ImmudbFeaturesSection';
-import ImmudbRunsOnSection from '~/components/sections/immudb/ImmudbRunsOnSection';
-import { title } from '~/helpers/meta';
+import ImmudbFeaturesSection from '~/components/sections/technologies/immudb/ImmudbFeaturesSection';
+import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/ImmudbRunsOnSection';
 
 export default {
     layout: 'immudb-star-banner',

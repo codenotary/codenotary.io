@@ -12,12 +12,12 @@
 
 <script>
 import CiCdHeader from '~/components/sections/headers/CiCdHeader';
-import CiCdIntegrations from '~/components/sections/ci-cd/CiCdIntegrations';
-import CiCdFeatures from '~/components/sections/ci-cd/CiCdFeatures';
-import CiCdHowItWorks from '~/components/sections/ci-cd/CiCdHowItWorks';
-import CiCdGetStarted from '~/components/sections/ci-cd/CiCdGetStarted';
-import CiCdAnalyzeAndManage from '~/components/sections/ci-cd/CiCdAnalyzeAndManage';
-import CiCdVideos from '~/components/sections/ci-cd/CiCdVideos';
+import CiCdIntegrations from '~/components/sections/technologies/ci-cd/CiCdIntegrations';
+import CiCdFeatures from '~/components/sections/technologies/ci-cd/CiCdFeatures';
+import CiCdHowItWorks from '~/components/sections/technologies/ci-cd/CiCdHowItWorks';
+import CiCdGetStarted from '~/components/sections/technologies/ci-cd/CiCdGetStarted';
+import CiCdAnalyzeAndManage from '~/components/sections/technologies/ci-cd/CiCdAnalyzeAndManage';
+import CiCdVideos from '~/components/sections/technologies/ci-cd/CiCdVideos';
 
 export default {
     components: {

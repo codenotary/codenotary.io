@@ -1,7 +1,10 @@
 <template>
     <div class="pricing-table">
         <h4 class="title">{{ title }}</h4>
-        <div v-value="subtitle" class="subtitle" />
+        <div v-if="subtitle === '&nbsp;'" class="_margin-bottom-4" />
+        <div v-else class="subtitle">
+            {{ subtitle }}
+        </div>
         <div class="body">
             <div class="rows line">
                 <slot />

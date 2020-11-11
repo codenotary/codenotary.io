@@ -1,7 +1,5 @@
+import { meta, DEFAULT_META } from './helpers/meta';
 import blogRoutes from './blog';
-
-const title = 'Immutable Recording of Data and Processes - CodeNotary';
-const description = 'Immutable recording of data and processes with CodeNotary Ledger Compliance®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.';
 
 export default {
     /*
@@ -18,18 +16,26 @@ export default {
     ** Headers of the page
     */
     head: {
-        title,
+        htmlAttrs: { lang: 'en-GB' },
+        title: DEFAULT_META.TITLE,
         meta: [
+            ...meta(),
             { charset: 'utf-8' },
+            { name: "HandheldFriendly", content: "True" },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: description }
+            // Open Graph Data
+            { property: 'og:site_name', content: DEFAULT_META.SITE_NAME },
+            // Twitter Card
+            { name: 'twitter:site', content: DEFAULT_META.HANDLE },
+            { name: 'twitter:card', content: 'summary_large_image' },
         ],
         link: [
             { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
             { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
             { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-            { rel: 'manifest', href: '/site.webmanifest' }
+            { rel: 'manifest', href: '/site.webmanifest' },
+            { hid: 'canonical', rel: 'canonical', href: DEFAULT_META.SITE_URL }
         ]
     },
     /*
@@ -51,8 +57,10 @@ export default {
         { src: '~plugins/vgo', mode: 'client' },
         { src: '~plugins/leadfeeder', mode: 'client' },
         { src: '~plugins/tawk', mode: 'client' },
+        { src: '~plugins/vue-cool-lightbox', mode: 'client' },
         { src: '~plugins/vue-masonry-css', ssr: false },
         { src: '~plugins/vue-truncate-filter', ssr: false },
+        { src: '~plugins/vue-typer', ssr: false },
         '~plugins/vue-slick-carousel',
         '~plugins/inkline'
     ],
@@ -89,7 +97,7 @@ export default {
             imports: [
                 {
                     set: '@fortawesome/free-solid-svg-icons',
-                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faStar', 'faBolt', 'faChevronRight', 'faFire', 'faGlobe', 'faAward']
+                    icons: ['faCheckSquare', 'faCheckCircle', 'faTimesCircle', 'faStar', 'faBolt', 'faChevronRight', 'faQuoteLeft', 'faFire', 'faGlobe', 'faAward', 'faChartLine']
                 },
                 {
                     set: '@fortawesome/free-brands-svg-icons',
@@ -98,7 +106,11 @@ export default {
             ]
         }],
         // Doc: https://github.com/Developmint/nuxt-webfontloader
-        'nuxt-webfontloader'
+        'nuxt-webfontloader',
+        // Doc: https://github.com/nuxt-community/robots-module
+        '@nuxtjs/robots',
+        // Doc: https://github.com/nuxt-community/sitemap-module
+        '@nuxtjs/sitemap'
     ],
 
     /*
@@ -142,7 +154,8 @@ export default {
     },
 
     router: {
-        linkExactActiveClass: '-active'
+        linkExactActiveClass: '-active',
+        // base: '/'
     },
 
     generate: {
@@ -156,6 +169,28 @@ export default {
                     }));                    
                 }
             }
+        }
+    },
+
+    sitemap: {
+        hostname: DEFAULT_META.SITE_URL,
+        gzip: true,
+        path: '/sitemap.xml',
+        routes: () => {
+            if (blogRoutes) {
+                const map = Object.keys(blogRoutes);
+                if (map && map.length) {
+                    return map.map((path) => ({
+                        route: `/blog/${blogRoutes[path]}`,
+                        payload: path
+                    }));                    
+                }
+            }
+        },
+        defaults: {
+            changefreq: 'daily',
+            priority: 1,
+            lastmod: new Date()
         }
     }
 }

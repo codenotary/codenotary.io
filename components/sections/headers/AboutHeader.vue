@@ -12,14 +12,23 @@
                     Immutable ledgers are a requirement to enable businesses to successfully move to cloud solutions without compromising trust and integrity.
                 </p>
                 <p class="lead _margin-bottom-0">
-                    <a href="https://www.prnewswire.com/news-releases/vchain-inc-the-immutable-data-specialist-announces-new-equity-financing-301129660.html" target="_blank"><b>Latest News</b>: New Equity Financing</a>
+                    <a href="/blog/vchain-completes-aquisition-of-ledger-and-log-compliance-company-opvizor"><b>Latest News</b>: Acquisition of Opvizor</a>
                 </p>
             </i-column>
-            <i-column md="4" class="_text-center">
-                <img src="/images/logo/logo_black.png" alt="CodeNotary" class="image -responsive _margin-top-2" width="220">
-                <a href="https://www.cncf.io/about/members/">
-                    <img src="/images/cncf.png" alt="CNCF" class="image -responsive _margin-top-2" width="200">
-                </a>
+            <i-column md="4" class="_padding-left-4 _text-left">
+                <p class="_padding-0 margin-0 _margin-bottom-2">
+                    <img src="/images/logo/logo_black.png" alt="CodeNotary" class="image -responsive" width="220">
+                </p>
+                <p class="_padding-0 margin-0 _margin-bottom-3">
+                    <a href="https://www.cncf.io/about/members/" target="_blank" rel="nofollow">
+                        <img src="/images/cncf.png" alt="CNCF" class="image -responsive" width="200">
+                    </a>
+                </p>
+                <p class="_padding-0 margin-0">
+                    <a href="https://www.vmware.com/partners/work-with-vmware/tap.html" target="_blank" rel="nofollow">
+                        <img src="/images/tap.png" alt="VMware Technology Alliance Partner (TAP)" class="image -responsive" width="100">
+                    </a>
+                </p>
             </i-column>
         </i-row>
     </i-header>

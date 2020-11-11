@@ -1,16 +1,16 @@
 <template>
     <div v-if="!outlined && color" class="story-card" :style="`background-color: ${color}`" >
-        <img v-if="image" class="image -responsive" :src="image" :alt="title">
+        <img v-if="image" class="image -responsive" :class="{'image-only': !title && !subtitle }" :src="image" :alt="title">
         <h5 v-if="title" class="title">{{ title }}</h5>
         <p v-if="subtitle" class="subtitle _text-white">{{ subtitle }}</p>
     </div>
     <div v-else-if="!outlined" :class="`story-card _background-${variant}`">
-        <img v-if="image" class="image -responsive" :src="image" :alt="title">
+        <img v-if="image" class="image -responsive" :class="{'image-only': !title && !subtitle }" :src="image" :alt="title">
         <h5 v-if="title" class="title">{{ title }}</h5>
         <p v-if="subtitle" class="subtitle _text-white">{{ subtitle }}</p>
     </div>
     <div v-else class="story-card" :style="`border: 2px solid ${color}`" >
-        <img v-if="image" class="image -responsive" :src="image" :alt="title">
+        <img v-if="image" class="image -responsive" :class="{'image-only': !title && !subtitle }" :src="image" :alt="title">
         <h5 v-if="title" class="title _text-black">{{ title }}</h5>
         <p v-if="subtitle" class="subtitle _text-black">{{ subtitle }}</p>
     </div>
@@ -20,7 +20,7 @@
 export default {
     name: 'Feature',
     props: {
-        title: { type: String, default: '', required: true },
+        title: { type: String, default: '' },
         subtitle: { type: String, default: '' },
         image: { type: String, default: '' },
         variant: { type: String, default: 'dark' },
@@ -35,10 +35,10 @@ export default {
     text-align: center;
     padding: 2rem 1rem;
     border-radius: 4px;
-
-    /* &:hover {
-        opacity: 0.9;
-    } */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     img {
         width: 80px;
@@ -46,11 +46,13 @@ export default {
         display: block;
         margin: 0 auto;
         object-fit: contain;
+
+        &.image-only {
+            width: 80%;
+        }
     }
 
-    h3,
-    h4,
-    h5 {
+    .title {
         font-weight: bold;
         color: white;
         margin: 1rem 0 0;
@@ -61,6 +63,12 @@ export default {
         margin: 6px 0 0 0;
         font-size: 14px;
         line-height: 18px;
+    }
+
+    &.small {
+        .title {
+            font-size: 18px;
+        }
     }
 }
 </style>

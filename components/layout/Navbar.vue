@@ -8,6 +8,20 @@
                 <i-nav-item :to="{ name: 'index' }">Home</i-nav-item>
                 <i-nav-item :to="{ name: 'blog' }">Blog</i-nav-item>
 
+                <!-- PRODUCTS -->
+                <i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
+                    <i-nav-item :class="{ '-active': subRouteActive('/products') }">Products</i-nav-item>
+                    <i-dropdown-menu>
+                        <i-dropdown-item :to="{ name: 'products-ledger-compliance' }">Ledger Compliance</i-dropdown-item>
+                        <i-dropdown-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">Ledger Compliance (Metrics and Logs)</i-dropdown-item>
+                    </i-dropdown-menu>
+                </i-dropdown>
+                <i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
+                    <i-nav-item class="header" disabled>Products</i-nav-item>
+                    <i-nav-item :to="{ name: 'products-ledger-compliance' }">Ledger Compliance</i-nav-item>
+                    <i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">Ledger Compliance (Metrics and Logs)</i-nav-item>
+                </i-nav>
+
                 <!-- TECHNOLOGIES -->
                 <i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
                     <i-nav-item :class="{ '-active': subRouteActive('/technologies') }">Technologies</i-nav-item>

@@ -3,22 +3,24 @@
         <home-header />
         <features-section />
         <customer-success-stories />
-        <code-notary-ledger-compliance />
+        <ledger-compliance tree />
     </div>
 </template>
 
 <script>
 import HomeHeader from '~/components/sections/headers/HomeHeader';
 import FeaturesSection from '~/components/sections/features/FeaturesSection';
-import CustomerSuccessStories from '~/components/sections/customer-success-stories/CustomerSuccessStories';
-import CodeNotaryLedgerCompliance from '~/components/sections/products/CodeNotaryLedgerCompliance';
+import CustomerSuccessStories from '~/components/sections/homepage/CustomerSuccessStories';
+import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
+    layout: 'banner',
+
     components: {
-        CodeNotaryLedgerCompliance,
         HomeHeader,
         FeaturesSection,
-        CustomerSuccessStories
+        CustomerSuccessStories,
+        LedgerCompliance
     }
 }
 </script>

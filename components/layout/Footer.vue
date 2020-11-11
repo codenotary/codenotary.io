@@ -32,7 +32,22 @@
                         </li>
                     </ul>
                 </i-column>
-                <i-column lg="3" sm="6">
+                <i-column xs="12" sm="6" lg="3">
+                    <h4>Products</h4>
+                    <ul class="list -unstyled">
+                        <li>
+                            <router-link :to="{ name: 'products-ledger-compliance' }">
+                                Ledger Compliance
+                            </router-link>
+                        </li>
+                        <li>
+                            <router-link :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+                                Ledger Compliance (Metrics and Logs)
+                            </router-link>
+                        </li>
+                    </ul>
+                </i-column>
+                <i-column xs="12" sm="6" lg="3">
                     <h4>Technologies</h4>
                     <ul class="list -unstyled">
                         <li>
@@ -52,7 +67,7 @@
                         </li>
                     </ul>
                 </i-column>
-                <i-column lg="3" sm="6">
+                <i-column xs="12" sm="6" lg="3">
                     <h4>Company</h4>
                     <ul class="list -unstyled">
                         <li>
@@ -79,18 +94,14 @@
         </i-container>
     </page-section>
 </template>
-
 <script>
 export default {}
 </script>
-
 <style lang="scss">
 @import '~@inkline/inkline/src/css/config/colors';
 @import '../../assets/variables';
-
 .footer {
     background: $color-gray-90;
-
     h1,
     h2,
     h3,
@@ -100,27 +111,22 @@ export default {}
         color: $color-white;
         margin-top: 0;
     }
-
     p {
-        color: $color-gray-50;
+        color: $color-gray-60;
     }
-
     a {
         color: $color-primary-lightest;
-
         &.-active,
         &:hover,
         &:active {
             color: $color-gray-10;
         }
     }
-
     .logo {
         height: 64px;
         margin-top: -10px;
         width: auto;
     }
-
     .social-links {
         font-size: 32px;
     }

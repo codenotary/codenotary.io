@@ -21,11 +21,14 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@inkline/inkline": "^2.3.0",
     "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
     "axios": "^0.20.0",
     "cookie-universal-nuxt": "^2.1.4",
     "nuxt": "^2.14.3",
     "nuxt-webfontloader": "^1.1.0",
     "prism-themes": "^1.4.0",
+    "vue-cool-lightbox": "^2.6.2",
     "vue-github-button": "^1.2.0",
     "vue-masonry-css": "^1.0.3",
     "vue-no-ssr": "^1.1.1",
@@ -33,6 +36,7 @@
     "vue-scrollto": "^2.18.2",
     "vue-slick-carousel": "^1.0.6",
     "vue-truncate-filter": "^1.1.7",
+    "vue-typer": "^1.2.0",
     "vue-youtube": "^1.4.0"
   },
   "devDependencies": {
