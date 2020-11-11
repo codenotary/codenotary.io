@@ -7,7 +7,7 @@
             </span>
         </div>
         <div class="_display-flex _align-items-center">
-            <i-button class="_margin-left-2 _font-weight-bold" variant="dark" outline size="sm" :to="{ name: 'blog-post', params: { post: 'vchain-completes-the-aquisition-of-the-ledger-and-log-compliance-company-opvizor' } }">Learn more</i-button>
+            <i-button class="_margin-left-2 _font-weight-bold" variant="dark" outline size="sm" :to="{ name: 'blog-post', params: { post: 'vchain-completes-aquisition-of-ledger-and-log-compliance-company-opvizor' } }">Learn more</i-button>
         </div>
     </section>
 </template>
