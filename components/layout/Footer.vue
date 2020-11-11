@@ -16,7 +16,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/vChain_US">
+                            <a href="https://twitter.com/CodeNotary">
                                 <fa :icon="['fab', 'twitter-square']" />
                             </a>
                         </li>

@@ -13,7 +13,7 @@
                         </i-column>
                     </i-row>
                 </i-tab>
-                <i-tab title="Performance Bottelnecks">
+                <i-tab title="Performance Bottlenecks">
                     <i-row center middle>
                         <i-column xs="12" sm="6" md="6" lg="6">
                             <h5 class="title _text-primary _font-weight-bold">Find performance bottlenecks quick and easy.</h5>
