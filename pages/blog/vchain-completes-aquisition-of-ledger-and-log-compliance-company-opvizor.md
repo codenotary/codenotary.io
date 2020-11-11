@@ -8,7 +8,7 @@ tags: ["news", "acquisiton", "opvizor"]
 
 *Houston, November 11, 2020*
 
-[vChain Inc](https://www.codenotary.io/about), the leading Open Source company for immutable ledger solutions, today
+[vChain Inc](/about), the leading Open Source company for immutable ledger solutions, today
 announces the closing of the acquisition of Opvizor Inc, a U.S. ledger and log
 compliance software company.
 
@@ -26,7 +26,7 @@ Dept. Opvizor has been cash-flow positive for several years, with operations in 
 and central Europe.
 
 Both companies have been partnering already over the last year for the resale of
-vChain’s [CodeNotary Ledger Compliance®](https://www.codenotary.io/products/ledger-compliance)
+vChain’s [CodeNotary Ledger Compliance®](/products/ledger-compliance)
 solution to Opvizor’s extensive international customer base.
 
 CodeNotary Ledger Compliance® provides customers a tamperproof ledger solution
@@ -49,4 +49,4 @@ deep expertise in trust and integrity technology, cryptography, distributed ledg
 technologies, immutable databases, and certificate management, distributed in over 12
 different countries.
 
-Contact: [amelie@vchain.us](amelie@vchain.us) for press or job inquiries.
+Contact: [amelie@vchain.us](mailto:amelie@vchain.us) for press or job inquiries.
