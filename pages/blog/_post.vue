@@ -87,5 +87,9 @@ article.blog-post-page {
     h2 {
         margin-top: 0 !important;
     }
+
+    img {
+        max-width: 95%;
+    }
 }
 </style>
