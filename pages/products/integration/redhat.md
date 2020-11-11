@@ -6,14 +6,14 @@ image: "/images/integrations/white/rectangle/redhat.png"
 
  
 
-<!-- ![Redhat](images/integrations/white/rectangle/redhat.png) -->
+<!-- ![Redhat](/images/integrations/white/rectangle/redhat.png) -->
 
 
 
 Monitor and Analyze Red Hat Enterprise Linux (RHEL) configuration and performance metrics. Correlate events and metrics from applications and OS inside the guest with our RHEL OS metrics. If running virtual, combine them with VMware vSphere or OpenStack metrics. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![debian_1](images/integrations/posts//debian_1-1.png)
+![debian_1](/images/integrations/posts//debian_1-1.png)
 
 
 ## Some of our RHEL OS integration features are:
@@ -26,4 +26,4 @@ Monitor and Analyze Red Hat Enterprise Linux (RHEL) configuration and performanc
 * Combine with applications running on top of the OS
 
 
-![Debian OS full performance](images/integrations/posts//debian_full.png)
+![Debian OS full performance](/images/integrations/posts//debian_full.png)

@@ -6,7 +6,7 @@ image: "/images/integrations/white/rectangle/vmware_horizon.png"
 
  
 
-<!-- ![Vmware](images/integrations/white/rectangle/vmware_horizon.png) -->
+<!-- ![Vmware](/images/integrations/white/rectangle/vmware_horizon.png) -->
 
 
 
@@ -20,19 +20,19 @@ The architecture consists of a Guest agent that runs within your Microsoft Windo
 
 The dashboard merges information of the Guest OS, VMware VMkernel information and PCoIP or Blast metrics.
 
-![VMware Horizon View Performance PCoIP](images/integrations/posts//vmware_view-3.png)
+![VMware Horizon View Performance PCoIP](/images/integrations/posts//vmware_view-3.png)
 
 
 Especially critical metrics like Frames per Second, RTL or Packet loss are directly visible. Furthermore you can check if network bandwidth is taken using USB devices.
 
 
-![VMware Horizon Blast Protocol](images/integrations/posts//blast-1.png)
+![VMware Horizon Blast Protocol](/images/integrations/posts//blast-1.png)
 
 
 Combined with VMware Performance data directly from the VMkernel it makes a complete picture!
 
 
-![VMware View Blast combined with VMkernel Performance](images/integrations/posts//vmview_blast_v2_sm.png)
+![VMware View Blast combined with VMkernel Performance](/images/integrations/posts//vmview_blast_v2_sm.png)
 
 
 These are the metrics we´re collecting:

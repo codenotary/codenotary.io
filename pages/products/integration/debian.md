@@ -6,14 +6,14 @@ image: "/images/integrations/white/rectangle/debian.png"
 
  
 
-<!-- ![Debian](images/integrations/white/rectangle/debian.png) -->
+<!-- ![Debian](/images/integrations/white/rectangle/debian.png) -->
 
 
 
 Monitor and Analyze Debian Linux configuration and performance metrics. Correlate events and metrics from applications and OS inside the guest with our Debian OS metrics. If running virtual, combine them with VMware vSphere or OpenStack metrics. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![debian_1](images/integrations/posts//debian_1.png)
+![debian_1](/images/integrations/posts//debian_1.png)
 
 
 ## Some of our Debian OS integration features are:
@@ -26,4 +26,4 @@ Monitor and Analyze Debian Linux configuration and performance metrics. Correlat
 * Combine with applications running on top of the OS
 
 
-![Debian OS full performance](images/integrations/posts//debian_full.png)
+![Debian OS full performance](/images/integrations/posts//debian_full.png)

@@ -6,13 +6,13 @@ image: "/images/integrations/white/rectangle/vmware_photon_os.png"
 
  
 
-<!-- ![Vmware](images/integrations/white/rectangle/vmware_photon_os.png) -->
+<!-- ![Vmware](/images/integrations/white/rectangle/vmware_photon_os.png) -->
 
 
 
 Monitor and Analyze VMware Photon OS configuration and performance metrics. Correlate events and metrics from applications and OS inside the guest with our Photon OS metrics. If running virtual, combine them with VMware vSphere, Kubernetes or Docker metrics. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
-![Highlights Linux OS](images/integrations/posts//highlights-1-1024x387.jpg)
+![Highlights Linux OS](/images/integrations/posts//highlights-1-1024x387.jpg)
 
  
 
@@ -26,4 +26,4 @@ Monitor and Analyze VMware Photon OS configuration and performance metrics. Corr
 * Combine with applications running on top of the OS
 
 
- ![Docker_integration _version_1](images/integrations/posts//docker-1-1024x429.jpg)
+ ![Docker_integration _version_1](/images/integrations/posts//docker-1-1024x429.jpg)

@@ -6,7 +6,7 @@ image: "/images/integrations/white/rectangle/dell_emc_powermax.png"
 
  
 
-<!-- ![Dell_EMC_Powermax](images/integrations/white/rectangle/dell_emc_powermax.png) -->
+<!-- ![Dell_EMC_Powermax](/images/integrations/white/rectangle/dell_emc_powermax.png) -->
 
 
 
@@ -14,7 +14,7 @@ Monitor and Analyze your Dell EMC PowerMax storage systems configuration and per
 
 Instantly detect when Nodes are down or not healthy. Find performance bottlenecks, storage protocol issues and slow response times in a heartbeat.
 
-![Dell EMC PowerMax Integration](images/integrations/posts//powermax.png)
+![Dell EMC PowerMax Integration](/images/integrations/posts//powermax.png)
 
 Some of our Dell EMC PowerMax integration features are:
 

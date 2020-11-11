@@ -6,14 +6,14 @@ image: "/images/integrations/white/rectangle/vmware_vsan.png"
 
  
 
-<!-- ![Vmware Vsan](images/integrations/white/rectangle/vmware_vsan.png) -->
+<!-- ![Vmware Vsan](/images/integrations/white/rectangle/vmware_vsan.png) -->
 
 
 
 [VMware VSAN](https://www.vmware.com/uk/products/vsan.html) is gaining more and more customer traction because of its great VMware management integration and simplicity. Nevertheless, like any storage system is it highly important to monitor the most common data distribution and performance metrics of vSAN, to get the full picture and troubleshoot potential issues. The correlation of events and metrics of VMs running on vSAN and the ESXi hosts connectivity is key and extremely simple using our preconfigured dashboards.
 
 
-![vsan](images/integrations/posts//navigation-1.png)
+![vsan](/images/integrations/posts//navigation-1.png)
 
 
 Our new VMware vSAN extension has been rewritten from scratch to perform better, autodetect a vSAN through the VMware vCenter connection and support the latest metrics available with vSAN 6.7.
@@ -31,7 +31,7 @@ Our new VMware vSAN extension has been rewritten from scratch to perform better,
 * Support for multiple vCenter, vSAN, Cluster using one single appliance
 
 
-![VMware vSAN monitor](images/integrations/posts//monitor.png)
+![VMware vSAN monitor](/images/integrations/posts//monitor.png)
 
 
 Our VMware vSAN Monitor dashboards helps to get all kind of metrics in a nice and simple overview.
@@ -55,7 +55,7 @@ The data collection stores historic data up to several years depending on your c
 * vSAN Daemon memory usage
 
 
-![VMware vSAN capacity](images/integrations/posts//capacity.png)
+![VMware vSAN capacity](/images/integrations/posts//capacity.png)
 
 
 VMware vSAN Capacity and Balance dashboard shows the data distribution between the different ESXi hosts that are part of the vSAN.
@@ -71,7 +71,7 @@ VMware vSAN Capacity and Balance dashboard shows the data distribution between t
 * \# of Domain colocation
 
 
-![VMware vSAN virtual machine view](images/integrations/posts//vmview.png)
+![VMware vSAN virtual machine view](/images/integrations/posts//vmview.png)
 
 
 The VMware vSAN VM View dashboard focus the virtual machine and its read latency, write latency, read and write IOps as well as the bandwidth and IO congestion. You can select the vSAN node or the virtual machine to get all details needed to troubleshoot single systems.

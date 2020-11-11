@@ -6,14 +6,14 @@ image: "/images/integrations/white/rectangle/mongodb.png"
 
  
 
-<!-- ![Mongodb](images/integrations/white/rectangle/mongodb.png) -->
+<!-- ![Mongodb](/images/integrations/white/rectangle/mongodb.png) -->
 
 
 
 Monitor and Analyze MongoDB database configuration and performance metrics. Correlate events and metrics from databases, operating system and/or virtualization layer (VMware vSphere, KVM). Troubleshoot bottlenecks and capacity issues in minutes using our efficient data crawler and preconfigured dashboards. Complete setup in minutes instead of hours or days.
 
 
-![MongoDB Performance](images/integrations/posts//mongodb.png)
+![MongoDB Performance](/images/integrations/posts//mongodb.png)
 
 
 ## Some of our MongoDB Server integration features are:
@@ -25,4 +25,4 @@ Monitor and Analyze MongoDB database configuration and performance metrics. Corr
 * Full insights into Disk Latency and VM Disk IOps of the underlying operating system
  
 
-![Debian OS full performance](images/integrations/posts//debian_full-1.png)
+![Debian OS full performance](/images/integrations/posts//debian_full-1.png)

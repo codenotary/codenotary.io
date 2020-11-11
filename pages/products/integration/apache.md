@@ -6,14 +6,11 @@ image: "/images/integrations/white/rectangle/apache.png"
 
  
 
-<!-- ![Apache](images/integrations/white/rectangle/apache.png) -->
-
-
 
 Monitor and Analyze Apache HTTP webserver performance metrics. Correlate events and metrics from applications and its operating system metrics. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![Apache](images/integrations/posts//apache.png)
+![Apache](/images/integrations/posts//apache.png)
 
 
 ## Some of our Apache HTTP integration features are:
@@ -25,5 +22,5 @@ Monitor and Analyze Apache HTTP webserver performance metrics. Correlate events 
 * Combine with Database or OS metrics
  
 
-![Ubuntu or Debian network performance](images/integrations/posts//debian_net.png)
+![Ubuntu or Debian network performance](/images/integrations/posts//debian_net.png)
 
