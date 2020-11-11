@@ -1,6 +1,7 @@
 ---
 title: "Press Release - Acquisition of Opvizor"
 date: "2020-11-11"
+image: "/images/blog/vchain-completes-aquisition-of-ledger-and-log-compliance-company-opvizor.png"
 tags: ["news", "acquisiton", "opvizor"]
 ---
 

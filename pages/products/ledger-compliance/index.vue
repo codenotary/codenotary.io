@@ -1,15 +1,15 @@
 <template>
     <div>
-        <LCHeader />
-        <features-section />
+        <!-- <LCHeader /> -->
+        <!-- <features-section /> -->
         <ledger-compliance />
     </div>
 </template>
 
 <script>
 import { title } from '~/helpers/meta';
-import LCHeader from '~/components/sections/headers/LCHeader';
-import FeaturesSection from '~/components/sections/features/FeaturesSection';
+// import LCHeader from '~/components/sections/headers/LCHeader';
+// import FeaturesSection from '~/components/sections/features/FeaturesSection';
 import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
@@ -20,8 +20,8 @@ export default {
     },
 
     components: {
-        LCHeader,
-        FeaturesSection,
+        // LCHeader,
+        // FeaturesSection,
         LedgerCompliance
     }
 }
