@@ -138,8 +138,6 @@ section.banner-layout {
 
             .button {
                 padding: .4rem .8rem;
-                border: 1px solid white;
-                text-decoration: none;
             }
         }
 
