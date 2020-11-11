@@ -43,6 +43,7 @@ import { title } from '~/helpers/meta';
 import ContactForm from '~/components/common/forms/ContactForm';
 
 export default {
+    layout: 'banner',
     head() {
         return {
             title: title('Contact us')
