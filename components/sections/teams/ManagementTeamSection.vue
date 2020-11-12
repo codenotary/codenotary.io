@@ -23,7 +23,7 @@
                 <i-column lg="4">
                     <team-member name="Dennis Zimmer" position="CTO" image="/images/teams/dennis-zimmer.jpg">
                         <p>
-                            Dennis Zimmer has a strong reputation as a technology visionary across the Globe. He’s the founder of Opvizor Inc., a virtualization monitoring company. He’s been working for over 20 years in the IT industry, wrote 10 books and hundreds of magazine articles and video trainings, that are read and used by leading IT professionals.
+                            Dennis Zimmer has a strong reputation as a technology visionary across the Globe. He was founder and CEO of Opvizor Inc., a virtualization monitoring company. He’s been working for over 20 years in the IT industry, wrote 10 books and hundreds of magazine articles and video trainings, that are read and used by leading IT professionals.
                         </p>
                         <p>
                             Dennis has been awarded the VMware vExpert recognition (only 30 world-wide) for 11 years in a row, he’s also a thought leader within the Virtualization Community.
