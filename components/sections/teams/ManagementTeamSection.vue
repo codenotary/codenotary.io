@@ -16,7 +16,7 @@
                             He also co-founded TA Capital, a leading cross-atlantic technology investment firm.
                         </p>
                         <p>
-                            Moshe is at this time a board member of Tinaba SpA, Graylog Inc, ePrice SpA, Quandoo AG, Cascade Partners LP, Optigrowth Sarl and Opvizor Inc.
+                            Moshe is at this time a board member of Tinaba SpA, Graylog Inc, ePrice SpA, Quandoo AG, Cascade Partners LP and Optigrowth Sarl.
                         </p>
                     </team-member>
                 </i-column>
