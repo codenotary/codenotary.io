@@ -1,18 +1,25 @@
 <template>
     <article class="immudb">
         <immudb-header />
-        <immudb-features-section />
+        <immudb-cards-section />
         <immudb-runs-on-section />
-        <nuxt-content :document="page" />
+        <nuxt-content :document="easySetup" />
+        <nuxt-content :document="performance" />
+        <nuxt-content :document="video" />
+        <terminal-section />
+        <nuxt-content :document="features" />
+        <nuxt-content :document="usedBy" />
+        <nuxt-content :document="codeTabs" />
+        <nuxt-content :document="getStarted" />
     </article>
 </template>
 
 <script>
 import { title } from '~/helpers/meta';
-/* eslint-disable vue/no-unused-components */
 import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
-import ImmudbFeaturesSection from '~/components/sections/technologies/immudb/ImmudbFeaturesSection';
+import ImmudbCardsSection from '~/components/sections/technologies/immudb/ImmudbCardsSection';
 import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/ImmudbRunsOnSection';
+import TerminalSection from '~/components/sections/technologies/immudb/TerminalSection';
 
 export default {
     layout: 'immudb-star-banner',
@@ -22,15 +29,28 @@ export default {
         };
     },
     components: {
-        ImmudbFeaturesSection,
         ImmudbHeader,
-        ImmudbRunsOnSection
+        ImmudbCardsSection,
+        ImmudbRunsOnSection,
+        TerminalSection
     },
     async asyncData ({ $content }) {
-        const page = await $content('technologies/immudb/index').fetch();
+        const easySetup = await $content('technologies/immudb/EasySetup').fetch();
+        const performance = await $content('technologies/immudb/Performance').fetch();
+        const video = await $content('technologies/immudb/Video').fetch();
+        const features = await $content('technologies/immudb/Features').fetch();
+        const usedBy = await $content('technologies/immudb/UsedBy').fetch();
+        const codeTabs = await $content('technologies/immudb/CodeTabs').fetch();
+        const getStarted = await $content('technologies/immudb/GetStarted').fetch();
 
         return {
-            page
+            easySetup,
+            performance,
+            video,
+            features,
+            usedBy,
+            codeTabs,
+            getStarted
         };
     }
 }
@@ -41,7 +61,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 .immudb {
-    #easy-setup-section {
+    #immudb-easy-setup-section {
         margin-top: -2rem;
         text-align: center;
 
@@ -56,7 +76,7 @@ export default {
         }
     }
 
-    #performance-section {
+    #immudb-performance-section {
         background: $color-gray-10;
 
         img {
@@ -64,7 +84,7 @@ export default {
         }
     }
 
-    #qldb-comparison-section {
+    #immudb-qldb-comparison-section {
         padding-top: 5rem;
 
         .fa-bolt {
@@ -74,7 +94,7 @@ export default {
         }
     }
 
-    #video-section {
+    #immudb-video-section {
         color: white;
         background-color: $color-primary;
         text-align: center;
@@ -138,48 +158,8 @@ export default {
         }
     }
 
-    #code-examples-section {
-        svg {
-            width: 3rem;
-            height: 3rem;
-            color: $color-primary;
-        }
-
-        img {
-            width: 4rem;
-        }
-
-        h2 {
-            margin-top: 1rem;
-        }
-
-        .row {
-            align-items: center;
-            margin-bottom: 5rem;
-
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-
-        @media screen and (max-width: 979px) {
-            text-align: center;
-
-            .inverse {
-                flex-direction: column-reverse;
-            }
-
-            p, ul {
-                text-align: left;
-            }
-
-            .terminal-wrapper {
-                margin-bottom: 1rem;
-            }
-        }
-    }
-
-    #comingsoon-section {
+    #immudb-features-section {
+        background-color: $color-white;
         text-align: center;
 
         img {
@@ -199,7 +179,7 @@ export default {
         }
     }
 
-    #usedby-section {
+    #immudb-usedby-section {
         padding-top: 4rem;
         padding-bottom: 2rem;
         justify-content: space-between;
@@ -234,7 +214,7 @@ export default {
         }
     }
 
-    #code-tabs-section {
+    #immudb-code-tabs-section {
         background: $color-gray-10;
 
         .tabs {
@@ -276,7 +256,7 @@ export default {
         }
     }
 
-    #get-started-end-section {
+    #immudb-get-started-end-section {
         text-align: center;
     }
 }

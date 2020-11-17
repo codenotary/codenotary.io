@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import NoSSR from 'vue-no-ssr'
+import NoSSR from 'vue-no-ssr';
 import { title } from '~/helpers/meta';
 
 export default {

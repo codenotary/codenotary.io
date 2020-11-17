@@ -18,7 +18,7 @@
 
 <script>
 import { title, meta, DEFAULT_META } from '@/helpers/meta/index';
-import { MostPopular } from '@/components/global/MostPopular';
+import MostPopular from '~/components/global/MostPopular';
 
 export default {
     components: {
