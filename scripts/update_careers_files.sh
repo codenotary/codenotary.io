@@ -1,20 +1,20 @@
 #!/bin/bash
 
-echo "updating blog json list file"
+echo "updating careers json list file"
 
-# change directory temporaly to ./pages/blog
-pushd './pages/blog/'
+# change directory temporaly to ./pages/careers
+pushd './pages/careers/'
 
-BLOG_FILE='../../blog.json'
+CAREERS_FILE='../../careers.json'
 
-# clear blog file
-> $BLOG_FILE
+# clear careers file
+> $CAREERS_FILE
 
 # get number of filenames matching regex
 length=`find "." -type f -name "*.md" | wc -l`
 
 # append json start character
-echo "{" >> $BLOG_FILE
+echo "{" >> $CAREERS_FILE
 
 i=1
 for filename in *.md; do
@@ -28,18 +28,18 @@ for filename in *.md; do
 
     if [[ $i == $length ]]
     then
-        echo "  \"/$f\": \"$f\"" >> $BLOG_FILE
+        echo "  \"/$f\": \"$f\"" >> $CAREERS_FILE
         break
     else 
-        echo "  \"/$f\": \"$f\"," >> $BLOG_FILE
+        echo "  \"/$f\": \"$f\"," >> $CAREERS_FILE
     fi 
     ((i=i+1))
 done
 
 # append json end character
-echo "}" >> $BLOG_FILE
+echo "}" >> $CAREERS_FILE
 
-echo "new blog file has {$length} entries"
+echo "new careers file has {$length} entries"
 
 # goes back to starting directory
 popd

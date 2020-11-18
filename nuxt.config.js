@@ -1,5 +1,6 @@
 import { meta, DEFAULT_META } from './helpers/meta';
 import blogRoutes from './blog';
+import careersRoutes from './careers';
 
 export default {
     /*
@@ -161,15 +162,30 @@ export default {
 
     generate: {
         routes: () => {
+            let paths = [];
             if (blogRoutes) {
                 const map = Object.keys(blogRoutes);
                 if (map && map.length) {
-                    return map.map((path) => ({
-                        route: `/blog/${blogRoutes[path]}`,
-                        payload: path
-                    }));                    
+                    map.map((path) => {
+                        paths = [...paths, {
+                            route: `/blog/${blogRoutes[path]}`,
+                            payload: path
+                        }]
+                    });                    
                 }
             }
+            if (careersRoutes) {
+                const map = Object.keys(careersRoutes);
+                if (map && map.length) {
+                    map.map((path) =>
+                        paths = [...paths, {
+                            route: `/careers/${careersRoutes[path]}`,
+                            payload: path
+                        }
+                    ]);                    
+                }
+            }
+            return paths;
         }
     },
 
@@ -178,15 +194,30 @@ export default {
         gzip: true,
         path: '/sitemap.xml',
         routes: () => {
+            let paths = [];
             if (blogRoutes) {
                 const map = Object.keys(blogRoutes);
                 if (map && map.length) {
-                    return map.map((path) => ({
-                        route: `/blog/${blogRoutes[path]}`,
-                        payload: path
-                    }));                    
+                    map.map((path) =>
+                        paths = [...paths, {
+                            route: `/blog/${blogRoutes[path]}`,
+                            payload: path
+                        }
+                    ]);                    
                 }
             }
+            if (careersRoutes) {
+                const map = Object.keys(careersRoutes);
+                if (map && map.length) {
+                    map.map((path) =>
+                        paths = [...paths, {
+                            route: `/careers/${careersRoutes[path]}`,
+                            payload: path
+                        }
+                    ]);                    
+                }
+            }
+            return paths;
         },
         defaults: {
             changefreq: 'daily',

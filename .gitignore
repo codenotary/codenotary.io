@@ -89,5 +89,6 @@ sw.*
 # Vim swap files
 *.swp
 
-# Ignored as it's created in realt time before building
+# Ignored this as they're created at realt time before building
 blog.json
+careers.json
