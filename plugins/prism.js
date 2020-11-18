@@ -14,6 +14,9 @@ import 'prismjs/components/prism-scss';
 import 'prismjs/components/prism-markup';
 import 'prismjs/components/prism-ruby';
 
+import 'prismjs/plugins/toolbar/prism-toolbar';
+import 'prismjs/plugins/toolbar/prism-toolbar.css';
+
 // Include the autolinker plugin: (optional)
 import 'prismjs/plugins/autolinker/prism-autolinker';
 import 'prismjs/plugins/autolinker/prism-autolinker.css';

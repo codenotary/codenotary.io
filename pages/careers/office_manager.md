@@ -9,7 +9,7 @@ active: true
 
 For our office in the Galeria area in Houston, TX, we are looking for a diligent, detail-oriented office manager with impeccable manners and excellent organization skills.
 
-vChain is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/). We process tens of millions of transactions every month and are growing fast to new markets and use cases.
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/). We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
 We offer competitive compensation, health insurance, phone and laptop, a young and dynamic international work environment, and the opportunity to grow with the company.
 
@@ -40,4 +40,4 @@ We offer competitive compensation, health insurance, phone and laptop, a young a
 
 ## Sounds like the perfect job for you?
 
-Send your application to [amelie@vchain.us](amelie@vchain.us)!
+Send your application to [amelie@codenotary.com ](amelie@codenotary.com )!

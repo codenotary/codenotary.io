@@ -9,9 +9,9 @@ active: true
 
 If you’re crazy about DevOps, Blockchain, and latest technology, this might be the perfect fit for you.
 
-We are looking for smart, dedicated, and experienced software engineers to join vChain and help us develop and iteratively improve our software delivery process, as well as run and maintain our infrastructure services (Applications, Blockchain, Postgres).
+We are looking for smart, dedicated, and experienced software engineers to join CodeNotary and help us develop and iteratively improve our software delivery process, as well as run and maintain our infrastructure services (Applications, Blockchain, Postgres).
 
-vChain is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
 
 We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
@@ -31,4 +31,4 @@ If you are hard-working and used to fast-paced environments, with a passion for 
 
 ## Sounds like the perfect job for you?
 
-Send your application to [amelie@vchain.us](amelie@vchain.us)!
+Send your application to [amelie@codenotary.com ](amelie@codenotary.com )!

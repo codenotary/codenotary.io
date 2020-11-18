@@ -8,9 +8,9 @@ weight: 2
 active: true
 ---
 
-Our enterprise trust and integrity solutions company needs an experienced Technical Writer to design, write, edit, and maintain internal and external technical and process documentation for technologies and tools used and developed within vChain. This position involves working closely with engineering, product, and support teams to ensure the quality, discoverability, and accuracy of the content you create and develop.
+Our enterprise trust and integrity solutions company needs an experienced Technical Writer to design, write, edit, and maintain internal and external technical and process documentation for technologies and tools used and developed within CodeNotary. This position involves working closely with engineering, product, and support teams to ensure the quality, discoverability, and accuracy of the content you create and develop.
 
-vChain is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/).
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/).
 
 We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
@@ -30,4 +30,4 @@ We process tens of millions of transactions every month and are growing fast to 
 
 ## Sounds like the perfect job for you?
 
-For more information contact [amelie@vchain.us](amelie@vchain.us)!
+For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!

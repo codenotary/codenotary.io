@@ -8,7 +8,7 @@ weight: 9
 active: true
 ---
 
-vChain is the Open Source leader for tamperproof ledger solutions such as [CodeNotary](http://www.codenotary.io/). Our highly scalable service already processes well over ten million transactions every single month and are growing fast to new markets and use cases.
+CodeNotary is the Open Source leader for tamperproof ledger solutions such as [CodeNotary](http://www.codenotary.io/). Our highly scalable service already processes well over ten million transactions every single month and are growing fast to new markets and use cases.
 
 We are looking for an experienced and dedicated Frontend Developer to build and maintain the user interface and always improve usability and customer experience.
 
@@ -33,6 +33,6 @@ We use the following environments and systems: JavaScript, Vue.js, Node.js and G
 
 ## Sounds like the perfect job for you?
 
-For more information contact [amelie@vchain.us](amelie@vchain.us)!
+For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!
 
 *Please note that the technical skills will be tested in 30 minutes of coding tasks with shared screen.*

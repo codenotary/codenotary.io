@@ -17,7 +17,7 @@
                                 marginheight="0"
                                 marginwidth="0" />
                         </div>
-                        <h3 class="_margin-top-1">vChain, Inc.</h3>
+                        <h3 class="_margin-top-1">CodeNotary, Inc.</h3>
                         <div class="_margin-top-1">
                             4141 Southwest Fwy, Suite 340
                         </div>

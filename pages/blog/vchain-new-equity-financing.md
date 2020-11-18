@@ -35,4 +35,4 @@ The company was founded in late 2018 by Moshe Bar, and CTO Dennis Zimmer. Moshe 
 
 vChain employs a team with deep expertise in trust and integrity technology, cryptography, distributed ledger technologies, immutable databases, and certificate management. vChain is headquartered in Houston, TX, USA, with a team distributed in over 10 different countries.
 
-Contact: amelie@vchain.us for press inquiries or job openings
+Contact: amelie@codenotary.com  for press inquiries or job openings

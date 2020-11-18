@@ -12,7 +12,7 @@ Our enterprise trust and integrity solutions company needs an experienced Inside
 
 Our technology is novel, therefore we need experienced salespeople who can introduce customers to a new solution and find use cases within the enterprise customer’s environment.
 
-vChain is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/).
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/).
 
 We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
@@ -33,4 +33,4 @@ We process tens of millions of transactions every month and are growing fast to 
 
 ## Sounds like the perfect job for you?
 
-For more information contact [amelie@vchain.us](amelie@vchain.us)!
+For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!

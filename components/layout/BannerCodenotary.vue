@@ -1,20 +1,17 @@
 <template>
-    <section class="banner _justify-content-center">
+    <section class="banner-codenotary _justify-content-center">
         <div class="_display-flex _align-items-center">
             <fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" />
             <span class="lead _font-weight-bold">
-                CodeNotary announces acquisition of Opvizor
+                vChain Inc is now CodeNotary Inc
             </span>
-        </div>
-        <div class="_display-flex _align-items-center">
-            <i-button class="_margin-left-2 _font-weight-bold" variant="dark" outline size="sm" :to="{ name: 'blog-post', params: { post: 'vchain-completes-aquisition-of-ledger-and-log-compliance-company-opvizor' } }">Learn more</i-button>
         </div>
     </section>
 </template>
 
 <script>
 export default {
-    name: 'Banner'
+    name: 'BannerCodenotary'
 }
 </script>
 
@@ -22,7 +19,7 @@ export default {
 @import '~@inkline/inkline/src/css/config';
 @import '~@inkline/inkline/src/css/mixins';
 
-section.banner {
+section.banner-codenotary {
     background-color: $color-warning;
 
     span,

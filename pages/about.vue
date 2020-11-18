@@ -16,7 +16,7 @@ import ManagementTeamSection from '~/components/sections/teams/ManagementTeamSec
 import BoardOfDirectorsSection from '~/components/sections/teams/BoardOfDirectorsSection';
 
 export default {
-    layout: 'banner',
+    layout: 'banner-codenotary',
     head() {
         return {
             title: title('About us')

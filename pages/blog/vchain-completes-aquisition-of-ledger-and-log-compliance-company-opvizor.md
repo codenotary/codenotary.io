@@ -50,4 +50,4 @@ deep expertise in trust and integrity technology, cryptography, distributed ledg
 technologies, immutable databases, and certificate management, distributed in over 12
 different countries.
 
-Contact: [amelie@vchain.us](mailto:amelie@vchain.us) for press or job inquiries.
+Contact: [amelie@codenotary.com ](mailto:amelie@codenotary.com ) for press or job inquiries.

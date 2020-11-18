@@ -10,7 +10,7 @@ active: true
 
 If you know Linux inside-out, and if you love scripting, automation, and distributed systems, then we should talk. If you are an experienced Linux administrator with expertise on operating system-level, then it’s a perfect match.
 
-vChain is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/).
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/).
 
 We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
@@ -31,6 +31,6 @@ At least 7 years of experience as a Linux system administrator
 
 ## Sounds like the perfect job for you?
 
-For more information contact [amelie@vchain.us](amelie@vchain.us)!
+For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!
 
 *Please note that the technical skills will be tested in 30 minutes of coding tasks with shared screen.*

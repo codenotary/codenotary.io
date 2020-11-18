@@ -8,7 +8,7 @@ weight: 7
 active: "true"
 ---
 
-vChain is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
 
 We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
@@ -64,4 +64,4 @@ We are a very international startup that fosters a distributed working environme
 
 ## Sounds like the perfect job for you?
 
-For more information contact [amelie@vchain.us](amelie@vchain.us)!
+For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!

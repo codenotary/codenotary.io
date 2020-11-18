@@ -7,7 +7,7 @@ weight: 6
 active: true
 ---
 
-vChain is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
 
 We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
@@ -18,12 +18,12 @@ We are a very international startup that fosters a distributed working environme
 ## What you’ll be doing
 
 - Translate high- level concepts into text and images that are easy to understand by a broader audience
-- Come up with creative ideas and copy to successfully describe and position vChain’s products
-- Conceptualize vChain products’ offerings, value proposition and features, and put them into paper (blogs, newsletter, PR and presentations)
+- Come up with creative ideas and copy to successfully describe and position CodeNotary’s products
+- Conceptualize CodeNotary's products offerings, value proposition and features, and put them into paper (blogs, newsletter, PR and presentations)
 - Create effective copy to tie up visual designs for marketing materials (e- mailers, blogs, presentations), website & app, and social media handles
 - Create impactful presentations that leave the mark
 - Support other teams beyond Marketing who may have communication requirements
-- Always be on top of all the branding activities being executed, ensuring that the vChain language remains constant at every touchpoint of the brand
+- Always be on top of all the branding activities being executed, ensuring that the CodeNotary language remains constant at every touchpoint of the brand
 
 ## What you bring
 
@@ -46,4 +46,4 @@ We are a very international startup that fosters a distributed working environme
 
 ## Sounds like the perfect job for you?
 
-Send your application to [amelie@vchain.us](amelie@vchain.us)!
+Send your application to [amelie@codenotary.com ](amelie@codenotary.com )!

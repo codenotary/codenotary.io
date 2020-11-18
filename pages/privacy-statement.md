@@ -1,8 +1,8 @@
-The following provisions regulate how vChain treats your personal data.
+The following provisions regulate how CodeNotary treats your personal data.
 
 ## **1\. Data Controller**
 
-The data controller (data protection laws) is: vChain, Inc. 4141 Southwest Freeway, Houston, TX 77027, United States
+The data controller (data protection laws) is: CodeNotary, Inc. 4141 Southwest Freeway, Houston, TX 77027, United States
 
 ## **2\. Automatic data collection when visiting the website or the platform**
 
@@ -22,17 +22,17 @@ These data will only be analyzed for statistical purposes and in order to improv
 
 ## **3\. Data Usage**
 
-Your personal data, in as far as they are necessary for the establishment, contents or for changes to the contractual relations between you and vChain (tenant data), will only be used in order to process the concluded contracts, for instance, to allow the establishment of contacts with vChain. Furthermore, vChain will forward the data required for payment processing to the payment provider Paddle.com Market Ltd.
+Your personal data, in as far as they are necessary for the establishment, contents or for changes to the contractual relations between you and CodeNotary (tenant data), will only be used in order to process the concluded contracts, for instance, to allow the establishment of contacts with CodeNotary. Furthermore, CodeNotary will forward the data required for payment processing to the payment provider Paddle.com Market Ltd.
 
-In addition to this, your tenant data will be used by vChain for advertising and market research purposes and for demand-oriented design. In as far as your consent is necessary in this respect, this will only take place if you have granted the required consent.
+In addition to this, your tenant data will be used by CodeNotary for advertising and market research purposes and for demand-oriented design. In as far as your consent is necessary in this respect, this will only take place if you have granted the required consent.
 
-Your personal data required in order to allow and to invoice the usage of features offered by vChain (usage data) will, to the extent necessary, be used to handle the concluded contracts. Such usage data in particular include your user identification, information on the beginning and end as well as the extent of usage, and information on the features you have used. We will use such usage data, possibly in an anonymized form, for advertising and market research purposes, and for the improvement of the user experience of our offers, as well for the compilation of pseudonym user profiles. You may object to the compilation of pseudonym user profiles.
+Your personal data required in order to allow and to invoice the usage of features offered by CodeNotary (usage data) will, to the extent necessary, be used to handle the concluded contracts. Such usage data in particular include your user identification, information on the beginning and end as well as the extent of usage, and information on the features you have used. We will use such usage data, possibly in an anonymized form, for advertising and market research purposes, and for the improvement of the user experience of our offers, as well for the compilation of pseudonym user profiles. You may object to the compilation of pseudonym user profiles.
 
 ## **4\. Cookies Policy**
 
 Last updated: March 5, 2019
 
-vChain, Inc. ("us", "we", or "our") uses cookies on the [https://www.vchain.us][1] and [https://codenotary.io][2] websites (the "Service"). By using the Service, you consent to the use of cookies.
+CodeNotary, Inc. ("us", "we", or "our") uses cookies on the [https://www.vchain.us][1] and [https://codenotary.io][2] websites (the "Service"). By using the Service, you consent to the use of cookies.
 
 Our Cookies Policy explains what cookies are, how we use cookies, how third-parties we may partner with may use cookies on the Service, your choices regarding cookies and further information about cookies.
 
@@ -42,7 +42,7 @@ Cookies are small pieces of text sent to your web browser by a website you visit
 
 Cookies can be "persistent" or "session" cookies. Persistent cookies remain on your personal computer or mobile device when you go offline, while session cookies are deleted as soon as you close your web browser.
 
-#### _How vChain, Inc. uses cookies_
+#### _How CodeNotary, Inc. uses cookies_
 
 When you use and access the Service, we may place a number of cookies files in your web browser.
 
@@ -94,15 +94,15 @@ You can prevent the installation of cookies by setting your browser software acc
 
 ## **6\. Newsletter**
 
-vChain offers you a newsletter and whitepaper service free of charge. To send out this newsletter, we use the US-service MailChimp. Our newsletter contains information on our company, our products, and current offers, provided that you have registered for the newsletter.
+CodeNotary offers you a newsletter and whitepaper service free of charge. To send out this newsletter, we use the US-service MailChimp. Our newsletter contains information on our company, our products, and current offers, provided that you have registered for the newsletter.
 
-The data that needs to be stored when you sign up will be sent to and stored at MailChimp. After registration, the service (vChain, MailChimp) will send you an E-Mail to confirm your sign up. For more information on MailChimp privacy policy visit: Https://Mailchimp.Com/Legal/Privacy/.
+The data that needs to be stored when you sign up will be sent to and stored at MailChimp. After registration, the service (CodeNotary, MailChimp) will send you an E-Mail to confirm your sign up. For more information on MailChimp privacy policy visit: Https://Mailchimp.Com/Legal/Privacy/.
 
 You can unsubscribe from the newsletter at any time by clicking on the unsubscribe link in the email, or by contacting us via [info@vchain.us][3] and we will unsubscribe you from our newsletter.
 
 ### **Consent, right of objection**
 
-You have the right to withdraw at any time your declaration of consent to the collection and use of your personal data by vChain. We would like to inform you that after withdrawal of your consent, the future and current provision of services may be restricted or made impossible. Should you require further information, wish to withdraw your consent, or object to the use of your user data, please contact Support at info@vchain.com. Each newsletter contains a footer including a link to unsubscribe from our newsletter.
+You have the right to withdraw at any time your declaration of consent to the collection and use of your personal data by CodeNotary. We would like to inform you that after withdrawal of your consent, the future and current provision of services may be restricted or made impossible. Should you require further information, wish to withdraw your consent, or object to the use of your user data, please contact Support at info@vchain.com. Each newsletter contains a footer including a link to unsubscribe from our newsletter.
 
 [1]: https://www.vchain.us/
 [2]: https://codenotary.io/

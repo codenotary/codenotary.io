@@ -3,7 +3,7 @@
         <i-row class="_align-items-center">
             <i-column xs="12" md="8">
                 <h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
-                    vChain Inc. - The Immutability Specialists
+                    CodeNotary Inc. - The Immutability Specialists
                 </h1>
                 <h2 class="_font-weight-bold _margin-top-1">
                     the leading company for immutable recording of business data.

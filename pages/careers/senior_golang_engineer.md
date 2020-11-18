@@ -10,11 +10,11 @@ active: true
 
 If you have ever developed a database or key/value store, if you know Linux inside out, and if you are a Go wizard, then we need to talk.
 
-We are looking for smart, dedicated, and experienced Back-End engineers to join vChain and help us build an Open Source immutable Database (visit GitHub project).
+We are looking for smart, dedicated, and experienced Back-End engineers to join CodeNotary and help us build an Open Source immutable Database (visit GitHub project).
 
 Most of the code is written in Go, so if you write exemplary code and know Golang inside out, you’ll feel like home. That said, you will be surrounded by experienced gophers that are keen to work with you.
 
-vChain is the Open Source leader for immutable trust solutions such as immudb. We process tens of millions of transactions every month and are growing fast to new markets and use cases.
+CodeNotary is the Open Source leader for immutable trust solutions such as immudb. We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 
 ## Qualifications
 
@@ -30,6 +30,6 @@ vChain is the Open Source leader for immutable trust solutions such as immudb. W
 
 ## Sounds like the perfect job for you?
 
-For more information contact [amelie@vchain.us](amelie@vchain.us)!
+For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!
 
 *Please note that the technical skills will be tested in 30 minutes of coding tasks with shared screen.*

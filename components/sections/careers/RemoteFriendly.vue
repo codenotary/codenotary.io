@@ -4,7 +4,7 @@
             <i-row>
                 <i-column>
                     <page-section-header title="We are remote friendly" />
-                    <p class="lead">vChain is a fully remote team, spread across the planet. We have developers in fourteen different countries, and 21 different cities (and counting!). As a member of our team, you will be invited to work wherever you’re happiest and most productive.</p>
+                    <p class="lead">CodeNotary is a fully remote team, spread across the planet. We have developers in fourteen different countries, and 21 different cities (and counting!). As a member of our team, you will be invited to work wherever you’re happiest and most productive.</p>
                 </i-column>
             </i-row>
             <i-row center top>

@@ -9,7 +9,7 @@
             <i-row class="ztc-members-list">
                 <i-column sm="4" md="3">
                     <nuxt-link :to="{ name: 'about' }">
-                        <img src="/images/ztc/members/vchain.png" alt="vChain" class="image -responsive">
+                        <img src="/images/ztc/members/codenotary.png" alt="CodeNotary" class="image -responsive">
                     </nuxt-link>
                 </i-column>
                 <i-column sm="4" md="3">
