@@ -2,9 +2,6 @@
     <i-container>
         <i-row>
             <i-column>
-                <a href="https://opvizor.com" target="_blank">
-                    <img src="/images/immudb/logos/opvizor.png" alt="Opvizor" />
-                </a>
                 <a href="https://www.ta.capital/" target="_blank" rel="nofollow">
                     <img src="/images/immudb/logos/tacapital.png" alt="TA Captial" />
                 </a>
