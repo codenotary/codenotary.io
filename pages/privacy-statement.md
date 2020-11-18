@@ -32,7 +32,7 @@ Your personal data required in order to allow and to invoice the usage of featur
 
 Last updated: March 5, 2019
 
-CodeNotary, Inc. ("us", "we", or "our") uses cookies on the [https://www.vchain.us][1] and [https://codenotary.io][2] websites (the "Service"). By using the Service, you consent to the use of cookies.
+CodeNotary, Inc. ("us", "we", or "our") uses cookies on [https://codenotary.io][1] website (the "Service"). By using the Service, you consent to the use of cookies.
 
 Our Cookies Policy explains what cookies are, how we use cookies, how third-parties we may partner with may use cookies on the Service, your choices regarding cookies and further information about cookies.
 
@@ -98,12 +98,11 @@ CodeNotary offers you a newsletter and whitepaper service free of charge. To sen
 
 The data that needs to be stored when you sign up will be sent to and stored at MailChimp. After registration, the service (CodeNotary, MailChimp) will send you an E-Mail to confirm your sign up. For more information on MailChimp privacy policy visit: Https://Mailchimp.Com/Legal/Privacy/.
 
-You can unsubscribe from the newsletter at any time by clicking on the unsubscribe link in the email, or by contacting us via [info@vchain.us][3] and we will unsubscribe you from our newsletter.
+You can unsubscribe from the newsletter at any time by clicking on the unsubscribe link in the email, or by contacting us via [info@vchain.us][2] and we will unsubscribe you from our newsletter.
 
 ### **Consent, right of objection**
 
 You have the right to withdraw at any time your declaration of consent to the collection and use of your personal data by CodeNotary. We would like to inform you that after withdrawal of your consent, the future and current provision of services may be restricted or made impossible. Should you require further information, wish to withdraw your consent, or object to the use of your user data, please contact Support at info@vchain.com. Each newsletter contains a footer including a link to unsubscribe from our newsletter.
 
-[1]: https://www.vchain.us/
-[2]: https://codenotary.io/
-[3]: mailto:info@vchain.us
+[1]: https://codenotary.io/
+[2]: mailto:info@vchain.us
