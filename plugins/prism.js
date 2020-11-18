@@ -8,13 +8,11 @@ import Vue from 'vue';
 import 'prismjs/themes/prism-tomorrow.css';
 
 // Include language support: (optional)
+import 'prismjs/components/prism-go';
+import 'prismjs/components/prism-bash';
 import 'prismjs/components/prism-scss';
 import 'prismjs/components/prism-markup';
 import 'prismjs/components/prism-ruby';
-
-// Include the toolbar plugin: (optional)
-import 'prismjs/plugins/toolbar/prism-toolbar';
-import 'prismjs/plugins/toolbar/prism-toolbar.css';
 
 // Include the autolinker plugin: (optional)
 import 'prismjs/plugins/autolinker/prism-autolinker';
@@ -39,13 +37,15 @@ Vue.component('prism', {
         lang: { type: String, default: 'js' },
         lineNumbers: { type: Boolean, default: false }
     },
-    updated () {
-        this.$nextTick(() => Prism.highlightAll(), 5000);
+    mounted () {
+        Prism.highlightAll();
     },
     render (_) {
         const code = this.$slots && this.$slots.default && this.$slots.default[0];
-        const lang = this.props ? this.props.lang : 'go';
-        const lineNumbers = this.props ? this.props.lineNumbers : false;
-        return <div class="prism"><pre class={`${lineNumbers ? 'line-numbers ' : ''}language-${lang}`}><code>{ code }</code></pre></div>;
+        return <div class="prism">
+            <pre class={`${this.lineNumbers ? 'line-numbers ' : ''}language-${this.lang}`}>
+                <code>{ code }</code>
+            </pre>
+        </div>;
     }
 })

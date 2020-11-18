@@ -46,7 +46,7 @@
                                     </ul>
                                 </i-column>
                                 <i-column xs="12" sm="12" md="6">
-                                    <Terminal title="immudb" language="go">
+                                    <Terminal title="immudb" language="bash">
                                         # install immudb service
                                         ./immuadmin service immudb install
 
