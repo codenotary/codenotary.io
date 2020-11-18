@@ -16,14 +16,14 @@
                             He also co-founded TA Capital, a leading cross-atlantic technology investment firm.
                         </p>
                         <p>
-                            Moshe is at this time a board member of Tinaba SpA, Graylog Inc, ePrice SpA, Quandoo AG, Cascade Partners LP, Optigrowth Sarl and Opvizor Inc.
+                            Moshe is at this time a board member of Tinaba SpA, Graylog Inc, ePrice SpA, Quandoo AG, Cascade Partners LP and Optigrowth Sarl.
                         </p>
                     </team-member>
                 </i-column>
                 <i-column lg="4">
                     <team-member name="Dennis Zimmer" position="CTO" image="/images/teams/dennis-zimmer.jpg">
                         <p>
-                            Dennis Zimmer has a strong reputation as a technology visionary across the Globe. He’s the founder of Opvizor Inc., a virtualization monitoring company. He’s been working for over 20 years in the IT industry, wrote 10 books and hundreds of magazine articles and video trainings, that are read and used by leading IT professionals.
+                            Dennis Zimmer has a strong reputation as a technology visionary across the Globe. He was founder and CEO of Opvizor Inc., a virtualization monitoring company. He’s been working for over 20 years in the IT industry, wrote 10 books and hundreds of magazine articles and video trainings, that are read and used by leading IT professionals.
                         </p>
                         <p>
                             Dennis has been awarded the VMware vExpert recognition (only 30 world-wide) for 11 years in a row, he’s also a thought leader within the Virtualization Community.
