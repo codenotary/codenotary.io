@@ -3,8 +3,7 @@
         <i-container>
             <i-row>
                 <i-column xs="12" lg="4">
-                    <Feature title="Immutable"
-                             image="/images/features/immutable.svg">
+                    <Feature title="Immutable" image="/images/features/immutable.svg">
                         <ul class="list -unstyled">
                             <li>
                                 Any kind of key-value. Clients can choose how to structure data.
@@ -19,8 +18,7 @@
                     </Feature>
                 </i-column>
                 <i-column xs="12" lg="4">
-                    <Feature title="Auditable"
-                             image="/images/features/auditable.svg">
+                    <Feature title="Auditable" image="/images/features/auditable.svg">
                         <ul class="list -unstyled">
                             <li>
                                 Tamper-evident history system.
@@ -34,8 +32,7 @@
                     </Feature>
                 </i-column>
                 <i-column xs="12" lg="4">
-                    <Feature title="Secure"
-                             image="/images/features/secure.svg">
+                    <Feature title="Secure" image="/images/features/secure.svg">
                         <ul class="list -unstyled">
                             <li>
                                 Data ownership is verifiable by clients and auditors.
@@ -50,33 +47,25 @@
                     </Feature>
                 </i-column>
             </i-row>
-            <i-row v-if="false" class=" _margin-top-4">
+            <i-row v-if="true" class=" _margin-top-4">
                 <i-column xs="12" sm="6" lg="3">
-                    <Feature subtitle="Record data as it happens">
-                        <template v-slot:icon>
-                            <fa icon="database" class="fa-4x _text-primary-lightest _text-center"/>
-                        </template>
+                    <Feature subtitle="Record data when it happens" image="/images/features/record_data.svg">
+                        <p>Database changes and table history, data access audit information.</p>
                     </Feature>
                 </i-column>
                 <i-column xs="12" sm="6" lg="3">
-                    <Feature subtitle="Immediate data query">
-                        <template v-slot:icon>
-                            <fa icon="bolt" class="fa-4x _text-primary-lightest _text-center"/>
-                        </template>
+                    <Feature subtitle="Immediate data query" image="/images/features/immediate_query.svg">
+                        <p>Extremely fast query engine and always ready.</p>
                     </Feature>
                 </i-column>
                 <i-column xs="12" sm="6" lg="3">
-                    <Feature subtitle="Cryptographic verification built-in">
-                        <template v-slot:icon>
-                            <fa icon="lock" class="fa-4x _text-primary-lightest _text-center"/>
-                        </template>
+                    <Feature subtitle="Cryptographic verification built-in" image="/images/features/cryptographic_verifcation.svg">
+                        <p>Every entry is verifiable using cryptographic proof.</p>
                     </Feature>
                 </i-column>
                 <i-column xs="12" sm="6" lg="3">
-                    <Feature subtitle="All is online, not archived and out of reach">
-                        <template v-slot:icon>
-                            <fa icon="server" class="fa-4x _text-secondary _text-center"/>
-                        </template>
+                    <Feature subtitle="Always available" image="/images/features/online.svg">
+                        <p>No archive system, data is online and never out of reach.</p>
                     </Feature>
                 </i-column>
             </i-row>
