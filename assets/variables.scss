@@ -8,3 +8,17 @@ $font-size-base: 1.1rem;
 
 $navbar-padding-base: 12px 0;
 //$button-padding-base: $spacer * 0.5 $spacer * 1.5;
+
+._color-primary-light {
+    background-color: $color-primary-light !important;
+}
+._color-primary-lightest {
+    background-color: $color-primary-lightest !important;
+}
+
+._text-primary-light {
+    color: $color-primary-light !important;
+}
+._text-primary-lightest {
+    color: $color-primary-lightest !important;
+}
