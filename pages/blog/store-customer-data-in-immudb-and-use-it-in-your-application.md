@@ -7,8 +7,7 @@ tags: ["immudb", "Python", "Guideline"]
 ---
 
 ## Requirements
-- <a href="/csv/blog/customers.csv" download>customers.csv</a>
-<a href="https://github.com/codenotary/immudb-client-examples/blog-examples/store-customer-data-in-immudb-and-use-it-in-your-application" target="_blank">example</a>
+- <a href="https://github.com/codenotary/immudb-client-examples/blog-examples/store-customer-data-in-immudb-and-use-it-in-your-application" target="_blank">customer and transactions .csv files</a>
 
 # Store customer data in immudb and use it in your application
 
