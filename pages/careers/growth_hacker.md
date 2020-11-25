@@ -1,6 +1,6 @@
 ---
 title: "Growth Hacker"
-location: "US (Remote)" 
+location: "US" 
 type: "Full time" 
 requires: ""
 apply: "https://docs.google.com/forms/d/e/1FAIpQLSdfrQg-yDi1nTecdJuIgvTlCqiR-3v1rZnCBZrErx8mec5GKw/viewform"
@@ -8,13 +8,12 @@ weight: 7
 active: "true"
 ---
 
-CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
+[CodeNotary](https://codenotary.io/) is the leading Open Source company for immutable recording of data and processes.
 
-We process tens of millions of transactions every month and are growing fast to new markets and use cases.
+Our software solution [CodeNotary Ledger Compliance®](https://codenotary.io/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.io/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
 
 As we are growing rapidly, we are looking to add only the smartest people to join our highly motivated and skilled team to create and distribute products that are already having an impact on many customers around the world. If you feel addressed, you have the opportunity to help revolutionizing the way source code and software is seen and used in a zero-trust era!
 
-We are a very international startup that fosters a distributed working environment, with a diverse team working in locations around the world. We offer a competitive compensation including an equity ownership plan, and the opportunity to grow with the company.
 
 ## What you’ll be doing
 
@@ -26,27 +25,27 @@ We are a very international startup that fosters a distributed working environme
 - Exchange ideas/data/feedback with other departments (Product, marketing, top management) in order to present results and make the product more user-centric
 - Collaborate with the website development and other marketing content creation
 - Promote digital presence, through writing content, engaging with people and communities online, etc.
-- Drive traffic to your website, landing pages, social media, apps…
-- Apply conversion rate optimization (CRO) principles and hacks
+- Drive traffic to our website, landing pages, social media, apps…
+- Apply conversion rate optimization (CRO) principles and hacks 
 - Work on a lean startup process
-- Work with the AARRR Sales Metrics Diagram
+- Work with the AARRR Sales Metrics Diagram 
 - Prioritize and optimize growth channels
 - Scale and Automate the growth processes
 - Implement the PR strategy
 
 ## What you bring
 
+- Outstanding editing and copywriting skills, we’ll ask to see many samples
 - Clear understanding of data, analytics, metrics and statistics
-- Knowledge about referral marketing and ability to create viral growth 
+- Deep knowledge of referral marketing and ability to create viral growth
 - Social skills and understanding of user’s behavior
 - Great customer relations skills and focus on customer experience
-- Experience in building and optimizing landing pages, conversion rate optimization, and A/B Testing
-- Experience in Data Tracking & Analytics
+- Experience in building and optimizing landing pages, conversion rate optimization, and A/B-testing
+- 3 years of experience in Data Tracking & Analytics
 - Experience in web scraping for the collection of potential leads or growth opportunity
-- Experience in Acquisition Marketing (Social, Search, Content, Email, etc.)
-- Editing and copywriting skills
-- Knowledge about both inbound and outbound marketing
-- Experience with growth hackings tools such as Optimizely for A/B Testing, email marketing campaigns tools, CRM platforms, and automate workflows…
+- 7 years of experience in Acquisition Marketing (Social, Search, Content, Email, etc.)
+- Outstanding knowledge about both inbound and outbound marketing
+- 5 years of Experience with growth hackings tools such as Optimizely for A/B Testing, email marketing campaigns tools, CRM platforms, and automate workflows...
 
 ## What is nice to have
 
@@ -54,14 +53,7 @@ We are a very international startup that fosters a distributed working environme
 - Visual Design
 - Behavioral Psychology
 
-## What we offer
 
-- A full-time job
-- A competitive compensation package with a stock option plan
-- Flexible working hours
-- A motivated, highly engaged team that’s supportive and open to constructive feedback
-- The opportunity to grow in multiple dimensions
+## Curious? Visit our website!
 
-## Sounds like the perfect job for you?
-
-For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!
+[www.codenotary.com](https://codenotary.io/)

@@ -8,26 +8,28 @@ weight: 2
 active: true
 ---
 
-Our enterprise trust and integrity solutions company needs an experienced Technical Writer to design, write, edit, and maintain internal and external technical and process documentation for technologies and tools used and developed within CodeNotary. This position involves working closely with engineering, product, and support teams to ensure the quality, discoverability, and accuracy of the content you create and develop.
+Our enterprise trust and integrity solutions company needs an experienced Technical Writer to design, write, edit, and maintain internal and external technical and process documentation for technologies and tools used and developed within CodeNotary. Analyze and improve existing documentation, define needs, and make recommendations regarding documentation priorities. Write practical guides on how to get started with our products/features and best practices for common use cases. 
+This position involves working closely with engineering, product, and support teams to ensure the quality, discoverability, and accuracy of the content you create.
 
-CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/).
+[CodeNotary](https://codenotary.io/) is the leading Open Source company for immutable recording of data and processes.
 
-We process tens of millions of transactions every month and are growing fast to new markets and use cases.
+Our software solution [CodeNotary Ledger Compliance®](https://codenotary.io/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.io/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
+
 
 ## Qualifications
 
-- Excellent knowledge of English (spoken/written)
-- Bachelor’s degree in computer science, technical writing, or equivalent experience.
-- 6+ years experience in writing, technical documentation, and/or developer outreach for a developer audience or equivalent experience
-- 3+ years experience with a programming language such as Go, JavaScript, C/C++, C#, Java, PHP, Python, etc.
-- Experience writing, proofreading, and editing
-- Ability to simplify complex information and organize content with a logical flow and attention to detail
-- Experience with authoring tools such as XML, HTML, Markdown, Adobe Photoshop, and Illustrator
-- Experience programming, using the command-line, trying out user interfaces, creating and maintaining code sample fragments, and working with prototype hardware in test environments
-- Experience meeting multiple deadlines
-- Ability to work in an agile energetic startup environment
-- Good team player and communication skills
+- Ability to learn and understand complex technical concepts and explain them to developer or communities
+- Strong English verbal and written communication skills
+- Comfortable with ambiguity in a fast-paced environment
+- Comfortable working independently and setting priorities based on business needs
+- Able to learn how to use new software quickly
+- Familiarity with GitHub, Markdown, and open source methodology
+- API documentation experience
+- Familiarity with developer tools and the DevOps ecosystem
+- At least six years of experience as a professional technical writer or equivalent.
+- A degree in English, Writing, Journalism, Software Development, or similar.
 
-## Sounds like the perfect job for you?
 
-For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!
+## Curious? Visit our website!
+
+[www.codenotary.com](https://codenotary.io/)

@@ -1,6 +1,6 @@
 ---
 title: "Front-End Software Engineer"
-location: "Europe (Remote)" 
+location: "Remote (within Europe)" 
 type: "Full time" 
 requires: "" 
 apply: "https://docs.google.com/forms/d/e/1FAIpQLSdvsbHhbWDWG8tQpweYfjkOMM_GAKb38iUQHXEST78ogOHcUA/viewform?usp=sf_link"
@@ -8,13 +8,14 @@ weight: 9
 active: true
 ---
 
-CodeNotary is the Open Source leader for tamperproof ledger solutions such as [CodeNotary](http://www.codenotary.io/). Our highly scalable service already processes well over ten million transactions every single month and are growing fast to new markets and use cases.
+[CodeNotary](https://codenotary.io/) is the leading Open Source company for immutable recording of data and processes.
 
-We are looking for an experienced and dedicated Frontend Developer to build and maintain the user interface and always improve usability and customer experience.
+Our software solution [CodeNotary Ledger Compliance®](https://codenotary.io/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.io/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
 
- If you feel addressed, you have the opportunity to help bringing back trust and integrity to the digital world!
+We are looking for an experienced and dedicated Frontend Developer to build and maintain the user interface and always improve usability and customer experience. If you feel addressed, you have the opportunity to help bringing back trust and integrity to the digital world!
 
 We use the following environments and systems: JavaScript, Vue.js, Node.js and Go, Java, Linux, and low-level operating system technologies, as well as complex cloud infrastructure.
+
 
 ## Qualifications
 
@@ -25,14 +26,13 @@ We use the following environments and systems: JavaScript, Vue.js, Node.js and G
 - Excellent programming skills: JavaScript, ES 6, Node.js
 - Excellent experience with Vue.js and other JavaScript frameworks
 - Experience accessing API driven architectures (e.g. REST, gRPC)
-- Practical experience with Software Version Control and Continuous Integration (e.g. Git, Jenkins, Travis)
-- A structured working approach and general-purpose problem-solving skills
+- Experience with Software Version Control and Continuous Integration (e.g. Git, Jenkins, Travis)
+- Experience with Markdown, GitHub Actions, VuePress, and Linux
 - Experience with .NET development
+- Structured working approach and general-purpose problem-solving skills
 - Interest in blockchain technologies (e.g. Ethereum, Parity) and smart contract development (Solidity)
 
 
-## Sounds like the perfect job for you?
+## Curious? Visit our website!
 
-For more information contact [amelie@codenotary.com ](amelie@codenotary.com )!
-
-*Please note that the technical skills will be tested in 30 minutes of coding tasks with shared screen.*
+[www.codenotary.com](https://codenotary.io/)

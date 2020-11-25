@@ -1,19 +1,18 @@
 ---
 title: "Bookkeper"
-location: "Houston (TX), Galleria Area" 
+location: "Houston, Galleria Area" 
 type: "Full time" 
 requires: "" 
 weight: 10
 active: true
 ---
 
-CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
+[CodeNotary](https://codenotary.io/) is the leading Open Source company for immutable recording of data and processes.
 
-We process tens of millions of transactions every month and are growing fast to new markets and use cases.
+Our software solution [CodeNotary Ledger Compliance®](https://codenotary.io/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.io/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
 
-We are a very international startup that fosters a distributed working environment, with a diverse engineering team working remotely from locations around the world. We offer a competitive compensation including an equity ownership plan, and the opportunity to grow with the company.
 
-## Qualifications
+## What you’ll be doing
 
 - Check and verify source documents such as invoices, receipts, computer printouts
 - Allocate and post financial transaction details to subsidiary books
@@ -44,13 +43,7 @@ We are a very international startup that fosters a distributed working environme
 - Experience in managing a stock option pool
 - Knowledge of relevant legislation and regulatory requirements
 
-## What we offer
 
-- A full-time job
-- A competitive compensation package
-- A stock option plan
-- A young and dynamic international working environment 
+## Curious? Visit our website!
 
-## Sounds like the perfect job for you?
-
-Send your application to [amelie@codenotary.com ](amelie@codenotary.com )!
+[www.codenotary.com](https://codenotary.io/)
