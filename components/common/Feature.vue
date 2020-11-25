@@ -1,8 +1,10 @@
 <template>
     <div class="feature">
         <img v-if="image" class="image -responsive" :src="image" :alt="title">
-        <h3 class="title _text-primary">{{ title }}</h3>
-        <div><slot/></div>
+        <slot name="icon" />
+        <h3 v-if="title" class="title _text-primary">{{ title }}</h3>
+        <h5 v-if="subtitle" class="title">{{ subtitle }}</h5>
+        <slot/>
     </div>
 </template>
 
@@ -10,11 +12,19 @@
 export default {
     name: 'Feature',
     props: {
+        image: {
+            type: String,
+            default: ''
+        },
+        icon: {
+            type: String,
+            default: ''
+        },
         title: {
             type: String,
             default: ''
         },
-        image: {
+        subtitle: {
             type: String,
             default: ''
         }
@@ -31,6 +41,11 @@ export default {
     .title {
         font-weight: bold;
         color: $color-primary;
+    }
+
+    .subtitle {
+        font-weight: 500;
+        color: $color-dark;
     }
 
     img {
