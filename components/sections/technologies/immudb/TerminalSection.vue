@@ -75,6 +75,7 @@
                                     </ul>
                                 </i-column>
                                 <i-column xs="12" sm="12" md="6">
+                                    <!-- eslint-disable vue/html-indent -->
                                     <Terminal title="immudb" language="go">
                                         // built-in verification for every entry
                                         verifiedItem, err := client.SafeGet(ctx, key2)
@@ -86,6 +87,7 @@
                                         fmt.Println("   SafeGet - fetch and verify entry:")
                                         printItem(nil, nil, verifiedItem)
                                     </Terminal>
+                                    <!-- eslint-enable vue/html-indent -->
                                 </i-column>
                             </i-row>
                         </div> -->

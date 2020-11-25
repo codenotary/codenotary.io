@@ -9,7 +9,7 @@
 
 <script>
 import HomeHeader from '~/components/sections/headers/HomeHeader';
-import FeaturesSection from '~/components/sections/features/FeaturesSection';
+import FeaturesSection from '~/components/sections/homepage/FeaturesSection';
 import CustomerSuccessStories from '~/components/sections/homepage/CustomerSuccessStories';
 import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 

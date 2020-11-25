@@ -9,7 +9,7 @@
 <script>
 import { title } from '~/helpers/meta';
 // import LCHeader from '~/components/sections/headers/LCHeader';
-// import FeaturesSection from '~/components/sections/features/FeaturesSection';
+// import FeaturesSection from '~/components/sections/homepage/FeaturesSection';
 import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
