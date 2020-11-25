@@ -1,7 +1,7 @@
 ---
 title: "Store customer data in immudb and use it in your application"
 date: "2020-11-24"
-image: "/images/blog/"
+image: "/images/blog/gopher_handling_python.jpg"
 tags: ["immudb", "Python", "Guideline"]
 
 ---
@@ -13,6 +13,8 @@ tags: ["immudb", "Python", "Guideline"]
 
 Snakes like pythons are one of the worst enemies of gophers, never the less gophers should know how to handle them. In this blog, you will learn how to transform relational data into a key-value schema that will fit in immudb with python. Once the records are written into immudb they are immutable, auditable and secure. First we have to import ImmudbClient from  [immudb-py](https://pypi.org/project/immudb-py/) and pandas for processing the example .csv data. We can connect to immudb now using the IP address of immudb. If you don't have immudb installed check out [immudb](https://github.com/codenotary/immudb) and start it up in just some seconds. 
 
+
+<img src="/images/blog/gopher_handling_python.jpg" width="240" alt="Gopher handling python/>
 
 
 ```python
