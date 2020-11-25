@@ -7,14 +7,15 @@ tags: ["immudb", "Python", "Guideline"]
 ---
 
 ## Requirements
-- <a href="https://github.com/codenotary/immudb-client-examples/blog-examples/store-customer-data-in-immudb-and-use-it-in-your-application" target="_blank">customer and transactions .csv files</a>
+- <a href="https://github.com/codenotary/immudb-client-examples/tree/master/blog-examples/store-customer-data-in-immudb-and-use-it-in-your-application" target="_blank">customer and transactions .csv files</a>
+
 
 # Store customer data in immudb and use it in your application
 
 Snakes like pythons are one of the worst enemies of gophers, never the less gophers should know how to handle them. In this blog, you will learn how to transform relational data into a key-value schema that will fit in immudb with python. Once the records are written into immudb they are immutable, auditable and secure. First we have to import ImmudbClient from  [immudb-py](https://pypi.org/project/immudb-py/) and pandas for processing the example .csv data. We can connect to immudb now using the IP address of immudb. If you don't have immudb installed check out [immudb](https://github.com/codenotary/immudb) and start it up in just some seconds. 
 
 
-<img src="/images/blog/gopher_handling_python.jpg" width="240" alt="Gopher handling python/>
+<img src="/images/blog/gopher_handling_python.jpg" width="420" alt="Gopher handling python"/>
 
 
 ```python
@@ -49,7 +50,7 @@ df2 = pd.read_csv("transactions.csv",sep=';')
 
 Let's take a look at our example data. We have two tables with customer information and a transactionlog. Every customer has a unique accountid, a first and a last name, gender and date_of_birth. The transaction log is very minimalistic and contains the credit card information of the paying customer as well as the amount transfered in the transaction and the recipient. The tables can be matched by the accountid. Data like this can be easily managed in a RDBMS. We could easily get every transaction from a specific customer via SQL. Immudb, however, requires a key-value schema in order to reach the highest levels of performance.
 
- <img src="/images/blog/erdiagram.png" width="900" />
+<img src="/images/blog/erdiagram.png" width="900" />
 
 The customer table has 18 rows and was stored in a data frame by the pandas package. The account ID (accountid) is used as the unique key for this table. We have to think about new keys because we can only store one value for every key into immudb.
 
@@ -114,7 +115,7 @@ Now let's try to save every transaction from a specific customer. Every key can 
 |3  |   506214:male:16.03.1999 | 2514285062142358  | 177,50  |   381346|
 
 Now we have to convert and add the values for every unique key into a json object. The chart below is showing how the items will be stored in immudb. Every key produces a unique hash, which means you can set the same key again and update the value connected to it. The history function keeps track of those changes.  
- <img src="/images/blog/keyvaluediagram.png" width="900" />
+<img src="/images/blog/keyvaluediagram.png" width="900" />
 
 ## Let's do it
 
