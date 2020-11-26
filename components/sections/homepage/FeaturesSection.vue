@@ -50,12 +50,12 @@
             <i-row v-if="true" class=" _margin-top-4">
                 <i-column xs="12" sm="6" lg="3">
                     <Feature subtitle="Record data when it happens" image="/images/features/record_data.svg">
-                        <p>Database changes and table history, data access audit information.</p>
+                        <p>Database changes, table history, data access, audit information.</p>
                     </Feature>
                 </i-column>
                 <i-column xs="12" sm="6" lg="3">
                     <Feature subtitle="Immediate data query" image="/images/features/immediate_query.svg">
-                        <p>Extremely fast query engine and always ready.</p>
+                        <p>Extremely fast query engine and always ready to use.</p>
                     </Feature>
                 </i-column>
                 <i-column xs="12" sm="6" lg="3">
