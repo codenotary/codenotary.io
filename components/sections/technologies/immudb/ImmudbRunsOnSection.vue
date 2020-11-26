@@ -76,5 +76,17 @@ export default {
             }
         }
     }
+
+    @include breakpoint-down(sm) {
+        .analyze-and-manage-tabs {
+            .button-group {
+                display: block;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 </style>
