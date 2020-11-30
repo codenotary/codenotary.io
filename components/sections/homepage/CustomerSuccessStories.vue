@@ -11,22 +11,22 @@
             </i-row>
             <i-row>
                 <i-column md="6" lg="4">
-                    <story-card title="IT Compliance" :color="getColor(5)" image="/images/use-cases/it-compliance.svg" />
+                    <story-card title="IT Compliance" color="transparent" image="/images/use-cases/it-compliance.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Finance" :color="getColor(6)" image="/images/use-cases/finance.svg" />
+                    <story-card title="Finance" color="transparent" image="/images/use-cases/finance.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Healthcare" :color="getColor(1)" image="/images/use-cases/healthcare.svg" />
+                    <story-card title="Healthcare" color="transparent" image="/images/use-cases/healthcare.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Government" :color="getColor(3)" image="/images/use-cases/government.svg" />
+                    <story-card title="Government" color="transparent" image="/images/use-cases/government.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="CI / CD Integrity" :color="getColor(0)" image="/images/use-cases/cicd.svg" />
+                    <story-card title="CI / CD Integrity" color="transparent" image="/images/use-cases/cicd.svg" />
                 </i-column>
                 <i-column md="6" lg="4">
-                    <story-card title="Regulatory Compliance" :color="getColor(8)" image="/images/use-cases/regulations.svg" />
+                    <story-card title="Regulatory Compliance" color="transparent" image="/images/use-cases/regulations.svg" />
                 </i-column>
             </i-row>
         </i-container>
@@ -56,6 +56,10 @@ export default {
 
     .story-card {
         margin-bottom: 2rem;
+
+        .title {
+            color: #333;
+        }
     }
 }
 </style>
