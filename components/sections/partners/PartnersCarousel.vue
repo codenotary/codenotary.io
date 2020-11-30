@@ -4,11 +4,11 @@
             <i-row>
                 <i-column xs="12">
                     <VueSlickCarousel v-if="partners && partners.length" v-bind="settings">
-                        <div v-for="(partner, idx) in partners" :key="partner.slug" class="partner-wrapper">
+                        <div v-for="partner in partners" :key="partner.slug" class="partner-wrapper">
                             <a v-if="partner.link && partner.link.url" :href="partner.link.url" :target="partner.link.target || '_blank'" :title="partner.title" rel="nofollow">
-                                <story-card :color="getColor(idx)" :title="partner.title" :subtitle="partner.subtitle" :image="partner.image " />
+                                <story-card color="transparent" :title="partner.title" :subtitle="partner.subtitle" :image="partner.image " />
                             </a>
-                            <story-card v-else :color="getColor(idx)" :title="partner.title" :subtitle="partner.subtitle" :image="partner.image " />
+                            <story-card v-else color="transparent" :title="partner.title" :subtitle="partner.subtitle" :image="partner.image " />
                         </div>
                     </VueSlickCarousel>
                 </i-column>
@@ -81,7 +81,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #partners-section {
-    background-color: white;
+    background-color: #FFF;
     overflow: hidden;
 
     a {
@@ -114,6 +114,21 @@ export default {
             -webkit-user-select: none;
             user-select: none;
             pointer-events: none;
+            opacity: 0.55;
+        }
+
+        .title {
+            color: #666;
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
+            }
+
+            .title {
+                color: #111;
+            }
         }
 
         @include breakpoint-down(xs) {
