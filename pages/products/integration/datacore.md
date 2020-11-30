@@ -1,12 +1,12 @@
 ---
 title: "Datacore"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/datacore.png"
+image: "/images/integrations/datacore.png"
 ---
 
  
 
-<!-- ![Datacore](/images/integrations/white/rectangle/datacore.png) -->
+<!-- ![Datacore](/images/integrations/datacore.png) -->
 
 
 

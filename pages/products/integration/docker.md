@@ -1,12 +1,12 @@
 ---
 title: "Docker"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/docker.png"
+image: "/images/integrations/docker.png"
 ---
 
  
 
-<!-- ![Docker](/images/integrations/white/rectangle/docker.png) -->
+<!-- ![Docker](/images/integrations/docker.png) -->
 
 
 

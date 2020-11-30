@@ -1,12 +1,12 @@
 ---
 title: "Postgres"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/postgresql.png"
+image: "/images/integrations/postgresql.png"
 ---
 
  
 
-<!-- ![Postgres](/images/integrations/white/rectangle/postgresql.png) -->
+<!-- ![Postgres](/images/integrations/postgresql.png) -->
 
 
 

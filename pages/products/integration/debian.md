@@ -1,12 +1,12 @@
 ---
 title: "Debian"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/debian.png"
+image: "/images/integrations/debian.png"
 ---
 
  
 
-<!-- ![Debian](/images/integrations/white/rectangle/debian.png) -->
+<!-- ![Debian](/images/integrations/debian.png) -->
 
 
 

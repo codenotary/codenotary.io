@@ -1,12 +1,12 @@
 ---
 title: "Veeam"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/veeam.png"
+image: "/images/integrations/veeam.png"
 ---
 
  
 
-<!-- ![Veeam](/images/integrations/white/rectangle/veeam.png) -->
+<!-- ![Veeam](/images/integrations/veeam.png) -->
 
 
 

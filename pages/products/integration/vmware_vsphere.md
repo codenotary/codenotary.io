@@ -1,12 +1,12 @@
 ---
 title: "Vmware Sphere"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/vmware_vsphere.png"
+image: "/images/integrations/vmware_vsphere.png"
 ---
 
  
 
-<!-- ![Vmware Sphere](/images/integrations/white/rectangle/vmware_vsphere.png) -->
+<!-- ![Vmware Sphere](/images/integrations/vmware_vsphere.png) -->
 
 
 

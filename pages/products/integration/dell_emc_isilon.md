@@ -1,12 +1,12 @@
 ---
 title: "Dell EMC Isilon"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/dell_emc_isilon.png"
+image: "/images/integrations/dell_emc_isilon.png"
 ---
 
  
 
-<!-- ![Dell_EMC_Isilon](/images/integrations/white/rectangle/dell_emc_isilon.png) -->
+<!-- ![Dell_EMC_Isilon](/images/integrations/dell_emc_isilon.png) -->
 
 
 

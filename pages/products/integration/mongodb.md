@@ -1,12 +1,12 @@
 ---
 title: "Mongodb"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/mongodb.png"
+image: "/images/integrations/mongodb.png"
 ---
 
  
 
-<!-- ![Mongodb](/images/integrations/white/rectangle/mongodb.png) -->
+<!-- ![Mongodb](/images/integrations/mongodb.png) -->
 
 
 

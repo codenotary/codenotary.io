@@ -1,12 +1,12 @@
 ---
 title: "Dell EMC Powermax"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/dell_emc_powermax.png"
+image: "/images/integrations/dell_emc_powermax.png"
 ---
 
  
 
-<!-- ![Dell_EMC_Powermax](/images/integrations/white/rectangle/dell_emc_powermax.png) -->
+<!-- ![Dell_EMC_Powermax](/images/integrations/dell_emc_powermax.png) -->
 
 
 

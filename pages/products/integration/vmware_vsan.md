@@ -1,12 +1,12 @@
 ---
 title: "Vmware Vsan"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/vmware_vsan.png"
+image: "/images/integrations/vmware_vsan.png"
 ---
 
  
 
-<!-- ![Vmware Vsan](/images/integrations/white/rectangle/vmware_vsan.png) -->
+<!-- ![Vmware Vsan](/images/integrations/vmware_vsan.png) -->
 
 
 

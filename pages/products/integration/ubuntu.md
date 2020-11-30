@@ -1,12 +1,12 @@
 ---
 title: "Ubuntu"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/ubuntu.png"
+image: "/images/integrations/ubuntu.png"
 ---
 
  
 
-<!-- ![Ubuntu](/images/integrations/white/rectangle/ubuntu.png) -->
+<!-- ![Ubuntu](/images/integrations/ubuntu.png) -->
 
 
 

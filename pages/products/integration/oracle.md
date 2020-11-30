@@ -1,12 +1,12 @@
 ---
 title: "Oracle"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/oracle.png"
+image: "/images/integrations/oracle.png"
 ---
 
  
 
-<!-- ![Oracle](/images/integrations/white/rectangle/oracle.png) -->
+<!-- ![Oracle](/images/integrations/oracle.png) -->
 
 
 

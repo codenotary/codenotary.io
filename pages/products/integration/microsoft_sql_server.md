@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Server"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/microsoft_sql_server.png"
+image: "/images/integrations/microsoft_sql_server.png"
 ---
 
  
 
-<!-- ![Microsoft_Server](/images/integrations/white/rectangle/microsoft_sql_server.png) -->
+<!-- ![Microsoft_Server](/images/integrations/microsoft_sql_server.png) -->
 
 
 

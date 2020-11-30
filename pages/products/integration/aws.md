@@ -1,12 +1,12 @@
 ---
 title: "Amazon Web Services"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/aws.png"
+image: "/images/integrations/aws.png"
 ---
 
  
 
-<!-- ![Amazon_Web_Services](/images/integrations/white/rectangle/aws.png) -->
+<!-- ![Amazon_Web_Services](/images/integrations/aws.png) -->
 
 
 

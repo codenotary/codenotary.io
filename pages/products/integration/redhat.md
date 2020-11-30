@@ -1,12 +1,12 @@
 ---
 title: "Redhat"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/redhat.png"
+image: "/images/integrations/redhat.png"
 ---
 
  
 
-<!-- ![Redhat](/images/integrations/white/rectangle/redhat.png) -->
+<!-- ![Redhat](/images/integrations/redhat.png) -->
 
 
 

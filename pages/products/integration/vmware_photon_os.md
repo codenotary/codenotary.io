@@ -1,12 +1,12 @@
 ---
 title: "Vmware"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/vmware_photon_os.png"
+image: "/images/integrations/vmware_photon_os.png"
 ---
 
  
 
-<!-- ![Vmware](/images/integrations/white/rectangle/vmware_photon_os.png) -->
+<!-- ![Vmware](/images/integrations/vmware_photon_os.png) -->
 
 
 

@@ -1,12 +1,12 @@
 ---
 title: "Brocade"
 date: "2019-06-04"
-image: "/images/integrations/white/rectangle/brocade.png"
+image: "/images/integrations/brocade.png"
 ---
 
  
 
-<!-- ![Brocade](/images/integrations/white/rectangle/brocade.png) -->
+<!-- ![Brocade](/images/integrations/brocade.png) -->
 
 
 

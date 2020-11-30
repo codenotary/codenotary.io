@@ -1,12 +1,12 @@
 ---
 title: "IBM Aix"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/ibm_aix.png"
+image: "/images/integrations/ibm_aix.png"
 ---
 
  
 
-<!-- ![IBM_Aix](/images/integrations/white/rectangle/ibm_aix.png) -->
+<!-- ![IBM_Aix](/images/integrations/ibm_aix.png) -->
 
 
 

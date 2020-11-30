@@ -1,12 +1,12 @@
 ---
 title: "Netapp"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/netapp.png"
+image: "/images/integrations/netapp.png"
 ---
 
  
 
-<!-- ![Netapp](/images/integrations/white/rectangle/netapp.png) -->
+<!-- ![Netapp](/images/integrations/netapp.png) -->
 
 
 

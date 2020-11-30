@@ -1,12 +1,12 @@
 ---
 title: "Solidfire"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/solidfire.png"
+image: "/images/integrations/solidfire.png"
 ---
 
  
 
-<!-- ![Solidfire](/images/integrations/white/rectangle/solidfire.png) -->
+<!-- ![Solidfire](/images/integrations/solidfire.png) -->
 
 
 

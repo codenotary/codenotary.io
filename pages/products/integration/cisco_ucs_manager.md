@@ -1,12 +1,12 @@
 ---
 title: "Cisco UCS Manager"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/cisco_ucs_manager.png"
+image: "/images/integrations/cisco_ucs_manager.png"
 ---
 
  
 
-<!-- ![Cisco_Ucs_Manager](/images/integrations/white/rectangle/cisco_ucs_manager.png) -->
+<!-- ![Cisco_Ucs_Manager](/images/integrations/cisco_ucs_manager.png) -->
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Apache"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/apache.png"
+image: "/images/integrations/apache.png"
 ---
 
  

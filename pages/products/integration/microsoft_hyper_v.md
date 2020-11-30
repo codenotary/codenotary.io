@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Hyper-v"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/microsoft_hyper_v.png"
+image: "/images/integrations/microsoft_hyper_v.png"
 ---
 
  
 
-<!-- ![Microsoft Hyper-v](/images/integrations/white/rectangle/microsoft_hyper_vpng) -->
+<!-- ![Microsoft Hyper-v](/images/integrations/microsoft_hyper_vpng) -->
 
 
 

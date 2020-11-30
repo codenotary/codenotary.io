@@ -1,12 +1,12 @@
 ---
 title: "Microsoft SQL Azure"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/microsoft_sql_azure.png"
+image: "/images/integrations/microsoft_sql_azure.png"
 ---
 
  
 
-<!-- ![Microsoft_SQL_Azure](/images/integrations/white/rectangle/microsoft_sql_azure.png) -->
+<!-- ![Microsoft_SQL_Azure](/images/integrations/microsoft_sql_azure.png) -->
 
 
 

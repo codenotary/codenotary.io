@@ -1,12 +1,12 @@
 ---
 title: "Cisco Hyperflex"
 # date: "2019-06-04"
-image: "/images/integrations/white/rectangle/cisco_nexus.png"
+image: "/images/integrations/cisco_nexus.png"
 ---
 
  
 
-<!-- ![Cisco_Hyperflex](/images/integrations/white/rectangle/cisco_nexus.png) -->
+<!-- ![Cisco_Hyperflex](/images/integrations/cisco_nexus.png) -->
 
 
 
