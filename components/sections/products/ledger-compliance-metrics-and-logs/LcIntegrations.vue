@@ -11,9 +11,9 @@
             <i-row>
                 <i-column xs="12">
                     <VueSlickCarousel v-if="integrations && integrations.length" v-bind="settings">
-                        <div v-for="(integration, idx) in integrations" :key="integration.slug" class="integration-wrapper">
+                        <div v-for="integration in integrations" :key="integration.slug" class="integration-wrapper">
                             <nuxt-link :to="{ name: 'products-integration-post', params: { post: integration.slug } }">
-                                <story-card :color="getColor(idx)" :image="integration.image " />
+                                <story-card color="transparent" :image="integration.image " />
                             </nuxt-link>
                         </div>
                     </VueSlickCarousel>
@@ -100,16 +100,23 @@ export default {
         padding: 1rem;
 
         img {
-            height: 64px;
+            height: 84px;
             -moz-user-select: none;
             -webkit-user-select: none;
             user-select: none;
             pointer-events: none;
+            opacity: 0.55;
         }
 
         @include breakpoint-down(xs) {
             h5 {
                 font-size: 1rem;
+            }
+        }
+
+        &:hover {
+            img {
+                opacity: 1;
             }
         }
     }
