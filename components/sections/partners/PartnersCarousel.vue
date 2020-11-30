@@ -102,13 +102,13 @@ export default {
     }
 
     .story-card {
-        min-height: 200px;
-        max-height: 200px;
+        min-height: 180px;
+        max-height: 2180px;
         margin-bottom: 1rem;
         padding: 1rem;
 
         img {
-            height: 84px;
+            height: 64px;
             width: auto;
             -moz-user-select: none;
             -webkit-user-select: none;
@@ -117,8 +117,9 @@ export default {
             opacity: 0.55;
         }
 
-        .title {
-            color: #666;
+        .title,
+        .subtitle {
+            color: #666 !important;
         }
 
         &:hover {
@@ -126,8 +127,9 @@ export default {
                 opacity: 1;
             }
 
-            .title {
-                color: #111;
+            .title,
+            .subtitle {
+                color: #111 !important;
             }
         }
 

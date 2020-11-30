@@ -2,12 +2,12 @@
     <div v-if="!outlined && color" class="story-card" :style="`background-color: ${color}`" >
         <img v-if="image" class="image -responsive" :class="{'image-only': !title && !subtitle }" :src="image" :alt="title">
         <h5 v-if="title" class="title">{{ title }}</h5>
-        <p v-if="subtitle" class="subtitle _text-white">{{ subtitle }}</p>
+        <p v-if="subtitle" class="subtitle">{{ subtitle }}</p>
     </div>
     <div v-else-if="!outlined" :class="`story-card _background-${variant}`">
         <img v-if="image" class="image -responsive" :class="{'image-only': !title && !subtitle }" :src="image" :alt="title">
         <h5 v-if="title" class="title">{{ title }}</h5>
-        <p v-if="subtitle" class="subtitle _text-white">{{ subtitle }}</p>
+        <p v-if="subtitle" class="subtitle">{{ subtitle }}</p>
     </div>
     <div v-else class="story-card" :style="`border: 2px solid ${color}`" >
         <img v-if="image" class="image -responsive" :class="{'image-only': !title && !subtitle }" :src="image" :alt="title">
@@ -59,9 +59,10 @@ export default {
     }
 
     .subtitle {
-        font-weight: 300;
+        font-weight: 700;
         margin: 6px 0 0 0;
-        font-size: 14px;
+        color: white;
+        font-size: 16px;
         line-height: 18px;
     }
 
