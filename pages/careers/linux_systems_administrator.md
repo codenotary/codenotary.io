@@ -10,9 +10,9 @@ active: true
 
 If you know Linux inside-out, and if you love scripting, automation, and distributed systems, then we should talk. If you are an experienced Linux administrator with expertise on operating system-level, then it’s a perfect match.
 
-[CodeNotary](https://codenotary.io/) is the leading Open Source company for immutable recording of data and processes.
+[CodeNotary](https://codenotary.com/) is the leading Open Source company for immutable recording of data and processes.
 
-Our solution [CodeNotary Ledger Compliance®](https://codenotary.io/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.io/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
+Our solution [CodeNotary Ledger Compliance®](https://codenotary.com/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.com/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
 
 
 ## Qualifications
@@ -32,4 +32,4 @@ Our solution [CodeNotary Ledger Compliance®](https://codenotary.io/products/led
 
 ## Curious? Visit our website!
 
-[www.codenotary.com](https://codenotary.io/)
+[www.codenotary.com](https://codenotary.com/)

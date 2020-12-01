@@ -7,9 +7,9 @@ weight: 8
 active: true
 ---
 
-[CodeNotary](https://codenotary.io/) is the leading Open Source company for immutable recording of data and processes.
+[CodeNotary](https://codenotary.com/) is the leading Open Source company for immutable recording of data and processes.
 
-Our software solution [CodeNotary Ledger Compliance®](https://codenotary.io/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.io/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
+Our software solution [CodeNotary Ledger Compliance®](https://codenotary.com/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.com/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
 
 As we are growing rapidly, we are looking to add only the smartest people to join our highly motivated and skilled team to create products that are already having an impact on many customers around the world. If you feel addressed, you have the opportunity to help revolutionizing the way source code and software is seen and used in a zero-trust era!
 
@@ -51,4 +51,4 @@ As we are growing rapidly, we are looking to add only the smartest people to joi
 
 ## Curious? Visit our website!
 
-[www.codenotary.com](https://codenotary.io/)
+[www.codenotary.com](https://codenotary.com/)

@@ -11,7 +11,7 @@ If you’re crazy about DevOps, Blockchain, and latest technology, this might be
 
 We are looking for smart, dedicated, and experienced software engineers to join CodeNotary and help us develop and iteratively improve our software delivery process, as well as run and maintain our infrastructure services (Applications, Blockchain, Postgres).
 
-CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.io/).
+CodeNotary is the Open Source leader for immutable trust solutions such as [immudb](http://www.immudb.io/) and [CodeNotary](http://www.codenotary.com/).
 
 We process tens of millions of transactions every month and are growing fast to new markets and use cases.
 

@@ -1,8 +1,8 @@
 ## **CodeNotary Subscription Agreement**
 
-These are the Terms and Conditions ("Terms") that apply to the use of the CodeNotary Website and Services ([https://codenotary.io][1]) (together with all associated website linked to such website by CodeNotary Inc., its subsidiaries and affiliated companies).
+These are the Terms and Conditions ("Terms") that apply to the use of the CodeNotary Website and Services ([https://codenotary.com][1]) (together with all associated website linked to such website by CodeNotary Inc., its subsidiaries and affiliated companies).
 
-Please read them carefully because the Terms, together with CodeNotary Privacy Statement located at [https://codenotary.io/privacy-statement][2] ("Privacy Statement"), form a legal contract ("agreement") between you (either an individual or a legal entity) and CodeNotary Inc., with its principal office at 4141 Southwest Freeway, Suite 340, 77027 Houston (Texas) ("CodeNotary") (each a "Party" and together, the "Parties") for the use of the CodeNotary Website and Services ("Services").
+Please read them carefully because the Terms, together with CodeNotary Privacy Statement located at [https://codenotary.com/privacy-statement][2] ("Privacy Statement"), form a legal contract ("agreement") between you (either an individual or a legal entity) and CodeNotary Inc., with its principal office at 4141 Southwest Freeway, Suite 340, 77027 Houston (Texas) ("CodeNotary") (each a "Party" and together, the "Parties") for the use of the CodeNotary Website and Services ("Services").
 
 By using the Services you are irrevocably agreeing to all the terms and conditions of the agreement. If you do not agree with any of the terms and conditions in the agreement, you may not use the Services.
 
@@ -127,5 +127,5 @@ This website uses Google Analytics, a web analytics service provided by Google, 
 
 This Agreement will be governed by the laws of the State of Texas, without regard to its conflict of laws principles. This Agreement shall not be governed by the 1980 UN Convention on Contracts for the International Sale of Goods or any laws based on the Uniform Computer Information Transactions Act (UCITA). All suits hereunder will be brought solely in Federal Court for the Southern District of Texas, or if that court lacks subject matter jurisdiction, in any Texas State Court located in Harris County. The parties hereby irrevocably waive any and all claims and defenses either might otherwise have in any such action or proceeding in any of such courts based upon any alleged lack of personal jurisdiction, improper venue, forum nonconveniens or any similar claim or defense.
 
-[1]: https://codenotary.io/
-[2]: https://codenotary.io/privacy-statement
+[1]: https://codenotary.com/
+[2]: https://codenotary.com/privacy-statement

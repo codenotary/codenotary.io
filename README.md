@@ -1,4 +1,4 @@
-# codenotary.io
+# codenotary.com
 
 CodeNotary - Immutable recording of data and processes with CodeNotary Ledger Compliance®
 On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.

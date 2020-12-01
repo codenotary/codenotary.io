@@ -1,7 +1,7 @@
 export const DEFAULT_META = {
     TYPE: 'website',
-    URL: 'https://codenotary.io',
-    SITE_URL: 'https://codenotary.io',
+    URL: 'https://codenotary.com',
+    SITE_URL: 'https://codenotary.com',
     TITLE: 'Immutable Recording of Data and Processes - CodeNotary',
     SITE_NAME: 'CodeNotary',
     AUTHOR: 'CodeNotary',

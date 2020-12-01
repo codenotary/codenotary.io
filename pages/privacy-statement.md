@@ -32,7 +32,7 @@ Your personal data required in order to allow and to invoice the usage of featur
 
 Last updated: March 5, 2019
 
-CodeNotary, Inc. ("us", "we", or "our") uses cookies on [https://codenotary.io][1] website (the "Service"). By using the Service, you consent to the use of cookies.
+CodeNotary, Inc. ("us", "we", or "our") uses cookies on [https://codenotary.com][1] website (the "Service"). By using the Service, you consent to the use of cookies.
 
 Our Cookies Policy explains what cookies are, how we use cookies, how third-parties we may partner with may use cookies on the Service, your choices regarding cookies and further information about cookies.
 
@@ -104,5 +104,5 @@ You can unsubscribe from the newsletter at any time by clicking on the unsubscri
 
 You have the right to withdraw at any time your declaration of consent to the collection and use of your personal data by CodeNotary. We would like to inform you that after withdrawal of your consent, the future and current provision of services may be restricted or made impossible. Should you require further information, wish to withdraw your consent, or object to the use of your user data, please contact Support at info@vchain.com. Each newsletter contains a footer including a link to unsubscribe from our newsletter.
 
-[1]: https://codenotary.io/
+[1]: https://codenotary.com/
 [2]: mailto:info@vchain.us
