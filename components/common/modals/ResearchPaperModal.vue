@@ -76,7 +76,7 @@ export default {
             sending: false,
             error: false,
             sent: false,
-            sitekey: '6LeHGL4ZAAAAALlN7PGMzqnNBM6GVwhlJ-ZeiCV8',
+            sitekey: '6LeB9PUZAAAAAGJtwPEegkY2OeH1rVzHDwmdTguT',
             form: this.$inkline.form({
                 contactEmail: {
                     validators: [
