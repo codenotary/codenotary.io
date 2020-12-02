@@ -3,13 +3,13 @@
         <page-section-header :title="article.title" tag="h1" />
         <i-container>
             <i-row class="_justify-content-space-between">
-                <i-column xs="12" md="9">
-                    <article class="blog-post-page _padding-right-4" style="border-right: 1px solid #e6e6e6">
+                <i-column xs="12" sm="12" md="9">
+                    <article class="blog-post-page _padding-right-xs-0 _padding-right-sm-4">
                         <nuxt-content :document="article" />
                     </article>
                 </i-column>
-                <i-column xs="12" md="3">
-                    <most-popular class="most-popular-wrapper" :articles="mostPopular" card />
+                <i-column xs="12" sm="12" md="3">
+                    <most-popular class="most-popular-wrapper _padding-left-xs-1" :articles="mostPopular" card />
                 </i-column>
             </i-row>
         </i-container>
@@ -83,6 +83,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 article.blog-post-page {
     h2 {
         margin-top: 0 !important;
@@ -90,6 +93,10 @@ article.blog-post-page {
 
     img {
         max-width: 95%;
+    }
+
+    @include breakpoint-up(sm) {
+        border-right: 1px solid #e6e6e6;
     }
 }
 </style>

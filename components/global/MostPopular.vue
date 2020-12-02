@@ -1,8 +1,8 @@
 <template>
     <section class="most-popular">
         <i-row class="_margin-bottom-1">
-            <i-column xs="12">
-                <h3 class="_margin-0 _font-weight-bold">Most popular</h3>
+            <i-column class="_margin-0 _padding-xs-0" xs="12">
+                <h3 class="_margin-0 _padding-xs-0 _font-weight-bold">Most popular</h3>
             </i-column>
         </i-row>
         <i-row v-if="card">
