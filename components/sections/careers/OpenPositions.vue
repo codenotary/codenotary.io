@@ -45,12 +45,9 @@
 
 <script>
 import NoSSR from 'vue-no-ssr'
-import colorUtils from '~/mixins/colorUtils';
 
 export default {
     name: 'LcIntegrations',
-
-    mixins: [colorUtils],
 
     components: {
         'no-ssr': NoSSR

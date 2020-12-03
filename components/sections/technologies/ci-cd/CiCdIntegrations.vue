@@ -51,13 +51,10 @@
 </template>
 
 <script>
-import colorUtils from '~/mixins/colorUtils';
 import StoryCard from '~/components/common/cards/StoryCard';
 
 export default {
     name: 'CiCdIntegrations',
-
-    mixins: [colorUtils],
 
     components: {
         StoryCard
