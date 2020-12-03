@@ -15,10 +15,15 @@ import BannerCodenotary from '~/components/layout/BannerCodenotary';
 import Navbar from '~/components/layout/Navbar';
 import Footer from '~/components/layout/Footer';
 import Copyright from '~/components/layout/Copyright';
+import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 200;
 
 export default {
+    name: 'BannerCodenotaryLayout',
+
+    mixins: LayoutMixin,
+
     components: {
         BannerCodenotary,
         Navbar,

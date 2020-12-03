@@ -15,11 +15,16 @@ import ImmudbStarBanner from '~/components/layout/ImmudbStarBanner';
 import Navbar from '~/components/layout/Navbar';
 import Footer from '~/components/layout/Footer';
 import Copyright from '~/components/layout/Copyright';
+import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 200;
 const IMMUDB_STAR_COOKIE = 'immudb-star-cookie';
 
 export default {
+    name: 'ImmudbStarBannerLayout',
+
+    mixins: LayoutMixin,
+
     components: {
         ImmudbStarBanner,
         Navbar,
@@ -42,7 +47,6 @@ export default {
     created () {
         this.closed = !!this.$cookies.get(IMMUDB_STAR_COOKIE);
     },
-
 
     methods: {
         handleScroll (event) {

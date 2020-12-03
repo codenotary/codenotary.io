@@ -9,8 +9,13 @@
 
 <script>
 import Navbar from '~/components/layout/Navbar';
+import LayoutMixin from '~/mixins/LayoutMixin';
 
 export default {
+    name: 'IframeLayout',
+
+    mixins: LayoutMixin,
+
     components: {
         Navbar
     }

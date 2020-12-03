@@ -13,8 +13,13 @@
 import Navbar from '~/components/layout/Navbar';
 import Footer from '~/components/layout/Footer';
 import Copyright from '~/components/layout/Copyright';
+import LayoutMixin from '~/mixins/LayoutMixin';
 
 export default {
+    name: 'DefaultLayout',
+
+    extends: [LayoutMixin],
+
     components: {
         Navbar,
         Footer,
