@@ -40,7 +40,7 @@ Fortunately, there is another way: let’s use **Træfik**.
 Træfik (you can find it [here](https://traefik.io/traefik/)) is a reverse proxy especially designed for working as a router. Having a Cloud Native approach, it is well integrated and deployable with Kubernetes, Docker, and all container management systems. 
 It’s dynamically configurable and reliable. Like NGINX, it’s powerful, can handle the TLS layer and it’s very fast. 
 
-It also shines, more than NGINX, as it is designed to work in a 12-factor application (you can find more information [here](https://12factor.net) and it can use different rules to route HTTP requests. 
+It also shines, more than NGINX, as it is designed to work in a 12-factor application (you can find more information [here](https://12factor.net)) and it can use different rules to route HTTP requests. 
 You can use the URI, but you can also use other information extracted from the request.
 
 All gRPC requests have a content-type set to “application/grpc”. So it’s easy to write a rule for that (I’ll use Kubernetes dynamic configuration syntax):
