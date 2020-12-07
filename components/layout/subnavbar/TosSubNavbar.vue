@@ -6,7 +6,7 @@
                     Services Agreement
                 </i-nav-item>
                 <i-nav-item :to="{ name: 'terms-of-service-slug', params: { slug: 'subscription-agreement' } }">
-                    Subscription Agreement
+                    Codenotary Ledger Compliance® Subscription Agreement
                 </i-nav-item>
                 <i-nav-item :to="{ name: 'terms-of-service-slug', params: { slug: 'metrics-and-logs-perpetual-agreement' } }">
                     Metrics and Logs Perpetual Agreement
