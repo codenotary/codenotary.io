@@ -33,6 +33,6 @@ We use the following environments and systems: JavaScript, Vue.js, Node.js and G
 - Interest in blockchain technologies (e.g. Ethereum, Parity) and smart contract development (Solidity)
 
 
-## Curious? Visit our website!
+## Still got questions?
 
-[www.codenotary.com](https://codenotary.com/)
+Contact [amelie@codenotary.com](amelie@codenotary.com)!

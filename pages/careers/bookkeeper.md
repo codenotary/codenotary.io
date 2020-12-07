@@ -44,6 +44,6 @@ Our software solution [CodeNotary Ledger Compliance®](https://codenotary.com/pr
 - Knowledge of relevant legislation and regulatory requirements
 
 
-## Curious? Visit our website!
+## Still got questions?
 
-[www.codenotary.com](https://codenotary.com/)
+Contact [amelie@codenotary.com](amelie@codenotary.com)!

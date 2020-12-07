@@ -31,6 +31,6 @@ Our software solution [CodeNotary Ledger Compliance®](https://codenotary.com/pr
 - Good team player and communication skills 
 
 
-## Curious? Visit our website!
+## Still got questions?
 
-[www.codenotary.com](https://codenotary.com/)
+Contact [amelie@codenotary.com](amelie@codenotary.com)!

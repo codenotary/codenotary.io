@@ -49,6 +49,6 @@ As we are growing rapidly, we are looking to add only the smartest people to joi
 - Experience in a hightech startup or fast-paced environment with constantly changed priorities
 
 
-## Curious? Visit our website!
+## Still got questions?
 
-[www.codenotary.com](https://codenotary.com/)
+Contact [amelie@codenotary.com](amelie@codenotary.com)!

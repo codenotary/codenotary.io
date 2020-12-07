@@ -31,6 +31,6 @@ Our software solution [CodeNotary Ledger Compliance®](https://codenotary.com/pr
 Please note that the technical skills will be tested in 30 minutes of coding tasks with shared screen.
 
 
-## Curious? Visit our website!
+## Still got questions?
 
-[www.codenotary.com](https://codenotary.com/)
+Contact [amelie@codenotary.com](amelie@codenotary.com)!

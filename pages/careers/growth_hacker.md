@@ -54,6 +54,6 @@ As we are growing rapidly, we are looking to add only the smartest people to joi
 - Behavioral Psychology
 
 
-## Curious? Visit our website!
+## Still got questions?
 
-[www.codenotary.com](https://codenotary.com/)
+Contact [amelie@codenotary.com](amelie@codenotary.com)!

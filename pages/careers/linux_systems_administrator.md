@@ -30,6 +30,6 @@ Our solution [CodeNotary Ledger Compliance®](https://codenotary.com/products/le
 - Good team player and communication skills 
 - Willingness to work as a dedicated, full-time contractor remotely
 
-## Curious? Visit our website!
+## Still got questions?
 
-[www.codenotary.com](https://codenotary.com/)
+Contact [amelie@codenotary.com](amelie@codenotary.com)!
