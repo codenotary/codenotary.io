@@ -1,6 +1,7 @@
 import { meta, DEFAULT_META } from './helpers/meta';
 import blogRoutes from './blog';
 import careersRoutes from './careers';
+import tosRoutes from './tos';
 
 export default {
     /*
@@ -200,6 +201,17 @@ export default {
                     ]);                    
                 }
             }
+            if (tosRoutes) {
+                const map = Object.keys(tosRoutes);
+                if (map && map.length) {
+                    map.map((path) =>
+                        paths = [...paths, {
+                            route: `/terms-of-service/${tosRoutes[path]}`,
+                            payload: path
+                        }
+                    ]);                    
+                }
+            }
             return paths;
         }
     },
@@ -227,6 +239,17 @@ export default {
                     map.map((path) =>
                         paths = [...paths, {
                             route: `/careers/${careersRoutes[path]}`,
+                            payload: path
+                        }
+                    ]);                    
+                }
+            }
+            if (tosRoutes) {
+                const map = Object.keys(tosRoutes);
+                if (map && map.length) {
+                    map.map((path) =>
+                        paths = [...paths, {
+                            route: `/terms-of-service/${tosRoutes[path]}`,
                             payload: path
                         }
                     ]);                    
