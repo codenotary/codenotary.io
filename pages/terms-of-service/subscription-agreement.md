@@ -1,5 +1,6 @@
 ---
 title: Codenotary Ledger Compliance® Subscription Agreement
+download: "/resources/CNLC_LicenseAgreement_December2020.pdf"
 ---
 
 ## **Codenotary Ledger Compliance® Subscription Agreement**

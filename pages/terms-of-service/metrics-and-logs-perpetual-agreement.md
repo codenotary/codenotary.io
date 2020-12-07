@@ -1,5 +1,6 @@
 ---
 title: CodeNotary License Agreement
+download: "/resources/CNLC-ML-Perpetual_LicenseAgreement_2020.pdf"
 ---
 
 ## **CodeNotary License Agreement**
