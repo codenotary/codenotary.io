@@ -1,9 +1,7 @@
 <script>
-import TosPageMixin from '@/mixins/TosPageMixin';
-import { fetchTosPage } from '@/helpers/fetchTosPage';
-
 export default {
-    extends: TosPageMixin,
-    asyncData: fetchTosPage('terms-of-service', 'index')
+    middleware({ redirect }) {
+        return redirect('/terms-of-service/services-agreement');
+    }
 }
 </script>
