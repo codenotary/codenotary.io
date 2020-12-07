@@ -18,7 +18,7 @@ import LayoutMixin from '~/mixins/LayoutMixin';
 export default {
     name: 'DefaultLayout',
 
-    extends: [LayoutMixin],
+    mixins: LayoutMixin,
 
     components: {
         Navbar,
