@@ -59,7 +59,7 @@ Before we can add a record with ZAdd to a set, we have to save them in immudb. W
 		}
 	}
 ```
-Given the existence of the records, we can use ZAdd to group them into a set. The set for these records is named region1, the scores are values that can be used for sorting (Timestamp like: JJJJDDD) and last but not least we need the key. Again we will ZAdd all the records by the key of our antigenData struct.
+Given the existence of the records, we can use ZAdd to group them into a set. The set for these records is named region1, the scores are values that can be used for sorting (Timestamp like: YYYYDDD) and last but not least we need the key. Again we will ZAdd all the records by the key of our antigenData struct.
 
 ```go
 	for i := 0; i < len(antigenData.keys); i++ {
@@ -146,6 +146,6 @@ The result will include up to 3 records starting with "location:region1" in a re
 
 
 <img style="float: right;" src="/images/blog/mascotfree.png" width="300">
-In this blog, we have shown how to store critical data with up-to-date technology. You can find the full [source code here](https://github.com/codenotary/immudb-client-examples/blob/master/blog-examples/storing-virus-case%20numbers-in-immudb/main.go).
+In this blog, we have shown how to store critical data with up-to-date technology. You can find the full source code [here](https://github.com/codenotary/immudb-client-examples/blob/master/blog-examples/storing-virus-case-numbers-in-immudb/main.go).
 
 The future will be decided by data-driven decisions and will benefit leaders who will use technology to make those decisions as transparent and trustworthy as possible. Immudb is a great tool to ensure these characteristics. If you want to be that leader, please follow [immudb](https://github.com/codenotary/immudb) on GitHub and leave a star to stay tuned as we are constantly improving our technology.
