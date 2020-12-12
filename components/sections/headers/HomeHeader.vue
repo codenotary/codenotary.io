@@ -6,7 +6,7 @@
                     Immutable change history of your business data with CodeNotary Ledger Compliance&reg;
                 </h1>
                 <p class="lead">
-                    On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification,
+                    On-premise or in the cloud; Secure, actionable observability with real cryptographic verification,
                     processing millions of transactions a second.
                 </p>
                 <div class="button-wrapper">
