@@ -2,7 +2,7 @@
 title: "vcn release v0.9.0!"
 date: "2020-12-15"
 image: "/images/blog/codenotary_mascot_final-oicljfj7ltjgxnmn3023a3ip293np0m2c1rvwo1yu2.png"
-tags: ["release", "0.9"]
+tags: ["release", "0.9", "vcn", "trust"]
 ---
 
 Release v0.9.0 - parallel notarizations, wildcard support, Ledger Compliance support
