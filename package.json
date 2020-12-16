@@ -14,7 +14,6 @@
     "scripts": "./scripts/update_blog_files.sh && ./scripts/update_careers_files.sh && ./scripts/update_tos_files.sh && ./scripts/update_blog_images.sh"
   },
   "dependencies": {
-    "@babel/plugin-proposal-optional-chaining": "^7.11.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
