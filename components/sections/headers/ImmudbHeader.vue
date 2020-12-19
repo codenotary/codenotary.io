@@ -77,6 +77,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-header {
+    padding-top: $spacer;
     background-color: white;
     background-image: url('/images/immudb/header.jpg');
     text-align: center;
@@ -85,7 +86,7 @@ export default {
         height: 280px;
         width: auto;
         display: block;
-        margin: 3rem auto 1.5rem;
+        margin: $spacer auto;
     }
 
     h1 {
@@ -119,6 +120,10 @@ export default {
 
     .dont-underline {
         text-decoration: none !important;
+    }
+
+    @media screen and (max-width: 767px) {
+        background-image: none;
     }
 }
 </style>
