@@ -12,8 +12,9 @@
                                 <strong>No data mutation APIs</strong> are provided.
                             </li>
                             <li>
-                                Data is never overwritten, so multiple versions of the same key co-exist and are verifiable.
+                                Data is never overwritten and are cryptographically verifiable.
                             </li>
+                            <li>Adress regulatory compliance: SEC 17a-4(f), CFTC 1.31(d), FINRA, and other regulations.</li>
                         </ul>
                     </Feature>
                 </i-column>
@@ -21,11 +22,10 @@
                     <Feature title="Auditable" image="/images/features/auditable.svg">
                         <ul class="list -unstyled">
                             <li>
-                                Tamper-evident history system.
+                                Tamper-evident history system with <strong>cryptographic proof</strong>
                             </li>
                             <li>
-                                Clients and auditors want <strong>cryptographic proof</strong> of data inclusion and
-                                historical consistency in real time.
+                                Secure document retention and store sensitive information that is critical to litigation or business use in a tamper-proof state for the desired duration.
                             </li>
                             <li>If tampered, clients and auditors will notice that and take actions.</li>
                         </ul>
