@@ -14,7 +14,7 @@
                             <li>
                                 Data is never overwritten and is cryptographically verifiable.
                             </li>
-                            <li>Adress regulatory compliance: SEC 17a-4(f), CFTC 1.31(d), FINRA, and other regulations.</li>
+                            <li>Address regulatory compliance: SEC 17a-4(f), CFTC 1.31(d), FINRA, and other regulations.</li>
                         </ul>
                     </Feature>
                 </i-column>
