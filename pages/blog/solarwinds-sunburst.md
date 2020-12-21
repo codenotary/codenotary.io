@@ -1,5 +1,5 @@
 ---
-title: "Sunburst SolarWinds Hack, why traditional code signing is the latest victim of 2020"
+title: "SolarWinds Hack, why traditional code signing is the latest victim of 2020"
 date: "2020-12-21"
 image: "/images/blog/secfiling.jpg"
 tags: ["Sunburst", "Trusted CI/CD", "vcn", "CodeNotary"]
@@ -17,7 +17,7 @@ The signing server was breached and used to sign the malicious code as well, tur
 
 The SEC filing states:
 
-> The vulnerability was not evident in the Orion Platform products’ source code but appears to have been inserted during the Orion software build process.
+> **The vulnerability was not evident in the Orion Platform products’ source code but appears to have been inserted during the Orion software build process.**
 
 [Full SEC report](https://d18rn0p25nwr6d.cloudfront.net/CIK-0001739942/6dd04fe2-7d10-4632-89f1-eb8f932f6e94.pdf)
 
