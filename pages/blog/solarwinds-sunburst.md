@@ -1,5 +1,5 @@
 ---
-title: "SolarWinds Hack, why traditional code signing is the latest victim of 2020"
+title: "Sunburst SolarWinds Hack, why traditional code signing is the latest victim of 2020"
 date: "2020-12-21"
 image: "/images/blog/secfiling.jpg"
 tags: ["Sunburst", "Trusted CI/CD", "vcn", "CodeNotary"]
@@ -35,34 +35,58 @@ CodeNotary integrates easily the most popular CI, CI/CD, and DevOps tools, and y
 
 CodeNotary can cover the whole supply chain. Instead of just signing the final binary, the file is being notarized or authenticated by every step of the workflow. Multiple persons or machines with different logins are involved and all of them are constantly aware of the status of an object in the supply chain. With CodeNotary it would be almost impossible to tamper software products as seen in the Sunburst attack.
 
-![trustedcicd](/images/blog/oneclick.jpg)
+![trustedcicd](/images/blog/oneclick.jpg"trusted CI/CD")
 
 ## Get started!
 
 Try out now and sign up for [CodeNotary](https://codenotary.com/technologies/ci-cd). Download the vcn CLI app for  Linux, MacOS or Windows. Follow the installation instructions.
 
 -Start vcn and login. Use the E-mail address that you registered and your password.
+
 ```
 vcn login
 Email address: <example@emailaddress.com>
 Login password:.
 Login successful.
 ```
--Notarize your first file. Your assets will not be uploaded. They will be processed locally.
+-Notarize your first file, directory, docker container, podman, git repository or hash.  Your assets will not be uploaded. They will be processed locally.
 
 ```
 vcn notarize <path-to-file>
+vcn notarize dir://<directory>
+vcn notarize docker://<imageId>
+vcn notarize podman://<imageId>
+vcn notarize git://<path_to_git_repo>
+vcn notarize --hash <hash>
 ```
+
 -Authenticate the asset on [CodeNotary](https://authenticate.codenotary.io/) or by CLI:
 ```
-vcn authenticate <path-to-file>
+vcn authenticate <file>
+vcn authenticate dir://<directory>
+vcn authenticate docker://<imageId>
+vcn authenticate podman://<imageId>
+vcn authenticate git://<path_to_git_repo>
+vcn authenticate --hash <hash>
 ...
 Looking for blockchain entry matching
 ```
-Using vcn is intuitive and fast forward, it can be easily integrated into existing CI/CD Tools. One example of that using Travis can be found [here](https://github.com/codenotary/immudb/blob/v0.7.1/.travis.yml). 
+Redirect the output results to json or yaml formats:
+```
+vcn authenticate --output=json <asset>
+vcn authenticate --output=yaml <asset>
+```
 
+## Secure CI/CD
 
-Code Snippet - CI/CD authenticate before continuing (check vcn binary origin!):
+Using vcn is intuitive and fast forward, it can be easily integrated into existing CI/CD Tools.  Let's take a look again at the workflow in the figure above. Starting with the developer, who is notarizing Git commits and repositories. The developer can sign his/her work locally using vcn. Verification can be added to .git/workflows making sure that the [commits](https://docs.codenotary.io/integrations/verify-commit-action.html#inputs) are coming from a trusted source. 
+```
+vcn notarize git://<path_to_git_repo>
+```
+
+In the next step, the authentic source code is being provided to CI/CD Tools to be built. One of the most popular tools is Jenkins. Instructions for the Jenkins integration for vcn can be found in our[ docs](https://docs.codenotary.io/integrations/vcn-jenkins.html#step-1-system-level-configuration). Another well-known tool to test and deploy is Travis. Let's assume the developer is working on CodeNotary's latest technology[ immudb](https://codenotary.com/technologies/immudb/). He committed his latest notarized updates. Travis is now used to build the project but before that, it will check if it is using a verified vcn client.
+
+**Code Snippet - CI/CD authenticate before continuing (check vcn binary origin!)**:
 
 ```yaml
 before_script:
@@ -73,8 +97,9 @@ before_script:
   - chmod +x /tmp/vcn
 ```
 
+Travis is able to perform security scans like [gosec](https://github.com/securego/gosec) and notarizes after the successful scan. These notarizations are proofing a clean security scan.
 
-Code Snippet - CI/CD notarize after security scan:
+**Code Snippet - CI/CD notarize after security scan:**
 
 ```yaml
 - stage: Scan
@@ -88,11 +113,61 @@ Code Snippet - CI/CD notarize after security scan:
         - VCN_USER=$trv_user VCN_PASSWORD=$trv_pass /tmp/vcn login
         - VCN_NOTARIZATION_PASSWORD=$trv_pass /tmp/vcn n -p --attr TravisJobName=${TRAVIS_JOB_NAME} --attr TravisJobNo=${TRAVIS_JOB_NUMBER} --silent results-${TRAVIS_BUILD_NUMBER}.json
         - /tmp/vcn logout
-
 ```
 
+Following the security test, it is time to build and notarize the binaries. In this case immudb, immuadmin and immuclient, each will be notarized.
+
+**Code Snippet - CI/CD build and notarize binaries:**
+
+```
+    - stage: Binaries
+      os: linux
+      arch:
+        - amd64
+      script:
+        - GOOS=linux GOARCH=amd64 make immudb-static immuadmin-static immuclient-static
+        - VCN_USER=$trv_user VCN_PASSWORD=$trv_pass VCN_OTP_EMPTY=true /tmp/vcn login
+        - VCN_NOTARIZATION_PASSWORD=$trv_pass /tmp/vcn n -p --attr TravisJobName=${TRAVIS_JOB_NAME} --attr TravisJobNo=${TRAVIS_JOB_NUMBER} --silent immudb
+        - VCN_NOTARIZATION_PASSWORD=$trv_pass /tmp/vcn n -p --attr TravisJobName=${TRAVIS_JOB_NAME} --attr TravisJobNo=${TRAVIS_JOB_NUMBER} --silent immuadmin
+        - VCN_NOTARIZATION_PASSWORD=$trv_pass /tmp/vcn n -p --attr TravisJobName=${TRAVIS_JOB_NAME} --attr TravisJobNo=${TRAVIS_JOB_NUMBER} --silent immuclient
+        - /tmp/vcn logout
+```
+
+After having build immudb, immuclient and immuadmin, they are added to a docker container. Before that Travis will authenticate them to ensure they are trusted. Finally, the docker container will be build and notarized.
+
+**Code Snippet - CI/CD build and notarize docker-container:**
+
+```
+   - stage: Image
+      env:
+        - DOCKER_IMAGE="codenotary/immudb"
+      services:
+        - docker
+      workspaces:
+        use:
+          - bins
+      script:
+        - /tmp/vcn authenticate immudb immuadmin immuclient
+        - VCN_USER=$immudb_user VCN_PASSWORD=$immudb_pass VCN_OTP_EMPTY=true /tmp/vcn login
+        - docker build --tag "${DOCKER_IMAGE}:latest" -f Dockerfile .
+        - VCN_NOTARIZATION_PASSWORD=$immudb_pass /tmp/vcn n -p --attr TravisJobName=${TRAVIS_JOB_NAME} --attr TravisJobNo=${TRAVIS_JOB_NUMBER} --silent docker://$DOCKER_IMAGE
+        - /tmp/vcn logout
+        - VCN_USER=$trv_user VCN_PASSWORD=$trv_pass VCN_OTP_EMPTY=true /tmp/vcn login
+        - VCN_NOTARIZATION_PASSWORD=$trv_pass /tmp/vcn n -p --attr TravisJobName=${TRAVIS_JOB_NAME} --attr TravisJobNo=${TRAVIS_JOB_NUMBER} --silent docker://$DOCKER_IMAGE
+        - /tmp/vcn logout
+```
+
+The docker container can now be deployed and verified even during runtime with vcn[ Docker Sidecar Integration](https://docs.codenotary.io/integrations/vcn-docker.html#docker-sidecar-integration). When using Kubernetes, a Kubernetes watchdog for verifying image trust with CodeNotary is keeping everything safe. Once[ kube-notary](https://docs.codenotary.io/integrations/kube-notary.html) is installed within your cluster, all pods are checked repeatedly.
+
+We haven't looked at the Auditor yet. The Auditor has it's own credentials as well and is able to change the status of the asset. Functions like "unsupport" and "untrust" are immediately stopping untrusted assets from getting further and tampering the supply-chain.
+
+```
+vcn unsupport <asset>
+vcn untrust <asset>
+```
 
 # New possibilities by technology
+
 CodeNotary is not just able to secure supply chains. It also enables whole new possibilities. A customer could now accept packages from multiple manufacturers because they can notarize assets next to each other, contrary to certificates that are replacing every previous signing. This would enable a revolutionary trusted way of collaboration in software development. 
 
 Securing CI/CD Pipelines with CodeNotary is opening up new opportunities and helps to react flexible overcoming future frontiers. These are great side effects given the necessity for action facing attacks like Sunburst. Integrating CodeNotary is no obstacle and a smart choice to protect customers and businesses from well orchestrated attacks.
