@@ -13,7 +13,9 @@ We're absolutely thrilled to share the news of **immudb 0.9.0 release candidate 
 This will be a very special holiday season for you and your family and we wish you Peace and joy!! ... and maybe you want to develop some fancy software based on immudb. Release Candidate 1 will definitely be a great start. 
 
 After many months of hard work, the development of **our own embeddable and ultra-fast storage engine that is append-only and optimized for cryptographic proof** has been completed.
-immudb v0.9.0-RC1 now has that powerful engine under the hood!
+immudb v0.9.0-RC1 now has that powerful engine under the hood! 
+
+**7 times** faster data writes than the former version 0.8.0 and instant cryptographic proof!
 
 Replacing the storage engine is a major step for immudb and all unnecessary overhead from traditional key-value stores has been removed. This not only takes transaction and verification performance to another level, but also streamlines the code base down to the core.
 You're going to read more about the fundamental improvements using our new storage engine in future blog posts.
