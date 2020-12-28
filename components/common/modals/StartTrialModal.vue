@@ -70,6 +70,24 @@ div._form_20 {
             }
         }
 
+        div._field13 {
+            ._form-label {
+                padding-top: $spacer-1;
+                margin: $spacer-1 0 !important;
+                border-top: 1px solid #dee2e6;
+                font-weight: 600 !important;
+            }
+
+            ._checkbox-radio {
+                display: flex;
+
+                span {
+                    padding-left: $spacer-1-2;
+                }
+            }
+
+        }
+
         div._button-wrapper {
             button#_form_20_submit {
                 width: 100%;
