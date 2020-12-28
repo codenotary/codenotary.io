@@ -1,19 +1,16 @@
 <template>
     <i-modal class="start-trial-modal" size="lg" :value="value" @input="$emit('input', $event)">
         <template slot="header">Start your trial</template>
-        <label class="_margin-bottom-2">No excuses - 30 day free!</label>
-        <start-trial-form />
+        <div class="_form_20" />
+        <script src="https://vchain.activehosted.com/f/embed.php?id=20" type="text/javascript" charset="utf-8" />
     </i-modal>
 </template>
 
 <script>
-import StartTrialForm from '~/components/common/forms/StartTrialForm';
+// import StartTrialForm from '~/components/common/forms/StartTrialForm';
 
 export default {
     name: 'StartTrialModal',
-    components: {
-        StartTrialForm
-    },
     props: {
         value: {
             type: Boolean,
@@ -22,3 +19,69 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+@import "~@inkline/inkline/src/css/config";
+
+div._form_20 {
+    form._form._form_20 {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-family: inherit !important;
+
+        div._x81034835 {
+            display: none !important;
+        }
+
+        div._x30741568 {
+            p {
+                margin-top: 0 !important;
+                color: #343a40 !important;
+                line-height: 1.5;
+                font-size: 1rem !important;
+                font-weight: 400 !important;
+            }
+        }
+
+        div._form_element {
+            margin-bottom: $spacer !important;
+
+            label,
+            input {
+                font-family: inherit !important;
+                font-size: 16px !important;
+                font-weight: inherit !important;
+            }
+
+            input {
+                height: 44px !important;
+                padding: $spacer-1-2 $spacer !important;
+                border-color: #dee2e6 !important;
+
+                &::placeholder {
+                    color: #999 !important;
+                }
+
+                &:focus,
+                &:active {
+                    border-color: $color-primary !important;
+                }
+            }
+        }
+
+        div._button-wrapper {
+            button#_form_20_submit {
+                width: 100%;
+                background-color: $color-primary !important;
+                font-size: 16px !important;
+                font-weight: inherit !important;
+            }
+        }
+
+        ._form-branding {
+            display: none !important;
+        }
+    }
+}
+</style>
