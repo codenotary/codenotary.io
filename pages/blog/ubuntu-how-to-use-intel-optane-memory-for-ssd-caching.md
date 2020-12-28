@@ -116,7 +116,7 @@ sudo apt install thin-provisioning-tools
 
 Download the script thin-provisioning-tools and install it to the directory /usr/share/initramfs-tools/hooks:
 
-Download [thin-provisioning-tools](https://storage.googleapis.com/opvizor/thin-provisioning-tools)
+Download [thin-provisioning-tools](https://opvizor-perfanalyzer.s3-eu-west-1.amazonaws.com/thin-provisioning-tools)
 
 ```
 sudo chown root:root ~/Downloads/thin-provisioning-tools

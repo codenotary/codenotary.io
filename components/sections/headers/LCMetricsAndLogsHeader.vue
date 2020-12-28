@@ -25,7 +25,7 @@
                     Systems and application performance monitoring and log analysis (tamperproof using immudb) in one virtual appliance
                 </p>
                 <p class="action">
-                    <i-button size="lg" outline variant="primary" href="https://paapp.opvizor.com/" target="_blank" rel="nofollow">Demo</i-button>
+                    <i-button size="lg" outline variant="primary" href="https://demoml.codenotary.io/" target="_blank" rel="nofollow">Demo</i-button>
                     <i-button variant="primary" size="lg" class="_margin-left-1" @click="startTrialModalOpen = true">
                         Start trial
                     </i-button>
@@ -65,7 +65,7 @@ export default {
             'Linux OS',
             'Oracle Database',
             'Microsoft SQL',
-            'PostgresSQL'
+            'PostgreSQL'
         ],
         startTrialModalOpen: false
     }),
