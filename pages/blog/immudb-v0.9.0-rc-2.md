@@ -7,9 +7,9 @@ tags: ["release", "0.9", "release-candidate", "immutable"]
 
 v0.9.0 Release Candidate 2 is out. The next release candidate of immudb 0.9.0 that integrates our new embeddable cryptographic-proof storage engine is available.
 
-![immudb v0.9.0 Release Candidate 2](/images/blog/immudb-mascot-small.png)
+v0.9.0 is **7 times** faster data writes than the former version 0.8.0 and instant cryptographic proof!
 
-**7 times** faster data writes than the former version 0.8.0 and instant cryptographic proof!
+![immudb v0.9.0 Release Candidate 2](/images/blog/immudb-mascot-small.png)
 
 Here are the changes since Release Candidate 1:
 
