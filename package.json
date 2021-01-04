@@ -9,7 +9,12 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:js:fix": "eslint --ext .js,.vue --fix --ignore-path .gitignore .",
+    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint:style:fix": "stylelint **/*.{vue,css} --fix --ignore-path .gitignore",
+    "lint:all": "npm run lint:js && npm run lint:style",
+    "lint:all:fix": "npm run lint:js:fix && npm run lint:style:fix",
     "test": "jest",
     "scripts": "./scripts/update_blog_files.sh && ./scripts/update_careers_files.sh && ./scripts/update_tos_files.sh && ./scripts/update_blog_images.sh"
   },
@@ -48,7 +53,7 @@
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/style-resources": "^1.0.0",
-    "@nuxtjs/stylelint-module": "^3.1.0",
+    "@nuxtjs/stylelint-module": "^4.0.0",
     "@vue/test-utils": "^1.0.4",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
@@ -60,6 +65,7 @@
     "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^8.0.2",
     "stylelint": "^13.7.1",
+    "stylelint-config-standard": "^20.0.0",
     "vue-jest": "^4.0.0-beta.5"
   }
 }
