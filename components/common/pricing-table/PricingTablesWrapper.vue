@@ -1,11 +1,11 @@
 <template>
-    <div class="pricing-tables-wrapper">
-        <slot />
-    </div>
+	<div class="pricing-tables-wrapper">
+		<slot />
+	</div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style lang="scss">
@@ -13,19 +13,19 @@ export default {}
 @import "~@inkline/inkline/src/css/config";
 
 .pricing-tables-wrapper {
-    display: flex;
-    flex: 1;
+	display: flex;
+	flex: 1;
 
-    @include breakpoint-down(md) {
-        flex-direction: column;
+	@include breakpoint-down(md) {
+		flex-direction: column;
 
-        .pricing-table {
-            margin-bottom: $spacer;
+		.pricing-table {
+			margin-bottom: $spacer;
 
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 </style>

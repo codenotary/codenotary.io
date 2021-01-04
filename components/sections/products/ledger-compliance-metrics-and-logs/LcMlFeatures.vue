@@ -1,5 +1,5 @@
 <template>
-	<page-section id="ci-cd-features-section">
+	<page-section id="lc-features-section">
 		<i-container>
 			<i-row>
 				<i-column>
@@ -9,7 +9,7 @@
 			<i-row center top>
 				<i-column
 					xs="12" sm="6"
-					md="6" lg="4"
+					md="4" lg="3"
 				>
 					<i-card>
 						<img
@@ -17,16 +17,16 @@
 							alt="Easy to use"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
-							Easy to use
+							Turnkey solution
 						</h4>
 						<p class="lead">
-							Unlike cumbersome and expensive digital certificates CodeNotary allows you to notarize your digital assets yourself in a split second, without any intermediary.
+							(5 minute install).
 						</p>
 					</i-card>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
-					md="6" lg="4"
+					md="4" lg="3"
 				>
 					<i-card>
 						<img
@@ -34,16 +34,16 @@
 							alt="Tamperproof"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
-							Tamperproof
+							Immediate results
 						</h4>
 						<p class="lead">
-							Your notarizations are written in stone, in a blockchain and you can easily revoke any of your notarized assets in seconds. The blockchain is spread around the globe and is always up.
+							(15 minutes after configuration).
 						</p>
 					</i-card>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
-					md="6" lg="4"
+					md="4" lg="3"
 				>
 					<i-card>
 						<img
@@ -51,16 +51,16 @@
 							alt="Full transparency"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
-							Full transparency
+							Meaningful monitoring & analytics
 						</h4>
 						<p class="lead">
-							Anyone can authenticate the authenticity and provenance of any of your notarized assets using cryptographic verification of their SHA256 hashes stored in the blockchain.
+							Simple yet powerful.
 						</p>
 					</i-card>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
-					md="6" lg="4"
+					md="4" lg="3"
 				>
 					<i-card>
 						<img
@@ -68,27 +68,10 @@
 							alt="Notarize"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
-							Notarize
+							Filter the noise, focus on your critical systems
 						</h4>
 						<p class="lead">
-							Notarize your source code, documents, libraries, builds, and containers onto the blockchain in one simple step and immutably attach your identity, reputation, and trust to them, independently or as an organization.
-						</p>
-					</i-card>
-				</i-column>
-				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
-				>
-					<i-card>
-						<img
-							slot="image" src="/images/ci-cd/features/authenticate.svg"
-							alt="Authenticate"
-						>
-						<h4 class="title _font-weight-bold _text-primary">
-							Authenticate
-						</h4>
-						<p class="lead">
-							Automate and continuously authenticate the integrity of any digital asset in your environment. Enable anyone, anywhere, at any time to verify the authenticity of your solutions simply and for free.
+							be a hero.
 						</p>
 					</i-card>
 				</i-column>
@@ -99,7 +82,7 @@
 
 <script>
 export default {
-	name: 'CiCdFeatures',
+	name: 'LcMlFeatures',
 };
 </script>
 
@@ -107,8 +90,8 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-#ci-cd-features-section {
-	background-color: white;
+#lc-features-section {
+	background-color: $color-gray-10;
 	overflow: hidden;
 
 	.card {

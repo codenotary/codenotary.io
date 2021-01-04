@@ -5,5 +5,5 @@ import * as components from '@inkline/inkline/src/components';
 import '@inkline/inkline/src/inkline.scss';
 
 Vue.use(Inkline, {
-    components
+	components,
 });
