@@ -50,11 +50,9 @@ export default {
     },
 
     methods: {
-        handleScroll (event) {
-            const window = event.path[1];
-            if (window) {
-                const offsetY = window.pageYOffset;
-                this.scrolled = offsetY >= SCROLL_THRESHOLD;
+        handleScroll () {
+            if (window && window.scrollY !== undefined) {
+                this.scrolled = window.scrollY >= SCROLL_THRESHOLD;
             }
         }
     }
