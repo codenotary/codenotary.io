@@ -1,28 +1,25 @@
 <template>
-	<page-section id="partners-section">
+	<page-section id="lc-integrations-section">
 		<i-container>
 			<i-row>
+				<i-column>
+					<page-section-header title="Ledger Compliance Integrations">
+						<p class="lead">
+							Integrations for Hypervisor, Storage systems, OS and applications.
+						</p>
+					</page-section-header>
+				</i-column>
+			</i-row>
+			<i-row>
 				<i-column xs="12">
-					<VueSlickCarousel v-if="partners && partners.length" v-bind="settings">
+					<VueSlickCarousel v-if="integrations && integrations.length" v-bind="settings">
 						<div
-							v-for="partner in partners" :key="partner.slug"
-							class="partner-wrapper"
+							v-for="integration in integrations" :key="integration.slug"
+							class="integration-wrapper"
 						>
-							<a
-								v-if="partner.link && partner.link.url" :href="partner.link.url"
-								:target="partner.link.target || '_blank'" :title="partner.title"
-								rel="nofollow"
-							>
-								<story-card
-									color="transparent" :title="partner.title"
-									:subtitle="partner.subtitle" :image="partner.image "
-								/>
-							</a>
-							<story-card
-								v-else color="transparent"
-								:title="partner.title" :subtitle="partner.subtitle"
-								:image="partner.image "
-							/>
+							<nuxt-link :to="{ name: 'products-integration-post', params: { post: integration.slug } }">
+								<story-card color="transparent" :image="integration.image " />
+							</nuxt-link>
 						</div>
 					</VueSlickCarousel>
 				</i-column>
@@ -35,18 +32,20 @@
 import StoryCard from '~/components/common/cards/StoryCard';
 
 export default {
-	name: 'Partners',
+	name: 'LcMlIntegrations',
 
 	components: {
 		StoryCard,
 	},
+
 	props: {
-		partners: { type: Array, default: () => {} },
+		integrations: { type: Array, default: () => {} },
 	},
+
 	data: () => ({
 		settings: {
 			slidesToShow: 4,
-			rows: 4,
+			rows: 3,
 			arrows: true,
 			dots: true,
 			infinite: true,
@@ -81,6 +80,7 @@ export default {
 			],
 		},
 	}),
+
 	beforeDestroy () {
 		this.settings = null;
 	},
@@ -91,36 +91,18 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-#partners-section {
-	background-color: #fff;
+#lc-integrations-section {
+	background-color: white;
 	overflow: hidden;
 
-	a {
-		&:hover,
-		&:active {
-			text-decoration: none !important;
-			opacity: 0.9 !important;
-
-			.story-card {
-				opacity: 0.9;
-
-				h5 {
-					text-decoration: none !important;
-					outline: none !important;
-				}
-			}
-		}
-	}
-
 	.story-card {
-		min-height: 180px;
-		max-height: 2180px;
+		min-height: 200px;
+		max-height: 200px;
 		margin-bottom: 1rem;
 		padding: 1rem;
 
 		img {
-			height: 64px;
-			width: auto;
+			height: 84px;
 			-moz-user-select: none;
 			-webkit-user-select: none;
 			user-select: none;
@@ -128,30 +110,20 @@ export default {
 			opacity: 0.55;
 		}
 
-		.title,
-		.subtitle {
-			color: #666 !important;
+		@include breakpoint-down(xs) {
+			h5 {
+				font-size: 1rem;
+			}
 		}
 
 		&:hover {
 			img {
 				opacity: 1;
 			}
-
-			.title,
-			.subtitle {
-				color: #111 !important;
-			}
-		}
-
-		@include breakpoint-down(xs) {
-			h5 {
-				font-size: 1rem;
-			}
 		}
 	}
 
-	.partner-wrapper {
+	.integration-wrapper {
 		padding: 0 0.5rem;
 	}
 

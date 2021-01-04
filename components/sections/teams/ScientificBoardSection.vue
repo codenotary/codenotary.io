@@ -1,19 +1,16 @@
 <template>
-	<page-section id="board-of-directors-section">
+	<page-section id="scientific-board-section">
 		<i-row>
 			<i-column>
-				<page-section-header title="Our Board of Directors" />
+				<page-section-header title="Our Scientific Board" />
 			</i-column>
 		</i-row>
 		<i-container>
 			<i-row>
 				<i-column>
-					<div class="board-team-member-items">
-						<board-team-member name="Moshe Bar" position="CEO, Co-Chairman" />
-						<board-team-member name="Prof. Dr. Marcus Englert" position="Co-Chairman" />
-						<board-team-member name="Shayne Higdon" position="Board Member" />
-						<board-team-member name="Bart Markus" position="Board Member" />
-						<board-team-member name="Marc Rougier" position="Board Member" />
+					<div class="sicentific-board-member-items">
+						<board-team-member name="Prof. Dr. Martin Bogdan" position="University Leipzig" />
+						<board-team-member name="Prof. Assaf Schuster" position="Technion, Israel Institute of Technology" />
 					</div>
 				</i-column>
 			</i-row>
@@ -35,14 +32,14 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-#board-of-directors-section {
+#scientific-board-section {
 	background-color: #fff;
 
-	.board-team-member-items {
+	.sicentific-board-member-items {
 		border-top: 1px solid $border-color-light;
 		border-bottom: 1px solid $border-color-light;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		.column {
 			flex: 1;

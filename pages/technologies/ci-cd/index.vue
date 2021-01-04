@@ -1,13 +1,13 @@
 <template>
-    <div>
-        <ci-cd-header />
-        <ci-cd-integrations />
-        <ci-cd-features />
-        <ci-cd-how-it-works />
-        <ci-cd-get-started />
-        <ci-cd-analyze-and-manage />
-        <ci-cd-videos />
-    </div>
+	<div>
+		<ci-cd-header />
+		<ci-cd-integrations />
+		<ci-cd-features />
+		<ci-cd-how-it-works />
+		<ci-cd-get-started />
+		<ci-cd-analyze-and-manage />
+		<ci-cd-videos />
+	</div>
 </template>
 
 <script>
@@ -20,16 +20,14 @@ import CiCdAnalyzeAndManage from '~/components/sections/technologies/ci-cd/CiCdA
 import CiCdVideos from '~/components/sections/technologies/ci-cd/CiCdVideos';
 
 export default {
-    components: {
-        CiCdHeader,
-        CiCdIntegrations,
-        CiCdFeatures,
-        CiCdHowItWorks,
-        CiCdGetStarted,
-        CiCdAnalyzeAndManage,
-        CiCdVideos
-    }
-}
+	components: {
+		CiCdHeader,
+		CiCdIntegrations,
+		CiCdFeatures,
+		CiCdHowItWorks,
+		CiCdGetStarted,
+		CiCdAnalyzeAndManage,
+		CiCdVideos,
+	},
+};
 </script>
-
-<style lang="scss"></style>

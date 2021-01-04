@@ -1,18 +1,18 @@
 <template>
-    <section class="banner-codenotary _justify-content-center">
-        <div class="_display-flex _align-items-center">
-            <fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" />
-            <span class="lead _font-weight-bold">
-                vChain Inc is now CodeNotary Inc
-            </span>
-        </div>
-    </section>
+	<section class="banner-codenotary _justify-content-center">
+		<div class="_display-flex _align-items-center">
+			<fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" />
+			<span class="lead _font-weight-bold">
+				vChain Inc is now CodeNotary Inc
+			</span>
+		</div>
+	</section>
 </template>
 
 <script>
 export default {
-    name: 'BannerCodenotary'
-}
+	name: 'BannerCodenotary',
+};
 </script>
 
 <style lang="scss">
@@ -20,37 +20,38 @@ export default {
 @import '~@inkline/inkline/src/css/mixins';
 
 section.banner-codenotary {
-    background-color: $color-warning;
+	background-color: $color-warning;
 
-    span,
-    .button{
-        font-size: 90% !important;
-        color: rgba(0, 0, 0, 0.7);
-    }
+	span,
+	.button {
+		font-size: 90% !important;
+		color: rgba(0, 0, 0, 0.7);
+	}
 
-    .button {
-        // border-color: rgba(0, 0, 0, 0.35);
-        border: 1px solid $color-primary;
+	.button {
+		// border-color: rgba(0, 0, 0, 0.35);
+		border: 1px solid $color-primary;
 
-        &:hover,
-        &:active,
-        &.nuxt-link-active {
-                // border-color: rgba(0, 0, 0, 0.55) !important;
-                // color: rgba(0, 0, 0, 0.9) !important;
-                color: $color-primary !important;
-        }
+		&:hover,
+		&:active,
+		&.nuxt-link-active {
+			// border-color: rgba(0, 0, 0, 0.55) !important;
+			// color: rgba(0, 0, 0, 0.9) !important;
 
-        &:hover {
-            // border-width: 2px !important;
-            background: rgba(255, 255, 255, .15) !important;
-        }
+			color: $color-primary !important;
+		}
 
-        &:active,
-        &.nuxt-link-active {
-            border-width: 2px !important;
-            // border-color: rgba(0, 0, 0, 0.55) !important;
-            background: rgba(255, 255, 255, .05) !important;
-        }
-    }
+		&:hover {
+			// border-width: 2px !important;
+			background: rgba(255, 255, 255, 0.15) !important;
+		}
+
+		&:active,
+		&.nuxt-link-active {
+			border-width: 2px !important;
+			// border-color: rgba(0, 0, 0, 0.55) !important;
+			background: rgba(255, 255, 255, 0.05) !important;
+		}
+	}
 }
 </style>

@@ -36,19 +36,19 @@ import 'prismjs/plugins/show-language/prism-show-language';
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace';
 
 Vue.component('prism', {
-    props: {
-        lang: { type: String, default: 'js' },
-        lineNumbers: { type: Boolean, default: false }
-    },
-    mounted () {
-        Prism.highlightAll();
-    },
-    render (_) {
-        const code = this.$slots && this.$slots.default && this.$slots.default[0];
-        return <div class="prism">
-            <pre class={`${this.lineNumbers ? 'line-numbers ' : ''}language-${this.lang}`}>
-                <code>{ code }</code>
-            </pre>
-        </div>;
-    }
-})
+	props: {
+		lang: { type: String, default: 'js' },
+		lineNumbers: { type: Boolean, default: false },
+	},
+	mounted () {
+		Prism.highlightAll();
+	},
+	render (_) {
+		const code = this.$slots && this.$slots.default && this.$slots.default[0];
+		return <div class="prism">
+			<pre class={`${ this.lineNumbers ? 'line-numbers ' : '' }language-${ this.lang }`}>
+				<code>{ code }</code>
+			</pre>
+		</div>;
+	},
+});

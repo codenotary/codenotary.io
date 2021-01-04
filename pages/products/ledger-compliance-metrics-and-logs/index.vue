@@ -1,47 +1,42 @@
 <template>
-    <div>
-        <LCMetricsAndLogsHeader />
-        <lc-features />
-        <lc-integrations :integrations="integrations" />
-        <lc-infrastructure />
-        <lc-testimonials />
-    </div>
+	<div>
+		<LCMlHeader />
+		<lc-ml-features />
+		<lc-ml-integrations :integrations="integrations" />
+		<lc-ml-infrastructure />
+		<lc-ml-testimonials />
+	</div>
 </template>
 
 <script>
 import { title } from '~/helpers/meta';
-import LCMetricsAndLogsHeader from '~/components/sections/headers/LCMetricsAndLogsHeader';
-import LcFeatures from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcFeatures';
-import LcIntegrations from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcIntegrations';
-import LcInfrastructure from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcInfrastructure';
-import LcTestimonials from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcTestimonials';
+import LCMlHeader from '~/components/sections/headers/LCMlHeader';
+import LcMlFeatures from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlFeatures';
+import LcMlIntegrations from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlIntegrations';
+import LcMlInfrastructure from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlInfrastructure';
+import LcMlTestimonials from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlTestimonials';
 
 export default {
-    layout: 'banner',
+	layout: 'banner',
+	components: {
+		LCMlHeader,
+		LcMlFeatures,
+		LcMlIntegrations,
+		LcMlInfrastructure,
+		LcMlTestimonials,
+	},
+	async asyncData ({ $content }) {
+		const integrations = await $content('products/integration')
+				.only(['title', 'date', 'image', 'slug', 'tags'])
+				.sortBy('date', 'desc')
+				.fetch();
 
-    head() {
-        return {
-            title: title('Ledger Compliance Metrics and Logs')
-        };
-    },
-
-    components: {
-        LCMetricsAndLogsHeader,
-        LcFeatures,
-        LcIntegrations,
-        LcInfrastructure,
-        LcTestimonials
-    },
-
-    async asyncData ({ $content }) {
-        const integrations = await $content('products/integration')
-            .only(['title', 'date', 'image', 'slug', 'tags'])
-            .sortBy('date', 'desc')
-            .fetch();
-
-        return { integrations };
-    }
-}
+		return { integrations };
+	},
+	head() {
+		return {
+			title: title('Ledger Compliance Metrics and Logs'),
+		};
+	},
+};
 </script>
-
-<style lang="scss"></style>
