@@ -35,7 +35,7 @@ CodeNotary integrates easily the most popular CI, CI/CD, and DevOps tools, and y
 
 CodeNotary can cover the whole supply chain. Instead of just signing the final binary, the file is being notarized or authenticated by every step of the workflow. Multiple persons or machines with different logins are involved and all of them are constantly aware of the status of an object in the supply chain. With CodeNotary it would be almost impossible to tamper software products as seen in the Sunburst attack.
 
-![trustedcicd](/images/blog/oneclick.jpg"trusted CI/CD")
+![trustedcicd](/images/blog/oneclick.jpg "trusted CI/CD")
 
 ## Get started!
 
