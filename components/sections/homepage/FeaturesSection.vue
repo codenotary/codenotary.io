@@ -35,7 +35,7 @@
                     <Feature title="Secure" image="/images/features/secure.svg">
                         <ul class="list -unstyled">
                             <li>
-                                Data ownership is verifiable by clients and auditors.
+                                Data ownership is verifiable by clients and auditors. Built-in immutable data history against Ransomware (malware encryption).
                             </li>
                             <li>
                                 Sign your data using <strong>Public-Key Cryptography</strong>.
