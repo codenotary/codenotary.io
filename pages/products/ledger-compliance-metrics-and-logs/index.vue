@@ -17,7 +17,6 @@ import LcMlInfrastructure from '~/components/sections/products/ledger-compliance
 import LcMlTestimonials from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlTestimonials';
 
 export default {
-	layout: 'banner',
 	components: {
 		LCMlHeader,
 		LcMlFeatures,
