@@ -1,40 +1,48 @@
 <template>
-	<i-header id="lc-header">
+	<i-header id="lc-metrics-and-logs-header">
 		<i-row class="_align-items-center">
 			<i-column xs="12" md="6">
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
-					We provide an immutable and tamperproof ledger for your transactional systems
+					All you need for performance analysis and log compliance!
 				</h1>
 				<p class="lead _margin-bottom-0">
-					Simple to use online audit queries and reports and easily able to process millions of transactions per second.
-
-					CodeNotary Ledger Compliance provides the versatility of a key value store without the hazzle of blockchains.
+					Monitor and Analyze Performance and Log files:&nbsp;
+					<vue-typer
+						:text="typewriteOptions"
+						:repeat="Infinity"
+						:shuffle="false"
+						initial-action="typing"
+						:pre-type-delay="70"
+						:type-delay="70"
+						:pre-erase-delay="2000"
+						:erase-delay="70"
+						erase-style="backspace"
+						:erase-on-complete="false"
+						caret-animation="blink"
+					/>
+				</p>
+				<p class="lead _margin-bottom-0">
+					Systems and application performance monitoring and log analysis (tamperproof using immudb) in one virtual appliance
 				</p>
 				<p class="action">
 					<i-button
-						size="lg"
-						outline
-						variant="primary"
-						href="https://tbf/"
-						target="_blank"
-						rel="nofollow"
+						size="lg" outline
+						variant="primary" href="https://demoml.codenotary.io/"
+						target="_blank" rel="nofollow"
 					>
 						Demo
 					</i-button>
 					<i-button
-						variant="primary"
-						size="lg"
-						class="_margin-left-1"
-						@click="startTrialModalOpen = true"
+						variant="primary" size="lg"
+						class="_margin-left-1" @click="startTrialModalOpen = true"
 					>
 						Start trial
 					</i-button>
 				</p>
 			</i-column>
 			<i-column
+				xs="12" md="6"
 				class="_text-center _margin-top-xs-2"
-				xs="12"
-				md="6"
 			>
 				<img
 					class="zoom" :src="src"
@@ -55,22 +63,22 @@
 
 <script>
 export default {
-	name: 'LCHeader',
+	name: 'LCMlHeader',
 	components: {
 		StartTrialModal: () => import('~/components/common/modals/StartTrialModal'),
 	},
 	data: () => ({
-		src: '/images/cn-lc/leder-compliance-howitworks-small.png',
-		alt: 'ledger compliance how it works',
+		src: '/images/cn-lc/ledger-compliance-diagram.png',
+		alt: 'ledger compliance diagram',
 		index: null,
 		typewriteOptions: [
-			'Credit card transactions',
-			'Insurance information and history',
-			'Asset tracking',
-			'Vehicle records',
-			'Log files',
-			'Change Data Capture',
-			'Database records',
+			'VMware vSAN',
+			'VMware Horizon',
+			'Microsoft Windows OS',
+			'Linux OS',
+			'Oracle Database',
+			'Microsoft SQL',
+			'PostgreSQL',
 		],
 		startTrialModalOpen: false,
 	}),
@@ -88,7 +96,7 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-#lc-header {
+#lc-metrics-and-logs-header {
 	background-color: white;
 	// background-image: url('~static/images/ztc/header.jpg');
 	// background-position: right top;
