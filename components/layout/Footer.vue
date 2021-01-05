@@ -2,7 +2,9 @@
 	<page-section class="footer">
 		<i-container>
 			<i-row>
-				<i-column lg="6">
+				<i-column
+					xs="12" sm="6"
+				>
 					<img
 						class="logo" src="/images/logo/logo_white.png"
 						alt="CodeNotary"
@@ -12,29 +14,9 @@
 						tamperproof storage with cryptographic verification, processing millions of transactions a
 						second.
 					</p>
-					<ul class="social-links list -inline">
-						<li>
-							<a href="https://github.com/vchain-us">
-								<fa :icon="['fab', 'github-square']" />
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/CodeNotary">
-								<fa :icon="['fab', 'twitter-square']" />
-							</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/VChain-Inc-1991995727783433/">
-								<fa :icon="['fab', 'facebook-square']" />
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/company/codenotary/">
-								<fa :icon="['fab', 'linkedin']" />
-							</a>
-						</li>
-					</ul>
 				</i-column>
+			</i-row>
+			<i-row class="_margin-top-1">
 				<i-column
 					xs="12" sm="6"
 					lg="3"
@@ -51,6 +33,11 @@
 								Ledger Compliance (Metrics and Logs)
 							</router-link>
 						</li>
+						<li>
+							<router-link :to="{ name: 'products-ci-cd' }">
+								Immutability for CI/CD
+							</router-link>
+						</li>
 					</ul>
 				</i-column>
 				<i-column
@@ -62,11 +49,6 @@
 						<li>
 							<router-link :to="{ name: 'technologies-immudb' }">
 								immudb
-							</router-link>
-						</li>
-						<li>
-							<router-link :to="{ name: 'technologies-ci-cd' }">
-								Immutability for CI/CD
 							</router-link>
 						</li>
 						<li>
@@ -97,36 +79,64 @@
 								Careers
 							</router-link>
 						</li>
-						<li>
-							<router-link :to="{ name: 'privacy-statement' }">
-								Privacy Statement
-							</router-link>
-						</li>
-						<li>
-							<router-link :to="{ name: 'terms-of-service' }">
-								Terms of Service
-							</router-link>
-						</li>
+					</ul>
+				</i-column>
+				<i-column
+					xs="12" sm="6"
+					lg="3"
+				>
+					<h4>Connect</h4>
+					<ul class="list -unstyled">
 						<li>
 							<router-link :to="{ name: 'contact' }">
 								Contact us
 							</router-link>
 						</li>
 					</ul>
-				</i-column>
+					<ul class="social-links list -inline">
+						<li>
+							<a href="https://github.com/vchain-us">
+								<fa :icon="['fab', 'github-square']" />
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/CodeNotary">
+								<fa :icon="['fab', 'twitter-square']" />
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/VChain-Inc-1991995727783433/">
+								<fa :icon="['fab', 'facebook-square']" />
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/company/codenotary/">
+								<fa :icon="['fab', 'linkedin']" />
+							</a>
+						</li>
+					</ul>
+				</i-column>				
 			</i-row>
 		</i-container>
 	</page-section>
 </template>
+
 <script>
 export default {};
 </script>
+
 <style lang="scss">
-@import '~@inkline/inkline/src/css/config/colors';
-@import '../../assets/variables';
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
 
 .footer {
 	background: $color-gray-90;
+
+	.logo {
+		height: 64px;
+		margin-top: -10px;
+		width: auto;
+	}
 
 	h1,
 	h2,
@@ -143,19 +153,16 @@ export default {};
 	}
 
 	a {
-		color: $color-primary-lightest;
+		color: $color-gray-30;
 
-		&.-active,
 		&:hover,
 		&:active {
-			color: $color-gray-10;
+			color: $color-primary-lightest;
 		}
 	}
 
-	.logo {
-		height: 64px;
-		margin-top: -10px;
-		width: auto;
+	li {
+		margin-bottom: $spacer;
 	}
 
 	.social-links {
