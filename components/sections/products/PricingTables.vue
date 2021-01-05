@@ -38,6 +38,24 @@
 					<PricingTableRow>
 						1 ledger
 					</PricingTableRow>
+					<PricingTableRow disabled>
+						Cryptographic Hardware Accelerator
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Tamper-resistant smart card
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Blockchain-protected audit dumps
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Blockchain-protected backup/restore
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Managed service
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						24/7 support
+					</PricingTableRow>					
 				</PricingTable>
 			</i-column>
 			<i-column
@@ -49,11 +67,13 @@
 					subtitle="Or direct install"
 				>
 					<template slot="price">
-						<small>
-							Starting at&nbsp;
-							<strong class="price">1200</strong>&nbsp;
-							<sup>$</sup>/month
-						</small>
+						<div class="price-wrapper">
+							<small>
+								Starting at&nbsp;
+								<strong class="price">1200</strong>&nbsp;
+								<sup>$</sup>/month
+							</small>
+						</div>
 					</template>
 					<hr class="_margin-top-2 _margin-bottom-1">
 					<PricingTableRow>
@@ -64,6 +84,24 @@
 					</PricingTableRow>
 					<PricingTableRow>
 						5 ledgers
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Cryptographic Hardware Accelerator
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Tamper-resistant smart card
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Blockchain-protected audit dumps
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Blockchain-protected backup/restore
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						Managed service
+					</PricingTableRow>
+					<PricingTableRow disabled>
+						24/7 support
 					</PricingTableRow>
 				</PricingTable>
 			</i-column>
@@ -118,16 +156,23 @@
 			<i-column
 				class="_display-flex _padding-0"
 			>
-				<PricingTable title="CodeNotary Ledger Compliance features">
+				<PricingTable
+					title="CodeNotary Ledger Compliance features"
+				>
 					<template slot="short-row">
 						<PricingTableRow
 							v-for="(item, idx) in parsedFeatures" :key="idx"
-							class="_margin-right-1" :fill="isMobile"
+							class="_margin-top-1 _margin-right-1"
+							icon="check-square"
+							:fill="isMobile"
 						>
 							{{ item && item.label }}
 						</PricingTableRow>
 						<i-button
-							link variant="secondary"
+							class="_margin-top-1"
+							link
+							style="height: 37px;"
+							variant="secondary"
 							@click="showMore = !showMore"
 						>
 							show {{ showMore ? 'less...' : 'more...' }}

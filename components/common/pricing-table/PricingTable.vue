@@ -31,9 +31,7 @@
 			{{ subtitle }}
 		</div>
 		<div class="body">
-			<div class="price-wrapper">
-				<slot name="price" />
-			</div>
+			<slot name="price" />
 			<div class="rows">
 				<slot />
 			</div>
@@ -126,8 +124,8 @@ $image-size: $spacer-6;
 
 	.price-wrapper {
 		display: flex;
-		align-items: center;
 		height: 44px;
+		align-items: center;
 		text-align: center;
 
 		.price {

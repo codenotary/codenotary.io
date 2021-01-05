@@ -1,7 +1,10 @@
 <template>
 	<div
 		class="pricing-table-row"
-		:class="{'_width-100': fill}"
+		:class="{
+			'_width-100': fill,
+			'-disabled': disabled
+		}"
 	>
 		<fa
 			v-if="icon"
@@ -23,6 +26,10 @@ export default {
 			type: String,
 			default: '',
 		},
+		disabled: {
+			type: Boolean,
+			default: false,
+		},
 	},
 };
 </script>
@@ -41,6 +48,10 @@ export default {
 			.icon {
 				margin-right: 1rem;
 				color: $color-green;
+			}
+
+			&.-disabled {
+				color: $color-gray-40;
 			}
 		}
 
