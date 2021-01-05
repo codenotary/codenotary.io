@@ -1,28 +1,42 @@
 <template>
-	<div class="pricing-table-row" :class="{'_width-100': fill}">
-		<fa class="icon" icon="check-square" /> <slot />
+	<div
+		class="pricing-table-row"
+		:class="{'_width-100': fill}"
+	>
+		<fa
+			v-if="icon"
+			class="icon"
+			:icon="icon"
+		/>
+		<slot />
 	</div>
 </template>
 
 <script>
 export default {
 	props: {
-		fill: { type: Boolean, default: false },
+		fill: {
+			type: Boolean,
+			default: false,
+		},
+		icon: {
+			type: String,
+			default: '',
+		},
 	},
 };
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
 .pricing-table {
 	.rows {
 		.pricing-table-row {
-			padding: 1rem 0;
-
-			&:last-child {
-				border-bottom: 0;
-			}
+			padding: $spacer-1-2 0;
+			text-align: center;
+			font-size: 0.9rem;
 
 			.icon {
 				margin-right: 1rem;
