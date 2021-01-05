@@ -40,7 +40,7 @@
 								Data ownership is verifiable by clients and auditors. Built-in immutable data history against Ransomware (malware encryption).
 							</li>
 							<li>
-								Sign your data using <strong>Public-Key Cryptography</strong>.
+								Sign your data using <strong>Public-Key Cryptography</strong>. Support for Intel SGX enclaves.
 							</li>
 							<li>
 								Keys additions and revocations are immutably stored into the database.
