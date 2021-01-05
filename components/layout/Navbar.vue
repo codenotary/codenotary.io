@@ -28,7 +28,7 @@
 							Ledger Compliance (Metrics and Logs)
 						</i-dropdown-item>
 						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
-							Immutability for CI/CD
+							Ledger Compliance for CI/CD
 						</i-dropdown-item>
 					</i-dropdown-menu>
 				</i-dropdown>
