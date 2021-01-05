@@ -109,7 +109,7 @@ $image-size: $spacer-6;
 	}
 
 	.subtitle {
-		margin: $spacer-1-2 $spacer-2;
+		margin: $spacer-1-4 $spacer-2;
 		color: $text-muted;
 		text-align: center;
 	}
