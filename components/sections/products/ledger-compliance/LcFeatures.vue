@@ -9,73 +9,55 @@
 			<i-row center top>
 				<i-column
 					xs="12" sm="6"
-					md="4" lg="3"
+					lg="3"
 				>
-					<i-card>
-						<img
-							slot="image" src="/images/cn-lc/features/immutable.svg"
-							alt="Immutable and tamperproof transactional ledgers"
-						>
-						<h4 class="title _font-weight-bold _text-primary">
-							Immutable and tamperproof transactional ledgers
-						</h4>
+					<Feature
+						subtitle="Immutable and tamperproof transactional ledgers"
+						image="/images/features/immutable.svg"
+					>
 						<p class="lead">
 							Data cannot be deleted or modified. Complete and sequenced history.
 						</p>
-					</i-card>
+					</Feature>
 				</i-column>
-
 				<i-column
 					xs="12" sm="6"
-					md="4" lg="3"
+					lg="3"
 				>
-					<i-card>
-						<img
-							slot="image" src="/images/cn-lc/features/online.svg"
-							alt="Always online - no archival system"
-						>
-						<h4 class="title _font-weight-bold _text-primary">
-							Always online - no archival system
-						</h4>
+					<Feature
+						subtitle="Always online - no archival system"
+						image="/images/features/hand.svg"
+					>
 						<p class="lead">
 							Virtual Appliance, Linux or Kubernetes deployment
 						</p>
-					</i-card>
+					</Feature>
 				</i-column>
-
 				<i-column
 					xs="12" sm="6"
-					md="4" lg="3"
+					lg="3"
 				>
-					<i-card>
-						<img
-							slot="image" src="/images/cn-lc/features/speed.svg"
-							alt="Millions of transaction per second"
-						>
-						<h4 class="title _font-weight-bold _text-primary">
-							Millions of transaction per second
-						</h4>
+					<Feature
+						subtitle="Millions of transaction per second"
+						image="/images/features/cogwheels.svg"
+					>
 						<p class="lead">
-							Data cannot be deleted or modified. Complete and sequenced history.
+							Can processes millions of transactions per second reliably and with the cryptographic verification.
 						</p>
-					</i-card>
+					</Feature>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
-					md="4" lg="3"
+					lg="3"
 				>
-					<i-card>
-						<img
-							slot="image" src="/images/cn-lc/features/compliance.svg"
-							alt="Compliance and Audit"
-						>
-						<h4 class="title _font-weight-bold _text-primary">
-							Compliance and Audit
-						</h4>
+					<Feature
+						subtitle="Compliance and Audit"
+						image="/images/features/audit.svg"
+					>
 						<p class="lead">
 							Query capabilities for auditors
 						</p>
-					</i-card>
+					</Feature>
 				</i-column>
 			</i-row>
 		</i-container>

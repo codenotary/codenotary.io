@@ -15,7 +15,7 @@
 						size="lg"
 						outline
 						variant="primary"
-						href="https://tbf/"
+						href="https://democnlc.codenotary.com"
 						target="_blank"
 						rel="nofollow"
 					>
@@ -25,7 +25,7 @@
 						variant="primary"
 						size="lg"
 						class="_margin-left-1"
-						@click="startTrialModalOpen = true"
+						@click="ledgerComplianceModalOpen = true"
 					>
 						Start trial
 					</i-button>
@@ -43,7 +43,7 @@
 				{{ index }}
 			</i-column>
 		</i-row>
-		<start-trial-modal v-model="startTrialModalOpen" />
+		<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 		<CoolLightBox
 			:items="[src]"
 			:index="index"
@@ -57,10 +57,10 @@
 export default {
 	name: 'LCHeader',
 	components: {
-		StartTrialModal: () => import('~/components/common/modals/StartTrialModal'),
+		LedgerComplianceModal: () => import('~/components/common/modals/LedgerComplianceModal'),
 	},
 	data: () => ({
-		src: '/images/cn-lc/leder-compliance-howitworks-small.png',
+		src: '/images/products/lc/howitworks.png',
 		alt: 'ledger compliance how it works',
 		index: null,
 		typewriteOptions: [
@@ -72,14 +72,14 @@ export default {
 			'Change Data Capture',
 			'Database records',
 		],
-		startTrialModalOpen: false,
+		ledgerComplianceModalOpen: false,
 	}),
 	beforeDestroy () {
 		this.src = null;
 		this.alt = null;
 		this.index = null;
 		this.typewriteOptions = null;
-		this.startTrialModalOpen = null;
+		this.ledgerComplianceModalOpen = null;
 	},
 };
 </script>
