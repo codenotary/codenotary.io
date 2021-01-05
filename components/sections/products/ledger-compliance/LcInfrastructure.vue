@@ -42,10 +42,10 @@
 						>
 							<Terminal title="immudb" language="go">
 								try {
-									client.safeSet("k123", new byte[]{1, 2, 3});
-									byte[] v = client.safeGet("k123");
+								client.safeSet("k123", new byte[]{1, 2, 3});
+								byte[] v = client.safeGet("k123");
 								} (catch VerificationException e) {
-									//TODO: tampering detected!
+								//TODO: tampering detected!
 								}
 							</Terminal>
 						</i-column>
@@ -71,13 +71,13 @@
 							<Terminal title="immudb" language="go">
 								resp=client.safeSet(b"key", b"value")
 								if resp.verified:
-									print("Data correctly stored at index:",resp.index)
-									print("Proof is:",resp.proof)
+								print("Data correctly stored at index:",resp.index)
+								print("Proof is:",resp.proof)
 
 								resp=client.safeGet(b"key")
 								if resp.verified:
-									print("Value is:",resp.value,"at index:",resp.index)
-									print("Proof is:",resp.proof)
+								print("Value is:",resp.value,"at index:",resp.index)
+								print("Proof is:",resp.proof)
 							</Terminal>
 						</i-column>
 					</i-row>

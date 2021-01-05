@@ -14,6 +14,7 @@ import CustomerSuccessStories from '~/components/sections/homepage/CustomerSucce
 import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
+
 	components: {
 		HomeHeader,
 		FeaturesSection,
