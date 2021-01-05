@@ -9,8 +9,8 @@
 			<i-row>
 				<i-column>
 					<div class="sicentific-board-member-items">
-						<board-team-member name="Prof. Dr. Martin Bogdan" position="University Leipzig" />
-						<board-team-member name="Prof. Assaf Schuster" position="Technion, Israel Institute of Technology" />
+						<board-team-member name="Name 1" position="Position 1" />
+						<board-team-member name="Name 2" position="Position 2" />
 					</div>
 				</i-column>
 			</i-row>

@@ -40,7 +40,14 @@
 							xs="12" sm="6"
 							md="6" lg="6"
 						>
-							<img src="/images/cn-lc/features/java-sdk.png" alt="Java SDK">
+							<Terminal title="immudb" language="go">
+								try {
+								client.safeSet("k123", new byte[]{1, 2, 3});
+								byte[] v = client.safeGet("k123");
+								} (catch VerificationException e) {
+								//TODO: tampering detected!
+								}
+							</Terminal>
 						</i-column>
 					</i-row>
 				</i-tab>
@@ -61,7 +68,17 @@
 							xs="12" sm="6"
 							md="6" lg="6"
 						>
-							<img src="/images/cn-lc/features/python-sdk.png" alt="Python SDK">
+							<Terminal title="immudb" language="go">
+								resp=client.safeSet(b"key", b"value")
+								if resp.verified:
+								print("Data correctly stored at index:",resp.index)
+								print("Proof is:",resp.proof)
+
+								resp=client.safeGet(b"key")
+								if resp.verified:
+								print("Value is:",resp.value,"at index:",resp.index)
+								print("Proof is:",resp.proof)
+							</Terminal>
 						</i-column>
 					</i-row>
 				</i-tab>

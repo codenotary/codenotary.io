@@ -55,7 +55,7 @@
 							link variant="secondary"
 							@click="showMore = !showMore"
 						>
-							show {{ showMore ? 'less...' : 'more...' }}
+							show {{ showMore ? 'less...Technion, Israel Institute of Technology' : 'more...' }}
 						</i-button>
 					</template>
 				</PricingTable>

@@ -56,7 +56,7 @@
 						</div>
 						<div>
 							<i-card>
-								<h5 class="title _text-primary">
+								<h5 class="title _font-weight-bold _text-primary">
 									4. Authenticate
 								</h5>
 								<p class="lead">
