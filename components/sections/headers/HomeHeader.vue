@@ -69,14 +69,6 @@ export default {
 				this.playing = false;
 			}, 500);
 		},
-		scrollToCNLCSection() {
-			const element = document.getElementById('codenotary-ledger-compliance-section');
-
-			element.scrollIntoView({
-				behavior: 'smooth',
-				block: 'end',
-			});
-		},
 	},
 };
 </script>
