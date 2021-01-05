@@ -4,21 +4,22 @@ $color-primary-lightest: lighten($color-primary, 30%);
 //$color-secondary: #5d65b9;
 
 $border-radius-base: 3px;
-$font-size-base: 1.1rem;
+$font-size-base: 1rem;
 
 $navbar-padding-base: 12px 0;
-//$button-padding-base: $spacer * 0.5 $spacer * 1.5;
 
 ._color-primary-light {
-    background-color: $color-primary-light !important;
+	background-color: $color-primary-light !important;
 }
+
 ._color-primary-lightest {
-    background-color: $color-primary-lightest !important;
+	background-color: $color-primary-lightest !important;
 }
 
 ._text-primary-light {
-    color: $color-primary-light !important;
+	color: $color-primary-light !important;
 }
+
 ._text-primary-lightest {
-    color: $color-primary-lightest !important;
+	color: $color-primary-lightest !important;
 }

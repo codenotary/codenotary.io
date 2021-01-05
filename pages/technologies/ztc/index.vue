@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <ztc-header />
-        <ztc-about-section />
-        <ztc-technology-platform-section />
-        <hr>
-        <ztc-monitoring-section />
-        <ztc-consortium-blockchain-section />
-        <ztc-members-section />
-        <ztc-join-section />
-    </div>
+	<div>
+		<ztc-header />
+		<ztc-about-section />
+		<ztc-technology-platform-section />
+		<hr>
+		<ztc-monitoring-section />
+		<ztc-consortium-blockchain-section />
+		<ztc-members-section />
+		<ztc-join-section />
+	</div>
 </template>
 
 <script>
@@ -21,16 +21,14 @@ import ZtcMembersSection from '~/components/sections/technologies/ztc/ZtcMembers
 import ZtcJoinSection from '~/components/sections/technologies/ztc/ZtcJoinSection';
 
 export default {
-    components: {
-        ZtcHeader,
-        ZtcAboutSection,
-        ZtcTechnologyPlatformSection,
-        ZtcMonitoringSection,
-        ZtcConsortiumBlockchainSection,
-        ZtcMembersSection,
-        ZtcJoinSection
-    }
-}
+	components: {
+		ZtcHeader,
+		ZtcAboutSection,
+		ZtcTechnologyPlatformSection,
+		ZtcMonitoringSection,
+		ZtcConsortiumBlockchainSection,
+		ZtcMembersSection,
+		ZtcJoinSection,
+	},
+};
 </script>
-
-<style lang="scss"></style>

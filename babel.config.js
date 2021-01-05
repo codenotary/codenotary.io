@@ -1,15 +1,27 @@
-module.exports = {
-    presets: [
-        "@vue/cli-plugin-babel/preset",
-        [
-            "@nuxt/babel-preset-app", {
-            corejs: { version: 3 }
-        }
-        ]
-    ],
-    plugins: [
-        "@babel/plugin-proposal-class-properties",
-        "@babel/plugin-transform-runtime",
-        "@babel/plugin-proposal-optional-chaining"
-    ]
+module.exports = function(api) {
+	api.cache(true);
+	const presets = [
+		[
+			'@babel/preset-env',
+			{
+				targets: {
+					node: 'current',
+				},
+			},
+		],
+	];
+	if (process.env.NODE_ENV === 'test') {
+		return {
+			presets,
+			plugins: [
+				'@babel/plugin-proposal-class-properties',
+			],
+		};
+	}
+	else {
+		return {
+			presets: [],
+			plugins: [],
+		};
+	}
 };

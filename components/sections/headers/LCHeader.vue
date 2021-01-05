@@ -1,123 +1,168 @@
 <template>
-    <i-header id="lc-header">
-        <i-row class="_align-items-center">
-            <i-column lg="6">
-                <h1 class="h2 _font-weight-bold">
-                    Immutable recording of business data with CodeNotary Ledger Compliance&reg;
-                </h1>
-                <p class="lead">
-                    On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification,
-                    processing millions of transactions a second.
-                </p>
-                <div class="button-wrapper">
-                    <webinar-modal v-model="webinarModalOpen" />
-                    <i-button variant="primary" size="lg" @click="webinarModalOpen = true">
-                        Schedule a Webinar
-                    </i-button>
-                </div>
-            </i-column>
-            <i-column id="video-column" lg="6" :class="{ 'playing': playing }">
-                <div id="video" class="_embed _embed-16by9">
-                    <video src="/videos/ci-cd.mp4"
-                           poster="/videos/ci-cd.jpg"
-                           width="1280" height="720"
-                           controls
-                           @playing="onPlayVideo"
-                           @pause="onPauseVideo"
-                           @ended="onPauseVideo" />
-                </div>
-                <img id="mascot" src="/images/mascot.png" alt="CodeNotary Mascot">
-            </i-column>
-        </i-row>
-    </i-header>
+	<i-header id="lc-header">
+		<i-row class="_align-items-center">
+			<i-column xs="12" md="6">
+				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
+					We provide an immutable and tamperproof ledger for your transactional systems
+				</h1>
+				<p class="lead _margin-bottom-0">
+					Simple to use online audit queries and reports and easily able to process millions of transactions per second.
+
+					CodeNotary Ledger Compliance provides the versatility of a key value store without the hazzle of blockchains.
+				</p>
+				<p class="action">
+					<i-button
+						size="lg"
+						outline
+						variant="primary"
+						href="https://tbf/"
+						target="_blank"
+						rel="nofollow"
+					>
+						Demo
+					</i-button>
+					<i-button
+						variant="primary"
+						size="lg"
+						class="_margin-left-1"
+						@click="startTrialModalOpen = true"
+					>
+						Start trial
+					</i-button>
+				</p>
+			</i-column>
+			<i-column
+				class="_text-center _margin-top-xs-2"
+				xs="12"
+				md="6"
+			>
+				<img
+					class="zoom" :src="src"
+					:alt="alt" @click="index = 0"
+				>
+				{{ index }}
+			</i-column>
+		</i-row>
+		<start-trial-modal v-model="startTrialModalOpen" />
+		<CoolLightBox
+			:items="[src]"
+			:index="index"
+			use-zoom-bar
+			@close="index = null"
+		/>
+	</i-header>
 </template>
 
 <script>
-import WebinarModal from '~/components/common/modals/WebinarModal';
-
 export default {
-    name: 'LcHeader',
-    components: {
-        WebinarModal
-    },
-    data() {
-        return {
-            webinarModalOpen: false,
-            playing: false,
-            timeout: null
-        }
-    },
-    methods: {
-        onPlayVideo() {
-            clearTimeout(this.timeout);
-            this.playing = true;
-        },
-        onPauseVideo() {
-            clearTimeout(this.timeout);
-            this.timeout = setTimeout(() => {
-                this.playing = false;
-            }, 500);
-        },
-        scrollToCNLCSection() {
-            const element = document.getElementById('codenotary-ledger-compliance-section');
-
-            element.scrollIntoView({
-                behavior: 'smooth',
-                block: 'end'
-            });
-        }
-    }
-}
+	name: 'LCHeader',
+	components: {
+		StartTrialModal: () => import('~/components/common/modals/StartTrialModal'),
+	},
+	data: () => ({
+		src: '/images/cn-lc/leder-compliance-howitworks-small.png',
+		alt: 'ledger compliance how it works',
+		index: null,
+		typewriteOptions: [
+			'Credit card transactions',
+			'Insurance information and history',
+			'Asset tracking',
+			'Vehicle records',
+			'Log files',
+			'Change Data Capture',
+			'Database records',
+		],
+		startTrialModalOpen: false,
+	}),
+	beforeDestroy () {
+		this.src = null;
+		this.alt = null;
+		this.index = null;
+		this.typewriteOptions = null;
+		this.startTrialModalOpen = null;
+	},
+};
 </script>
 
 <style lang="scss">
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-$mascot-width: 175px;
-
 #lc-header {
-    background-color: white;
-    background-image: url('/images/headers/home.svg');
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    /*background-size: 100% 100%;*/
-    background-position: 0 bottom;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
+	background-color: white;
+	// background-image: url('~static/images/ztc/header.jpg');
+	// background-position: right top;
+	// background-size: 75% auto;
+	text-align: left;
 
-    h1 {
-        margin-top: 0;
-    }
+	img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		object-fit: contain;
 
-    @include breakpoint-down(md) {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        text-align: center;
+		&.zoom {
+			cursor: zoom-in;
+		}
+	}
 
-        .button-wrapper {
-            margin-bottom: $spacer * 2;
-        }
-    }
-}
+	h1 {
+		margin-top: 0;
+	}
 
-#video-column {
-    position: relative;
+	.vue-typer {
+		display: flex;
+		justify-content: left;
+		min-width: 400px;
+		padding: 0 0.25rem;
 
-    &.playing {
-        #mascot {
-            transform: translateX($mascot-width);
-        }
-    }
-}
+		.left {
+			position: relative;
 
-#mascot {
-    width: $mascot-width;
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: -1rem;
-    transition: transform 0.5s ease;
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 3px;
+				background: #244484;
+				z-index: 5;
+			}
+
+			span {
+				font-weight: 400;
+			}
+		}
+	}
+
+	@include breakpoint-down(md) {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		text-align: center;
+	}
+
+	@include breakpoint-down(sm) {
+		background-image: none;
+		text-align: center;
+
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.vue-typer {
+			justify-content: center;
+			padding-right: 54px;
+		}
+
+		img#mascot {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	@media screen and (min-width: 2280px) {
+		background-size: 1560px auto;
+	}
 }
 </style>

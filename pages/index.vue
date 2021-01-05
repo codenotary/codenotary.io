@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <home-header />
-        <features-section />
-        <customer-success-stories />
-        <ledger-compliance tree />
-    </div>
+	<div>
+		<home-header />
+		<features-section />
+		<customer-success-stories />
+		<ledger-compliance tree />
+	</div>
 </template>
 
 <script>
@@ -14,15 +14,13 @@ import CustomerSuccessStories from '~/components/sections/homepage/CustomerSucce
 import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
-    layout: 'banner',
+	layout: 'banner',
 
-    components: {
-        HomeHeader,
-        FeaturesSection,
-        CustomerSuccessStories,
-        LedgerCompliance
-    }
-}
+	components: {
+		HomeHeader,
+		FeaturesSection,
+		CustomerSuccessStories,
+		LedgerCompliance,
+	},
+};
 </script>
-
-<style lang="scss"></style>
