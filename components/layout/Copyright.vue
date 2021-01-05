@@ -16,7 +16,7 @@
 					<router-link :to="{ name: 'tcontact' }">
 						Contact us
 					</router-link>
-				</i-column>				
+				</i-column>
 			</i-row>
 		</i-container>
 	</page-section>

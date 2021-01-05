@@ -115,7 +115,7 @@
 							</a>
 						</li>
 					</ul>
-				</i-column>				
+				</i-column>
 			</i-row>
 		</i-container>
 	</page-section>
