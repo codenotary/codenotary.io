@@ -81,14 +81,6 @@ $mascot-width: 175px;
 
 #home-header {
 	background-color: white;
-	background-image: url('/images/headers/home.svg');
-	background-repeat: no-repeat;
-
-	/* background-attachment: fixed; */
-
-	/* background-size: 100% 100%; */
-	background-position: 0 bottom;
-	background-size: cover;
 	overflow: hidden;
 	width: 100%;
 

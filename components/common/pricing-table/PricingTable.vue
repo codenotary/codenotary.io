@@ -1,21 +1,42 @@
 <template>
-	<div class="pricing-table">
-		<h4 class="title">
+	<div
+		class="pricing-table"
+		:class="{ '-image': !!image }"
+	>
+		<div
+			v-if="image"
+			class="image-wrapper"
+		>
+			<img
+				class="image -responsive"
+				:src="image"
+				:alt="title"
+			>
+		</div>
+		<h4
+			v-if="title"
+			class="title"
+			:class="{ '_margin-bottom-1': !!image }"
+		>
 			{{ title }}
 		</h4>
-		<div v-if="subtitle === '&nbsp;'" class="_margin-bottom-4" />
-		<div v-else class="subtitle">
+		<div
+			v-if="subtitle && subtitle === '&nbsp;'" 
+			class="_margin-bottom-2"
+		/>
+		<div
+			v-else
+			class="subtitle"
+		>
 			{{ subtitle }}
 		</div>
 		<div class="body">
-			<div class="rows line">
+			<slot name="price" />
+			<div class="rows">
 				<slot />
 			</div>
 			<div class="rows flex _justify-content-center">
 				<slot name="short-row" />
-			</div>
-			<div class="price-wrapper">
-				<slot name="price" />
 			</div>
 		</div>
 	</div>
@@ -24,6 +45,10 @@
 <script>
 export default {
 	props: {
+		image: {
+			type: String,
+			default: '',
+		},
 		title: {
 			type: String,
 			default: '',
@@ -37,47 +62,77 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
+$image-margin: $spacer-2;
+$image-size: $spacer-6;
+
 .pricing-table {
+	display: flex;
 	flex: 1;
+	flex-direction: column;
+	padding: $spacer-2 $spacer-1;
 	background: white;
 	border: 1px solid $border-color-light;
-	padding: 2rem 1rem;
-	display: flex;
-	flex-direction: column;
+
+	&.-image {
+		margin-top: $image-margin;
+		padding-top: $spacer-5;
+	}
+
+	.image-wrapper {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: calc(-#{$image-size / 2} + #{$image-margin});
+		left: calc(50% - #{$image-size / 2});
+		height: $image-size;
+		width: $image-size;
+		padding: $spacer-1-2;
+		background-color: $color-white;
+		background-image: url('/images/products/pricing-tables/circle.svg');
+		border-radius: 50%;
+
+		img {
+			padding: $spacer-1-2;
+			object-fit: scale-down;
+		}
+	}
 
 	.title {
-		margin: 0 0;
+		margin: 0;
 		text-align: center;
 		font-weight: bold;
 		color: $color-primary;
 	}
 
 	.subtitle {
+		margin: $spacer-1-2 $spacer-2;
 		color: $text-muted;
 		text-align: center;
-		margin: 0.5rem 0 2rem;
 	}
 
 	.body {
-		flex: 1;
 		display: flex;
+		flex: 1;
 		flex-direction: column;
-		// flex-direction: row;
-		// flex-wrap: wrap;
-
-		justify-content: space-between;
+		justify-content: flex-start;
+		align-items: center;
 	}
 
 	.price-wrapper {
+		display: flex;
+		height: 44px;
+		align-items: center;
 		text-align: center;
-		margin-top: 2rem;
 
 		.price {
+			margin: $spacer-1 auto $spacer-2;
 			font-weight: bold;
 			color: $color-primary;
-			font-size: 32px;
+			font-size: 1.25rem;
 		}
 	}
 }
