@@ -13,25 +13,36 @@
 				:alt="title"
 			>
 		</div>
-		<h4
-			v-if="title"
-			class="title"
-			:class="{ '_margin-bottom-1': !!image }"
-		>
-			{{ title }}
-		</h4>
 		<div
-			v-if="subtitle && subtitle === '&nbsp;'" 
-			class="_margin-bottom-2"
-		/>
-		<div
-			v-else
-			class="subtitle"
+			v-if="title || subtitle"
+			class="title-and-subtitle-wrapper _margin-bottom-1"
 		>
-			{{ subtitle }}
+			<h4
+				v-if="title"
+				class="title"
+			>
+				{{ title }}
+			</h4>
+			<span
+				v-if="subtitle"
+				class="subtitle"
+			>
+				{{ subtitle }}
+			</span>
 		</div>
 		<div class="body">
-			<slot name="price" />
+			<div
+				v-if="price"
+				class="price-wrapper _margin-bottom-1"
+			>
+				<slot name="price" />
+			</div>
+			<div 
+				v-if="cta"
+				class="cta-wrapper"
+			>
+				<slot name="cta" />
+			</div>
 			<div class="rows">
 				<slot />
 			</div>
@@ -56,6 +67,14 @@ export default {
 		subtitle: {
 			type: String,
 			default: '',
+		},
+		price: {
+			type: Boolean,
+			default: true,
+		},
+		cta: {
+			type: Boolean,
+			default: true,
 		},
 	},
 };
@@ -101,17 +120,26 @@ $image-size: $spacer-6;
 		}
 	}
 
-	.title {
-		margin: 0;
-		text-align: center;
-		font-weight: bold;
-		color: $color-primary;
-	}
+	.title-and-subtitle-wrapper,
+	.title-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		height: $spacer-3;
 
-	.subtitle {
-		margin: $spacer-1-4 $spacer-2;
-		color: $text-muted;
-		text-align: center;
+		.title {
+			margin: 0;
+			text-align: center;
+			font-weight: bold;
+			color: $color-primary;
+		}
+
+		.subtitle {
+			margin: $spacer-1-4 $spacer-2;
+			color: $text-muted;
+			text-align: center;
+		}
 	}
 
 	.body {
@@ -120,20 +148,34 @@ $image-size: $spacer-6;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
+
+		hr {
+			width: 200px;
+		}
 	}
 
 	.price-wrapper {
 		display: flex;
-		height: 44px;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
+		height: $spacer-3;
 		text-align: center;
 
 		.price {
 			margin: $spacer-1 auto $spacer-2;
 			font-weight: bold;
-			color: $color-primary;
 			font-size: 1.25rem;
 		}
+	}
+
+	.cta-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: $spacer-3;
+		text-align: center;
 	}
 }
 </style>

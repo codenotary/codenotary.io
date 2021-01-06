@@ -16,7 +16,10 @@
 					<PricingTables />
 				</i-column>
 			</i-row>
-			<i-row v-if="tree" class="_text-center">
+			<i-row
+				v-if="tree"
+				class="_text-center"
+			>
 				<i-column>
 					<img
 						id="tree-image" src="/images/word-tree.png"
@@ -46,16 +49,22 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@inkline/inkline/src/css/config/colors";
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
 
 #ledger-compliance-section {
 	background-color: $color-gray-20;
 }
 
 #tree-image {
-	margin-top: 6rem;
-	margin-bottom: -6rem;
-	height: 25rem;
+	margin: $spacer-6 auto -#{$spacer-6};
+	height: 20rem;
 	width: auto;
+	object-fit: contain;
+
+	@include breakpoint-down(md) {
+		height: auto !important;
+		margin: $spacer-2 auto -#{$spacer-6} !important;
+	}
 }
 </style>

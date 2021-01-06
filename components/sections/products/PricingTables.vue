@@ -10,15 +10,19 @@
 		</div>
 		<i-row class="_display-flex _justify-content-center _align-items-start">
 			<i-column
-				class="_display-flex _padding-x-xs-1 _padding-x-sm-1 _padding-left-md-0 _padding-right-md-1-2 _padding-left-lg-0 _padding-right-lg-1-2 _padding-left-xl-0 _padding-right-xl-1-2"
+				class="_display-flex _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12" sm="8" md="4"
 			>
 				<PricingTable
 					image="/images/products/pricing-tables/car.svg"
 					title="Demo Container"
-					subtitle="&nbsp;"
 				>
 					<template slot="price">
+						<strong>
+							FREE
+						</strong>
+					</template>
+					<template slot="cta">
 						<i-button
 							class="_font-weight-bold"
 							variant="primary"
@@ -26,10 +30,12 @@
 							:outline="true"
 							@click="trialModalOpen = true"
 						>
-							FREE
+							Start trial
 						</i-button>
 					</template>
-					<hr class="_margin-top-2 _margin-bottom-1">
+					<hr
+						class="line _margin-top-2 _margin-bottom-1"
+					>					
 					<PricingTableRow>
 						10GB storage
 					</PricingTableRow>
@@ -60,7 +66,7 @@
 				</PricingTable>
 			</i-column>
 			<i-column
-				class="_display-flex _padding-x-xs-1 _margin-top-xs-3 _padding-x-sm-1 _margin-top-sm-3 _padding-right-md-1-2  _padding-right-lg-1-2 _padding-right-xl-1-2"
+				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12" sm="8" md="4"
 			>
 				<PricingTable
@@ -69,15 +75,26 @@
 					subtitle="Or direct install"
 				>
 					<template slot="price">
-						<div class="price-wrapper">
-							<small>
-								Starting at&nbsp;
-								<strong class="price">1200</strong>&nbsp;
-								<sup>$</sup>/month
-							</small>
-						</div>
+						<small>
+							Starting at&nbsp;
+							<strong class="price">1200</strong>&nbsp;
+							<sup>$</sup>/month
+						</small>
 					</template>
-					<hr class="_margin-top-2 _margin-bottom-1">
+					<template slot="cta">
+						<i-button
+							class="_font-weight-bold"
+							variant="primary"
+							style="min-width: 144px; border-width: 2px;"
+							:outline="true"
+							@click="trialModalOpen = true"
+						>
+							Start trial
+						</i-button>
+					</template>
+					<hr
+						class="line _margin-top-2 _margin-bottom-1"
+					>					
 					<PricingTableRow>
 						No storage limit
 					</PricingTableRow>
@@ -108,15 +125,14 @@
 				</PricingTable>
 			</i-column>
 			<i-column
-				class="_display-flex _padding-x-xs-1 _margin-top-xs-3 _padding-x-sm-1 _margin-top-sm-3 _padding-right-md-0 _padding-left-md-1-2 _padding-right-lg-0 _padding-left-lg-1-2 _padding-right-xl-0 _padding-left-xl-1-2"
+				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12" sm="8" md="4"
 			>
 				<PricingTable
 					image="/images/products/pricing-tables/rocket.svg"
 					title="Hardware Appliance"
-					subtitle="&nbsp;"
 				>
-					<template slot="price">
+					<template slot="cta">
 						<i-button
 							variant="primary"
 							:to="{ name: 'contact' }"
@@ -124,7 +140,9 @@
 							Contact us for details
 						</i-button>
 					</template>
-					<hr class="_margin-top-2 _margin-bottom-1">
+					<hr
+						class="line _margin-top-2 _margin-bottom-1"
+					>
 					<PricingTableRow>
 						No storage limit
 					</PricingTableRow>
@@ -157,10 +175,12 @@
 		</i-row>
 		<i-row class="_margin-top-1">
 			<i-column
-				class="_display-flex _padding-0"
+				class="_display-flex _flex-direction-row _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 			>
 				<PricingTable
 					title="CodeNotary Ledger Compliance features"
+					:price="false"
+					:cta="false"
 				>
 					<template slot="short-row">
 						<PricingTableRow
@@ -247,6 +267,11 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 .ledger-compliance-pricing-tables {
+	.row {
+		margin-left: -$spacer-1-2 !important;
+		margin-right: -$spacer-1-2 !important;
+	}
+
 	.header {
 		background: white;
 		padding: 2rem 1rem;
