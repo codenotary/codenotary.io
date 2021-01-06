@@ -19,7 +19,7 @@
 				<i-column lg="4">
 					<feature title="Secure" image="/images/immudb/features/secure2.svg">
 						<p>Data ownership is verifiable by clients and auditors. Support for Intel SGX enclaves.</p>
-						<p>Sign your data using <strong>Public-Key Cryptography</strong>.</p>
+						<p>Sign your data using <strong>Public-Key Cryptography</strong>. Support for Intel SGX enclaves.</p>
 						<p>Keys additions and revocations is immutably stored into the database</p>
 					</feature>
 				</i-column>
