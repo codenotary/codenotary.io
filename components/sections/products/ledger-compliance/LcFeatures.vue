@@ -16,7 +16,7 @@
 						image="/images/features/immutable.svg"
 					>
 						<p class="lead">
-							Data cannot be deleted or modified. Complete and sequenced history.
+							Data cannot be deleted or modified. Support for Intel SGX enclaves.
 						</p>
 					</Feature>
 				</i-column>
@@ -55,7 +55,7 @@
 						image="/images/features/audit.svg"
 					>
 						<p class="lead">
-							Query capabilities for auditors
+							Complete and sequenced history. Query capabilities for auditors.
 						</p>
 					</Feature>
 				</i-column>
