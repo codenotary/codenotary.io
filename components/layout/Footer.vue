@@ -105,7 +105,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="https://www.facebook.com/VChain-Inc-1991995727783433/">
+							<a href="https://www.facebook.com/Codenotary-Inc-106257094666687">
 								<fa :icon="['fab', 'facebook-square']" />
 							</a>
 						</li>
