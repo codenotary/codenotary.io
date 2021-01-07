@@ -37,7 +37,7 @@
 			>
 				<slot name="price" />
 			</div>
-			<div 
+			<div
 				v-if="cta"
 				class="cta-wrapper"
 			>
