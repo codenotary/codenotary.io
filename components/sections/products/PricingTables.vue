@@ -11,7 +11,8 @@
 		<i-row class="_display-flex _justify-content-center _align-items-start">
 			<i-column
 				class="_display-flex _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
-				xs="12" sm="8" md="4"
+				xs="12" sm="8"
+				md="4"
 			>
 				<PricingTable
 					image="/images/products/pricing-tables/car.svg"
@@ -35,7 +36,7 @@
 					</template>
 					<hr
 						class="line _margin-top-2 _margin-bottom-1"
-					>					
+					>
 					<PricingTableRow>
 						10GB storage
 					</PricingTableRow>
@@ -62,12 +63,13 @@
 					</PricingTableRow>
 					<PricingTableRow disabled>
 						24/7 support
-					</PricingTableRow>					
+					</PricingTableRow>
 				</PricingTable>
 			</i-column>
 			<i-column
 				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
-				xs="12" sm="8" md="4"
+				xs="12" sm="8"
+				md="4"
 			>
 				<PricingTable
 					image="/images/products/pricing-tables/plane.svg"
@@ -94,7 +96,7 @@
 					</template>
 					<hr
 						class="line _margin-top-2 _margin-bottom-1"
-					>					
+					>
 					<PricingTableRow>
 						No storage limit
 					</PricingTableRow>
@@ -126,7 +128,8 @@
 			</i-column>
 			<i-column
 				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
-				xs="12" sm="8" md="4"
+				xs="12" sm="8"
+				md="4"
 			>
 				<PricingTable
 					image="/images/products/pricing-tables/rocket.svg"
