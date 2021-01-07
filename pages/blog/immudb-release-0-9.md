@@ -5,7 +5,7 @@ image: "/images/blog/immudb-mascot-small.png"
 tags: ["release", "0.9", "data security", "immutable"]
 ---
 
-Happy New Year to everyone!
+# Happy New Year to everyone!
 
 ![immudb v0.9.0](/images/blog/immudb-mascot-small.png)
 
