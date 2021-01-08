@@ -60,6 +60,7 @@ export default {
 		{ src: '~plugins/leadfeeder', mode: 'client' },
 		{ src: '~plugins/tawk', mode: 'client' },
 		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
+		{ src: "~plugins/vue-infinite-loading", mode: "client" },
 		{ src: '~plugins/prism', ssr: false },
 		{ src: '~plugins/vue-masonry-css', ssr: false },
 		{ src: '~plugins/vue-truncate-filter', ssr: false },

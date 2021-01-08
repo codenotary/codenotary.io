@@ -36,7 +36,10 @@
 												>
 											</div>
 											<nuxt-link class="_overlay-link" :to="{ name: 'blog-post', params: { post: article.slug } }">
-												<div class="title">
+												<div
+													v-if="article.title"
+													class="title"
+												>
 													{{ article.title | truncate(48) }}
 												</div>
 											</nuxt-link>
@@ -57,6 +60,28 @@
 								</div>
 							</masonry>
 						</no-ssr>
+						<no-ssr>
+							<infinite-loading @infinite="infiniteHandler">
+								<template
+									slot="spinner"
+									class="text-muted small-text"
+								>
+									Loading...
+								</template>
+								<div
+									slot="no-more"
+									class="text-muted small-text"
+								>
+									--- End ---
+								</div>
+								<div
+									slot="no-results"
+									class="text-muted small-text"
+								>
+									No results message
+								</div>
+							</infinite-loading>
+						</no-ssr>
 					</i-column>
 				</i-row>
 			</i-container>
@@ -68,6 +93,9 @@
 import NoSSR from 'vue-no-ssr';
 import { title } from '~/helpers/meta';
 
+const BLOG_POSTS_PER_PAGE = 12;
+const INFINITE_LOAD_DELAY = 600;
+
 export default {
 	components: {
 		'no-ssr': NoSSR,
@@ -76,12 +104,15 @@ export default {
 		const articles = await $content('blog')
 				.only(['title', 'date', 'image', 'slug', 'tags'])
 				.sortBy('date', 'desc')
+				.limit(BLOG_POSTS_PER_PAGE)
 				.fetch();
 
 		return { articles };
 	},
 	data: () => ({
 		filter: '',
+		articles: [],
+		page: 0,
 	}),
 	computed: {
 		filteredArticles () {
@@ -96,13 +127,36 @@ export default {
 			return this.articles;
 		},
 	},
-	beforeDestroy () {
-		this.filter = null;
-	},
 	mounted () {
 		if (typeof this.$redrawVueMasonry === 'function') {
 			this.$redrawVueMasonry();
 		}
+	},
+	beforeDestroy () {
+		this.filter = null;
+		this.articles = null;
+		this.page = 0;
+	},
+	methods: {
+		infiniteHandler ($state) {
+			setTimeout(async () => {
+				this.page += 1;
+				const lazyArticles = await this.$content('blog')
+						.only(['title', 'date', 'image', 'slug', 'tags'])
+						.sortBy('date', 'desc')
+						.limit(BLOG_POSTS_PER_PAGE)
+						.skip(BLOG_POSTS_PER_PAGE * this.page)
+						.fetch();
+
+				if (lazyArticles && lazyArticles.length > 0) {
+					this.articles.push(...lazyArticles);
+					$state.loaded();
+				}
+				else {
+					$state.complete();
+				}
+			}, INFINITE_LOAD_DELAY);
+		},
 	},
 	head () {
 		return {
