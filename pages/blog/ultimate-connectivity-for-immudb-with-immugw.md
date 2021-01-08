@@ -60,7 +60,7 @@ response = requests.post(url, headers=headers, data=data)
 json_response = response.json()
 print(response.json())
 ```
-The API will response with codes. It is important to understand what they mean. 
+The API will respond with codes. It is important to understand what they mean. 
 *Response code 200 is signaling that the request was successful. 
 *Code 403 "forbidden" is saying that there are missing some authorizations. 
 *The codes 500 stands for internal server error and 503 is saying that the service is unavailable. 
