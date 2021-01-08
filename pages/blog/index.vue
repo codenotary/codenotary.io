@@ -94,7 +94,7 @@ import NoSSR from 'vue-no-ssr';
 import { title } from '~/helpers/meta';
 
 const BLOG_POSTS_PER_PAGE = 12;
-const INFINITE_LOAD_DELAY = 600;
+const INFINITE_LOAD_DELAY = 0;
 
 export default {
 	components: {
