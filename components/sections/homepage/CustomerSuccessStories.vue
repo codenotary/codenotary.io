@@ -2,11 +2,28 @@
 	<page-section id="customer-success-stories-section">
 		<i-container>
 			<i-row>
-				<i-column>
-					<page-section-header title="Customer Use Cases">
+				<i-column xs="12" sm="12">
+					<page-section-header
+						title="Customer Use Cases"
+						bottom="2"
+					>
 						With CodeNotary Ledger Compliance&reg; you can easily build immutable,
 						tamper-proof solutions and comply with auditor requirements and regulations and laws.
 					</page-section-header>
+				</i-column>
+				<i-column
+					class="_margin-bottom-4 _display-flex _justify-content-center _align-items-center"
+					xs="12" sm="12"
+				>
+					<div class="button-wrapper">
+						<i-button
+							variant="primary" size="lg"
+							@click="webinarModalOpen = true"
+						>
+							Schedule a Webinar
+						</i-button>
+						<webinar-modal v-model="webinarModalOpen" />
+					</div>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -57,6 +74,15 @@ import StoryCard from '~/components/common/cards/StoryCard';
 export default {
 	components: {
 		StoryCard,
+		WebinarModal: () => import('~/components/common/modals/WebinarModal'),
+	},
+	data() {
+		return {
+			webinarModalOpen: false,
+		};
+	},
+	beforeDestroy () {
+		this.webinarModalOpen = null;
 	},
 };
 </script>

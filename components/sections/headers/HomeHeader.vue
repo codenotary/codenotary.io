@@ -9,15 +9,27 @@
 					On-premise or in the cloud; Secure, actionable observability with real cryptographic verification,
 					processing millions of transactions a second. Built-in Immutability for Cyber Resiliency.
 				</p>
-				<div class="button-wrapper">
-					<webinar-modal v-model="webinarModalOpen" />
+				<p class="action">
 					<i-button
-						variant="primary" size="lg"
-						@click="webinarModalOpen = true"
+						size="lg"
+						outline
+						variant="primary"
+						href="https://democnlc.codenotary.com"
+						target="_blank"
+						rel="nofollow"
 					>
-						Schedule a Webinar
+						Demo
 					</i-button>
-				</div>
+					<i-button
+						variant="primary"
+						size="lg"
+						class="_margin-left-1"
+						@click="ledgerComplianceModalOpen = true"
+					>
+						Start trial
+					</i-button>
+					<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
+				</p>
 			</i-column>
 			<i-column
 				id="video-column" lg="6"
@@ -44,19 +56,22 @@
 </template>
 
 <script>
-import WebinarModal from '~/components/common/modals/WebinarModal';
-
 export default {
 	name: 'HomeHeader',
 	components: {
-		WebinarModal,
+		LedgerComplianceModal: () => import('~/components/common/modals/LedgerComplianceModal'),
 	},
 	data() {
 		return {
-			webinarModalOpen: false,
+			ledgerComplianceModalOpen: false,
 			playing: false,
 			timeout: null,
 		};
+	},
+	beforeDestroy () {
+		this.ledgerComplianceModalOpen = null;
+		this.playing = null;
+		this.timeout = null;
 	},
 	methods: {
 		onPlayVideo() {
