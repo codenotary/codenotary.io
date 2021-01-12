@@ -48,7 +48,7 @@ This blog is the successor of [immudb-using-go](https://codenotary.com/blog/stor
 		scores:  []float64{2020342, 2021003, 2020350},
 	}
 ```
-Before we can add a record with ZAdd to a set, we have to save them in immudb. We can do that by simply iterating over the antigenData.keys and antigenData.values. Client.Set will store the key-value pair in immudb. It is also possible to read and write with build-in cryptographic verification using client.SafeSet and SafeGet.
+Before we can add a record with ZAdd to a set, we have to save them in immudb. We can do that by simply iterating over the antigenData.keys and antigenData.values. Client.Set will store the key-value pair in immudb. It is also possible to read and write with build-in cryptographic verification using client.VerifiedSet and VerifiedGet.
 
 ```go
 	for i := 0; i < len(antigenData.keys); i++ {
