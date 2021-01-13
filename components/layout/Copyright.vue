@@ -13,8 +13,8 @@
 					<router-link :to="{ name: 'terms-of-service' }">
 						Terms of Service
 					</router-link>
-					<router-link :to="{ name: 'tcontact' }">
-						Contact us
+					<router-link :to="{ name: 'privacy-statement' }">
+						Privacy statement
 					</router-link>
 				</i-column>
 			</i-row>
