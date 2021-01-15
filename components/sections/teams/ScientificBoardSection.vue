@@ -6,12 +6,23 @@
 			</i-column>
 		</i-row>
 		<i-container>
-			<i-row>
-				<i-column>
-					<div class="sicentific-board-member-items">
-						<board-team-member name="Name 1" position="Position 1" />
-						<board-team-member name="Name 2" position="Position 2" />
-					</div>
+			<i-row class="scientific-team-member-items _justify-content-center">
+				<i-column lg="4">
+					<scientific-team-member
+						name="Prof. Assaf Schuster" 
+						position="Scientific Advisor"
+						image="/images/teams/prof-assaf-schuster.jpg"	
+					>
+						<p>
+							Prof. Assaf Schuster of the Computer Science Department at the Technion is an ACM fellow and a world leading expert of distributed and scalable data mining, Big Data technologies, cyber security, privacy preserving, cloud resource management, and more.
+						</p>
+						<p>
+							Prof. Schuster published more than 200 papers in highly selective conferences and journals, some of which won prestigious awards.
+						</p>
+						<p>
+							He consulted leading high-tech companies, such as IBM, HP, Microsoft, and Verint.
+						</p>
+					</scientific-team-member>
 				</i-column>
 			</i-row>
 		</i-container>
@@ -19,11 +30,11 @@
 </template>
 
 <script>
-import BoardTeamMember from '~/components/common/BoardTeamMember';
+import ScientificTeamMember from '~/components/common/ScientificTeamMember';
 
 export default {
 	components: {
-		BoardTeamMember,
+		ScientificTeamMember,
 	},
 };
 </script>
@@ -33,28 +44,24 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #scientific-board-section {
-	background-color: #fff;
+	background-color: #e9ecef;
 
-	.sicentific-board-member-items {
-		border-top: 1px solid $border-color-light;
-		border-bottom: 1px solid $border-color-light;
-		display: flex;
-		justify-content: space-around;
-
-		.column {
-			flex: 1;
-		}
-
-		@include breakpoint-down(lg) {
-			flex-direction: column;
-		}
+	.team-member {
+		margin-bottom: $spacer * 2;
 	}
 
-	.board-team-member {
-		margin-bottom: $spacer;
+	.scientific-team-member-items {
+		display: flex;
 
-		strong {
-			font-weight: normal;
+		@include breakpoint-up(lg) {
+			.column {
+				flex: 1;
+				display: flex;
+
+				.card {
+					flex: 1;
+				}
+			}
 		}
 	}
 }

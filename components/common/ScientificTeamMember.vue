@@ -1,5 +1,5 @@
 <template>
-	<i-card class="team-member">
+	<i-card class="scientific-team-member">
 		<div class="meta">
 			<img
 				v-if="image" class="image -responsive"
@@ -19,7 +19,7 @@
 
 <script>
 export default {
-	name: 'TeamMember',
+	name: 'ScientificTeamMember',
 	props: {
 		name: {
 			type: String,
@@ -40,13 +40,12 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-.team-member {
-	.meta {
-		text-align: center;
-	}
+.scientific-team-member {
+	text-align: center;
 
 	.title {
 		font-weight: bold;
+		font-size: 24px;
 		color: $color-primary;
 		margin: 1rem 0 0.5rem;
 	}
