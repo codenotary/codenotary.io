@@ -53,19 +53,6 @@
 			<i-row class="team-member-items">
 				<i-column lg="4">
 					<team-member
-						name="Filippo De Montis" position="VP Product Marketing"
-						image="/images/teams/filippo-de-montis.jpg"
-					>
-						<p>
-							Filippo De Montis has made a career in IT for more than 15 years around the globe. Starting as a developer, he then moved to consulting, marketing and sales, achieving hands on experience on all customer facing roles. In his last position he was Managing Director of Tinaba, Italy’s leading mobile bank.
-						</p>
-						<p>
-							He was the global head of business development for banking and insurance verticals at Software AG, a top 5 European IT vendor. Filippo holds a MBA with distinctions from INSEAD and MSc in Telecommunication Engineering.
-						</p>
-					</team-member>
-				</i-column>
-				<i-column lg="4">
-					<team-member
 						name="Jerónimo Irazábal" position="Chief Architect & immudb Community Manager"
 						image="/images/teams/jeronimo-irazabal.png"
 					>
