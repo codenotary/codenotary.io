@@ -38,7 +38,7 @@
 				</i-column>
 				<i-column lg="4">
 					<team-member
-						name="Amelie Scheuermeyer" position="Head of Operations Europe"
+						name="Amelie Scheuermeyer" position="VP Administration"
 						image="/images/teams/amelie-scheuermeyer.jpg"
 					>
 						<p>
