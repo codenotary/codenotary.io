@@ -5,7 +5,7 @@
 		<about-features-section />
 		<management-team-section />
 		<board-of-directors-section />
-		<scientific-board-section />
+		<scientific-board-section v-if="false"/>
 	</div>
 </template>
 

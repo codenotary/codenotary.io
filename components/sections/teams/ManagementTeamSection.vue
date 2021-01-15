@@ -88,6 +88,23 @@
 						</p>
 					</team-member>
 				</i-column>
+				<i-column lg="4">
+					<team-member
+						name="Prof. Assaf Schuster" 
+						position="Scientific Advisor"
+						image="/images/teams/prof-assaf-schuster.jpg"	
+					>
+						<p>
+							Prof. Assaf Schuster of the Computer Science Department at the Technion is an ACM fellow and a world leading expert of distributed and scalable data mining, Big Data technologies, cyber security, privacy preserving, cloud resource management, and more.
+						</p>
+						<p>
+							Prof. Schuster published more than 200 papers in highly selective conferences and journals, some of which won prestigious awards.
+						</p>
+						<p>
+							He consulted leading high-tech companies, such as IBM, HP, Microsoft, and Verint.
+						</p>
+					</team-member>
+				</i-column>
 			</i-row>
 		</i-container>
 	</page-section>
