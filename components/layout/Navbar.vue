@@ -28,7 +28,7 @@
 							Ledger Compliance (Metrics and Logs)
 						</i-dropdown-item>
 						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
-							Ledger Compliance for CI/CD
+							Ledger Compliance (Cloud)
 						</i-dropdown-item>
 					</i-dropdown-menu>
 				</i-dropdown>
