@@ -204,7 +204,8 @@ Another possible ransomware attack could focus on databases. Cybercriminals coul
 
 
 ## New opportunities by combining immutability and scalability
-. 
-Immudb combines immutability and scalability like no technology before. The use cases are plentiful. Ransomware is a huge thread for businesses. Outsmart the crypto-viruses by using crypto-technology against them. 
+ 
+immudb combines immutability and scalability like no technology before. The use cases are plentiful. Ransomware is a huge thread for businesses. 
+Outsmart the crypto-viruses by using crypto-technology against them. 
 
 CodeNotary products and technologies can also be used to protect CI/CD pipelines making attacks like [sunburst](https://codenotary.com/blog/solarwinds-sunburst/) almost impossible.
