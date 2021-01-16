@@ -6,7 +6,7 @@
 					Immutable change history of your business data with CodeNotary Ledger Compliance&reg;
 				</h1>
 				<p class="lead">
-					On-premise or in the cloud; Secure, actionable observability with real cryptographic verification,
+					On-premise or in the cloud: secure, actionable observability with real cryptographic verification,
 					processing millions of transactions a second. Built-in Immutability for Cyber Resiliency.
 				</p>
 				<p class="action">
