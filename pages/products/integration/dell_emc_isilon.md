@@ -15,7 +15,7 @@ Monitor and Analyze your EMC Isilon storage systems configuration and performanc
 Instantly detect when Nodes are down or not healthy. Find performance bottlenecks, storage protocol issues and slow response times in a heartbeat.
 
 
-![EMC Isilon Integration](/images/integrations/posts//isilon1.png)
+![EMC Isilon Integration](/images/integrations/posts/isilon1.png)
 
 
 ## Some of our EMC Isilon integration features are:

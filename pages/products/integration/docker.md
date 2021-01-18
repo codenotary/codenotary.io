@@ -13,7 +13,7 @@ image: "/images/integrations/docker.png"
 Monitor and Analyze Docker container configuration and performance metrics. Correlate events and metrics from applications, OS and container combining our Linux, Windows and Docker metrics. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![Docker Container Performance](/images/integrations/posts//docker_overview.png)
+![Docker Container Performance](/images/integrations/posts/docker_overview.png)
 
 
 ## Some of our Docker integration features are:
@@ -26,4 +26,4 @@ Monitor and Analyze Docker container configuration and performance metrics. Corr
 *Combine with applications running inside the container
 
 
-![Docker Network Details](/images/integrations/posts//docker_network.png)
+![Docker Network Details](/images/integrations/posts/docker_network.png)

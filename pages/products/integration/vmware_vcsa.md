@@ -13,13 +13,13 @@ image: "/images/integrations/vmware_vcsa.png"
 Monitor and Analyze VMware vCenter Server Appliance (VMware VCSA) 6.5 and 6.7 performance metrics. Check your key metrics of your VCSA overall system state as well as the internal database. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![vmware vcsa metrics](/images/integrations/posts//vcsa-625x1024.png)
+![vmware vcsa metrics](/images/integrations/posts/vcsa-625x1024.png)
 
 
 &nbsp;
 
 
-![vcsa process cpu time](/images/integrations/posts//vcsa_cpu_time.png)
+![vcsa process cpu time](/images/integrations/posts/vcsa_cpu_time.png)
 
 
 ## Some of our **VMware vCenter Server Appliance integration** features are:

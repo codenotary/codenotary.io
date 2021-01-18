@@ -15,7 +15,7 @@ Monitor and Analyze Cisco UCS performance metrics. Correlate events and metrics 
 ## Overall Performance and System load Highlights
 
 
-![Ciso UCS Server Ports](/images/integrations/posts//ciscoucs_pa491-1.png)
+![Ciso UCS Server Ports](/images/integrations/posts/ciscoucs_pa491-1.png)
 
 
 * Port Throughput (RX, TX)

@@ -13,7 +13,7 @@ image: "/images/integrations/datacore.png"
 Monitor and Analyze your DataCore SANSymphony systems configuration and performance metrics. Correlate events and metrics from your Storage system, the underlying operating system and the related infrastructure components (VMware vSphere Datastores aso.). Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![DataCore SANSymphony Integration](/images/integrations/posts//datacore_dashboard.png)
+![DataCore SANSymphony Integration](/images/integrations/posts/datacore_dashboard.png)
 
 
 ## Some of our DataCore SANSymphony integration features are:
@@ -25,4 +25,4 @@ Monitor and Analyze your DataCore SANSymphony systems configuration and performa
 * Combine DataCore SANsymphony metrics with consumer (VMware vSphere, MS * Hyper-V)
 
 
-![Datacore Performance Full Stack summary](/images/integrations/posts//datacore_summary.png)
+![Datacore Performance Full Stack summary](/images/integrations/posts/datacore_summary.png)

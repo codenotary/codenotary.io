@@ -13,7 +13,7 @@ image: "/images/integrations/vmware_vsphere.png"
 Monitor and Analyze VMware vSphere configuration and performance metrics. Correlate events and metrics in guest applications and infrastructure with vSphere metrics. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![VM Performance and Bottlenecks](/images/integrations/posts//e3680d32-vmperformance_0h707l0h707l000000.png)
+![VM Performance and Bottlenecks](/images/integrations/posts/e3680d32-vmperformance_0h707l0h707l000000.png)
 
 
 ## Some of our VMware vSphere integration features are:
@@ -26,4 +26,4 @@ Monitor and Analyze VMware vSphere configuration and performance metrics. Correl
 track VMware Snapshot Usage in real time including historic data
 
 
-![VMware VM Snapshots in real time](/images/integrations/posts//vmsnapshot_img.png)
+![VMware VM Snapshots in real time](/images/integrations/posts/vmsnapshot_img.png)

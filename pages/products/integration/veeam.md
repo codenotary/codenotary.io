@@ -13,7 +13,7 @@ image: "/images/integrations/veeam.png"
 Monitor and Check your Veeam Backups and Replication jobs and metrics. Check your key metrics of your Veeam B&R Server and relate it to your virtual machine or storage performance. Troubleshoot issues using our efficient data crawler and pre-configured dashboards.
 
 
-![Veeam Enterprise Backup Manager Integration](/images/integrations/posts//veeam-1.png)
+![Veeam Enterprise Backup Manager Integration](/images/integrations/posts/veeam-1.png)
 
 
 Some of our **Veeam Enterprise Backup Manager integration** features are:

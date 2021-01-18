@@ -13,19 +13,19 @@ image: "/images/integrations/kubernetes.png"
 Monitor and Analyze Kubernetes configuration and performance metrics. Correlate events and metrics in guest applications and infrastructure with Kubernetes Node and Pod metrics. Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![Node Exporter Full](/images/integrations/posts//k8snode_numa_b-1024x370.png)
+![Node Exporter Full](/images/integrations/posts/k8snode_numa_b-1024x370.png)
 
 
-![Filter by Pod Name](/images/integrations/posts//kubernetes-pod_b.png)
+![Filter by Pod Name](/images/integrations/posts/kubernetes-pod_b.png)
 
 
 If you run Kubernetes on top of VMware vSphere, you can correlate all metrics of both worlds.
 
 
-![Starter VMware Virtual Machines K8s](/images/integrations/posts//starter_vmk8snuma-1-1024x370.png)
+![Starter VMware Virtual Machines K8s](/images/integrations/posts/starter_vmk8snuma-1-1024x370.png)
 
 
-![Starter Kubernetes vSphere](/images/integrations/posts//k8scontainerproc-1-1024x683.png)
+![Starter Kubernetes vSphere](/images/integrations/posts/k8scontainerproc-1-1024x683.png)
 
 
 ## Some of our [Kubernetes](https://www.kubernetes.io/) integration features are:

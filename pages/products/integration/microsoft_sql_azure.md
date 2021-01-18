@@ -13,7 +13,7 @@ image: "/images/integrations/microsoft_sql_azure.png"
 Monitor and Analyze Azure SQL Server configuration and performance metrics. Troubleshoot bottlenecks and capacity issues in minutes using our efficient data crawler and preconfigured dashboards. Easy integration through Azure Management services.
 
 
-![Azure SQL KPIs](/images/integrations/posts//mssql1.png)
+![Azure SQL KPIs](/images/integrations/posts/mssql1.png)
 
 
 ## Some of our Azure SQL Server integration features are:
@@ -24,4 +24,4 @@ Monitor and Analyze Azure SQL Server configuration and performance metrics. Trou
 * Share important data from your SQL Server with your team in real-time
 
 
-![Azure SQL capacity trending](/images/integrations/posts//mssql2.png)
+![Azure SQL capacity trending](/images/integrations/posts/mssql2.png)

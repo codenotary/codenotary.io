@@ -15,18 +15,18 @@ Monitor and Analyze IBM AIX configuration and performance metrics. Correlate eve
 ## Overall Performance and System load Highlights by LPAR
 
 
-![IBM AIX LPAR Performance](/images/integrations/posts//lpar1.png)
+![IBM AIX LPAR Performance](/images/integrations/posts/lpar1.png)
 
 
 ## IOPs view in detail
 
 
-![IBM AIX LPAR NMON](/images/integrations/posts//lpar2.png)
+![IBM AIX LPAR NMON](/images/integrations/posts/lpar2.png)
 
 
 ## Disk view in detail
 
-![IBM AIX Disk detail view](/images/integrations/posts//ibm_aix_2.png)
+![IBM AIX Disk detail view](/images/integrations/posts/ibm_aix_2.png)
 
 
 ## Some of our IBM AIX integration features are:

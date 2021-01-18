@@ -14,7 +14,7 @@ Monitor and Analyze your Oracle Database systems configuration and performance w
 
 Troubleshoot issues using our efficient data crawler and preconfigured dashboards that show database performance down to long running queries.
 
-![Oracle Database Performance](/images/integrations/posts//oracle-1024x510.png)
+![Oracle Database Performance](/images/integrations/posts/oracle-1024x510.png)
 
 ## Oracle Database Performance
 

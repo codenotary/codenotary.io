@@ -15,7 +15,7 @@ Monitor and Analyze your Amazon Web Services infrastructure separately or combin
 Watch current and estimated charges of your Amazon Web Services (AWS) environment per type of service.
 
 
-![AWS Billing](/images/integrations/posts//awsbilling-1.png)
+![AWS Billing](/images/integrations/posts/awsbilling-1.png)
 
 
 ## Some of our AWS integration features are:
@@ -29,7 +29,7 @@ Watch current and estimated charges of your Amazon Web Services (AWS) environmen
 * Share results and real-time dashboard with your team
 
 
-![Check AWS EC2 performance](/images/integrations/posts//AWS_ec2-1.png)
+![Check AWS EC2 performance](/images/integrations/posts/AWS_ec2-1.png)
 
 
 ## Check your AWS EC2 performance
@@ -43,7 +43,7 @@ Watch current and estimated charges of your Amazon Web Services (AWS) environmen
 * Set important thresholds based on custom metrics
  
 
-![AWS RDS OS Usage](/images/integrations/posts//AWS_RDS_OS_l-1.png)
+![AWS RDS OS Usage](/images/integrations/posts/AWS_RDS_OS_l-1.png)
 
 
 ## Check your AWS RDS Database performance

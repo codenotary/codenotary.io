@@ -15,13 +15,13 @@ image: "/images/integrations/solidfire.png"
 Since Performance Analyzer 4.9.2 we support [NetApp SolidFire](https://www.netapp.com/us/products/converged-systems/hyper-converged-infrastructure.aspx), so you can monitor and analyze your NetApp SolidFire HCI systems configuration and performance metrics. Correlate events and metrics from your Storage system, the underlying operating system and the related infrastructure components (VMware vSphere Datastores aso.). Troubleshoot issues using our efficient data crawler and preconfigured dashboards.
 
 
-![NetApp SolidFire extension](/images/integrations/posts//add_solidfire.png)
+![NetApp SolidFire extension](/images/integrations/posts/add_solidfire.png)
 
 
 NetApp SolidFire is a business division of NetApp Inc. that specializes in all-flash storage systems. NetApp acquired SolidFire in early 2016 with the intention of selling its arrays to cloud providers and customers looking to build private clouds, end user computing and workload consolidation.
 
 
-![NetApp solidfire Cluster View](/images/integrations/posts//cluster_view.png)
+![NetApp solidfire Cluster View](/images/integrations/posts/cluster_view.png)
 
 
 Some of our NetApp SolidFire extension metrics collected are:
@@ -97,7 +97,7 @@ Some of our NetApp SolidFire extension metrics collected are:
 * removing
 
 
-![NetApp Solidfire extension dashboards](/images/integrations/posts//navigation-2.png)
+![NetApp Solidfire extension dashboards](/images/integrations/posts/navigation-2.png)
 
 
 That information of our NetApp Solidfire extension is presented very functional and easy to understand with our built in dashboards. Combined with the integrated VMware vSphere dashboards for beginner, advanced users and experts you can gain insights you´ve never been able to see before.

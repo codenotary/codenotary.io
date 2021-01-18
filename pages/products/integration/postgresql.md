@@ -29,7 +29,7 @@ Next thing you can see is a new dashboard and the data flowing into:
 PostgreSQL dashboard
 The header section allows you to select between the database servers and databases.We don’t just collect the server settings, all kinds of metrics and counters, we also show sessions, the queries and their runtime.
 
-![Postgre Sessions](/images/integrations/posts//session.png)
+![Postgre Sessions](/images/integrations/posts/session.png)
 
 ## Collector information:
 
@@ -60,7 +60,7 @@ The header section allows you to select between the database servers and databas
 * deleted tuples
 
 
-![PostgreSQL database stats](/images/integrations/posts//stats.png))
+![PostgreSQL database stats](/images/integrations/posts/stats.png))
 
 ## Database Stats:
 
