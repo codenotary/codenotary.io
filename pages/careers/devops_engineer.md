@@ -3,7 +3,7 @@ title: "DevOps Engineer"
 location: "Europe (Remote)" 
 type: "Full time" 
 requires: ""
-weight: 4
+weight: 8
 active: true
 ---
 

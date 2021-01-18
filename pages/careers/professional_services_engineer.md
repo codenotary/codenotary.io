@@ -3,7 +3,7 @@ title: "Professional Services Engineer"
 location: "Remote (within Europe)" 
 type: "Full time" 
 requires: "That position requires willingness to travel for at least 50% of the time."
-weight: 8
+weight: 6
 active: true
 ---
 

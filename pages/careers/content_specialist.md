@@ -3,7 +3,7 @@ title: "Content Specialist"
 location: "Houston" 
 type: "Full time" 
 requires: ""
-weight: 6
+weight: 9
 active: true
 ---
 
