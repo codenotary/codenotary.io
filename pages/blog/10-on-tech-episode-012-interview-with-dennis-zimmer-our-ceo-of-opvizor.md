@@ -9,7 +9,7 @@ date: "2016-11-08"
 
 On this episode, James Green talked with Dennis Zimmer – friend of the IT community and CEO of Opvizor. In his current capacity, Dennis talks to a lot of IT professionals about the monitoring and troubleshooting issues they have, particularly in vSphere environments. James and Dennis talked about some common misconfigurations or issues that many users experience, as well as how Opvizor is helping users identify and rectify those issues.
 
-Please find [here](http://www.actualtech.io/10-tech-episode-012-vsphere-troubleshooting-dennis-zimmer/) the complete interview and comments.
+Please find [here](http://www.actualtech.io/podcast/012-vsphere-performance-with-dennis-zimmer/) the complete interview and comments.
 
 ### Here is the transcript:
 
