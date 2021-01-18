@@ -77,9 +77,9 @@
 				</i-column>
 				<i-column lg="4">
 					<team-member
-						name="Prof. Assaf Schuster" 
+						name="Prof. Assaf Schuster"
 						position="Scientific Advisor"
-						image="/images/teams/prof-assaf-schuster.jpg"	
+						image="/images/teams/prof-assaf-schuster.jpg"
 					>
 						<p>
 							Prof. Assaf Schuster of the Computer Science Department at the Technion is an ACM fellow and a world leading expert of distributed and scalable data mining, Big Data technologies, cyber security, privacy preserving, cloud resource management, and more.
