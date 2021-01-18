@@ -33,4 +33,4 @@ The hybrid cloud makes it far simpler and easier to manage the huge influx of de
 
 Another issue developers will have to address to leverage the IoT is the deployment of all their applications. This is where the vCloud Air public cloud comes in. A unified hybrid cloud gives the developer the flexibility to deploy and run IoT applications securely while keeping things simple and easy to manage. Without the hybrid cloud, developers could easily become overwhelmed with the complexity of the IoT.
 
-Want a better way to keep up with all things VMware? [Register](https://www.opvizor.com/register/ "Register") with Opvizor today!
+Want a better way to keep up with all things VMware? [Register](https://www.codenotary.com/products/ledger-compliance-metrics-and-logs/ "Register") with Opvizor today!
