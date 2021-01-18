@@ -192,4 +192,4 @@ For more on the truth about checksums and what current best practices are for en
 
  
 
-[Yes, I’d Like to Read That](https://www.codenotary.io/the-problem-with-using-a-download-link/)
+[Yes, I’d Like to Read That](https://www.codenotary.io/blog/the-problem-with-using-a-download-link/)

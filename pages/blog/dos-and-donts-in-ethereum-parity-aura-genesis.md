@@ -92,4 +92,4 @@ If you liked this blog, we recommend checking out another one we wrote on how DL
 
  
 
-[Yes! Take Me to the Blog](https://www.codenotary.io/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/)
+[Yes! Take Me to the Blog](https://www.codenotary.io/blog/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/)

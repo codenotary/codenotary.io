@@ -189,7 +189,7 @@ Delete public key
 
  
 
-Clearly, GPG does have the same level of usability that CodeNotary’s blockchain-based integrity service application does. Furthermore, some of the above-listed commands, i.e. anything executing interaction with the keyserver, are not practical anymore due to the demise of the recent keyserver attack it suffered, which we detailed in our recent blog [**here**](https://www.codenotary.io/gpg-certificates-maybe-permanently-poisoned-but-blockchain-offers-a-strong-alternative/). 
+Clearly, GPG does have the same level of usability that CodeNotary’s blockchain-based integrity service application does. Furthermore, some of the above-listed commands, i.e. anything executing interaction with the keyserver, are not practical anymore due to the demise of the recent keyserver attack it suffered, which we detailed in our recent blog [**here**](https://www.codenotary.io/blog/gpg-certificates-maybe-permanently-poisoned-but-blockchain-offers-a-strong-alternative/). 
 
  
 

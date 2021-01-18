@@ -73,7 +73,7 @@ And it seems there are no real alternatives. The Certificate Spamming Attack has
 
  
 
-That said, blockchain offers a strong alternative to GPG and improves upon its limitations, which we wrote about [here](https://www.codenotary.io/can-gpg-secure-the-software-industry/). It is really the only way to have both global discoverability for users who are unknown to each other and immutably stored proof of content integrity. 
+That said, blockchain offers a strong alternative to GPG and improves upon its limitations, which we wrote about [here](https://www.codenotary.io/blog/can-gpg-secure-the-software-industry/). It is really the only way to have both global discoverability for users who are unknown to each other and immutably stored proof of content integrity. 
 
  
 

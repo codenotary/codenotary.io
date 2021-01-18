@@ -104,4 +104,4 @@ In the meantime, if you liked this blog and think code-signing and digital certi
 
  
 
-[Please, Take Me to the Blog](https://www.codenotary.io/avoid-the-digital-and-code-signing-certificates-journey-of-pain/)
+[Please, Take Me to the Blog](https://www.codenotary.io/blog/avoid-the-digital-and-code-signing-certificates-journey-of-pain/)

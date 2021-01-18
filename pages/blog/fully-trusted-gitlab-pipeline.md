@@ -4,7 +4,7 @@ image: /images/blog/vars-1024x969.png
 date: "2019-11-13"
 ---
 
-As you noticed already, our goal is to make the CodeNotary integration as easy as possible for you. That's the reason why our blog post series continues with [GitLab](http://www.gitlab.com/). So far we covered [Jenkins](https://www.codenotary.io/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/) and [CircleCI](https://www.codenotary.io/validated-builds-using-circleci-ci-cd/) if you want to read them as well. For this blog post we use a GitLab CE installation.
+As you noticed already, our goal is to make the CodeNotary integration as easy as possible for you. That's the reason why our blog post series continues with [GitLab](http://www.gitlab.com/). So far we covered [Jenkins](https://www.codenotary.io/blog/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/) and [CircleCI](https://www.codenotary.io/blog/validated-builds-using-circleci-ci-cd/) if you want to read them as well. For this blog post we use a GitLab CE installation.
 
 This time we go one step further than the former posts and integrate a Git repository check as well.
 

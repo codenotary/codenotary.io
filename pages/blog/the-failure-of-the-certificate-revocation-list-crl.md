@@ -64,7 +64,7 @@ The above table shows the lifecycle of the abusive certificates. (The red-filled
 
  
 
-The delay in reporting and revoking compromised certificates are an example of a major impact of the current mechanism for revocation and leaves high potential wakes of abuse to not only end-users but any entity that questionable software touches with its executables. This was the case with the ASUS ShadowHammer supply chain attack last month that we wrote about [here](https://www.codenotary.io/what-the-asus-software-updates-hijack-teach-us-about-software-supply-chain-risks/).
+The delay in reporting and revoking compromised certificates are an example of a major impact of the current mechanism for revocation and leaves high potential wakes of abuse to not only end-users but any entity that questionable software touches with its executables. This was the case with the ASUS ShadowHammer supply chain attack last month that we wrote about [here](https://www.codenotary.io/blog/what-the-asus-software-updates-hijack-teach-us-about-software-supply-chain-risks/).
 
  
 

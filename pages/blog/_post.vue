@@ -37,7 +37,8 @@ export default {
 	},
 	async asyncData({ $content, params }) {
 		const BLOG_POST_PATH = 'blog';
-		const article = await $content(BLOG_POST_PATH, params.post).fetch();
+		const post = params && params.post ? params.post.replace('.md', '') : '';
+		const article = await $content(BLOG_POST_PATH, post).fetch();
 		const mostPopular = await $content(BLOG_POST_PATH).where({ top: true }).fetch();
 
 		return { article, mostPopular };

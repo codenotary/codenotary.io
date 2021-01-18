@@ -12,7 +12,7 @@ date: "2019-04-29"
 
 Code signing is important for proving the integrity and authenticity of software but can GPG secure the Software Industry?
 
-Digital certificates issued by certificate authorities are generally used to perform this task, but as we know and mentioned in a few blogs, [here](https://www.codenotary.io/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/) and [here](https://www.codenotary.io/with-codenotary-you-never-have-to-pay-for-code-signing-certificates-again/), they have strong limitations, such as:
+Digital certificates issued by certificate authorities are generally used to perform this task, but as we know and mentioned in a few blogs, [here](https://www.codenotary.io/blog/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/) and [here](https://www.codenotary.io/blog/with-codenotary-you-never-have-to-pay-for-code-signing-certificates-again/), they have strong limitations, such as:
 
  
 

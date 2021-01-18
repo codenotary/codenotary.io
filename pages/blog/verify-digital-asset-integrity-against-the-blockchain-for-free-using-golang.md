@@ -14,7 +14,7 @@ CodeNotary’s `vcn` CLI tool with its immutable verification of any digital ass
 
  
 
-For more information on how to sign digital assets, check out our help guide [here](https://www.codenotary.io/help/#vcn_command_line) or our onboarding video [here](https://youtu.be/GrlygvXF1XE?t=421) (it starts at the signing process). And for more on signing with Golang, see our blog [here](https://www.codenotary.io/integrating-blockchain-based-code-signing-into-your-application-using-golang/).
+For more information on how to sign digital assets, check out our help guide [here](https://www.codenotary.io/help/#vcn_command_line) or our onboarding video [here](https://youtu.be/GrlygvXF1XE?t=421) (it starts at the signing process). And for more on signing with Golang, see our blog [here](https://www.codenotary.io/blog/integrating-blockchain-based-code-signing-into-your-application-using-golang/).
 
 ## **Asset Verification**
 

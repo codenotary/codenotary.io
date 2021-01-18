@@ -61,4 +61,4 @@ So, code signing is not only unable to ensure software trust but also a cause of
 
  
 
-If you liked this blog, you should see the second one in the three-part series that covers the signing of a Microsoft Windows Go executable with a code signing certificate. Read part 2 [here](https://www.codenotary.io/the-code-signing-certificates-journey-of-pain-the-saga-continues/)
+If you liked this blog, you should see the second one in the three-part series that covers the signing of a Microsoft Windows Go executable with a code signing certificate. Read part 2 [here](https://www.codenotary.io/blog/the-code-signing-certificates-journey-of-pain-the-saga-continues/)

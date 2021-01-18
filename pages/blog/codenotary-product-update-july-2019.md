@@ -53,7 +53,7 @@ Groups of signers or organizations such as several vendors like [microsoft.com](
 
  
 
-More information can be found on our blog [here](https://www.codenotary.io/guarantee-trust-of-your-companys-deployed-devops-assets-with-blockchain/).
+More information can be found on our blog [here](https://www.codenotary.io/blog/guarantee-trust-of-your-companys-deployed-devops-assets-with-blockchain/).
 
  
 
@@ -83,7 +83,7 @@ The `jvcn-maven` plugin allows for the verification of dependency integrity duri
 
  
 
-More information can be found on our blog [here](https://www.codenotary.io/staying-safe-when-pulling-from-maven-central-and-other-repos/ ) or GitHub repo [here](https://github.com/vchain-us/jvcn-maven-plugin).
+More information can be found on our blog [here](https://www.codenotary.io/blog/staying-safe-when-pulling-from-maven-central-and-other-repos/ ) or GitHub repo [here](https://github.com/vchain-us/jvcn-maven-plugin).
 
  
 
@@ -93,4 +93,4 @@ The JVSCN package is an easy to use JavaScript client for the CodeNotary platfor
 
  
 
-More information can be found on our blog [here](https://www.codenotary.io/bulletproof-your-javascript-app-integrity-for-free-with-blockchain-integration-available-on-npm/) or GitHub repo [here](https://github.com/vchain-us/jsvcn).
+More information can be found on our blog [here](https://www.codenotary.io/blog/bulletproof-your-javascript-app-integrity-for-free-with-blockchain-integration-available-on-npm/) or GitHub repo [here](https://github.com/vchain-us/jsvcn).

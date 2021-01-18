@@ -93,7 +93,7 @@ Docker has an enterprise level image storage solution called Docker Trust Regist
 
  
 
-Ironically, even with all the problems continually surrounding DCs, Docker still uses them as the root of trust for setting up a new DTR linked registry. We have written many times, including [here](https://www.codenotary.io/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/) and [here](https://www.codenotary.io/code-signing-certificates-journey-of-pain-3-when-even-signing-isnt-enough/), about the folly of trusting digital certificates completely.
+Ironically, even with all the problems continually surrounding DCs, Docker still uses them as the root of trust for setting up a new DTR linked registry. We have written many times, including [here](https://www.codenotary.io/blog/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/) and [here](https://www.codenotary.io/blog/code-signing-certificates-journey-of-pain-3-when-even-signing-isnt-enough/), about the folly of trusting digital certificates completely.
 
  
 

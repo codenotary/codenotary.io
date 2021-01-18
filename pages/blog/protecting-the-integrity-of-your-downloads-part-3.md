@@ -12,7 +12,7 @@ date: "2019-06-14"
 
 ## **Intro**
 
-In the first two installments of this series (**[here](https://www.codenotary.io/the-problem-with-using-a-download-link/)** and **[here](https://www.codenotary.io/what-are-checksums-and-how-to-calculate-them-for-downloads/)**), we discovered current best practices for ensuring file integrity when downloading from the web, the potential dangers they have, and traditional ways of verifying a downloaded file’s integrity using checksums. In this blog, we will dive deeper into the process of finding, using, and analyzing checksums as a method for proving integrity. Additionally, we look at the differences between traditional mutable database and immutable, blockchain-based methods for checksum generation and ensuring true download integrity.
+In the first two installments of this series (**[here](https://www.codenotary.io/blog/the-problem-with-using-a-download-link/)** and **[here](https://www.codenotary.io/blog/what-are-checksums-and-how-to-calculate-them-for-downloads/)**), we discovered current best practices for ensuring file integrity when downloading from the web, the potential dangers they have, and traditional ways of verifying a downloaded file’s integrity using checksums. In this blog, we will dive deeper into the process of finding, using, and analyzing checksums as a method for proving integrity. Additionally, we look at the differences between traditional mutable database and immutable, blockchain-based methods for checksum generation and ensuring true download integrity.
 
  
 

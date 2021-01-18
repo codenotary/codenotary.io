@@ -38,7 +38,7 @@ In it you will be able to see your top assets, the number of verifications they 
 
  
 
-This is great for when you need to quickly check assets stats as well as an itemized list of all of your assets, their trust statuses, and the number of asset signatures you have revoked due to bugs, obsolescence, or depreciation. (For more on revocation, check our our blog [here](https://www.codenotary.io/the-failure-of-the-certificate-revocation-list-crl/).)
+This is great for when you need to quickly check assets stats as well as an itemized list of all of your assets, their trust statuses, and the number of asset signatures you have revoked due to bugs, obsolescence, or depreciation. (For more on revocation, check our our blog [here](https://www.codenotary.io/blog/the-failure-of-the-certificate-revocation-list-crl/).)
 
  
 

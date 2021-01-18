@@ -10,7 +10,7 @@ date: "2019-05-10"
 
  
 
-In our last blog ([here)](https://www.codenotary.io/verify-the-integrity-of-a-docker-image-for-free-with-codenotary/), we showed how to sign and verify your build code. With an established baseline, we’ll move on to the really cool stuff that will make your life a whole lot easier. Below are the few, simple steps you can take to get next level, free continuous integrity verification of your [Docker](https://hub.docker.com/) containers. This way as a developer anytime you execute a Docker run command for any over your numerous containers, you can be sure your code is 100% safe the way you intended it to be.
+In our last blog ([here)](https://www.codenotary.io/blog/verify-the-integrity-of-a-docker-image-for-free-with-codenotary/), we showed how to sign and verify your build code. With an established baseline, we’ll move on to the really cool stuff that will make your life a whole lot easier. Below are the few, simple steps you can take to get next level, free continuous integrity verification of your [Docker](https://hub.docker.com/) containers. This way as a developer anytime you execute a Docker run command for any over your numerous containers, you can be sure your code is 100% safe the way you intended it to be.
 
  
 

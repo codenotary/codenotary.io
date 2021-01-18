@@ -8,7 +8,7 @@ This is the third blog of the series and hopefully the last one as I am confiden
 
  
 
-Check out [part 1](https://codenotary.io/avoid-the-digital-and-code-signing-certificates-journey-of-pain/) and [part 2](https://codenotary.io/the-code-signing-certificates-journey-of-pain-the-saga-continues/) in the series if you haven’t already.
+Check out [part 1](https://codenotary.io/blog/avoid-the-digital-and-code-signing-certificates-journey-of-pain/) and [part 2](https://codenotary.io/blog/the-code-signing-certificates-journey-of-pain-the-saga-continues/) in the series if you haven’t already.
 
  
 
@@ -100,4 +100,4 @@ Start your free trial of CodeNotary now and leave the pain behind.
 
  
 
-If you have missed our first two blogs on the topic, you can find them [here](https://www.codenotary.io/avoid-the-digital-and-code-signing-certificates-journey-of-pain/) and [here](https://www.codenotary.io/the-code-signing-certificates-journey-of-pain-the-saga-continues/).
+If you have missed our first two blogs on the topic, you can find them [here](https://www.codenotary.io/blog/avoid-the-digital-and-code-signing-certificates-journey-of-pain/) and [here](https://www.codenotary.io/blog/the-code-signing-certificates-journey-of-pain-the-saga-continues/).

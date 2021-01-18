@@ -78,5 +78,3 @@ The best is to sign up on our landing page for non-commercial projects and then 
 We activate your license as fast as possible (usually within a day) and then you're good to go.
 
 And please don't forget to leave feedback as we love to get your opinion on our products. You can always use our chat to contact us and get your questions answered.
-
-### [Get Your Free License Here](https://www.codenotary.io/codenotary-for-non-commercial-projects/)

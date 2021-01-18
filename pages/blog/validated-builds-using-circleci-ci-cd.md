@@ -4,7 +4,7 @@ image: /images/blog/repo-1024x497.png
 date: "2019-11-08"
 ---
 
-As [CircleCI](https://circleci.com/) is one of the most popular CI/CD tools in the market, it was no surprise to us that we got plenty of requests lately. Users were noticing the [Jenkins](https://www.codenotary.io/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/) integration in our blog posts and we're wondering how the CircleCI would look like.
+As [CircleCI](https://circleci.com/) is one of the most popular CI/CD tools in the market, it was no surprise to us that we got plenty of requests lately. Users were noticing the [Jenkins](https://www.codenotary.io/blog/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/) integration in our blog posts and we're wondering how the CircleCI would look like.
 
 We listened and here comes the CircleCI integration to produce validated builds that can be verified and authenticated by anyone from everywhere.
 

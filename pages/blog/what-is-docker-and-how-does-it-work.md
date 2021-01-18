@@ -53,7 +53,7 @@ For more information on how to secure the integrity of your Docker /images/blog 
 
  
 
-[Yes, Take Me to the Blog](https://www.codenotary.io/verify-the-integrity-of-a-docker-image-for-free-with-codenotary/)
+[Yes, Take Me to the Blog](https://www.codenotary.io/blog/verify-the-integrity-of-a-docker-image-for-free-with-codenotary/)
 
  
 

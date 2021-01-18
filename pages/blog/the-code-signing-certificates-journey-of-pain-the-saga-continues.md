@@ -8,7 +8,7 @@ date: "2019-03-11"
 
 Incredibly, after nearly 3 weeks of back and forth, we finally find a way to get the certificate approval process going, our CPA (to approve our phone number) has been called and our office has been called as well. You can’t choose what number they call, they check it online using DUNS or other services. And this is just the beginning of how the code signing certificates' journey of pain saga continues. 
 
-If you haven't read part 1 in the Journey of Pain series, you can do so [here](https://codenotary.io/avoid-the-digital-and-code-signing-certificates-journey-of-pain/)
+If you haven't read part 1 in the Journey of Pain series, you can do so [here](https://codenotary.io/blog/avoid-the-digital-and-code-signing-certificates-journey-of-pain/)
 
 ## Next steps for creating a certificate aka having your teeth pulled
 

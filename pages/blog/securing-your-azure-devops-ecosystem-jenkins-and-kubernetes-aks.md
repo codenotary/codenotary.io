@@ -6,7 +6,7 @@ date: "2019-10-23"
 
 ## Securing your Azure DevOps Ecosystem, Jenkins and Kubernetes (AKS) - Part 2
 
-The first part of the series about securing your Azure DevOps ecosystem covered Jenkins and the integration of CodeNotary into your Jenkins pipeline. That way you an easily notarize everything that gets produced in your very own pipeline. If you want to double check the blog post - [please click here](https://www.codenotary.io/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/).
+The first part of the series about securing your Azure DevOps ecosystem covered Jenkins and the integration of CodeNotary into your Jenkins pipeline. That way you an easily notarize everything that gets produced in your very own pipeline. If you want to double check the blog post - [please click here](https://www.codenotary.io/blog/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/).
 
 This second part covers the authentication process when your Jenkins pipeline deployed container into your Azure Kubernetes (AKS). That way you can make sure, that nothing unknown or unwanted runs in AKS. You can of course configure alerts as well.
 

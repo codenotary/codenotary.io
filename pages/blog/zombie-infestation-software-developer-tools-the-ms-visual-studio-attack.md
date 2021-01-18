@@ -16,7 +16,7 @@ In what can be seen as an ironic twist of fate, digital security firms Kaspersky
 
 ## **Overview of What Happened**
 
-Both Kaspersky and ESET discovered clues that connect the Microsoft Visual Studio event to the ASUS attack, which we wrote about previously [here](https://www.codenotary.io/what-the-asus-software-updates-hijack-teach-us-about-software-supply-chain-risks/)**.** However, the execution tactics are escalating into a huge area of vulnerability for the software industry. Namely these attacks are targeting more and more upstream in the software supply chain and are taking aim at the developer tools themselves.
+Both Kaspersky and ESET discovered clues that connect the Microsoft Visual Studio event to the ASUS attack, which we wrote about previously [here](https://www.codenotary.io/blog/what-the-asus-software-updates-hijack-teach-us-about-software-supply-chain-risks/)**.** However, the execution tactics are escalating into a huge area of vulnerability for the software industry. Namely these attacks are targeting more and more upstream in the software supply chain and are taking aim at the developer tools themselves.
 
  
 
@@ -36,7 +36,7 @@ The level of sophistication was taken up a notch, as researchers into the event 
 
 ## **The Role of Compromised Digital Signatures**
 
-Somehow (it is still unknown) the attackers were able to attain and use two valid digital certificates in order to keep their malware flying under the radar. Digital certificates are one level of security but due to their limitations, which we have written about several times including [here](https://www.codenotary.io/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/) and [here](https://www.codenotary.io/code-signing-certificates-journey-of-pain-3-when-even-signing-isnt-enough/), are not enough to ensure integrity throughout the entire software lifecycle.
+Somehow (it is still unknown) the attackers were able to attain and use two valid digital certificates in order to keep their malware flying under the radar. Digital certificates are one level of security but due to their limitations, which we have written about several times including [here](https://www.codenotary.io/blog/the-distributed-ledger-technology-at-the-center-of-the-code-signing-disruption/) and [here](https://www.codenotary.io/blog/code-signing-certificates-journey-of-pain-3-when-even-signing-isnt-enough/), are not enough to ensure integrity throughout the entire software lifecycle.
 
  
 
@@ -44,7 +44,7 @@ Digital certificates only address the final product and not the incremental step
 
  
 
-Furthermore, due to the previously mentioned fact, digital certificates become a huge centralized point of failure and a glaring liability, especially if they have been used to sign large amounts of shipped software. In such cases, revocation for publishers, which you can read more about in our blog [here](https://www.codenotary.io/the-failure-of-the-certificate-revocation-list-crl/), becomes a nightmare to think about.
+Furthermore, due to the previously mentioned fact, digital certificates become a huge centralized point of failure and a glaring liability, especially if they have been used to sign large amounts of shipped software. In such cases, revocation for publishers, which you can read more about in our blog [here](https://www.codenotary.io/blog/the-failure-of-the-certificate-revocation-list-crl/), becomes a nightmare to think about.
 
  
 

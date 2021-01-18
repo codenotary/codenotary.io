@@ -14,7 +14,7 @@ date: "2019-06-26"
 
 Knowing if your digital assets are safe to use will help you avoid complications from compromised or erroneous code running within your development, test, and production environments. This blog will walk you through the process of integrating blockchain-based code signing into your application using Golang.
 
-For more on verifying with Golang, see our previous blog **[here](https://www.codenotary.io/verify-digital-asset-integrity-against-the-blockchain-for-free-using-golang/)**.
+For more on verifying with Golang, see our previous blog **[here](https://www.codenotary.io/blog/verify-digital-asset-integrity-against-the-blockchain-for-free-using-golang/)**.
 
 ### **Signing Assets**
 

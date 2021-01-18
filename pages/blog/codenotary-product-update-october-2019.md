@@ -55,9 +55,9 @@ You can remove Trust from any digital asset at any point in time. That feature i
 
 Check out our latest blog posts that cover Microsoft Azure DevOps, but can be adopted to any Jenkins and/or Kubernetes environment:
 
-[Securing your Azure DevOps Ecosystem, Jenkins and Kubernetes (AKS) using CodeNotary – Part 1](https://www.codenotary.io/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/)
+[Securing your Azure DevOps Ecosystem, Jenkins and Kubernetes (AKS) using CodeNotary – Part 1](https://www.codenotary.io/blog/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks-using-codenotary-part-1/)
 
-[Securing your Azure DevOps Ecosystem – Part 2](https://www.codenotary.io/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks/)
+[Securing your Azure DevOps Ecosystem – Part 2](https://www.codenotary.io/blog/securing-your-azure-devops-ecosystem-jenkins-and-kubernetes-aks/)
 
 ## Digital Asset Details
 

@@ -10,7 +10,7 @@ date: "2019-08-08"
 
  
 
-2018 witnessed a near doubling of the amount of money lost to cybercriminals at an alarming $2.7 billion according to the latest FBI Internet Crime Report. The figure takes into account various types of internet fraud, including those that utilize irreversible wire transfers, which attackers love. In our previous blog in the series [here](https://www.codenotary.io/protecting-against-120mm-invoice-scam-loss-using-blockchain/), we talked about invoice fraud. This blog discusses the liability companies and individuals bare when attacks happen, various different tactics hackers use to achieve fraudulent wire transfers, best practices for data security, and how to mitigate the risk and fallout of an attack using blockchain.
+2018 witnessed a near doubling of the amount of money lost to cybercriminals at an alarming $2.7 billion according to the latest FBI Internet Crime Report. The figure takes into account various types of internet fraud, including those that utilize irreversible wire transfers, which attackers love. In our previous blog in the series [here](https://www.codenotary.io/blog/protecting-against-120mm-invoice-scam-loss-using-blockchain/), we talked about invoice fraud. This blog discusses the liability companies and individuals bare when attacks happen, various different tactics hackers use to achieve fraudulent wire transfers, best practices for data security, and how to mitigate the risk and fallout of an attack using blockchain.
 
  
 
