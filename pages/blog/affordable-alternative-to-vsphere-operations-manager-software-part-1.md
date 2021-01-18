@@ -57,4 +57,4 @@ Millie Cruz, another amazing customer of us used Performance Analyzer for 2 week
 
 We´re going to continue that series of blog posts soon - in the meantime, just start your free trial of Performance Analyzer
 
-[![Download Performance Analyzer](/images/blog/button_download-performance-analyzer.png)](http://try.opvizor.com/perfanalyzer)
+[![Download Performance Analyzer](/images/blog/button_download-performance-analyzer.png)](https://www.codenotary.com/products/ledger-compliance-metrics-and-logs)

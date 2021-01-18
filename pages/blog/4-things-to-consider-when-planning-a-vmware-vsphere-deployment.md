@@ -39,6 +39,6 @@ _![VMware vSphere Deployment - monitor your clients](/images/blog/wpid-bigstock-
 
 _You won't be able to get a good read on each client's metrics during the first day or first few days. Monitor your customers over the course of a whole month to get a clear picture of the average and peak workloads you're dealing with._
 
-Another common deployment mistake is to monitor clients for just a day or less to determine their needs. Average and peak usage can't really be measured unless you [monitor the situation for a full month](http://searchitchannel.techtarget.com/feature/VSphere-requirements-for-hardware-and-deployment). By then, you should have collected adequate metrics to properly address the average and peak workloads of each customer.
+Another common deployment mistake is to monitor clients for just a day or less to determine their needs. Average and peak usage can't really be measured unless you [monitor the situation for a full month](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.install.doc/GUID-BE89A906-6D49-4793-88BB-C63112E3B131.html). By then, you should have collected adequate metrics to properly address the average and peak workloads of each customer.
 
 A little planning now can save you a lot of trouble, expense, and frustration in the long run. For a near-time monitoring solution to improve your VMware performance and free up as much as 60% of your time, [visit Opvizor today](https://www.opvizor.com/).

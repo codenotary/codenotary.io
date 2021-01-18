@@ -83,7 +83,7 @@ Click below to secure your DevOps’ microservices assets and CICD pipeline with
 
  
 
-[Yes, Show Me How](https://www.codenotary.io/how-it-works/)
+[Yes, Show Me How](https://www.codenotary.com/products/ci-cd)
 
  
 
@@ -96,7 +96,5 @@ Click below to secure your DevOps’ microservices assets and CICD pipeline with
 [https://stackify.com/microservices-containers/](https://stackify.com/microservices-containers/)
 
 [https://www.prnewswire.com/news-releases/1-8-billion-cloud-microservices-market---global-forecast-to-2023--300665538.html](https://www.prnewswire.com/news-releases/1-8-billion-cloud-microservices-market---global-forecast-to-2023--300665538.html)
-
-[https://www.marketwatch.com/press-release/cloud-microservices-market-size-2018-global-trends-industry-share-growth-drivers-business-opportunities-and-demand-forecast-to-2023-2019-02-13](https://www.marketwatch.com/press-release/cloud-microservices-market-size-2018-global-trends-industry-share-growth-drivers-business-opportunities-and-demand-forecast-to-2023-2019-02-13)
 
 [https://www.csoonline.com/article/3268922/why-securing-containers-and-microservices-is-a-challenge.html](https://www.csoonline.com/article/3268922/why-securing-containers-and-microservices-is-a-challenge.html)

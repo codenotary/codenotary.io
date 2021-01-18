@@ -39,4 +39,4 @@ Normally, it takes large enterprises a long time to recognize, evaluate, and imp
 
 Are you looking for a better VMware vSphere monitoring solution? 
 
-[Register](https://www.opvizor.com/register/) for Opvizor today.
+[Register](https://www.codenotary.com/products/ledger-compliance-metrics-and-logs) for Opvizor today.

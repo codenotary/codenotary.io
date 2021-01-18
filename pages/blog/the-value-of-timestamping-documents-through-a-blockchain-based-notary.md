@@ -79,7 +79,7 @@ Since they rely on an entire network of autonomously run nodes and don’t rely 
 
  
 
-[See More on How CodeNotary Works](https://www.codenotary.io/how-it-works/)
+[See More on How CodeNotary Works](https://codenotary.com/products/ci-cd)
 
  
 

@@ -5,7 +5,7 @@ tags: ["Ops", "opvizor"]
 date: "2015-12-22"
 ---
 
-VMware has issued their 2015 State of Business Mobility Report, which takes an in-depth look at the status of business mobility within organizations around the world and across industries. Conducted [in July](http://money.cnn.com/news/newsfeeds/articles/marketwire/11G071538-001.htm), this report represents responses by decision makers within each organization, as well as IT professionals, and takes a look at the progress being made around the globe in terms of transitioning from the age of the client-server into the age of the mobile cloud.
+VMware has issued their 2015 State of Business Mobility Report, which takes an in-depth look at the status of business mobility within organizations around the world and across industries. Conducted [in July](https://www.globenewswire.com/news-release/2015/11/11/1325920/0/en/VMware-2015-State-of-Business-Mobility-Report-Finds-Mobility-Investments-Drive-Infrastructure-App-and-Process-Changes.html), this report represents responses by decision makers within each organization, as well as IT professionals, and takes a look at the progress being made around the globe in terms of transitioning from the age of the client-server into the age of the mobile cloud.
 
 Core Business Processes Going Mobile
 
