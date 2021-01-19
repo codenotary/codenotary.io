@@ -29,7 +29,7 @@ It is recommended to use IBM Z's extensive crypto-hardware support (for example 
 - Step 1: pull the original signing program or script and verify it
 - Step 2: generate checksum of his source code and set it in immudb
 
-Now a build-job would look almost the same. First, the source will be verified. With immudb it is also possible to look up the history. An object with an unclear history wouldn't be able to get into production. 
+Now a build-job would look almost the same. First, the source will be verified. With immudb it is also possible to look up the history. An object with an unclear history wouldn't be able to get into production. The program can then be build from the trusted source and the resulting load module has to be notarized.  
 
 ### Example
 
@@ -88,8 +88,6 @@ public class Main {
                     return line;
                 }
                 }
-            } else{
-                return "HTTP_OK, but error at input";
             }
         return "Error code: "+Integer.toString(httpURLConnection.getResponseCode());
         }
@@ -120,6 +118,14 @@ Read in the file for creating the checksum. Use JZOS (com.ibm.jzos) and a hash-f
 
 With z/OS it is possible to detect changes of datasets. There are two ways of doing that. Either write a started task and listen to the [SMF realtime api](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieac100/ieac1-smf-inmem.htm) (SMF15) or monitor a module that gets loaded by CLOSE via CSVEXIT. Intercepting the CLOSE SVC is a delicate job but possible. Then use the name of the changed dataset create a hash and set it in immudb. That way you can track changes of datasets immutably and tamperproof.
 
+### Overcoming EBCDIC and ASCII conversion challenges
+Objects will change their checksum when they are transformed from EBCDIC to ASCII and the other way around. Many code signing solutions will lose track of the object. Immudb is capable of storing JSON-Objects as value. Metadata can be added to an object referencing at the ASCII/EBCDIC checksum of the object. 
+```json
+{
+  "ascii.checksum" : "d7e4d83a94d161837aa4038cbaf9708b2bb2d91675a20493a982ce4b17d8012e"
+  "ebcdic.checksum": "cffeab52f4f186936e3697bf1c69a6ec72d298ff94e0b40d603f453285707e2e"
+}
+```
 
 ## Immutability for Db2
 
@@ -149,6 +155,7 @@ CALL IMMUDB.JAVAPROC(:TABLE,
 ```
 Immudbs performance can keep up with high-speed databases. Add immutability to your database, not just by offline tape.
 <img src="/images/blog/database2.jpg">
+
 
 
 
