@@ -119,7 +119,7 @@ Read in the file for creating the checksum. Use JZOS (com.ibm.jzos) and a hash-f
 With z/OS it is possible to detect changes of datasets. There are two ways of doing that. Either write a started task and listen to the [SMF realtime api](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieac100/ieac1-smf-inmem.htm) (SMF15) or monitor a module that gets loaded by CLOSE via CSVEXIT. Intercepting the CLOSE SVC is a delicate job but possible. Then use the name of the changed dataset create a hash and set it in immudb. That way you can track changes of datasets immutably and tamperproof.
 
 ### Overcoming EBCDIC and ASCII conversion challenges
-Objects will change their checksum when they are transformed from EBCDIC to ASCII and the other way around. Many code signing solutions will lose track of the object. Immudb is capable of storing JSON-Objects as value. Metadata can be added to an object referencing at the ASCII/EBCDIC checksum of the object. 
+Objects will change their checksum when they are converted from EBCDIC to ASCII and the other way around. Many code signing solutions will lose track of the object. Immudb is capable of storing JSON-Objects as value. Metadata can be added to an object referencing at the ASCII/EBCDIC checksum of the object. 
 ```json
 {
   "ascii.checksum" : "d7e4d83a94d161837aa4038cbaf9708b2bb2d91675a20493a982ce4b17d8012e"
