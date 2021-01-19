@@ -39,7 +39,7 @@ CodeNotary can cover the whole supply chain. Instead of just signing the final b
 
 ## Get started!
 
-Try out now and sign up for [CodeNotary](https://codenotary.com/technologies/ci-cd). Download the vcn CLI app for  Linux, MacOS or Windows. Follow the installation instructions.
+Try out now and sign up for [CodeNotary](https://dashboard.codenotary.io/auth/signup). Download the vcn CLI app for  Linux, MacOS or Windows. Follow the installation instructions.
 
 -Start vcn and login. Use the E-mail address that you registered and your password.
 

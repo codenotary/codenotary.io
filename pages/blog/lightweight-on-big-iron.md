@@ -89,9 +89,9 @@ public class Main {
                 }
                 }
             } else{
-                return "ERROR";
+                return "HTTP_OK, but error at input";
             }
-        return "";
+        return "Error code: "+Integer.toString(httpURLConnection.getResponseCode());
         }
 ```
 The first request will be the login request. The Api returns a token that will be used as authorization string later on.
@@ -118,7 +118,7 @@ Read in the file for creating the checksum. Use JZOS (com.ibm.jzos) and a hash-f
 ```
 ### Getting checksums of datasets on change
 
-With z/OS it is possible to detect changes of datasets. There are two ways of doing that. Either write a started task and listen to the [SMF realtime api](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieac100/ieac1-smf-inmem.htm) or monitor a module that gets loaded by CLOSE via CSVEXIT. Intercepting the CLOSE SVC is a delicate job but possible. Then use the name of the changed dataset create a hash and set it in immudb. That way you can track changes of datasets immutably and tamperproof.
+With z/OS it is possible to detect changes of datasets. There are two ways of doing that. Either write a started task and listen to the [SMF realtime api](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieac100/ieac1-smf-inmem.htm) (SMF15) or monitor a module that gets loaded by CLOSE via CSVEXIT. Intercepting the CLOSE SVC is a delicate job but possible. Then use the name of the changed dataset create a hash and set it in immudb. That way you can track changes of datasets immutably and tamperproof.
 
 
 ## Immutability for Db2
