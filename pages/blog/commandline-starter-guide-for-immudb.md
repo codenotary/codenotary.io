@@ -193,7 +193,7 @@ Clients can now switch to the newly created database. One of the most requested 
 
 
 ## Immutability without a headache
-In this blog, we have shown that using immudb no hassle. In fact you can try it out and test its functionalities without having to code. 
+In this blog, we have shown that using immudb is no hassle. In fact you can try it out and test its functionalities without having to code. 
 Get new ideas and imagine how to make your data immutable. 
 immudb can scale with your applications providing immutability and adding trust to businesses. 
 
