@@ -33,7 +33,7 @@ Now a build-job would look almost the same. First, the source will be verified. 
 
 ### Example
 
-In this blog we are showing how to communicate with immudb/immugw by using java. Java is a good candidate because it works in every environment even in Db2 as a stored procedure. It is possible to backup data of Db2 tables on change. More about that later.
+In this blog we are showing how to communicate with immudb/immugw by using java. Java is a good candidate because it works in every environment even in DB2 as a stored procedure. It is possible to backup data of DB2 tables on change. More about that later.
 
 Our Java programm can be run as step in JCL Jobs (for example: build jobs or jobs that are altering). The target dataset can be set as variable in JCL and passed to the java program.
 ```jcl
@@ -121,11 +121,11 @@ Read in the file for creating the checksum. Use JZOS (com.ibm.jzos) and a hash-f
 With z/OS it is possible to detect changes of datasets. There are two ways of doing that. Either write a started task and listen to the [SMF realtime api](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieac100/ieac1-smf-inmem.htm) (SMF15) or monitor a module that gets loaded by CLOSE via CSVEXIT. Intercepting the CLOSE SVC is a delicate job but possible. Then use the name of the changed dataset create a hash and set it in immudb. That way you can track changes of datasets immutably and tamperproof.
 
 
-## Immutability for Db2
+## Immutability for DB2
 
 A possible cyber-attack could focus on databases. Cybercriminals could gain access to databases by using SQL injections. They then use their access levels to encrypt whatever they get their hands on. Immudb can keep up with the fastest databases and back up their data. Read more about that in our [randomware](https://www.codenotary.com/blog/immutability-vs-ransomware) blog.
 
-Triggers in Db2 will notify about changes of tables. Set an [alter trigger](https://www.ibm.com/support/knowledgecenter/SSEPEK_12.0.0/sqlref/src/tpc/db2z_sql_altertriggeradvanced.html) and execute a stored procedure to store the new data of the table in immudb. Push the java code to Db2 and create the stored procedure. After that, it is callable by SQL. When the trigger is called, set the parameters and call javaproc. Use the OUT STATUS variable to report the HTTP-Code.
+Triggers in DB2 will notify about changes of tables. Set an [alter trigger](https://www.ibm.com/support/knowledgecenter/SSEPEK_12.0.0/sqlref/src/tpc/db2z_sql_altertriggeradvanced.html) and execute a stored procedure to store the new data of the table in immudb. Push the java code to DB2 and create the stored procedure. After that, it is callable by SQL. When the trigger is called, set the parameters and call javaproc. Use the OUT STATUS variable to report the HTTP-Code.
 
 ```SQL
 CREATE PROCEDURE JAVAPROC (IN TABLE CHAR(99),
