@@ -20,7 +20,7 @@
 		</div>
 
 		<p class="description lead">
-			immudb - the lightweight, high-speed immutable database for systems and applications. Open Source and easy to integrate into any existing application.
+			immudb - world’s fastest immutable database. Open Source and easy to use in new applications and easy to integrate into existing application.
 		</p>
 
 		<p class="action">
