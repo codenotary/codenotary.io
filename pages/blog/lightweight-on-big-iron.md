@@ -29,11 +29,11 @@ It is recommended to use IBM Z's extensive crypto-hardware support (for example 
 - Step 1: pull the original signing program or script and verify it
 - Step 2: generate checksum of his source code and set it in immudb
 
-Now a build-job would look almost the same. First, the source will be verified. With immudb it is also possible to look up the history. An object with an unclear history wouldn't be able to get into production. 
+Now a build-job would look almost the same. First, the source will be verified. With immudb it is also possible to look up the history. An object with an unclear history wouldn't be able to get into production. The program can then be build from the trusted source and the resulting load module has to be notarized. 
 
 ### Example
 
-In this blog we are showing how to communicate with immudb/immugw by using java. Java is a good candidate because it works in every environment even in Db2 as a stored procedure. It is possible to backup data of Db2 tables on change. More about that later.
+In this blog we are showing how to communicate with immudb/immugw by using java. Java is a good candidate because it works in every environment even in DB2 as a stored procedure. It is possible to backup data of DB2 tables on change. More about that later.
 
 Our Java programm can be run as step in JCL Jobs (for example: build jobs or jobs that are altering). The target dataset can be set as variable in JCL and passed to the java program.
 ```jcl
@@ -88,10 +88,8 @@ public class Main {
                     return line;
                 }
                 }
-            } else{
-                return "ERROR";
             }
-        return "";
+        return "Error code: "+Integer.toString(httpURLConnection.getResponseCode());
         }
 ```
 The first request will be the login request. The Api returns a token that will be used as authorization string later on.
@@ -118,14 +116,22 @@ Read in the file for creating the checksum. Use JZOS (com.ibm.jzos) and a hash-f
 ```
 ### Getting checksums of datasets on change
 
-With z/OS it is possible to detect changes of datasets. There are two ways of doing that. Either write a started task and listen to the [SMF realtime api](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieac100/ieac1-smf-inmem.htm) or monitor a module that gets loaded by CLOSE via CSVEXIT. Intercepting the CLOSE SVC is a delicate job but possible. Then use the name of the changed dataset create a hash and set it in immudb. That way you can track changes of datasets immutably and tamperproof.
+With z/OS it is possible to detect changes of datasets. There are two ways of doing that. Either write a started task and listen to the [SMF realtime api](https://www.ibm.com/support/knowledgecenter/SSLTBW_2.3.0/com.ibm.zos.v2r3.ieac100/ieac1-smf-inmem.htm) (SMF15) or monitor a module that gets loaded by CLOSE via CSVEXIT. Intercepting the CLOSE SVC is a delicate job but possible. Then use the name of the changed dataset create a hash and set it in immudb. That way you can track changes of datasets immutably and tamperproof.
 
+### Overcoming EBCDIC and ASCII conversion challenges
+Objects will change their checksum when they are converted from EBCDIC to ASCII and the other way around. Many code signing solutions will lose track of the object. Immudb is capable of storing JSON-Objects as value. Metadata can be added to an object referencing at the ASCII/EBCDIC checksum of the object. 
+```json
+{
+  "ascii.checksum" : "d7e4d83a94d161837aa4038cbaf9708b2bb2d91675a20493a982ce4b17d8012e"
+  "ebcdic.checksum": "cffeab52f4f186936e3697bf1c69a6ec72d298ff94e0b40d603f453285707e2e"
+}
+```
 
-## Immutability for Db2
+## Immutability for DB2
 
 A possible cyber-attack could focus on databases. Cybercriminals could gain access to databases by using SQL injections. They then use their access levels to encrypt whatever they get their hands on. Immudb can keep up with the fastest databases and back up their data. Read more about that in our [randomware](https://www.codenotary.com/blog/immutability-vs-ransomware) blog.
 
-Triggers in Db2 will notify about changes of tables. Set an [alter trigger](https://www.ibm.com/support/knowledgecenter/SSEPEK_12.0.0/sqlref/src/tpc/db2z_sql_altertriggeradvanced.html) and execute a stored procedure to store the new data of the table in immudb. Push the java code to Db2 and create the stored procedure. After that, it is callable by SQL. When the trigger is called, set the parameters and call javaproc. Use the OUT STATUS variable to report the HTTP-Code.
+Triggers in DB2 will notify about changes of tables. Set an [alter trigger](https://www.ibm.com/support/knowledgecenter/SSEPEK_12.0.0/sqlref/src/tpc/db2z_sql_altertriggeradvanced.html) and execute a stored procedure to store the new data of the table in immudb. Push the java code to DB2 and create the stored procedure. After that, it is callable by SQL. When the trigger is called, set the parameters and call javaproc. Use the OUT STATUS variable to report the HTTP-Code.
 
 ```SQL
 CREATE PROCEDURE JAVAPROC (IN TABLE CHAR(99),
