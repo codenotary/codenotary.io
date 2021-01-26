@@ -1,6 +1,5 @@
 <template>
 	<page-section id="ztc-join-section">
-		<join-ztc-modal v-model="joinZtcModalVisible" />
 		<i-container>
 			<i-row>
 				<i-column>
@@ -14,6 +13,7 @@
 					>
 						Join the Consortium
 					</i-button>
+					<join-ztc-modal v-model="joinZtcModalVisible" />
 				</i-column>
 			</i-row>
 		</i-container>
@@ -38,11 +38,11 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #ztc-join-section {
+	text-align: center;
+	background-color: $color-primary;
+
 	h2 {
 		color: white;
 	}
-
-	text-align: center;
-	background-color: $color-primary;
 }
 </style>

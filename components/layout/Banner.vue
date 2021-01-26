@@ -1,19 +1,22 @@
 <template>
 	<section class="banner _justify-content-center">
 		<div class="_display-flex _align-items-center">
-			<fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" />
+			<!-- <fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" /> -->
 			<span class="lead _font-weight-bold">
-				CodeNotary announces acquisition of Opvizor
+				Free tamperproof timestamp service for your CI/CD process
 			</span>
 		</div>
 		<div class="_display-flex _align-items-center">
-			<i-button
+			<a
 				class="_margin-left-2 _font-weight-bold" variant="dark"
-				outline size="sm"
-				:to="{ name: 'blog-post', params: { post: 'vchain-completes-aquisition-of-ledger-and-log-compliance-company-opvizor' } }"
+				outline
+				size="sm"
+				:href="'https://timestamp.codenotary.com'"
+				target="_blank"
+				rel="noopener"
 			>
 				Learn more
-			</i-button>
+			</a>
 		</div>
 	</section>
 </template>
