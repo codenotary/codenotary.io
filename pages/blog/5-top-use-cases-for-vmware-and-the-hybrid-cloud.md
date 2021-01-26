@@ -19,7 +19,7 @@ This use case is the most natural way to ease into the hybrid cloud. Using the [
 
 ## 2\. Moving Packaged Applications to the Hybrid Cloud
 
-IT departments frequently have to contend with the frustration associated with on-demand capacity, especially during times of change. Relocating [packaged applications to the hybrid cloud](http://www.infoq.com/zones/assets/downloads/WhitePaper_Top_5_Use_Cases_for_Moving_to_a_Hybrid_Cloud.pdf) can solve this issue. Packaged applications like email and collaboration tools allow you to transfer those workloads without the need to write code or even deal with the hassle of reconfigurations. There are no additional security concerns, no loss of availability, and no degradation in performance. Plus, the users are already used to working with the apps in your own IT environment.
+IT departments frequently have to contend with the frustration associated with on-demand capacity, especially during times of change. Relocating [packaged applications to the hybrid cloud](https://www.techprohub.com/top-5-use-cases-for-moving-to-a-hybrid-cloud-solution/) can solve this issue. Packaged applications like email and collaboration tools allow you to transfer those workloads without the need to write code or even deal with the hassle of reconfigurations. There are no additional security concerns, no loss of availability, and no degradation in performance. Plus, the users are already used to working with the apps in your own IT environment.
 
 ## 3\. Moving E-Commerce & Websites to the Hybrid Cloud
 
