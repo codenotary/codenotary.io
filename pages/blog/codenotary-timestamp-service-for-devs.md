@@ -37,7 +37,7 @@ There are plenty of different use cases:
 * Simply timestamp files and sources to doublecheck at any time in the future if these are still the same (backup/restore)
 
 
-**Simply request your API key and get started within a minute! This service is free forever and was built using Open Source!** :trophy:
+**Simply request your API key and get started within a minute! This service is free forever and was built using Open Source!** 
 
 
 Notarized assets informations is stored in a tamperproof ledger with cryptographic verification backed by [immudb](https://codenotary.com/technologies/immudb/), the immutable database.
@@ -242,9 +242,4 @@ It's possible to filter results by signer identifier:
 ```shell script
 vcn inspect document.pdf --signerID Cyg...
 ```
-
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vchain-us/vcn/master/docs/timestamp.svg?sanitize=true" width="1024" alt="CodeNotary Timestamp Jumpstart">
-</p>
 
