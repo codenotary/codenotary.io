@@ -15,7 +15,7 @@
 				target="_blank"
 				rel="noopener"
 			>
-				Learn more
+				Start now
 			</a>
 		</div>
 	</section>

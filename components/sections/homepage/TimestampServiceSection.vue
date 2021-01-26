@@ -20,7 +20,7 @@
 							target="_blank"
 							rel="noopener"
 						>
-							Learn more
+							Start now
 						</i-button>
 					</div>
 				</i-column>
