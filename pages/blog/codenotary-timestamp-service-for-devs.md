@@ -71,9 +71,9 @@ vcn n <file|dir://directory|docker://dockerimage|git://gitdirectory>
 
 4. **Authenticate digital objects** You can use the command as a starting point.
 
-   ```bash
-   vcn a <file|dir://directory|docker://dockerimage|git://gitdirectory>
-   ```
+```bash
+vcn a <file|dir://directory|docker://dockerimage|git://gitdirectory>
+```
 
 For detailed **command line usage**, just run `vcn help`.
 
