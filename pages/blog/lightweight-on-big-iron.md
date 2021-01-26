@@ -27,7 +27,7 @@ Immudb and immugw can be deployed on Linux on Z without a hassle. Git clone the 
 
 ## Application design
 
-One challenge of running highly critical systems is to ensure that no one tampered production software, as I described above. Let’s start with a basic example, a developer pushed code into a protected library. Now he wants to notarize that member using immudb. He can do so by using a batch job that has the following steps:
+One challenge of running highly critical systems is to ensure that no one tampered production software, as described above. Let’s start with a basic example, a developer pushed code into a protected library. Now he wants to notarize that member using immudb. He can do so by using a batch job that has the following steps:
 - Step 1: pull the original signing program or script and verify it
 - Step 2: generate checksum of his source code and set it in immudb
 
