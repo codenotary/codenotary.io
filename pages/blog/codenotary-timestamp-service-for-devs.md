@@ -79,7 +79,7 @@ For detailed **command line usage**, just run `vcn help`.
 
 ## Usage
 
-### Wildcard support and recursive notarization
+#### Wildcard support and recursive notarization
 
 It's also possible to notarize assets using a wildcard pattern.
 
@@ -88,7 +88,7 @@ With `--recursive` flag the utility can recursively notarize inner directories.
 vcn n "*.md" --recursive
 ```
 
-### Notarization
+#### Notarization
 
 Start with the `login` command. `vcn` will walk you through login and importing up your secret upon initial use.
 
@@ -114,7 +114,7 @@ vcn unsupport <asset>
 vcn untrust <asset>
 ```
 
-### Authentication
+#### Authentication
 
 ```
 vcn authenticate <file>
