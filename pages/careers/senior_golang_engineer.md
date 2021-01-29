@@ -33,4 +33,4 @@ Please note that the technical skills will be tested in 30 minutes of coding tas
 
 ## Still got questions?
 
-Contact [amelie@codenotary.com](amelie@codenotary.com)!
+Contact [amelie@codenotary.com](mailto:amelie@codenotary.com?subject=[Hiring][Senior-Golang-Engineer])!

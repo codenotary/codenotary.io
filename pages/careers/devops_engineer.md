@@ -31,4 +31,4 @@ If you are hard-working and used to fast-paced environments, with a passion for 
 
 ## Sounds like the perfect job for you?
 
-Send your application to [amelie@codenotary.com ](amelie@codenotary.com )!
+Send your application to [amelie@codenotary.com](mailto:amelie@codenotary.com?subject=[Hiring][Devops-Engineer])!

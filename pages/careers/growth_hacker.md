@@ -56,4 +56,4 @@ As we are growing rapidly, we are looking to add only the smartest people to joi
 
 ## Still got questions?
 
-Contact [amelie@codenotary.com](amelie@codenotary.com)!
+Contact [amelie@codenotary.com](mailto:amelie@codenotary.com?subject=[Hiring][Growth-Hacker])!

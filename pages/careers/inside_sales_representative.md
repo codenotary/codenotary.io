@@ -32,4 +32,4 @@ Our software solution [CodeNotary Ledger Compliance®](https://codenotary.com/pr
 
 ## Still got questions?
 
-Contact [amelie@codenotary.com](amelie@codenotary.com)!
+Contact [amelie@codenotary.com](mailto:amelie@codenotary.com?subject=[Hiring][Inside-Sales-Representative])!

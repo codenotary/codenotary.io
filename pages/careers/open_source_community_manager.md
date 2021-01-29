@@ -33,4 +33,4 @@ Equally important are an active and thriving education and information campaign 
 
 ## Still got questions?
 
-Contact [amelie@codenotary.com](amelie@codenotary.com)!
+Contact [amelie@codenotary.com](mailto:amelie@codenotary.com?subject=[Hiring][Open-Source-Community-Manager])!

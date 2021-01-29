@@ -35,4 +35,4 @@ We use the following environments and systems: JavaScript, Vue.js, Node.js and G
 
 ## Still got questions?
 
-Contact [amelie@codenotary.com](amelie@codenotary.com)!
+Contact [amelie@codenotary.com](mailto:amelie@codenotary.com?subject=[Hiring][Frontend-Software-Engineer])!
