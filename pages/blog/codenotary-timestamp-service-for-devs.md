@@ -188,8 +188,7 @@ vcn unsupport --hash <asset's hash>
 
 #### Notarization within automated environments
 
-First, you’ll need to make `vcn` have access to the `${HOME}/.vcn` folder that holds your secret (the private key).
-Then, set up your environment accordingly using the following commands:
+Simply set up your environment accordingly using the following commands:
 
 ```bash
 export VCN_LC_API_KEY=Your-API-Key
