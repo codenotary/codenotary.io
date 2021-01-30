@@ -1,13 +1,15 @@
 ---
 title: "extremely useful docker commands"
 image: /images/blog/docker-size.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "Docker", "DevOps"]
 date: "2019-03-19"
 ---
 
 No matter if you're just getting started with docker or you're already a professional, there are situations when you can't remember the correct command or you're just confused by the order of parameters.
 
 Therefore we decided to create our own docker commands cheat sheet and share it with you.
+
+Whenever you build your own container or you want to timestamp the container you're using and worked with your applications - check the free timestamping service: [Timestamp service for code and container](https://timestamp.codenotary.com)
 
 ## Top 16 docker commands
 
@@ -64,6 +66,11 @@ _**docker image prune -a --filter "until=24h"**_
 same can be done with container, that are not running anymore
 
 _**docker container prune**_
+
+Here comes a bonus command:
+```
+truncate -s 0 $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)
+```
 
 That's it for now - please let us know if you like to add a command you feel is extremely important. We're doing our best to add these in future blog posts are just append to the current posts. 
 
