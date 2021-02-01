@@ -23,10 +23,16 @@
 					xs="12" sm="6"
 					md="4"
 				>
-					<board-team-member name="Shayne Higdon" position="Board Member" />
-				</i-column>
+					<board-team-member name="Pascal Blum" position="Board Member" />
+				</i-column>				
 			</i-row>
 			<i-row class="board-team-member-items border-bottom">
+				<i-column
+					xs="12" sm="6"
+					md="4"
+				>
+					<board-team-member name="Shayne Higdon" position="Board Member" />
+				</i-column>				
 				<i-column
 					xs="12" sm="6"
 					md="4"
@@ -38,12 +44,6 @@
 					md="4"
 				>
 					<board-team-member name="Marc Rougier" position="Board Member" />
-				</i-column>
-				<i-column
-					xs="12" sm="6"
-					md="4"
-				>
-					<board-team-member name="Pascal Blum" position="Board Member" />
 				</i-column>
 			</i-row>
 		</i-container>
