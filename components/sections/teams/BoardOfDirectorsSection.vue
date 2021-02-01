@@ -6,15 +6,44 @@
 			</i-column>
 		</i-row>
 		<i-container>
-			<i-row>
-				<i-column>
-					<div class="board-team-member-items">
-						<board-team-member name="Moshe Bar" position="CEO, Co-Chairman" />
-						<board-team-member name="Prof. Dr. Marcus Englert" position="Co-Chairman" />
-						<board-team-member name="Shayne Higdon" position="Board Member" />
-						<board-team-member name="Bart Markus" position="Board Member" />
-						<board-team-member name="Marc Rougier" position="Board Member" />
-					</div>
+			<i-row class="board-team-member-items border-top">
+				<i-column
+					xs="12" sm="6"
+					md="4"
+				>
+					<board-team-member name="Moshe Bar" position="CEO, Co-Chairman" />
+				</i-column>
+				<i-column
+					xs="12" sm="6"
+					md="4"
+				>
+					<board-team-member name="Prof. Dr. Marcus Englert" position="Co-Chairman" />
+				</i-column>
+				<i-column
+					xs="12" sm="6"
+					md="4"
+				>
+					<board-team-member name="Shayne Higdon" position="Board Member" />
+				</i-column>
+			</i-row>
+			<i-row class="board-team-member-items border-bottom">
+				<i-column
+					xs="12" sm="6"
+					md="4"
+				>
+					<board-team-member name="Bart Markus" position="Board Member" />
+				</i-column>
+				<i-column
+					xs="12" sm="6"
+					md="4"
+				>
+					<board-team-member name="Marc Rougier" position="Board Member" />
+				</i-column>
+				<i-column
+					xs="12" sm="6"
+					md="4"
+				>
+					<board-team-member name="Pascal Blum" position="Board Member" />
 				</i-column>
 			</i-row>
 		</i-container>
@@ -39,10 +68,24 @@ export default {
 	background-color: #fff;
 
 	.board-team-member-items {
-		border-top: 1px solid $border-color-light;
-		border-bottom: 1px solid $border-color-light;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
+
+		&.border-top {
+			border-top: 1px solid $border-color-light;
+		}
+
+		&.border-bottom {
+			border-bottom: 1px solid $border-color-light;
+		}
+
+		h4,
+		span {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
 
 		.column {
 			flex: 1;
