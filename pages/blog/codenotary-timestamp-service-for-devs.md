@@ -30,6 +30,7 @@ There are plenty of different use cases:
 * Seal the data integrity and your trust level at a given point in time
 * Prove the existence of elecronic data at a specific point in time
 * CI/CD integration - notarize all outgoing assets, authenticate all incoming
+* Mark your applications and container that are tested and compatible
 * Store provenance for you own sources
 * Unsupport deprecated versions of your software and run update checks bases on the latest timestamp
 * Revoke trust (untrust) at any time without the need to touch your code or binaries
@@ -188,8 +189,7 @@ vcn unsupport --hash <asset's hash>
 
 #### Notarization within automated environments
 
-First, you’ll need to make `vcn` have access to the `${HOME}/.vcn` folder that holds your secret (the private key).
-Then, set up your environment accordingly using the following commands:
+Simply set up your environment accordingly using the following commands:
 
 ```bash
 export VCN_LC_API_KEY=Your-API-Key
