@@ -22,17 +22,6 @@
 						class="image -responsive" width="220"
 					>
 				</p>
-				<p class="_padding-0 margin-0 _margin-bottom-3">
-					<a
-						href="https://www.cncf.io/about/members/" target="_blank"
-						rel="nofollow"
-					>
-						<img
-							src="/images/cncf.png" alt="CNCF"
-							class="image -responsive" width="200"
-						>
-					</a>
-				</p>
 				<p class="_padding-0 margin-0">
 					<a
 						href="https://www.vmware.com/partners/work-with-vmware/tap.html" target="_blank"
