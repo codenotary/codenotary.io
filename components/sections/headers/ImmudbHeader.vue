@@ -4,7 +4,7 @@
 
 		<img src="/images/immudb/mascot.png" alt="immudb mascot">
 
-		<h1 class="d6 _text-primary">
+		<h1 class="d6 _margin-top-1 _text-primary">
 			immudb
 		</h1>
 
@@ -19,8 +19,11 @@
 			</github-button>
 		</div>
 
-		<p class="description lead">
-			immudb - world’s fastest immutable database. Open Source and easy to use in new applications and easy to integrate into existing application.
+		<h3 class="_margin-bottom-1 description _font-weight-bold">
+			World’s fastest immutable database.
+		</h3>
+		<p class="_margin-top-0 description lead">
+			Open Source and easy to use in new applications and easy to integrate into existing application.
 		</p>
 
 		<p class="action">

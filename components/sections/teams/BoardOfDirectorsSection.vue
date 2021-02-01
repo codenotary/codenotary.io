@@ -24,7 +24,7 @@
 					md="4"
 				>
 					<board-team-member name="Pascal Blum" position="Board Member" />
-				</i-column>				
+				</i-column>
 			</i-row>
 			<i-row class="board-team-member-items border-bottom">
 				<i-column
@@ -32,7 +32,7 @@
 					md="4"
 				>
 					<board-team-member name="Shayne Higdon" position="Board Member" />
-				</i-column>				
+				</i-column>
 				<i-column
 					xs="12" sm="6"
 					md="4"
