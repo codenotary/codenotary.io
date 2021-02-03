@@ -4,7 +4,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<article>
+					<article class="thank-you-page">
 						<nuxt-content :document="page" />
 					</article>
 				</i-column>
@@ -34,7 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
-.nuxt-content-container {
+article.thank-you-page {
 	text-align: center;
 }
 </style>
