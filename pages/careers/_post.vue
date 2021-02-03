@@ -32,7 +32,7 @@
 				</i-column>
 				<i-column xs="12">
 					<article>
-						<nuxt-content :document="article" />
+						<nuxt-content :document="article" :layout="'banner'" />
 					</article>
 				</i-column>
 				<i-column
@@ -60,13 +60,12 @@
 import { title } from '~/helpers/meta';
 
 export default {
-
+	name: 'CareerPost',
 	async asyncData({ $content, params }) {
 		const article = await $content('careers', params.post).fetch();
 
 		return { article };
 	},
-
 	methods: {
 		apply (data) {
 			data && window.open(data, '_blank');

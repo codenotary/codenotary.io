@@ -40,7 +40,7 @@
 													v-if="article.title"
 													class="title"
 												>
-													{{ article.title | truncate(48) }}
+													{{ article.title | truncate(48, '...') }}
 												</div>
 											</nuxt-link>
 											<div class="date">
@@ -97,6 +97,8 @@ const BLOG_POSTS_PER_PAGE = 12;
 const INFINITE_LOAD_DELAY = 0;
 
 export default {
+	name: 'BlogPosts',
+	layout: 'banner',
 	components: {
 		'no-ssr': NoSSR,
 	},

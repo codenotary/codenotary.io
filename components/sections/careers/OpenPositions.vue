@@ -20,7 +20,7 @@
 								<div>
 									<nuxt-link :to="{ name: 'careers-post', params: { post: article.slug } }">
 										<div v-if="article.title" class="_overlay-link title _margin-bottom-1 _text-weight-bold">
-											{{ article.title | truncate(64) }}
+											{{ article.title | truncate(64, '...') }}
 										</div>
 									</nuxt-link>
 									<div v-if="article.location" class="location _margin-bottom-1">
@@ -57,15 +57,12 @@ import NoSSR from 'vue-no-ssr';
 
 export default {
 	name: 'LcIntegrations',
-
 	components: {
 		'no-ssr': NoSSR,
 	},
-
 	props: {
 		openPositions: { type: Array, default: () => {} },
 	},
-
 	computed: {
 		sortedOpenPositions () {
 			if (this.openPositions && this.openPositions.length) {

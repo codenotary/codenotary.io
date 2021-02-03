@@ -15,14 +15,13 @@ import RemoteFriendly from '~/components/sections/careers/RemoteFriendly';
 import OpenPositions from '~/components/sections/careers/OpenPositions';
 
 export default {
-
+	name: 'CareerPosts',
 	components: {
 		CareersHeader,
 		OurValues,
 		RemoteFriendly,
 		OpenPositions,
 	},
-
 	async asyncData ({ $content }) {
 		const openPositions = await $content('careers')
 				.only(['title', 'slug', 'location', 'type', 'requires', 'apply', 'weight', 'active'])
@@ -31,7 +30,6 @@ export default {
 
 		return { openPositions };
 	},
-
 	methods: {
 		scrollMeTo(refName) {
 			if (refName && this.$refs[refName]) {
@@ -44,6 +42,5 @@ export default {
 			title: title('Careers'),
 		};
 	},
-
 };
 </script>

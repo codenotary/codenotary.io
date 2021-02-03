@@ -32,6 +32,8 @@ import MostPopular from '~/components/global/MostPopular';
 import { VIEW_MODULE, MOBILE } from '@/store/view/constants';
 
 export default {
+	name: 'BlogPost',
+	layout: 'banner',
 	components: {
 		MostPopular,
 	},
