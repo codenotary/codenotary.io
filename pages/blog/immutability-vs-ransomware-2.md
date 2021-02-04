@@ -53,8 +53,52 @@ enter password for repository:
 restoring <Snapshot of [/home/sebastian/immudb] at 2021-01-26 21:40:19.884408621 +0200 CEST> to <target-directory>
 ```
 
-<img src="/images/blog/immudbrestic.png">
+<img src="immudbrestic.png">
+
+## Use the CodeNotary Trusted Timestamping Service and experience immudb in action in less than a minute
+Building services on immudb is fun but takes some time, that's why we set up the free CodeNotary Trusted Timestamping Service for you to experience the power of immudb. Timestamping can be used to prove that a document/file hasn't been altered since the timestamp was issued. 
+
+Get your API Key by signing up here CodeNotary [CodeNotary Timestamp](https://timestamp.codenotary.com/)
+This API Key is bound to your email address and it's required during vcn login. This timestamping service provides full immutability for all data ever written and unique data checksum ever stored including its history.
+
+
+## Quick start
+
+1. **Installer** In case you use Linux or macOS, the quickest start is our install script:
+```bash
+bash <(curl https://getvcn.codenotary.com -L)
+```
+
+You can also [download the latest release](https://github.com/vchain-us/vcn/releases/latest)
+
+2. **Login** to [timestamp.codenotary.com](https://timestamp.codenotary.com/)
+```bash
+vcn login --lc-host timestamp.codenotary.com # type in your API key when requested
+# or setting the API key
+VCN_LC_API_KEY=<Your-API-Key vcn login --lc-host timestamp.codenotary.com
+```
+
+3. **Notarize existing digital objects** Once you have an account you can start notarizing digital assets to give them an identity.
+```bash
+vcn n <file|dir://directory|docker://dockerimage|git://gitdirectory>
+```
+
+4. **Authenticate digital objects** You can use the command as a starting point.
+
+```bash
+vcn a <file|dir://directory|docker://dockerimage|git://gitdirectory>
+```
+
+For detailed **command line usage**, just run `vcn help`.
+
+Learn more about CodeNotary's Trusted Timestamping Service in our [timestamping blog](https://www.codenotary.com/blog/codenotary-timestamp-service-for-devs).
 
 
 ## Summary and outlook
-Being attacked by ransomware groups is now fun. Sometimes people start to overestimate the power those groups have. They won’t be able to hack all cloud storage providers at the same time. Immudb has key advantages, as you can store data cryptographically coherent and verifiable and you will always know if your backups have been compromised. On top of that, the backups are not offline, therefore fast and minimizing the downtime of the affected services. Security can be leveraged by relocating the backup files to a remote location with a different access level. Using immudb as a backup database solution is a highly securable setup. We at CodeNotary are currently working on improving immudb’s abilities for that use case by adding streaming and data splitting features. This will enable immudb to backup files of any size. Stay tuned by leaving us a Star on [Github](https://github.com/codenotary/immudb).
+Being attacked by ransomware groups is now less scary. Sometimes people start to overestimate the power those groups have. They won’t be able to hack all cloud storage providers at the same time. Immudb has key advantages, as you can store data cryptographically coherent and verifiable and you will always know if your backups have been compromised. 
+
+On top of that, the backups are not offline, therefore fast and minimizing the downtime of the affected services. Security can be leveraged by relocating the backup files to a remote location with a different access level. Using immudb as a backup database solution is a highly securable setup. 
+We at CodeNotary are currently working on improving immudb’s abilities for that use case by adding streaming and data splitting features. 
+
+This will enable immudb to backup files of any size. Stay tuned by leaving us a Star on [Github](https://github.com/codenotary/immudb).
+
