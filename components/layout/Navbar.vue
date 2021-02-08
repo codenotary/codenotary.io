@@ -22,10 +22,10 @@
 					</i-nav-item>
 					<i-dropdown-menu>
 						<i-dropdown-item :to="{ name: 'products-ledger-compliance' }">
-							Ledger Compliance on-premise
+							Ledger Compliance (on-premise)
 						</i-dropdown-item>
 						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
-							Ledger Compliance (Cloud)
+							Ledger Compliance (Public Cloud)
 						</i-dropdown-item>
 					</i-dropdown-menu>
 				</i-dropdown>
@@ -34,10 +34,10 @@
 						Products
 					</i-nav-item>
 					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
-						Ledger Compliance on-premise
+						Ledger Compliance (on-premise)
 					</i-nav-item>
 					<i-nav-item :to="{ name: 'products-ci-cd' }">
-						Ledger Compliance (Cloud)
+						Ledger Compliance (Public Cloud)
 					</i-nav-item>
 				</i-nav>
 
