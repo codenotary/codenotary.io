@@ -22,10 +22,7 @@
 					</i-nav-item>
 					<i-dropdown-menu>
 						<i-dropdown-item :to="{ name: 'products-ledger-compliance' }">
-							Ledger Compliance
-						</i-dropdown-item>
-						<i-dropdown-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
-							Ledger Compliance (Metrics and Logs)
+							Ledger Compliance on-premise
 						</i-dropdown-item>
 						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
 							Ledger Compliance (Cloud)
@@ -37,13 +34,10 @@
 						Products
 					</i-nav-item>
 					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
-						Ledger Compliance
-					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
-						Ledger Compliance (Metrics and Logs)
+						Ledger Compliance on-premise
 					</i-nav-item>
 					<i-nav-item :to="{ name: 'products-ci-cd' }">
-						Immutability for CI/CD
+						Ledger Compliance (Cloud)
 					</i-nav-item>
 				</i-nav>
 
@@ -56,9 +50,6 @@
 						<i-dropdown-item :to="{ name: 'technologies-immudb' }">
 							immudb
 						</i-dropdown-item>
-						<i-dropdown-item :to="{ name: 'technologies-ztc' }">
-							Zero-Trust Consortium
-						</i-dropdown-item>
 					</i-dropdown-menu>
 				</i-dropdown>
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
@@ -67,9 +58,6 @@
 					</i-nav-item>
 					<i-nav-item href="https://immudb.io">
 						immudb
-					</i-nav-item>
-					<i-nav-item href="https://zerotrustconsortium.org/">
-						Zero-Trust Consortium
 					</i-nav-item>
 				</i-nav>
 
