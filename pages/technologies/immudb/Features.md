@@ -4,7 +4,7 @@
 <i-column>
     <img class="image -responsive _margin-bottom-4" width="400" src="/images/immudb/rocket.jpg" alt="Features" />
     <page-section-header :bottom="2" title="Features">
-        A super-fast, immutable, and cryptographically verifiable ledger database that provides::
+        A super-fast, immutable, and cryptographically verifiable ledger database that provides:
     </page-section-header>
 </i-column>
 </i-row>

@@ -20,25 +20,23 @@ ctx := context.Background()
 <i-tab title="Store verified items">
 
 ~~~go
-key2, value2 := []byte("client:Mr. Archibald Beatty"), []byte("Visa 6679499384784022 11/23")
-verifiedIndex, err := client.SafeSet(ctx, key2, value2)
+key, value := []byte("client:Mr. Archibald Beatty"), []byte("Visa 6679499384784022 11/23")
+tx, err := client.VerifiedSet(ctx, key, value)
 if err != nil {
 	exit(err)
 }
-fmt.Println("   SafeSet - add and verify entry:")
-printItem(key2, value2, verifiedIndex)
+fmt.Printf("VerifiedSet - entry successfully committed and verified: %v", tx)
 ~~~
 
 </i-tab>
 <i-tab title="Get verified items">
 
 ~~~go
-verifiedItem, err := client.SafeGet(ctx, key2)
+vEntry, err := client.VerifiedGet(ctx, key)
 if err != nil {
 	exit(err)
 }
-fmt.Println("   SafeGet - fetch and verify entry:")
-printItem(nil, nil, verifiedItem)
+fmt.Printf("VerifiedGet - entry was found and verified: %v", vEntry)
 ~~~
 
 </i-tab>
