@@ -9,6 +9,13 @@ export default {
     ** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
     */
 	ssr: true,
+
+	/*
+	** Nuxt target
+	** See https://nuxtjs.org/api/configuration-target
+	*/
+	target: 'static',
+
 	/*
     ** components propery
     ** Doc: https://nuxtjs.org/api/configuration-components/
@@ -43,7 +50,10 @@ export default {
 	/*
     ** Customize the progress-bar color
     */
-	loading: { color: '#fff' },
+	loading: {
+		color: '#fff',
+	},
+
 	/*
     ** Global CSS
     */
@@ -51,6 +61,44 @@ export default {
 		'vue-slick-carousel/dist/vue-slick-carousel.css',
 		'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
 	],
+
+
+	build: {
+		parallel: process.env.NODE_ENV !== 'production',
+		cache: process.env.NODE_ENV !== 'production',
+		hardSource: process.env.NODE_ENV !== 'production',
+		extractCSS: process.env.NODE_ENV === 'production',
+		filenames: {
+			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
+			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
+		},		
+		// Extend webpack config
+		extend: (config, ctx) => {
+			config.devtool = ctx.isClient ? 'eval-source-map' : 'inline-source-map';
+		},
+		loaders: {
+			vue: {
+				prettify: false,
+			},
+			sass: {
+				implementation: Sass,
+			},
+		},
+		transpile: [
+			'@inkline/inkline',
+			'vue-github-button',
+		],
+		babel: {
+			plugins: [
+				'@babel/plugin-proposal-optional-chaining',
+			],
+		},
+	},
+
+	router: {
+		linkExactActiveClass: '-active',
+	},
+
 	/*
     ** Plugins to load before mounting the App
     */
@@ -135,7 +183,6 @@ export default {
 	/*
     ** Build configuration
     */
-
 	content: {
 		dir: 'pages',
 		markdown: {
@@ -154,27 +201,6 @@ export default {
 			// Loads Open Sans font with weights 300 and 400 + display font as swap
 			families: ['Open+Sans:100,300,400,500,600,700&display=swap'],
 		},
-	},
-
-	build: {
-		transpile: [
-			'@inkline/inkline',
-			'vue-github-button',
-		],
-		filenames: {
-			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
-			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
-		},
-		babel: {
-			plugins: [
-				'@babel/plugin-proposal-optional-chaining',
-			],
-		},
-	},
-
-	router: {
-		linkExactActiveClass: '-active',
-		// base: '/'
 	},
 
 	generate: {
