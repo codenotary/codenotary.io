@@ -53,23 +53,6 @@
 	</i-modal>
 </template>
 
-<style lang="scss">
-.subscribe-modal {
-	.close {
-		.icon {
-			display: none;
-		}
-
-		&::before {
-			font-family: Helvetica, monospace;
-			content: "x";
-			font-size: 12px;
-			display: inline-block;
-		}
-	}
-}
-</style>
-
 <script>
 import axios from 'axios';
 import VueRecaptcha from 'vue-recaptcha';
@@ -147,3 +130,20 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss">
+.subscribe-modal {
+	.close {
+		.icon {
+			display: none;
+		}
+
+		&::before {
+			font-family: Helvetica, monospace;
+			content: "x";
+			font-size: 12px;
+			display: inline-block;
+		}
+	}
+}
+</style>

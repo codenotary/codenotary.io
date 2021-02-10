@@ -18,7 +18,6 @@ import BoardOfDirectorsSection from '~/components/sections/teams/BoardOfDirector
 import ScientificBoardSection from '~/components/sections/teams/ScientificBoardSection';
 
 export default {
-	layout: 'banner-codenotary',
 	components: {
 		BoardOfDirectorsSection,
 		ScientificBoardSection,
@@ -26,6 +25,7 @@ export default {
 		AboutFeaturesSection,
 		AboutHeader,
 	},
+	layout: 'banner-codenotary',
 	head() {
 		return {
 			title: title('About us'),

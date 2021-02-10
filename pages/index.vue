@@ -15,13 +15,12 @@ import CustomerSuccessStories from '~/components/sections/homepage/CustomerSucce
 
 export default {
 	name: 'Homepage',
-	layout: 'banner',
 	components: {
 		HomeHeader,
 		FeaturesSection,
 		TimestampServiceSection,
 		CustomerSuccessStories,
-		LedgerCompliance,
 	},
+	layout: 'banner',
 };
 </script>

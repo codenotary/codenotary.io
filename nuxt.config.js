@@ -1,4 +1,3 @@
-import Sass from 'sass';
 import { meta, DEFAULT_META } from './helpers/meta';
 import blogRoutes from './blog';
 import careersRoutes from './careers';
@@ -80,9 +79,6 @@ export default {
 		loaders: {
 			vue: {
 				prettify: false,
-			},
-			sass: {
-				implementation: Sass,
 			},
 		},
 		transpile: [

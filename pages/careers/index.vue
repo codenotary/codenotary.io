@@ -16,6 +16,11 @@ import OpenPositions from '~/components/sections/careers/OpenPositions';
 
 export default {
 	name: 'CareerPosts',
+	head() {
+		return {
+			title: title('Careers'),
+		};
+	},
 	components: {
 		CareersHeader,
 		OurValues,
@@ -36,11 +41,6 @@ export default {
 				this.$refs[refName].$el.scrollIntoView({ block: 'start', behavior: 'smooth' });
 			}
 		},
-	},
-	head() {
-		return {
-			title: title('Careers'),
-		};
 	},
 };
 </script>

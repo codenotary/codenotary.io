@@ -28,15 +28,15 @@
 <script>
 import { mapGetters } from 'vuex';
 import { title, meta, DEFAULT_META } from '@/helpers/meta/index';
-import MostPopular from '~/components/global/MostPopular';
 import { VIEW_MODULE, MOBILE } from '@/store/view/constants';
+import MostPopular from '~/components/global/MostPopular';
 
 export default {
 	name: 'BlogPost',
-	layout: 'banner',
 	components: {
 		MostPopular,
 	},
+	layout: 'banner',
 	async asyncData({ $content, params }) {
 		const BLOG_POST_PATH = 'blog';
 		const post = params && params.post ? params.post.replace('.md', '') : '';
@@ -45,6 +45,24 @@ export default {
 
 		return { article, mostPopular };
 	},
+	head () {
+		return {
+			title: title(this.article.title),
+			meta: [
+				...this.meta,
+				{ property: 'article:published_time', content: this.article.date },
+				{ property: 'article:modified_time', content: this.article.date },
+				{ property: 'article:tag', content: this.article.tags ? this.article.tags.toString() : '' },
+				{ name: 'twitter:label1', content: 'Written by' },
+				{ name: 'twitter:data1', content: this.article.author || DEFAULT_META.AUTHOR },
+				{ name: 'twitter:label2', content: 'Filed under' },
+				{ name: 'twitter:data2', content: this.article.tags ? this.article.tags.toString() : '' },
+			],
+			link: [
+				{ hid: 'canonical', rel: 'canonical', href: this.postUrl },
+			],
+		};
+	},	
 	computed: {
 		...mapGetters(VIEW_MODULE, {
 			mobile: MOBILE,
@@ -77,24 +95,6 @@ export default {
 				}, '');
 			}
 		},
-	},
-	head () {
-		return {
-			title: title(this.article.title),
-			meta: [
-				...this.meta,
-				{ property: 'article:published_time', content: this.article.date },
-				{ property: 'article:modified_time', content: this.article.date },
-				{ property: 'article:tag', content: this.article.tags ? this.article.tags.toString() : '' },
-				{ name: 'twitter:label1', content: 'Written by' },
-				{ name: 'twitter:data1', content: this.article.author || DEFAULT_META.AUTHOR },
-				{ name: 'twitter:label2', content: 'Filed under' },
-				{ name: 'twitter:data2', content: this.article.tags ? this.article.tags.toString() : '' },
-			],
-			link: [
-				{ hid: 'canonical', rel: 'canonical', href: this.postUrl },
-			],
-		};
 	},
 };
 </script>

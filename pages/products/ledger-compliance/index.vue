@@ -14,7 +14,6 @@ import LCHeader from '~/components/sections/headers/LCHeader';
 import LcFeatures from '~/components/sections/products/ledger-compliance/LcFeatures';
 import CustomerSuccessStories from '~/components/sections/homepage/CustomerSuccessStories';
 import LcInfrastructure from '~/components/sections/products/ledger-compliance/LcInfrastructure';
-import LedgerCompliance from '~/components/sections/products/LedgerCompliance';
 
 export default {
 
@@ -23,7 +22,6 @@ export default {
 		LcFeatures,
 		CustomerSuccessStories,
 		LcInfrastructure,
-		LedgerCompliance,
 	},
 	head() {
 		return {

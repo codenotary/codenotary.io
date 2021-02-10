@@ -49,6 +49,11 @@ import axios from 'axios';
 import { title } from '~/helpers/meta';
 
 export default {
+	head() {
+		return {
+			title: title(this.isIndex ? 'Terms of Service' : `Terms of Service - ${ this.article.title }`),
+		};
+	},
 	computed: {
 		isIndex() {
 			return this.$route.path === '/terms-of-service';
@@ -69,11 +74,6 @@ export default {
 						console.error(err);
 					});
 		},
-	},
-	head() {
-		return {
-			title: title(this.isIndex ? 'Terms of Service' : `Terms of Service - ${ this.article.title }`),
-		};
 	},
 };
 </script>

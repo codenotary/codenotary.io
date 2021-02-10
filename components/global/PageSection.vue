@@ -4,6 +4,12 @@
 	</section>
 </template>
 
+<script>
+export default {
+	name: 'PageSection',
+};
+</script>
+
 <style lang="scss">
 .section {
 	padding-top: 6rem;
@@ -11,9 +17,3 @@
 	width: 100%;
 }
 </style>
-
-<script>
-export default {
-	name: 'PageSection',
-};
-</script>

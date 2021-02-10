@@ -22,13 +22,18 @@ import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/Immud
 import TerminalSection from '~/components/sections/technologies/immudb/TerminalSection';
 
 export default {
-	layout: 'immudb-star-banner',
+	head() {
+		return {
+			title: title('immudb'),
+		};
+	},	
 	components: {
 		ImmudbHeader,
 		ImmudbCardsSection,
 		ImmudbRunsOnSection,
 		TerminalSection,
 	},
+	layout: 'immudb-star-banner',
 	async asyncData ({ $content }) {
 		const easySetup = await $content('technologies/immudb/EasySetup').fetch();
 		const performance = await $content('technologies/immudb/Performance').fetch();
@@ -46,11 +51,6 @@ export default {
 			usedBy,
 			codeTabs,
 			getStarted,
-		};
-	},
-	head() {
-		return {
-			title: title('immudb'),
 		};
 	},
 };

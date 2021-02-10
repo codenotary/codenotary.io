@@ -61,6 +61,11 @@ import { title } from '~/helpers/meta';
 
 export default {
 	name: 'CareerPost',
+	head() {
+		return {
+			title: title(this.article.title),
+		};
+	},	
 	async asyncData({ $content, params }) {
 		const article = await $content('careers', params.post).fetch();
 
@@ -70,11 +75,6 @@ export default {
 		apply (data) {
 			data && window.open(data, '_blank');
 		},
-	},
-	head() {
-		return {
-			title: title(this.article.title),
-		};
 	},
 };
 </script>
