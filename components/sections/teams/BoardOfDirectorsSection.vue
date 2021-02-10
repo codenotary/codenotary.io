@@ -65,7 +65,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #board-of-directors-section {
-	background-color: #fff;
+	background-color: white;
 
 	.board-team-member-items {
 		display: flex;

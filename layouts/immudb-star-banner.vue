@@ -1,5 +1,5 @@
 <template>
-	<section class="immudb-star-banner-layout" :class="{ hover, closed }">
+	<section class="immudb-star-banner-layout" :class="{ scrolled, hover, closed }">
 		<ImmudbStarBanner
 			id="immudbStarBanner" @mouseenter.native="hover = true"
 			@mouseleave.native="hover = false" @submit="cta()"
@@ -21,37 +21,37 @@ import Footer from '~/components/layout/Footer';
 import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
-const SCROLL_THRESHOLD = 200;
+const SCROLL_THRESHOLD = 160;
 const IMMUDB_STAR_COOKIE = 'immudb-star-cookie';
 
 export default {
 	name: 'ImmudbStarBannerLayout',
-
 	components: {
 		ImmudbStarBanner,
 		Navbar,
 		Footer,
 		Copyright,
 	},
-
 	mixins: LayoutMixin,
-
 	data: () => ({
 		scrolled: false,
 		hover: false,
 		closed: false,
 	}),
-
 	beforeDestroy () {
 		this.scrolled = null;
 		this.hover = null;
 		this.closed = null;
 	},
-
 	created () {
 		this.closed = !!this.$cookies.get(IMMUDB_STAR_COOKIE);
 	},
-
+	mounted () {
+		window.addEventListener('scroll', this.handleScroll);
+	},
+	destroyed () {
+		window.removeEventListener('scroll', this.handleScroll);
+	},
 	methods: {
 		handleScroll (event) {
 			const window = event.path[1];
@@ -76,6 +76,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 $navbar-height: 60;
+$navbar-scrolled-height: 60;
 $banner-height: 40;
 $banner-hover-height: 60;
 $banner-scrolled-height: 0;
@@ -100,9 +101,11 @@ section.immudb-star-banner-layout {
 
 	#navbar {
 		position: fixed;
+		height: #{$navbar-height}px !important;
 		top: #{$banner-height}px !important;
 		left: 0;
 		width: 100%;
+		background: transparent;
 		z-index: 999;
 		transition: all 0.15s ease-out;
 	}
@@ -117,7 +120,11 @@ section.immudb-star-banner-layout {
 		}
 
 		#navbar {
+			height: #{$navbar-scrolled-height}px !important;
 			top: #{$banner-scrolled-height}px !important;
+			padding: 0 !important;
+			background: white !important;
+			box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
 		}
 
 		#content {

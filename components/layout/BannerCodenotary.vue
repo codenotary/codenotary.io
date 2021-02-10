@@ -2,7 +2,10 @@
 	<section class="banner-codenotary _justify-content-center">
 		<div class="_display-flex _align-items-center">
 			<fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" />
-			<span class="lead _font-weight-bold">
+			<span
+				class="_font-weight-bold"
+				style="font-size: 0.9rem;"
+			>
 				vChain Inc is now CodeNotary Inc
 			</span>
 		</div>

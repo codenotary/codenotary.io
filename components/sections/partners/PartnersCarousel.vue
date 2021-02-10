@@ -92,7 +92,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #partners-section {
-	background-color: #fff;
+	background-color: white;
 	overflow: hidden;
 
 	a {

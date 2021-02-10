@@ -102,11 +102,13 @@ export default {
 @import '~@inkline/inkline/src/css/config';
 @import '~@inkline/inkline/src/css/mixins';
 
+$logo-height: 48;
+
 .navbar {
 	background: white !important;
 
 	.logo {
-		height: 64px;
+		max-height: #{$logo-height}px;
 		width: auto;
 		margin-right: 8px;
 

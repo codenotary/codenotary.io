@@ -222,7 +222,7 @@ export default {
 			margin-bottom: 1rem;
 			text-align: center;
 			background-position: center center;
-			background-color: #fff;
+			background-color: white;
 		}
 	}
 

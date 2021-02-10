@@ -1,11 +1,16 @@
 <template>
 	<section class="immudb-star-banner _justify-content-center">
 		<div class="_display-flex _align-items-center">
-			<span class="lead">
-				If you like immudb, <a
-					href="https://github.com/codenotary/immudb" target="_blank"
+			<span>
+				If you like immudb,
+				<a
+					class="_font-weight-bold _text-decoration-underline"
+					href="https://github.com/codenotary/immudb"
+					target="_blank"
 					rel="noopener" @click="submit()"
-				>give us a star on Github!</a>
+				>
+					give us a star on Github!
+				</a>
 				<fa icon="star" class="_margin-left-1-2" />
 			</span>
 		</div>
@@ -39,7 +44,7 @@ export default {
 
 section.immudb-star-banner {
 	position: relative;
-	background-color: #244583;
+	background-color: $color-primary;
 
 	&.-light {
 		border-bottom: 1px solid $border-color-light;
@@ -47,12 +52,14 @@ section.immudb-star-banner {
 	}
 
 	span,
-	.button {
-		font-size: 90% !important;
-		color: $color-gray-10;
+	span > a {
+		font-size: 84% !important;
 	}
 
 	span {
+		font-weight: 300 !important;
+		color: white;
+
 		a {
 			color: white;
 			text-decoration: underline;

@@ -94,6 +94,7 @@ section.banner-layout {
 		top: #{$banner-height}px !important;
 		left: 0;
 		width: 100%;
+		background: transparent;
 		z-index: 999;
 		transition: all 0.15s ease-out;
 	}
@@ -126,6 +127,7 @@ section.banner-layout {
 
 		#navbar {
 			top: #{$banner-scrolled-height}px !important;
+			background: white !important;
 		}
 
 		#content {
