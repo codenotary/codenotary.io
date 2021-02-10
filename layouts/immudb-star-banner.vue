@@ -21,7 +21,7 @@ import Footer from '~/components/layout/Footer';
 import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
-const SCROLL_THRESHOLD = 160;
+const SCROLL_THRESHOLD = 80;
 const IMMUDB_STAR_COOKIE = 'immudb-star-cookie';
 
 export default {
@@ -102,9 +102,10 @@ section.immudb-star-banner-layout {
 	#navbar {
 		position: fixed;
 		height: #{$navbar-height}px !important;
+		width: 100%;
 		top: #{$banner-height}px !important;
 		left: 0;
-		width: 100%;
+		padding: 0;
 		background: transparent;
 		z-index: 999;
 		transition: all 0.15s ease-out;

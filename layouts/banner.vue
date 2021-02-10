@@ -20,7 +20,7 @@ import Footer from '~/components/layout/Footer';
 import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
-const SCROLL_THRESHOLD = 200;
+const SCROLL_THRESHOLD = 120;
 
 export default {
 	name: 'BannerLayout',
@@ -86,9 +86,10 @@ section.banner-layout {
 	#navbar {
 		position: fixed;
 		height: #{$navbar-height}px;
+		width: 100%;
 		top: #{$banner-height}px !important;
 		left: 0;
-		width: 100%;
+		padding: 0;
 		background: transparent;
 		z-index: 999;
 		transition: all 0.15s ease-out;

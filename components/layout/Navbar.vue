@@ -8,24 +8,36 @@
 		</i-navbar-brand>
 		<i-navbar-items class="_justify-content-end">
 			<i-nav>
+				<!-- BLOG POSTS -->
 				<i-nav-item :to="{ name: 'blog' }">
 					Blog
 				</i-nav-item>
 
 				<!-- PRODUCTS -->
-				<i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
-					<i-nav-item :class="{ '-active': subRouteActive('/products') }">
-						Products
-					</i-nav-item>
-					<i-dropdown-menu>
+				<i-popover
+					class="_visible-lg-and-up"
+					variant="light"
+					placement="bottom"
+					:disabled="disabled"
+					trigger="hover"
+				>
+					<div class="popover-trigger-wrapper">
+						<i-nav-item :class="{ '-active': subRouteActive('/products') }">
+							Products
+							&nbsp;
+							<fa :icon="['far', 'calendar-alt']" />
+						</i-nav-item>
+					</div>
+					<template slot="body">
 						<i-dropdown-item :to="{ name: 'products-ledger-compliance' }">
 							Ledger Compliance (on-premise)
 						</i-dropdown-item>
 						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
 							Ledger Compliance (Public Cloud)
 						</i-dropdown-item>
-					</i-dropdown-menu>
-				</i-dropdown>
+					</template>
+				</i-popover>
+
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
 					<i-nav-item class="header" disabled>
 						Products
