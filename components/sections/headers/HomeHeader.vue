@@ -7,7 +7,7 @@
 				</h1>
 				<p class="lead">
 					On-premise or in the cloud; Secure, actionable observability with real cryptographic verification,
-					processing millions of transactions a second. Built-in Immutability for Cyber Resiliency.
+					processing millions of transactions a second. Powered by the world’s fastest immutable database.
 				</p>
 				<p class="action">
 					<i-button
