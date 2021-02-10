@@ -7,7 +7,7 @@ export const DEFAULT_META = {
 	AUTHOR: 'CodeNotary',
 	HANDLE: '@CodeNotary',
 	DESCRIPTION: 'Immutable recording of data and processes with CodeNotary Ledger Compliance®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.',
-	MAIN_IMAGE: '/images/immudb_social_preview.png',
+	MAIN_IMAGE: '/images/immudb_social_preview.jpg',
 };
 export * from './title';
 export * from './meta';

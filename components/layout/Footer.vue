@@ -29,11 +29,6 @@
 							</router-link>
 						</li>
 						<li>
-							<router-link :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
-								Ledger Compliance (Metrics and Logs)
-							</router-link>
-						</li>
-						<li>
 							<router-link :to="{ name: 'products-ci-cd' }">
 								Immutability for CI/CD
 							</router-link>
