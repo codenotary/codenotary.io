@@ -45,6 +45,7 @@ export default {
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{ rel: 'manifest', href: '/site.webmanifest' },
 			{ hid: 'canonical', rel: 'canonical', href: DEFAULT_META.SITE_URL },
+			{ rel: "preload", as: "style", href: "/fonts.css" },
 		],
 	},
 	/*
@@ -169,8 +170,56 @@ export default {
 				},
 			],
 		}],
-		// Doc: https://github.com/Developmint/nuxt-webfontloader
-		'nuxt-webfontloader',
+		// Doc: https://github.com/GrabarzUndPartner/nuxt-font-loader-strategy
+		['nuxt-font-loader-strategy', { 
+			useWorker: false,
+			ignoreLighthouse: true,
+			ignoredEffectiveTypes: ['2g', 'slow-2g'],
+			fonts: [
+				// Open Sans
+				{
+					fileExtensions: ['woff2', 'woff'],
+					fontFamily: 'Open Sans',
+					fontFaces: [
+						// Font-Face
+						{
+							preload: true,
+							src: 'typeface-open-sans/files/open-sans-latin-700',
+							fontWeight: 400,
+							fontStyle: 'normal'
+						},
+						// Font-Face
+						{
+							preload: true,
+							src: 'typeface-open-sans/files/open-sans-latin-600',
+							fontWeight: 400,
+							fontStyle: 'normal'
+						},
+						// Font-Face
+						{
+							preload: true,
+							src: 'typeface-open-sans/files/open-sans-latin-400',
+							fontWeight: 400,
+							fontStyle: 'normal'
+						},
+						// Font-Face
+						{
+							preload: true,
+							src: 'typeface-open-sans/files/open-sans-latin-300',
+							fontWeight: 300,
+							fontStyle: 'normal'
+						},
+						// Font-Face
+						{
+							preload: true,
+							src: 'typeface-open-sans/files/open-sans-latin-400italic',
+							fontWeight: 300,
+							fontStyle: 'Italic'
+						},
+					],
+				},
+			],
+		}],
 		// Doc: https://github.com/nuxt-community/robots-module
 		'@nuxtjs/robots',
 		// Doc: https://github.com/nuxt-community/sitemap-module

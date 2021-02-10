@@ -22,11 +22,6 @@ import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/Immud
 import TerminalSection from '~/components/sections/technologies/immudb/TerminalSection';
 
 export default {
-	head() {
-		return {
-			title: title('immudb'),
-		};
-	},	
 	components: {
 		ImmudbHeader,
 		ImmudbCardsSection,
@@ -51,6 +46,11 @@ export default {
 			usedBy,
 			codeTabs,
 			getStarted,
+		};
+	},
+	head() {
+		return {
+			title: title('immudb'),
 		};
 	},
 };

@@ -62,7 +62,7 @@ export default {
 				{ hid: 'canonical', rel: 'canonical', href: this.postUrl },
 			],
 		};
-	},	
+	},
 	computed: {
 		...mapGetters(VIEW_MODULE, {
 			mobile: MOBILE,

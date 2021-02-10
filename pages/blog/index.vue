@@ -98,10 +98,10 @@ const INFINITE_LOAD_DELAY = 0;
 
 export default {
 	name: 'BlogPosts',
-	layout: 'banner',
 	components: {
 		'no-ssr': NoSSR,
 	},
+	layout: 'banner',
 	async asyncData ({ $content }) {
 		const articles = await $content('blog')
 				.only(['title', 'date', 'image', 'slug', 'tags'])
@@ -116,6 +116,11 @@ export default {
 		articles: [],
 		page: 0,
 	}),
+	head () {
+		return {
+			title: title('Blog'),
+		};
+	},
 	computed: {
 		filteredArticles () {
 			if (this.filter) {
@@ -159,11 +164,6 @@ export default {
 				}
 			}, INFINITE_LOAD_DELAY);
 		},
-	},
-	head () {
-		return {
-			title: title('Blog'),
-		};
 	},
 };
 </script>

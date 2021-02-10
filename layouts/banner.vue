@@ -58,9 +58,9 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-$navbar-height: 80;
-$banner-height: 60;
-$banner-hover-height: 80;
+$navbar-height: 60;
+$banner-height: 40;
+$banner-hover-height: 60;
 $banner-scrolled-height: 40;
 
 section.banner-layout {

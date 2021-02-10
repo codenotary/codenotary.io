@@ -35,6 +35,7 @@ import 'prismjs/plugins/highlight-keywords/prism-highlight-keywords';
 import 'prismjs/plugins/show-language/prism-show-language';
 import 'prismjs/plugins/normalize-whitespace/prism-normalize-whitespace';
 
+// eslint-disable-next-line vue/component-definition-name-casing
 Vue.component('prism', {
 	props: {
 		lang: { type: String, default: 'js' },
@@ -52,3 +53,4 @@ Vue.component('prism', {
 		</div>;
 	},
 });
+// eslint-enable-next-line vue/component-definition-name-casing

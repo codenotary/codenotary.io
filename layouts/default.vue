@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style lang="scss">
-$navbar-height: 80;
+$navbar-height: 60;
 
 section.default-layout {
 	#navbar {

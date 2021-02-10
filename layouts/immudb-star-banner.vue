@@ -75,9 +75,9 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-$navbar-height: 80;
+$navbar-height: 60;
 $banner-height: 40;
-$banner-hover-height: 80;
+$banner-hover-height: 60;
 $banner-scrolled-height: 0;
 
 section.immudb-star-banner-layout {

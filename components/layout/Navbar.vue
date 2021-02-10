@@ -6,11 +6,8 @@
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
-		<i-navbar-items class="_justify-content-space-between">
+		<i-navbar-items class="_justify-content-end">
 			<i-nav>
-				<i-nav-item :to="{ name: 'index' }">
-					Home
-				</i-nav-item>
 				<i-nav-item :to="{ name: 'blog' }">
 					Blog
 				</i-nav-item>
@@ -119,8 +116,7 @@ export default {
 	}
 
 	&.-light {
-		border-bottom: 1px solid $border-color-light;
-		background: white !important;
+		background: transparent !important;
 	}
 
 	.dropdown .menu .item.-active {
