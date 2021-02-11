@@ -1,25 +1,49 @@
 <template>
 	<article class="immudb">
 		<ImmudbHeader />
-		<ImmudbCardsSection />
-		<ImmudbRunsOnSection />
-		<nuxt-content :document="easySetup" />
-		<nuxt-content :document="performance" />
-		<nuxt-content :document="video" />
-		<TerminalSection />
-		<nuxt-content :document="features" />
-		<nuxt-content :document="usedBy" />
-		<nuxt-content :document="codeTabs" />
-		<nuxt-content :document="getStarted" />
+		<LazyHydrate when-visible>
+			<ImmudbCardsSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ImmudbRunsOnSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="easySetup" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="performance" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="video" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<TerminalSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="features" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="usedBy" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="codeTabs" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="getStarted" />
+		</LazyHydrate>
 	</article>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
 	name: 'ImmudbPage',
 	layout: 'immudb-star-banner',
+	components: {
+		LazyHydrate,
+	},
 	async asyncData ({ $content }) {
 		const easySetup = await $content('technologies/immudb/EasySetup').fetch();
 		const performance = await $content('technologies/immudb/Performance').fetch();

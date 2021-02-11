@@ -1,16 +1,24 @@
 <template>
 	<PageSection id="partners">
 		<PageSectionHeader title="Our partners" tag="h1" />
-		<PartnersCarousel :partners="partners" />
-		<BecomeAPartner />
+		<LazyHydrate when-visible>
+			<PartnersCarousel :partners="partners" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<BecomeAPartner />
+		</LazyHydrate>
 	</PageSection>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
 	name: 'Partners',
+	components: {
+		LazyHydrate,
+	},
 	data: () => ({
 		partners: [
 			{

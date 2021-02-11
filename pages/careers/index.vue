@@ -1,17 +1,27 @@
 <template>
 	<div>
 		<CareersHeader @scrollMeTo="scrollMeTo('openPosition')" />
-		<OurValues />
-		<RemoteFriendly />
-		<OpenPositions ref="openPosition" :open-positions="openPositions" />
+		<LazyHydrate when-visible>
+			<OurValues />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<RemoteFriendly />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<OpenPositions ref="openPosition" :open-positions="openPositions" />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
 	name: 'CareerPosts',
+	components: {
+		LazyHydrate,
+	},
 	async asyncData ({ $content }) {
 		const openPositions = await $content('careers')
 				.only(['title', 'slug', 'location', 'type', 'requires', 'apply', 'weight', 'active'])

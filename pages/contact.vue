@@ -10,15 +10,17 @@
 				<i-row class="_text-center">
 					<i-column id="map-embed">
 						<div class="_embed-16by9">
-							<iframe
-								width="1200"
-								height="400"
-								src="https://maps.google.com/maps?hl=en&amp;q=4141 Southwest Freeway, Houston Texas+(Maps)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"
-								frameborder="0"
-								scrolling="no"
-								marginheight="0"
-								marginwidth="0"
-							/>
+							<LazyHydrate when-idle>
+								<iframe
+									width="1200"
+									height="400"
+									src="https://maps.google.com/maps?hl=en&amp;q=4141 Southwest Freeway, Houston Texas+(Maps)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"
+									frameborder="0"
+									scrolling="no"
+									marginheight="0"
+									marginwidth="0"
+								/>
+							</LazyHydrate>
 						</div>
 						<h3 class="_margin-top-1">
 							CodeNotary, Inc.
@@ -32,27 +34,33 @@
 					</i-column>
 				</i-row>
 			</i-container>
-			<i-container>
-				<i-row>
-					<i-column>
-						<div class="_form_10" />
-						<script
-							src="https://vchain.activehosted.com/f/embed.php?id=10"
-							type="text/javascript"
-							charset="utf-8"
-						/>
-					</i-column>
-				</i-row>
-			</i-container>
+			<LazyHydrate when-visible>
+				<i-container>
+					<i-row>
+						<i-column>
+							<div class="_form_10" />
+							<script
+								src="https://vchain.activehosted.com/f/embed.php?id=10"
+								type="text/javascript"
+								charset="utf-8"
+							/>
+						</i-column>
+					</i-row>
+				</i-container>
+			</LazyHydrate>
 		</PageSection>
 	</div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
 	name: 'Contact',
+	components: {
+		LazyHydrate,
+	},
 	head() {
 		return {
 			title: title('Contact us'),

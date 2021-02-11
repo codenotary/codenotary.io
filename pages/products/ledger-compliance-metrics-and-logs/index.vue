@@ -1,18 +1,30 @@
 <template>
 	<div>
 		<LCMlHeader />
-		<LcMlFeatures />
-		<LcMlIntegrations :integrations="integrations" />
-		<LcMlInfrastructure />
-		<LcMlTestimonials />
+		<LazyHydrate when-visible>
+			<LcMlFeatures />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<LcMlIntegrations :integrations="integrations" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<LcMlInfrastructure />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<LcMlTestimonials />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
 	name: 'LedgerComplianceMetricsAndLogs',
+	components: {
+		LazyHydrate,
+	},	
 	async asyncData ({ $content }) {
 		const integrations = await $content('products/integration')
 				.only(['title', 'date', 'image', 'slug', 'tags'])

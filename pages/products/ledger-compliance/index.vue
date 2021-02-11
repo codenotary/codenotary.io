@@ -1,17 +1,27 @@
 <template>
 	<div>
 		<LCHeader />
-		<LcFeatures />
-		<CustomerSuccessStories />
-		<LcInfrastructure />
+		<LazyHydrate when-visible>
+			<LcFeatures />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<CustomerSuccessStories />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<LcInfrastructure />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
 	name: 'LedgerComplianceOnPremise',
+	components: {
+		LazyHydrate,
+	},
 	head() {
 		return {
 			title: title('Ledger Compliance (on-premise)'),
