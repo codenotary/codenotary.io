@@ -4,7 +4,6 @@
 		<lc-features />
 		<customer-success-stories />
 		<lc-infrastructure />
-		<ledger-compliance />
 	</div>
 </template>
 
