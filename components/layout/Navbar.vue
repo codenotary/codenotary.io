@@ -95,9 +95,26 @@
 						/>
 					</i-nav-item>
 					<i-dropdown-menu>
-						<i-dropdown-item :to="{ name: 'technologies-immudb' }">
-							immudb
-						</i-dropdown-item>
+						<i-row class="_padding-1 _padding-left-1">
+							<i-column
+								class="_margin-0 _padding-xs-0"
+								xs="12"
+							>
+								<nuxt-link
+									class="freeform-item"
+									:to="{ name: 'technologies-immudb' }"
+								>
+									<h6
+										class="_margin-0 _padding-xs-0 title"
+									>
+										immudb
+									</h6>
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										Lorem Ipusm Dolor Sit Amet
+									</p>
+								</nuxt-link>
+							</i-column>
+						</i-row>
 					</i-dropdown-menu>
 				</i-dropdown>
 				<!-- TECHNOLOGIES md-and-down -->
@@ -188,7 +205,7 @@ $logo-height: 48;
 			a.freeform-item {
 				position: relative;
 				text-decoration: none !important;
-				color: black !important;
+				color: $text-dark-color !important;
 
 				&.-active {
 					&::before {
