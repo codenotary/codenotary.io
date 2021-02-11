@@ -9,9 +9,9 @@
 					On-premise or in the cloud; Secure, actionable observability with real cryptographic verification,
 					processing millions of transactions a second.
 				</p>
-				<p class="_font-weight-bold">
+				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold">
 					Powered by the world’s fastest immutable database.
-				</p>
+				</h5>
 				<p class="action">
 					<i-button
 						size="lg"

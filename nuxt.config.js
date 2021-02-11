@@ -30,7 +30,7 @@ export default {
     ** Headers of the page
     */
 	head: {
-		htmlAttrs: { lang: 'en-GB' },
+		htmlAttrs: { lang: 'en' },
 		title: DEFAULT_META.TITLE,
 		meta: [
 			...meta(),
