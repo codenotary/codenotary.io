@@ -14,29 +14,30 @@
 				</i-nav-item>
 
 				<!-- PRODUCTS -->
-				<i-popover
-					class="_visible-lg-and-up"
-					variant="light"
-					placement="bottom"
-					:disabled="disabled"
-					trigger="hover"
-				>
-					<div class="popover-trigger-wrapper">
-						<i-nav-item :class="{ '-active': subRouteActive('/products') }">
-							Products
-							&nbsp;
-							<fa :icon="['far', 'calendar-alt']" />
-						</i-nav-item>
-					</div>
-					<template slot="body">
+				<i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
+					<i-nav-item :class="{ '-active': subRouteActive('/products') }">
+						Products
+					</i-nav-item>
+					<i-dropdown-menu>
 						<i-dropdown-item :to="{ name: 'products-ledger-compliance' }">
 							Ledger Compliance (on-premise)
 						</i-dropdown-item>
 						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
 							Ledger Compliance (Public Cloud)
 						</i-dropdown-item>
-					</template>
-				</i-popover>
+					</i-dropdown-menu>
+				</i-dropdown>
+				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
+					<i-nav-item class="header" disabled>
+						Products
+					</i-nav-item>
+					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
+						Ledger Compliance (on-premise)
+					</i-nav-item>
+					<i-nav-item :to="{ name: 'products-ci-cd' }">
+						Ledger Compliance (Public Cloud)
+					</i-nav-item>
+				</i-nav>
 
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
 					<i-nav-item class="header" disabled>
