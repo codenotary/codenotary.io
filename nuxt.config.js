@@ -45,7 +45,6 @@ export default {
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 			{ rel: 'manifest', href: '/site.webmanifest' },
 			{ hid: 'canonical', rel: 'canonical', href: DEFAULT_META.SITE_URL },
-			{ rel: "preload", as: "style", href: "/fonts.css" },
 		],
 	},
 	/*
