@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="customer-success-stories-section">
+	<PageSection
+		id="customer-success-stories-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column xs="12" sm="12">
@@ -96,7 +99,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #customer-success-stories-section {
-	background-color: white;
 	overflow: hidden;
 
 	.story-card {

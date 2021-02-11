@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="board-of-directors-section">
+	<PageSection
+		id="board-of-directors-section"
+		variant="white"
+	>
 		<i-row>
 			<i-column>
 				<PageSectionHeader title="Our Board of Directors" />
@@ -68,8 +71,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #board-of-directors-section {
-	background-color: white;
-
 	.board-team-member-items {
 		display: flex;
 		justify-content: space-around;

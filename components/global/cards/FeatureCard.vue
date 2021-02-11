@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="feature"
+		class="feature-card"
 		data-aos="fade-zoom-in"
 	>
 		<img
@@ -47,7 +47,7 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-.feature {
+.feature-card {
 	text-align: center;
 
 	.title {

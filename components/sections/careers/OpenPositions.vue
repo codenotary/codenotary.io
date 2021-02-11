@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="open-positions-section">
+	<PageSection
+		id="open-positions-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -85,9 +88,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #open-positions-section {
-	background-color: white;
-	overflow: hidden;
-
 	.career-post {
 		margin-bottom: 1rem;
 		height: 272px;

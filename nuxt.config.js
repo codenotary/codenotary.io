@@ -3,10 +3,8 @@ import blogRoutes from './blog';
 import careersRoutes from './careers';
 import tosRoutes from './tos';
 
-const FONT_FAMILY = {
-	dir: 'proxima-nova',
-	file: 'ProximaNova',
-};
+const IS_PROD = process.env.NODE_ENV === 'production';
+const EXPERIMENTAL = false && !IS_PROD;
 
 export default {
 	/*
@@ -68,11 +66,11 @@ export default {
 	],
 	
 	build: {
-		parallel: process.env.NODE_ENV !== 'production',
-		cache: process.env.NODE_ENV !== 'production',
-		hardSource: false,
-		extractCSS: process.env.NODE_ENV === 'production',
-		optimizeCSS: process.env.NODE_ENV === 'production',
+		parallel: EXPERIMENTAL,
+		cache: EXPERIMENTAL,
+		hardSource: EXPERIMENTAL,
+		extractCSS: IS_PROD,
+		optimizeCSS: IS_PROD,
 		filenames: {
 			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
 			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',

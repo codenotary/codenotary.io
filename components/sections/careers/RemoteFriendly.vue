@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="remote-friendly-section">
+	<PageSection
+		id="remote-friendly-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -31,11 +34,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #remote-friendly-section {
-	background-color: white;
 	overflow: hidden;
 
 	.card {

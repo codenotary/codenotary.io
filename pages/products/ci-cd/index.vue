@@ -29,6 +29,6 @@ export default {
 	name: 'CiCdPage',
 	components: {
 		LazyHydrate,
-	},	
+	},
 };
 </script>

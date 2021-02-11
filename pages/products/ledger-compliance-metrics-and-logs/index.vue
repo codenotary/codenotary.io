@@ -24,7 +24,7 @@ export default {
 	name: 'LedgerComplianceMetricsAndLogs',
 	components: {
 		LazyHydrate,
-	},	
+	},
 	async asyncData ({ $content }) {
 		const integrations = await $content('products/integration')
 				.only(['title', 'date', 'image', 'slug', 'tags'])

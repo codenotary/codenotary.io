@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="ci-cd-videos-section">
+	<PageSection
+		id="ci-cd-videos-section"
+		variant="white"
+	>
 		<i-container>
 			<VueSlickCarousel v-bind="settings" @beforeChange="page = $event">
 				<div>
@@ -127,11 +130,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #ci-cd-videos-section {
-	background-color: white;
 	overflow: hidden;
 
 	.card {

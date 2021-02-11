@@ -1,5 +1,9 @@
 <template>
-	<PageSection id="timestamp-service-section" class="_padding-y-4">
+	<PageSection
+		id="timestamp-service-section"
+		class="_padding-y-4"
+		variant="blue"
+	>
 		<i-container>
 			<i-row>
 				<i-column xs="12" sm="12">
@@ -42,7 +46,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #timestamp-service-section {
-	background-color: $color-primary;
 	overflow: hidden;
 
 	h2 {

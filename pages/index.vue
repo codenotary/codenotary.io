@@ -2,6 +2,13 @@
 	<div>
 		<HomeHeader />
 		<LazyHydrate when-visible>
+			<PageSectionHeader
+				title="Lorem Ipsum Dolor Sit Amet"
+				:top="0"
+				:bottom="0"
+			/>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<FeaturesSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
@@ -18,9 +25,9 @@ import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
 	name: 'Homepage',
-	layout: 'banner',
 	components: {
 		LazyHydrate,
 	},
+	layout: 'banner',
 };
 </script>

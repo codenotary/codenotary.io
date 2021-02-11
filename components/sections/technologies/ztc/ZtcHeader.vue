@@ -1,7 +1,5 @@
 <template>
 	<i-header id="ztc-header">
-		<join-ztc-modal v-model="joinZtcModalVisible" />
-
 		<img
 			class="ztc-logo"
 			src="/images/ztc/logo.png"
@@ -24,6 +22,7 @@
 			>
 				Join the consortium
 			</i-button>
+			<join-ztc-modal v-model="joinZtcModalVisible" />
 		</p>
 	</i-header>
 </template>

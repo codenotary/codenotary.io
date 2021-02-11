@@ -30,6 +30,6 @@ export default {
 	name: 'ZtcPage',
 	components: {
 		LazyHydrate,
-	},	
+	},
 };
 </script>

@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="management-team-section">
+	<PageSection
+		id="management-team-section"
+		variant="white"
+	>
 		<i-row>
 			<i-column>
 				<PageSectionHeader title="Our Management Team" />
@@ -100,8 +103,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #management-team-section {
-	background-color: #e9ecef;
-
 	.team-member {
 		margin-bottom: $spacer * 2;
 	}

@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 class AosPlugin {
 	config = {
 		disable: 'mobile',
-		delay: 30,
+		delay: 0,
 		duration: 300,
 		easing: 'ease-in-back',
 		offset: 0,

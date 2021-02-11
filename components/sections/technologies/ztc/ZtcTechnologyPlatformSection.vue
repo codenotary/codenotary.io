@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="ztc-technology-platform-section">
+	<PageSection
+		id="ztc-technology-platform-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -77,7 +80,6 @@ export default {
 
 	#ztc-technology-platform-section {
 		text-align: center;
-		background-color: white;
 
 		.list {
 			font-size: 1.2rem;

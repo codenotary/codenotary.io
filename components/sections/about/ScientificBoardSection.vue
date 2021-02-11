@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="scientific-board-section">
+	<PageSection
+		id="scientific-board-section"
+		variant="white"
+	>
 		<i-row>
 			<i-column>
 				<PageSectionHeader title="Our Scientific Board" />
@@ -35,8 +38,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #scientific-board-section {
-	background-color: #e9ecef;
-
 	.team-member {
 		margin-bottom: $spacer * 2;
 	}

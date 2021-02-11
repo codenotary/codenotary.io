@@ -40,10 +40,10 @@ import { title } from '~/helpers/meta';
 
 export default {
 	name: 'ImmudbPage',
-	layout: 'immudb-star-banner',
 	components: {
 		LazyHydrate,
 	},
+	layout: 'immudb-star-banner',
 	async asyncData ({ $content }) {
 		const easySetup = await $content('technologies/immudb/EasySetup').fetch();
 		const performance = await $content('technologies/immudb/Performance').fetch();

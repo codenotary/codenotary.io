@@ -86,13 +86,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #our-values-section {
-	background-color: $color-gray-10;
-	overflow: hidden;
-
 	.card {
 		margin-bottom: 2rem;
 		background: transparent;

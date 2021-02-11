@@ -23,10 +23,10 @@ import { title } from '~/helpers/meta';
 
 export default {
 	name: 'About',
-	layout: 'banner-codenotary',
 	components: {
 		LazyHydrate,
-	},	
+	},
+	layout: 'banner-codenotary',
 	head() {
 		return {
 			title: title('About us'),

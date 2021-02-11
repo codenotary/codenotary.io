@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="lc-testimonials-section">
+	<PageSection
+		id="lc-testimonials-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -109,7 +112,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #lc-testimonials-section {
-	background-color: white;
 	overflow: hidden;
 
 	.card {

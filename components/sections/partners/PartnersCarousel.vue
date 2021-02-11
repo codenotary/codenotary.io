@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="partners-section">
+	<PageSection
+		id="partners-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column xs="12">
@@ -90,10 +93,8 @@ export default {
 
 <style lang="scss">
 @import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #partners-section {
-	background-color: white;
 	overflow: hidden;
 
 	a {

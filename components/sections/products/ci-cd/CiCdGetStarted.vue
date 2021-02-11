@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="ci-cd-get-started-section">
+	<PageSection
+		id="ci-cd-get-started-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -27,13 +30,3 @@ export default {
 	name: 'CiCdGetStarted',
 };
 </script>
-
-<style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
-
-#ci-cd-get-started-section {
-	background-color: white;
-	overflow: hidden;
-}
-</style>

@@ -34,7 +34,6 @@ export default {
 
 <style lang="scss">
 @import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #about-header {
 	background-color: white;

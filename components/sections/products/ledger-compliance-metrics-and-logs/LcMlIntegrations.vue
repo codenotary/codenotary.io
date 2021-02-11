@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="lc-integrations-section">
+	<PageSection
+		id="lc-integrations-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -84,7 +87,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #lc-integrations-section {
-	background-color: white;
 	overflow: hidden;
 
 	.story-card {

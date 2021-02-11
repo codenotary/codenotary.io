@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="about-features-section">
+	<PageSection
+		id="about-features-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column lg="4">
@@ -36,8 +39,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #about-features-section {
-	background-color: white;
-
 	.feature {
 		text-align: left;
 	}

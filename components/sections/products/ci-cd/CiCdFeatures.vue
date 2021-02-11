@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="ci-cd-features-section">
+	<PageSection
+		id="ci-cd-features-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -123,7 +126,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #ci-cd-features-section {
-	background-color: white;
 	overflow: hidden;
 
 	.card {

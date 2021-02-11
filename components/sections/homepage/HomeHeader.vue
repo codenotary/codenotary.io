@@ -1,5 +1,8 @@
 <template>
-	<i-header id="home-header">
+	<i-header
+		id="home-header"
+		size="sm"
+	>
 		<i-row class="_align-items-center">
 			<i-column lg="6">
 				<h1 class="h2 _font-weight-bold">
@@ -40,16 +43,18 @@
 				:class="{ 'playing': playing }"
 			>
 				<div id="video" class="_embed _embed-16by9">
-					<video
-						src="/videos/ci-cd.mp4"
-						poster="/videos/ci-cd.jpg"
-						width="1280"
-						height="720"
-						controls
-						@playing="onPlayVideo"
-						@pause="onPauseVideo"
-						@ended="onPauseVideo"
-					/>
+					<LazyHydrate when-idle>
+						<video
+							src="/videos/ci-cd.mp4"
+							poster="/videos/ci-cd.jpg"
+							width="1280"
+							height="720"
+							controls
+							@playing="onPlayVideo"
+							@pause="onPauseVideo"
+							@ended="onPauseVideo"
+						/>
+					</LazyHydrate>
 				</div>
 				<img
 					id="mascot"
@@ -62,8 +67,13 @@
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration';
+
 export default {
 	name: 'HomeHeader',
+	components: {
+		LazyHydrate,
+	},
 	data() {
 		return {
 			ledgerComplianceModalOpen: false,
