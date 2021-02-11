@@ -3,6 +3,11 @@ import blogRoutes from './blog';
 import careersRoutes from './careers';
 import tosRoutes from './tos';
 
+const FONT_FAMILY = {
+	dir: 'proxima-nova',
+	file: 'ProximaNova',
+};
+
 export default {
 	/*
     ** ssr propery
@@ -61,12 +66,13 @@ export default {
 		'vue-slick-carousel/dist/vue-slick-carousel.css',
 		'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
 	],
-
+	
 	build: {
 		parallel: process.env.NODE_ENV !== 'production',
 		cache: process.env.NODE_ENV !== 'production',
-		hardSource: process.env.NODE_ENV !== 'production',
+		hardSource: false,
 		extractCSS: process.env.NODE_ENV === 'production',
+		optimizeCSS: process.env.NODE_ENV === 'production',
 		filenames: {
 			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
 			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
@@ -103,6 +109,7 @@ export default {
 		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/leadfeeder', mode: 'client' },
 		{ src: '~plugins/tawk', mode: 'client' },
+		{ src: '~plugins/vue-aos', ssr: false },
 		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
 		{ src: '~plugins/vue-infinite-loading', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
@@ -183,43 +190,29 @@ export default {
 			fonts: [
 				// Open Sans
 				{
-					fileExtensions: ['woff2', 'woff'],
-					fontFamily: 'Open Sans',
+					fileExtensions: ['woff'],
+					fontFamily: 'Proxima nova',
 					fontFaces: [
 						// Font-Face
 						{
 							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-700',
+							src: 'font-proxima-nova/fonts/ProximaNova-Regular',
 							fontWeight: 400,
 							fontStyle: 'normal',
-						},
+						},					
 						// Font-Face
 						{
 							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-600',
-							fontWeight: 400,
-							fontStyle: 'normal',
-						},
-						// Font-Face
-						{
-							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-400',
-							fontWeight: 400,
-							fontStyle: 'normal',
-						},
-						// Font-Face
-						{
-							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-300',
+							src: 'font-proxima-nova/fonts/ProximaNova-Light',
 							fontWeight: 300,
 							fontStyle: 'normal',
 						},
 						// Font-Face
 						{
 							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-400italic',
-							fontWeight: 300,
-							fontStyle: 'Italic',
+							src: 'font-proxima-nova/fonts/ProximaNova-Bold',
+							fontWeight: 700,
+							fontStyle: 'normal',
 						},
 					],
 				},
@@ -248,13 +241,6 @@ export default {
 			'~/assets/typography.scss',
 			'~/assets/variables.scss',
 		],
-	},
-
-	webfontloader: {
-		google: {
-			// Loads Open Sans font with weights 300 and 400 + display font as swap
-			families: ['Open+Sans:100,300,400,500,600,700&display=swap'],
-		},
 	},
 
 	generate: {

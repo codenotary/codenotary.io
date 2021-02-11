@@ -2,8 +2,15 @@
 	<page-section id="features-section">
 		<i-container>
 			<i-row>
-				<i-column xs="12" lg="4">
-					<Feature title="Immutable" image="/images/features/immutable.svg">
+				<i-column
+					xs="12"
+					lg="4"
+					data-aos="fade-zoom-in"
+				>
+					<Feature
+						title="Immutable"
+						image="/images/features/immutable.svg"
+					>
 						<ul class="list -unstyled">
 							<li>
 								Any kind of key-value. Clients can choose how to structure data.
@@ -21,7 +28,10 @@
 					</Feature>
 				</i-column>
 				<i-column xs="12" lg="4">
-					<Feature title="Auditable" image="/images/features/auditable.svg">
+					<Feature
+						title="Auditable"
+						image="/images/features/auditable.svg"
+					>
 						<ul class="list -unstyled">
 							<li>
 								Tamper-evident history system with <strong>cryptographic proof</strong>
@@ -34,7 +44,10 @@
 					</Feature>
 				</i-column>
 				<i-column xs="12" lg="4">
-					<Feature title="Secure" image="/images/features/secure.svg">
+					<Feature
+						title="Secure"
+						image="/images/features/secure.svg"
+					>
 						<ul class="list -unstyled">
 							<li>
 								Data ownership is verifiable by clients and auditors. Built-in immutable data history against Ransomware (malware encryption).
@@ -55,7 +68,10 @@
 					sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Record data when it happens" image="/images/features/record_data.svg">
+					<Feature
+						subtitle="Record data when it happens"
+						image="/images/features/record_data.svg"
+					>
 						<p>Database changes, table history, data access, audit information.</p>
 					</Feature>
 				</i-column>
@@ -64,7 +80,10 @@
 					sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Immediate data query" image="/images/features/immediate_query.svg">
+					<Feature
+						subtitle="Immediate data query"
+						image="/images/features/immediate_query.svg"
+					>
 						<p>Extremely fast query engine and always ready to use.</p>
 					</Feature>
 				</i-column>
@@ -73,7 +92,10 @@
 					sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Cryptographic verification built-in" image="/images/features/cryptographic_verifcation.svg">
+					<Feature
+						subtitle="Cryptographic verification built-in"
+						image="/images/features/cryptographic_verifcation.svg"
+					>
 						<p>Every entry is verifiable using cryptographic proof.</p>
 					</Feature>
 				</i-column>
@@ -82,7 +104,10 @@
 					sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Always available" image="/images/features/online.svg">
+					<Feature
+						subtitle="Always available"
+						image="/images/features/online.svg"
+					>
 						<p>No archive system, data is online and never out of reach.</p>
 					</Feature>
 				</i-column>

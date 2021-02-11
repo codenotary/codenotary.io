@@ -1,5 +1,8 @@
 <template>
-	<div class="feature">
+	<div
+		class="feature"
+		data-aos="fade-zoom-in"
+	>
 		<img
 			v-if="image"
 			class="image -responsive"
