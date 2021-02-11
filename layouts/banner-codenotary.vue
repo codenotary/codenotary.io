@@ -112,6 +112,7 @@ section.banner-layout {
 		#navbar {
 			top: #{$banner-scrolled-height}px !important;
 			background: white !important;
+			box-shadow: 0 5px 25px rgba(211, 211, 211, 0.5) !important;
 		}
 
 		#content {
