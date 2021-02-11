@@ -17,6 +17,7 @@ import LcMlInfrastructure from '~/components/sections/products/ledger-compliance
 import LcMlTestimonials from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlTestimonials';
 
 export default {
+	name: 'LedgerComplianceMetricsAndLogs',
 	components: {
 		LCMlHeader,
 		LcMlFeatures,
@@ -34,7 +35,7 @@ export default {
 	},
 	head() {
 		return {
-			title: title('Ledger Compliance Metrics and Logs'),
+			title: title('Ledger Compliance (Public Cloud)'),
 		};
 	},
 };

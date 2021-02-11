@@ -15,7 +15,7 @@ import CustomerSuccessStories from '~/components/sections/homepage/CustomerSucce
 import LcInfrastructure from '~/components/sections/products/ledger-compliance/LcInfrastructure';
 
 export default {
-
+	name: 'LedgerComplianceOnPremise',
 	components: {
 		LCHeader,
 		LcFeatures,
@@ -24,7 +24,7 @@ export default {
 	},
 	head() {
 		return {
-			title: title('Ledger Compliance'),
+			title: title('Ledger Compliance (on-premise)'),
 		};
 	},
 };
