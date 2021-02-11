@@ -9,7 +9,8 @@
 			<i-row class="team-member-items">
 				<i-column lg="4">
 					<team-member
-						name="Moshe Bar" position="CEO"
+						name="Moshe Bar"
+						position="CEO"
 						image="/images/teams/moshe-bar.jpg"
 					>
 						<p>
@@ -25,7 +26,8 @@
 				</i-column>
 				<i-column lg="4">
 					<team-member
-						name="Dennis Zimmer" position="CTO"
+						name="Dennis Zimmer"
+						position="CTO"
 						image="/images/teams/dennis-zimmer.jpg"
 					>
 						<p>
@@ -38,7 +40,8 @@
 				</i-column>
 				<i-column lg="4">
 					<team-member
-						name="Amelie Scheuermeyer" position="VP Administration"
+						name="Amelie Scheuermeyer"
+						position="VP Administration"
 						image="/images/teams/amelie-scheuermeyer.jpg"
 					>
 						<p>
@@ -53,7 +56,8 @@
 			<i-row class="team-member-items">
 				<i-column lg="4">
 					<team-member
-						name="Jerónimo Irazábal" position="Chief Architect & immudb Community Manager"
+						name="Jerónimo Irazábal"
+						position="Chief Architect & immudb Community Manager"
 						image="/images/teams/jeronimo-irazabal.png"
 					>
 						<p>

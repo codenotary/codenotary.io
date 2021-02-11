@@ -4,11 +4,13 @@
 			<i-row>
 				<i-column>
 					<page-section-header
-						title="Join the Zero-Trust Consortium" block
+						title="Join the Zero-Trust Consortium"
+						block
 						class="_margin-bottom-2"
 					/>
 					<i-button
-						size="lg" variant="light"
+						size="lg"
+						variant="light"
 						@click="joinZtcModalVisible = true"
 					>
 						Join the Consortium

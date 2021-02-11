@@ -5,8 +5,10 @@
 				<i-tab title="Infrastructure Health">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Virtual Infrastructure Health.
@@ -16,8 +18,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/highlights_virtual_machines_disksize.png" alt="Notarize">
 						</i-column>
@@ -26,8 +30,10 @@
 				<i-tab title="Performance Bottlenecks">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Find performance bottlenecks quick and easy.
@@ -37,8 +43,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/starter_vmware_virtual_machines.png" alt="Notarize">
 						</i-column>
@@ -47,8 +55,10 @@
 				<i-tab title="Capacity Planning">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Capacity planning of VMs and ESXi hosts.
@@ -58,8 +68,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/vmware_capacity_planning_cluster.png" alt="Notarize">
 						</i-column>
@@ -68,8 +80,10 @@
 				<i-tab title="Visual Warnings & Alerts">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Visual warnings and alerts for KPIs.
@@ -79,8 +93,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/vmware_capacity_vm_snapshots.png" alt="Notarize">
 						</i-column>
@@ -90,8 +106,10 @@
 					<i-row center middle>
 						<!-- <i-column xs="12" sm="6" md="6" lg="6"> -->
 						<i-column
-							xs="12" sm="12"
-							md="6" lg="6"
+							xs="12"
+							sm="12"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Track VM hardware and configuration changes.
@@ -108,8 +126,10 @@
 				<i-tab title="Event/Performance Correlation">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Merge Events and Performance data.
@@ -119,8 +139,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/linux_host_overview.png" alt="Notarize">
 						</i-column>
@@ -129,8 +151,10 @@
 				<i-tab title="Full Stack View">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Not just the hypervisor.
@@ -140,8 +164,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/linux_host_overview.png" alt="Notarize">
 						</i-column>

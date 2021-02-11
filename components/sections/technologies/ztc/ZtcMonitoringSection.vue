@@ -11,8 +11,10 @@
 			<i-row>
 				<i-column class="_text-center">
 					<img
-						id="ztc-monitoring-image" class="image -responsive"
-						src="/images/ztc/monitoring.png" alt="Monitoring"
+						id="ztc-monitoring-image"
+						class="image -responsive"
+						src="/images/ztc/monitoring.png"
+						alt="Monitoring"
 					>
 				</i-column>
 			</i-row>

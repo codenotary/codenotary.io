@@ -1,11 +1,14 @@
 <template>
 	<div
-		v-if="!outlined && color" class="story-card"
+		v-if="!outlined && color"
+		class="story-card"
 		:style="`background-color: ${color}`"
 	>
 		<img
-			v-if="image" class="image -responsive"
-			:class="{'image-only': !title && !subtitle }" :src="image"
+			v-if="image"
+			class="image -responsive"
+			:class="{'image-only': !title && !subtitle }"
+			:src="image"
 			:alt="title"
 		>
 		<h5 v-if="title" class="title">
@@ -17,8 +20,10 @@
 	</div>
 	<div v-else-if="!outlined" :class="`story-card _background-${variant}`">
 		<img
-			v-if="image" class="image -responsive"
-			:class="{'image-only': !title && !subtitle }" :src="image"
+			v-if="image"
+			class="image -responsive"
+			:class="{'image-only': !title && !subtitle }"
+			:src="image"
 			:alt="title"
 		>
 		<h5 v-if="title" class="title">
@@ -29,12 +34,15 @@
 		</p>
 	</div>
 	<div
-		v-else class="story-card"
+		v-else
+		class="story-card"
 		:style="`border: 2px solid ${color}`"
 	>
 		<img
-			v-if="image" class="image -responsive"
-			:class="{'image-only': !title && !subtitle }" :src="image"
+			v-if="image"
+			class="image -responsive"
+			:class="{'image-only': !title && !subtitle }"
+			:src="image"
 			:alt="title"
 		>
 		<h5 v-if="title" class="title _text-black">

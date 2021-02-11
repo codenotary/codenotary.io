@@ -1,7 +1,9 @@
 <template>
 	<i-modal
-		class="partner-modal" size="lg"
-		:value="value" @input="$emit('input', $event)"
+		class="partner-modal"
+		size="lg"
+		:value="value"
+		@input="$emit('input', $event)"
 	>
 		<template slot="header">
 			Become a partner
@@ -9,7 +11,8 @@
 		<partner-form />
 		<div class="_form_18" />
 		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=18" type="text/javascript"
+			src="https://vchain.activehosted.com/f/embed.php?id=18"
+			type="text/javascript"
 			charset="utf-8"
 		/>
 	</i-modal>

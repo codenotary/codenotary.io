@@ -2,7 +2,8 @@
 	<i-navbar>
 		<i-navbar-brand :to="{ name: 'index' }" class="_padding-0">
 			<img
-				class="logo" src="/images/logo/logo_blue.png"
+				class="logo"
+				src="/images/logo/logo_blue.png"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
@@ -13,31 +14,61 @@
 					Blog
 				</i-nav-item>
 
-				<!-- PRODUCTS -->
-				<i-popover
-					class="_visible-lg-and-up"
-					variant="light"
-					placement="bottom"
-					:disabled="disabled"
+				<!-- PRODUCTS lg-and-up -->
+				<i-dropdown
+					class="navbar-dropdown _visible-lg-and-up"
 					trigger="hover"
+					@change="productsMenuOpen = $event"
 				>
-					<div class="popover-trigger-wrapper">
-						<i-nav-item :class="{ '-active': subRouteActive('/products') }">
-							Products
-							&nbsp;
-							<fa :icon="['far', 'calendar-alt']" />
-						</i-nav-item>
-					</div>
-					<template slot="body">
-						<i-dropdown-item :to="{ name: 'products-ledger-compliance' }">
-							Ledger Compliance (on-premise)
-						</i-dropdown-item>
-						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
-							Ledger Compliance (Public Cloud)
-						</i-dropdown-item>
-					</template>
-				</i-popover>
-
+					<i-nav-item :class="{ '-active': subRouteActive('/products') }">
+						Products
+						<fa
+							class="_margin-left-1-4"
+							:icon="`caret-${ productsMenuOpen ? 'up' : 'down' }`"
+						/>
+					</i-nav-item>
+					<i-dropdown-menu>
+						<i-row class="_padding-1 _padding-left-1">
+							<i-column
+								class="_margin-0 _padding-xs-0"
+								xs="12"
+							>
+								<nuxt-link
+									class="freeform-item"
+									:to="{ name: 'products-ledger-compliance' }"
+								>
+									<h6
+										class="_margin-0 _padding-xs-0 title"
+									>
+										Ledger Compliance (on-premise)
+									</h6>
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										Lorem Ipusm Dolor Sit Amet
+									</p>
+								</nuxt-link>
+							</i-column>
+							<i-column
+								class="_margin-0 _margin-top-1 _padding-xs-0"
+								xs="12"
+							>
+								<nuxt-link
+									class="freeform-item"
+									:to="{ name: 'products-ci-cd' }"
+								>
+									<h6
+										class="_margin-0 _padding-xs-0 title"
+									>
+										Ledger Compliance (Public Cloud)
+									</h6>
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										Lorem Ipusm Dolor Sit Amet
+									</p>
+								</nuxt-link>
+							</i-column>
+						</i-row>
+					</i-dropdown-menu>
+				</i-dropdown>
+				<!-- PRODUCTS md-and-down -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
 					<i-nav-item class="header" disabled>
 						Products
@@ -50,10 +81,18 @@
 					</i-nav-item>
 				</i-nav>
 
-				<!-- TECHNOLOGIES -->
-				<i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
+				<!-- TECHNOLOGIES lg-and-up -->
+				<i-dropdown
+					class="navbar-dropdown _visible-lg-and-up"
+					trigger="hover"
+					@change="technologiesMenuOpen = $event"
+				>
 					<i-nav-item :class="{ '-active': subRouteActive('/technologies') }">
 						Technologies
+						<fa
+							class="_margin-left-1-4"
+							:icon="`caret-${ technologiesMenuOpen ? 'up' : 'down' }`"
+						/>
 					</i-nav-item>
 					<i-dropdown-menu>
 						<i-dropdown-item :to="{ name: 'technologies-immudb' }">
@@ -61,6 +100,7 @@
 						</i-dropdown-item>
 					</i-dropdown-menu>
 				</i-dropdown>
+				<!-- TECHNOLOGIES md-and-down -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
 					<i-nav-item class="header" disabled>
 						Technologies
@@ -70,13 +110,17 @@
 					</i-nav-item>
 				</i-nav>
 
-				<!-- COMPANY -->
+				<!-- ABOUT US -->
 				<i-nav-item :to="{ name: 'about' }">
 					About us
 				</i-nav-item>
+
+				<!-- PARTNERS -->
 				<i-nav-item :to="{ name: 'partners' }">
 					Partners
 				</i-nav-item>
+
+				<!-- CONTACT US -->
 				<i-nav-item :to="{ name: 'contact' }">
 					Contact us
 				</i-nav-item>
@@ -93,6 +137,8 @@ export default {
 	data() {
 		return {
 			isNavbarCollapsed: false,
+			productsMenuOpen: false,
+			technologiesMenuOpen: false,
 		};
 	},
 	methods: {
@@ -108,6 +154,7 @@ export default {
 		},
 	},
 };
+		
 </script>
 
 <style lang="scss">
@@ -133,8 +180,47 @@ $logo-height: 48;
 		background: transparent !important;
 	}
 
-	.dropdown .menu .item.-active {
-		font-weight: 600 !important;
+	.navbar-dropdown {
+		.menu {
+			min-width: 320px !important;
+			max-width: 600px !important;
+
+			a.freeform-item {
+				position: relative;
+				text-decoration: none !important;
+				color: black !important;
+
+				&.-active {
+					&::before {
+						content: '';
+						position: absolute;
+						top: 0;
+						left: -16px;
+						bottom: 0;
+						width: 4px;
+						height: 48px;
+						background: $color-primary;
+						border-radius: 0 4px 4px 0;
+					}
+				}
+
+				.title {
+					line-height: 1.25em;
+					font-weight: 700;
+				}
+
+				.subtitle {
+					font-weight: 300;
+				}
+
+				&:hover {
+					.title,
+					.subtitle {
+						opacity: 0.55 !important;
+					}
+				}
+			}
+		}
 	}
 
 	.dropdown-fallback-nav {

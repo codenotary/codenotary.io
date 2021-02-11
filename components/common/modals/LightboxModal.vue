@@ -1,7 +1,9 @@
 <template>
 	<i-modal
-		id="lightbox-modal" :class="classname"
-		:value="value" @input="$emit('input', $event)"
+		id="lightbox-modal"
+		:class="classname"
+		:value="value"
+		@input="$emit('input', $event)"
 	>
 		<template slot="header">
 			<span v-if="title">{{ title }}</span>

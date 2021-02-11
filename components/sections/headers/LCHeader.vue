@@ -37,8 +37,10 @@
 				md="6"
 			>
 				<img
-					class="zoom" :src="src"
-					:alt="alt" @click="index = 0"
+					class="zoom"
+					:src="src"
+					:alt="alt"
+					@click="index = 0"
 				>
 				{{ index }}
 			</i-column>

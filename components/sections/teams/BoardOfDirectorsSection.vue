@@ -8,19 +8,22 @@
 		<i-container>
 			<i-row class="board-team-member-items border-top">
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					md="4"
 				>
 					<board-team-member name="Moshe Bar" position="CEO, Co-Chairman" />
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					md="4"
 				>
 					<board-team-member name="Prof. Dr. Marcus Englert" position="Co-Chairman" />
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					md="4"
 				>
 					<board-team-member name="Pascal Blum" position="Board Member" />
@@ -28,19 +31,22 @@
 			</i-row>
 			<i-row class="board-team-member-items border-bottom">
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					md="4"
 				>
 					<board-team-member name="Shayne Higdon" position="Board Member" />
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					md="4"
 				>
 					<board-team-member name="Bart Markus" position="Board Member" />
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					md="4"
 				>
 					<board-team-member name="Marc Rougier" position="Board Member" />

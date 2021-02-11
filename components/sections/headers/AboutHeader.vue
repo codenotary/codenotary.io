@@ -18,18 +18,23 @@
 			<i-column md="4" class="_padding-left-4 _text-left">
 				<p class="_padding-0 margin-0 _margin-bottom-2">
 					<img
-						src="/images/logo/logo_black.png" alt="CodeNotary"
-						class="image -responsive" width="220"
+						src="/images/logo/logo_black.png"
+						alt="CodeNotary"
+						class="image -responsive"
+						width="220"
 					>
 				</p>
 				<p class="_padding-0 margin-0">
 					<a
-						href="https://www.vmware.com/partners/work-with-vmware/tap.html" target="_blank"
+						href="https://www.vmware.com/partners/work-with-vmware/tap.html"
+						target="_blank"
 						rel="nofollow"
 					>
 						<img
-							src="/images/tap.png" alt="VMware Technology Alliance Partner (TAP)"
-							class="image -responsive" width="100"
+							src="/images/tap.png"
+							alt="VMware Technology Alliance Partner (TAP)"
+							class="image -responsive"
+							width="100"
 						>
 					</a>
 				</p>

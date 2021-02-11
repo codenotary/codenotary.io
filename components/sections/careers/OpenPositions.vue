@@ -9,12 +9,15 @@
 			<i-row>
 				<no-ssr>
 					<masonry
-						class="_width-100" :cols="{default: 3, 1000: 2, 700: 1, 400: 1}"
+						class="_width-100"
+						:cols="{default: 3, 1000: 2, 700: 1, 400: 1}"
 						:gutter="{default: '1rem', 700: '1rem'}"
 					>
 						<div
-							v-for="article in sortedOpenPositions" :key="article.slug"
-							class="item" column-width="33px"
+							v-for="article in sortedOpenPositions"
+							:key="article.slug"
+							class="item"
+							column-width="33px"
 						>
 							<i-card v-if="article.active" class="career-post">
 								<div>
@@ -37,7 +40,8 @@
 								</div>
 								<div>
 									<i-button
-										variant="primary" large
+										variant="primary"
+										large
 										block
 									>
 										More info

@@ -1,14 +1,17 @@
 <template>
 	<i-modal
-		class="subscribe-modal" size="lg"
-		:value="value" @input="onVisibilityChange"
+		class="subscribe-modal"
+		size="lg"
+		:value="value"
+		@input="onVisibilityChange"
 	>
 		<template slot="header">
 			Download Research Paper
 		</template>
 
 		<i-alert
-			v-if="sent" variant="success"
+			v-if="sent"
+			variant="success"
 			class="_margin-bottom-1"
 		>
 			<template slot="icon">
@@ -18,7 +21,8 @@
 		</i-alert>
 
 		<i-alert
-			v-if="error" variant="danger"
+			v-if="error"
+			variant="danger"
 			class="_margin-bottom-1"
 		>
 			<template slot="icon">
@@ -37,14 +41,18 @@
 			</i-form-group>
 			<i-form-group>
 				<vue-recaptcha
-					ref="recaptcha" :load-recaptcha-script="true"
-					:sitekey="sitekey" @verify="onVerify"
+					ref="recaptcha"
+					:load-recaptcha-script="true"
+					:sitekey="sitekey"
+					@verify="onVerify"
 				/>
 			</i-form-group>
 			<i-form-group>
 				<i-button
-					type="submit" variant="primary"
-					:disabled="!verified || sending" block
+					type="submit"
+					variant="primary"
+					:disabled="!verified || sending"
+					block
 				>
 					{{ sending ? 'Sending..' : 'Send me the document' }}
 				</i-button>

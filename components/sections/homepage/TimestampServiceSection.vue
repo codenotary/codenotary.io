@@ -11,11 +11,13 @@
 				</i-column>
 				<i-column
 					class="_margin-bottom-0 _display-flex _justify-content-center _align-items-center"
-					xs="12" sm="12"
+					xs="12"
+					sm="12"
 				>
 					<div class="button-wrapper">
 						<i-button
-							variant="light" size="lg"
+							variant="light"
+							size="lg"
 							:href="'https://timestamp.codenotary.com?from=\'codenotary\''"
 							target="_blank"
 							rel="noopener"

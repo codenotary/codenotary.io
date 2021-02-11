@@ -51,7 +51,8 @@
 			</i-row>
 			<i-row v-if="true" class=" _margin-top-4">
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature subtitle="Record data when it happens" image="/images/features/record_data.svg">
@@ -59,7 +60,8 @@
 					</Feature>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature subtitle="Immediate data query" image="/images/features/immediate_query.svg">
@@ -67,7 +69,8 @@
 					</Feature>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature subtitle="Cryptographic verification built-in" image="/images/features/cryptographic_verifcation.svg">
@@ -75,7 +78,8 @@
 					</Feature>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature subtitle="Always available" image="/images/features/online.svg">
@@ -93,7 +97,8 @@
 							Powered by
 							<a href="https://immudb.io">
 								<img
-									width="40" src="/images/logo/icon/logo_icon_black.svg"
+									width="40"
+									src="/images/logo/icon/logo_icon_black.svg"
 									alt="immudb"
 								>
 								<strong class="_text-black">immudb</strong>

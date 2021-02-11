@@ -2,7 +2,8 @@
 	<i-header id="ci-cd-header">
 		<i-row class="_align-items-center">
 			<i-column
-				xs="12" md="4"
+				xs="12"
+				md="4"
 				class="_text-center _margin-bottom-1 _hidden-md-and-up"
 			>
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
@@ -19,15 +20,19 @@
 				</p>
 				<p class="action">
 					<i-button
-						size="lg" outline
-						variant="primary" href="https://dashboard.codenotary.io/auth/signin"
+						size="lg"
+						outline
+						variant="primary"
+						href="https://dashboard.codenotary.io/auth/signin"
 						target="_blank"
 					>
 						Sign in
 					</i-button>
 					<i-button
-						size="lg" class="_margin-left-1"
-						variant="primary" href="https://dashboard.codenotary.io/auth/signup"
+						size="lg"
+						class="_margin-left-1"
+						variant="primary"
+						href="https://dashboard.codenotary.io/auth/signup"
 						target="_blank"
 					>
 						Sign up
@@ -35,7 +40,8 @@
 				</p>
 			</i-column>
 			<i-column
-				xs="12" md="4"
+				xs="12"
+				md="4"
 				class="_text-center  _hidden-sm-and-down"
 			>
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">

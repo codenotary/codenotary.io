@@ -1,7 +1,8 @@
 <template>
 	<section class="banner-layout" :class="{ scrolled, hover }">
 		<Banner
-			id="banner" @mouseenter.native="hover = true"
+			id="banner"
+			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
 		<Navbar id="navbar" />

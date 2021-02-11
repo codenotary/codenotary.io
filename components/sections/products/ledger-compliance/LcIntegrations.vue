@@ -14,7 +14,8 @@
 				<i-column xs="12">
 					<VueSlickCarousel v-if="integrations && integrations.length" v-bind="settings">
 						<div
-							v-for="integration in integrations" :key="integration.slug"
+							v-for="integration in integrations"
+							:key="integration.slug"
 							class="integration-wrapper"
 						>
 							<nuxt-link :to="{ name: 'products-integration-post', params: { post: integration.slug } }">

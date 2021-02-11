@@ -11,7 +11,8 @@
 		<i-row class="_display-flex _justify-content-center _align-items-start">
 			<i-column
 				class="_display-flex _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
-				xs="12" sm="8"
+				xs="12"
+				sm="8"
 				md="4"
 			>
 				<PricingTable
@@ -68,7 +69,8 @@
 			</i-column>
 			<i-column
 				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
-				xs="12" sm="8"
+				xs="12"
+				sm="8"
 				md="4"
 			>
 				<PricingTable
@@ -128,7 +130,8 @@
 			</i-column>
 			<i-column
 				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
-				xs="12" sm="8"
+				xs="12"
+				sm="8"
 				md="4"
 			>
 				<PricingTable
@@ -187,7 +190,8 @@
 				>
 					<template slot="short-row">
 						<PricingTableRow
-							v-for="(item, idx) in parsedFeatures" :key="idx"
+							v-for="(item, idx) in parsedFeatures"
+							:key="idx"
 							class="_margin-top-1 _margin-right-1"
 							icon="check-square"
 							:fill="isMobile"

@@ -3,7 +3,8 @@
 		<join-ztc-modal v-model="joinZtcModalVisible" />
 
 		<img
-			class="ztc-logo" src="/images/ztc/logo.png"
+			class="ztc-logo"
+			src="/images/ztc/logo.png"
 			alt="Zero-Trust Consortium"
 		>
 
@@ -17,7 +18,8 @@
 
 		<p class="action">
 			<i-button
-				size="lg" variant="primary"
+				size="lg"
+				variant="primary"
 				@click="joinZtcModalVisible = true"
 			>
 				Join the consortium

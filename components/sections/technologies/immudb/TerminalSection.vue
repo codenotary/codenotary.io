@@ -7,7 +7,8 @@
 						<div>
 							<i-row middle class="_padding-1">
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<h4 class="title _font-weight-bold _text-primary">
@@ -24,7 +25,8 @@
 									</ul>
 								</i-column>
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<Terminal title="immudb" language="go">
@@ -45,7 +47,8 @@
 						<div>
 							<i-row middle class="_padding-1">
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<h4 class="title _font-weight-bold _text-primary">
@@ -63,7 +66,8 @@
 									</ul>
 								</i-column>
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<Terminal title="immudb" language="bash">
@@ -85,7 +89,8 @@
 						<div>
 							<i-row middle class="_padding-1">
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<h4 class="title _font-weight-bold _text-primary">
@@ -102,7 +107,8 @@
 									</ul>
 								</i-column>
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<!-- eslint-disable vue/html-indent -->

@@ -22,8 +22,10 @@
 			>
 				<i-column>
 					<img
-						id="tree-image" src="/images/word-tree.png"
-						alt="CodeNotary Word Cloud" class="image -responsive"
+						id="tree-image"
+						src="/images/word-tree.png"
+						alt="CodeNotary Word Cloud"
+						class="image -responsive"
 						width="650"
 					>
 				</i-column>

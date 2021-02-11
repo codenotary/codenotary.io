@@ -62,7 +62,6 @@ export default {
 		'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
 	],
 
-
 	build: {
 		parallel: process.env.NODE_ENV !== 'production',
 		cache: process.env.NODE_ENV !== 'production',
@@ -71,7 +70,7 @@ export default {
 		filenames: {
 			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
 			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
-		},		
+		},
 		// Extend webpack config
 		extend: (config, ctx) => {
 			config.devtool = ctx.isClient ? 'eval-source-map' : 'inline-source-map';
@@ -105,7 +104,7 @@ export default {
 		{ src: '~plugins/leadfeeder', mode: 'client' },
 		{ src: '~plugins/tawk', mode: 'client' },
 		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
-		{ src: "~plugins/vue-infinite-loading", mode: "client" },
+		{ src: '~plugins/vue-infinite-loading', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
 		{ src: '~plugins/vue-masonry-css', ssr: false },
 		{ src: '~plugins/vue-truncate-filter', ssr: false },
@@ -147,30 +146,37 @@ export default {
 				{
 					set: '@fortawesome/free-solid-svg-icons',
 					icons: [
+						'faAward',
+						'faBolt',
+						'faCaretDown',
+						'faCaretUp',
+						'faChartLine',
 						'faCheckSquare',
 						'faCheckCircle',
-						'faTimesCircle',
-						'faStar',
-						'faServer',
-						'faDatabase',
-						'faBolt',
-						'faLock',
 						'faChevronRight',
-						'faQuoteLeft',
+						'faDatabase',
 						'faFire',
 						'faGlobe',
-						'faAward',
-						'faChartLine',
+						'faLock',
+						'faQuoteLeft',
+						'faServer',
+						'faStar',
+						'faTimesCircle',
 					],
 				},
 				{
 					set: '@fortawesome/free-brands-svg-icons',
-					icons: ['faFacebookSquare', 'faTwitterSquare', 'faLinkedin', 'faGithubSquare'],
+					icons: [
+						'faFacebookSquare',
+						'faTwitterSquare',
+						'faLinkedin',
+						'faGithubSquare',
+					],
 				},
 			],
 		}],
 		// Doc: https://github.com/GrabarzUndPartner/nuxt-font-loader-strategy
-		['nuxt-font-loader-strategy', { 
+		['nuxt-font-loader-strategy', {
 			useWorker: false,
 			ignoreLighthouse: true,
 			ignoredEffectiveTypes: ['2g', 'slow-2g'],
@@ -185,35 +191,35 @@ export default {
 							preload: true,
 							src: 'typeface-open-sans/files/open-sans-latin-700',
 							fontWeight: 400,
-							fontStyle: 'normal'
+							fontStyle: 'normal',
 						},
 						// Font-Face
 						{
 							preload: true,
 							src: 'typeface-open-sans/files/open-sans-latin-600',
 							fontWeight: 400,
-							fontStyle: 'normal'
+							fontStyle: 'normal',
 						},
 						// Font-Face
 						{
 							preload: true,
 							src: 'typeface-open-sans/files/open-sans-latin-400',
 							fontWeight: 400,
-							fontStyle: 'normal'
+							fontStyle: 'normal',
 						},
 						// Font-Face
 						{
 							preload: true,
 							src: 'typeface-open-sans/files/open-sans-latin-300',
 							fontWeight: 300,
-							fontStyle: 'normal'
+							fontStyle: 'normal',
 						},
 						// Font-Face
 						{
 							preload: true,
 							src: 'typeface-open-sans/files/open-sans-latin-400italic',
 							fontWeight: 300,
-							fontStyle: 'Italic'
+							fontStyle: 'Italic',
 						},
 					],
 				},
@@ -238,7 +244,10 @@ export default {
 	},
 
 	styleResources: {
-		scss: ['~/assets/variables.scss'],
+		scss: [
+			'~/assets/typography.scss',
+			'~/assets/variables.scss',
+		],
 	},
 
 	webfontloader: {
@@ -259,6 +268,7 @@ export default {
 							route: `/blog/${ blogRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -270,6 +280,7 @@ export default {
 							route: `/careers/${ careersRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -281,6 +292,7 @@ export default {
 							route: `/terms-of-service/${ tosRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -302,6 +314,7 @@ export default {
 							route: `/blog/${ blogRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -313,6 +326,7 @@ export default {
 							route: `/careers/${ careersRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -324,6 +338,7 @@ export default {
 							route: `/terms-of-service/${ tosRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}

@@ -10,7 +10,8 @@
 				</p>
 				<div class="button-wrapper _margin-top-2">
 					<i-button
-						variant="primary" size="lg"
+						variant="primary"
+						size="lg"
 						@click="scrolleMeTo()"
 					>
 						See open positions

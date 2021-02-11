@@ -9,7 +9,8 @@
 				<i-column v-if="isIndex && articles">
 					<ul class="list -unstyled">
 						<li
-							v-for="article in articles" :key="article.slug"
+							v-for="article in articles"
+							:key="article.slug"
 							class="_margin-top-1 _text-center"
 						>
 							<nuxt-link :to="{ name: 'terms-of-service-slug', params: { slug: article.slug } }">
@@ -24,16 +25,21 @@
 					</article>
 				</i-column>
 				<i-column
-					v-if="article.download" xs="12"
+					v-if="article.download"
+					xs="12"
 					class="_margin-top-4 _display-flex _justify-content-center _align-content-center"
 				>
 					<i-column
-						xs="12" sm="10"
-						md="8" lg="6"
+						xs="12"
+						sm="10"
+						md="8"
+						lg="6"
 					>
 						<i-button
-							variant="primary" large
-							block @click.prevent="download(article.download, article.title)"
+							variant="primary"
+							large
+							block
+							@click.prevent="download(article.download, article.title)"
 						>
 							DOWNLOAD
 						</i-button>

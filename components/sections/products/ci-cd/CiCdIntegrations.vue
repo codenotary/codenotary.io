@@ -12,111 +12,159 @@
 			</i-row>
 			<i-row>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="immudb" subtitle="high-speed immutable database"
-						color="transparent" image="/images/immudb/mascot.png"
+						title="immudb"
+						subtitle="high-speed immutable database"
+						color="transparent"
+						image="/images/immudb/mascot.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Docker" subtitle="Docker container protection"
-						color="transparent" image="/images/integrations/square/docker.png"
+						title="Docker"
+						subtitle="Docker container protection"
+						color="transparent"
+						image="/images/integrations/square/docker.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Kubernetes" subtitle="Kube-notary for Kubernetes"
-						color="transparent" image="/images/integrations/square/kubernetes.png"
+						title="Kubernetes"
+						subtitle="Kube-notary for Kubernetes"
+						color="transparent"
+						image="/images/integrations/square/kubernetes.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Javascript" subtitle="JSVCN library for the web"
-						color="transparent" image="/images/integrations/square/javascript.png"
+						title="Javascript"
+						subtitle="JSVCN library for the web"
+						color="transparent"
+						image="/images/integrations/square/javascript.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Java" subtitle="JVCN library for Java"
-						color="transparent" image="/images/integrations/square/java.png"
+						title="Java"
+						subtitle="JVCN library for Java"
+						color="transparent"
+						image="/images/integrations/square/java.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Maven" subtitle="Java Maven package"
-						color="transparent" image="/images/integrations/square/maven.png"
+						title="Maven"
+						subtitle="Java Maven package"
+						color="transparent"
+						image="/images/integrations/square/maven.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Jenkins" subtitle="Jenkins CI"
-						color="transparent" image="/images/integrations/square/jenkins.png"
+						title="Jenkins"
+						subtitle="Jenkins CI"
+						color="transparent"
+						image="/images/integrations/square/jenkins.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Powershell" subtitle="Windows command line"
-						color="transparent" image="/images/integrations/square/powershell.png"
+						title="Powershell"
+						subtitle="Windows command line"
+						color="transparent"
+						image="/images/integrations/square/powershell.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Github" subtitle="Github Actions"
-						color="transparent" image="/images/integrations/square/github.png"
+						title="Github"
+						subtitle="Github Actions"
+						color="transparent"
+						image="/images/integrations/square/github.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Gitlab" subtitle="Gitlab CI/CD"
-						color="transparent" image="/images/integrations/square/gitlab.png"
+						title="Gitlab"
+						subtitle="Gitlab CI/CD"
+						color="transparent"
+						image="/images/integrations/square/gitlab.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Git" subtitle="Standalone"
-						color="transparent" image="/images/integrations/square/git.png"
+						title="Git"
+						subtitle="Standalone"
+						color="transparent"
+						image="/images/integrations/square/git.png"
 					/>
 				</i-column>
 				<i-column
-					xs="6" sm="4"
-					md="3" lg="3"
+					xs="6"
+					sm="4"
+					md="3"
+					lg="3"
 				>
 					<story-card
-						title="Travis" subtitle="Travis CI"
-						color="transparent" image="/images/integrations/square/travis.png"
+						title="Travis"
+						subtitle="Travis CI"
+						color="transparent"
+						image="/images/integrations/square/travis.png"
 					/>
 				</i-column>
 			</i-row>

@@ -8,7 +8,8 @@
 				<div class="button-wrapper">
 					<partner-modal v-model="partnerModalOpen" />
 					<i-button
-						variant="primary" size="lg"
+						variant="primary"
+						size="lg"
 						@click="webinarModalOpen = true"
 					>
 						Become a partner

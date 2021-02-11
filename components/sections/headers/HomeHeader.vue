@@ -35,14 +35,16 @@
 				</p>
 			</i-column>
 			<i-column
-				id="video-column" lg="6"
+				id="video-column"
+				lg="6"
 				:class="{ 'playing': playing }"
 			>
 				<div id="video" class="_embed _embed-16by9">
 					<video
 						src="/videos/ci-cd.mp4"
 						poster="/videos/ci-cd.jpg"
-						width="1280" height="720"
+						width="1280"
+						height="720"
 						controls
 						@playing="onPlayVideo"
 						@pause="onPauseVideo"
@@ -50,7 +52,8 @@
 					/>
 				</div>
 				<img
-					id="mascot" src="/images/mascot.png"
+					id="mascot"
+					src="/images/mascot.png"
 					alt="CodeNotary Mascot"
 				>
 			</i-column>

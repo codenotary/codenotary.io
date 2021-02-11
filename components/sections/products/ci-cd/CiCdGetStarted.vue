@@ -8,8 +8,10 @@
 					</h5>
 					<p class="action _text-center">
 						<i-button
-							size="lg" variant="primary"
-							href="https://dashboard.codenotary.io/auth/signup" target="_blank"
+							size="lg"
+							variant="primary"
+							href="https://dashboard.codenotary.io/auth/signup"
+							target="_blank"
 						>
 							Get started
 						</i-button>

@@ -1,14 +1,17 @@
 <template>
 	<i-modal
-		class="ztc-modal" size="lg"
-		:value="value" @input="$emit('input', $event)"
+		class="ztc-modal"
+		size="lg"
+		:value="value"
+		@input="$emit('input', $event)"
 	>
 		<template slot="header">
 			Join the Consortium
 		</template>
 		<div class="_form_2" />
 		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=2" type="text/javascript"
+			src="https://vchain.activehosted.com/f/embed.php?id=2"
+			type="text/javascript"
 			charset="utf-8"
 		/>
 	</i-modal>

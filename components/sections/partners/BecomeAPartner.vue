@@ -9,7 +9,8 @@
 					<p class="action _text-center">
 						<partner-modal v-model="partnerModalOpen" />
 						<i-button
-							size="lg" variant="primary"
+							size="lg"
+							variant="primary"
 							@click="partnerModalOpen = true"
 						>
 							Become a partner

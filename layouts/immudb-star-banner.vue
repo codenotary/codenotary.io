@@ -1,8 +1,10 @@
 <template>
 	<section class="immudb-star-banner-layout" :class="{ scrolled, hover, closed }">
 		<ImmudbStarBanner
-			id="immudbStarBanner" @mouseenter.native="hover = true"
-			@mouseleave.native="hover = false" @submit="cta()"
+			id="immudbStarBanner"
+			@mouseenter.native="hover = true"
+			@mouseleave.native="hover = false"
+			@submit="cta()"
 			@close="cta(true)"
 		/>
 		<Navbar id="navbar" />

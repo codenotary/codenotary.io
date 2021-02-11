@@ -7,7 +7,8 @@
 					class="_font-weight-bold _text-decoration-underline"
 					href="https://github.com/codenotary/immudb"
 					target="_blank"
-					rel="noopener" @click="submit()"
+					rel="noopener"
+					@click="submit()"
 				>
 					give us a star on Github!
 				</a>
@@ -15,8 +16,10 @@
 			</span>
 		</div>
 		<i-button
-			link class="close-button"
-			size="sm" @click="close()"
+			link
+			class="close-button"
+			size="sm"
+			@click="close()"
 		>
 			<i-icon icon="times" size="sm" />
 		</i-button>

@@ -11,7 +11,8 @@
 		<div id="github-button">
 			<github-button
 				href="https://github.com/codenotary/immudb"
-				data-icon="octicon-star" data-size="large"
+				data-icon="octicon-star"
+				data-size="large"
 				data-show-count="true"
 				aria-label="Star codenotary/immudb on GitHub"
 			>
@@ -28,7 +29,8 @@
 
 		<p class="action">
 			<i-button
-				size="lg" variant="primary"
+				size="lg"
+				variant="primary"
 				href="https://docs.immudb.io"
 			>
 				Get started now
@@ -37,8 +39,10 @@
 
 		<i-nav class="header-nav">
 			<i-button
-				id="research-paper-button" link
-				variant="primary" @click="researchPaperModalVisible = true"
+				id="research-paper-button"
+				link
+				variant="primary"
+				@click="researchPaperModalVisible = true"
 			>
 				<span class="underline">Research Paper</span>
 			</i-button>
@@ -58,12 +62,15 @@
 
 		<p class="_margin-top-3">
 			<i-button
-				id="research-paper-button" link
-				variant="primary" @click="openCodingChallenge()"
+				id="research-paper-button"
+				link
+				variant="primary"
+				@click="openCodingChallenge()"
 			>
 				<!-- <i-badge size="sm" variant="success" class="_margin-right-1-2">New</i-badge> -->
 				<i-badge
-					size="sm" variant="danger"
+					size="sm"
+					variant="danger"
 					class="_margin-right-1-2 dont-underline"
 				>
 					<fa icon="fire" style="margin-right: 0.15rem;" />

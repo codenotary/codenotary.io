@@ -26,27 +26,35 @@
 				</p>
 				<p class="action">
 					<i-button
-						size="lg" outline
-						variant="primary" href="https://demoml.codenotary.io/"
-						target="_blank" rel="nofollow"
+						size="lg"
+						outline
+						variant="primary"
+						href="https://demoml.codenotary.io/"
+						target="_blank"
+						rel="nofollow"
 					>
 						Demo
 					</i-button>
 					<i-button
-						variant="primary" size="lg"
-						class="_margin-left-1" @click="startTrialModalOpen = true"
+						variant="primary"
+						size="lg"
+						class="_margin-left-1"
+						@click="startTrialModalOpen = true"
 					>
 						Start trial
 					</i-button>
 				</p>
 			</i-column>
 			<i-column
-				xs="12" md="6"
+				xs="12"
+				md="6"
 				class="_text-center _margin-top-xs-2"
 			>
 				<img
-					class="zoom" :src="src"
-					:alt="alt" @click="index = 0"
+					class="zoom"
+					:src="src"
+					:alt="alt"
+					@click="index = 0"
 				>
 				{{ index }}
 			</i-column>

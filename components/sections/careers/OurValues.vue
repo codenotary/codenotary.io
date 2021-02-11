@@ -10,16 +10,20 @@
 				</i-column>
 			</i-row>
 			<i-row
-				class="_margin-top-4" center
+				class="_margin-top-4"
+				center
 				top
 			>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/careers/hearth.svg"
+							slot="image"
+							src="/images/careers/hearth.svg"
 							alt="Intellectual Honesty"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -31,12 +35,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/careers/lightning.svg"
+							slot="image"
+							src="/images/careers/lightning.svg"
 							alt="Speed"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -48,12 +55,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/careers/star.svg"
+							slot="image"
+							src="/images/careers/star.svg"
 							alt="Excellence"
 						>
 						<h4 class="title _font-weight-bold _text-primary">

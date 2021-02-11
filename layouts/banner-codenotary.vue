@@ -1,7 +1,8 @@
 <template>
 	<section class="banner-layout" :class="{ scrolled, hover }">
 		<BannerCodenotary
-			id="banner-codenotary" @mouseenter.native="hover = true"
+			id="banner-codenotary"
+			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
 		<Navbar id="navbar" />

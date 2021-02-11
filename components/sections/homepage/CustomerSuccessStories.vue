@@ -13,11 +13,13 @@
 				</i-column>
 				<i-column
 					class="_margin-bottom-4 _display-flex _justify-content-center _align-items-center"
-					xs="12" sm="12"
+					xs="12"
+					sm="12"
 				>
 					<div class="button-wrapper">
 						<i-button
-							variant="primary" size="lg"
+							variant="primary"
+							size="lg"
 							@click="webinarModalOpen = true"
 						>
 							Schedule a Webinar
@@ -29,37 +31,43 @@
 			<i-row>
 				<i-column md="6" lg="4">
 					<story-card
-						title="IT Compliance" color="transparent"
+						title="IT Compliance"
+						color="transparent"
 						image="/images/use-cases/it-compliance.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
 					<story-card
-						title="Finance" color="transparent"
+						title="Finance"
+						color="transparent"
 						image="/images/use-cases/finance.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
 					<story-card
-						title="Healthcare" color="transparent"
+						title="Healthcare"
+						color="transparent"
 						image="/images/use-cases/healthcare.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
 					<story-card
-						title="Government" color="transparent"
+						title="Government"
+						color="transparent"
 						image="/images/use-cases/government.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
 					<story-card
-						title="CI / CD Integrity" color="transparent"
+						title="CI / CD Integrity"
+						color="transparent"
 						image="/images/use-cases/cicd.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
 					<story-card
-						title="Regulatory Compliance" color="transparent"
+						title="Regulatory Compliance"
+						color="transparent"
 						image="/images/use-cases/regulations.svg"
 					/>
 				</i-column>

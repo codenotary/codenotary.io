@@ -37,7 +37,8 @@
 					<i-column>
 						<div class="_form_10" />
 						<script
-							src="https://vchain.activehosted.com/f/embed.php?id=10" type="text/javascript"
+							src="https://vchain.activehosted.com/f/embed.php?id=10"
+							type="text/javascript"
 							charset="utf-8"
 						/>
 					</i-column>

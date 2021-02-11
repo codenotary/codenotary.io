@@ -9,15 +9,20 @@
 		</i-row>
 		<i-row v-if="card">
 			<i-column
-				v-for="article in articles" :key="article.slug"
-				xs="12" class="_padding-left-0"
+				v-for="article in articles"
+				:key="article.slug"
+				xs="12"
+				class="_padding-left-0"
 			>
 				<nuxt-link :to="{ name: 'blog-post', params: { post: article.slug } }">
 					<i-card size="sm" class="popular-card _margin-bottom-1">
 						<img
-							slot="image" :src="article.image || `/images/blog-post.svg`"
-							class="image -responsive" :title="article.title"
-							:alt="article.title" onerror="this.src='/images/blog-post.svg'"
+							slot="image"
+							:src="article.image || `/images/blog-post.svg`"
+							class="image -responsive"
+							:title="article.title"
+							:alt="article.title"
+							onerror="this.src='/images/blog-post.svg'"
 						>
 						{{ article.title }}
 					</i-card>
@@ -26,7 +31,8 @@
 		</i-row>
 		<i-row v-else>
 			<i-column
-				v-for="article in articles" :key="article.slug"
+				v-for="article in articles"
+				:key="article.slug"
 				xs="12"
 			>
 				<nuxt-link :to="{ name: 'blog-post', params: { post: article.slug } }">

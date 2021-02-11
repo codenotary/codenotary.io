@@ -2,8 +2,10 @@
 	<i-card class="scientific-team-member">
 		<div class="meta">
 			<img
-				v-if="image" class="image -responsive"
-				:src="image" :alt="name"
+				v-if="image"
+				class="image -responsive"
+				:src="image"
+				:alt="name"
 				width="260"
 			>
 			<h4 class="title">

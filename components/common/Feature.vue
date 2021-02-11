@@ -1,8 +1,10 @@
 <template>
 	<div class="feature">
 		<img
-			v-if="image" class="image -responsive"
-			:src="image" :alt="title"
+			v-if="image"
+			class="image -responsive"
+			:src="image"
+			:alt="title"
 		>
 		<slot name="icon" />
 		<h3 v-if="title" class="title _text-primary">

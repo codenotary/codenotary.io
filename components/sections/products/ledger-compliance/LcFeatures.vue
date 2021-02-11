@@ -8,7 +8,8 @@
 			</i-row>
 			<i-row center top>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature
@@ -21,7 +22,8 @@
 					</Feature>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature
@@ -34,7 +36,8 @@
 					</Feature>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature
@@ -47,7 +50,8 @@
 					</Feature>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<Feature

@@ -4,7 +4,8 @@
 		<i-container>
 			<i-row>
 				<i-column
-					xs="12" sm="12"
+					xs="12"
+					sm="12"
 					md="9"
 				>
 					<article class="blog-post-page">
@@ -12,11 +13,13 @@
 					</article>
 				</i-column>
 				<i-column
-					xs="12" sm="12"
+					xs="12"
+					sm="12"
 					md="3"
 				>
 					<most-popular
-						class="most-popular-wrapper" :articles="mostPopular"
+						class="most-popular-wrapper"
+						:articles="mostPopular"
 						card
 					/>
 				</i-column>

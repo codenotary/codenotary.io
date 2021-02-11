@@ -5,8 +5,10 @@
 				<i-tab title="Query Ledger data">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Query Ledger data.
@@ -16,8 +18,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/query-ledger.png" alt="Ledger Query">
 						</i-column>
@@ -26,8 +30,10 @@
 				<i-tab title="Java SDK">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Java SDK
@@ -37,8 +43,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<Terminal title="immudb" language="go">
 								try {
@@ -54,8 +62,10 @@
 				<i-tab title="Python SDKs">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Python SDKs
@@ -65,8 +75,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<Terminal title="immudb" language="go">
 								resp=client.safeSet(b"key", b"value")
@@ -85,8 +97,10 @@
 				<i-tab title="Change Data Capture (CDC)">
 					<i-row center middle>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<h5 class="title _text-primary _font-weight-bold">
 								Change data capture recording for databases.
@@ -96,8 +110,10 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="6"
-							md="6" lg="6"
+							xs="12"
+							sm="6"
+							md="6"
+							lg="6"
 						>
 							<img src="/images/cn-lc/features/cdc.png" alt="Change Data Capture">
 						</i-column>
