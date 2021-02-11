@@ -1,23 +1,16 @@
 <template>
-	<page-section id="partners">
-		<page-section-header title="Our partners" tag="h1" />
-		<partners-carousel :partners="partners" />
-		<become-a-partner />
-	</page-section>
+	<PageSection id="partners">
+		<PageSectionHeader title="Our partners" tag="h1" />
+		<PartnersCarousel :partners="partners" />
+		<BecomeAPartner />
+	</PageSection>
 </template>
 
 <script>
 import { title } from '~/helpers/meta';
-import PartnersCarousel from '~/components/sections/partners/PartnersCarousel';
-import BecomeAPartner from '~/components/sections/partners/BecomeAPartner';
 
 export default {
-
-	components: {
-		PartnersCarousel,
-		BecomeAPartner,
-	},
-
+	name: 'Partners',
 	data: () => ({
 		partners: [
 			{

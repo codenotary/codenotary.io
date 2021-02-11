@@ -1,13 +1,13 @@
 <template>
-	<page-section id="integrations-section">
+	<PageSection id="integrations-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="CodeNotary Integrations">
+					<PageSectionHeader title="CodeNotary Integrations">
 						<p class="lead">
 							CodeNotary integrates easily the most popular CI, CI/CD and DevOps tools, and you can add new ones in a flash with our API and command line tools.
 						</p>
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -17,7 +17,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="immudb"
 						subtitle="high-speed immutable database"
 						color="transparent"
@@ -30,7 +30,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Docker"
 						subtitle="Docker container protection"
 						color="transparent"
@@ -43,7 +43,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Kubernetes"
 						subtitle="Kube-notary for Kubernetes"
 						color="transparent"
@@ -56,7 +56,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Javascript"
 						subtitle="JSVCN library for the web"
 						color="transparent"
@@ -69,7 +69,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Java"
 						subtitle="JVCN library for Java"
 						color="transparent"
@@ -82,7 +82,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Maven"
 						subtitle="Java Maven package"
 						color="transparent"
@@ -95,7 +95,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Jenkins"
 						subtitle="Jenkins CI"
 						color="transparent"
@@ -108,7 +108,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Powershell"
 						subtitle="Windows command line"
 						color="transparent"
@@ -121,7 +121,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Github"
 						subtitle="Github Actions"
 						color="transparent"
@@ -134,7 +134,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Gitlab"
 						subtitle="Gitlab CI/CD"
 						color="transparent"
@@ -147,7 +147,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Git"
 						subtitle="Standalone"
 						color="transparent"
@@ -160,7 +160,7 @@
 					md="3"
 					lg="3"
 				>
-					<story-card
+					<StoryCard
 						title="Travis"
 						subtitle="Travis CI"
 						color="transparent"
@@ -169,18 +169,12 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import StoryCard from '~/components/common/cards/StoryCard';
-
 export default {
 	name: 'CiCdIntegrations',
-
-	components: {
-		StoryCard,
-	},
 };
 </script>
 

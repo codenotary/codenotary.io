@@ -84,22 +84,17 @@
 
 <script>
 import GithubButton from 'vue-github-button';
-import ResearchPaperModal from '~/components/common/modals/ResearchPaperModal';
 
 export default {
 	name: 'ImmudbHeader',
-
 	components: {
-		ResearchPaperModal,
 		GithubButton,
 	},
-
 	data() {
 		return {
 			researchPaperModalVisible: false,
 		};
 	},
-
 	methods: {
 		openCodingChallenge () {
 			const data = 'https://github.com/codenotary/immuchallenge';

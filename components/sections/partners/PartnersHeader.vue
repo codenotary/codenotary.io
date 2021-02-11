@@ -23,15 +23,9 @@
 <script>
 export default {
 	name: 'PartnersHeader',
-
-	components: {
-		PartnerModal: () => import('~/components/common/modals/PartnerModal'),
-	},
-
 	data: () => ({
 		partnerModalOpen: false,
 	}),
-
 	beforeDestroy () {
 		this.partnerModalOpen = null;
 	},

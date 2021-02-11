@@ -17,10 +17,6 @@
 </template>
 
 <script>
-import ImmudbStarBanner from '~/components/layout/ImmudbStarBanner';
-import Navbar from '~/components/layout/Navbar';
-import Footer from '~/components/layout/Footer';
-import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 80;
@@ -28,12 +24,6 @@ const IMMUDB_STAR_COOKIE = 'immudb-star-cookie';
 
 export default {
 	name: 'ImmudbStarBannerLayout',
-	components: {
-		ImmudbStarBanner,
-		Navbar,
-		Footer,
-		Copyright,
-	},
 	mixins: LayoutMixin,
 	data: () => ({
 		scrolled: false,

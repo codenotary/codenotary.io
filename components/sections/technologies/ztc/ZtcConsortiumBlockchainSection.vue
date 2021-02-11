@@ -1,11 +1,11 @@
 <template>
-	<page-section id="ztc-consortium-blockchain-section">
+	<PageSection id="ztc-consortium-blockchain-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="The Consortium Blockchain" block>
+					<PageSectionHeader title="The Consortium Blockchain" block>
 						The Zero-Trust Consortium does not use the public Etherum Blockchain because of the current limitations in scalability due to high latency and very high costs involved to store data and run distributed applications.
-					</page-section-header>
+					</PageSectionHeader>
 
 					<p>
 						The Zero-Trust Consortium runs a worldwide, distributed Ethereum blockchain using the Parity project. Built for mission-critical use service providers, and exchanges that need fast synchronization and maximum uptime.
@@ -25,11 +25,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'ZtcConsortiumBlockchainSection',
+};
 </script>
 
 <style lang="scss">

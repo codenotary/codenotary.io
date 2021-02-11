@@ -1,9 +1,9 @@
 <template>
-	<page-section id="ztc-members-section">
+	<PageSection id="ztc-members-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Founding Members" block />
+					<PageSectionHeader title="Founding Members" block />
 				</i-column>
 			</i-row>
 			<i-row class="ztc-members-list">
@@ -73,7 +73,7 @@
 			</i-row>
 			<i-row>
 				<i-column>
-					<page-section-header
+					<PageSectionHeader
 						class="_margin-top-5"
 						title="Non-Founding Members"
 						block
@@ -182,11 +182,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'ZtcMembersSection',
+};
 </script>
 
 <style lang="scss">

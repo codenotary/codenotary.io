@@ -1,7 +1,7 @@
-<page-section id="immudb-get-started-end-section">
-<page-section-header title="The open-source immutable database" bottom="2">
+<PageSection id="immudb-get-started-end-section">
+<PageSectionHeader title="The open-source immutable database" bottom="2">
     Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
-</page-section-header>
+</PageSectionHeader>
 <i-container>
 <i-row>
 <i-column>
@@ -9,4 +9,4 @@
 </i-column>
 </i-row>
 </i-container>
-</page-section>
+</PageSection>

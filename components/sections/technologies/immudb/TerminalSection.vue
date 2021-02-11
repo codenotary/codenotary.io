@@ -1,5 +1,5 @@
 <template>
-	<page-section id="immudb-code-examples-section">
+	<PageSection id="immudb-code-examples-section">
 		<i-container>
 			<i-row>
 				<i-column>
@@ -131,17 +131,12 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import Terminal from '~/components/global/Terminal';
-
 export default {
 	name: 'TerminalSection',
-	components: {
-		Terminal,
-	},
 	data: () => ({
 		settings: {
 			slidesToShow: 1,

@@ -56,7 +56,7 @@
 
 <script>
 export default {
-	name: 'Feature',
+	name: 'StoryCard',
 	props: {
 		title: { type: String, default: '' },
 		subtitle: { type: String, default: '' },

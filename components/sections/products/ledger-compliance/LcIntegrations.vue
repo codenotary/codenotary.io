@@ -1,13 +1,13 @@
 <template>
-	<page-section id="lc-integrations-section">
+	<PageSection id="lc-integrations-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Ledger Compliance Integrations">
+					<PageSectionHeader title="Ledger Compliance Integrations">
 						<p class="lead">
 							Integrations for Applications, Databases and Digital objects.
 						</p>
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -19,30 +19,22 @@
 							class="integration-wrapper"
 						>
 							<nuxt-link :to="{ name: 'products-integration-post', params: { post: integration.slug } }">
-								<story-card color="transparent" :image="integration.image " />
+								<StoryCard color="transparent" :image="integration.image " />
 							</nuxt-link>
 						</div>
 					</VueSlickCarousel>
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import StoryCard from '~/components/common/cards/StoryCard';
-
 export default {
 	name: 'LcIntegrations',
-
-	components: {
-		StoryCard,
-	},
-
 	props: {
 		integrations: { type: Array, default: () => {} },
 	},
-
 	data: () => ({
 		settings: {
 			slidesToShow: 4,
@@ -81,7 +73,6 @@ export default {
 			],
 		},
 	}),
-
 	beforeDestroy () {
 		this.settings = null;
 	},

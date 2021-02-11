@@ -29,11 +29,8 @@
 </template>
 
 <script>
-import JoinZtcModal from '~/components/common/modals/JoinZtcModal';
-
 export default {
 	name: 'ZtcHeader',
-	components: { JoinZtcModal },
 	data() {
 		return {
 			joinZtcModalVisible: false,

@@ -216,19 +216,11 @@
 </template>
 
 <script>
-import PricingTable from '~/components/common/pricing-table/PricingTable';
-import PricingTableRow from '~/components/common/pricing-table/PricingTableRow';
-
 const DESKTOP_LIMIT = 5;
 const MOBILE_LIMIT = 3;
 
 export default {
 	name: 'LedgerCompliancePricing',
-	components: {
-		PricingTable,
-		PricingTableRow,
-		LedgerComplianceModal: () => import('~/components/common/modals/LedgerComplianceModal'),
-	},
 	data: () => ({
 		isMobile: false,
 		trialModalOpen: false,

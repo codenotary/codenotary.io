@@ -1,9 +1,9 @@
 <template>
-	<page-section id="timestamp-service-section" class="_padding-y-4">
+	<PageSection id="timestamp-service-section" class="_padding-y-4">
 		<i-container>
 			<i-row>
 				<i-column xs="12" sm="12">
-					<page-section-header
+					<PageSectionHeader
 						title="Free tamperproof timestamp service for your CI/CD process"
 						block
 						:bottom="4"
@@ -28,7 +28,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

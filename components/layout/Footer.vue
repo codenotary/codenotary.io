@@ -1,5 +1,5 @@
 <template>
-	<page-section class="footer">
+	<PageSection class="footer">
 		<i-container>
 			<i-row>
 				<i-column
@@ -119,11 +119,14 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-export default {};
+
+export default {
+	name: 'Footer',
+};
 </script>
 
 <style lang="scss">

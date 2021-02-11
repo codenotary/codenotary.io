@@ -14,22 +14,12 @@
 </template>
 
 <script>
-import Navbar from '~/components/layout/Navbar';
-import Footer from '~/components/layout/Footer';
-import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 200;
 
 export default {
 	name: 'DefaultLayout',
-
-	components: {
-		Navbar,
-		Footer,
-		Copyright,
-	},
-
 	mixins: LayoutMixin,
 	data: () => ({
 		scrolled: false,

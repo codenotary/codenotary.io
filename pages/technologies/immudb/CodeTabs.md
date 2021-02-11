@@ -1,7 +1,7 @@
-<page-section id="immudb-code-tabs-section">
-<page-section-header title="By developers, for developers">
+<PageSection id="immudb-code-tabs-section">
+<PageSectionHeader title="By developers, for developers">
     We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
-</page-section-header>
+</PageSectionHeader>
 <i-container>
 <i-row>
 <i-column>
@@ -44,4 +44,4 @@ fmt.Printf("VerifiedGet - entry was found and verified: %v", vEntry)
 </i-column>
 </i-row>
 </i-container>
-</page-section>
+</PageSection>

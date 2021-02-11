@@ -1,5 +1,5 @@
 <template>
-	<page-section id="lc-infrastructure-section">
+	<PageSection id="lc-infrastructure-section">
 		<i-container>
 			<i-tabs class="infrastructure-tabs" stretch>
 				<i-tab title="Infrastructure Health">
@@ -175,7 +175,7 @@
 				</i-tab>
 			</i-tabs>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

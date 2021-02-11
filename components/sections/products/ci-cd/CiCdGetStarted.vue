@@ -1,5 +1,5 @@
 <template>
-	<page-section id="ci-cd-get-started-section">
+	<PageSection id="ci-cd-get-started-section">
 		<i-container>
 			<i-row>
 				<i-column>
@@ -19,7 +19,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

@@ -1,9 +1,9 @@
 <template>
-	<page-section id="open-positions-section">
+	<PageSection id="open-positions-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Open positions" />
+					<PageSectionHeader title="Open positions" />
 				</i-column>
 			</i-row>
 			<i-row>
@@ -53,7 +53,7 @@
 				</no-ssr>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

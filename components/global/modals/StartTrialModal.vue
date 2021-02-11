@@ -1,17 +1,16 @@
 <template>
 	<i-modal
-		class="partner-modal"
+		class="start-trial-modal"
 		size="lg"
 		:value="value"
 		@input="$emit('input', $event)"
 	>
 		<template slot="header">
-			Become a partner
+			Start your trial
 		</template>
-		<partner-form />
-		<div class="_form_18" />
+		<div class="_form_20" />
 		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=18"
+			src="https://vchain.activehosted.com/f/embed.php?id=20"
 			type="text/javascript"
 			charset="utf-8"
 		/>
@@ -19,8 +18,10 @@
 </template>
 
 <script>
+// import StartTrialForm from '~/components/global/forms/StartTrialForm';
+
 export default {
-	name: 'PartnerModal',
+	name: 'StartTrialModal',
 	props: {
 		value: {
 			type: Boolean,
@@ -33,29 +34,37 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-div._form_18 {
-	form._form._form_18 {
+div._form_20 {
+	form._form._form_20 {
 		width: 100% !important;
 		margin: 0 !important;
 		padding: 0 !important;
 		font-family: inherit !important;
 
-		div._x79672022 {
+		div._x81034835 {
 			display: none !important;
+		}
+
+		div._x30741568 {
+			p {
+				margin-top: 0 !important;
+				color: #343a40 !important;
+				line-height: 1.5;
+				font-size: 1rem !important;
+				font-weight: 400 !important;
+			}
 		}
 
 		div._form_element {
 			margin-bottom: $spacer !important;
 
 			label,
-			textarea,
 			input {
 				font-family: inherit !important;
 				font-size: 16px !important;
 				font-weight: inherit !important;
 			}
 
-			textarea,
 			input {
 				height: 44px !important;
 				padding: $spacer-1-2 $spacer !important;
@@ -72,8 +81,25 @@ div._form_18 {
 			}
 		}
 
+		div._field13 {
+			._form-label {
+				padding-top: $spacer-1;
+				margin: $spacer-1 0 !important;
+				border-top: 1px solid #dee2e6;
+				font-weight: 600 !important;
+			}
+
+			._checkbox-radio {
+				display: flex;
+
+				span {
+					padding-left: $spacer-1-2;
+				}
+			}
+		}
+
 		div._button-wrapper {
-			button#_form_18_submit {
+			button#_form_20_submit {
 				width: 100%;
 				background-color: $color-primary !important;
 				font-size: 16px !important;

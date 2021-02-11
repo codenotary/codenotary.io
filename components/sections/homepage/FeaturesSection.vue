@@ -1,5 +1,5 @@
 <template>
-	<page-section id="features-section">
+	<PageSection id="features-section">
 		<i-container>
 			<i-row>
 				<i-column
@@ -7,7 +7,7 @@
 					lg="4"
 					data-aos="fade-zoom-in"
 				>
-					<Feature
+					<FeatureCard
 						title="Immutable"
 						image="/images/features/immutable.svg"
 					>
@@ -25,10 +25,10 @@
 								Address regulatory compliance: SEC 17a-4(f), CFTC 1.31(d), FINRA, and other regulations.
 							</li>
 						</ul>
-					</Feature>
+					</FeatureCard>
 				</i-column>
 				<i-column xs="12" lg="4">
-					<Feature
+					<FeatureCard
 						title="Auditable"
 						image="/images/features/auditable.svg"
 					>
@@ -41,10 +41,10 @@
 							</li>
 							<li>If tampered, clients and auditors will notice that and take actions.</li>
 						</ul>
-					</Feature>
+					</FeatureCard>
 				</i-column>
 				<i-column xs="12" lg="4">
-					<Feature
+					<FeatureCard
 						title="Secure"
 						image="/images/features/secure.svg"
 					>
@@ -59,7 +59,7 @@
 								Keys additions and revocations are immutably stored into the database.
 							</li>
 						</ul>
-					</Feature>
+					</FeatureCard>
 				</i-column>
 			</i-row>
 			<i-row v-if="true" class=" _margin-top-4">
@@ -68,48 +68,48 @@
 					sm="6"
 					lg="3"
 				>
-					<Feature
+					<FeatureCard
 						subtitle="Record data when it happens"
 						image="/images/features/record_data.svg"
 					>
 						<p>Database changes, table history, data access, audit information.</p>
-					</Feature>
+					</FeatureCard>
 				</i-column>
 				<i-column
 					xs="12"
 					sm="6"
 					lg="3"
 				>
-					<Feature
+					<FeatureCard
 						subtitle="Immediate data query"
 						image="/images/features/immediate_query.svg"
 					>
 						<p>Extremely fast query engine and always ready to use.</p>
-					</Feature>
+					</FeatureCard>
 				</i-column>
 				<i-column
 					xs="12"
 					sm="6"
 					lg="3"
 				>
-					<Feature
+					<FeatureCard
 						subtitle="Cryptographic verification built-in"
 						image="/images/features/cryptographic_verifcation.svg"
 					>
 						<p>Every entry is verifiable using cryptographic proof.</p>
-					</Feature>
+					</FeatureCard>
 				</i-column>
 				<i-column
 					xs="12"
 					sm="6"
 					lg="3"
 				>
-					<Feature
+					<FeatureCard
 						subtitle="Always available"
 						image="/images/features/online.svg"
 					>
 						<p>No archive system, data is online and never out of reach.</p>
-					</Feature>
+					</FeatureCard>
 				</i-column>
 			</i-row>
 			<i-row class=" _margin-top-4">
@@ -133,16 +133,12 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import Feature from '~/components/common/Feature';
-
 export default {
-	components: {
-		Feature,
-	},
+	name: 'FeaturesSection',
 };
 </script>
 

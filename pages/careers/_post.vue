@@ -1,6 +1,6 @@
 <template>
-	<page-section>
-		<page-section-header :title="article.title" tag="h1" />
+	<PageSection>
+		<PageSectionHeader :title="article.title" tag="h1" />
 		<i-container>
 			<i-row class="_display-flex _flex-direction-column">
 				<i-column
@@ -62,7 +62,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

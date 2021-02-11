@@ -106,13 +106,14 @@ export default {
     */
 	plugins: [
 		{ src: '~plugins/activecampaign', mode: 'client' },
-		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/leadfeeder', mode: 'client' },
+		{ src: '~plugins/prism', ssr: false },
 		{ src: '~plugins/tawk', mode: 'client' },
+		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/vue-aos', ssr: false },
 		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
 		{ src: '~plugins/vue-infinite-loading', mode: 'client' },
-		{ src: '~plugins/prism', ssr: false },
+		{ src: '~plugins/vue-lazy-hydrate', ssr: false },
 		{ src: '~plugins/vue-masonry-css', ssr: false },
 		{ src: '~plugins/vue-truncate-filter', ssr: false },
 		{ src: '~plugins/vue-typer', ssr: false },

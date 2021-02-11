@@ -1,9 +1,9 @@
 <template>
-	<page-section id="lc-features-section">
+	<PageSection id="lc-features-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Features" />
+					<PageSectionHeader title="Features" />
 				</i-column>
 			</i-row>
 			<i-row center top>
@@ -89,7 +89,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

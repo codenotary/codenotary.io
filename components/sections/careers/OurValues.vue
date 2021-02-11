@@ -1,9 +1,9 @@
 <template>
-	<page-section id="our-values-section">
+	<PageSection id="our-values-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Our values" />
+					<PageSectionHeader title="Our values" />
 					<p class="lead">
 						We are an open and welcoming environment, we pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 					</p>
@@ -76,7 +76,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

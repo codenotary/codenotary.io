@@ -1,12 +1,12 @@
 <template>
 	<article class="immudb">
-		<immudb-header />
-		<immudb-cards-section />
-		<immudb-runs-on-section />
+		<ImmudbHeader />
+		<ImmudbCardsSection />
+		<ImmudbRunsOnSection />
 		<nuxt-content :document="easySetup" />
 		<nuxt-content :document="performance" />
 		<nuxt-content :document="video" />
-		<terminal-section />
+		<TerminalSection />
 		<nuxt-content :document="features" />
 		<nuxt-content :document="usedBy" />
 		<nuxt-content :document="codeTabs" />
@@ -16,18 +16,9 @@
 
 <script>
 import { title } from '~/helpers/meta';
-import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
-import ImmudbCardsSection from '~/components/sections/technologies/immudb/ImmudbCardsSection';
-import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/ImmudbRunsOnSection';
-import TerminalSection from '~/components/sections/technologies/immudb/TerminalSection';
 
 export default {
-	components: {
-		ImmudbHeader,
-		ImmudbCardsSection,
-		ImmudbRunsOnSection,
-		TerminalSection,
-	},
+	name: 'ImmudbPage',
 	layout: 'immudb-star-banner',
 	async asyncData ({ $content }) {
 		const easySetup = await $content('technologies/immudb/EasySetup').fetch();

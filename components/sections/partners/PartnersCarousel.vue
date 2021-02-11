@@ -1,5 +1,5 @@
 <template>
-	<page-section id="partners-section">
+	<PageSection id="partners-section">
 		<i-container>
 			<i-row>
 				<i-column xs="12">
@@ -16,14 +16,14 @@
 								:title="partner.title"
 								rel="nofollow"
 							>
-								<story-card
+								<StoryCard
 									color="transparent"
 									:title="partner.title"
 									:subtitle="partner.subtitle"
 									:image="partner.image "
 								/>
 							</a>
-							<story-card
+							<StoryCard
 								v-else
 								color="transparent"
 								:title="partner.title"
@@ -35,18 +35,12 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import StoryCard from '~/components/common/cards/StoryCard';
-
 export default {
 	name: 'Partners',
-
-	components: {
-		StoryCard,
-	},
 	props: {
 		partners: { type: Array, default: () => {} },
 	},

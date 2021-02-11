@@ -1,8 +1,8 @@
 <template>
-	<page-section id="board-of-directors-section">
+	<PageSection id="board-of-directors-section">
 		<i-row>
 			<i-column>
-				<page-section-header title="Our Board of Directors" />
+				<PageSectionHeader title="Our Board of Directors" />
 			</i-column>
 		</i-row>
 		<i-container>
@@ -53,16 +53,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import BoardTeamMember from '~/components/common/BoardTeamMember';
 
 export default {
-	components: {
-		BoardTeamMember,
-	},
+	name: 'BoardOfDirectorsSection',
 };
 </script>
 

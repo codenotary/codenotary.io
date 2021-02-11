@@ -1,5 +1,5 @@
 <template>
-	<page-section class="copyright">
+	<PageSection class="copyright">
 		<i-container>
 			<i-row>
 				<i-column
@@ -19,11 +19,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
+
 export default {
+	name: 'Copyright',
 	data() {
 		return {
 			year: new Date().getFullYear(),

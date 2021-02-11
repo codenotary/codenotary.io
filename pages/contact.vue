@@ -1,11 +1,11 @@
 <template>
 	<div>
-		<page-section>
-			<page-section-header>
+		<PageSection>
+			<PageSectionHeader>
 				<h1 slot="title" class="d6">
 					Contact us
 				</h1>
-			</page-section-header>
+			</PageSectionHeader>
 			<i-container>
 				<i-row class="_text-center">
 					<i-column id="map-embed">
@@ -44,13 +44,15 @@
 					</i-column>
 				</i-row>
 			</i-container>
-		</page-section>
+		</PageSection>
 	</div>
 </template>
 
 <script>
 import { title } from '~/helpers/meta';
+
 export default {
+	name: 'Contact',
 	head() {
 		return {
 			title: title('Contact us'),

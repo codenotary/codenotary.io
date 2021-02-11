@@ -1,12 +1,12 @@
 <template>
-	<page-section id="ztc-technology-platform-section">
+	<PageSection id="ztc-technology-platform-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="The Technology Platform" block>
+					<PageSectionHeader title="The Technology Platform" block>
 						We operate a <a href="https://www.parity.io/ethereum/">Parity Ethereum</a> multi-purpose blockchain. It enables our consortium members to develop and operate their own distributed applications without the cost and complex aspects of running their own operations.
 						Parity is a derivative of Ethereum. It combines the advantages of the public Ethereum chain with key benefits of consortium-based chains.
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -62,11 +62,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'ZtcTechnologyPlatformSection',
+};
 </script>
 
 <style lang="scss">

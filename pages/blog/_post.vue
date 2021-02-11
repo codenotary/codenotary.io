@@ -1,6 +1,6 @@
 <template>
-	<page-section class="article-section">
-		<page-section-header :title="article.title" tag="h1" />
+	<PageSection class="article-section">
+		<PageSectionHeader :title="article.title" tag="h1" />
 		<i-container>
 			<i-row>
 				<i-column
@@ -17,7 +17,7 @@
 					sm="12"
 					md="3"
 				>
-					<most-popular
+					<MostPopular
 						class="most-popular-wrapper"
 						:articles="mostPopular"
 						card
@@ -25,20 +25,16 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
 import { title, meta, DEFAULT_META } from '@/helpers/meta/index';
 import { VIEW_MODULE, MOBILE } from '@/store/view/constants';
-import MostPopular from '~/components/global/MostPopular';
 
 export default {
 	name: 'BlogPost',
-	components: {
-		MostPopular,
-	},
 	layout: 'banner',
 	async asyncData({ $content, params }) {
 		const BLOG_POST_PATH = 'blog';

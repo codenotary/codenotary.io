@@ -1,27 +1,17 @@
 <template>
 	<div>
 		<LCHeader />
-		<lc-features />
-		<customer-success-stories />
-		<lc-infrastructure />
+		<LcFeatures />
+		<CustomerSuccessStories />
+		<LcInfrastructure />
 	</div>
 </template>
 
 <script>
 import { title } from '~/helpers/meta';
-import LCHeader from '~/components/sections/headers/LCHeader';
-import LcFeatures from '~/components/sections/products/ledger-compliance/LcFeatures';
-import CustomerSuccessStories from '~/components/sections/homepage/CustomerSuccessStories';
-import LcInfrastructure from '~/components/sections/products/ledger-compliance/LcInfrastructure';
 
 export default {
 	name: 'LedgerComplianceOnPremise',
-	components: {
-		LCHeader,
-		LcFeatures,
-		CustomerSuccessStories,
-		LcInfrastructure,
-	},
 	head() {
 		return {
 			title: title('Ledger Compliance (on-premise)'),

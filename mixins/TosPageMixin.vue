@@ -1,8 +1,8 @@
 <template>
-	<page-section>
-		<page-section-header :title="'Terms of Service'" tag="h1" />
+	<PageSection>
+		<PageSectionHeader :title="'Terms of Service'" tag="h1" />
 
-		<tos-sub-navbar v-if="!isIndex" />
+		<TosSubNavbar v-if="!isIndex" />
 
 		<i-container>
 			<i-row>
@@ -47,7 +47,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -55,6 +55,7 @@ import axios from 'axios';
 import { title } from '~/helpers/meta';
 
 export default {
+	name: 'TosPageMixin',
 	head() {
 		return {
 			title: title(this.isIndex ? 'Terms of Service' : `Terms of Service - ${ this.article.title }`),

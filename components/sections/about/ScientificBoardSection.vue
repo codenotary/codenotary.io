@@ -1,8 +1,8 @@
 <template>
-	<page-section id="scientific-board-section">
+	<PageSection id="scientific-board-section">
 		<i-row>
 			<i-column>
-				<page-section-header title="Our Scientific Board" />
+				<PageSectionHeader title="Our Scientific Board" />
 			</i-column>
 		</i-row>
 		<i-container>
@@ -20,16 +20,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import ScientificTeamMember from '~/components/common/ScientificTeamMember';
 
 export default {
-	components: {
-		ScientificTeamMember,
-	},
+	name: 'ScientificBoardSection',
 };
 </script>
 

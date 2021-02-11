@@ -1,11 +1,11 @@
 <template>
-	<page-section id="ztc-monitoring-section">
+	<PageSection id="ztc-monitoring-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Monitoring the Network" block>
+					<PageSectionHeader title="Monitoring the Network" block>
 						The ZTC has implemented a monitoring infrastructure using <a href="http://www.opvizor.com/">Opvizor Performance Analyzer</a> to ensure nodes health, valid runtime configurations and working mining activities.
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -19,11 +19,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'ZtcMonitoringSection',
+};
 </script>
 
 <style lang="scss">

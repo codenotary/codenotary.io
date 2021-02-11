@@ -64,9 +64,6 @@
 <script>
 export default {
 	name: 'HomeHeader',
-	components: {
-		LedgerComplianceModal: () => import('~/components/common/modals/LedgerComplianceModal'),
-	},
 	data() {
 		return {
 			ledgerComplianceModalOpen: false,

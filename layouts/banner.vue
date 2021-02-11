@@ -15,22 +15,12 @@
 </template>
 
 <script>
-import Banner from '~/components/layout/Banner';
-import Navbar from '~/components/layout/Navbar';
-import Footer from '~/components/layout/Footer';
-import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 120;
 
 export default {
 	name: 'BannerLayout',
-	components: {
-		Banner,
-		Navbar,
-		Footer,
-		Copyright,
-	},
 	mixins: LayoutMixin,
 	data: () => ({
 		scrolled: false,

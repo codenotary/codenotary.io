@@ -1,6 +1,6 @@
 <template>
-	<page-section>
-		<page-section-header :title="page.title" tag="h1" />
+	<PageSection>
+		<PageSectionHeader :title="page.title" tag="h1" />
 		<i-container>
 			<i-row>
 				<i-column>
@@ -10,7 +10,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

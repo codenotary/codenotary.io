@@ -1,9 +1,9 @@
 <template>
-	<page-section id="lc-testimonials-section">
+	<PageSection id="lc-testimonials-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Customer testimonials" :bottom="4" />
+					<PageSectionHeader title="Customer testimonials" :bottom="4" />
 				</i-column>
 			</i-row>
 			<i-row>
@@ -69,7 +69,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

@@ -11,20 +11,8 @@
 
 <script>
 import { title } from '~/helpers/meta';
-import AboutHeader from '~/components/sections/headers/AboutHeader';
-import AboutFeaturesSection from '~/components/sections/features/AboutFeaturesSection';
-import ManagementTeamSection from '~/components/sections/teams/ManagementTeamSection';
-import BoardOfDirectorsSection from '~/components/sections/teams/BoardOfDirectorsSection';
-import ScientificBoardSection from '~/components/sections/teams/ScientificBoardSection';
 
 export default {
-	components: {
-		BoardOfDirectorsSection,
-		ScientificBoardSection,
-		ManagementTeamSection,
-		AboutFeaturesSection,
-		AboutHeader,
-	},
 	layout: 'banner-codenotary',
 	head() {
 		return {

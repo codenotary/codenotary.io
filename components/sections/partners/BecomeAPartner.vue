@@ -1,5 +1,5 @@
 <template>
-	<page-section id="become-a-partner-section">
+	<PageSection id="become-a-partner-section">
 		<i-container>
 			<i-row>
 				<i-column>
@@ -19,21 +19,15 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
 export default {
 	name: 'BecomeAPartner',
-
-	components: {
-		PartnerModal: () => import('~/components/common/modals/PartnerModal'),
-	},
-
 	data: () => ({
 		partnerModalOpen: false,
 	}),
-
 	beforeDestroy () {
 		this.partnerModalOpen = null;
 	},

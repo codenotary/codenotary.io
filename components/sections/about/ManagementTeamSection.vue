@@ -1,8 +1,8 @@
 <template>
-	<page-section id="management-team-section">
+	<PageSection id="management-team-section">
 		<i-row>
 			<i-column>
-				<page-section-header title="Our Management Team" />
+				<PageSectionHeader title="Our Management Team" />
 			</i-column>
 		</i-row>
 		<i-container>
@@ -85,16 +85,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import TeamMember from '~/components/common/TeamMember';
 
 export default {
-	components: {
-		TeamMember,
-	},
+	name: 'ManagementTeamSection',
 };
 </script>
 

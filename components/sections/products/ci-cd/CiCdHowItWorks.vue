@@ -1,9 +1,9 @@
 <template>
-	<page-section id="codenotary-how-it-works-section">
+	<PageSection id="codenotary-how-it-works-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="How it works" />
+					<PageSectionHeader title="How it works" />
 				</i-column>
 			</i-row>
 			<i-row>
@@ -79,7 +79,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

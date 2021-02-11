@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<page-section>
-			<page-section-header title="Blog" tag="h1" />
+		<PageSection>
+			<PageSectionHeader title="Blog" tag="h1" />
 			<i-container>
 				<i-row>
 					<i-column xs="12" class="blog-search-wrapper _hidden-sm-and-down _padding-right-2 _padding-left-2 _margin-bottom-2">
@@ -96,7 +96,7 @@
 					</i-column>
 				</i-row>
 			</i-container>
-		</page-section>
+		</PageSection>
 	</div>
 </template>
 

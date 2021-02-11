@@ -1,5 +1,5 @@
 <template>
-	<page-section id="ci-cd-videos-section">
+	<PageSection id="ci-cd-videos-section">
 		<i-container>
 			<VueSlickCarousel v-bind="settings" @beforeChange="page = $event">
 				<div>
@@ -103,7 +103,7 @@
 				</div>
 			</VueSlickCarousel>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

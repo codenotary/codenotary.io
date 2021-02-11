@@ -8,9 +8,9 @@
 		<template slot="header">
 			Start your trial
 		</template>
-		<div class="_form_20" />
+		<div class="_form_22" />
 		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=20"
+			src="https://vchain.activehosted.com/f/embed.php?id=22"
 			type="text/javascript"
 			charset="utf-8"
 		/>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-// import StartTrialForm from '~/components/common/forms/StartTrialForm';
+// import StartTrialForm from '~/components/global/forms/StartTrialForm';
 
 export default {
 	name: 'StartTrialModal',
@@ -34,8 +34,8 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-div._form_20 {
-	form._form._form_20 {
+div._form_22 {
+	form._form._form_22 {
 		width: 100% !important;
 		margin: 0 !important;
 		padding: 0 !important;
@@ -99,7 +99,7 @@ div._form_20 {
 		}
 
 		div._button-wrapper {
-			button#_form_20_submit {
+			button#_form_22_submit {
 				width: 100%;
 				background-color: $color-primary !important;
 				font-size: 16px !important;
