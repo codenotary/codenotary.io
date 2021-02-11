@@ -1,7 +1,7 @@
 <template>
 	<i-header id="lc-metrics-and-logs-header">
 		<i-row class="_align-items-center">
-			<i-column xs="12" md="6">
+			<i-column xs="12" md="6">				
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
 					All you need for performance analysis and log compliance!
 				</h1>

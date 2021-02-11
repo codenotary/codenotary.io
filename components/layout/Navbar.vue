@@ -53,7 +53,7 @@
 							>
 								<nuxt-link
 									class="freeform-item"
-									:to="{ name: 'products-ci-cd' }"
+									:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
 								>
 									<h6
 										class="_margin-0 _padding-xs-0 title"
@@ -76,7 +76,7 @@
 					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
 						Ledger Compliance (on-premise)
 					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ci-cd' }">
+					<i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
 						Ledger Compliance (Public Cloud)
 					</i-nav-item>
 				</i-nav>
