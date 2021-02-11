@@ -1,11 +1,6 @@
 <template>
 	<section
-		class="section"
-		:class="{
-			getVariant,
-			[`_padding-top-${top}`]: true,
-			[`_padding-bottom-${bottom}`]: true,
-		}"
+		:class="`section ${ getVariant } _padding-top-${ top } _padding-bottom-${bottom}`"
 	>
 		<slot />
 	</section>

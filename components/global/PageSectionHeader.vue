@@ -1,14 +1,6 @@
 <template>
 	<header
-		class="section-header"
-		:class="{
-			'_text-primary': true,
-			'block': block,
-			[`_text-${ color }`]: true,
-			[`_font-weight-${ weight }`]: true,
-			[`_margin-top-${top}`]: true,
-			[`_margin-bottom-${bottom}`]: true,
-		}"
+		:class="`section-header _text-primary ${ block ? 'block' : '' } _text-${ color } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
 	>
 		<slot name="title">
 			<h2 :is="tag">
