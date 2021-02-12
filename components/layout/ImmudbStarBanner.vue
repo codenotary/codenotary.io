@@ -47,7 +47,7 @@ export default {
 
 section.immudb-star-banner {
 	position: relative;
-	background-color: $color-primary;
+	background-color: $color-primary-dark;
 
 	&.-light {
 		border-bottom: 1px solid $border-color-light;

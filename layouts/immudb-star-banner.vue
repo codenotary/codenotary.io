@@ -70,7 +70,6 @@ export default {
 $navbar-height: 60;
 $navbar-scrolled-height: 60;
 $banner-height: 40;
-$banner-hover-height: 60;
 $banner-scrolled-height: 0;
 
 section.immudb-star-banner-layout {
@@ -104,7 +103,8 @@ section.immudb-star-banner-layout {
 	}
 
 	#content {
-		margin-top: #{$banner-height + $navbar-height}px !important;
+		// margin-top: #{$banner-height + $navbar-height}px !important;
+		margin-top: #{$banner-height}px !important;
 	}
 
 	&.scrolled {
@@ -115,13 +115,11 @@ section.immudb-star-banner-layout {
 		#navbar {
 			height: #{$navbar-scrolled-height}px !important;
 			top: #{$banner-scrolled-height}px !important;
-			padding: 0 !important;
-			background: white !important;
-			box-shadow: 0 5px 25px rgba(211, 211, 211, 0.5) !important;
 		}
 
 		#content {
-			margin-top: #{$banner-scrolled-height + $navbar-height}px;
+			// margin-top: #{$banner-scrolled-height + $navbar-height}px;
+			margin-top: #{$banner-scrolled-height}px;
 		}
 	}
 

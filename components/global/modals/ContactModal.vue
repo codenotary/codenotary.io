@@ -16,6 +16,7 @@
 		/>
 	</i-modal>
 </template>
+
 <script>
 export default {
 	name: 'ContactModal',

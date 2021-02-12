@@ -51,7 +51,6 @@ export default {
 
 $navbar-height: 60;
 $banner-height: 40;
-$banner-hover-height: 60;
 $banner-scrolled-height: 40;
 
 section.banner-layout {
@@ -84,7 +83,8 @@ section.banner-layout {
 	}
 
 	#content {
-		margin-top: #{$banner-height + $navbar-height}px !important;
+		// margin-top: #{$banner-height + $navbar-height}px !important;
+		margin-top: #{$banner-height}px !important;
 	}
 
 	&.scrolled {
@@ -111,35 +111,11 @@ section.banner-layout {
 
 		#navbar {
 			top: #{$banner-scrolled-height}px !important;
-			background: white !important;
-			box-shadow: 0 5px 25px rgba(211, 211, 211, 0.5) !important;
 		}
 
 		#content {
-			margin-top: #{$banner-scrolled-height + $navbar-height}px;
-		}
-	}
-
-	&.hover {
-		#banner-codenotary {
-			height: #{$banner-hover-height}px !important;
-
-			span,
-			.button {
-				font-size: 100% !important;
-			}
-
-			.button {
-				padding: 0.4rem 0.8rem;
-			}
-		}
-
-		#navbar {
-			top: #{$banner-hover-height}px !important;
-		}
-
-		#content {
-			margin-top: #{$banner-hover-height + $navbar-height}px;
+			// margin-top: #{$banner-scrolled-height + $navbar-height}px;
+			margin-top: #{$banner-scrolled-height}px;
 		}
 	}
 }

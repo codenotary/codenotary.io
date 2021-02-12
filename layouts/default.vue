@@ -61,23 +61,18 @@ section.default-layout {
 	}
 
 	#content {
-		margin-top: #{$navbar-height}px;
+		// margin-top: #{$navbar-height}px;
+		margin-top: 0;
 	}
 
 	&.scrolled {
 		#navbar {
 			height: #{$navbar-scrolled-height}px !important;
-			padding: 0 !important;
-			background: white !important;
-			box-shadow: 0 5px 25px rgba(211, 211, 211, 0.5) !important;
-
-			.logo {
-				max-height: 48px;
-			}
 		}
 
 		#content {
-			margin-top: #{$navbar-scrolled-height}px;
+			// margin-top: #{$navbar-scrolled-height}px;
+			margin-top: 0;
 		}
 	}
 }

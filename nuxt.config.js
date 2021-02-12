@@ -11,7 +11,7 @@ export default {
     ** ssr propery
     ** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
     */
-	ssr: true,
+	ssr: false,
 
 	/*
 	** Nuxt target
@@ -61,8 +61,16 @@ export default {
     ** Global CSS
     */
 	css: [
-		'vue-slick-carousel/dist/vue-slick-carousel.css',
-		'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
+		{
+			src: './assets/css/colors.scss',
+			lang: 'scss',
+			ssr: false,
+		},
+		{
+			src: './assets/css/typography.scss',
+			lang: 'scss',
+			ssr: false,
+		},				
 	],
 	
 	build: {
@@ -113,6 +121,7 @@ export default {
 		{ src: '~plugins/vue-infinite-loading', mode: 'client' },
 		{ src: '~plugins/vue-lazy-hydrate', ssr: false },
 		{ src: '~plugins/vue-masonry-css', ssr: false },
+		{ src: '~plugins/vue-meta', ssr: false },
 		{ src: '~plugins/vue-truncate-filter', ssr: false },
 		{ src: '~plugins/vue-typer', ssr: false },
 		'~plugins/vue-slick-carousel',
@@ -237,8 +246,7 @@ export default {
 
 	styleResources: {
 		scss: [
-			'~/assets/typography.scss',
-			'~/assets/variables.scss',
+			'~/assets/css/variables.scss',
 		],
 	},
 

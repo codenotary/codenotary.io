@@ -1,26 +1,37 @@
 <template>
-	<section class="banner _justify-content-center">
-		<div class="_display-flex _align-items-center">
-			<!-- <fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" /> -->
-			<span
-				class="-caption _font-weight-bold"
+	<section class="banner _padding-y-0 _justify-content-center _align-items-center">
+		<i-row>
+			<i-column
+				class="justify-content-center _align-items-center"
+				xs="8"
+				sm="10"
+				md="10"
 			>
-				Free tamperproof timestamp service for your CI/CD process
-			</span>
-		</div>
-		<div class="_display-flex _align-items-center">
-			<a
-				class="_margin-left-2 _font-weight-bold _text-decoration-underline"
-				variant="dark"
-				outline
-				size="sm"
-				:href="'https://timestamp.codenotary.com'"
-				target="_blank"
-				rel="noopener"
+				<span
+					class="-caption _font-weight-bold"
+				>
+					Free tamperproof timestamp service for your CI/CD process
+				</span>
+			</i-column>
+			<i-column
+				class="justify-content-center _align-items-center"
+				xs="4"
+				sm="2"
+				md="2"
 			>
-				Start now
-			</a>
-		</div>
+				<a
+					class="_margin-left-0 _margin-sm-left-2 _font-weight-bold _text-decoration-underline"
+					variant="dark"
+					outline
+					size="sm"
+					:href="'https://timestamp.codenotary.com'"
+					target="_blank"
+					rel="noopener"
+				>
+					Start now
+				</a>
+			</i-column>
+		</i-row>
 	</section>
 </template>
 
@@ -35,7 +46,14 @@ export default {
 @import '~@inkline/inkline/src/css/mixins';
 
 section.banner {
-	background-color: $color-primary;
+	background-color: $color-primary-darkest;
+
+	.row,
+	.column {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
 
 	span,
 	a {
@@ -59,9 +77,6 @@ section.banner {
 		&:hover,
 		&:active,
 		&.nuxt-link-active {
-			// border-color: rgba(0, 0, 0, 0.55) !important;
-			// color: rgba(0, 0, 0, 0.9) !important;
-
 			color: $color-primary !important;
 		}
 
@@ -73,7 +88,6 @@ section.banner {
 		&:active,
 		&.nuxt-link-active {
 			border-width: 2px !important;
-			// border-color: rgba(0, 0, 0, 0.55) !important;
 			background: rgba(255, 255, 255, 0.05) !important;
 		}
 	}

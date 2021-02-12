@@ -73,6 +73,7 @@
     "stylelint": "^13.9.0",
     "stylelint-config-standard": "^20.0.0",
     "vue-infinite-loading": "^2.4.5",
-    "vue-jest": "3.0.7"
+    "vue-jest": "3.0.7",
+    "vue-meta": "^2.4.0"
   }
 }

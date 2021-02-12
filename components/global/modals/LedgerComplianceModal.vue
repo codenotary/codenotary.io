@@ -9,25 +9,23 @@
 			Start your trial
 		</template>
 		<div class="_form_22" />
-		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=22"
-			type="text/javascript"
-			charset="utf-8"
-		/>
 	</i-modal>
 </template>
 
 <script>
-// import StartTrialForm from '~/components/global/forms/StartTrialForm';
-
+import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 export default {
 	name: 'StartTrialModal',
+	mixins: [scriptInjectMixin],
 	props: {
 		value: {
 			type: Boolean,
 			default: false,
 		},
 	},
+	mounted() {
+		this.injectScript('https://vchain.activehosted.com/f/embed.php?id=22');
+	},	
 };
 </script>
 

@@ -9,19 +9,23 @@
 			Start your trial
 		</template>
 		<div class="_form_20" />
-		<script
+		<!-- <script
 			src="https://vchain.activehosted.com/f/embed.php?id=20"
 			type="text/javascript"
 			charset="utf-8"
-		/>
+		/> -->
 	</i-modal>
 </template>
 
 <script>
-// import StartTrialForm from '~/components/global/forms/StartTrialForm';
-
 export default {
 	name: 'StartTrialModal',
+	head: {
+		title: 'activehosted',
+		script: [
+			{ hid: 'stripe', src: 'https://vchain.activehosted.com/f/embed.php?id=20', defer: true },
+		],
+	},
 	props: {
 		value: {
 			type: Boolean,

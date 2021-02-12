@@ -1,26 +1,34 @@
 <template>
 	<i-navbar>
-		<i-navbar-brand :to="{ name: 'index' }" class="_padding-0">
+		<i-navbar-brand
+			:to="{ name: 'index' }"
+			class="_padding-0"
+		>
 			<img
-				class="logo"
-				src="/images/logo/logo_blue.png"
+				class="logo _padding-y-1-2"
+				src="/images/logo/logo_white.svg"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
 		<i-navbar-items class="_justify-content-end">
 			<i-nav>
 				<!-- BLOG POSTS -->
-				<i-nav-item :to="{ name: 'blog' }">
+				<i-nav-item
+					class="_text-xs-black _visible-lg-and-up"
+					:to="{ name: 'blog' }"
+				>
 					Blog
 				</i-nav-item>
 
-				<!-- PRODUCTS lg-and-up -->
+				<!-- PRODUCTS (lg-and-up) -->
 				<i-dropdown
 					class="navbar-dropdown _visible-lg-and-up"
 					trigger="hover"
 					@change="productsMenuOpen = $event"
 				>
-					<i-nav-item :class="{ '-active': subRouteActive('/products') }">
+					<i-nav-item
+						:class="{ '-active': subRouteActive('/products') }"
+					>
 						Products
 						<fa
 							class="_margin-left-1-4"
@@ -34,33 +42,33 @@
 								xs="12"
 							>
 								<nuxt-link
-									class="freeform-item"
+									class="freeform-item _text-black"
 									:to="{ name: 'products-ledger-compliance' }"
 								>
 									<h6
-										class="_margin-0 _padding-xs-0 title"
+										class="title _margin-0 _padding-xs-0 _text-blac"
 									>
 										Ledger Compliance (on-premise)
 									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
+									<p class="subtitle _margin-0 padding-top-1-2 _text-blac">
 										Lorem Ipusm Dolor Sit Amet
 									</p>
 								</nuxt-link>
 							</i-column>
 							<i-column
-								class="_margin-0 _margin-top-1 _padding-xs-0"
+								class="_margin-0 _margin-top-1 _padding-xs-0 "
 								xs="12"
 							>
 								<nuxt-link
 									class="freeform-item"
-									:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+									:to="{ name: 'products-ci-cd' }"
 								>
 									<h6
-										class="_margin-0 _padding-xs-0 title"
+										class="title _margin-0 _padding-xs-0 _text-black"
 									>
 										Ledger Compliance (Public Cloud)
 									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
+									<p class="subtitle _margin-0 padding-top-1-2 _text-black">
 										Lorem Ipusm Dolor Sit Amet
 									</p>
 								</nuxt-link>
@@ -68,26 +76,37 @@
 						</i-row>
 					</i-dropdown-menu>
 				</i-dropdown>
-				<!-- PRODUCTS md-and-down -->
+				<!-- PRODUCTS (md-and-down) -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item class="header" disabled>
+					<i-nav-item
+						class="header _text-black"
+						disabled
+					>
 						Products
 					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
+					<i-nav-item
+						class="_text-black"
+						:to="{ name: 'products-ledger-compliance' }"
+					>
 						Ledger Compliance (on-premise)
 					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+					<i-nav-item
+						class="_text-black"
+						:to="{ name: 'products-ci-cd' }"
+					>
 						Ledger Compliance (Public Cloud)
 					</i-nav-item>
 				</i-nav>
 
-				<!-- TECHNOLOGIES lg-and-up -->
+				<!-- TECHNOLOGIES (lg-and-up) -->
 				<i-dropdown
 					class="navbar-dropdown _visible-lg-and-up"
 					trigger="hover"
 					@change="technologiesMenuOpen = $event"
 				>
-					<i-nav-item :class="{ '-active': subRouteActive('/technologies') }">
+					<i-nav-item
+						:class="{ '-active': subRouteActive('/technologies') }"
+					>
 						Technologies
 						<fa
 							class="_margin-left-1-4"
@@ -105,11 +124,11 @@
 									:to="{ name: 'technologies-immudb' }"
 								>
 									<h6
-										class="_margin-0 _padding-xs-0 title"
+										class="title _margin-0 _padding-xs-0 _text-black"
 									>
 										immudb
 									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
+									<p class="subtitle _margin-0 padding-top-1-2 _text-black">
 										Lorem Ipusm Dolor Sit Amet
 									</p>
 								</nuxt-link>
@@ -117,28 +136,43 @@
 						</i-row>
 					</i-dropdown-menu>
 				</i-dropdown>
-				<!-- TECHNOLOGIES md-and-down -->
+				<!-- TECHNOLOGIES (md-and-down) -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item class="header" disabled>
+					<i-nav-item
+						class="header _text-black"
+						disabled
+					>
 						Technologies
 					</i-nav-item>
-					<i-nav-item href="https://immudb.io">
+					<i-nav-item
+						class="_text-black"
+						href="https://immudb.io"
+					>
 						immudb
 					</i-nav-item>
 				</i-nav>
 
 				<!-- ABOUT US -->
-				<i-nav-item :to="{ name: 'about' }">
+				<i-nav-item
+					class="_visible-lg-and-up"
+					:to="{ name: 'about' }"
+				>
 					About us
 				</i-nav-item>
 
 				<!-- PARTNERS -->
-				<i-nav-item :to="{ name: 'partners' }">
+				<i-nav-item
+					class="_visible-lg-and-up"
+					:to="{ name: 'partners' }"
+				>
 					Partners
 				</i-nav-item>
 
 				<!-- CONTACT US -->
-				<i-nav-item :to="{ name: 'contact' }">
+				<i-nav-item
+					class="_visible-lg-and-up"
+					:to="{ name: 'contact' }"
+				>
 					Contact us
 				</i-nav-item>
 			</i-nav>
@@ -180,8 +214,32 @@ export default {
 
 $logo-height: 48;
 
+section.default-layout,
+section.banner-layout,
+section.immudb-star-banner-layout {
+	&.scrolled {
+		.navbar {
+			padding: 0 !important;
+			background: white !important;
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+
+			.container {
+				.logo {
+					max-height: #{$logo-height}px;
+				}
+
+				a,
+				.item,
+				.title {
+					color: $text-dark-color !important;
+				}
+			}
+		}
+	}
+}
+
 .navbar {
-	background: white !important;
+	background: transparent !important;
 
 	.logo {
 		max-height: #{$logo-height}px;
@@ -193,19 +251,21 @@ $logo-height: 48;
 		}
 	}
 
-	&.-light {
-		background: transparent !important;
+	a,
+	.item,
+	.title {
+		color: $text-light-color !important;
 	}
 
 	.navbar-dropdown {
 		.menu {
-			min-width: 320px !important;
-			max-width: 600px !important;
+			min-width: 420px !important;
+			max-width: 800px !important;
 
 			a.freeform-item {
 				position: relative;
 				text-decoration: none !important;
-				color: $text-dark-color !important;
+				color: $text-light-color !important;
 
 				&.-active {
 					&::before {
@@ -219,6 +279,11 @@ $logo-height: 48;
 						background: $color-primary;
 						border-radius: 0 4px 4px 0;
 					}
+				}
+
+				.title,
+				.subtitle {
+					color: $text-dark-color !important;
 				}
 
 				.title {
@@ -263,9 +328,21 @@ $logo-height: 48;
 			height: 100%;
 			max-height: 100%;
 			position: relative;
+
+			.collapse-toggle {
+				color: white;
+			}
+
+			a,
+			.item,
+			.title {
+				color: $text-dark-color !important;
+			}
 		}
 
 		.navbar-items {
+			background: white !important;
+
 			> .nav {
 				> .dropdown {
 					display: none !important;

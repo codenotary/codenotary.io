@@ -58,9 +58,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~@inkline/inkline/src/css/config/colors';
-@import '../../assets/variables';
-
 .section-header {
 	text-align: center;
 

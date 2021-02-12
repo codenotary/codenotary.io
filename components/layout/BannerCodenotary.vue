@@ -23,7 +23,7 @@ export default {
 @import '~@inkline/inkline/src/css/mixins';
 
 section.banner-codenotary {
-	background-color: $color-warning;
+	background-color: $color-primary-dark;
 
 	span,
 	.button {

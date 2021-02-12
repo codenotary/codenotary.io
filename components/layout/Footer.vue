@@ -32,7 +32,7 @@
 							</router-link>
 						</li>
 						<li>
-							<router-link :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+							<router-link :to="{ name: 'products-ci-cd' }">
 								Ledger Compliance (Public Cloud)
 							</router-link>
 						</li>
