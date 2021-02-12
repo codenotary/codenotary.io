@@ -10,6 +10,7 @@ export default {
 					document.body.appendChild(script);
 				});
 			}
+			return false;
 		},
 	},
 };

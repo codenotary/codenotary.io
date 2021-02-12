@@ -11,10 +11,11 @@
 		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 		<div
 			v-if="!injected"
+			class="_display-flex _justify-content-center _align-items-center"
 			style="height: 240px; width: 100%;"
 		>
 			<i-loader
-				size="auto"
+				size="md"
 				variant="dark"
 			/>
 		</div>
@@ -42,8 +43,10 @@ export default {
 	watch: {
 		value (newVal) {
 			if (newVal && !this.injected) {
-				this.injected = true;
 				this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
+				setTimeout(() => {
+					this.injected = true;
+				}, 500);
 			}
 		},
 	},

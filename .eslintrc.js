@@ -42,7 +42,7 @@ module.exports = {
 		'vue/max-attributes-per-line': ['warn', {
 			singleline: 2,
 			multiline: {
-				max: 1,
+				max: 2,
 			},
 			allowFirstLine: false,
 		}],
