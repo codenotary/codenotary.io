@@ -8,22 +8,46 @@
 		<template slot="header">
 			Join the Consortium
 		</template>
-		<div class="_form_2" />
-		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=2"
-			type="text/javascript"
-			charset="utf-8"
-		/>
+		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
+		<div
+			v-if="!injected"
+			class="_display-flex _justify-content-center _align-items-center"
+			style="height: 240px; width: 100%;"
+		>
+			<i-loader
+				size="md"
+				variant="dark"
+			/>
+		</div>
 	</i-modal>
 </template>
 
 <script>
+import scriptInjectMixin from '@/mixins/scriptInjectMixin';
+
+const ACTIVE_CAMPAIGN_FORM_ID = 22;
+
 export default {
 	name: 'JoinZtcModal',
+	mixins: [scriptInjectMixin],
 	props: {
 		value: {
 			type: Boolean,
 			default: false,
+		},
+	},
+	data: () => ({
+		ACTIVE_CAMPAIGN_FORM_ID,
+		injected: false,
+	}),
+	watch: {
+		value (newVal) {
+			if (newVal && !this.injected) {
+				this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
+				setTimeout(() => {
+					this.injected = true;
+				}, 500);
+			}
 		},
 	},
 };
