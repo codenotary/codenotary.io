@@ -67,14 +67,13 @@ The keys in immudb are not unique, which means you can set them again and if you
 
 We are using Google's Golang in this tutorial. However, [immudb](https://github.com/codenotary/immudb) supports a whole lot of languages and there is also a REST-interface available by using [immugw](https://github.com/codenotary/immugw).
 
-First we need to get immudb and run it. It takes just some seconds using this [quickstart](https://github.com/codenotary/immudb#quickstart) guide. Next, we connect through the [immuclient](https://github.com/codenotary/immudb/pkg/client) to immudb. The default options will use your local IP address and port 3322. The default user is immudb and the default password also immudb. Look up the full code on [github](https://github.com/codenotary/immudb-client-examples/tree/master/blog-examples/store-vaccine-health-data-in-immudb-using-Go).
+First we need to get immudb and run it. It takes just some seconds using this [jumpstart](https://docs.immudb.io/master/jumpstart.html) guide. Next, we connect through the [immuclient](https://github.com/codenotary/immudb/pkg/client) to immudb. The default options will use your local IP address and port 3322. The default user is immudb and the default password also immudb. Look up the full code on [github](https://github.com/codenotary/immudb-client-examples/tree/master/blog-examples/store-vaccine-health-data-in-immudb-using-Go-version-0.9.0).
 
 ```go
 client, err := immuclient.NewImmuClient(immuclient.DefaultOptions())
 ctx := context.Background()
 // login with default username and password
 lr, err := client.Login(ctx, []byte(`immudb`), []byte(`immudb`))
-
 ```
 We are now logged in. Immudb provides multi-database capabilities, that's why we can create a new database. Let's call it “yellowcard” (remember you can only create a database with that name once). We also have to switch to that database in order to use it. The switch is being done by the token, as it is not only used for authentication, but also to route calls to the correct database.
 
@@ -86,7 +85,6 @@ err = client.CreateDatabase(ctx, &schema.Database{
 resp, err := client.UseDatabase(ctx, &schema.Database{
 	Databasename: "yellowcard",
 })
-
 md = metadata.Pairs("authorization", resp.Token)
 ctx = metadata.NewOutgoingContext(context.Background(), md)
 ```
@@ -104,7 +102,6 @@ vaccinations := map[string][]byte{      "345623:IPV:manufacturer": []byte("Vacci
                                          ...
 ```
 This looks already pretty good, we could now already set the key-value pairs in immudb. However Smarty McGopher wants full control over his data, that's why he decides to encrypt the values using his password.
-
 ```go
 var password = "SmartyMcGopherisSmart-and-encrypts!#vaccinationdata!"
 //create a new map with encrypted values
@@ -112,27 +109,21 @@ var encryptedPersonMap map[string][]byte=encryptMapValues(person,password,random
 var encryptedVaccinationMap map[string][]byte=encryptMapValues(vaccinations,password,randomSalt(10))
 ```
 This looks good. Now we can iterate over the keys of the maps and write verifiably in immudb! You can write and read with built-in cryptographic verification. Also, we can read values by querying for the key, but of course, they are encrypted. We have to decrypt them first to be able to read them.
-
 ```go
 // sets key-values of map in immudb
-for key, value := encrytedMap {
-	verifiedIndex, err := client.SafeSet(ctx, []byte(key), value)
-	if err != nil {
+for key, value := range encryptedPersonMap {
+	if _, err := client.VerifiedSet(ctx, []byte(key), value); err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("SafeSet - add and verify entry:")
-	fmt.Printf(key, value, verifiedIndex)
 }
-for key := range encryptedMap {
+for key := range encryptedPersonMap {
 	if item, err := client.Get(ctx, []byte(key)); err != nil {
 		log.Fatal(err)
 	} else {
 		// immudb sdk provides structured data. https://github.com/codenotary/immudb#structured-value
-		fmt.Printf("%s\n", decryptValue(item.Value.Payload, password, randomSalt(10)))
+		fmt.Printf("%s\n", decryptValue(item.Value, password, randomSalt(10)))
 	}
 }
 ```
-
 <img style="float: right;" src="/images/blog/mascotfree.png" width="300">
-
 Our Gopher's vaccination data is now verifiable and immutably stored in immudb. Today’s challenges need technology like immudb to make the world a better place again. Smarty McGopher could now easily and safely proof his vaccinations and travel again. There are many more features of immudb that will be discussed in future blogs like adding references and indexes to data. Keep track of immudb by leaving a star at [github](https://github.com/codenotary/immudb).
