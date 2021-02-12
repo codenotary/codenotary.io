@@ -40,10 +40,10 @@
 									<h6
 										class="_margin-0 _padding-xs-0 title"
 									>
-										Ledger Compliance (on-premise)
+										Ledger Compliance (deploy anywhere)
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										Lorem Ipusm Dolor Sit Amet
+										High-speed, immutable, and cryptographically verifiable ledger system
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -58,10 +58,10 @@
 									<h6
 										class="_margin-0 _padding-xs-0 title"
 									>
-										Ledger Compliance (Public Cloud)
+										Ledger Compliance (Managed Service)
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										Lorem Ipusm Dolor Sit Amet
+										Public verifiable trusted DevOps
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -74,10 +74,10 @@
 						Products
 					</i-nav-item>
 					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
-						Ledger Compliance (on-premise)
+						Ledger Compliance (deploy anywhere)
 					</i-nav-item>
 					<i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
-						Ledger Compliance (Public Cloud)
+						Ledger Compliance (Managed Service)
 					</i-nav-item>
 				</i-nav>
 
@@ -110,7 +110,7 @@
 										immudb
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										Lorem Ipusm Dolor Sit Amet
+										World’s fastest immutable database
 									</p>
 								</nuxt-link>
 							</i-column>
