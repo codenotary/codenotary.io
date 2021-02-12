@@ -6,16 +6,15 @@
 		<template slot="header">
 			Start your trial
 		</template>
-		<div class="_form_20" />
-		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=20" type="text/javascript"
-			charset="utf-8"
-		/>
+		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
+
 	</i-modal>
 </template>
 
 <script>
-// import StartTrialForm from '~/components/common/forms/StartTrialForm';
+import scriptInjectMixin from '@/mixins/scriptInjectMixin';
+
+const ACTIVE_CAMPAIGN_FORM_ID = 20;
 
 export default {
 	name: 'StartTrialModal',
@@ -24,6 +23,12 @@ export default {
 			type: Boolean,
 			default: false,
 		},
+	},
+	data: () => ({
+		ACTIVE_CAMPAIGN_FORM_ID,
+	}),
+	mounted() {
+		this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
 	},
 };
 </script>

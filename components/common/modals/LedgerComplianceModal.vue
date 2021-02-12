@@ -1,30 +1,34 @@
 <template>
 	<i-modal
-		class="start-trial-modal" size="lg"
-		:value="value" @input="$emit('input', $event)"
+		class="start-trial-modal"
+		size="lg"
+		:value="value"
+		@input="$emit('input', $event)"
 	>
 		<template slot="header">
 			Start your trial
 		</template>
-		<div class="_form_22" />
-		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=22" type="text/javascript"
-			charset="utf-8"
-		/>
+		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 	</i-modal>
 </template>
 
 <script>
-// import StartTrialForm from '~/components/common/forms/StartTrialForm';
+import scriptInjectMixin from '@/mixins/scriptInjectMixin';
+
+const ACTIVE_CAMPAIGN_FORM_ID = 22;
 
 export default {
 	name: 'StartTrialModal',
+	mixins: [scriptInjectMixin],
 	props: {
 		value: {
 			type: Boolean,
 			default: false,
 		},
 	},
+	mounted() {
+		this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
+	},	
 };
 </script>
 

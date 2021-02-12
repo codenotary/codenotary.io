@@ -6,21 +6,28 @@
 		<template slot="header">
 			Contact us
 		</template>
-		<div class="_form_10" />
-		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=10" type="text/javascript"
-			charset="utf-8"
-		/>
+		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 	</i-modal>
 </template>
 <script>
+import scriptInjectMixin from '@/mixins/scriptInjectMixin';
+
+const ACTIVE_CAMPAIGN_FORM_ID = 10;
+
 export default {
 	name: 'ContactModal',
+	mixins: [scriptInjectMixin],
 	props: {
 		value: {
 			type: Boolean,
 			default: false,
 		},
+	},
+	data: () => ({
+		ACTIVE_CAMPAIGN_FORM_ID,
+	}),
+	mounted() {
+		this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
 	},
 };
 </script>

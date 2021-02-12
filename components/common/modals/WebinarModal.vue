@@ -6,15 +6,15 @@
 		<template slot="header">
 			Schedule a Webinar
 		</template>
-		<div class="_form_16" />
-		<script
-			src="https://vchain.activehosted.com/f/embed.php?id=16" type="text/javascript"
-			charset="utf-8"
-		/>
+		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 	</i-modal>
 </template>
 
 <script>
+import scriptInjectMixin from '@/mixins/scriptInjectMixin';
+
+const ACTIVE_CAMPAIGN_FORM_ID = 16;
+
 export default {
 	name: 'WebinarModal',
 	props: {
@@ -22,6 +22,12 @@ export default {
 			type: Boolean,
 			default: false,
 		},
+	},
+	data: () => ({
+		ACTIVE_CAMPAIGN_FORM_ID,
+	}),
+	mounted() {
+		this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
 	},
 };
 </script>
