@@ -11,7 +11,7 @@ export default {
     ** ssr propery
     ** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
     */
-	ssr: false,
+	ssr: true,
 
 	/*
 	** Nuxt target

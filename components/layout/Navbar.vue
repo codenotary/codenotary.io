@@ -48,10 +48,15 @@
 									<h6
 										class="title _margin-0 _padding-xs-0 _text-blac"
 									>
-										Ledger Compliance (on-premise)
+										Ledger Compliance (deploy anywhere)
 									</h6>
+<<<<<<< HEAD
 									<p class="subtitle _margin-0 padding-top-1-2 _text-blac">
 										Lorem Ipusm Dolor Sit Amet
+=======
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										High-speed, immutable, and cryptographically verifiable ledger system
+>>>>>>> 6673988fef7b478248239a8d56c173c13c21e8fb
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -66,10 +71,10 @@
 									<h6
 										class="title _margin-0 _padding-xs-0 _text-black"
 									>
-										Ledger Compliance (Public Cloud)
+										Ledger Compliance (Managed Service)
 									</h6>
-									<p class="subtitle _margin-0 padding-top-1-2 _text-black">
-										Lorem Ipusm Dolor Sit Amet
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										Public verifiable trusted DevOps
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -84,17 +89,11 @@
 					>
 						Products
 					</i-nav-item>
-					<i-nav-item
-						class="_text-black"
-						:to="{ name: 'products-ledger-compliance' }"
-					>
-						Ledger Compliance (on-premise)
+					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
+						Ledger Compliance (deploy anywhere)
 					</i-nav-item>
-					<i-nav-item
-						class="_text-black"
-						:to="{ name: 'products-ci-cd' }"
-					>
-						Ledger Compliance (Public Cloud)
+					<i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+						Ledger Compliance (Managed Service)
 					</i-nav-item>
 				</i-nav>
 
@@ -124,12 +123,12 @@
 									:to="{ name: 'technologies-immudb' }"
 								>
 									<h6
-										class="title _margin-0 _padding-xs-0 _text-black"
+										class="title _margin-0 _padding-xs-0"
 									>
 										immudb
 									</h6>
-									<p class="subtitle _margin-0 padding-top-1-2 _text-black">
-										Lorem Ipusm Dolor Sit Amet
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										World’s fastest immutable database
 									</p>
 								</nuxt-link>
 							</i-column>
