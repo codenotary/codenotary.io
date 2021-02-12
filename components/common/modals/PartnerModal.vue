@@ -8,6 +8,15 @@
 		</template>
 		<partner-form />
 		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
+		<div
+			v-if="!injected"
+			style="height: 240px; width: 100%;"
+		>
+			<i-loader
+				size="auto"
+				variant="dark"
+			/>
+		</div>
 	</i-modal>
 </template>
 
@@ -35,7 +44,7 @@ export default {
 				this.injected = true;
 				this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
 			}
-		}
+		},
 	},
 };
 </script>
