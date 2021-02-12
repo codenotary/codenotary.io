@@ -126,4 +126,5 @@ for key := range encryptedPersonMap {
 }
 ```
 <img style="float: right;" src="/images/blog/mascotfree.png" width="300">
-Our Gopher's vaccination data is now verifiable and immutably stored in immudb. Today’s challenges need technology like immudb to make the world a better place again. Smarty McGopher could now easily and safely proof his vaccinations and travel again. There are many more features of immudb that will be discussed in future blogs like adding references and indexes to data. Keep track of immudb by leaving a star at [github](https://github.com/codenotary/immudb).
+Our Gopher's vaccination data is now verifiable and immutably stored in immudb. Today’s challenges need technology like immudb to make the world a better place again. Smarty McGopher could now easily and safely proof his vaccinations and travel again. There are many more features of immudb that will be discussed in future blogs like adding references and indexes to data.
+Keep track of immudb by leaving a star at https://github.com/codenotary/immudb.
