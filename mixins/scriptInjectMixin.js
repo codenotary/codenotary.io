@@ -6,7 +6,9 @@ export default {
 				const script = document.createElement('script');
 				script.type = 'text/javascript';
 				script.src = src;
-				document.body.appendChild(script);
+				this.$nextTick(() => {
+					document.body.appendChild(script);
+				});
 			}
 		},
 	},

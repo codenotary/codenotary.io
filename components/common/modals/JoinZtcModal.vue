@@ -17,6 +17,7 @@ const ACTIVE_CAMPAIGN_FORM_ID = 2;
 
 export default {
 	name: 'JoinZtcModal',
+	mixins: [scriptInjectMixin],
 	props: {
 		value: {
 			type: Boolean,
@@ -25,9 +26,15 @@ export default {
 	},
 	data: () => ({
 		ACTIVE_CAMPAIGN_FORM_ID,
+		injected: false,
 	}),
-	mounted() {
-		this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
+	watch: {
+		value (newVal) {
+			if (newVal && !this.injected) {
+				this.injected = true;
+				this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
+			}
+		}
 	},
 };
 </script>
