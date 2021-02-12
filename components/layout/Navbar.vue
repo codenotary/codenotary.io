@@ -42,21 +42,16 @@
 								xs="12"
 							>
 								<nuxt-link
-									class="freeform-item _text-black"
+									class="freeform-item"
 									:to="{ name: 'products-ledger-compliance' }"
 								>
 									<h6
-										class="title _margin-0 _padding-xs-0 _text-blac"
+										class="title _margin-0 _padding-xs-0"
 									>
 										Ledger Compliance (deploy anywhere)
 									</h6>
-<<<<<<< HEAD
-									<p class="subtitle _margin-0 padding-top-1-2 _text-blac">
-										Lorem Ipusm Dolor Sit Amet
-=======
 									<p class="_margin-0 padding-top-1-2 subtitle">
 										High-speed, immutable, and cryptographically verifiable ledger system
->>>>>>> 6673988fef7b478248239a8d56c173c13c21e8fb
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -69,7 +64,7 @@
 									:to="{ name: 'products-ci-cd' }"
 								>
 									<h6
-										class="title _margin-0 _padding-xs-0 _text-black"
+										class="title _margin-0 _padding-xs-0"
 									>
 										Ledger Compliance (Managed Service)
 									</h6>
@@ -84,7 +79,7 @@
 				<!-- PRODUCTS (md-and-down) -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
 					<i-nav-item
-						class="header _text-black"
+						class="header"
 						disabled
 					>
 						Products
@@ -138,13 +133,12 @@
 				<!-- TECHNOLOGIES (md-and-down) -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
 					<i-nav-item
-						class="header _text-black"
+						class="header"
 						disabled
 					>
 						Technologies
 					</i-nav-item>
 					<i-nav-item
-						class="_text-black"
 						href="https://immudb.io"
 					>
 						immudb

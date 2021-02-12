@@ -14,6 +14,7 @@
 
 <script>
 import scriptInjectMixin from '@/mixins/scriptInjectMixin';
+
 export default {
 	name: 'StartTrialModal',
 	mixins: [scriptInjectMixin],

@@ -50,6 +50,7 @@ export default {
 			{ hid: 'canonical', rel: 'canonical', href: DEFAULT_META.SITE_URL },
 		],
 	},
+
 	/*
     ** Customize the progress-bar color
     */
