@@ -8,7 +8,7 @@
 			:class="`_flex-direction-md-row${ getContentSide === 'right' ? '' : '-reverse' }`"
 		>
 			<i-column
-				class="_margin-bottom-4 _margin-0 _padding-0"
+				class="_margin-bottom-4 _margin-sm-bottom-0 _margin-0 _padding-0"
 				xs="12" sm="4"
 				md="4" lg="5"
 				xl="6"
@@ -17,6 +17,7 @@
 					v-if="image"
 					class="image -responsive _padding-0"
 					:class="{
+						[`_maring-right-sm-and-up-${ getContentSide }-2`]: true,
 						[`_padding-sm-and-up-${ getContentSide }-2`]: true,
 					}"
 					:src="image"
@@ -44,7 +45,7 @@
 				<div class="_visible-lg-and-up">
 					<i-row
 						v-if="innerContent && innerContent.length > 0"
-						class="_margin-top-1 _display-flex _justify-content-space-between"
+						class="_margin-top-2 _display-flex _justify-content-space-between"
 					>
 						<i-column
 							v-for="(item, idx) in innerContent"
@@ -78,7 +79,7 @@
 		<div class="_visible-md-and-down">
 			<i-row
 				v-if="innerContent && innerContent.length > 0"
-				class="_margin-top-1 _display-flex _justify-content-space-between"		
+				class="_margin-top-2 _display-flex _justify-content-space-between"		
 			>
 				<i-column
 					v-for="(item, idx) in innerContent"
@@ -110,7 +111,7 @@
 		</div>	
 		<i-row
 			v-if="hasButtonSlot"
-			class="cta-wrapper _margin-top-4 _display-flex _justify-content-center _align-items-center"
+			class="cta-wrapper _margin-top-2 _margin-sm-top-4 _display-flex _justify-content-center _align-items-center"
 		>
 			<slot name="button" />
 		</i-row>
