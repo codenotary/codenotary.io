@@ -27,7 +27,7 @@
 						Demo
 					</i-button>
 					<i-button
-						variant="primary"
+						variant="white"
 						size="lg"
 						class="_margin-left-1"
 						@click="ledgerComplianceModalOpen = true"
@@ -108,16 +108,16 @@ export default {
 $mascot-width: 175px;
 
 #home-header {
-	// background:
-	// 	-webkit-gradient(
-	// 		linear,
-	// 		left top,
-	// 		left bottom,
-	// 		180deg,
-	// 		rgba(20, 96, 182, 1),
-	// 		rgba(15, 72, 136, 1),
-	// 		rgba(10, 48, 90, 1)
-	// 	);
+	background: $color-primary;
+	// -webkit-gradient(
+	// 	linear,
+	// 	left top,
+	// 	left bottom,
+	// 	180deg,
+	// 	rgba(20, 96, 182, 1),
+	// 	rgba(15, 72, 136, 1),
+	// 	rgba(10, 48, 90, 1)
+	// );
 	overflow: hidden;
 	width: 100%;
 

@@ -4,19 +4,20 @@
 		data-aos="fade-zoom-in"
 	>
 		<i-row
-			:class="`_flex-direction-row${ getContentSide === 'right' ? '' : '-reverse' }`"
+			class="_display-flex _flex-direction-xs-column _flex-direction-sm-row"
+			:class="`_flex-direction-md-row${ getContentSide === 'right' ? '' : '-reverse' }`"
 		>
 			<i-column
-				class="_margin-0 _padding-0"
+				class="_margin-bottom-4 _margin-0 _padding-0"
 				xs="12" sm="4"
 				md="4" lg="5"
 				xl="6"
 			>
 				<img
 					v-if="image"
-					class="image -responsive"
+					class="image -responsive _padding-0"
 					:class="{
-						[`_padding-${ getContentSide }-2`]: true,
+						[`_padding-sm-and-up-${ getContentSide }-2`]: true,
 					}"
 					:src="image"
 					:alt="title"
@@ -40,40 +41,76 @@
 				>
 					<slot />
 				</p>
-				<i-row
-					v-if="innerContent && innerContent.length > 0"
-					class="_margin-top-1 _margin-x-0"
-				>
-					<i-column
-						v-for="(item, idx) in innerContent"
-						:key="`inner-content-${ idx }`"
-						class="_padding-1 inner-content-box"
-						:class="{
-							[`_margin-${ idx % 2 === 0 ? 'right' : 'left' }-1-2`]: true,
-						}"
-						data-aos="fade-zoom-in"
-						:data-delay="600"
-						xs="12" sm="5"
+				<div class="_visible-lg-and-up">
+					<i-row
+						v-if="innerContent && innerContent.length > 0"
+						class="_margin-top-1 _display-flex _justify-content-space-between"
 					>
-						<h5
-							v-if="item && item.title"
-							class="_margin-0 -title-1 _text-left _text-primary _font-weight-bold"
+						<i-column
+							v-for="(item, idx) in innerContent"
+							:key="`inner-content-${ idx }`"
+							xs="12" sm="6"
 						>
-							{{ title }}
-						</h5>
-						<p
-							v-if="item && item.text"
-							class="_margin-y-1-2 -body-1 _text-left _text-grey-60"
-						>
-							{{ title }}
-						</p>
-					</i-column>
-				</i-row>
+							<div 
+								v-if="item"
+								class="inner-content-box _padding-1"
+								data-aos="fade-zoom-in"
+								:data-delay="600"
+							>
+								<h5
+									v-if="item.title"
+									class="_margin-0 -title-1 _text-left _text-primary _font-weight-bold"
+								>
+									{{ item.title }}
+								</h5>
+								<p
+									v-if="item.text"
+									class="_margin-y-1-2 -body-1 _text-left _text-grey-60"
+								>
+									{{ item.text }}
+								</p>
+							</div>
+						</i-column>
+					</i-row>
+				</div>
 			</i-column>
 		</i-row>
+		<div class="_visible-md-and-down">
+			<i-row
+				v-if="innerContent && innerContent.length > 0"
+				class="_margin-top-1 _display-flex _justify-content-space-between"		
+			>
+				<i-column
+					v-for="(item, idx) in innerContent"
+					:key="`inner-content-${ idx }`"
+					class="_margin-bottom-1"
+					xs="12" sm="6"
+				>
+					<div 
+						v-if="item"
+						class="inner-content-box _padding-1"
+						data-aos="fade-zoom-in"
+						:data-delay="600"
+					>
+						<h5
+							v-if="item.title"
+							class="_margin-0 -title-1 _text-left _text-primary _font-weight-bold"
+						>
+							{{ item.title }}
+						</h5>
+						<p
+							v-if="item.text"
+							class="_margin-y-1-2 -body-1 _text-left _text-grey-60"
+						>
+							{{ item.text }}
+						</p>
+					</div>
+				</i-column>
+			</i-row>	
+		</div>	
 		<i-row
 			v-if="hasButtonSlot"
-			class="_margin-top-1 cta-wrapper"
+			class="cta-wrapper _margin-top-4 _display-flex _justify-content-center _align-items-center"
 		>
 			<slot name="button" />
 		</i-row>
@@ -151,7 +188,10 @@ export default {
 	}
 
 	.inner-content-box {
-		height: 140px;
+		display: flex !important;
+		flex-direction: column;
+		height: 100%;
+		min-height: 140px;
 		border-radius: $spacer-1-4;
 		box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;
 	}

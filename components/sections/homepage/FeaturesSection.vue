@@ -29,6 +29,7 @@
 						</p>
 						<template #button>
 							<i-button
+								class="_padding-x-4"
 								size="lg"
 								variant="primary"
 								:to="{ name: '' }"

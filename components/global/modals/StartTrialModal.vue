@@ -30,12 +30,6 @@ const ACTIVE_CAMPAIGN_FORM_ID = 22;
 export default {
 	name: 'StartTrialModal',
 	mixins: [scriptInjectMixin],
-	head: {
-		title: 'activehosted',
-		script: [
-			{ hid: 'stripe', src: 'https://vchain.activehosted.com/f/embed.php?id=20', defer: true },
-		],
-	},
 	props: {
 		value: {
 			type: Boolean,
@@ -46,6 +40,12 @@ export default {
 		ACTIVE_CAMPAIGN_FORM_ID,
 		injected: false,
 	}),
+	head: {
+		title: 'activehosted',
+		script: [
+			{ hid: 'stripe', src: 'https://vchain.activehosted.com/f/embed.php?id=20', defer: true },
+		],
+	},
 	watch: {
 		value (newVal) {
 			if (newVal && !this.injected) {
