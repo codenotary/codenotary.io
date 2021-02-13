@@ -11,22 +11,21 @@
 					<Feature
 						image="https://via.placeholder.com/150"
 						content-side="right"
-						title="Lorem Ipsum Dolor Sit Amet"
+						title="Most advanced immutable data platform"
 						:inner-content="[
 							{
-								title: 'Title 1',
-								text: 'Lorem Ipsum Dolort Sit Amet',
+								title: '100% immutability',
+								text: 'Complete and sequenced history of data and data changes',
 							},
 							{
-								title: 'Title 2',
-								text: 'Lorem Ipsum Dolort Sit Amet',
+								title: '100% client-cryptographic proof',
+								text: 'Fully integrated hash-tree provides mathematic proof to any client',
 							},
 						]"
 					>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Vestibulum venenatis lacus <span class="_font-weight-bold">at mi rutrum</span>, et vulputate eros luctus.
-							Pellentesque commodo tellus libero, ut vestibulum mauris pharetra vitae.
+							Don't trust central or online services to provide immutability for your precious data. CNLC uses the world's fastest immutable database <span class="_font-weight-bold">immudb</span>, to provide full immutability and client-cryptographic proof.
+							That cryptographic verification guarantees data integrity and tamper-evidence.
 						</p>
 						<template #button>
 							<i-button
@@ -34,7 +33,7 @@
 								variant="primary"
 								:to="{ name: '' }"
 							>
-								BUTTON
+								Start trial
 							</i-button>
 						</template>
 					</Feature>
