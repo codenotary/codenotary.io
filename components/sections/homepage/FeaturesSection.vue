@@ -47,6 +47,16 @@
 						image="https://via.placeholder.com/150"
 						content-side="left"
 						title="World's fastest immutable ledger"
+						:inner-content="[
+							{
+								title: '100% immutability',
+								text: 'Complete and sequenced history of data and data changes',
+							},
+							{
+								title: '100% client-cryptographic proof',
+								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+							},
+						]"
 					>
 						<p>
 							To keep up with today's need for high-speed applications, you need a high-speed database.
@@ -54,6 +64,16 @@
 							CNLC is able to support 10.000.000 transactions a second.
 							Immutability and high-speed performance - first time combined.
 						</p>
+						<template #button>
+							<i-button
+								class="_padding-x-4"
+								size="lg"
+								variant="primary"
+								:to="{ name: '' }"
+							>
+								Start trial
+							</i-button>
+						</template>
 					</Feature>
 				</i-column>
 				<i-column
@@ -64,12 +84,32 @@
 						image="https://via.placeholder.com/150"
 						content-side="right"
 						title="Ready in minutes"
+						:inner-content="[
+							{
+								title: '100% immutability',
+								text: 'Complete and sequenced history of data and data changes',
+							},
+							{
+								title: '100% client-cryptographic proof',
+								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+							},
+						]"
 					>
 						<p>
 							Vestibulum massa ante, <span class="_font-weight-bold">scelerisque ac nisl quis</span>, blandit pretium mauris.
 							Mauris ut pellentesque est. Praesent condimentum ipsum et tempor lobortis.
 							Nulla velit augue, aliquet eget justo vitae, volutpat consequat justo.
 						</p>
+						<template #button>
+							<i-button
+								class="_padding-x-4"
+								size="lg"
+								variant="primary"
+								:to="{ name: '' }"
+							>
+								Start trial
+							</i-button>
+						</template>
 					</Feature>
 				</i-column>
 				<i-column
@@ -80,6 +120,16 @@
 						image="https://via.placeholder.com/150"
 						content-side="left"
 						title="CI/CD, Change Data Capture and SDKs"
+						:inner-content="[
+							{
+								title: '100% immutability',
+								text: 'Complete and sequenced history of data and data changes',
+							},
+							{
+								title: '100% client-cryptographic proof',
+								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+							},
+						]"
 					>
 						<p>
 							Ut ut laoreet ex. Morbi sed leo at libero luctus interdum non blandit magna.
@@ -87,6 +137,16 @@
 							eu vehicula urna massa vel urna. Nullam sagittis semper iaculis.
 							Maecenas scelerisque, lacus vel cursus ultricies, risus mi porttitor mauris.
 						</p>
+						<template #button>
+							<i-button
+								class="_padding-x-4"
+								size="lg"
+								variant="primary"
+								:to="{ name: '' }"
+							>
+								Start trial
+							</i-button>
+						</template>
 					</Feature>
 				</i-column>
 			</i-row>
