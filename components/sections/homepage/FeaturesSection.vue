@@ -86,12 +86,12 @@
 						title="Ready in minutes"
 						:inner-content="[
 							{
-								title: '100% immutability',
-								text: 'Complete and sequenced history of data and data changes',
+								title: 'Linux, Container or virtual appliance',
+								text: 'Install and run CNLC in minutes using our universal install options',
 							},
 							{
-								title: '100% client-cryptographic proof',
-								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+								title: 'On-premise, cloud-based or managed service',
+								text: 'You run it, or we run it for you. It's your choice',
 							},
 						]"
 					>
@@ -117,25 +117,24 @@
 					xs="12"
 				>
 					<Feature
-						image="https://via.placeholder.com/150"
+						image="/images/features/feat-sdk.png"
 						content-side="left"
 						title="CI/CD, Change Data Capture and SDKs"
 						:inner-content="[
 							{
-								title: '100% immutability',
-								text: 'Complete and sequenced history of data and data changes',
+								title: '100% Trusted pipeline',
+								text: 'Tamperproof provenance for your code and CI/CD pipeline',
 							},
 							{
-								title: '100% client-cryptographic proof',
-								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+								title: '8 SDKs and plugins',
+								text: 'Out of the box support for Go, Java, Python, Node.js to support custom applications',
 							},
 						]"
 					>
 						<p>
-							Ut ut laoreet ex. Morbi sed leo at libero luctus interdum non blandit magna.
-							Donec tincidunt, urna ac rutrum tristique, sapien diam facilisis sem,
-							eu vehicula urna massa vel urna. Nullam sagittis semper iaculis.
-							Maecenas scelerisque, lacus vel cursus ultricies, risus mi porttitor mauris.
+							The SDKs enable your developers to write data to CodeNotary Ledger Compliance using a few lines of code.
+							Write and read your data records into Ledger Compliance making sure your data history trace is always available.
+							Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
 						</p>
 						<template #button>
 							<i-button
