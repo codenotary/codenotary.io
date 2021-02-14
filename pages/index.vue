@@ -3,7 +3,7 @@
 		<HomeHeader />
 		<LazyHydrate when-visible>
 			<PageSectionHeader
-				title="Lorem Ipsum Dolor Sit Amet"
+				title="Hundreds of companies trust CodeNotary"
 				:top="0"
 				:bottom="0"
 			/>
