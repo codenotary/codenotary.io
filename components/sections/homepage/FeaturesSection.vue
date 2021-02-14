@@ -9,7 +9,7 @@
 					xs="12"
 				>
 					<Feature
-						image="https://via.placeholder.com/150"
+						image="/images/features/feat-immutability.png"
 						content-side="right"
 						title="Most advanced immutable data platform"
 						:inner-content="[
