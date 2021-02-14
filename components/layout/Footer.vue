@@ -1,5 +1,9 @@
 <template>
-	<PageSection class="footer">
+	<PageSection
+		class="footer"
+		:top="2"	
+		:bottom="2"	
+	>
 		<i-container>
 			<i-row>
 				<i-column
@@ -134,7 +138,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 .footer {
-	background: $color-gray-90;
+	background-color: $color-gray-90 !important;
 
 	.logo {
 		height: 64px;

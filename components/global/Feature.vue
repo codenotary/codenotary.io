@@ -52,7 +52,7 @@
 							:key="`inner-content-${ idx }`"
 							xs="12" sm="6"
 						>
-							<div 
+							<div
 								v-if="item"
 								class="inner-content-box _padding-1"
 								data-aos="fade-zoom-in"
@@ -79,7 +79,7 @@
 		<div class="_visible-md-and-down">
 			<i-row
 				v-if="innerContent && innerContent.length > 0"
-				class="_margin-top-2 _display-flex _justify-content-space-between"		
+				class="_margin-top-2 _display-flex _justify-content-space-between"
 			>
 				<i-column
 					v-for="(item, idx) in innerContent"
@@ -87,7 +87,7 @@
 					class="_margin-bottom-1"
 					xs="12" sm="6"
 				>
-					<div 
+					<div
 						v-if="item"
 						class="inner-content-box _padding-1"
 						data-aos="fade-zoom-in"
@@ -107,8 +107,8 @@
 						</p>
 					</div>
 				</i-column>
-			</i-row>	
-		</div>	
+			</i-row>
+		</div>
 		<i-row
 			v-if="hasButtonSlot"
 			class="cta-wrapper _margin-top-2 _margin-sm-top-4 _display-flex _justify-content-center _align-items-center"

@@ -1,5 +1,9 @@
 <template>
-	<PageSection class="copyright">
+	<PageSection
+		class="copyright"
+		:top="2"	
+		:bottom="2"		
+	>
 		<i-container>
 			<i-row>
 				<i-column
@@ -40,10 +44,10 @@ export default {
 
 .copyright {
 	padding: 1.5rem 0 !important;
-	background: $color-gray-80;
 	color: $color-gray-30;
 	text-align: center;
 	font-size: 90%;
+	background-color: $color-gray-80 !important;
 
 	a {
 		padding: 0 $spacer-1-2;
