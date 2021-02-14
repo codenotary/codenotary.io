@@ -44,7 +44,7 @@
 					xs="12"
 				>
                                         <Feature
-                                                image="https://via.placeholder.com/150"
+                                                image="/images/features/feat-performance.png"
                                                 content-side="left"
                                                 title="World's fastest immutable ledger"
                                                 :inner-content="[
