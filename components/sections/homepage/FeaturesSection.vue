@@ -46,13 +46,13 @@
 					<Feature
 						image="https://via.placeholder.com/150"
 						content-side="left"
-						title="Lorem Ipsum Dolor Sit Amet"
+						title="World's fastest immutable ledger"
 					>
 						<p>
-							Integer nec orci id nisi ultricies feugiat at vitae nibh.
-							Nunc vitae fringilla tellus, <span class="_font-weight-bold">eget pulvinar est</span>.
-							Curabitur malesuada augue mauris, vitae fringilla ex ultricies eu.
-							Donec vel ex sed sem molestie mollis.
+							To keep up with today's need for high-speed applications, you need a high-speed database.
+							This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
+							CNLC is able to support 10.000.000 transactions a second.
+							Immutability and high-speed performance - first time combined.
 						</p>
 					</Feature>
 				</i-column>
@@ -63,7 +63,7 @@
 					<Feature
 						image="https://via.placeholder.com/150"
 						content-side="right"
-						title="Lorem Ipsum Dolor Sit Amet"
+						title="Ready in minutes"
 					>
 						<p>
 							Vestibulum massa ante, <span class="_font-weight-bold">scelerisque ac nisl quis</span>, blandit pretium mauris.
@@ -79,7 +79,7 @@
 					<Feature
 						image="https://via.placeholder.com/150"
 						content-side="left"
-						title="Lorem Ipsum Dolor Sit Amet"
+						title="CI/CD, Change Data Capture and SDKs"
 					>
 						<p>
 							Ut ut laoreet ex. Morbi sed leo at libero luctus interdum non blandit magna.
