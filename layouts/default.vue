@@ -17,7 +17,7 @@
 <script>
 import LayoutMixin from '~/mixins/LayoutMixin';
 
-const SCROLL_THRESHOLD = 200;
+const SCROLL_THRESHOLD = 80;
 
 export default {
 	name: 'DefaultLayout',

@@ -40,7 +40,7 @@
 					</Feature>
 				</i-column>
 				<i-column
-					class="_margin-y-4"
+					class="_margin-y-xs-2 _margin-y-sm-4 _margin-y-md-4 _margin-y-lg-4 _margin-y-xl-4"
 					xs="12"
 				>
 					<Feature
@@ -77,7 +77,7 @@
 					</Feature>
 				</i-column>
 				<i-column
-					class="_margin-y-4"
+					class="_margin-y-xs-2 _margin-y-sm-4 _margin-y-md-4 _margin-y-lg-4 _margin-y-xl-4"
 					xs="12"
 				>
 					<Feature
@@ -113,7 +113,7 @@
 					</Feature>
 				</i-column>
 				<i-column
-					class="_margin-top-4"
+					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
 					xs="12"
 				>
 					<Feature
@@ -149,7 +149,9 @@
 					</Feature>
 				</i-column>
 			</i-row>
-			<i-row class=" _margin-top-4">
+			<i-row
+				class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
+			>
 				<i-column class="_text-center _text-muted">
 					<ul class="list -unstyled">
 						<li class="_margin-bottom-2">

@@ -15,10 +15,13 @@
 			>
 				<img
 					v-if="image"
-					class="image -responsive _padding-0"
+					class="image -responsive _margin-y-0 _margin-x-auto"
 					:class="{
-						[`_maring-right-sm-and-up-${ getContentSide }-2`]: true,
-						[`_padding-sm-and-up-${ getContentSide }-2`]: true,
+						[`_padding-${ getContentSide }-xs-0`]: true,
+						[`_padding-${ getContentSide }-sm-2`]: true,
+						[`_padding-${ getContentSide }-md-2`]: true,
+						[`_padding-${ getContentSide }-lg-2`]: true,
+						[`_padding-${ getContentSide }-xl-2`]: true,
 					}"
 					:src="image"
 					:alt="title"

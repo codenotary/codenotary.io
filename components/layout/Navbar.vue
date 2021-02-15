@@ -240,10 +240,6 @@ $logo-height: 48;
 		max-height: #{$logo-height}px;
 		width: auto;
 		margin-right: 8px;
-
-		@include breakpoint-down(sm) {
-			height: 32px;
-		}
 	}
 
 	a,
@@ -396,6 +392,11 @@ $logo-height: 48;
 			height: 100%;
 			max-height: 100%;
 			position: relative;
+
+			.row {
+				height: 100%;
+				max-height: 100%;
+			}
 
 			.collapse-toggle {
 				> .bars {
