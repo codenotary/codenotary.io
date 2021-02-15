@@ -91,7 +91,7 @@
 							},
 							{
 								title: 'On-premise, cloud-based or managed service',
-								text: 'You run it, or we run it for you. It's your choice',
+								text: 'You run it, or we run it for you. It\'s your choice',
 							},
 						]"
 					>
