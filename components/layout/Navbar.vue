@@ -42,13 +42,13 @@
 						/>
 					</i-nav-item>
 					<i-dropdown-menu>
-						<i-row class="_padding-1 _padding-left-1">
+						<i-row class="_margin-0 _padding-0">
 							<i-column
-								class="_margin-0 _padding-xs-0"
+								class="_margin-0 _padding-0"
 								xs="12"
 							>
 								<nuxt-link
-									class="freeform-item"
+									class="freeform-item _padding-1"
 									:to="{ name: 'products-ledger-compliance' }"
 								>
 									<h6
@@ -62,11 +62,11 @@
 								</nuxt-link>
 							</i-column>
 							<i-column
-								class="_margin-0 _margin-top-1 _padding-xs-0 "
+								class="_margin-0 _padding-0"
 								xs="12"
 							>
 								<nuxt-link
-									class="freeform-item"
+									class="freeform-item _padding-1"
 									:to="{ name: 'products-ci-cd' }"
 								>
 									<h6
@@ -114,13 +114,13 @@
 						/>
 					</i-nav-item>
 					<i-dropdown-menu>
-						<i-row class="_padding-1 _padding-left-1">
+						<i-row class="_margin-0 _padding-0">
 							<i-column
-								class="_margin-0 _padding-xs-0"
+								class="_margin-0 _padding-0"
 								xs="12"
 							>
 								<nuxt-link
-									class="freeform-item"
+									class="freeform-item _padding-1"
 									:to="{ name: 'technologies-immudb' }"
 								>
 									<h6
@@ -327,6 +327,7 @@ $logo-height: 48;
 
 			a.freeform-item {
 				position: relative;
+				display: block;
 				text-decoration: none !important;
 				color: $text-dark-color;
 
@@ -360,10 +361,7 @@ $logo-height: 48;
 				}
 
 				&:hover {
-					.title,
-					.subtitle {
-						opacity: 0.55 !important;
-					}
+					background-color: rgba(0, 0, 0, 0.05);
 				}
 			}
 		}
@@ -396,14 +394,14 @@ $logo-height: 48;
 			.row {
 				height: 100%;
 				max-height: 100%;
-			}
 
-			.collapse-toggle {
-				> .bars {
-					&::before,
-					&::after,
-					& {
-						background-color: $text-light-color !important;
+				.navbar-items {
+					.nav {
+						a.item {
+							&:hover {
+								background-color: rgba(0, 0, 0, 0.05);
+							}
+						}
 					}
 				}
 			}
@@ -412,6 +410,30 @@ $logo-height: 48;
 			.item,
 			.title {
 				color: $text-dark-color !important;
+			}
+		}
+
+		&.-scrolled {
+			.collapse-toggle {
+				> .bars {
+					&::before,
+					&::after,
+					& {
+						background-color: $text-dark-color !important;
+					}
+				}
+			}
+		}
+
+		&:not(.-scrolled) {
+			.collapse-toggle {
+				> .bars {
+					&::before,
+					&::after,
+					& {
+						background-color: $text-light-color !important;
+					}
+				}
 			}
 		}
 
