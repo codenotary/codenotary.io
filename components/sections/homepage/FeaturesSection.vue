@@ -9,9 +9,9 @@
 					xs="12"
 				>
 					<Feature
-						image="https://via.placeholder.com/150"
+						image="/images/features/feat-immutability.png"
 						content-side="right"
-						title="Most advanced immutable data platform"
+						title="Cryptographic verifiable immutable data platform"
 						:inner-content="[
 							{
 								title: '100% immutability',
@@ -44,35 +44,35 @@
 					xs="12"
 				>
 					<Feature
-						image="https://via.placeholder.com/150"
-						content-side="left"
-						title="World's fastest immutable ledger"
-						:inner-content="[
-							{
-								title: '100% immutability',
-								text: 'Complete and sequenced history of data and data changes',
-							},
-							{
-								title: '100% client-cryptographic proof',
-								text: 'Fully integrated hash-tree provides mathematic proof to any client',
-							},
-						]"
+					        image="/images/features/feat-performance.png"
+					        content-side="left"
+					        title="World's fastest immutable ledger"
+					        :inner-content="[
+					                {
+					                        title: '10.000.000 tx/s',
+					                        text: 'Limitless performance despite tamper resistance',
+					                },
+					                {
+					                        title: '650 times faster',
+					                        text: 'Highest thruput of any immutable ledger technology',
+					                },
+					        ]"
 					>
-						<p>
-							To keep up with today's need for high-speed applications, you need a high-speed database.
-							This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
-							CNLC is able to support 10.000.000 transactions a second.
-							Immutability and high-speed performance - first time combined.
-						</p>
-						<template #button>
-							<i-button
-								class="_padding-x-4"
-								size="lg"
-								variant="primary"
-								:to="{ name: '' }"
-							>
-								Start trial
-							</i-button>
+					        <p>
+					                To keep up with today's need for high-speed applications, you need a high-speed database.
+					                This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
+					                CNLC is able to support 10.000.000 transactions a second.
+					                Immutability and high-speed performance - first time combined.
+					        </p>
+					        <template #button>
+					                <i-button
+					                        class="_padding-x-4"
+					                        size="lg"
+					                        variant="primary"
+					                        :to="{ name: '' }"
+					                >
+					                        Start trial
+					                </i-button>
 						</template>
 					</Feature>
 				</i-column>
@@ -86,12 +86,12 @@
 						title="Ready in minutes"
 						:inner-content="[
 							{
-								title: '100% immutability',
-								text: 'Complete and sequenced history of data and data changes',
+								title: 'Linux, Container or virtual appliance',
+								text: 'Install and run CNLC in minutes using our universal install options',
 							},
 							{
-								title: '100% client-cryptographic proof',
-								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+								title: 'On-premise, cloud-based or managed service',
+								text: 'You run it, or we run it for you. It's your choice',
 							},
 						]"
 					>
@@ -117,25 +117,24 @@
 					xs="12"
 				>
 					<Feature
-						image="https://via.placeholder.com/150"
+						image="/images/features/feat-sdk.png"
 						content-side="left"
 						title="CI/CD, Change Data Capture and SDKs"
 						:inner-content="[
 							{
-								title: '100% immutability',
-								text: 'Complete and sequenced history of data and data changes',
+								title: '100% Trusted pipeline',
+								text: 'Tamperproof provenance for your code and CI/CD pipeline',
 							},
 							{
-								title: '100% client-cryptographic proof',
-								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+								title: '8 SDKs and plugins',
+								text: 'Out of the box support for Go, Java, Python, Node.js to support custom applications',
 							},
 						]"
 					>
 						<p>
-							Ut ut laoreet ex. Morbi sed leo at libero luctus interdum non blandit magna.
-							Donec tincidunt, urna ac rutrum tristique, sapien diam facilisis sem,
-							eu vehicula urna massa vel urna. Nullam sagittis semper iaculis.
-							Maecenas scelerisque, lacus vel cursus ultricies, risus mi porttitor mauris.
+							The SDKs enable your developers to write data to CodeNotary Ledger Compliance using a few lines of code.
+							Write and read your data records into Ledger Compliance making sure your data history trace is always available.
+							Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
 						</p>
 						<template #button>
 							<i-button
