@@ -156,7 +156,7 @@ export default {
 		imageIsPhoto: {
 			type: Boolean,
 			default: false,
-		},		
+		},
 	},
 	computed: {
 		getContentSide () {

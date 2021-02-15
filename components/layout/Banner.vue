@@ -1,31 +1,31 @@
 <template>
 	<section class="banner _padding-y-0 _justify-content-center _align-items-center">
-		<i-container fluid>
-			<i-row>
-				<i-column
-					class="_display-flex _justify-content-center _align-items-center"
-					cols="auto"
+		<!-- <i-container fluid> -->
+		<i-row>
+			<i-column
+				class="_display-flex _justify-content-center _align-items-center"
+				:xs="true"
+			>
+				<span
+					class="-caption _font-weight-bold"
 				>
-					<span
-						class="-caption _font-weight-bold"
-					>
-						Free tamperproof timestamp service for your CI/CD process
-					</span>
-					&nbsp;
-					<a
-						class="_margin-left-0 _margin-sm-left-2 _font-weight-bold _text-decoration-underline"
-						variant="dark"
-						outline
-						size="sm"
-						:href="'https://timestamp.codenotary.com'"
-						target="_blank"
-						rel="noopener"
-					>
-						Start now
-					</a>
-				</i-column>
-			</i-row>
-		</i-container>
+					Free tamperproof timestamp service for your CI/CD process
+				</span>
+				&nbsp;
+				<a
+					class="_margin-left-0 _margin-sm-left-2 _font-weight-bold _text-decoration-underline"
+					variant="dark"
+					outline
+					size="sm"
+					:href="'https://timestamp.codenotary.com'"
+					target="_blank"
+					rel="noopener"
+				>
+					Start now
+				</a>
+			</i-column>
+		</i-row>
+		<!-- </i-container> -->
 	</section>
 </template>
 
@@ -85,6 +85,13 @@ section.banner {
 		&.nuxt-link-active {
 			border-width: 2px !important;
 			background: rgba(255, 255, 255, 0.05) !important;
+		}
+	}
+
+	@include breakpoint-down(md) {
+		a {
+			min-width: $spacer-4 !important;
+			font-size: 75%;
 		}
 	}
 }

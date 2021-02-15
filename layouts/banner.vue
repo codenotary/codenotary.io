@@ -64,7 +64,6 @@ section.banner-layout {
 		display: flex;
 		flex-direction: row;
 		height: #{$banner-height}px;
-		min-width: 600px;
 		padding: $spacer-1;
 		top: 0;
 		left: 0;

@@ -153,7 +153,6 @@
 
 				<!-- ABOUT US -->
 				<i-nav-item
-					class="_visible-lg-and-up"
 					:to="{ name: 'about' }"
 				>
 					About us
@@ -161,7 +160,6 @@
 
 				<!-- PARTNERS -->
 				<i-nav-item
-					class="_visible-lg-and-up"
 					:to="{ name: 'partners' }"
 				>
 					Partners
@@ -169,7 +167,6 @@
 
 				<!-- CONTACT US -->
 				<i-nav-item
-					class="_visible-lg-and-up"
 					:to="{ name: 'contact' }"
 				>
 					Contact us
@@ -183,6 +180,7 @@
 import { mapGetters } from 'vuex';
 import {
 	VIEW_MODULE,
+	MOBILE,
 	NAVBAR_LIGHT,
 	NAVBAR_BACKGROUND,
 } from '@/store/view/constants';
@@ -205,6 +203,7 @@ export default {
 	},
 	computed: {
 		...mapGetters(VIEW_MODULE, {
+			mobile: MOBILE,
 			navbarLight: NAVBAR_LIGHT,
 			navbarBackground: NAVBAR_BACKGROUND,
 		}),
@@ -250,49 +249,49 @@ $logo-height: 48;
 	}
 
 	&.-bg-light-transparent {
-		background-color: transparent !important;
+		background-color: transparent;
 
 		.container {
 			a,
 			.item,
 			.title {
-				color: $text-dark-color !important;
+				color: $text-dark-color;
 			}
 		}
 	}
 
 	&.-bg-dark-transparent {
-		background-color: transparent !important;
+		background-color: transparent;
 
 		.container {
 			a,
 			.item,
 			.title {
-				color: $text-light-color !important;
+				color: $text-light-color;
 			}
 		}
 	}
 
 	&.-bg-white {
-		background-color: white !important;
+		background-color: white;
 
 		.container {
 			a,
 			.item,
 			.title {
-				color: $text-dark-color !important;
+				color: $text-dark-color;
 			}
 		}
 	}
 
 	&.-bg-primary {
-		background-color: $color-primary !important;
+		background-color: $color-primary;
 
 		.container {
 			a,
 			.item,
 			.title {
-				color: $text-light-color !important;
+				color: $text-light-color;
 			}
 		}
 	}
@@ -329,7 +328,7 @@ $logo-height: 48;
 			a.freeform-item {
 				position: relative;
 				text-decoration: none !important;
-				color: $text-light-color !important;
+				color: $text-dark-color;
 
 				&.-active {
 					&::before {
@@ -345,6 +344,7 @@ $logo-height: 48;
 					}
 				}
 
+				a,
 				.title,
 				.subtitle {
 					color: $text-dark-color !important;
@@ -403,7 +403,7 @@ $logo-height: 48;
 					&::before,
 					&::after,
 					& {
-						background-color: $text-light-color;
+						background-color: $text-light-color !important;
 					}
 				}
 			}
@@ -415,24 +415,12 @@ $logo-height: 48;
 			}
 		}
 
-		&.-scrolled {
-			.container {
-				.collapse-toggle {
-					> .bars {
-						&::before,
-						&::after,
-						& {
-							background-color: $text-dark-color;
-						}
-					}
-				}
-			}
-		}
-
 		.navbar-items {
 			background: white !important;
 
 			> .nav {
+				box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+
 				> .dropdown {
 					display: none !important;
 					width: 100%;
@@ -444,7 +432,7 @@ $logo-height: 48;
 						font-weight: 600;
 						font-size: 80%;
 						background: transparent !important;
-						color: $text-muted !important;
+						color: $text-dark-color !important;
 						cursor: default !important;
 					}
 
