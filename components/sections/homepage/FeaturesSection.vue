@@ -82,6 +82,7 @@
 				>
 					<Feature
 						image="/images/features/feat-ready.jpg"
+						image-is-photo
 						content-side="right"
 						title="Ready in minutes"
 						:inner-content="[

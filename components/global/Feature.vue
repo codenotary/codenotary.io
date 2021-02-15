@@ -13,9 +13,8 @@
 				md="4" lg="5"
 				xl="6"
 			>
-				<img
-					v-if="image"
-					class="image -responsive _margin-y-0 _margin-x-auto"
+				<div
+					class="image-box image -responsive _margin-y-0 _margin-x-auto"
 					:class="{
 						[`_padding-${ getContentSide }-xs-0`]: true,
 						[`_padding-${ getContentSide }-sm-2`]: true,
@@ -23,9 +22,16 @@
 						[`_padding-${ getContentSide }-lg-2`]: true,
 						[`_padding-${ getContentSide }-xl-2`]: true,
 					}"
-					:src="image"
-					:alt="title"
 				>
+					<img
+						v-if="image"
+						:class="{
+							'-is-photo': imageIsPhoto,
+						}"
+						:src="image"
+						:alt="title"
+					>
+				</div>
 			</i-column>
 			<i-column
 				class="_margin-0 _padding-0"
@@ -147,6 +153,10 @@ export default {
 			type: String,
 			default: '',
 		},
+		imageIsPhoto: {
+			type: Boolean,
+			default: false,
+		},		
 	},
 	computed: {
 		getContentSide () {
@@ -176,19 +186,32 @@ export default {
 		color: $color-primary;
 	}
 
-	img {
+	p {
+		font-weight: 300;
+		color: $color-dark;
+	}
+
+	.image-box img,
+	.inner-content-box {
+		max-width: 100%;
+		border-radius: $spacer-1-4;
+		box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;
+	}
+
+	.image-box img {
 		display: block;
 		height: 100%;
 		min-height: 280px;
 		max-height: 320px;
 		width: auto;
 		margin: 0 auto;
+		padding: $spacer;
 		object-fit: contain;
-	}
 
-	p {
-		font-weight: 300;
-		color: $color-dark;
+		&.-is-photo {
+			padding: 0 !important;
+			object-fit: cover !important;
+		}
 	}
 
 	.inner-content-box {
@@ -196,8 +219,6 @@ export default {
 		flex-direction: column;
 		height: 100%;
 		min-height: 140px;
-		border-radius: $spacer-1-4;
-		box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05) !important;
 	}
 
 	.cta-wrapper {
