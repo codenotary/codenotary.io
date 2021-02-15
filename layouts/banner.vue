@@ -5,7 +5,10 @@
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
-		<Navbar id="navbar" />
+		<Navbar
+			id="navbar"
+			:scrolled="scrolled"
+		/>
 		<div id="content">
 			<nuxt />
 		</div>
@@ -15,11 +18,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import {
-	VIEW_MODULE,
-	SET_NAVBAR,
-} from '@/store/view/constants';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 120;
@@ -37,23 +35,11 @@ export default {
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
-
-		console.log('LAYOUT BANNER');
-		// THAT setNavbar need to be in each page as layout is not re-called if navigating
-		// top a page with the same layout
-
-		this.setNavbar({
-			light: true,
-			background: 'transparent',
-		});
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
 	},
 	methods: {
-		...mapActions(VIEW_MODULE, {
-			setNavbar: SET_NAVBAR,
-		}),
 		handleScroll () {
 			if (window && window.scrollY !== undefined) {
 				this.scrolled = window.scrollY >= SCROLL_THRESHOLD;
@@ -77,6 +63,7 @@ section.banner-layout {
 		display: flex;
 		flex-direction: row;
 		height: #{$banner-height}px;
+		min-width: 600px;
 		padding: $spacer-1;
 		top: 0;
 		left: 0;
@@ -97,9 +84,6 @@ section.banner-layout {
 		top: #{$banner-height}px !important;
 		left: 0;
 		padding: 0;
-		background: transparent;
-		z-index: 999;
-		transition: all 0.15s ease-out;
 	}
 
 	#content {

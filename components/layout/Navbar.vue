@@ -1,6 +1,9 @@
 <template>
 	<i-navbar
-		:class="`-bg-${ navbarBackground }`"
+		:class="{
+			[`-bg-${ navbarBackground }`]: true,
+			'-scrolled': scrolled,
+		}"
 		:variant="navbarLight ? 'light' : 'dark'"
 	>
 		<i-navbar-brand
@@ -9,7 +12,7 @@
 		>
 			<img
 				class="logo _padding-y-1-2"
-				:src="`/images/logo/logo_${ navbarLight ? 'black' : 'white' }.svg`"
+				:src="`/images/logo/logo_${ navbarLight || scrolled ? 'black' : 'white' }.svg`"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
@@ -187,6 +190,12 @@ import { breakpoints } from '@inkline/inkline/src/constants/breakpoints';
 
 export default {
 	name: 'Navbar',
+	props: {
+		scrolled: {
+			type: Boolean,
+			default: false,
+		},
+	},
 	data() {
 		return {
 			isNavbarCollapsed: false,
@@ -222,26 +231,10 @@ export default {
 
 $logo-height: 48;
 
-section.default-layout,
-section.banner-layout,
-section.immudb-star-banner-layout {
-	&.scrolled {
-		.navbar {
-			padding: 0 !important;
-			background: white !important;
-			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
-
-			.container {
-				.logo {
-					max-height: #{$logo-height}px;
-				}
-			}
-		}
-	}
-}
-
 .navbar {
 	background: transparent !important;
+	transition: all 0.15s ease-out;
+	z-index: 999;
 
 	.logo {
 		max-height: #{$logo-height}px;
@@ -253,19 +246,16 @@ section.immudb-star-banner-layout {
 		}
 	}
 
-	&.-bg-transparent {
+	a,
+	span,
+	.item,
+	.title {
+		transition: all 0.3s ease-out;
+	}
+
+	&.-bg-light-transparent {
 		background-color: transparent !important;
-	}
 
-	&.-bg-white {
-		background-color: white !important;
-	}
-
-	&.-bg-primary {
-		background-color: $color-primary !important;
-	}
-
-	&.-light {
 		.container {
 			a,
 			.item,
@@ -275,12 +265,62 @@ section.immudb-star-banner-layout {
 		}
 	}
 
-	&.-dark {
+	&.-bg-dark-transparent {
+		background-color: transparent !important;
+
 		.container {
 			a,
 			.item,
 			.title {
 				color: $text-light-color !important;
+			}
+		}
+	}
+
+	&.-bg-white {
+		background-color: white !important;
+
+		.container {
+			a,
+			.item,
+			.title {
+				color: $text-dark-color !important;
+			}
+		}
+	}
+
+	&.-bg-primary {
+		background-color: $color-primary !important;
+
+		.container {
+			a,
+			.item,
+			.title {
+				color: $text-light-color !important;
+			}
+		}
+	}
+
+	&.-scrolled {
+		&.-bg-light-transparent,
+		&.-bg-dark-transparent,
+		&.-bg-white,
+		&.-bg-primary,
+		& {
+			padding: 0 !important;
+			background: white !important;
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+
+			.container {
+				.logo {
+					max-height: #{$logo-height}px;
+				}
+
+				a,
+				.item,
+				.title {
+					color: $text-dark-color !important;
+				}
 			}
 		}
 	}

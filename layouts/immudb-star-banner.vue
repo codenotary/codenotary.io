@@ -7,7 +7,10 @@
 			@submit="cta()"
 			@close="cta(true)"
 		/>
-		<Navbar id="navbar" />
+		<Navbar
+			id="navbar"
+			:scrolled="scrolled"
+		/>
 		<div id="content">
 			<nuxt />
 		</div>
@@ -17,11 +20,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import {
-	VIEW_MODULE,
-	SET_NAVBAR,
-} from '@/store/view/constants';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 80;
@@ -45,19 +43,11 @@ export default {
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
-
-		this.setNavbar({
-			light: true,
-			background: 'transparent',
-		});
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
 	},
 	methods: {
-		...mapActions(VIEW_MODULE, {
-			setNavbar: SET_NAVBAR,
-		}),
 		handleScroll (event) {
 			const window = event.path[1];
 			if (window) {
@@ -95,12 +85,6 @@ section.immudb-star-banner-layout {
 		top: 0;
 		left: 0;
 		width: 100%;
-		z-index: 999;
-		transition: all 0.15s ease-out;
-
-		span {
-			transition: all 0.3s ease-out;
-		}
 	}
 
 	#navbar {
@@ -110,9 +94,6 @@ section.immudb-star-banner-layout {
 		top: #{$banner-height}px !important;
 		left: 0;
 		padding: 0;
-		background: transparent;
-		z-index: 999;
-		transition: all 0.15s ease-out;
 	}
 
 	#content {

@@ -2,6 +2,7 @@
 	<section class="default-layout" :class="{ scrolled, hover }">
 		<Navbar
 			id="navbar"
+			:scrolled="scrolled"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
@@ -14,11 +15,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import {
-	VIEW_MODULE,
-	SET_NAVBAR,
-} from '@/store/view/constants';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 200;
@@ -36,19 +32,11 @@ export default {
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
-
-		this.setNavbar({
-			light: true,
-			background: 'transparent',
-		});
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
 	},
 	methods: {
-		...mapActions(VIEW_MODULE, {
-			setNavbar: SET_NAVBAR,
-		}),
 		handleScroll () {
 			if (window && window.scrollY !== undefined) {
 				this.scrolled = window.scrollY >= SCROLL_THRESHOLD;
@@ -70,7 +58,6 @@ section.default-layout {
 		top: 0;
 		left: 0;
 		width: 100%;
-		z-index: 999;
 	}
 
 	#content {

@@ -5,7 +5,10 @@
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
-		<Navbar id="navbar" />
+		<Navbar
+			id="navbar"
+			:scrolled="scrolled"
+		/>
 		<div id="content">
 			<nuxt />
 		</div>
@@ -15,11 +18,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-import {
-	VIEW_MODULE,
-	SET_NAVBAR,
-} from '@/store/view/constants';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 200;
@@ -37,19 +35,11 @@ export default {
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
-
-		this.setNavbar({
-			light: true,
-			background: 'transparent',
-		});
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
 	},
 	methods: {
-		...mapActions(VIEW_MODULE, {
-			setNavbar: SET_NAVBAR,
-		}),
 		handleScroll () {
 			if (window && window.scrollY !== undefined) {
 				this.scrolled = window.scrollY >= SCROLL_THRESHOLD;
@@ -90,9 +80,6 @@ section.banner-layout {
 		top: #{$banner-height}px !important;
 		left: 0;
 		width: 100%;
-		background: transparent;
-		z-index: 999;
-		transition: all 0.15s ease-out;
 	}
 
 	#content {

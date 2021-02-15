@@ -48,6 +48,8 @@ export default {
 section.immudb-star-banner {
 	position: relative;
 	background-color: $color-primary-dark;
+	transition: all 0.15s ease-out;
+	z-index: 995;
 
 	&.-light {
 		border-bottom: 1px solid $border-color-light;

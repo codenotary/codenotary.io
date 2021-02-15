@@ -101,6 +101,11 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
 import NoSSR from 'vue-no-ssr';
 import { title } from '~/helpers/meta';
 
@@ -149,6 +154,13 @@ export default {
 		if (typeof this.$redrawVueMasonry === 'function') {
 			this.$redrawVueMasonry();
 		}
+
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
 	},
 	beforeDestroy () {
 		this.filter = null;
@@ -156,6 +168,9 @@ export default {
 		this.page = 0;
 	},
 	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 		infiniteHandler ($state) {
 			setTimeout(async () => {
 				this.page += 1;

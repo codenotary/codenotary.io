@@ -76,6 +76,7 @@ export default {
 	mounted () {
 		this.setNavbar({
 			background: 'white',
+			light: true,
 		});
 	},
 	methods: {
