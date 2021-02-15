@@ -20,7 +20,7 @@
 <script>
 import LayoutMixin from '~/mixins/LayoutMixin';
 
-const SCROLL_THRESHOLD = 120;
+const SCROLL_THRESHOLD = 80;
 
 export default {
 	name: 'BannerLayout',
@@ -51,6 +51,7 @@ export default {
 
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
+@import '~@inkline/inkline/src/css/mixins';
 
 $navbar-height: 60;
 $navbar-scrolled-height: 60;
@@ -121,6 +122,12 @@ section.banner-layout {
 		#content {
 			// margin-top: #{$banner-scrolled-height + $navbar-scrolled-height}px;
 			margin-top: #{$banner-scrolled-height}px;
+		}
+	}
+
+	@include breakpoint-down(md) {
+		#banner {
+			// height: auto;
 		}
 	}
 }

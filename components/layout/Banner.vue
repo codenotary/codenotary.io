@@ -1,37 +1,31 @@
 <template>
 	<section class="banner _padding-y-0 _justify-content-center _align-items-center">
-		<i-row>
-			<i-column
-				class="justify-content-center _align-items-center"
-				xs="8"
-				sm="10"
-				md="10"
-			>
-				<span
-					class="-caption _font-weight-bold"
+		<i-container fluid>
+			<i-row>
+				<i-column
+					class="_display-flex _justify-content-center _align-items-center"
+					cols="auto"
 				>
-					Free tamperproof timestamp service for your CI/CD process
-				</span>
-			</i-column>
-			<i-column
-				class="justify-content-center _align-items-center"
-				xs="4"
-				sm="2"
-				md="2"
-			>
-				<a
-					class="_margin-left-0 _margin-sm-left-2 _font-weight-bold _text-decoration-underline"
-					variant="dark"
-					outline
-					size="sm"
-					:href="'https://timestamp.codenotary.com'"
-					target="_blank"
-					rel="noopener"
-				>
-					Start now
-				</a>
-			</i-column>
-		</i-row>
+					<span
+						class="-caption _font-weight-bold"
+					>
+						Free tamperproof timestamp service for your CI/CD process
+					</span>
+					&nbsp;
+					<a
+						class="_margin-left-0 _margin-sm-left-2 _font-weight-bold _text-decoration-underline"
+						variant="dark"
+						outline
+						size="sm"
+						:href="'https://timestamp.codenotary.com'"
+						target="_blank"
+						rel="noopener"
+					>
+						Start now
+					</a>
+				</i-column>
+			</i-row>
+		</i-container>
 	</section>
 </template>
 
@@ -46,7 +40,7 @@ export default {
 @import '~@inkline/inkline/src/css/mixins';
 
 section.banner {
-	background-color: $color-primary-darkest;
+	background-color: $color-primary-dark;
 
 	.row,
 	.column {
@@ -63,6 +57,8 @@ section.banner {
 	span {
 		font-weight: 300 !important;
 		color: white;
+		word-wrap: break-word;
+		word-break: break-all;
 	}
 
 	a {

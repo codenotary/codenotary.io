@@ -398,13 +398,33 @@ $logo-height: 48;
 			position: relative;
 
 			.collapse-toggle {
-				color: white;
+				> .bars {
+					&::before,
+					&::after,
+					& {
+						background-color: $text-light-color;
+					}
+				}
 			}
 
 			a,
 			.item,
 			.title {
 				color: $text-dark-color !important;
+			}
+		}
+
+		&.-scrolled {
+			.container {
+				.collapse-toggle {
+					> .bars {
+						&::before,
+						&::after,
+						& {
+							background-color: $text-dark-color;
+						}
+					}
+				}
 			}
 		}
 
