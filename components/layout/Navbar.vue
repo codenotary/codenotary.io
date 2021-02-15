@@ -90,10 +90,14 @@
 					>
 						Products
 					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
+					<i-nav-item
+						:to="{ name: 'products-ledger-compliance' }"
+					>
 						Ledger Compliance (deploy anywhere)
 					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+					<i-nav-item
+						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+					>
 						Ledger Compliance (Managed Service)
 					</i-nav-item>
 				</i-nav>
@@ -145,7 +149,7 @@
 						Technologies
 					</i-nav-item>
 					<i-nav-item
-						href="https://immudb.io"
+						:to="{ name: 'technologies-immudb' }"
 					>
 						immudb
 					</i-nav-item>
