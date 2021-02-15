@@ -11,7 +11,7 @@
 					<Feature
 						image="/images/features/feat-immutability.png"
 						content-side="right"
-						title="Most advanced immutable data platform"
+						title="Cryptographic verifiable immutable data platform"
 						:inner-content="[
 							{
 								title: '100% immutability',
@@ -43,38 +43,38 @@
 					class="_margin-y-4"
 					xs="12"
 				>
-                                        <Feature
-                                                image="/images/features/feat-performance.png"
-                                                content-side="left"
-                                                title="World's fastest immutable ledger"
-                                                :inner-content="[
-                                                        {
-                                                                title: '10.000.000 tx/s',
-                                                                text: 'Limitless performance despite tamper resistance',
-                                                        },
-                                                        {
-                                                                title: '650 times faster',
-                                                                text: 'Highest thruput of any immutable ledger technology',
-                                                        },
-                                                ]"
-                                        >
-                                                <p>
-                                                        To keep up with today's need for high-speed applications, you need a high-speed database.
-                                                        This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
-                                                        CNLC is able to support 10.000.000 transactions a second.
-                                                        Immutability and high-speed performance - first time combined.
-                                                </p>
-                                                <template #button>
-                                                        <i-button
-                                                                class="_padding-x-4"
-                                                                size="lg"
-                                                                variant="primary"
-                                                                :to="{ name: '' }"
-                                                        >
-                                                                Start trial
-                                                        </i-button>
-                                                </template>
-                                        </Feature>
+					<Feature
+					        image="/images/features/feat-performance.png"
+					        content-side="left"
+					        title="World's fastest immutable ledger"
+					        :inner-content="[
+					                {
+					                        title: '10.000.000 tx/s',
+					                        text: 'Limitless performance despite tamper resistance',
+					                },
+					                {
+					                        title: '650 times faster',
+					                        text: 'Highest thruput of any immutable ledger technology',
+					                },
+					        ]"
+					>
+					        <p>
+					                To keep up with today's need for high-speed applications, you need a high-speed database.
+					                This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
+					                CNLC is able to support 10.000.000 transactions a second.
+					                Immutability and high-speed performance - first time combined.
+					        </p>
+					        <template #button>
+					                <i-button
+					                        class="_padding-x-4"
+					                        size="lg"
+					                        variant="primary"
+					                        :to="{ name: '' }"
+					                >
+					                        Start trial
+					                </i-button>
+						</template>
+					</Feature>
 				</i-column>
 				<i-column
 					class="_margin-y-4"
