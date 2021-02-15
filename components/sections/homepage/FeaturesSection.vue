@@ -96,9 +96,9 @@
 						]"
 					>
 						<p>
-							Vestibulum massa ante, <span class="_font-weight-bold">scelerisque ac nisl quis</span>, blandit pretium mauris.
-							Mauris ut pellentesque est. Praesent condimentum ipsum et tempor lobortis.
-							Nulla velit augue, aliquet eget justo vitae, volutpat consequat justo.
+							Deploy as a virtual appliance or install on any Linux system, <span class="_font-weight-bold">CNLC</span> is ready within minutes to receive and store your data tamper-proof.
+							You can run CNLC on-premise, in the cloud or in hybrid environments.
+							If you wish for an independent deployment outside of your environment, we offer managed service as well.
 						</p>
 						<template #button>
 							<i-button
