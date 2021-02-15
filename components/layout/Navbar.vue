@@ -248,32 +248,9 @@ $logo-height: 48;
 		transition: all 0.3s ease-out;
 	}
 
-	&.-bg-light-transparent {
-		background-color: transparent;
-
-		.container {
-			a,
-			.item,
-			.title {
-				color: $text-dark-color;
-			}
-		}
-	}
-
-	&.-bg-dark-transparent {
-		background-color: transparent;
-
-		.container {
-			a,
-			.item,
-			.title {
-				color: $text-light-color;
-			}
-		}
-	}
-
+	&.-bg-light-transparent,
 	&.-bg-white {
-		background-color: white;
+		background-color: transparent;
 
 		.container {
 			a,
@@ -282,16 +259,37 @@ $logo-height: 48;
 				color: $text-dark-color;
 			}
 		}
+
+		.collapse-toggle {
+			> .bars {
+				&::before,
+				&::after,
+				& {
+					background-color: $text-dark-color !important;
+				}
+			}
+		}
 	}
 
+	&.-bg-dark-transparent,
 	&.-bg-primary {
-		background-color: $color-primary;
+		background-color: transparent;
 
 		.container {
 			a,
 			.item,
 			.title {
 				color: $text-light-color;
+			}
+		}
+
+		.collapse-toggle {
+			> .bars {
+				&::before,
+				&::after,
+				& {
+					background-color: $text-light-color !important;
+				}
 			}
 		}
 	}
@@ -315,6 +313,16 @@ $logo-height: 48;
 				.item,
 				.title {
 					color: $text-dark-color !important;
+				}
+			}
+
+			.collapse-toggle {
+				> .bars {
+					&::before,
+					&::after,
+					& {
+						background-color: $text-dark-color !important;
+					}
 				}
 			}
 		}
@@ -410,30 +418,6 @@ $logo-height: 48;
 			.item,
 			.title {
 				color: $text-dark-color !important;
-			}
-		}
-
-		&.-scrolled {
-			.collapse-toggle {
-				> .bars {
-					&::before,
-					&::after,
-					& {
-						background-color: $text-dark-color !important;
-					}
-				}
-			}
-		}
-
-		&:not(.-scrolled) {
-			.collapse-toggle {
-				> .bars {
-					&::before,
-					&::after,
-					& {
-						background-color: $text-light-color !important;
-					}
-				}
 			}
 		}
 
