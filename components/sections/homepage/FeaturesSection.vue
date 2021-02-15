@@ -81,7 +81,7 @@
 					xs="12"
 				>
 					<Feature
-						image="https://via.placeholder.com/150"
+						image="/images/features/feat-ready.jpg"
 						content-side="right"
 						title="Ready in minutes"
 						:inner-content="[
