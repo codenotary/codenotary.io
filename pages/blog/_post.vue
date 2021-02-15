@@ -30,8 +30,11 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import {
+	VIEW_MODULE,
+	MOBILE,
+} from '@/store/view/constants';
 import { title, meta, DEFAULT_META } from '@/helpers/meta/index';
-import { VIEW_MODULE, MOBILE } from '@/store/view/constants';
 
 export default {
 	name: 'BlogPost',

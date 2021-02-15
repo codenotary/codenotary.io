@@ -1,6 +1,9 @@
 <script>
 import { mapActions } from 'vuex';
-import { VIEW_MODULE, SET_MOBILE } from '@/store/view/constants';
+import {
+	VIEW_MODULE,
+	SET_MOBILE,
+} from '@/store/view/constants';
 
 export default {
 	name: 'LayoutMixin',

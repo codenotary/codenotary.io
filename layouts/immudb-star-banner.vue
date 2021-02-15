@@ -17,6 +17,11 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 80;
@@ -40,11 +45,19 @@ export default {
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
+
+		this.setNavbar({
+			light: true,
+			background: 'transparent',
+		});
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
 	},
 	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 		handleScroll (event) {
 			const window = event.path[1];
 			if (window) {

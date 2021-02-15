@@ -1,8 +1,8 @@
 <template>
 	<PageSection
 		class="footer"
-		:top="2"	
-		:bottom="2"	
+		:top="4"
+		:bottom="2"
 	>
 		<i-container>
 			<i-row>

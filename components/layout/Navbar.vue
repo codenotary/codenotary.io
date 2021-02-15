@@ -1,12 +1,15 @@
 <template>
-	<i-navbar>
+	<i-navbar
+		:class="`-bg-${ navbarBackground }`"
+		:variant="navbarLight ? 'light' : 'dark'"
+	>
 		<i-navbar-brand
 			:to="{ name: 'index' }"
 			class="_padding-0"
 		>
 			<img
 				class="logo _padding-y-1-2"
-				src="/images/logo/logo_white.svg"
+				:src="`/images/logo/logo_${ navbarLight ? 'black' : 'white' }.svg`"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
@@ -174,6 +177,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+import {
+	VIEW_MODULE,
+	NAVBAR_LIGHT,
+	NAVBAR_BACKGROUND,
+} from '@/store/view/constants';
 import { breakpoints } from '@inkline/inkline/src/constants/breakpoints';
 
 export default {
@@ -184,6 +193,12 @@ export default {
 			productsMenuOpen: false,
 			technologiesMenuOpen: false,
 		};
+	},
+	computed: {
+		...mapGetters(VIEW_MODULE, {
+			navbarLight: NAVBAR_LIGHT,
+			navbarBackground: NAVBAR_BACKGROUND,
+		}),
 	},
 	methods: {
 		onWindowResize() {
@@ -220,12 +235,6 @@ section.immudb-star-banner-layout {
 				.logo {
 					max-height: #{$logo-height}px;
 				}
-
-				a,
-				.item,
-				.title {
-					color: $text-dark-color !important;
-				}
 			}
 		}
 	}
@@ -244,10 +253,36 @@ section.immudb-star-banner-layout {
 		}
 	}
 
-	a,
-	.item,
-	.title {
-		color: $text-light-color !important;
+	&.-bg-transparent {
+		background-color: transparent !important;
+	}
+
+	&.-bg-white {
+		background-color: white !important;
+	}
+
+	&.-bg-primary {
+		background-color: $color-primary !important;
+	}
+
+	&.-light {
+		.container {
+			a,
+			.item,
+			.title {
+				color: $text-dark-color !important;
+			}
+		}
+	}
+
+	&.-dark {
+		.container {
+			a,
+			.item,
+			.title {
+				color: $text-light-color !important;
+			}
+		}
 	}
 
 	.navbar-dropdown {

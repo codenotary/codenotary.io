@@ -15,6 +15,11 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 120;
@@ -32,11 +37,23 @@ export default {
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
+
+		console.log('LAYOUT BANNER');
+		// THAT setNavbar need to be in each page as layout is not re-called if navigating
+		// top a page with the same layout
+
+		this.setNavbar({
+			light: true,
+			background: 'transparent',
+		});
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
 	},
 	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 		handleScroll () {
 			if (window && window.scrollY !== undefined) {
 				this.scrolled = window.scrollY >= SCROLL_THRESHOLD;

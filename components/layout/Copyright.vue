@@ -1,8 +1,8 @@
 <template>
 	<PageSection
 		class="copyright"
-		:top="2"	
-		:bottom="2"		
+		:top="2"
+		:bottom="2"
 	>
 		<i-container>
 			<i-row>
