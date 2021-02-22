@@ -41,7 +41,7 @@
 						10GB storage
 					</PricingTableRow>
 					<PricingTableRow>
-						100,000 transactions per second
+						50,000 transactions
 					</PricingTableRow>
 					<PricingTableRow>
 						1 ledger
@@ -98,10 +98,10 @@
 						class="line _margin-top-2 _margin-bottom-1"
 					>
 					<PricingTableRow>
-						No storage limit
+						1TB storage limit
 					</PricingTableRow>
 					<PricingTableRow>
-						No transactions limit
+						1.000.000 transactions
 					</PricingTableRow>
 					<PricingTableRow>
 						5 ledgers
