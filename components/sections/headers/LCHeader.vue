@@ -3,7 +3,7 @@
 		<i-row class="_align-items-center">
 			<i-column xs="12" md="6">
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
-					We provide an immutable and tamperproof ledger for your transactional systems
+					CodeNotary Ledger Compliance is the easiest to run cryptographic-verifiable data ledger solution for enterprises.
 				</h1>
 				<p class="lead _margin-bottom-0">
 					Simple to use online audit queries and reports and easily able to process millions of transactions per second.
