@@ -60,7 +60,7 @@ export default {
 		LedgerComplianceModal: () => import('~/components/common/modals/LedgerComplianceModal'),
 	},
 	data: () => ({
-		src: '/images/products/lc/howitworks.png',
+		src: '/images/products/lc/cnlcdataflow.gif',
 		alt: 'ledger compliance how it works',
 		index: null,
 		typewriteOptions: [
