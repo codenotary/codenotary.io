@@ -6,11 +6,5 @@ tags: ["immudb", "video", "tutorial", "Go"]
 ---
 
 Great immudb Go tutorial video by TutorialEdge.
-https://www.youtube.com/watch?v=qCC_AghFiw4&feature=youtu.be
 
-
-<video width="720" controls>
-  <source src="https://www.youtube.com/watch?v=qCC_AghFiw4&feature=youtu.be" type="video/mp4">
-  Your browser does not support the video tag.
-</video> 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qCC_AghFiw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
