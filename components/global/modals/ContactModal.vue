@@ -25,7 +25,7 @@
 <script>
 import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 
-const ACTIVE_CAMPAIGN_FORM_ID = 22;
+const ACTIVE_CAMPAIGN_FORM_ID = 10;
 
 export default {
 	name: 'ContactModal',
@@ -46,7 +46,7 @@ export default {
 				this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
 				setTimeout(() => {
 					this.injected = true;
-				}, 500);
+				}, 300);
 			}
 		},
 	},

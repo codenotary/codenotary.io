@@ -25,7 +25,7 @@
 <script>
 import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 
-const ACTIVE_CAMPAIGN_FORM_ID = 22;
+const ACTIVE_CAMPAIGN_FORM_ID = 18;
 
 export default {
 	name: 'PartnerModal',

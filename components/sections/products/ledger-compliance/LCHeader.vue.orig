@@ -2,11 +2,16 @@
 	<i-header id="lc-header">
 		<i-row class="_align-items-center">
 			<i-column xs="12" md="6">
+<<<<<<< HEAD:components/sections/products/ledger-compliance/LCHeader.vue
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
 					Ledger Compliance (on-premise)
 				</h5>
 				<h1 class="title _font-weight-bold _text-primary _margin-top-0">
 					We provide an immutable and tamperproof ledger for your transactional systems
+=======
+				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
+					CodeNotary Ledger Compliance is the easiest to run cryptographic-verifiable data ledger solution.
+>>>>>>> 93b39656c7366c5f7495c48cd74885a253c07ada:components/sections/headers/LCHeader.vue
 				</h1>
 				<p class="lead _margin-bottom-0">
 					Simple to use online audit queries and reports and easily able to process millions of transactions per second.
