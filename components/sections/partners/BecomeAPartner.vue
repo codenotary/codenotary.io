@@ -4,13 +4,10 @@
 			<i-row>
 				<i-column>
 					<p class="action _text-center">
-						<PartnerModal
-							v-model="partnerModalOpen"
-						/>
 						<i-button
 							size="lg"
 							variant="primary"
-							@click="partnerModalOpen = true"
+							@click="$emit('onPartnerModal')"
 						>
 							Become a partner
 						</i-button>
@@ -24,12 +21,6 @@
 <script>
 export default {
 	name: 'BecomeAPartner',
-	data: () => ({
-		partnerModalOpen: false,
-	}),
-	beforeDestroy () {
-		this.partnerModalOpen = null;
-	},
 };
 </script>
 

@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<CareersHeader @scrollMeTo="scrollMeTo('openPosition')" />
+		<CareersHeader
+			@scrollMeTo="scrollMeTo('openPosition')"
+		/>
 		<LazyHydrate when-visible>
 			<OurValues />
 		</LazyHydrate>

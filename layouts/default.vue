@@ -55,9 +55,11 @@ $navbar-scrolled-height: 60;
 section.default-layout {
 	#navbar {
 		position: fixed;
+		height: #{$navbar-height}px;
+		width: 100%;
 		top: 0;
 		left: 0;
-		width: 100%;
+		padding: 0;
 	}
 
 	#content {

@@ -5,7 +5,16 @@
 			<PartnersCarousel :partners="partners" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<BecomeAPartner />
+			<BecomeAPartner
+				@onPartnerModal="partnerModalOpen = true"
+			/>
+		</LazyHydrate>
+
+		<!-- ACTIVE CAMPAING MODALS -->
+		<LazyHydrate when-idle>
+			<PartnerModal
+				v-model="partnerModalOpen"
+			/>
 		</LazyHydrate>
 	</PageSection>
 </template>
@@ -25,6 +34,7 @@ export default {
 		LazyHydrate,
 	},
 	data: () => ({
+		partnerModalOpen: false,
 		partners: [
 			{
 				title: 'DevopsInternational',

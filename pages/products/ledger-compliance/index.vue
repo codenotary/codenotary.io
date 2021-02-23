@@ -25,7 +25,7 @@
 			<WebinarModal
 				v-model="webinarModalOpen"
 			/>
-		</LazyHydrate>		
+		</LazyHydrate>
 	</div>
 </template>
 
@@ -43,14 +43,14 @@ export default {
 	components: {
 		LazyHydrate,
 	},
+	data: () => ({
+		ledgerComplianceModalOpen: false,
+	}),
 	head() {
 		return {
 			title: title('Ledger Compliance (on-premise)'),
 		};
 	},
-	data: () => ({
-		ledgerComplianceModalOpen: false,
-	}),
 	mounted () {
 		this.$nextTick(() => {
 			this.setNavbar({

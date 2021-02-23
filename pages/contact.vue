@@ -38,12 +38,7 @@
 				<i-container>
 					<i-row>
 						<i-column>
-							<div class="_form_10" />
-							<script
-								src="https://vchain.activehosted.com/f/embed.php?id=10"
-								type="text/javascript"
-								charset="utf-8"
-							/>
+							<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 						</i-column>
 					</i-row>
 				</i-container>
@@ -53,6 +48,7 @@
 </template>
 
 <script>
+import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 import { mapActions } from 'vuex';
 import {
 	VIEW_MODULE,
@@ -61,11 +57,18 @@ import {
 import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
+const ACTIVE_CAMPAIGN_FORM_ID = 10;
+
 export default {
 	name: 'Contact',
+	mixins: [scriptInjectMixin],
 	components: {
 		LazyHydrate,
 	},
+	data: () => ({
+		ACTIVE_CAMPAIGN_FORM_ID,
+		injected: false,
+	}),	
 	head() {
 		return {
 			title: title('Contact us'),
@@ -78,6 +81,13 @@ export default {
 				light: true,
 			});
 		});
+
+		if (!this.injected) {
+			this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
+			setTimeout(() => {
+				this.injected = true;
+			}, 300);
+		}
 	},
 	methods: {
 		...mapActions(VIEW_MODULE, {

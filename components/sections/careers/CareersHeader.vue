@@ -8,7 +8,7 @@
 				<p class="lead _margin-bottom-0">
 					We’re creating highly sophisticated and innovative solutions which our customers love to use. Join us on our journey to bring trust and integrity to all digital objects!
 				</p>
-				<div class="button-wrapper _margin-top-2">
+				<div class="button-wrapper _margin-top-2 _display-flex _justify-content-center">
 					<i-button
 						variant="primary"
 						size="lg"

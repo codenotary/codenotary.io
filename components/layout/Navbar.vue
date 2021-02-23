@@ -253,9 +253,22 @@ $logo-height: 48;
 	}
 
 	&.-bg-light-transparent,
-	&.-bg-white {
-		background-color: transparent;
+	&.-bg-dark-transparent {
+		background-color: transparent !important;
+	}
 
+	&.-bg-white {
+		background-color: white !important;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+	}
+
+	&.-bg-primary {
+		background-color: $color-primary !important;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+	}
+
+	&.-bg-light-transparent,
+	&.-bg-white {
 		.container {
 			a,
 			.item,
@@ -277,8 +290,6 @@ $logo-height: 48;
 
 	&.-bg-dark-transparent,
 	&.-bg-primary {
-		background-color: transparent;
-
 		.container {
 			a,
 			.item,

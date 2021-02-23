@@ -113,7 +113,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-header {
-	padding-top: $spacer;
+	padding-top: $spacer-4;
 	background-color: white;
 	background-image: url('/images/immudb/header.jpg');
 	text-align: center;
