@@ -126,7 +126,7 @@
 		</div>
 		<i-row
 			v-if="hasButtonSlot"
-			class="cta-wrapper _margin-top-2 _margin-bottom-sm-2 _margin-bottom-sm-4 _display-flex _justify-content-center _align-items-center"
+			class="cta-wrapper _margin-top-2 _margin-top-sm-4 _margin-bottom-sm-4 _display-flex _justify-content-center _align-items-center"
 		>
 			<slot name="button" />
 		</i-row>
@@ -229,6 +229,8 @@ export default {
 	}
 
 	.cta-wrapper {
+		min-height: 4rem;
+
 		button {
 			padding: $spacer-1 $spacer-4;
 			color: white;

@@ -7,6 +7,7 @@
 			<i-row>
 				<i-column
 					class="_margin-bottom-xs-2 _margin-bottom-sm-4 _margin-bottom-md-4 _margin-bottom-lg-4 _margin-bottom-xl-4"
+					style="height: 100%;"
 					xs="12"
 				>
 					<Feature
@@ -32,6 +33,7 @@
 				</i-column>
 				<i-column
 					class="_margin-y-xs-2 _margin-y-sm-4 _margin-y-md-4 _margin-y-lg-4 _margin-y-xl-4"
+					style="height: 100%;"
 					xs="12"
 				>
 					<Feature
@@ -69,6 +71,7 @@
 				</i-column>
 				<i-column
 					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
+					style="height: 100%;"
 					xs="12"
 					sm="6"
 				>
@@ -95,6 +98,7 @@
 				</i-column>
 				<i-column
 					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
+					style="height: 100%;"
 					xs="12"
 					sm="6"
 				>
@@ -124,7 +128,10 @@
 			<i-row
 				class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
 			>
-				<i-column class="_text-center _text-muted">
+				<i-column
+					class="_text-center _text-muted"
+					style="height: 100%;"
+				>
 					<ul class="list -unstyled">
 						<li class="_margin-bottom-2">
 							<strong>Immutability</strong> by perimeter defense is proven not to work, <strong>Immutability</strong> needs to be embedded in the data structure!
