@@ -3,11 +3,11 @@
 		<i-row class="_align-items-center">
 			<i-column lg="6">
 				<h1 class="h2 _font-weight-bold">
-					Immutable change history of your business data with CodeNotary Ledger Compliance&reg;
+					World's first cryptographically signed and client-verifiable journal with CodeNotary Ledger Compliance&reg;
 				</h1>
 				<p class="lead">
-					On-premise or in the cloud; Secure, actionable observability with real cryptographic verification,
-					processing millions of transactions a second.
+					Deploy anywhere; Store transactions, CI/CD pipelines, audit-trails, IoT telemetry, ML test sets  with cryptographic verification;
+					Processing millions of transactions a second.
 				</p>
 				<p class="_font-weight-bold">
 					Powered by the world’s fastest immutable database.
