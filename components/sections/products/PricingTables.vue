@@ -211,7 +211,9 @@
 				</PricingTable>
 			</i-column>
 		</i-row>
-		<ledger-compliance-modal v-model="trialModalOpen" />
+		<LedgerComplianceModal
+			v-model="trialModalOpen"
+		/>
 	</div>
 </template>
 

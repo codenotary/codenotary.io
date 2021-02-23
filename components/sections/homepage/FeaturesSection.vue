@@ -6,6 +6,7 @@
 		<i-container>
 			<i-row>
 				<i-column
+					class="_margin-bottom-xs-2 _margin-bottom-sm-4 _margin-bottom-md-4 _margin-bottom-lg-4 _margin-bottom-xl-4"
 					xs="12"
 				>
 					<Feature
@@ -27,16 +28,6 @@
 							Don't trust central or online services to provide immutability for your precious data. CNLC uses the world's fastest immutable database <span class="_font-weight-bold">immudb</span>, to provide full immutability and client-cryptographic proof.
 							That cryptographic verification guarantees data integrity and tamper-evidence.
 						</p>
-						<template #button>
-							<i-button
-								class="_padding-x-4"
-								size="lg"
-								variant="primary"
-								:to="{ name: '' }"
-							>
-								Start trial
-							</i-button>
-						</template>
 					</Feature>
 				</i-column>
 				<i-column
@@ -69,44 +60,7 @@
 								class="_padding-x-4"
 								size="lg"
 								variant="primary"
-								:to="{ name: '' }"
-							>
-								Start trial
-							</i-button>
-						</template>
-					</Feature>
-				</i-column>
-				<i-column
-					class="_margin-y-xs-2 _margin-y-sm-4 _margin-y-md-4 _margin-y-lg-4 _margin-y-xl-4"
-					xs="12"
-				>
-					<Feature
-						image="/images/features/feat-ready.jpg"
-						image-is-photo
-						content-side="right"
-						title="Ready in minutes"
-						:inner-content="[
-							{
-								title: 'Linux, Container or virtual appliance',
-								text: 'Install and run CNLC in minutes using our universal install options',
-							},
-							{
-								title: 'On-premise, cloud-based or managed service',
-								text: 'You run it, or we run it for you. It\'s your choice',
-							},
-						]"
-					>
-						<p>
-							Deploy as a virtual appliance or install on any Linux system, <span class="_font-weight-bold">CNLC</span> is ready within minutes to receive and store your data tamper-proof.
-							You can run CNLC on-premise, in the cloud or in hybrid environments.
-							If you wish for an independent deployment outside of your environment, we offer managed service as well.
-						</p>
-						<template #button>
-							<i-button
-								class="_padding-x-4"
-								size="lg"
-								variant="primary"
-								:to="{ name: '' }"
+								@click="$emit('onLedgerComplianceModal')"
 							>
 								Start trial
 							</i-button>
@@ -142,7 +96,7 @@
 								class="_padding-x-4"
 								size="lg"
 								variant="primary"
-								:to="{ name: '' }"
+								@click="$emit('onLedgerComplianceModal')"
 							>
 								Start trial
 							</i-button>
@@ -180,6 +134,13 @@
 <script>
 export default {
 	name: 'FeaturesSection',
+	data() {
+		return {
+			ledgerComplianceModalOpen: false,
+			playing: false,
+			timeout: null,
+		};
+	},
 };
 </script>
 

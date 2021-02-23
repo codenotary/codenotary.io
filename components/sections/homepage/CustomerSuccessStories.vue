@@ -23,11 +23,10 @@
 						<i-button
 							variant="primary"
 							size="lg"
-							@click="webinarModalOpen = true"
+							@click="$emit('onWebinarModal')"
 						>
 							Schedule a Webinar
 						</i-button>
-						<WebinarModal v-model="webinarModalOpen" />
 					</div>
 				</i-column>
 			</i-row>
@@ -83,14 +82,6 @@
 
 export default {
 	name: 'CustomerSuccessStories',
-	data() {
-		return {
-			webinarModalOpen: false,
-		};
-	},
-	beforeDestroy () {
-		this.webinarModalOpen = null;
-	},
 };
 </script>
 

@@ -62,7 +62,9 @@
 				{{ index }}
 			</i-column>
 		</i-row>
-		<start-trial-modal v-model="startTrialModalOpen" />
+		<StartTrialModal
+			v-model="startTrialModalOpen"
+		/>
 		<CoolLightBox
 			:items="[src]"
 			:index="index"

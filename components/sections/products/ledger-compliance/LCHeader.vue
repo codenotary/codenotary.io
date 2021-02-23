@@ -28,7 +28,7 @@
 						variant="primary"
 						size="lg"
 						class="_margin-left-1"
-						@click="ledgerComplianceModalOpen = true"
+						@click="$emit('onLedgerComplianceModal')"
 					>
 						Start trial
 					</i-button>
@@ -48,7 +48,6 @@
 				{{ index }}
 			</i-column>
 		</i-row>
-		<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 		<CoolLightBox
 			:items="[src]"
 			:index="index"
@@ -74,15 +73,7 @@ export default {
 			'Change Data Capture',
 			'Database records',
 		],
-		ledgerComplianceModalOpen: false,
 	}),
-	beforeDestroy () {
-		this.src = null;
-		this.alt = null;
-		this.index = null;
-		this.typewriteOptions = null;
-		this.ledgerComplianceModalOpen = null;
-	},
 };
 </script>
 

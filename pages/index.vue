@@ -1,6 +1,8 @@
 <template>
 	<div>
-		<HomeHeader />
+		<HomeHeader
+			@onLedgerComplianceModal="ledgerComplianceModalOpen = true"
+		/>
 		<LazyHydrate when-visible>
 			<PageSectionHeader
 				title="Hundreds of companies trust CodeNotary"
@@ -9,13 +11,29 @@
 			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<FeaturesSection />
+			<FeaturesSection
+				@onLedgerComplianceModal="ledgerComplianceModalOpen = true"
+			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<TimestampServiceSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<CustomerSuccessStories />
+			<CustomerSuccessStories
+				@onWebinarModal="webinarModalOpen = true"
+			/>
+		</LazyHydrate>
+
+		<!-- ACTIVE CAMPAING MODALS -->
+		<LazyHydrate when-idle>
+			<LedgerComplianceModal
+				v-model="ledgerComplianceModalOpen"
+			/>
+		</LazyHydrate>
+		<LazyHydrate when-idle>
+			<WebinarModal
+				v-model="webinarModalOpen"
+			/>
 		</LazyHydrate>
 	</div>
 </template>
@@ -34,6 +52,12 @@ export default {
 		LazyHydrate,
 	},
 	layout: 'banner',
+	data() {
+		return {
+			ledgerComplianceModalOpen: false,
+			webinarModalOpen: false,
+		};
+	},
 	mounted () {
 		this.$nextTick(() => {
 			this.setNavbar({

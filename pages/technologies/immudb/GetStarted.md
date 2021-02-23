@@ -4,8 +4,8 @@
 </PageSectionHeader>
 <i-container>
 <i-row>
-<i-column>
-    <i-button variant="primary" size="lg" href="https://docs.immudb.io">Get started today</i-button>
+<i-column class="_margin-top-2 _margin-x-auto">
+    <i-button variant="primary" size="lg" href="https://docs.immudb.io" target="_blank" rel="nofollow">Get started today</i-button>
 </i-column>
 </i-row>
 </i-container>

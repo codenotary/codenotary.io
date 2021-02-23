@@ -15,7 +15,9 @@
 					>
 						Join the Consortium
 					</i-button>
-					<join-ztc-modal v-model="joinZtcModalVisible" />
+					<JoinZtcModal
+						v-model="joinZtcModalVisible"
+					/>
 				</i-column>
 			</i-row>
 		</i-container>

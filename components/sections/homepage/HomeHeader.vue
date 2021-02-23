@@ -30,11 +30,10 @@
 						variant="white"
 						size="lg"
 						class="_margin-left-1"
-						@click="ledgerComplianceModalOpen = true"
+						@click="$emit('onLedgerComplianceModal')"
 					>
 						Start trial
 					</i-button>
-					<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 				</p>
 			</i-column>
 			<i-column
@@ -76,15 +75,9 @@ export default {
 	},
 	data() {
 		return {
-			ledgerComplianceModalOpen: false,
 			playing: false,
 			timeout: null,
 		};
-	},
-	beforeDestroy () {
-		this.ledgerComplianceModalOpen = null;
-		this.playing = null;
-		this.timeout = null;
 	},
 	methods: {
 		onPlayVideo() {

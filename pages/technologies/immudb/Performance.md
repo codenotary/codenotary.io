@@ -1,5 +1,5 @@
 <PageSection id="immudb-performance-section">
-<PageSectionHeader title="Unmatched performance">
+<PageSectionHeader title="Unmatched performance" class="_padding-bottom-2 _display-flex _justify-content-center">
     immudb has been designed with read and write performance in mind while being tamper-proof. The benchmarks we've done show great results.
 </PageSectionHeader>
 <i-container>

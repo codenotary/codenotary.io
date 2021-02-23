@@ -74,7 +74,7 @@ export default {
 	mounted () {
 		this.$nextTick(() => {
 			this.setNavbar({
-				background: 'light-transparent',				
+				background: 'light-transparent',
 				light: true,
 			});
 		});

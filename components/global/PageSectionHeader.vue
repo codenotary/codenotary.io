@@ -1,6 +1,6 @@
 <template>
 	<header
-		:class="`section-header _text-primary ${ block ? 'block' : '' } _text-${ color } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
+		:class="`section-header _text-primary ${ block ? '-block' : '' } _text-${ color } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
 	>
 		<slot name="title">
 			<h2 :is="tag">
@@ -63,6 +63,7 @@ export default {
 
 	&.-block {
 		max-width: none;
+		width: 100%;
 	}
 }
 </style>

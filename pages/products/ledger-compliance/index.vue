@@ -1,15 +1,31 @@
 <template>
 	<div>
-		<LCHeader />
+		<LCHeader
+			@onLedgerComplianceModal="ledgerComplianceModalOpen = true"
+		/>
 		<LazyHydrate when-visible>
 			<LcFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<CustomerSuccessStories />
+			<CustomerSuccessStories
+				@onWebinarModal="webinarModalOpen = true"
+			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<LcInfrastructure />
 		</LazyHydrate>
+
+		<!-- ACTIVE CAMPAING MODALS -->
+		<LazyHydrate when-idle>
+			<LedgerComplianceModal
+				v-model="ledgerComplianceModalOpen"
+			/>
+		</LazyHydrate>
+		<LazyHydrate when-idle>
+			<WebinarModal
+				v-model="webinarModalOpen"
+			/>
+		</LazyHydrate>		
 	</div>
 </template>
 
@@ -32,6 +48,9 @@ export default {
 			title: title('Ledger Compliance (on-premise)'),
 		};
 	},
+	data: () => ({
+		ledgerComplianceModalOpen: false,
+	}),
 	mounted () {
 		this.$nextTick(() => {
 			this.setNavbar({

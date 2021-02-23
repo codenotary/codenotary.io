@@ -1,7 +1,5 @@
 <template>
 	<i-header id="immudb-header">
-		<research-paper-modal v-model="researchPaperModalVisible" />
-
 		<img src="/images/immudb/mascot.png" alt="immudb mascot">
 
 		<h1 class="d6 _margin-top-1 _text-primary">
@@ -32,6 +30,8 @@
 				size="lg"
 				variant="primary"
 				href="https://docs.immudb.io"
+				target="_blank"
+				rel="nofollow"
 			>
 				Get started now
 			</i-button>
@@ -59,6 +59,10 @@
 				GitHub
 			</i-nav-item>
 		</i-nav>
+
+		<ResearchPaperModal
+			v-model="researchPaperModalVisible"
+		/>
 
 		<p class="_margin-top-3">
 			<i-button

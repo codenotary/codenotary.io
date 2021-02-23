@@ -6,7 +6,9 @@
 					Our Partners
 				</h1>
 				<div class="button-wrapper">
-					<partner-modal v-model="partnerModalOpen" />
+					<PartnerModal
+						v-model="partnerModalOpen"
+					/>
 					<i-button
 						variant="primary"
 						size="lg"
