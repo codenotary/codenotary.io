@@ -7,6 +7,9 @@
 			<LcFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
+			<HomeVideos class="_margin-top-4" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<CustomerSuccessStories
 				@onWebinarModal="webinarModalOpen = true"
 			/>

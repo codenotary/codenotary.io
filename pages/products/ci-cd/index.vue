@@ -8,6 +8,9 @@
 			<CiCdFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
+			<HomeVideos class="_margin-bottom-4" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<CiCdHowItWorks />
 		</LazyHydrate>
 		<LazyHydrate when-visible>

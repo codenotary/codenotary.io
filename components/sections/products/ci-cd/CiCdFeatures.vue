@@ -2,6 +2,7 @@
 	<PageSection
 		id="ci-cd-features-section"
 		variant="white"
+		:bottom="0"
 	>
 		<i-container>
 			<i-row>

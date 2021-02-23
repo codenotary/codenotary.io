@@ -70,9 +70,9 @@
 				<i-column
 					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
 					xs="12"
+					sm="6"
 				>
 					<Feature
-						image="/images/features/feat-sdk.png"
 						content-side="left"
 						title="CI/CD, Change Data Capture and SDKs"
 						:inner-content="[
@@ -91,16 +91,33 @@
 							Write and read your data records into Ledger Compliance making sure your data history trace is always available.
 							Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
 						</p>
-						<template #button>
-							<i-button
-								class="_padding-x-4"
-								size="lg"
-								variant="primary"
-								@click="$emit('onLedgerComplianceModal')"
-							>
-								Start trial
-							</i-button>
-						</template>
+					</Feature>
+				</i-column>
+				<i-column
+					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
+					xs="12"
+					sm="6"
+				>
+					<Feature
+						content-side="left"
+						title="Ready in minutes"
+						:inner-content="[
+							{
+								title: 'Linux, Container or virtual appliance',
+								text: 'Install and run CNLC in minutes using our universal install options',
+							},
+							{
+								title: 'On-premise, cloud-based or managed service',
+								text: 'You run it, or we run it for you. It\'s your choice',
+							},
+						]"
+					>
+						<p>
+							Deploy as a virtual appliance or install on any Linux system, <span class="_font-weight-bold">CNLC</span>
+							is ready within minutes to receive and store your data tamper-proof. You can run CNLC on-premise, in the cloud
+							or in hybrid environments. If you wish for an independent deployment outside of your environment, we offer
+							managed service as well.
+						</p>
 					</Feature>
 				</i-column>
 			</i-row>

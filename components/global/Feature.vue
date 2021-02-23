@@ -6,9 +6,11 @@
 		<i-row
 			class="_display-flex _flex-direction-xs-column _flex-direction-sm-row"
 			:class="`_flex-direction-md-row${ getContentSide === 'right' ? '' : '-reverse' }`"
+			style="height: 100%;"
 		>
 			<i-column
-				class="_margin-bottom-4 _margin-sm-bottom-0 _margin-0 _padding-0"
+				v-if="image"
+				class="_margin-bottom-4 _margin-bottom-sm-0 _margin-0 _padding-0"
 				xs="12" sm="4"
 				md="4" lg="5"
 				xl="6"
@@ -24,7 +26,6 @@
 					}"
 				>
 					<img
-						v-if="image"
 						:class="{
 							'-is-photo': imageIsPhoto,
 						}"
@@ -34,23 +35,28 @@
 				</div>
 			</i-column>
 			<i-column
-				class="_margin-0 _padding-0"
-				xs="12" sm="8"
-				md="8" lg="7"
-				xl="6"
+				class="_margin-0 _padding-0 _display-flex _flex-direction-column _justify-content-space-between"
+				style="height: 100%;"
+				xs="12"
+				:sm="image ? 8 : 12"
+				:md="image ? 8 : 12"
+				:lg="image ? 7 : 12"
+				:xl="image ? 6 : 12"
 			>
-				<h3
-					v-if="title"
-					class="_margin-0 -title _text-left _text-gray-80 _font-weight-bold"
-				>
-					{{ title }}
-				</h3>
-				<p
-					v-if="hasDefaultSlot"
-					class="_margin-top-1 -body-1 _text-left"
-				>
-					<slot />
-				</p>
+				<div>
+					<h3
+						v-if="title"
+						class="_margin-0 -title _text-left _text-gray-80 _font-weight-bold"
+					>
+						{{ title }}
+					</h3>
+					<p
+						v-if="hasDefaultSlot"
+						class="_margin-top-1 -body-1 _text-left"
+					>
+						<slot />
+					</p>
+				</div>
 				<div class="_visible-lg-and-up">
 					<i-row
 						v-if="innerContent && innerContent.length > 0"
@@ -120,7 +126,7 @@
 		</div>
 		<i-row
 			v-if="hasButtonSlot"
-			class="cta-wrapper _margin-top-2 _margin-sm-top-4 _display-flex _justify-content-center _align-items-center"
+			class="cta-wrapper _margin-top-2 _margin-bottom-sm-2 _margin-bottom-sm-4 _display-flex _justify-content-center _align-items-center"
 		>
 			<slot name="button" />
 		</i-row>
@@ -179,6 +185,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 .feature {
+	height: 100%;
 	width: 100%;
 
 	.title {

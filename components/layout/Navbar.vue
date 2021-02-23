@@ -359,7 +359,7 @@ $logo-height: 48;
 						content: '';
 						position: absolute;
 						top: 0;
-						left: -16px;
+						left: 0;
 						bottom: 0;
 						width: 4px;
 						height: 48px;

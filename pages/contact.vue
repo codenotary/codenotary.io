@@ -61,14 +61,14 @@ const ACTIVE_CAMPAIGN_FORM_ID = 10;
 
 export default {
 	name: 'Contact',
-	mixins: [scriptInjectMixin],
 	components: {
 		LazyHydrate,
 	},
+	mixins: [scriptInjectMixin],
 	data: () => ({
 		ACTIVE_CAMPAIGN_FORM_ID,
 		injected: false,
-	}),	
+	}),
 	head() {
 		return {
 			title: title('Contact us'),
