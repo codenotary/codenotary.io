@@ -385,11 +385,10 @@ $logo-height: 48;
 					&::before {
 						content: '';
 						position: absolute;
-						top: 0;
+						top: 10%;
 						left: 0;
-						bottom: 0;
+						bottom: 10%;
 						width: 4px;
-						height: 48px;
 						background: $color-primary;
 						border-radius: 0 4px 4px 0;
 					}
