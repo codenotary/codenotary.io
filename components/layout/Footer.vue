@@ -59,6 +59,15 @@
 								ZTC
 							</router-link>
 						</li>
+						<li>
+							<a
+								href="https://timestamp.codenotary.com/"
+								target="_blank"
+								rel="nofollow"
+							>
+								Timestamp service
+							</a>
+						</li>						
 					</ul>
 				</i-column>
 				<i-column

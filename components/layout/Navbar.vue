@@ -137,6 +137,26 @@
 									</p>
 								</nuxt-link>
 							</i-column>
+							<i-column
+								class="_margin-0 _padding-0"
+								xs="12"
+							>
+								<a
+									class="freeform-item _padding-1"
+									href="https://timestamp.codenotary.com/"
+									target="_blank"
+									rel="nofollow"
+								>
+									<h6
+										class="title _margin-0 _padding-xs-0"
+									>
+										Timestamp service
+									</h6>
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										Tamperproof provenance for your code and CI/CD pipeline
+									</p>
+								</a>
+							</i-column>
 						</i-row>
 					</i-dropdown-menu>
 				</i-dropdown>
@@ -152,6 +172,13 @@
 						:to="{ name: 'technologies-immudb' }"
 					>
 						immudb
+					</i-nav-item>
+					<i-nav-item
+						href="https://timestamp.codenotary.com/"
+						target="_blank"
+						rel="nofollow"
+					>
+						Timestamp service
 					</i-nav-item>
 				</i-nav>
 

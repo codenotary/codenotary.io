@@ -54,7 +54,6 @@ export default {
 	components: {
 		LazyHydrate,
 	},
-	layout: 'banner',
 	data() {
 		return {
 			ledgerComplianceModalOpen: false,
