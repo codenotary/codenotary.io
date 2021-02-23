@@ -94,10 +94,6 @@ export default {
 		.column {
 			flex: 1;
 		}
-
-		@include breakpoint-down(lg) {
-			flex-direction: column;
-		}
 	}
 
 	.board-team-member {
