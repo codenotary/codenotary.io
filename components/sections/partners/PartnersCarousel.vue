@@ -1,26 +1,36 @@
 <template>
-	<page-section id="partners-section">
+	<PageSection
+		id="partners-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column xs="12">
 					<VueSlickCarousel v-if="partners && partners.length" v-bind="settings">
 						<div
-							v-for="partner in partners" :key="partner.slug"
+							v-for="partner in partners"
+							:key="partner.slug"
 							class="partner-wrapper"
 						>
 							<a
-								v-if="partner.link && partner.link.url" :href="partner.link.url"
-								:target="partner.link.target || '_blank'" :title="partner.title"
+								v-if="partner.link && partner.link.url"
+								:href="partner.link.url"
+								:target="partner.link.target || '_blank'"
+								:title="partner.title"
 								rel="nofollow"
 							>
-								<story-card
-									color="transparent" :title="partner.title"
-									:subtitle="partner.subtitle" :image="partner.image "
+								<StoryCard
+									color="transparent"
+									:title="partner.title"
+									:subtitle="partner.subtitle"
+									:image="partner.image "
 								/>
 							</a>
-							<story-card
-								v-else color="transparent"
-								:title="partner.title" :subtitle="partner.subtitle"
+							<StoryCard
+								v-else
+								color="transparent"
+								:title="partner.title"
+								:subtitle="partner.subtitle"
 								:image="partner.image "
 							/>
 						</div>
@@ -28,18 +38,12 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import StoryCard from '~/components/common/cards/StoryCard';
-
 export default {
 	name: 'Partners',
-
-	components: {
-		StoryCard,
-	},
 	props: {
 		partners: { type: Array, default: () => {} },
 	},
@@ -89,10 +93,8 @@ export default {
 
 <style lang="scss">
 @import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #partners-section {
-	background-color: white;
 	overflow: hidden;
 
 	a {

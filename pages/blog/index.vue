@@ -1,37 +1,46 @@
 <template>
 	<div>
-		<page-section>
-			<page-section-header title="Blog" tag="h1" />
+		<PageSection>
+			<PageSectionHeader title="Blog" tag="h1" />
 			<i-container>
 				<i-row>
 					<i-column xs="12" class="blog-search-wrapper _hidden-sm-and-down _padding-right-2 _padding-left-2 _margin-bottom-2">
 						<i-input
-							v-model="filter" class="blog-search"
-							placeholder="Filter post by title, date or tag" :clearable="!!filter"
+							v-model="filter"
+							class="blog-search"
+							placeholder="Filter post by title, date or tag"
+							:clearable="!!filter"
 						/>
 					</i-column>
 					<i-column xs="12" class="blog-search-wrapper mobile _hidden-md-and-up _padding-right-1 _padding-left-1 _margin-bottom-2">
 						<i-input
-							v-model="filter" class="blog-search"
-							placeholder="Filter post by title, date or tag" :clearable="!!filter"
+							v-model="filter"
+							class="blog-search"
+							placeholder="Filter post by title, date or tag"
+							:clearable="!!filter"
 						/>
 					</i-column>
 					<i-column xs="12">
 						<no-ssr>
 							<masonry
-								class="_width-100" :cols="{default: 4, 1000: 3, 700: 2, 400: 1}"
+								class="_width-100"
+								:cols="{default: 4, 1000: 3, 700: 2, 400: 1}"
 								:gutter="{default: '1rem', 700: '1rem'}"
 							>
 								<div
-									v-for="article in filteredArticles" :key="article.slug"
-									class="item" column-width="33px"
+									v-for="article in filteredArticles"
+									:key="article.slug"
+									class="item"
+									column-width="33px"
 								>
 									<i-card class="blog-post _display-flex _flex-direction-column _justify-content-space-between">
 										<div>
 											<div class="image-wrapper">
 												<img
-													:src="article.image || `/images/blog-post.svg`" class="image -responsive"
-													:title="article.title" :alt="article.title"
+													:src="article.image || `/images/blog-post.svg`"
+													class="image -responsive"
+													:title="article.title"
+													:alt="article.title"
 													onerror="this.src='/images/blog-post.svg'"
 												>
 											</div>
@@ -49,8 +58,10 @@
 										</div>
 										<div>
 											<i-badge
-												v-for="(tag, idx) in article.tags" :key="`${tag}-${idx}`"
-												class="_margin-top-1-4 _margin-right-1-4" size="sm"
+												v-for="(tag, idx) in article.tags"
+												:key="`${tag}-${idx}`"
+												class="_margin-top-1-4 _margin-right-1-4"
+												size="sm"
 												@click.stop.prevent="filter=tag"
 											>
 												{{ tag }}
@@ -85,11 +96,16 @@
 					</i-column>
 				</i-row>
 			</i-container>
-		</page-section>
+		</PageSection>
 	</div>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
 import NoSSR from 'vue-no-ssr';
 import { title } from '~/helpers/meta';
 
@@ -138,6 +154,13 @@ export default {
 		if (typeof this.$redrawVueMasonry === 'function') {
 			this.$redrawVueMasonry();
 		}
+
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
 	},
 	beforeDestroy () {
 		this.filter = null;
@@ -145,6 +168,9 @@ export default {
 		this.page = 0;
 	},
 	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 		infiniteHandler ($state) {
 			setTimeout(async () => {
 				this.page += 1;

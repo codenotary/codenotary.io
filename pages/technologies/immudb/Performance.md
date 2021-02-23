@@ -1,7 +1,7 @@
-<page-section id="immudb-performance-section">
-<page-section-header title="Unmatched performance">
+<PageSection id="immudb-performance-section">
+<PageSectionHeader title="Unmatched performance" class="_padding-bottom-2 _display-flex _justify-content-center">
     immudb has been designed with read and write performance in mind while being tamper-proof. The benchmarks we've done show great results.
-</page-section-header>
+</PageSectionHeader>
 <i-container>
 <i-row>
 <i-column md="6">
@@ -46,12 +46,12 @@ Throughput: 2772181 tx/sec
 </i-row>
 <i-row>
 <i-column>
-    <page-section-header id="qldb-comparison-section">
+    <PageSectionHeader id="qldb-comparison-section">
         <template #title>
         <fa icon="bolt" class="_text-primary"></fa>
         </template>
         immudb is often compared to Amazon QLDB. We compared the performance using a simple demo application to write data (without using any unfair optimization).
-    </page-section-header>
+    </PageSectionHeader>
 </i-column>
 </i-row>
 <i-row>
@@ -71,4 +71,4 @@ Throughput: 2772181 tx/sec
     </i-column>
 </i-row>
 </i-container>
-</page-section>
+</PageSection>

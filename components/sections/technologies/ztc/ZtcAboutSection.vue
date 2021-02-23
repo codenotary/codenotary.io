@@ -1,11 +1,11 @@
 <template>
-	<page-section id="ztc-about-section">
+	<PageSection id="ztc-about-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="What is the Zero-Trust Consortium?" block>
+					<PageSectionHeader title="What is the Zero-Trust Consortium?" block>
 						We are a consortium blockchain proudly and reliably processing hundreds of thousands of transactions daily. Our mission is to provide a trustable, independent, always-on, permissioned blockchain for the software industry with the following attributes:
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -27,11 +27,14 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-export default {};
+export default {
+	name: 'ZtcAboutSection',
+};
+
 </script>
 
 <style lang="scss">

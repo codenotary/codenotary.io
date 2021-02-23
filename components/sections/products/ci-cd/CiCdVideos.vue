@@ -1,11 +1,15 @@
 <template>
-	<page-section id="ci-cd-videos-section">
+	<PageSection
+		id="ci-cd-videos-section"
+		variant="white"
+	>
 		<i-container>
 			<VueSlickCarousel v-bind="settings" @beforeChange="page = $event">
 				<div>
 					<i-row middle class="_padding-1">
 						<i-column
-							xs="12" sm="12"
+							xs="12"
+							sm="12"
 							md="4"
 						>
 							<h4 class="title _font-weight-bold _text-primary">
@@ -16,14 +20,18 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="12"
+							xs="12"
+							sm="12"
 							md="8"
 						>
 							<div v-if="page === 2" class="_embed _embed-16by9">
 								<iframe
-									width="504" height="284"
-									src="https://www.youtube.com/embed/rQ4iZAM14m0" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+									width="504"
+									height="284"
+									src="https://www.youtube.com/embed/rQ4iZAM14m0"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
 								/>
 							</div>
 							<div v-else class="_embed _embed-16by9 video-placeholder" />
@@ -33,7 +41,8 @@
 				<div>
 					<i-row middle class="_padding-1">
 						<i-column
-							xs="12" sm="12"
+							xs="12"
+							sm="12"
 							md="4"
 						>
 							<h4 class="title _font-weight-bold _text-primary">
@@ -44,14 +53,18 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="12"
+							xs="12"
+							sm="12"
 							md="8"
 						>
 							<div v-if="page === 0" class="_embed _embed-16by9">
 								<iframe
-									width="504" height="284"
-									src="https://www.youtube.com/embed/lCxfijPEY5M" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+									width="504"
+									height="284"
+									src="https://www.youtube.com/embed/lCxfijPEY5M"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
 								/>
 							</div>
 							<div v-else class="_embed _embed-16by9 video-placeholder" />
@@ -61,7 +74,8 @@
 				<div>
 					<i-row middle class="_padding-1">
 						<i-column
-							xs="12" sm="12"
+							xs="12"
+							sm="12"
 							md="4"
 						>
 							<h4 class="title _font-weight-bold _text-primary">
@@ -72,14 +86,18 @@
 							</p>
 						</i-column>
 						<i-column
-							xs="12" sm="12"
+							xs="12"
+							sm="12"
 							md="8"
 						>
 							<div v-if="page === 1" class="_embed _embed-16by9">
 								<iframe
-									width="504" height="284"
-									src="https://www.youtube.com/embed/EPbYwTd-M3A" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+									width="504"
+									height="284"
+									src="https://www.youtube.com/embed/EPbYwTd-M3A"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen
 								/>
 							</div>
 							<div v-else class="_embed _embed-16by9 video-placeholder" />
@@ -88,7 +106,7 @@
 				</div>
 			</VueSlickCarousel>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -112,11 +130,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #ci-cd-videos-section {
-	background-color: white;
 	overflow: hidden;
 
 	.card {

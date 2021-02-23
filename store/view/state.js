@@ -5,4 +5,8 @@ export default () => ({
 		mini: false,
 		collapsed: false,
 	},
+	navbar: {
+		light: true,
+		background: 'transparent',
+	},
 });

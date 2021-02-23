@@ -1,32 +1,52 @@
 <template>
 	<article class="immudb">
-		<immudb-header />
-		<immudb-cards-section />
-		<immudb-runs-on-section />
-		<nuxt-content :document="easySetup" />
-		<nuxt-content :document="performance" />
-		<nuxt-content :document="video" />
-		<terminal-section />
-		<nuxt-content :document="features" />
-		<nuxt-content :document="usedBy" />
-		<nuxt-content :document="codeTabs" />
-		<nuxt-content :document="getStarted" />
+		<ImmudbHeader />
+		<LazyHydrate when-visible>
+			<ImmudbCardsSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ImmudbRunsOnSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="easySetup" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="performance" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="video" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<TerminalSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="features" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="usedBy" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="codeTabs" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="getStarted" />
+		</LazyHydrate>
 	</article>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
-import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
-import ImmudbCardsSection from '~/components/sections/technologies/immudb/ImmudbCardsSection';
-import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/ImmudbRunsOnSection';
-import TerminalSection from '~/components/sections/technologies/immudb/TerminalSection';
 
 export default {
+	name: 'ImmudbPage',
 	components: {
-		ImmudbHeader,
-		ImmudbCardsSection,
-		ImmudbRunsOnSection,
-		TerminalSection,
+		LazyHydrate,
 	},
 	layout: 'immudb-star-banner',
 	async asyncData ({ $content }) {
@@ -52,6 +72,17 @@ export default {
 		return {
 			title: title('immudb'),
 		};
+	},
+	mounted () {
+		this.setNavbar({
+			background: 'white',
+			light: true,
+		});
+	},
+	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 	},
 };
 </script>

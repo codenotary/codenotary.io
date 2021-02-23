@@ -1,13 +1,13 @@
 <template>
-	<page-section>
+	<PageSection>
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header class="_text-left _margin-left-0 _margin-bottom-2">
+					<PageSectionHeader class="_text-left _margin-left-0 _margin-bottom-2">
 						<h1 slot="title">
 							Immutable Data Science
 						</h1>
-					</page-section-header>
+					</PageSectionHeader>
 					<div class="ppp-info-alert">
 						<p>
 							We are the developers of <nuxt-link :to="{ name: 'technologies-immudb' }">
@@ -19,11 +19,11 @@
 			</i-row>
 			<i-row>
 				<i-column>
-					<page-section-header class="_text-left _margin-left-0 _margin-bottom-0 _margin-top-4">
+					<PageSectionHeader class="_text-left _margin-left-0 _margin-bottom-0 _margin-top-4">
 						<h2 slot="title">
 							Immutable Datasets
 						</h2>
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row class="_margin-bottom-2">
@@ -35,13 +35,14 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
 import { title } from '~/helpers/meta';
 
 export default {
+	name: 'ImmutableDataScience',
 	head() {
 		return {
 			title: title('Blog'),

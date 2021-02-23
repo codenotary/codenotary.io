@@ -1,4 +1,4 @@
-<page-section id="immudb-video-section">
+<PageSection id="immudb-video-section">
 <i-container>
 <i-row>
 <i-column>
@@ -47,4 +47,4 @@ immudb is a ledger database that has been developed with performance, scalabilit
 </i-column>
 </i-row>
 </i-container>
-</page-section>
+</PageSection>

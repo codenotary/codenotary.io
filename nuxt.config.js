@@ -3,6 +3,9 @@ import blogRoutes from './blog';
 import careersRoutes from './careers';
 import tosRoutes from './tos';
 
+const IS_PROD = process.env.NODE_ENV === 'production';
+const EXPERIMENTAL = false && !IS_PROD;
+
 export default {
 	/*
     ** ssr propery
@@ -25,7 +28,7 @@ export default {
     ** Headers of the page
     */
 	head: {
-		htmlAttrs: { lang: 'en-GB' },
+		htmlAttrs: { lang: 'en' },
 		title: DEFAULT_META.TITLE,
 		meta: [
 			...meta(),
@@ -47,6 +50,7 @@ export default {
 			{ hid: 'canonical', rel: 'canonical', href: DEFAULT_META.SITE_URL },
 		],
 	},
+
 	/*
     ** Customize the progress-bar color
     */
@@ -58,20 +62,28 @@ export default {
     ** Global CSS
     */
 	css: [
-		'vue-slick-carousel/dist/vue-slick-carousel.css',
-		'vue-slick-carousel/dist/vue-slick-carousel-theme.css',
+		{
+			src: './assets/css/colors.scss',
+			lang: 'scss',
+			ssr: false,
+		},
+		{
+			src: './assets/css/typography.scss',
+			lang: 'scss',
+			ssr: false,
+		},				
 	],
-
-
+	
 	build: {
-		parallel: process.env.NODE_ENV !== 'production',
-		cache: process.env.NODE_ENV !== 'production',
-		hardSource: process.env.NODE_ENV !== 'production',
-		extractCSS: process.env.NODE_ENV === 'production',
+		parallel: EXPERIMENTAL,
+		cache: EXPERIMENTAL,
+		hardSource: EXPERIMENTAL,
+		extractCSS: IS_PROD,
+		optimizeCSS: IS_PROD,
 		filenames: {
 			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
 			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
-		},		
+		},
 		// Extend webpack config
 		extend: (config, ctx) => {
 			config.devtool = ctx.isClient ? 'eval-source-map' : 'inline-source-map';
@@ -101,13 +113,16 @@ export default {
     */
 	plugins: [
 		{ src: '~plugins/activecampaign', mode: 'client' },
-		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/leadfeeder', mode: 'client' },
-		{ src: '~plugins/tawk', mode: 'client' },
-		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
-		{ src: "~plugins/vue-infinite-loading", mode: "client" },
 		{ src: '~plugins/prism', ssr: false },
+		{ src: '~plugins/tawk', mode: 'client' },
+		{ src: '~plugins/vgo', mode: 'client' },
+		{ src: '~plugins/vue-aos', ssr: false },
+		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
+		{ src: '~plugins/vue-infinite-loading', mode: 'client' },
+		{ src: '~plugins/vue-lazy-hydrate', ssr: false },
 		{ src: '~plugins/vue-masonry-css', ssr: false },
+		{ src: '~plugins/vue-meta', ssr: false },
 		{ src: '~plugins/vue-truncate-filter', ssr: false },
 		{ src: '~plugins/vue-typer', ssr: false },
 		'~plugins/vue-slick-carousel',
@@ -147,73 +162,66 @@ export default {
 				{
 					set: '@fortawesome/free-solid-svg-icons',
 					icons: [
+						'faAward',
+						'faBolt',
+						'faCaretDown',
+						'faCaretUp',
+						'faChartLine',
 						'faCheckSquare',
 						'faCheckCircle',
-						'faTimesCircle',
-						'faStar',
-						'faServer',
-						'faDatabase',
-						'faBolt',
-						'faLock',
 						'faChevronRight',
-						'faQuoteLeft',
+						'faDatabase',
 						'faFire',
 						'faGlobe',
-						'faAward',
-						'faChartLine',
+						'faLock',
+						'faQuoteLeft',
+						'faServer',
+						'faStar',
+						'faTimesCircle',
 					],
 				},
 				{
 					set: '@fortawesome/free-brands-svg-icons',
-					icons: ['faFacebookSquare', 'faTwitterSquare', 'faLinkedin', 'faGithubSquare'],
+					icons: [
+						'faFacebookSquare',
+						'faTwitterSquare',
+						'faLinkedin',
+						'faGithubSquare',
+					],
 				},
 			],
 		}],
 		// Doc: https://github.com/GrabarzUndPartner/nuxt-font-loader-strategy
-		['nuxt-font-loader-strategy', { 
+		['nuxt-font-loader-strategy', {
 			useWorker: false,
 			ignoreLighthouse: true,
 			ignoredEffectiveTypes: ['2g', 'slow-2g'],
 			fonts: [
 				// Open Sans
 				{
-					fileExtensions: ['woff2', 'woff'],
-					fontFamily: 'Open Sans',
+					fileExtensions: ['woff'],
+					fontFamily: 'Proxima nova',
 					fontFaces: [
 						// Font-Face
 						{
 							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-700',
+							src: 'font-proxima-nova/fonts/ProximaNova-Regular',
 							fontWeight: 400,
-							fontStyle: 'normal'
-						},
+							fontStyle: 'normal',
+						},					
 						// Font-Face
 						{
 							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-600',
-							fontWeight: 400,
-							fontStyle: 'normal'
-						},
-						// Font-Face
-						{
-							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-400',
-							fontWeight: 400,
-							fontStyle: 'normal'
-						},
-						// Font-Face
-						{
-							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-300',
+							src: 'font-proxima-nova/fonts/ProximaNova-Light',
 							fontWeight: 300,
-							fontStyle: 'normal'
+							fontStyle: 'normal',
 						},
 						// Font-Face
 						{
 							preload: true,
-							src: 'typeface-open-sans/files/open-sans-latin-400italic',
-							fontWeight: 300,
-							fontStyle: 'Italic'
+							src: 'font-proxima-nova/fonts/ProximaNova-Bold',
+							fontWeight: 700,
+							fontStyle: 'normal',
 						},
 					],
 				},
@@ -238,14 +246,9 @@ export default {
 	},
 
 	styleResources: {
-		scss: ['~/assets/variables.scss'],
-	},
-
-	webfontloader: {
-		google: {
-			// Loads Open Sans font with weights 300 and 400 + display font as swap
-			families: ['Open+Sans:100,300,400,500,600,700&display=swap'],
-		},
+		scss: [
+			'~/assets/css/variables.scss',
+		],
 	},
 
 	generate: {
@@ -259,6 +262,7 @@ export default {
 							route: `/blog/${ blogRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -270,6 +274,7 @@ export default {
 							route: `/careers/${ careersRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -281,6 +286,7 @@ export default {
 							route: `/terms-of-service/${ tosRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -302,6 +308,7 @@ export default {
 							route: `/blog/${ blogRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -313,6 +320,7 @@ export default {
 							route: `/careers/${ careersRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}
@@ -324,6 +332,7 @@ export default {
 							route: `/terms-of-service/${ tosRoutes[path] }`,
 							payload: path,
 						}];
+						return true;
 					});
 				}
 			}

@@ -8,10 +8,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="3060.5264"
-   height="1105.2632"
+   width="2849.3147"
+   height="772.26135"
    id="svg18"
-   sodipodi:docname="immudb_codenotary_black.svg"
+   sodipodi:docname="logo_black.svg"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
   <metadata
      id="metadata24">
@@ -37,64 +37,69 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="2529"
-     inkscape:window-height="1383"
+     inkscape:window-height="1376"
      id="namedview20"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.39152459"
-     inkscape:cx="1866.0269"
-     inkscape:cy="888.34807"
+     inkscape:cx="738.27155"
+     inkscape:cy="721.53636"
      inkscape:window-x="2830"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer8"
-     inkscape:document-rotation="0">
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <sodipodi:guide
-       position="105.26316,776.66909"
+       position="-0.84499062,610.47897"
        orientation="1,0"
        id="guide954" />
     <sodipodi:guide
-       position="492.09434,1000"
+       position="385.98619,833.80988"
        orientation="0,-1"
        id="guide956" />
     <sodipodi:guide
-       position="878.94729,776.6582"
+       position="772.83914,610.46808"
        orientation="1,0"
        id="guide958" />
     <sodipodi:guide
-       position="492.09434,106.65449"
+       position="385.98619,-59.535626"
        orientation="0,-1"
        id="guide960" />
     <sodipodi:guide
-       position="775.52574,551.19127"
+       position="669.41759,385.00115"
        orientation="0,-1"
        id="guide962" />
     <sodipodi:guide
-       position="1293.98,437.36132"
+       position="1187.8718,271.1712"
        orientation="0,-1"
        id="guide866" />
     <sodipodi:guide
-       position="1214.8024,663.72003"
+       position="1108.6942,497.52991"
        orientation="0,-1"
        id="guide1227" />
     <sodipodi:guide
-       position="983.49507,551.19127"
+       position="877.38692,385.00115"
        orientation="1,0"
        id="guide1290" />
     <sodipodi:guide
-       position="2955.7913,620.98032"
+       position="2849.6831,454.7902"
        orientation="1,0"
        id="guide1292" />
     <sodipodi:guide
-       position="3060.5506,551.19127"
+       position="2954.4424,385.00115"
        orientation="1,0"
        id="guide865" />
   </sodipodi:namedview>
   <g
      inkscape:groupmode="layer"
      id="layer8"
-     inkscape:label="text ">
+     inkscape:label="text "
+     transform="translate(-106.10815,-166.81171)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:333.333px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none"
@@ -108,7 +113,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:333.333px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">CodeNotary</tspan></text>
   </g>
   <g
-     transform="matrix(7.7226132,0,0,7.7226132,-756.98774,504.00557)"
+     transform="matrix(7.7226132,0,0,7.7226132,-863.09589,337.19386)"
      id="g888">
     <defs
        id="SvgjsDefs1908" />
@@ -121,7 +126,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="logo">
+     inkscape:label="logo"
+     transform="translate(-106.10815,-166.81171)">
     <g
        id="SvgjsG1909"
        featureKey="symbolFeature-0"

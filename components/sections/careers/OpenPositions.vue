@@ -1,20 +1,26 @@
 <template>
-	<page-section id="open-positions-section">
+	<PageSection
+		id="open-positions-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Open positions" />
+					<PageSectionHeader title="Open positions" />
 				</i-column>
 			</i-row>
 			<i-row>
 				<no-ssr>
 					<masonry
-						class="_width-100" :cols="{default: 3, 1000: 2, 700: 1, 400: 1}"
+						class="_width-100"
+						:cols="{default: 3, 1000: 2, 700: 1, 400: 1}"
 						:gutter="{default: '1rem', 700: '1rem'}"
 					>
 						<div
-							v-for="article in sortedOpenPositions" :key="article.slug"
-							class="item" column-width="33px"
+							v-for="article in sortedOpenPositions"
+							:key="article.slug"
+							class="item"
+							column-width="33px"
 						>
 							<i-card v-if="article.active" class="career-post">
 								<div>
@@ -37,7 +43,8 @@
 								</div>
 								<div>
 									<i-button
-										variant="primary" large
+										variant="primary"
+										large
 										block
 									>
 										More info
@@ -49,7 +56,7 @@
 				</no-ssr>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -81,9 +88,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #open-positions-section {
-	background-color: white;
-	overflow: hidden;
-
 	.career-post {
 		margin-bottom: 1rem;
 		height: 272px;

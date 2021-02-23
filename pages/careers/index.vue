@@ -1,26 +1,33 @@
 <template>
 	<div>
-		<careers-header @scrollMeTo="scrollMeTo('openPosition')" />
-		<our-values />
-		<remote-friendly />
-		<open-positions ref="openPosition" :open-positions="openPositions" />
+		<CareersHeader
+			@scrollMeTo="scrollMeTo('openPosition')"
+		/>
+		<LazyHydrate when-visible>
+			<OurValues />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<RemoteFriendly />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<OpenPositions ref="openPosition" :open-positions="openPositions" />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
-import CareersHeader from '~/components/sections/headers/CareersHeader';
-import OurValues from '~/components/sections/careers/OurValues';
-import RemoteFriendly from '~/components/sections/careers/RemoteFriendly';
-import OpenPositions from '~/components/sections/careers/OpenPositions';
 
 export default {
 	name: 'CareerPosts',
 	components: {
-		CareersHeader,
-		OurValues,
-		RemoteFriendly,
-		OpenPositions,
+		LazyHydrate,
 	},
 	async asyncData ({ $content }) {
 		const openPositions = await $content('careers')
@@ -35,7 +42,18 @@ export default {
 			title: title('Careers'),
 		};
 	},
+	mounted () {
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
+	},
 	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 		scrollMeTo(refName) {
 			if (refName && this.$refs[refName]) {
 				this.$refs[refName].$el.scrollIntoView({ block: 'start', behavior: 'smooth' });

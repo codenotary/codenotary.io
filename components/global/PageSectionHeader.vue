@@ -1,11 +1,16 @@
 <template>
-	<header class="section-header" :class="{'block': block, [`_margin-top-${top}`]: true, [`_margin-bottom-${bottom}`]: true}">
+	<header
+		:class="`section-header _text-primary ${ block ? '-block' : '' } _text-${ color } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
+	>
 		<slot name="title">
 			<h2 :is="tag">
 				{{ title }}
 			</h2>
 		</slot>
-		<div class="lead">
+		<div
+			v-if="hasDefaultSlot"
+			class="-body-1"
+		>
 			<slot />
 		</div>
 	</header>
@@ -15,32 +20,50 @@
 export default {
 	name: 'PageSectionHeader',
 	props: {
-		title: { type: String, default: '' },
-		tag: { type: String, default: 'h2' },
-		block: { type: Boolean, default: false },
-		top: { type: Number, default: 0 },
-		bottom: { type: Number, default: 6 },
+		title: {
+			type: String,
+			default: '',
+		},
+		tag: {
+			type: String,
+			default: 'h2',
+		},
+		block: {
+			type: Boolean,
+			default: false,
+		},
+		color: {
+			type: String,
+			default: 'gray-80',
+		},
+		weight: {
+			type: String,
+			default: 'normal',
+		},
+		top: {
+			type: Number,
+			default: 0,
+		},
+		bottom: {
+			type: Number,
+			default: 4,
+		},
+	},
+	computed: {
+		hasDefaultSlot () {
+			return !!this.$slots.default;
+		},
 	},
 };
 </script>
 
 <style lang="scss">
-@import '~@inkline/inkline/src/css/config/colors';
-@import '../../assets/variables';
-
 .section-header {
 	text-align: center;
 
-	h1,
-	h2,
-	h3 {
-		margin-top: 0;
-		font-weight: bold;
-		color: $color-primary;
-	}
-
 	&.-block {
 		max-width: none;
+		width: 100%;
 	}
 }
 </style>

@@ -1,25 +1,29 @@
 <template>
-	<page-section id="our-values-section">
+	<PageSection id="our-values-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Our values" />
+					<PageSectionHeader title="Our values" />
 					<p class="lead">
 						We are an open and welcoming environment, we pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 					</p>
 				</i-column>
 			</i-row>
 			<i-row
-				class="_margin-top-4" center
+				class="_margin-top-4"
+				center
 				top
 			>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/careers/hearth.svg"
+							slot="image"
+							src="/images/careers/hearth.svg"
 							alt="Intellectual Honesty"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -31,12 +35,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/careers/lightning.svg"
+							slot="image"
+							src="/images/careers/lightning.svg"
 							alt="Speed"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -48,12 +55,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/careers/star.svg"
+							slot="image"
+							src="/images/careers/star.svg"
 							alt="Excellence"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -66,7 +76,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -76,13 +86,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
 
 #our-values-section {
-	background-color: $color-gray-10;
-	overflow: hidden;
-
 	.card {
 		margin-bottom: 2rem;
 		background: transparent;

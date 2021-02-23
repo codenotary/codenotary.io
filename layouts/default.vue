@@ -2,6 +2,7 @@
 	<section class="default-layout" :class="{ scrolled, hover }">
 		<Navbar
 			id="navbar"
+			:scrolled="scrolled"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
@@ -14,22 +15,12 @@
 </template>
 
 <script>
-import Navbar from '~/components/layout/Navbar';
-import Footer from '~/components/layout/Footer';
-import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
-const SCROLL_THRESHOLD = 200;
+const SCROLL_THRESHOLD = 80;
 
 export default {
 	name: 'DefaultLayout',
-
-	components: {
-		Navbar,
-		Footer,
-		Copyright,
-	},
-
 	mixins: LayoutMixin,
 	data: () => ({
 		scrolled: false,
@@ -59,29 +50,31 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 $navbar-height: 60;
-$navbar-scrolled-height: 40;
+$navbar-scrolled-height: 60;
 
 section.default-layout {
 	#navbar {
 		position: fixed;
+		height: #{$navbar-height}px;
+		width: 100%;
 		top: 0;
 		left: 0;
-		width: 100%;
-		z-index: 999;
+		padding: 0;
 	}
 
 	#content {
-		margin-top: #{$navbar-height}px;
+		// margin-top: #{$navbar-height}px;
+		margin-top: 0;
 	}
 
 	&.scrolled {
 		#navbar {
 			height: #{$navbar-scrolled-height}px !important;
-			background: white !important;
 		}
 
 		#content {
-			margin-top: #{$navbar-scrolled-height}px;
+			// margin-top: #{$navbar-scrolled-height}px;
+			margin-top: 0;
 		}
 	}
 }

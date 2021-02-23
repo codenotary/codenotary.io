@@ -1,0 +1,18 @@
+// assets/variables.scss
+
+// TYPOGRAPHY
+$font-family-primary-base: 'Proxima nova', -apple-system, 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
+$font-size-base: 1rem;
+
+// COLORS
+$color-primary: #1460b6;
+$color-primary-light: lighten($color-primary, 15%);
+$color-primary-lightest: lighten($color-primary, 30%);
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-darkest: darken($color-primary, 20%);
+$text-dark-color: #343a40;
+$text-light-color: #f1f1f1;
+
+// OTHERS
+$border-radius-base: 3px;
+$navbar-padding-base: 12px 0;

@@ -1,12 +1,18 @@
 <template>
-	<page-section class="footer">
+	<PageSection
+		class="footer"
+		:top="4"
+		:bottom="2"
+	>
 		<i-container>
 			<i-row>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 				>
 					<img
-						class="logo" src="/images/logo/logo_white.png"
+						class="logo"
+						src="/images/logo/logo_white.png"
 						alt="CodeNotary"
 					>
 					<p>
@@ -18,25 +24,27 @@
 			</i-row>
 			<i-row class="_margin-top-1">
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<h4>Products</h4>
 					<ul class="list -unstyled">
 						<li>
 							<router-link :to="{ name: 'products-ledger-compliance' }">
-								Ledger Compliance
+								Ledger Compliance (on-premise)
 							</router-link>
 						</li>
 						<li>
 							<router-link :to="{ name: 'products-ci-cd' }">
-								Immutability for CI/CD
+								Ledger Compliance (Public Cloud)
 							</router-link>
 						</li>
 					</ul>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<h4>Technologies</h4>
@@ -51,10 +59,20 @@
 								ZTC
 							</router-link>
 						</li>
+						<li>
+							<a
+								href="https://timestamp.codenotary.com/"
+								target="_blank"
+								rel="nofollow"
+							>
+								Timestamp service
+							</a>
+						</li>						
 					</ul>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<h4>Company</h4>
@@ -77,7 +95,8 @@
 					</ul>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
 					<h4>Connect</h4>
@@ -113,11 +132,14 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-export default {};
+
+export default {
+	name: 'Footer',
+};
 </script>
 
 <style lang="scss">
@@ -125,7 +147,7 @@ export default {};
 @import "~@inkline/inkline/src/css/config";
 
 .footer {
-	background: $color-gray-90;
+	background-color: $color-gray-90 !important;
 
 	.logo {
 		height: 64px;

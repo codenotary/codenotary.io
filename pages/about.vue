@@ -2,34 +2,52 @@
 	<div>
 		<about-header />
 		<hr>
-		<about-features-section />
-		<management-team-section />
-		<board-of-directors-section />
-		<scientific-board-section v-if="false" />
+		<LazyHydrate when-visible>
+			<about-features-section />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<management-team-section />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<board-of-directors-section />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<scientific-board-section v-if="false" />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
-import AboutHeader from '~/components/sections/headers/AboutHeader';
-import AboutFeaturesSection from '~/components/sections/features/AboutFeaturesSection';
-import ManagementTeamSection from '~/components/sections/teams/ManagementTeamSection';
-import BoardOfDirectorsSection from '~/components/sections/teams/BoardOfDirectorsSection';
-import ScientificBoardSection from '~/components/sections/teams/ScientificBoardSection';
 
 export default {
+	name: 'About',
 	components: {
-		BoardOfDirectorsSection,
-		ScientificBoardSection,
-		ManagementTeamSection,
-		AboutFeaturesSection,
-		AboutHeader,
+		LazyHydrate,
 	},
-	layout: 'banner-codenotary',
 	head() {
 		return {
 			title: title('About us'),
 		};
+	},
+	mounted () {
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
+	},
+	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 	},
 };
 </script>

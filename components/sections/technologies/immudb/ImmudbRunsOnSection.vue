@@ -1,29 +1,36 @@
 <template>
-	<page-section id="immudb-runs-on-section">
+	<PageSection id="immudb-runs-on-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Runs on" :bottom="2" />
+					<PageSectionHeader title="Runs on" :bottom="2" />
 				</i-column>
 			</i-row>
 			<i-row>
 				<i-column>
 					<i-tabs
-						class="analyze-and-manage-tabs" stretch
+						class="analyze-and-manage-tabs"
+						stretch
 						block
 					>
 						<i-tab
-							v-for="item in items" :key="item.title"
-							class="_padding-top-2" :title="item.title"
+							v-for="item in items"
+							:key="item.title"
+							class="_padding-top-2"
+							:title="item.title"
 						>
 							<i-row>
 								<i-column
-									v-for="(subitem, idx) in item.subitems" :key="`${subitem}-${idx}`"
-									xs="6" sm="4"
-									md="3" lg="3"
+									v-for="(subitem, idx) in item.subitems"
+									:key="`${subitem}-${idx}`"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="3"
 								>
-									<story-card
-										:title="subitem" :color="getColor(6)"
+									<StoryCard
+										:title="subitem"
+										:color="getColor(6)"
 										outlined
 									/>
 								</i-column>
@@ -33,20 +40,14 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
 import colorUtils from '~/mixins/colorUtils';
-import StoryCard from '~/components/common/cards/StoryCard';
 
 export default {
 	name: 'ImmudbRunsOnSection',
-
-	components: {
-		StoryCard,
-	},
-
 	mixins: [colorUtils],
 	data: () => ({
 		items: [
@@ -55,7 +56,6 @@ export default {
 			{ title: 'Connectors', subitems: ['Java', '.Net', 'Node.js', 'Python', 'Go', 'REST API'] },
 		],
 	}),
-
 	beforeDestroy () {
 		this.items = null;
 	},

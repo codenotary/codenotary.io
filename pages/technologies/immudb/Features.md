@@ -1,11 +1,11 @@
-<page-section id="immudb-features-section">
+<PageSection id="immudb-features-section">
 <i-container>
 <i-row>
 <i-column>
     <img class="image -responsive _margin-bottom-4" width="400" src="/images/immudb/rocket.jpg" alt="Features" />
-    <page-section-header :bottom="2" title="Features">
+    <PageSectionHeader :bottom="2" title="Features">
         A super-fast, immutable, and cryptographically verifiable ledger database that provides:
-    </page-section-header>
+    </PageSectionHeader>
 </i-column>
 </i-row>
 <i-row>
@@ -24,4 +24,4 @@
 </i-column>
 </i-row>
 </i-container>
-</page-section>
+</PageSection>
