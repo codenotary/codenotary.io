@@ -46,11 +46,6 @@
 								immudb
 							</router-link>
 						</li>
-						<li>
-							<router-link :to="{ name: 'technologies-ztc' }">
-								ZTC
-							</router-link>
-						</li>
 					</ul>
 				</i-column>
 				<i-column
