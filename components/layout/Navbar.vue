@@ -39,18 +39,6 @@
 					</i-nav-item>
 				</i-nav>
 
-				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item class="header" disabled>
-						Products
-					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
-						Ledger Compliance (on-premise)
-					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ci-cd' }">
-						Ledger Compliance (Public Cloud)
-					</i-nav-item>
-				</i-nav>
-
 				<!-- TECHNOLOGIES -->
 				<i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
 					<i-nav-item :class="{ '-active': subRouteActive('/technologies') }">
