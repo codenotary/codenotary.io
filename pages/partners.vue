@@ -20,13 +20,13 @@ export default {
 
 	data: () => ({
 		partners: [
-                        {
-                                title: 'wizlynx group',
-                                image: '/images/partners/wlx_logo.png',
-                                tag: 'Europe',
-                                link: { url: 'https://www.wizlynxgroup.com/', target: '_blank' },
-                                text: '',
-                        },
+			{
+				title: 'wizlynx group',
+				image: '/images/partners/wlx_logo.png',
+				tag: 'Europe',
+				link: { url: 'https://www.wizlynxgroup.com/', target: '_blank' },
+				text: '',
+			},
 			{
 				title: 'DevopsInternational',
 				image: '/images/partners/devopsint_logo.png',
