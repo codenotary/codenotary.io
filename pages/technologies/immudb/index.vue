@@ -4,6 +4,7 @@
 		<immudb-cards-section />
 		<immudb-runs-on-section />
 		<nuxt-content :document="easySetup" />
+		<ImmudbCiCdVideos />
 		<nuxt-content :document="performance" />
 		<nuxt-content :document="video" />
 		<terminal-section />
@@ -20,6 +21,7 @@ import ImmudbHeader from '~/components/sections/headers/ImmudbHeader';
 import ImmudbCardsSection from '~/components/sections/technologies/immudb/ImmudbCardsSection';
 import ImmudbRunsOnSection from '~/components/sections/technologies/immudb/ImmudbRunsOnSection';
 import TerminalSection from '~/components/sections/technologies/immudb/TerminalSection';
+import ImmudbCiCdVideos from '~/components/sections/technologies/immudb/ImmudbCiCdVideos';
 
 export default {
 	components: {
@@ -27,6 +29,7 @@ export default {
 		ImmudbCardsSection,
 		ImmudbRunsOnSection,
 		TerminalSection,
+		ImmudbCiCdVideos,
 	},
 	layout: 'immudb-star-banner',
 	async asyncData ({ $content }) {
