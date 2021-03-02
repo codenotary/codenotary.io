@@ -44,7 +44,7 @@ export default {
 		page: 2,
 		timeout: null,
 		settings: {
-			slidesToShow: 3,
+			slidesToShow: 2,
 			rows: 1,
 			arrows: true,
 			dots: true,
@@ -56,13 +56,13 @@ export default {
 				{
 					breakpoint: 900,
 					settings: {
-						slidesToShow: 3,
+						slidesToShow: 2,
 					},
 				},
 				{
 					breakpoint: 600,
 					settings: {
-						slidesToShow: 2,
+						slidesToShow: 1,
 					},
 				},
 				{
