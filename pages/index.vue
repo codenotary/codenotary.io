@@ -18,6 +18,5 @@ export default {
 		FeaturesSection,
 		CustomerSuccessStories,
 	},
-	layout: 'banner',
 };
 </script>
