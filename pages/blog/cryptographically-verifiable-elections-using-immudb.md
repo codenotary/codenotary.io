@@ -1,14 +1,14 @@
 ---
 title: "Cryptographically verifiable elections using immudb and Golang"
 date: "2021-03-11"
-image: "/images/blog/gophermasker.png"
+image: "https://raw.githubusercontent.com/padurean/immuvoting/main/client/immuvoting-logo.svg"
 tags: ["Go", "immudb", "immutability", "usecase", "election"]
 
 ---
 
 # Cryptographically verifiable elections using immudb and Golang
 
-<img src="https://github.com/padurean/immuvoting/blob/main/client/immuvoting-logo.svg" height="85">
+<img src="https://raw.githubusercontent.com/padurean/immuvoting/main/client/immuvoting-logo.svg" height="85">
 
 Valentin, one of our engineers started a nice side project to show the possibilities of immudb. His goal is to showcase a website that provides a secure way for elections. 
 
@@ -51,7 +51,8 @@ cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" ./client/
 
 ## Short demo video
 
-[![immuvoting in action](https://github.com/padurean/immuvoting/blob/main/immuvoting-demo-thumbnail.png)](https://youtu.be/brFN6TzmI2M "immuvoting in action: demo video")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/brFN6TzmI2M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ---
 
