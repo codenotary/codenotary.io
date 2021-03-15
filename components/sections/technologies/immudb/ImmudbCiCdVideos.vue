@@ -8,29 +8,35 @@
 				<i-column class="_margin-0 _padding-0">
 					<page-section-header
 						title="Community videos"
-						:top="0"
-						:bottom="2"
+						top="0"
+						bottom="2"
 					/>
 				</i-column>
 			</i-row>
-			<VueSlickCarousel v-bind="settings" @beforeChange="page = $event">
-				<div>
-					<i-row middle class="_padding-1">
-						<i-column
-							xs="12"
-							sm="12"
-							md="12"
-						>
-							<div v-if="page === 2" class="_embed _embed-16by9">
-								<iframe
-									width="504" height="284"
-									src="https://www.youtube.com/embed/rQ4iZAM14m0" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-								/>
-							</div>
-							<div v-else class="_embed _embed-16by9 video-placeholder" />
-						</i-column>
-					</i-row>
+			<VueSlickCarousel
+				class="fill-width"
+				v-bind="settings"
+				@beforeChange="page = $event"
+			>
+				<div class="_padding-1-2">
+					<div class="_embed _embed-16by9">
+						<iframe
+							width="504" height="284"
+							src="https://www.youtube.com/embed/rQ4iZAM14m0" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+						/>
+					</div>
+					<!-- <div v-else class="_embed _embed-16by9 video-placeholder" /> -->
+				</div>
+				<div class="_padding-1-2">
+					<div class="_embed _embed-16by9">
+						<iframe
+							width="504" height="284"
+							src="https://www.youtube.com/embed/01_wEMdOp1U" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+						/>
+					</div>
+					<!-- <div v-else class="_embed _embed-16by9 video-placeholder" /> -->
 				</div>
 			</VueSlickCarousel>
 		</i-container>
