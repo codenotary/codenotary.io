@@ -1,6 +1,5 @@
 ---
-title: "Linux & Systems Application 
-QA Engineer"
+title: "QA Engineer"
 location: "Remote" 
 type: "Full time" 
 requires: "" 
