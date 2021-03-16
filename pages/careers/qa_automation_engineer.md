@@ -20,23 +20,16 @@ Our solution CodeNotary Ledger Compliance® can be used on-premise or in the clo
 ## Qualifications
 
 - Good knowledge of English (spoken/written)
-- Excellent knowledge of Linux/Unix OS (aware how things work and able to
-investigate and debug issues and crashes)
-
-- Good knowledge of Microsoft Windows OS (how services, registry and
-configuration/program file structure works)
+- Excellent knowledge of Linux/Unix OS (aware how things work and able to investigate and debug issues and crashes)
+- Good knowledge of Microsoft Windows OS (how services, registry and configuration/program file structure works)
 - Experience in Python and Linux/Unix shell scripting
 - Ability to read different programming languages and write test-cases for them
-- Experience with test automation scripting frameworks (Junit, Robot, Selenium,
-Sikuli, or others)
-- 5+ years of experience in testing Enterprise software products and in particular
-web applications
-- Experience in test strategy, test planning, test cases creation, execution, and
-defect reporting
-- Hands-on experience with DevOps tools such as Public Cloud, Jenkins,
-Kubernetes, Docker, etc.
+- Experience with test automation scripting frameworks (Junit, Robot, Selenium, Sikuli, or others)
+- 5+ years of experience in testing Enterprise software products and in particular web applications
+- Experience in test strategy, test planning, test cases creation, execution, and defect reporting
+- Hands-on experience with DevOps tools such as Public Cloud, Jenkins, Kubernetes, Docker, etc.
 - Experience with performance testing and Linux performance analysis tools
-- Good knowledge of Relational Databases / SQL
+- Good knowledge of Relational Databases/SQL
 - Experience with filesystem-, cache-, or database core technologies
 - Good team player and communication skills
 
