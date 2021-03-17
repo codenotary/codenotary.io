@@ -11,53 +11,53 @@
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature
+					<CommonFeature
 						subtitle="Immutable and tamperproof transactional ledgers"
 						image="/images/features/immutable.svg"
 					>
 						<p class="lead">
 							Data cannot be deleted or modified. Support for Intel SGX enclaves.
 						</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature
+					<CommonFeature
 						subtitle="Always online - no archival system"
 						image="/images/features/hand.svg"
 					>
 						<p class="lead">
 							Virtual Appliance, Linux or Kubernetes deployment
 						</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature
+					<CommonFeature
 						subtitle="Millions of transaction per second"
 						image="/images/features/cogwheels.svg"
 					>
 						<p class="lead">
 							Can processes millions of transactions per second reliably and with the cryptographic verification.
 						</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature
+					<CommonFeature
 						subtitle="Compliance and Audit"
 						image="/images/features/audit.svg"
 					>
 						<p class="lead">
 							Complete and sequenced history. Query capabilities for auditors.
 						</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 			</i-row>
 		</i-container>

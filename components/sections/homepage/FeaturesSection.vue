@@ -3,7 +3,7 @@
 		<i-container>
 			<i-row>
 				<i-column xs="12" lg="4">
-					<Feature title="Immutable" image="/images/features/immutable.svg">
+					<CommonFeature title="Immutable" image="/images/features/immutable.svg">
 						<ul class="list -unstyled">
 							<li>
 								Any kind of key-value. Clients can choose how to structure data.
@@ -18,10 +18,10 @@
 								Address regulatory compliance: SEC 17a-4(f), CFTC 1.31(d), FINRA, and other regulations.
 							</li>
 						</ul>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column xs="12" lg="4">
-					<Feature title="Auditable" image="/images/features/auditable.svg">
+					<CommonFeature title="Auditable" image="/images/features/auditable.svg">
 						<ul class="list -unstyled">
 							<li>
 								Tamper-evident history system with <strong>cryptographic proof</strong>
@@ -31,10 +31,10 @@
 							</li>
 							<li>If tampered, clients and auditors will notice that and take actions.</li>
 						</ul>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column xs="12" lg="4">
-					<Feature title="Secure" image="/images/features/secure.svg">
+					<CommonFeature title="Secure" image="/images/features/secure.svg">
 						<ul class="list -unstyled">
 							<li>
 								Data ownership is verifiable by clients and auditors. Built-in immutable data history against Ransomware (malware encryption).
@@ -46,7 +46,7 @@
 								Keys additions and revocations are immutably stored into the database.
 							</li>
 						</ul>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 			</i-row>
 			<i-row v-if="true" class=" _margin-top-4">
@@ -54,33 +54,33 @@
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Record data when it happens" image="/images/features/record_data.svg">
+					<CommonFeature subtitle="Record data when it happens" image="/images/features/record_data.svg">
 						<p>Database changes, table history, data access, audit information.</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Immediate data query" image="/images/features/immediate_query.svg">
+					<CommonFeature subtitle="Immediate data query" image="/images/features/immediate_query.svg">
 						<p>Extremely fast query engine and always ready to use.</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Cryptographic verification built-in" image="/images/features/cryptographic_verifcation.svg">
+					<CommonFeature subtitle="Cryptographic verification built-in" image="/images/features/cryptographic_verifcation.svg">
 						<p>Every entry is verifiable using cryptographic proof.</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 				<i-column
 					xs="12" sm="6"
 					lg="3"
 				>
-					<Feature subtitle="Always available" image="/images/features/online.svg">
+					<CommonFeature subtitle="Always available" image="/images/features/online.svg">
 						<p>No archive system, data is online and never out of reach.</p>
-					</Feature>
+					</CommonFeature>
 				</i-column>
 			</i-row>
 			<i-row class=" _margin-top-4">
@@ -107,12 +107,8 @@
 </template>
 
 <script>
-import Feature from '~/components/common/Feature';
-
 export default {
-	components: {
-		Feature,
-	},
+	name: 'FeaturesSection',
 };
 </script>
 
