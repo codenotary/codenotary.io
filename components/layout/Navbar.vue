@@ -12,20 +12,12 @@
 		>
 			<img
 				class="logo _padding-y-1-2"
-				:src="`/images/logo/logo_${ navbarLight || scrolled ? 'black' : 'white' }.svg`"
+				:src="`/images/logo/logo_blue.svg`"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
 		<i-navbar-items class="_justify-content-end">
 			<i-nav>
-				<!-- BLOG POSTS -->
-				<i-nav-item
-					class="_text-xs-black _visible-lg-and-up"
-					:to="{ name: 'blog' }"
-				>
-					Blog
-				</i-nav-item>
-
 				<!-- PRODUCTS (lg-and-up) -->
 				<i-dropdown
 					class="navbar-dropdown _visible-lg-and-up"
@@ -102,99 +94,114 @@
 					</i-nav-item>
 				</i-nav>
 
-				<!-- TECHNOLOGIES (lg-and-up) -->
-				<i-dropdown
-					class="navbar-dropdown _visible-lg-and-up"
-					trigger="hover"
-					@change="technologiesMenuOpen = $event"
+				<i-nav-item
+					class="_text-xs-black _visible-lg-and-up"
+					:to="{ name: 'technologies-immudb' }"
 				>
-					<i-nav-item
-						:class="{ '-active': subRouteActive('/technologies') }"
-					>
-						Technologies
-						<fa
-							class="_margin-left-1-4"
-							:icon="`caret-${ technologiesMenuOpen ? 'up' : 'down' }`"
-						/>
-					</i-nav-item>
-					<i-dropdown-menu>
-						<i-row class="_margin-0 _padding-0">
-							<i-column
-								class="_margin-0 _padding-0"
-								xs="12"
-							>
-								<nuxt-link
-									class="freeform-item _padding-1"
-									:to="{ name: 'technologies-immudb' }"
-								>
-									<h6
-										class="title _margin-0 _padding-xs-0"
-									>
-										immudb
-									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
-										World’s fastest immutable database
-									</p>
-								</nuxt-link>
-							</i-column>
-							<i-column
-								class="_margin-0 _padding-0"
-								xs="12"
-							>
-								<a
-									class="freeform-item _padding-1"
-									href="https://timestamp.codenotary.com/"
-									target="_blank"
-									rel="nofollow"
-								>
-									<h6
-										class="title _margin-0 _padding-xs-0"
-									>
-										Timestamp service
-									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
-										Tamperproof provenance for your code and CI/CD pipeline
-									</p>
-								</a>
-							</i-column>
-						</i-row>
-					</i-dropdown-menu>
-				</i-dropdown>
-				<!-- TECHNOLOGIES (md-and-down) -->
-				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item
-						class="header"
-						disabled
-					>
-						Technologies
-					</i-nav-item>
-					<i-nav-item
-						:to="{ name: 'technologies-immudb' }"
-					>
-						immudb
-					</i-nav-item>
-					<i-nav-item
-						href="https://timestamp.codenotary.com/"
-						target="_blank"
-						rel="nofollow"
-					>
-						Timestamp service
-					</i-nav-item>
-				</i-nav>
+					immudb
+				</i-nav-item>
+
+				<!-- BLOG POSTS -->
+				<i-nav-item
+					class="_text-xs-black _visible-lg-and-up"
+					:to="{ name: 'blog' }"
+				>
+					Blog
+				</i-nav-item>
+
+				<!-- TECHNOLOGIES (lg-and-up) -->
+				<!--				<i-dropdown-->
+				<!--					class="navbar-dropdown _visible-lg-and-up"-->
+				<!--					trigger="hover"-->
+				<!--					@change="technologiesMenuOpen = $event"-->
+				<!--				>-->
+				<!--					<i-nav-item-->
+				<!--						:class="{ '-active': subRouteActive('/technologies') }"-->
+				<!--					>-->
+				<!--						Technologies-->
+				<!--						<fa-->
+				<!--							class="_margin-left-1-4"-->
+				<!--							:icon="`caret-${ technologiesMenuOpen ? 'up' : 'down' }`"-->
+				<!--						/>-->
+				<!--					</i-nav-item>-->
+				<!--					<i-dropdown-menu>-->
+				<!--						<i-row class="_margin-0 _padding-0">-->
+				<!--							<i-column-->
+				<!--								class="_margin-0 _padding-0"-->
+				<!--								xs="12"-->
+				<!--							>-->
+				<!--								<nuxt-link-->
+				<!--									class="freeform-item _padding-1"-->
+				<!--									:to="{ name: 'technologies-immudb' }"-->
+				<!--								>-->
+				<!--									<h6-->
+				<!--										class="title _margin-0 _padding-xs-0"-->
+				<!--									>-->
+				<!--										immudb-->
+				<!--									</h6>-->
+				<!--									<p class="_margin-0 padding-top-1-2 subtitle">-->
+				<!--										World’s fastest immutable database-->
+				<!--									</p>-->
+				<!--								</nuxt-link>-->
+				<!--							</i-column>-->
+				<!--							<i-column-->
+				<!--								class="_margin-0 _padding-0"-->
+				<!--								xs="12"-->
+				<!--							>-->
+				<!--								<a-->
+				<!--									class="freeform-item _padding-1"-->
+				<!--									href="https://timestamp.codenotary.com/"-->
+				<!--									target="_blank"-->
+				<!--									rel="nofollow"-->
+				<!--								>-->
+				<!--									<h6-->
+				<!--										class="title _margin-0 _padding-xs-0"-->
+				<!--									>-->
+				<!--										Timestamp service-->
+				<!--									</h6>-->
+				<!--									<p class="_margin-0 padding-top-1-2 subtitle">-->
+				<!--										Tamperproof provenance for your code and CI/CD pipeline-->
+				<!--									</p>-->
+				<!--								</a>-->
+				<!--							</i-column>-->
+				<!--						</i-row>-->
+				<!--					</i-dropdown-menu>-->
+				<!--				</i-dropdown>-->
+				<!--				&lt;!&ndash; TECHNOLOGIES (md-and-down) &ndash;&gt;-->
+				<!--				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>-->
+				<!--					<i-nav-item-->
+				<!--						class="header"-->
+				<!--						disabled-->
+				<!--					>-->
+				<!--						Technologies-->
+				<!--					</i-nav-item>-->
+				<!--					<i-nav-item-->
+				<!--						:to="{ name: 'technologies-immudb' }"-->
+				<!--					>-->
+				<!--						immudb-->
+				<!--					</i-nav-item>-->
+				<!--					<i-nav-item-->
+				<!--						href="https://timestamp.codenotary.com/"-->
+				<!--						target="_blank"-->
+				<!--						rel="nofollow"-->
+				<!--					>-->
+				<!--						Timestamp service-->
+				<!--					</i-nav-item>-->
+				<!--				</i-nav>-->
 
 				<!-- ABOUT US -->
-				<i-nav-item
-					:to="{ name: 'about' }"
-				>
-					About us
-				</i-nav-item>
+				<!--				<i-nav-item-->
+				<!--					:to="{ name: 'about' }"-->
+				<!--				>-->
+				<!--					About us-->
+				<!--				</i-nav-item>-->
 
 				<!-- PARTNERS -->
-				<i-nav-item
-					:to="{ name: 'partners' }"
-				>
-					Partners
-				</i-nav-item>
+				<!--				<i-nav-item-->
+				<!--					:to="{ name: 'partners' }"-->
+				<!--				>-->
+				<!--					Partners-->
+				<!--				</i-nav-item>-->
 
 				<!-- CONTACT US -->
 				<i-nav-item
@@ -262,7 +269,8 @@ export default {
 $logo-height: 48;
 
 .navbar {
-	background: transparent !important;
+	//background: transparent !important;
+	background: white !important;
 	transition: all 0.15s ease-out;
 	z-index: 999;
 
@@ -277,12 +285,15 @@ $logo-height: 48;
 	.item,
 	.title {
 		transition: all 0.3s ease-out;
+		color: $text-dark-color !important;
 	}
 
+	/*
 	&.-bg-light-transparent,
 	&.-bg-dark-transparent {
 		background-color: transparent !important;
 	}
+	*/
 
 	&.-bg-white {
 		background-color: white !important;

@@ -10,9 +10,12 @@ $color-primary-light: lighten($color-primary, 15%);
 $color-primary-lightest: lighten($color-primary, 30%);
 $color-primary-dark: darken($color-primary, 10%);
 $color-primary-darkest: darken($color-primary, 20%);
-$text-dark-color: #343a40;
+$text-dark-color: #3d4753;
+$text-muted_blue-color: #7c8ca2;
 $text-light-color: #f1f1f1;
 
 // OTHERS
 $border-radius-base: 3px;
 $navbar-padding-base: 12px 0;
+
+$background-grey: #edf0f4;

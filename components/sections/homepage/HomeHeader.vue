@@ -5,21 +5,23 @@
 	>
 		<i-row class="_align-items-center">
 			<i-column lg="6">
-				<h1 class="h2 _font-weight-bold _text-white">
-					Immutable change history of your business data with CodeNotary Ledger Compliance&reg;
+				<h1 class="h2 _font-weight-bold cn-text-dark">
+					Trust Data
 				</h1>
-				<p class="lead _text-white">
-					On-premise or in the cloud; Secure, actionable observability with real cryptographic verification,
-					processing millions of transactions a second.
+				<h1 class="h2 _font-weight-bold cn-text-dark">
+					Restore integrity
+				</h1>
+				<p class="lead cn-text-muted_blue">
+					immutable, tamper-evident, change history for your data
 				</p>
-				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">
-					Powered by the world’s fastest immutable database.
-				</h5>
+<!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
+<!--					Powered by the world’s fastest immutable database.-->
+<!--				</h5>-->
 				<p class="action">
 					<i-button
 						size="lg"
 						outline
-						variant="white"
+						variant="dark"
 						href="https://democnlc.codenotary.com"
 						target="_blank"
 						rel="nofollow"
@@ -101,7 +103,7 @@ export default {
 $mascot-width: 175px;
 
 #home-header {
-	background: $color-primary;
+	background: $background-grey;
 	// -webkit-gradient(
 	// 	linear,
 	// 	left top,
