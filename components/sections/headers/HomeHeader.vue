@@ -3,11 +3,10 @@
 		<i-row class="_align-items-center">
 			<i-column lg="6">
 				<h1 class="h2 _font-weight-bold">
-					World's first cryptographically signed and client-verifiable journal with CodeNotary Ledger Compliance&reg;
+					End-to-end tampering/manipulation protection for your software development cycle
 				</h1>
 				<p class="lead">
-					Deploy anywhere; Store transactions, CI/CD pipelines, audit-trails, IoT telemetry, ML test sets  with cryptographic verification;
-					Processing millions of transactions a second.
+					Add trust, integrity and transparency for all identities and artefacts to your existing CI/CD pipeline in a heartbeat.
 				</p>
 				<p class="_font-weight-bold">
 					Powered by the world’s fastest immutable database.
