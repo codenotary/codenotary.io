@@ -1,8 +1,6 @@
 <template>
 	<div>
-		<HomeHeader
-			@onLedgerComplianceModal="ledgerComplianceModalOpen = true"
-		/>
+		<HomeHeader/>
 		<LazyHydrate when-visible>
 			<PageSectionHeader
 				title="Hundreds of companies trust CodeNotary"

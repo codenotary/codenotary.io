@@ -18,24 +18,20 @@
 <!--					Powered by the world’s fastest immutable database.-->
 <!--				</h5>-->
 				<p class="action">
-					<i-button
-						size="lg"
-						outline
-						variant="dark"
+					<cn-button
 						href="https://democnlc.codenotary.com"
-						target="_blank"
-						rel="nofollow"
+						type="dark"
 					>
 						Demo
-					</i-button>
-					<i-button
-						variant="white"
-						size="lg"
+					</cn-button>
+					<cn-button
+						type="dark"
+						outline
 						class="_margin-left-1"
-						@click="$emit('onLedgerComplianceModal')"
+						:to="{ name: 'contact' }"
 					>
-						Start trial
-					</i-button>
+						Contact us
+					</cn-button>
 				</p>
 			</i-column>
 			<i-column
@@ -118,6 +114,7 @@ $mascot-width: 175px;
 
 	h1 {
 		margin-top: 0;
+		margin-bottom: 0;
 	}
 
 	@include breakpoint-down(md) {
