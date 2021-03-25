@@ -209,6 +209,17 @@
 				>
 					Contact us
 				</i-nav-item>
+				<transition name="fade">
+					<cn-button
+						v-if="scrolled"
+						href="https://democnlc.codenotary.com"
+						type="dark"
+						size="md"
+						outline
+					>
+						Download
+					</cn-button>
+				</transition>
 			</i-nav>
 		</i-navbar-items>
 	</i-navbar>
@@ -280,7 +291,7 @@ $logo-height: 48;
 		margin-right: 8px;
 	}
 
-	a,
+	a:not(.button),
 	span,
 	.item,
 	.title {
@@ -362,7 +373,7 @@ $logo-height: 48;
 					max-height: #{$logo-height}px;
 				}
 
-				a,
+				a:not(.button),
 				.item,
 				.title {
 					color: $text-dark-color !important;
@@ -513,5 +524,18 @@ $logo-height: 48;
 			}
 		}
 	}
+}
+
+.fade-enter-active {
+	transition: opacity 0.5s !important;
+}
+
+.fade-leave-active {
+	transition: opacity 0.25s !important;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
 }
 </style>
