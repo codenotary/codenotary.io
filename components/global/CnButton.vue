@@ -7,6 +7,7 @@
 		:target="href ? '_blank' : null"
 		:rel="href ? 'nofollow' : null"
 		:to="to"
+		v-bind="$attrs"
 		@click="$emit('click', $event)"
 	>
 		<slot />

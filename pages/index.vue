@@ -2,6 +2,9 @@
 	<div>
 		<HomeHeader/>
 		<LazyHydrate when-visible>
+			<highlighted-cards />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<PageSectionHeader
 				title="Hundreds of companies trust CodeNotary"
 				:top="0"
