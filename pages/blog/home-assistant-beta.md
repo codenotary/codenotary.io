@@ -5,7 +5,7 @@ image: "https://www.home-assistant.io/images/hero_screenshot.png"
 tags: ["Home Assistant", "GitHub", "securedevops", "codesigning"]
 ---
 
-<img src=""https://www.home-assistant.io/images/hero_screenshot.png"">
+<img src="https://www.home-assistant.io/images/hero_screenshot.png">
 
 A few weeks ago the developers of the famous [Home Assistant](https://www.home-assistant.io/) project reached out to us if we would work with them to secure their build and deployment process.
 
