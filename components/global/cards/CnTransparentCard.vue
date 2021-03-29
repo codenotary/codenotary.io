@@ -1,0 +1,60 @@
+<template>
+	<div class="transparent-card">
+		<h3 class="_font-weight-bold">
+			{{ title }}
+		</h3>
+		<div class="card-picture" :style="dynamicBackground"/>
+		<h6 class="_font-weight-bold subtitle">
+			{{ subtitle }}
+		</h6>
+	</div>
+</template>
+
+<script>
+export default {
+	name: 'CnTransparentCard',
+	props: {
+		title: {
+			type: String,
+			default: null,
+		},
+		subtitle: {
+			type: String,
+			default: null,
+		},
+		imageUrl: {
+			type: String,
+			default: '/images/placeholder.svg',
+		},
+	},
+	computed: {
+		dynamicBackground() {
+			return {
+				background: `grey url('${ this.imageUrl }') no-repeat center !important`,
+				'background-size': 'cover !important',
+			};
+		},
+	},
+};
+</script>
+
+<style lang="scss" scoped>
+.transparent-card {
+	max-width: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.card-picture {
+		height: 150px;
+		width: 150px;
+	}
+
+	.subtitle {
+		max-width: 150px;
+		margin: 10px 0 0;
+		align-self: start;
+	}
+}
+</style>

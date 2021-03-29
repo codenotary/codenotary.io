@@ -4,6 +4,23 @@
 		<LazyHydrate when-visible>
 			<highlighted-cards />
 		</LazyHydrate>
+
+		<i-container class="_margin-top-8">
+			<hr/>
+		</i-container>
+
+		<LazyHydrate when-visible>
+			<PageSectionHeader
+				weight="bold"
+				title="WHAT WE DO"
+				:top="0"
+				:bottom="0"
+			/>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<WhatWeDoSection />
+		</LazyHydrate>
+
 		<LazyHydrate when-visible>
 			<PageSectionHeader
 				title="Hundreds of companies trust CodeNotary"
