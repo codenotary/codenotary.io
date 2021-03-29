@@ -1,5 +1,5 @@
 ---
-title: "Top 10 GitHub project Home Assistant starts to secure code and deployments with CodeNotary"
+title: "Top GitHub project Home Assistant starts to secure code and deployments with CodeNotary"
 date: "2021-03-29"
 image: "https://www.home-assistant.io/images/hero_screenshot.png"
 tags: ["Home Assistant", "GitHub", "securedevops", "codesigning"]
