@@ -22,9 +22,13 @@
 						<i-dropdown-item :to="{ name: 'products-ledger-compliance' }">
 							Ledger Compliance (on-premise)
 						</i-dropdown-item>
-						<i-dropdown-item :to="{ name: 'products-ci-cd' }">
-							Ledger Compliance (Public Cloud)
+						<i-dropdown-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+							Ledger Compliance (Metrics and Logs)
 						</i-dropdown-item>
+                                                <i-dropdown-item :to="{ name: 'products-ci-cd' }">
+                                                        Ledger Compliance (Public Cloud)
+                                                </i-dropdown-item>
+
 					</i-dropdown-menu>
 				</i-dropdown>
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
@@ -34,8 +38,11 @@
 					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
 						Ledger Compliance (on-premise)
 					</i-nav-item>
+                                        <i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+                                                Ledger Compliance (Metrics and Logs)
+                                        </i-nav-item>
 					<i-nav-item :to="{ name: 'products-ci-cd' }">
-						Ledger Compliance (Public Cloud)
+						Ledger Compliance (Trusted CI/CD Service)
 					</i-nav-item>
 				</i-nav>
 
