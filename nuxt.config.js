@@ -178,6 +178,8 @@ export default {
 						'faServer',
 						'faStar',
 						'faTimesCircle',
+						'faChevronLeft',
+						'faChevronDown',
 					],
 				},
 				{

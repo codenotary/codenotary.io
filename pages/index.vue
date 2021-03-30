@@ -21,6 +21,25 @@
 			<WhatWeDoSection />
 		</LazyHydrate>
 
+		<i-container class="_margin-top-8">
+			<hr/>
+		</i-container>
+		<LazyHydrate when-visible>
+			<PageSectionHeader
+				title="Key benefits of using CodeNotary Ledger Compliance"
+				:top="0"
+				:bottom="0"
+			/>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<i-container class="_display-flex _align-items-center _justify-content-center _margin-bottom-6">
+				<fa class="icon" icon="chevron-down" />
+			</i-container>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<BenefitsSection />
+		</LazyHydrate>
+
 		<LazyHydrate when-visible>
 			<PageSectionHeader
 				title="Hundreds of companies trust CodeNotary"
