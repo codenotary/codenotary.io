@@ -5,34 +5,29 @@
 			<highlighted-cards />
 		</LazyHydrate>
 
-		<i-container class="_margin-top-8">
-			<hr/>
-		</i-container>
-
 		<LazyHydrate when-visible>
-			<PageSectionHeader
-				weight="bold"
-				title="WHAT WE DO"
-				:top="0"
-				:bottom="0"
-			/>
+			<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-top-8">
+				<hr class="_width-100"/>
+				<PageSectionHeader
+					weight="bold"
+					title="WHAT WE DO"
+					:top="0"
+					:bottom="0"
+				/>
+			</i-container>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<WhatWeDoSection />
 		</LazyHydrate>
 
-		<i-container class="_margin-top-8">
-			<hr/>
-		</i-container>
 		<LazyHydrate when-visible>
-			<PageSectionHeader
-				title="Key benefits of using CodeNotary Ledger Compliance"
-				:top="0"
-				:bottom="0"
-			/>
-		</LazyHydrate>
-		<LazyHydrate when-visible>
-			<i-container class="_display-flex _align-items-center _justify-content-center _margin-bottom-6">
+			<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-top-8 _margin-bottom-6">
+				<hr class="_width-100"/>
+				<PageSectionHeader
+					title="Key benefits of using CodeNotary Ledger Compliance"
+					:top="0"
+					:bottom="0"
+				/>
 				<fa class="icon" icon="chevron-down" />
 			</i-container>
 		</LazyHydrate>
