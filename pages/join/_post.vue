@@ -62,7 +62,7 @@ import { title } from '~/helpers/meta';
 export default {
 	name: 'CareerPost',
 	async asyncData({ $content, params }) {
-		const article = await $content('careers', params.post).fetch();
+		const article = await $content('join', params.post).fetch();
 
 		return { article };
 	},

@@ -267,7 +267,7 @@ export default {
 				if (map && map.length) {
 					map.map((path) => {
 						paths = [...paths, {
-							route: `/careers/${ careersRoutes[path] }`,
+							route: `/join/${ careersRoutes[path] }`,
 							payload: path,
 						}];
 					});
@@ -310,7 +310,7 @@ export default {
 				if (map && map.length) {
 					map.map((path) => {
 						paths = [...paths, {
-							route: `/careers/${ careersRoutes[path] }`,
+							route: `/join/${ careersRoutes[path] }`,
 							payload: path,
 						}];
 					});
