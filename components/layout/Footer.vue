@@ -25,9 +25,15 @@
 					<ul class="list -unstyled">
 						<li>
 							<router-link :to="{ name: 'products-ledger-compliance' }">
-								Ledger Compliance
+								Ledger Compliance on-premises
 							</router-link>
 						</li>
+                                                <li>
+                                                        <router-link :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
+                                                                Ledger Compliance (Metrics and Logs)
+                                                        </router-link>
+                                                </li>
+
 						<li>
 							<router-link :to="{ name: 'products-ci-cd' }">
 								Immutability for CI/CD
