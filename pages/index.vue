@@ -1,8 +1,40 @@
 <template>
 	<div>
-		<HomeHeader
-			@onLedgerComplianceModal="ledgerComplianceModalOpen = true"
-		/>
+		<HomeHeader/>
+		<LazyHydrate when-visible>
+			<highlighted-cards />
+		</LazyHydrate>
+
+		<LazyHydrate when-visible>
+			<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-top-8">
+				<hr class="_width-100"/>
+				<PageSectionHeader
+					weight="bold"
+					title="WHAT WE DO"
+					:top="0"
+					:bottom="0"
+				/>
+			</i-container>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<WhatWeDoSection />
+		</LazyHydrate>
+
+		<LazyHydrate when-visible>
+			<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-top-8 _margin-bottom-6">
+				<hr class="_width-100"/>
+				<PageSectionHeader
+					title="Key benefits of using CodeNotary Ledger Compliance"
+					:top="0"
+					:bottom="0"
+				/>
+				<fa class="icon" icon="chevron-down" />
+			</i-container>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<BenefitsSection />
+		</LazyHydrate>
+
 		<LazyHydrate when-visible>
 			<PageSectionHeader
 				title="Hundreds of companies trust CodeNotary"

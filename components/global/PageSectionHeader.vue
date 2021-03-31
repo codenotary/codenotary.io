@@ -3,7 +3,7 @@
 		:class="`section-header _text-primary ${ block ? '-block' : '' } _text-${ color } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
 	>
 		<slot name="title">
-			<h2 :is="tag">
+			<h2 :is="tag" :class="`_text-primary _text-${ color } _font-weight-${ weight }`">
 				{{ title }}
 			</h2>
 		</slot>
