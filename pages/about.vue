@@ -25,6 +25,10 @@ export default {
 		AboutFeaturesSection,
 		AboutHeader,
 	},
-	layout: 'banner-codenotary',
-        };
+	head() {
+		return {
+			title: title('About us'),
+		};
+	},
+};
 </script>
