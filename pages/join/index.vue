@@ -15,7 +15,7 @@ import RemoteFriendly from '~/components/sections/careers/RemoteFriendly';
 import OpenPositions from '~/components/sections/careers/OpenPositions';
 
 export default {
-	name: 'CareerPosts',
+	name: 'JoinPosts',
 	components: {
 		CareersHeader,
 		OurValues,

@@ -60,7 +60,7 @@
 import { title } from '~/helpers/meta';
 
 export default {
-	name: 'CareerPost',
+	name: 'JoinPost',
 	async asyncData({ $content, params }) {
 		const article = await $content('join', params.post).fetch();
 
