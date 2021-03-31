@@ -23,7 +23,7 @@ export default {
 		OpenPositions,
 	},
 	async asyncData ({ $content }) {
-		const openPositions = await $content('careers')
+		const openPositions = await $content('join')
 				.only(['title', 'slug', 'location', 'type', 'requires', 'apply', 'weight', 'active'])
 				.sortBy('date', 'desc')
 				.fetch();
@@ -32,7 +32,7 @@ export default {
 	},
 	head() {
 		return {
-			title: title('Careers'),
+			title: title('Join our Team'),
 		};
 	},
 	methods: {
