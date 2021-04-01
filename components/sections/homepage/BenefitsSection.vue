@@ -24,7 +24,7 @@
 					class="slide"
 				>
 					<img :src="slide.imageUrl" draggable="false">
-					<div class="details _margin-left-3">
+					<div class="details _margin-left-1">
 						<h5 class="title _font-weight-bold">
 							{{ slide.title }}
 						</h5>
