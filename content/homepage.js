@@ -1,4 +1,64 @@
 export default {
+	heroCardsSection: {
+		cards: [
+			{
+				title: 'Trusted CI/CD',
+				subtitle: 'Add to any DevOps process within minutes',
+				imageUrl: '/images/placeholder.svg',
+				actionText: 'WATCH VIDEO',
+				href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
+				internalLink: null,
+			},
+			{
+				title: 'Tutorial',
+				subtitle: 'Getting Started with immudb in GO',
+				imageUrl: '/images/placeholder.svg',
+				actionText: 'READ BLOG',
+				href: null,
+				internalLink: {
+					type: 'blog-post',
+					entry: 'immudb-go-getting-started-video',
+				},
+			},
+			{
+				title: 'Trusted Machine Data',
+				subtitle: 'Metrics, Telemetry and logs analytics',
+				imageUrl: '/images/placeholder.svg',
+				actionText: 'READ BLOG',
+				href: null,
+				internalLink: {
+					type: 'blog-post',
+					entry: 'codenotary-timestamp-service-for-devs',
+				},
+			},
+		],
+	},
+	whatWeDoSection: {
+		title: 'WHAT WE DO',
+		subtitle: 'We develop and maintain the world’s fastest immutable database immudb, to bring trust to all your data by storing it immutable with client-cryptographic verification.',
+		cards: [
+			{
+				title: 'Security',
+				subtitle: 'Identify & Stop tampering',
+				imageUrl: '/images/placeholder.svg',
+			},
+			{
+				title: 'Compliance',
+				subtitle: 'Accountable data',
+				imageUrl: '/images/placeholder.svg',
+			},
+			{
+				title: 'Dev Ops',
+				subtitle: 'Trust process & artefacts',
+				imageUrl: '/images/placeholder.svg',
+			},
+			{
+				title: 'Collab',
+				subtitle: 'Data in transit integrity',
+				imageUrl: '/images/placeholder.svg',
+			},
+		],
+	},
 	benefitsSection: {
 		title: 'Key benefits of using CodeNotary Ledger Compliance',
 		slides: [

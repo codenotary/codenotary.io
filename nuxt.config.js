@@ -71,9 +71,9 @@ export default {
 			src: './assets/css/typography.scss',
 			lang: 'scss',
 			ssr: false,
-		},				
+		},
 	],
-	
+
 	build: {
 		parallel: EXPERIMENTAL,
 		cache: EXPERIMENTAL,
@@ -180,6 +180,7 @@ export default {
 						'faTimesCircle',
 						'faChevronLeft',
 						'faChevronDown',
+						'faArrowRight',
 					],
 				},
 				{
@@ -210,7 +211,7 @@ export default {
 							src: 'font-proxima-nova/fonts/ProximaNova-Regular',
 							fontWeight: 400,
 							fontStyle: 'normal',
-						},					
+						},
 						// Font-Face
 						{
 							preload: true,
