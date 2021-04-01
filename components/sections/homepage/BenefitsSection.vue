@@ -1,18 +1,57 @@
 <template>
-	<i-container>
-		<VueSlickCarousel v-bind="carouselSettings" class="benefits-carousel">
-			<template #prevArrow>
-				<fa class="icon custom-arrow" icon="chevron-left" />
-			</template>
-			<template #nextArrow>
-				<fa class="icon custom-arrow" icon="chevron-right" />
-			</template>
-			<img v-for="(slide, index) in slides" :key="index" :src="slide.url" :alt="slide.alt" :title="slide.alt" class="slide" draggable="false"></img>
-		</VueSlickCarousel>
-	</i-container>
+	<PageSection
+		id="benefits-section"
+		variant="white"
+	>
+		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-bottom-6">
+			<hr class="_width-100"/>
+			<PageSectionHeader
+				title="Key benefits of using CodeNotary Ledger Compliance"
+				:top="0"
+				:bottom="0"
+			/>
+			<fa class="icon" icon="chevron-down" />
+		</i-container>
+		<i-container>
+			<VueSlickCarousel v-bind="carouselSettings" class="benefits-carousel">
+				<template #prevArrow>
+					<fa class="icon custom-arrow" icon="chevron-left"/>
+				</template>
+				<template #nextArrow>
+					<fa class="icon custom-arrow" icon="chevron-right"/>
+				</template>
+				<div v-for="(slide, slideIndex) in content.benefitsSection.slides" :key="slideIndex"
+					class="slide"
+				>
+					<img :src="slide.imageUrl" draggable="false">
+					<div class="details _margin-left-3">
+						<h5 class="title _font-weight-bold">
+							{{ slide.title }}
+						</h5>
+						<div class="content cn-text-muted_blue">
+							<ul>
+								<li v-for="(feature, featureIndex) in slide.list" :key="featureIndex">
+									{{ feature }}
+								</li>
+							</ul>
+						</div>
+
+						<cn-button link variant="dark"
+							class="action cn-text-muted_blue"
+							:to="slide.internalLink ? { name: slide.internalLink.type, params: { post: slide.internalLink.entry }} : null" :href="slide.href">
+							{{ slide.actionText }}
+							<fa class="icon _margin-left-2" icon="arrow-right" />
+						</cn-button>
+					</div>
+				</div>
+			</VueSlickCarousel>
+		</i-container>
+	</PageSection>
 </template>
 
 <script>
+import homepage from '@/content/homepage';
+
 export default {
 	name: 'BenefitsSection',
 	data() {
@@ -27,12 +66,7 @@ export default {
 				lazyLoad: 'progressive',
 				adaptiveHeight: true,
 			},
-			slides: [
-				{ url: '/images/placeholder.svg', alt: 'Placeholder Alt Text 1' },
-				{ url: '/images/placeholder.svg', alt: 'Placeholder Alt Text 2' },
-				{ url: '/images/placeholder.svg', alt: 'Placeholder Alt Text 3' },
-				{ url: '/images/placeholder.svg', alt: 'Placeholder Alt Text 4' },
-			],
+			content: homepage,
 		};
 	},
 };
@@ -48,9 +82,41 @@ export default {
 	border-radius: 30px;
 	border: 3px solid #a1aec0;
 	overflow: hidden;
-	background: #a1aec0;
 	height: 500px;
-	object-fit: cover;
+	display: flex !important;
+	flex-direction: row;
+
+	img {
+		background: #a1aec0;
+		object-fit: cover;
+		width: 40%;
+		border-radius: 25px;
+	}
+
+	.details {
+		padding: 30px;
+		display: flex;
+		height: 100%;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		align-self: flex-start;
+
+		.title {
+			display: flex;
+			flex: 1;
+			align-items: flex-end;
+		}
+
+		.content {
+			flex: 1;
+		}
+
+		.action {
+			align-self: end;
+			flex: 0 0 0;
+		}
+	}
 }
 
 ::v-deep .slick-list {
@@ -61,6 +127,7 @@ export default {
 		padding-right: 10px;
 		padding-left: 10px;
 	}
+
 	//}
 }
 

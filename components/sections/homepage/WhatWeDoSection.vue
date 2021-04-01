@@ -1,21 +1,38 @@
 <template>
-	<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column">
-		<h6 class="_font-weight-bold subheader _margin-0">
-			We develop and maintain the world’s fastest immutable database immudb, to bring trust to all your data by storing
-			it immutable with client-cryptographic verification.
-		</h6>
-		<i-container class="transparent-cards">
-			<cn-transparent-card title="Security" image-url="/images/placeholder.svg" subtitle="Identify & Stop tampering" />
-			<cn-transparent-card title="Compliance" image-url="/images/placeholder.svg" subtitle="Accountable data" />
-			<cn-transparent-card title="Dev Ops" image-url="/images/placeholder.svg" subtitle="Trust process & artefacts" />
-			<cn-transparent-card title="Collab" image-url="/images/placeholder.svg" subtitle="Data in transit integrity" />
+	<PageSection
+		id="whatwedo-section"
+		variant="white"
+	>
+		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
+			<hr class="_width-100"/>
+			<PageSectionHeader
+				weight="bold"
+				:title="content.whatWeDoSection.title"
+				:top="0"
+				:bottom="0"
+			/>
 		</i-container>
-	</i-container>
+		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column">
+			<h6 class="_font-weight-bold subheader _margin-0">
+				{{ content.whatWeDoSection.subtitle }}
+			</h6>
+			<i-container class="transparent-cards">
+				<cn-transparent-card v-for="(card, index) in content.whatWeDoSection.cards" :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle" :key="index"/>
+			</i-container>
+		</i-container>
+	</PageSection>
 </template>
 
 <script>
+import homepage from '@/content/homepage';
+
 export default {
-	name: 'WhatWeDoSection'
+	name: 'WhatWeDoSection',
+	data() {
+		return {
+			content: homepage,
+		};
+	},
 };
 </script>
 

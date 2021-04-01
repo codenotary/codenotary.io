@@ -20,7 +20,7 @@
 
 <script>
 export default {
-	name: 'HighlightedCard',
+	name: 'HeroCard',
 	props: {
 		title: {
 			type: String,
