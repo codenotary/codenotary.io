@@ -119,7 +119,7 @@
 					<cn-button
 						v-if="scrolled"
 						href="https://democnlc.codenotary.com"
-						type="dark"
+						variant="dark"
 						size="md"
 						outline
 					>

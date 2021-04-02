@@ -17,7 +17,7 @@
 export default {
 	name: 'CnButton',
 	props: {
-		type: {
+		variant: {
 			type: String,
 			default: 'dark',
 		},
@@ -36,12 +36,6 @@ export default {
 			type: String,
 			default: 'lg',
 		},
-	},
-	computed: {
-		variant() {
-			return this.type;
-			// return 'dark';
-		},
-	},
+	}
 };
 </script>
