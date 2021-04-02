@@ -11,9 +11,6 @@
 				<p class="lead _margin-bottom-0">
 					Immutable ledgers are a requirement to enable businesses to successfully move to cloud solutions without compromising trust and integrity.
 				</p>
-				<p class="lead _margin-bottom-0">
-					<a href="/blog/vchain-completes-aquisition-of-ledger-and-log-compliance-company-opvizor"><b>Latest News</b>: Acquisition of Opvizor</a>
-				</p>
 			</i-column>
 			<i-column md="4" class="_padding-left-4 _text-left">
 				<p class="_padding-0 margin-0 _margin-bottom-2">
