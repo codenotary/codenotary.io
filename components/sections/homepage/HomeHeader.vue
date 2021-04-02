@@ -20,12 +20,12 @@
 				<p class="action">
 					<cn-button
 						href="https://democnlc.codenotary.com"
-						type="dark"
+						variant="dark"
 					>
 						Demo
 					</cn-button>
 					<cn-button
-						type="dark"
+						variant="dark"
 						outline
 						class="_margin-left-1"
 						:to="{ name: 'contact' }"

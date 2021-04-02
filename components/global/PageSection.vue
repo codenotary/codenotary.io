@@ -69,7 +69,7 @@ export default {
 
 		&light-gray,
 		&light-grey {
-			background-color: $color-gray-10;
+			background-color: $background-grey;
 		}
 	}
 }

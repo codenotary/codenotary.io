@@ -14,6 +14,10 @@
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
+			<NewsletterSection />
+		</LazyHydrate>
+
+		<LazyHydrate when-visible>
 			<PageSectionHeader
 				title="Hundreds of companies trust CodeNotary"
 				:top="0"

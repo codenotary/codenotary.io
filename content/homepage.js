@@ -1,4 +1,5 @@
 export default {
+	// HomePage | Cards located under the main Hero Section (Title, CTAs and Video)
 	heroCardsSection: {
 		cards: [
 			{
@@ -97,5 +98,11 @@ export default {
 				],
 			},
 		],
+	},
+	newsletterSection: {
+		title: 'Subscribe to Our Newsletter',
+		subtitle: 'Get the latest product updates, company news, and special offers delivered right to your inbox.',
+		emailPlaceholder: 'Enter your email',
+		actionText: 'SUBSCRIBE',
 	},
 };
