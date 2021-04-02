@@ -5,14 +5,14 @@
 	>
 		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<h4 class="_font-weight-bold">
-				Subscribe to Our Newsletter
+				{{ content.newsletterSection.title }}
 			</h4>
-			<p class="cn-text-muted_blue">
-				Get the latest product updates, company news, and special offers delivered right to your inbox.
+			<p class="cn-text-muted_blue _font-size-sm _text-center">
+				{{ content.newsletterSection.subtitle }}
 			</p>
 			<i-form v-model="form" @submit.prevent="onSubmit" inline class="_margin-bottom-1">
 				<i-form-group>
-					<i-input class="newsletter-input" :schema="form.contactEmail" placeholder="Enter your email"/>
+					<i-input class="newsletter-input" :schema="form.contactEmail" :placeholder="content.newsletterSection.emailPlaceholder"/>
 					<cn-button
 						type="submit"
 						variant="dark"
@@ -21,7 +21,7 @@
 						size="sm"
 						block
 					>
-						{{ sending ? 'Sending..' : 'Subscribe' }}
+						{{ sending ? 'Sending..' : content.newsletterSection.actionText }}
 					</cn-button>
 				<!--					<i-button-->
 				<!--						type="submit"-->
@@ -34,6 +34,7 @@
 				</i-form-group>
 			</i-form>
 			<vue-recaptcha
+				size="sm"
 				ref="recaptcha"
 				:load-recaptcha-script="true"
 				:sitekey="sitekey"
@@ -47,6 +48,7 @@
 import axios from 'axios';
 import { API_URL } from '@/services/api';
 import VueRecaptcha from 'vue-recaptcha';
+import homepage from '@/content/homepage';
 
 export default {
 	name: 'NewsletterSection',
@@ -68,12 +70,10 @@ export default {
 					],
 				},
 			}),
+			content: homepage,
 		};
 	},
 	methods: {
-		onVisibilityChange(value) {
-			this.$emit('input', value);
-		},
 		async onSubmit() {
 			if (!this.verified) {
 				return;
@@ -87,7 +87,7 @@ export default {
 			};
 
 			try {
-				await axios.post(`${ API_URL }/research-paper`, data, {
+				await axios.post(`${ API_URL }/subscribe`, data, {
 					withCredentials: true,
 				});
 
