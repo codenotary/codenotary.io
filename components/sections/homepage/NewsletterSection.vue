@@ -10,9 +10,15 @@
 			<p class="cn-text-muted_blue _font-size-sm _text-center">
 				{{ content.newsletterSection.subtitle }}
 			</p>
-			<i-form v-model="form" @submit.prevent="onSubmit" inline class="_margin-bottom-1">
+			<i-form
+				v-model="form" class="_margin-bottom-1"
+				inline @submit.prevent="onSubmit"
+			>
 				<i-form-group>
-					<i-input class="newsletter-input" :schema="form.contactEmail" :placeholder="content.newsletterSection.emailPlaceholder"/>
+					<i-input
+						class="newsletter-input" :schema="form.contactEmail"
+						:placeholder="content.newsletterSection.emailPlaceholder"
+					/>
 					<cn-button
 						type="submit"
 						variant="dark"
@@ -23,14 +29,6 @@
 					>
 						{{ sending ? 'Sending..' : content.newsletterSection.actionText }}
 					</cn-button>
-				<!--					<i-button-->
-				<!--						type="submit"-->
-				<!--						variant="dark"-->
-				<!--						:disabled="!verified || sending"-->
-				<!--						block-->
-				<!--					>-->
-				<!--						Subscribe-->
-				<!--					</i-button>-->
 				</i-form-group>
 			</i-form>
 			<vue-recaptcha
@@ -117,17 +115,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
-	width: 100%;
-	height: 500px;
-}
-
 .container {
 	max-width: 500px;
-}
-
-.newsletter-input {
-	color: red;
 }
 
 ::v-deep .form {
@@ -146,7 +135,6 @@ export default {
 
 	.form-input-group {
 		flex: 1 1 0;
-		//flex-basis: 80%;
 
 		.form-input {
 			border: 3px solid #a1aec0;
@@ -163,7 +151,5 @@ export default {
 
 .action-button {
 	flex: 0 1 20%;
-	//padding: 0;
-	//flex-basis: 20%;
 }
 </style>
