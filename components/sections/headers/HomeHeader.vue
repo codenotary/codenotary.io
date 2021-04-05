@@ -16,11 +16,11 @@
 						size="lg"
 						outline
 						variant="primary"
-						href="https://democnlc.codenotary.com"
+						href="https://dashboard.codenotary.io/auth/signup"
 						target="_blank"
 						rel="nofollow"
 					>
-						Demo
+						Cloud
 					</i-button>
 					<i-button
 						variant="primary"
@@ -28,7 +28,7 @@
 						class="_margin-left-1"
 						@click="ledgerComplianceModalOpen = true"
 					>
-						Start trial
+						Self-Hosted
 					</i-button>
 					<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 				</p>
