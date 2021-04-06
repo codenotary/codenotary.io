@@ -9,7 +9,7 @@
 				</i-column>
 				<i-column lg="4">
 					<CommonFeature title="What do we do?">
-						We restore trust and integrity in digital solutions by making it possible for organizations to keep tamper-proof, indelible, and immutable ledgers of transactions and data transitions.
+						We bring trust and integrity into the DevOps process by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
 					</CommonFeature>
 				</i-column>
 				<i-column lg="4">
