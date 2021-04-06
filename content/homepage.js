@@ -66,6 +66,7 @@ export default {
 			{
 				imageUrl: '/images/placeholder.svg',
 				imageAlt: 'Placeholder Alt Text 2',
+				imageLabel: 'INSPIRATION',
 				href: null,
 				internalLink: { type: 'blog-post', entry: 'the-trusted-CICD-pipeline' },
 				title: 'Secure your CI/CD pipeline',
@@ -78,6 +79,7 @@ export default {
 			{
 				imageUrl: '/images/placeholder.svg',
 				imageAlt: 'Placeholder Alt Text 2',
+				imageLabel: 'INSPIRATION 2',
 				href: null,
 				internalLink: { type: 'blog-post', entry: 'the-trusted-CICD-pipeline' },
 				title: 'Secure your CI/CD pipeline 2',
@@ -85,10 +87,12 @@ export default {
 					'Feature 1',
 					'Feature 2',
 				],
+				actionText: 'Read More 2',
 			},
 			{
 				imageUrl: '/images/placeholder.svg',
 				imageAlt: 'Placeholder Alt Text 3',
+				imageLabel: 'INSPIRATION 3',
 				href: null,
 				internalLink: { type: 'blog-post', entry: 'the-trusted-CICD-pipeline' },
 				title: 'Secure your CI/CD pipeline 3',
@@ -96,6 +100,7 @@ export default {
 					'Feature 1',
 					'Feature 2',
 				],
+				actionText: 'Read More 3',
 			},
 		],
 	},

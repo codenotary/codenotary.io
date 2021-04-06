@@ -23,6 +23,9 @@
 				<div v-for="(slide, slideIndex) in content.benefitsSection.slides" :key="slideIndex"
 					class="slide"
 				>
+					<div class="imageLabel">
+						{{ slide.imageLabel }}
+					</div>
 					<img :src="slide.imageUrl" draggable="false">
 					<div class="details _margin-left-1">
 						<h5 class="title _font-weight-bold">
@@ -79,6 +82,7 @@ export default {
 }
 
 .slide {
+	position: relative;
 	border-radius: 30px;
 	border: 3px solid #a1aec0;
 	overflow: hidden;
@@ -91,6 +95,21 @@ export default {
 		object-fit: cover;
 		width: 40%;
 		border-radius: 25px;
+		position: relative;
+	}
+
+	.imageLabel {
+		width: 38%;
+		position: absolute;
+		left: 5%;
+		top: 15px;
+		background-color: #a1aec0;
+		color: white;
+		z-index: 2;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.details {
