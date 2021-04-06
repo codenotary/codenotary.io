@@ -68,6 +68,8 @@ export default {
 				slidesToScroll: 1,
 				lazyLoad: 'progressive',
 				adaptiveHeight: true,
+				autoplay: true,
+				autoplaySpeed: 5000,
 			},
 			content: homepage,
 		};
