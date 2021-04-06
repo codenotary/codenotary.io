@@ -4,7 +4,7 @@
 		variant="light-grey"
 	>
 		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
-			<h4 class="_font-weight-bold">
+			<h4 class="_font-weight-bold _margin-top-0">
 				{{ content.newsletterSection.title }}
 			</h4>
 			<p class="cn-text-muted_blue _font-size-sm _text-center">
