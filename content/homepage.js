@@ -4,17 +4,17 @@ export default {
 		cards: [
 			{
 				title: 'Trusted CI/CD',
-				subtitle: 'Add to any DevOps process within minutes',
+				subtitle: 'Add CodeNotary within minutes to secure your supply chain',
 				imageUrl: '/images/placeholder.svg',
-				actionText: 'WATCH VIDEO',
+				actionText: 'Watch video',
 				href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
 				internalLink: null,
 			},
 			{
-				title: 'Tutorial',
-				subtitle: 'Getting Started with immudb in GO',
+				title: 'Transactional Ledger',
+				subtitle: 'Record your code, artefacts and CI/CD steps immutable',
 				imageUrl: '/images/placeholder.svg',
-				actionText: 'READ BLOG',
+				actionText: 'Read The Blog',
 				href: null,
 				internalLink: {
 					type: 'blog-post',
@@ -22,10 +22,10 @@ export default {
 				},
 			},
 			{
-				title: 'Trusted Machine Data',
-				subtitle: 'Metrics, Telemetry and logs analytics',
+				title: 'Software Provenance',
+				subtitle: 'Maintain an auditable chronology of the code and artefact ownership',
 				imageUrl: '/images/placeholder.svg',
-				actionText: 'READ BLOG',
+				actionText: 'Read The Blog',
 				href: null,
 				internalLink: {
 					type: 'blog-post',
