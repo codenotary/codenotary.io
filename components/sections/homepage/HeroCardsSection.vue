@@ -2,14 +2,9 @@
 	<i-container class="highlighted-cards">
 		<hero-card
 			v-for="(card, index) in content.heroCardsSection.cards" :key="index"
-			:title="card.title" :subtitle="card.subtitle"
-		>
-			<cn-button slot="action" link variant="dark"
-				:to="card.internalLink ? { name: card.internalLink.type, params: { post: card.internalLink.entry }} : null" :href="card.href"
-			>
-				{{ card.actionText }}
-			</cn-button>
-		</hero-card>
+			:title="card.title" :subtitle="card.subtitle" :action-href="card.href" :internal-link="card.internalLink"
+			:action-text="card.actionText"
+		/>
 	</i-container>
 </template>
 

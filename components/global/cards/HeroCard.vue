@@ -1,7 +1,7 @@
 <template>
-	<i-card class="cn-card" :style="dynamicBackground">
+	<i-card class="cn-card">
 		<div class="card-content">
-			<h4 class="title">
+			<h4 class="title _margin-top-0">
 				{{ title }}
 			</h4>
 			<p class="subtitle">
@@ -9,9 +9,14 @@
 			</p>
 			<div class="action">
 				<slot name="action">
-					<a v-if="actionHref && actionText" :href="actionHref">
+					<cn-button link variant="dark"
+						:to="internalLink ? { name: internalLink.type, params: { post: internalLink.entry }} : null" :href="actionHref"
+					>
+						<img class="icon"
+							src="/icons/arrow-right.svg"
+						>
 						{{ actionText }}
-					</a>
+					</cn-button>
 				</slot>
 			</div>
 		</div>
@@ -42,13 +47,9 @@ export default {
 			type: String,
 			default: '/images/placeholder.svg',
 		},
-	},
-	computed: {
-		dynamicBackground() {
-			return {
-				background: `grey url('${ this.imageUrl }') no-repeat center !important`,
-				'background-size': 'cover !important',
-			};
+		internalLink: {
+			type: Object,
+			default: null,
 		},
 	},
 };
@@ -56,28 +57,24 @@ export default {
 
 <style lang="scss" scoped>
 .cn-card {
-	border-radius: 15px !important;
+	border-radius: 7px !important;
 	overflow: hidden;
 	height: 200px;
-	width: 300px;
+	width: 320px;
 	position: relative;
+	color: #22417d !important;
 	//background: grey url('/images/placeholder.svg') no-repeat center !important;
 
-	color: white !important;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
 
 	::v-deep .body {
 		max-height: 100%;
-	}
-
-	&::before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		left: 0;
-		background: black;
-		filter: opacity(0.5);
+		border: 0;
+		border-image-slice: 1;
+		border-bottom: 10px solid;
+		border-image-source: linear-gradient(to right, #bddbff, #f8f9fa);
+		padding: 40px 20px;
 	}
 
 	.card-content {
@@ -96,13 +93,30 @@ export default {
 		.subtitle {
 			flex: 1;
 			margin: 0;
+			width: 100%;
+			color: #343a40 !important;
 		}
 
 		.action {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: start;
+			align-items: center;
+			margin-top: 5px;
+
+			.icon {
+				width: 16px;
+				height: 16px;
+				margin-right: 5px;
+			}
+
 			::v-deep * {
-				color: white !important;
+				padding: 0;
+				color: #22417d !important;
 				font-size: 1em;
 				font-weight: 600;
+				border: 0;
 			}
 
 			justify-self: end;
