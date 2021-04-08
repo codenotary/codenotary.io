@@ -1,9 +1,9 @@
 <template>
 	<div class="transparent-card">
+		<div class="card-picture" :style="dynamicBackground"/>
 		<h3 class="_font-weight-bold">
 			{{ title }}
 		</h3>
-		<div class="card-picture" :style="dynamicBackground"/>
 		<h6 class="_font-weight-bold subtitle">
 			{{ subtitle }}
 		</h6>
@@ -30,8 +30,8 @@ export default {
 	computed: {
 		dynamicBackground() {
 			return {
-				background: `grey url('${ this.imageUrl }') no-repeat center !important`,
-				'background-size': 'cover !important',
+				background: `url('${ this.imageUrl }') no-repeat center !important`,
+				'background-size': 'contain !important',
 			};
 		},
 	},
@@ -48,13 +48,14 @@ export default {
 
 	.card-picture {
 		height: 150px;
-		width: 150px;
+		width: 200px;
 	}
 
 	.subtitle {
 		max-width: 150px;
-		margin: 10px 0 0;
-		align-self: start;
+		margin: 0;
+		//align-self: start;
+		text-align: center;
 	}
 }
 </style>
