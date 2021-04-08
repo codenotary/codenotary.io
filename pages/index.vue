@@ -18,24 +18,6 @@
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<PageSectionHeader
-				title="Hundreds of companies trust CodeNotary"
-				:top="0"
-				:bottom="0"
-			/>
-		</LazyHydrate>
-		<LazyHydrate when-visible>
-			<FeaturesSection
-				@onLedgerComplianceModal="ledgerComplianceModalOpen = true"
-			/>
-		</LazyHydrate>
-		<LazyHydrate when-visible>
-			<TimestampServiceSection />
-		</LazyHydrate>
-		<LazyHydrate when-visible>
-			<HomeVideos class="_margin-top-4" />
-		</LazyHydrate>
-		<LazyHydrate when-visible>
 			<CustomerSuccessStories
 				@onWebinarModal="webinarModalOpen = true"
 			/>

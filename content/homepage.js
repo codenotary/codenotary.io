@@ -41,22 +41,22 @@ export default {
 			{
 				title: 'Security',
 				subtitle: 'Identify & Stop tampering',
-				imageUrl: '/images/placeholder.svg',
+				imageUrl: '/images/features/security.svg',
 			},
 			{
 				title: 'Compliance',
 				subtitle: 'Accountable data',
-				imageUrl: '/images/placeholder.svg',
+				imageUrl: '/images/features/compliance.svg',
 			},
 			{
 				title: 'Dev Ops',
 				subtitle: 'Trust process & artefacts',
-				imageUrl: '/images/placeholder.svg',
+				imageUrl: '/images/features/dev-ops.svg',
 			},
 			{
 				title: 'Collab',
 				subtitle: 'Data in transit integrity',
-				imageUrl: '/images/placeholder.svg',
+				imageUrl: '/images/features/collab.svg',
 			},
 		],
 	},
