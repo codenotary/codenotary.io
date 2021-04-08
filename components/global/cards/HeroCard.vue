@@ -1,7 +1,7 @@
 <template>
 	<i-card class="cn-card">
 		<div class="card-content">
-			<h4 class="title _margin-top-0">
+			<h4 class="title _margin-top-0 _width-100">
 				{{ title }}
 			</h4>
 			<p class="subtitle">
