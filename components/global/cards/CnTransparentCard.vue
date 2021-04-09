@@ -47,7 +47,7 @@ export default {
 	align-items: center;
 
 	.card-picture {
-		height: 150px;
+		height: 100px;
 		width: 200px;
 	}
 
