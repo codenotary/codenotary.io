@@ -62,7 +62,7 @@ export default {
 	height: 200px;
 	width: 320px;
 	position: relative;
-	color: #22417d !important;
+	color: $cn-color-brand !important;
 	//background: grey url('/images/placeholder.svg') no-repeat center !important;
 
 	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
@@ -73,7 +73,7 @@ export default {
 		border: 0;
 		border-image-slice: 1;
 		border-bottom: 10px solid;
-		border-image-source: linear-gradient(to right, #bddbff, #f8f9fa);
+		border-image-source: linear-gradient(to right, $cn-color-primary_light, $cn-color-light);
 		padding: 40px 20px;
 	}
 
@@ -94,7 +94,7 @@ export default {
 			flex: 1;
 			margin: 0;
 			width: 100%;
-			color: #343a40 !important;
+			color: $cn-color-dark !important;
 		}
 
 		.action {
@@ -113,7 +113,7 @@ export default {
 
 			::v-deep * {
 				padding: 0;
-				color: #22417d !important;
+				color: $cn-color-brand !important;
 				font-size: 1em;
 				font-weight: 600;
 				border: 0;
