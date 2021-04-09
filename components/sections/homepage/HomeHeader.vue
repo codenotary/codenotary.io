@@ -6,32 +6,35 @@
 		<i-row class="_align-items-center">
 			<i-column lg="6">
 				<h1 class="h2 _font-weight-bold cn-text-dark">
-					Trust Data
-				</h1>
-				<h1 class="h2 _font-weight-bold cn-text-dark">
-					Restore integrity
-				</h1>
+					End-to-end tampering/manipulation protection for your software development cycle
+                                </h1>
+
 				<p class="lead cn-text-muted_blue">
-					immutable, tamper-evident, change history for your data
+					Add trust, integrity and transparency for all identities and artefacts to your existing CI/CD pipelines in a heartbeat.
 				</p>
 <!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
 <!--					Powered by the world’s fastest immutable database.-->
 <!--				</h5>-->
 				<p class="action">
-					<cn-button
-						href="https://democnlc.codenotary.com"
-						variant="dark"
-					>
-						Demo
-					</cn-button>
-					<cn-button
-						variant="dark"
+					<i-button
+						size="lg"
 						outline
-						class="_margin-left-1"
-						:to="{ name: 'contact' }"
+						variant="primary"
+						href="https://dashboard.codenotary.io/auth/signup"
+						target="_blank"
+						rel="nofollow"
 					>
-						Contact us
-					</cn-button>
+						Cloud
+					</i-button>
+					<i-button
+						variant="primary"
+						size="lg"
+						class="_margin-left-1"
+						@click="ledgerComplianceModalOpen = true"
+					>
+						Self-Hosted
+					</i-button>
+					<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 				</p>
 			</i-column>
 			<i-column
@@ -70,12 +73,19 @@ export default {
 	name: 'HomeHeader',
 	components: {
 		LazyHydrate,
+                LedgerComplianceModal: () => import('~/components/global/modals/LedgerComplianceModal'),
 	},
 	data() {
 		return {
+                        ledgerComplianceModalOpen: false,
 			playing: false,
 			timeout: null,
 		};
+	},
+	beforeDestroy () {
+		this.ledgerComplianceModalOpen = null;
+		this.playing = null;
+		this.timeout = null;
 	},
 	methods: {
 		onPlayVideo() {
