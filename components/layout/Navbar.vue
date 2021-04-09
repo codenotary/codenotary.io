@@ -46,10 +46,10 @@
 									<h6
 										class="title _margin-0 _padding-xs-0"
 									>
-										Ledger Compliance (deploy anywhere)
+										CNLC (Self-Hosted)
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										High-speed, immutable, and cryptographically verifiable ledger system
+										Self-Hosted Trusted CI/CD and artifact protection your software development cycle
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -64,13 +64,32 @@
 									<h6
 										class="title _margin-0 _padding-xs-0"
 									>
-										Ledger Compliance (Managed Service)
+										CNLC (Cloud)
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										Public verifiable trusted DevOps
+										Trusted CI/CD and artifact protection as a Service that allows public verification
 									</p>
 								</nuxt-link>
 							</i-column>
+                                                        <i-column
+                                                                class="_margin-0 _padding-0"
+                                                                xs="12"
+                                                        >
+                                                                <nuxt-link
+                                                                        class="freeform-item _padding-1"
+                                                                        :to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+                                                                >
+                                                                        <h6
+                                                                                class="title _margin-0 _padding-xs-0"
+                                                                        >
+                                                                                CNLC Metrics and Logs
+                                                                        </h6>
+                                                                        <p class="_margin-0 padding-top-1-2 subtitle">
+                                                                                Self-Hosted Performance and compliant log analysis for VMware vSphere, Container and much more
+                                                                        </p>
+                                                                </nuxt-link>
+                                                        </i-column>
+
 						</i-row>
 					</i-dropdown-menu>
 				</i-dropdown>
