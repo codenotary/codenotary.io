@@ -49,7 +49,7 @@
 										CNLC (Self-Hosted)
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										Self-Hosted Trusted CI/CD and artifact protection your software development cycle
+										Self-Hosted Trusted CI/CD and artifact protection for your software development cycle
 									</p>
 								</nuxt-link>
 							</i-column>

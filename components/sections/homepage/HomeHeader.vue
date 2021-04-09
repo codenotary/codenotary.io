@@ -10,7 +10,7 @@
                                 </h1>
 
 				<p class="lead cn-text-muted_blue">
-					Add trust, integrity and transparency for all identities and artefacts to your CI/CD pipelines in a heartbeat.
+					Add trust, integrity, and transparency for all identities and artifacts to your CI/CD pipelines in a heartbeat.
 				</p>
 <!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
 <!--					Powered by the world’s fastest immutable database.-->
