@@ -1,7 +1,7 @@
 <template>
 	<div class="transparent-card">
 		<div class="card-picture" :style="dynamicBackground"/>
-		<h3 class="_font-weight-bold">
+		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
 			{{ title }}
 		</h3>
 		<h6 class="_font-weight-bold subtitle">

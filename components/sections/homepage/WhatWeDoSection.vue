@@ -16,7 +16,7 @@
 			<h6 class="_font-weight-bold subheader _margin-0">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
-			<i-container class="transparent-cards">
+			<i-container class="transparent-cards _margin-top-3">
 				<cn-transparent-card v-for="(card, index) in content.whatWeDoSection.cards" :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle" :key="index"/>
 			</i-container>
 		</i-container>
