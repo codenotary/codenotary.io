@@ -6,9 +6,12 @@ export default {
 				title: 'Trusted CI/CD',
 				subtitle: 'Add CodeNotary within minutes to secure your supply chain',
 				imageUrl: '/images/placeholder.svg',
-				actionText: 'Watch video',
-				href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
-				internalLink: null,
+				actionText: 'Read The Blog',
+                                href: null,
+                                internalLink: {
+                                        type: 'blog-post',
+                                        entry: 'solarwinds-sunburst',
+                                },
 			},
 			{
 				title: 'Transactional Ledger',
@@ -18,19 +21,16 @@ export default {
 				href: null,
 				internalLink: {
 					type: 'blog-post',
-					entry: 'immudb-go-getting-started-video',
+					entry: 'the-trusted-CICD-pipeline',
 				},
 			},
 			{
 				title: 'Software Provenance',
 				subtitle: 'Maintain an auditable chronology of the code and artefact ownership',
 				imageUrl: '/images/placeholder.svg',
-				actionText: 'Read The Blog',
+				actionText: 'Watch Video',
 				href: null,
-				internalLink: {
-					type: 'blog-post',
-					entry: 'codenotary-timestamp-service-for-devs',
-				},
+                                href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
 			},
 		],
 	},
