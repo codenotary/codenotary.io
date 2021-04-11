@@ -2,7 +2,7 @@
 title: "Using eBPF and immudb to audit executed commands on a Linux server"
 author: "Duncan Mac-Vicar P."
 date: "2021-04-12"
-image: "/images/blog/ebpf-linux-immudb.png"
+image: "/images/blog/ebpf-linux-immudb-1.png"
 tags: ["observability", "tracing", "immudb", "linux", "ebpf"]
 ---
 
