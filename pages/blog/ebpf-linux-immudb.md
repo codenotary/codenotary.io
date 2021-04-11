@@ -88,7 +88,7 @@ We will create a Go program that inserts a eBPF program to capture shell command
 
 ---
 
->To learn interactively how to get started with immudb from the command line and programming languages, visit the [immudb Playground](https://play.codenotary.com).
+>To learn interactively and get started with immudb from the command line and programming languages, visit the [immudb Playground](https://play.codenotary.com).
 >
 >[![The immudb Playground](/images/blog/ebpf-linux-immudb-playground-1.png)](https://play.codenotary.com)
 
