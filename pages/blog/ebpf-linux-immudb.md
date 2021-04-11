@@ -86,6 +86,14 @@ And you will start seeing the commands as they are typed.
 
 We will create a Go program that inserts a eBPF program to capture shell commands and we will send them to a database to be stored tamper-proof. If somebody wants to remove the history of a typed commands, other clients will realize it by receiving a state that does not validate against the previous cryptographic state the client stores.
 
+---
+
+>To learn interactively how to get started with immudb from the command line and programming languages, visit the [immudb Playground](https://play.codenotary.com).
+>
+>[![The immudb Playground](/images/blog/ebpf-linux-immudb-playground-1.png)](https://play.codenotary.com)
+
+---
+
 We could use bpftrace and [immuclient](https://www.codenotary.com/blog/commandline-starter-guide-for-immudb/) to create a very simple script without do any programming. For example:
 
 ```bash
