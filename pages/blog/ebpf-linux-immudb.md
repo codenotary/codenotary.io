@@ -102,9 +102,9 @@ First we set the credentials:
 $ export IMMUCLIENT_USERNAME=immudb IMMUCLIENT_PASSWORD=immudb IMMUCLIENT_DATABASE=defaultdb
 ```
 
-We will write a *uretprobe* that will trigger everytime the *readline* function from *bash* returns. The hook will then use the [system](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md#11-system-system) built-in function to call *immuclient* to insert the *uid*, *pid*, *timestamp* and *command* into *immudb*.
+We will write a *uretprobe* that will trigger everytime the *readline* function from *bash* returns. The hook will then use the [system](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md#11-system-system) built-in function to call *immuclient* to insert the *uid*, *pid*, *timestamp* and *command* into *immudb**.
 
->The *bpftrace* *system* built-in needs to be called with `--unsafe`
+>**Warning**: Because system() allows to run anything, the *bpftrace* *system* built-in needs to be called with `--unsafe`. Don't use *system()* in a real scenario as simple extra quotes would allow to run any user to run commands as root.
 
 ```bash
 $ bpftrace --unsafe -e 'uretprobe:/usr/lib64/libreadline.so:readline { system("bin/immuclient set \"bash:%d-%d-%d\" \"user %d: %s\"\n", pid, nsecs, rand, uid, str(retval)); }'
@@ -125,7 +125,8 @@ value:          user 1000: git pull --rebase
 hash:           dea8733107c200ee0e88a1636f3781648f9512f39d88d175a14948f95d2c42c1
 ```
 
-If you wanted to do this from Go, you can start with the [this example](https://github.com/iovisor/gobpf/blob/master/examples/bcc/bash_readline/bash_readline.go).
+
+Doing this from a programming language allows get structured data and avoid the problems of the script version. To do this from Go, you can start with the [this example](https://github.com/iovisor/gobpf/blob/master/examples/bcc/bash_readline/bash_readline.go).
 
 We define a struct that can be serialized to JSON, which we will use to store the event into immudb:
 
