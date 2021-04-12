@@ -104,7 +104,7 @@ $ export IMMUCLIENT_USERNAME=immudb IMMUCLIENT_PASSWORD=immudb IMMUCLIENT_DATABA
 
 We will write a *uretprobe* that will trigger everytime the *readline* function from *bash* returns. The hook will then use the [system](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md#11-system-system) built-in function to call *immuclient* to insert the *uid*, *pid*, *timestamp* and *command* into *immudb**.
 
->**Warning**: Because system() allows to run anything, the *bpftrace* *system* built-in needs to be called with `--unsafe`. Don't use *system()* in a real scenario as simple extra quotes would allow to run any user to run commands as root.
+>**Warning**: Because system() allows to run anything, the *bpftrace* *system* built-in needs to be called with `--unsafe`. Don't use *system()* in a real scenario as simple extra quotes would allow any user to run commands as root.
 
 ```bash
 $ bpftrace --unsafe -e 'uretprobe:/usr/lib64/libreadline.so:readline { system("bin/immuclient set \"bash:%d-%d-%d\" \"user %d: %s\"\n", pid, nsecs, rand, uid, str(retval)); }'
