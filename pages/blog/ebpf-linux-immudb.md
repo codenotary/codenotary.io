@@ -94,19 +94,35 @@ We will create a Go program that inserts a eBPF program to capture shell command
 
 ---
 
-We could use bpftrace and [immuclient](https://www.codenotary.com/blog/commandline-starter-guide-for-immudb/) to create a very simple script without do any programming. For example:
+We could use bpftrace and [immuclient](https://www.codenotary.com/blog/commandline-starter-guide-for-immudb/) to create a very simple script without do any programming.
+
+First we set the credentials:
 
 ```bash
-uretprobe:/usr/lib64/libreadline.so:readline
-{
-        printf("immuclient set \"bash:%d-%d-%d\" \"%s\"\n", pid, nsecs, rand, str(retval));
-}
+$ export IMMUCLIENT_USERNAME=immudb IMMUCLIENT_PASSWORD=immudb IMMUCLIENT_DATABASE=defaultdb
 ```
 
-Would print the immuclient commands to insert into immudb:
+We will write a *uretprobe* that will trigger everytime the *readline* function from *bash* returns. The hook will then use the [system](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md#11-system-system) built-in function to call *immuclient* to insert the *uid*, *pid*, *timestamp* and *command* into *immudb*.
+
+>The *bpftrace* *system* built-in needs to be called with `--unsafe`
+
+```bash
+$ bpftrace --unsafe -e 'uretprobe:/usr/lib64/libreadline.so:readline { system("bin/immuclient set \"bash:%d-%d-%d\" \"user %d: %s\"\n", pid, nsecs, rand, uid, str(retval)); }'
+```
+
+Once the probe start capturing commands, you will see the output of immuclient as it inserts values:
 
 ```
-immuclient set "bash:29152-728945597--647534397" "ls -la"
+Attaching 1 probe...
+tx:             1
+key:            bash:27372-784451418-1577705011
+value:          user 1000: cat /etc/fstab
+hash:           f0294266d6631d6970b27359c3a4f427e2872548961f4a33acdb57ad04a89fef
+
+tx:             2
+key:            bash:27130--869677815-769938295
+value:          user 1000: git pull --rebase
+hash:           dea8733107c200ee0e88a1636f3781648f9512f39d88d175a14948f95d2c42c1
 ```
 
 If you wanted to do this from Go, you can start with the [this example](https://github.com/iovisor/gobpf/blob/master/examples/bcc/bash_readline/bash_readline.go).
