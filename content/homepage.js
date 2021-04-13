@@ -7,11 +7,11 @@ export default {
 				subtitle: 'Add CodeNotary within minutes to secure your supply chain',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Read The Blog',
-                                href: null,
-                                internalLink: {
-                                        type: 'blog-post',
-                                        entry: 'solarwinds-sunburst',
-                                },
+				href: null,
+				internalLink: {
+					type: 'blog-post',
+					entry: 'solarwinds-sunburst',
+				},
 			},
 			{
 				title: 'Transactional Ledger',
@@ -29,8 +29,7 @@ export default {
 				subtitle: 'Maintain an auditable chronology of the code and artefact ownership',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Watch Video',
-				href: null,
-                                href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
+				href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
 			},
 		],
 	},
