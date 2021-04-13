@@ -64,6 +64,26 @@ export default {
 		title: 'Key benefits of using CodeNotary Ledger Compliance',
 		slides: [
 			{
+				imageUrl: '/images/our_solutions.jpg',
+				imageAlt: 'Our Solutions',
+			},
+			// EXAMPLE OF LIST OF SLIDES
+			// {
+			// 	imageUrl: '/images/our_solutions.jpg',
+			// 	imageAlt: 'Our Solutions',
+			// },
+			// {
+			// 	imageUrl: '/images/our_solutions.jpg',
+			// 	imageAlt: 'Our Solutions',
+			// },
+			// {
+			// 	imageUrl: '/images/our_solutions.jpg',
+			// 	imageAlt: 'Our Solutions',
+			// },
+		],
+		/* OLD VERSION
+		slides: [
+			{
 				imageUrl: '/images/placeholder.svg',
 				imageAlt: 'Placeholder Alt Text 2',
 				imageLabel: 'INSPIRATION',
@@ -103,6 +123,7 @@ export default {
 				actionText: 'Read More 3',
 			},
 		],
+		*/
 	},
 	newsletterSection: {
 		title: 'Subscribe to Our Newsletter',

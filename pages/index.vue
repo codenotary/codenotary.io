@@ -16,24 +16,7 @@
 		<LazyHydrate when-visible>
 			<NewsletterSection />
 		</LazyHydrate>
-
-		<LazyHydrate when-visible>
-			<CustomerSuccessStories
-				@onWebinarModal="webinarModalOpen = true"
-			/>
-		</LazyHydrate>
-
-		<!-- ACTIVE CAMPAING MODALS -->
-		<LazyHydrate when-idle>
-			<LedgerComplianceModal
-				v-model="ledgerComplianceModalOpen"
-			/>
-		</LazyHydrate>
-		<LazyHydrate when-idle>
-			<WebinarModal
-				v-model="webinarModalOpen"
-			/>
-		</LazyHydrate>
+		
 	</div>
 </template>
 
