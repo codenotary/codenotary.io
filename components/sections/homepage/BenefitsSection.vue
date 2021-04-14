@@ -69,9 +69,7 @@ export default {
 	//height: 500px;
 	display: flex !important;
 	flex-direction: row;
-	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-	height: 480px;
+	height: 500px;
 
 	img {
 		//background: #a1aec0;
@@ -88,7 +86,8 @@ export default {
 
 	//@media (min-width: 1024px) {
 	.slick-slide {
-		padding: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 	//}
