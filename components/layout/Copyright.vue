@@ -4,7 +4,7 @@
 		:top="2"
 		:bottom="2"
 	>
-		<i-container>
+		<i-container class="_font-weight-bold">
 			<i-row>
 				<i-column
 					class="_display-flex _justify-content-start"
@@ -47,12 +47,11 @@ export default {
 	color: $color-gray-30;
 	text-align: center;
 	font-size: 90%;
-	background-color: $color-gray-80 !important;
+	background-color: $cn-color-brand !important;
 
 	a {
 		padding: 0 $spacer-1-2;
 		color: $color-gray-30;
-		text-decoration: underline;
 
 		&:hover,
 		&:active {
