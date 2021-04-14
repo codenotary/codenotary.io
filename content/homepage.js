@@ -131,4 +131,53 @@ export default {
 		emailPlaceholder: 'Enter your email',
 		actionText: 'SUBSCRIBE',
 	},
+	footer: {
+		tables: [
+			{
+				title: 'PRODUCTS',
+				links: [
+					{
+						label: 'CNLC CI/CD', internalLink: '/products/ledger-compliance', href: null,
+					},
+					{
+						label: 'CNLC Public', internalLink: '/products/ci-cd', href: null,
+					},
+					{
+						label: 'CNLC Metrics & Logs', internalLink: '/products/ledger-compliance-metrics-and-logs', href: null,
+					},
+				],
+			},
+			{
+				title: 'RESOURCES',
+				links: [
+					{
+						label: 'Videos', internalLink: null, href: 'https://www.youtube.com/channel/UCYDMxKTM74Acj8LerGrjUuw/videos',
+					},
+					{
+						label: 'Blogs', internalLink: '/blog', href: null,
+					},
+					{
+						label: 'Whitepapers', internalLink: '/', href: null,
+					},
+				],
+			},
+			{
+				title: 'COMPANY',
+				links: [
+					{
+						label: 'About Us', internalLink: '/about', href: null,
+					},
+					{
+						label: 'Join Us', internalLink: '/join', href: null,
+					},
+					{
+						label: 'Partners', internalLink: '/partners', href: null,
+					},
+					{
+						label: 'Contact', internalLink: '/contact', href: null,
+					},
+				],
+			},
+		],
+	},
 };
