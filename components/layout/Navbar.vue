@@ -49,7 +49,7 @@
 										CNLC (Self-Hosted)
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										Self-Hosted Trusted CI/CD and artifact protection for your software development cycle
+										Self-Hosted trusted CI/CD and artifact protection for your software development cycle
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -67,7 +67,7 @@
 										CNLC (Cloud)
 									</h6>
 									<p class="_margin-0 padding-top-1-2 subtitle">
-										Trusted CI/CD and artifact protection as a Service that allows public verification
+										Trusted CI/CD and artifact protection as a service that allows public verification
 									</p>
 								</nuxt-link>
 							</i-column>
@@ -85,7 +85,7 @@
                                                                                 CNLC Metrics and Logs
                                                                         </h6>
                                                                         <p class="_margin-0 padding-top-1-2 subtitle">
-                                                                                Self-Hosted Performance and compliant log analysis for VMware vSphere, Container and much more
+                                                                                Self-Hosted performance and compliant log analysis for VMware vSphere, container and much more
                                                                         </p>
                                                                 </nuxt-link>
                                                         </i-column>
