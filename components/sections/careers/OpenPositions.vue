@@ -24,7 +24,7 @@
 						>
 							<i-card v-if="article.active" class="career-post">
 								<div>
-									<nuxt-link :to="{ name: 'careers-post', params: { post: article.slug } }">
+									<nuxt-link :to="{ name: 'join-post', params: { post: article.slug } }">
 										<div v-if="article.title" class="_overlay-link title _margin-bottom-1 _text-weight-bold">
 											{{ article.title | truncate(64, '...') }}
 										</div>

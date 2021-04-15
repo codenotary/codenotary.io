@@ -23,7 +23,7 @@
 
 <script>
 export default {
-	name: 'TosSubNavbar',
+	name: 'LayoutSubnavbarTos',
 };
 </script>
 

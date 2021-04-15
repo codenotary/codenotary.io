@@ -11,9 +11,6 @@
 				<p class="lead _margin-bottom-0">
 					Immutable ledgers are a requirement to enable businesses to successfully move to cloud solutions without compromising trust and integrity.
 				</p>
-				<p class="lead _margin-bottom-0">
-					<a href="/blog/vchain-completes-aquisition-of-ledger-and-log-compliance-company-opvizor"><b>Latest News</b>: Acquisition of Opvizor</a>
-				</p>
 			</i-column>
 			<i-column md="4" class="_padding-left-4 _text-left">
 				<p class="_padding-0 margin-0 _margin-bottom-2">
@@ -24,7 +21,7 @@
 						width="220"
 					>
 				</p>
-				<p class="_padding-0 margin-0">
+				<p class="_padding-0 _margin-0 _margin-bottom-2">
 					<a
 						href="https://www.vmware.com/partners/work-with-vmware/tap.html"
 						target="_blank"
@@ -35,6 +32,17 @@
 							alt="VMware Technology Alliance Partner (TAP)"
 							class="image -responsive"
 							width="100"
+						>
+					</a>
+				</p>
+				<p class="_padding-0 _margin-0">
+					<a
+						href="https://www.ibm.com/partnerworld/public" target="_blank"
+						rel="nofollow"
+					>
+						<img
+							src="/images/ibm.jpeg" alt="IBM PartnerWorld"
+							class="image -responsive" width="180"
 						>
 					</a>
 				</p>
