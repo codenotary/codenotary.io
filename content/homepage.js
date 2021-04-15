@@ -4,7 +4,7 @@ export default {
 		cards: [
 			{
 				title: 'Trusted CI/CD',
-				subtitle: 'Add CodeNotary within minutes to secure your supply chain',
+				subtitle: 'Add CodeNotary within minutes to secure your software supply chain',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Read The Blog',
 				href: null,
@@ -15,7 +15,7 @@ export default {
 			},
 			{
 				title: 'Transactional Ledger',
-				subtitle: 'Record your code, artefacts and CI/CD steps immutable',
+				subtitle: 'Record your code, artifacts and CI/CD steps immutable',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Read The Blog',
 				href: null,
@@ -26,7 +26,7 @@ export default {
 			},
 			{
 				title: 'Software Provenance',
-				subtitle: 'Maintain an auditable chronology of the code and artefact ownership',
+				subtitle: 'Maintain an auditable chronology of the code and artifact ownership',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Watch Video',
 				href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
@@ -35,16 +35,16 @@ export default {
 	},
 	whatWeDoSection: {
 		title: 'WHAT WE DO',
-		subtitle: 'We develop and maintain the world’s fastest immutable database immudb, to bring trust to all your data by storing it immutable with client-cryptographic verification.',
+		subtitle: 'We bring trust and integrity into the software life cycle by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.',
 		cards: [
 			{
 				title: 'Security',
-				subtitle: 'Identify & Stop tampering',
+				subtitle: 'Identify & stop tampering',
 				imageUrl: '/images/features/security.svg',
 			},
 			{
 				title: 'Compliance',
-				subtitle: 'Accountable data',
+				subtitle: 'Accountable data for all your pipelines',
 				imageUrl: '/images/features/compliance.svg',
 			},
 			{
@@ -53,8 +53,8 @@ export default {
 				imageUrl: '/images/features/dev-ops.svg',
 			},
 			{
-				title: 'Collab',
-				subtitle: 'Data in transit integrity',
+				title: 'Supply chain',
+				subtitle: 'Bill of material for your runtime',
 				imageUrl: '/images/features/collab.svg',
 			},
 		],
