@@ -8,7 +8,7 @@
 				<i-column xs="12" sm="12">
 					<PageSectionHeader
 						title="Customer Use Cases"
-						bottom="2"
+						:bottom="2"
 					>
 						With CodeNotary Ledger Compliance&reg; you can easily build immutable,
 						tamper-proof solutions and comply with auditor requirements and regulations and laws.

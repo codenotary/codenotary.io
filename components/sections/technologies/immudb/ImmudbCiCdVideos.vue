@@ -8,8 +8,8 @@
 				<i-column class="_margin-0 _padding-0">
 					<page-section-header
 						title="Community videos"
-						top="0"
-						bottom="2"
+						:top="0"
+						:bottom="2"
 					/>
 				</i-column>
 			</i-row>
