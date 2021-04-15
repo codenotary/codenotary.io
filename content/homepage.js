@@ -48,12 +48,12 @@ export default {
 				imageUrl: '/images/features/compliance.svg',
 			},
 			{
-				title: 'Dev Ops',
-				subtitle: 'Trust process & artefacts',
+				title: 'DevOps',
+				subtitle: 'Trust process & artifacts',
 				imageUrl: '/images/features/dev-ops.svg',
 			},
 			{
-				title: 'Supply chain',
+				title: 'Supply Chain',
 				subtitle: 'Bill of material for your runtime',
 				imageUrl: '/images/features/collab.svg',
 			},
