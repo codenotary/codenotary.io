@@ -136,10 +136,10 @@ export default {
 				title: 'PRODUCTS',
 				links: [
 					{
-						label: 'CNLC CI/CD', internalLink: '/products/ledger-compliance', href: null,
+						label: 'CNLC (Self-Hosted)', internalLink: '/products/ledger-compliance', href: null,
 					},
 					{
-						label: 'CNLC Public', internalLink: '/products/ci-cd', href: null,
+						label: 'CNLC (Cloud)', internalLink: '/products/ci-cd', href: null,
 					},
 					{
 						label: 'CNLC Metrics & Logs', internalLink: '/products/ledger-compliance-metrics-and-logs', href: null,
@@ -156,7 +156,7 @@ export default {
 						label: 'Blogs', internalLink: '/blog', href: null,
 					},
 					{
-						label: 'Whitepapers', internalLink: '/', href: null,
+						label: 'immudb', internalLink: '/technologies/immudb', href: null,
 					},
 				],
 			},
