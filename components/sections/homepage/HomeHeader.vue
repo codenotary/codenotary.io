@@ -136,6 +136,10 @@ $mascot-width: 175px;
 			margin-bottom: $spacer * 2;
 		}
 	}
+
+	.action {
+		padding-top: 30px;
+	}
 }
 
 #video-column {

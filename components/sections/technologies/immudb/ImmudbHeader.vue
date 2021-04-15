@@ -64,25 +64,6 @@
 			v-model="researchPaperModalVisible"
 		/>
 
-		<p class="_margin-top-3">
-			<i-button
-				id="research-paper-button"
-				link
-				variant="primary"
-				@click="openCodingChallenge()"
-			>
-				<!-- <i-badge size="sm" variant="success" class="_margin-right-1-2">New</i-badge> -->
-				<i-badge
-					size="sm"
-					variant="danger"
-					class="_margin-right-1-2 dont-underline"
-				>
-					<fa icon="fire" style="margin-right: 0.15rem;" />
-					<span class="dont-underline">Hot</span>
-				</i-badge>
-				<span class="underline">immudb Coding Challenge</span>
-			</i-button>
-		</p>
 	</i-header>
 </template>
 

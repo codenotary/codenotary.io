@@ -1,11 +1,11 @@
-<PageSection id="immudb-easy-setup-section">
+<page-section id="immudb-easy-setup-section">
 <i-container>
 <i-row>
     <i-column>
-        <PageSectionHeader title="Easy setup">
+        <page-section-header title="Easy setup">
             Build Docker images based on the Dockerfiles in the GitHub repository
             for the most common architectures or use the prebuild ones on Dockerhub for Linux.
-        </PageSectionHeader>
+        </page-section-header>
     </i-column>
 </i-row>
 <i-row>
@@ -17,5 +17,5 @@ docker run -it -d -p 3322:3322 -p 9497:9497 --name immudb codenotary/immudb:late
 
 </i-column>
 </i-row>
-</i-container>    
-</PageSection>
+</i-container>
+</page-section>

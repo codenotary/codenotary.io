@@ -43,8 +43,8 @@ module.exports = {
 			singleline: 2,
 			multiline: {
 				max: 2,
+				allowFirstLine: false,
 			},
-			allowFirstLine: false,
 		}],
 		'vue/html-closing-bracket-newline': ['warn', {
 			multiline: 'always',

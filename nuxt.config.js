@@ -127,6 +127,7 @@ export default {
 		{ src: '~plugins/vue-typer', ssr: false },
 		'~plugins/vue-slick-carousel',
 		'~plugins/inkline',
+		{ src: '~plugins/hotjar', ssr: false },
 	],
 	/*
     ** Nuxt.js dev-modules
@@ -274,7 +275,7 @@ export default {
 				if (map && map.length) {
 					map.map((path) => {
 						paths = [...paths, {
-							route: `/careers/${ careersRoutes[path] }`,
+							route: `/join/${ careersRoutes[path] }`,
 							payload: path,
 						}];
 						return true;
@@ -320,7 +321,7 @@ export default {
 				if (map && map.length) {
 					map.map((path) => {
 						paths = [...paths, {
-							route: `/careers/${ careersRoutes[path] }`,
+							route: `/join/${ careersRoutes[path] }`,
 							payload: path,
 						}];
 						return true;

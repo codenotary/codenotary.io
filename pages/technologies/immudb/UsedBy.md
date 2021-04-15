@@ -1,4 +1,4 @@
-<PageSection id="immudb-usedby-section">
+<page-section id="immudb-usedby-section">
     <i-container>
         <i-row>
             <i-column>
@@ -36,4 +36,4 @@
             </i-column>
         </i-row>
     </i-container>
-</PageSection>
+</page-section>

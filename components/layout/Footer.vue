@@ -1,6 +1,6 @@
 <template>
 	<PageSection
-		class="footer _padding-top-xs-3 "
+		class="footer _padding-top-xs-2 _padding-left-xs-1 _padding-right-xs-1"
 		:top="3"
 		:bottom="2"
 	>
