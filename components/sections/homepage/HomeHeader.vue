@@ -6,7 +6,7 @@
 		<i-row class="_align-items-center">
 			<i-column lg="6">
 				<h1 class="h2 _font-weight-bold cn-text-dark">
-					End-to-end tampering protection for your software development cycle
+					End-to-end tamperproof protection for your software development cycle
                                 </h1>
 
 				<p class="lead cn-text-muted_blue">

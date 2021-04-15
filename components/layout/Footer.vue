@@ -14,8 +14,10 @@
 						alt="CodeNotary"
 					>
 					<p class="brand-description">
-						Immutable notarization for all your sensitive data. On-premise or in the cloud, easy to use
-						tamperproof storage with cryptographic verification, processing millions of transactions a
+                                                We bring trust and integrity into the software life cycle 
+                                                by providing end-to-end cryptographically verifiable tracking and provenance 
+                                                for all artifacts, actions, and dependencies. 
+						The only immutable and client-verifiable solutions capable of processing millions of transactions a
 						second.
 					</p>
 					<ul class="social-links list -inline">
