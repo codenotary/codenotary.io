@@ -2,7 +2,7 @@
 <i-container>
 <i-row>
 <i-column>
-<page-section-header title="By developers, for developers" :bottom="2" weight="bold">
+<page-section-header title="By developers, for developers" :bottom="2">
     We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
 </page-section-header>
 <i-tabs custom>

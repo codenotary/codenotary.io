@@ -2,7 +2,7 @@
 <i-container>
 <i-row>
     <i-column>
-        <page-section-header title="Easy setup" weight="bold">
+        <page-section-header title="Easy setup">
             Build Docker images based on the Dockerfiles in the GitHub repository
             for the most common architectures or use the prebuild ones on Dockerhub for Linux.
         </page-section-header>

@@ -38,7 +38,7 @@ export default {
 		},
 		weight: {
 			type: String,
-			default: 'normal',
+			default: 'bold',
 		},
 		top: {
 			type: Number,
