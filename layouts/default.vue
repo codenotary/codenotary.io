@@ -1,6 +1,6 @@
 <template>
 	<section class="default-layout" :class="{ scrolled, hover }">
-		<LayoutNavbar
+		<Navbar
 			id="navbar"
 			:scrolled="scrolled"
 			@mouseenter.native="hover = true"
@@ -9,8 +9,8 @@
 		<div id="content">
 			<nuxt />
 		</div>
-		<LayoutFooter />
-		<LayoutCopyright />
+		<Footer />
+		<Copyright />
 	</section>
 </template>
 

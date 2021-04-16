@@ -1,21 +1,22 @@
 <template>
 	<div>
-		<SectionsHomepageHomeHeader />
+		<HomeHeader/>
 		<LazyHydrate when-visible>
-			<SectionsHomepageHeroCardsSection />
+			<hero-cards-section />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<SectionsHomepageWhatWeDoSection />
+			<WhatWeDoSection />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<SectionsHomepageBenefitsSection />
+			<BenefitsSection />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<SectionsHomepageNewsletterSection />
+			<NewsletterSection />
 		</LazyHydrate>
+		
 	</div>
 </template>
 

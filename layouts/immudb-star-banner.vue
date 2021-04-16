@@ -1,21 +1,21 @@
 <template>
 	<section class="immudb-star-banner-layout" :class="{ scrolled, hover, closed }">
-		<LayoutImmudbStarBanner
+		<ImmudbStarBanner
 			id="immudbStarBanner"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 			@submit="cta()"
 			@close="cta(true)"
 		/>
-		<LayoutNavbar
+		<Navbar
 			id="navbar"
 			:scrolled="scrolled"
 		/>
 		<div id="content">
 			<nuxt />
 		</div>
-		<LayoutFooter />
-		<LayoutCopyright />
+		<Footer />
+		<Copyright />
 	</section>
 </template>
 

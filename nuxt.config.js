@@ -24,7 +24,6 @@ export default {
     ** Doc: https://nuxtjs.org/api/configuration-components/
     */
 	components: true,
-
 	/*
     ** Headers of the page
     */
