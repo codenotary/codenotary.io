@@ -1,9 +1,9 @@
 <template>
 	<header
-		:class="`section-header _text-primary ${ block ? '-block' : '' } _text-${ color } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
+		:class="`section-header ${ block ? '-block' : '' } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
 	>
 		<slot name="title">
-			<h2 :is="tag" :class="`_text-primary _text-${ color } _font-weight-${ weight }`">
+			<h2 :is="tag" :class="`cn-text-${ color } _font-weight-${ weight }`">
 				{{ title }}
 			</h2>
 		</slot>
@@ -34,11 +34,11 @@ export default {
 		},
 		color: {
 			type: String,
-			default: 'gray-80',
+			default: 'brand',
 		},
 		weight: {
 			type: String,
-			default: 'normal',
+			default: 'bold',
 		},
 		top: {
 			type: Number,

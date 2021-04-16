@@ -2,6 +2,7 @@
 	<PageSection
 		id="whatwedo-section"
 		variant="white"
+		:bottom="0"
 	>
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<hr class="_width-100"/>
@@ -13,7 +14,7 @@
 			/>
 		</i-container>
 		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column">
-			<h6 class="_font-weight-bold subheader _margin-0">
+			<h6 class="subheader _margin-0">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
 			<i-container class="transparent-cards _margin-top-3">

@@ -5,6 +5,9 @@
 			<ImmudbCardsSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
+			<nuxt-content :document="playground" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<ImmudbRunsOnSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
@@ -57,6 +60,7 @@ export default {
 		const usedBy = await $content('technologies/immudb/UsedBy').fetch();
 		const codeTabs = await $content('technologies/immudb/CodeTabs').fetch();
 		const getStarted = await $content('technologies/immudb/GetStarted').fetch();
+		const playground = await $content('technologies/immudb/Playground').fetch();
 
 		return {
 			easySetup,
@@ -66,6 +70,7 @@ export default {
 			usedBy,
 			codeTabs,
 			getStarted,
+			playground,
 		};
 	},
 	head() {
@@ -289,6 +294,16 @@ export default {
 
 	#immudb-get-started-end-section {
 		text-align: center;
+	}
+
+	#immudb-playground {
+		img {
+			transition: transform 0.3s ease-in-out;
+		}
+
+		img:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 </style>

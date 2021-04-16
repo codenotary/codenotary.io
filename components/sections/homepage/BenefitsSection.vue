@@ -3,14 +3,14 @@
 		id="benefits-section"
 		variant="white"
 	>
-		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-bottom-6">
+		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<hr class="_width-100"/>
 			<PageSectionHeader
 				:title="content.benefitsSection.title"
+				weight="bold"
 				:top="0"
-				:bottom="0"
+				:bottom="2"
 			/>
-			<fa class="icon" icon="chevron-down" />
 		</i-container>
 		<i-container>
 			<VueSlickCarousel v-bind="carouselSettings" class="benefits-carousel">
