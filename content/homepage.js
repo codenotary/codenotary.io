@@ -3,8 +3,8 @@ export default {
 	heroCardsSection: {
 		cards: [
 			{
-				title: 'Trusted CI/CD',
-				subtitle: 'Add CodeNotary within minutes to secure your software supply chain',
+				title: 'Modern Code Signing',
+				subtitle: 'Why the modern way of code signing using CodeNotary is important for a secure software supply chain',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Read The Blog',
 				href: null,
@@ -14,8 +14,8 @@ export default {
 				},
 			},
 			{
-				title: 'Transactional Ledger',
-				subtitle: 'Record your code, artifacts and CI/CD steps immutable',
+				title: 'Your CI/CD Flight Recorder',
+				subtitle: 'Learn how to record your code, artifacts and CI/CD steps immutable',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Read The Blog',
 				href: null,
@@ -25,11 +25,11 @@ export default {
 				},
 			},
 			{
-				title: 'Software Provenance',
-				subtitle: 'Maintain an auditable chronology of the code and artifact ownership',
+				title: 'GitHub Actions and CodeNotary',
+				subtitle: 'Learn how to fully automate your software notarization and authentication process',
 				imageUrl: '/images/placeholder.svg',
 				actionText: 'Watch Video',
-				href: 'https://www.youtube.com/watch?v=jNyAWlBfTTs',
+				href: 'https://www.youtube.com/watch?v=cz79rtrz9ZQ',
 			},
 		],
 	},
