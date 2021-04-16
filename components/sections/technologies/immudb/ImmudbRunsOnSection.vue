@@ -3,7 +3,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<PageSectionHeader title="Runs on" :bottom="2" />
+					<PageSectionHeader title="Runs on" :bottom="2" weight="bold"/>
 				</i-column>
 			</i-row>
 			<i-row>
