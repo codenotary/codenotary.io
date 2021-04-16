@@ -22,7 +22,7 @@
 					</p>
 					<ul class="social-links list -inline">
 						<li>
-							<a href="https://github.com/vchain-us">
+							<a href="https://github.com/codenotary">
 								<fa :icon="['fab', 'github-square']" />
 							</a>
 						</li>
