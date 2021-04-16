@@ -83,6 +83,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~@inkline/inkline/src/css/config';
+@import '~@inkline/inkline/src/css/mixins';
 
 #lc-integrations-section {
 	overflow: hidden;
