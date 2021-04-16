@@ -92,3 +92,4 @@ sw.*
 # Ignored this as they're created at realt time before building
 blog.json
 careers.json
+tos.json

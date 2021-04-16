@@ -1,6 +1,6 @@
 <template>
 	<div class="iframe-layout">
-		<Navbar id="navbar" />
+		<LayoutNavbar id="navbar" />
 		<div id="content">
 			<nuxt />
 		</div>

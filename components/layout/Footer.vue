@@ -112,8 +112,8 @@ export default {
 	.table {
 		display: flex;
 		flex-direction: column;
-		align-items: start;
-		justify-content: start;
+		align-items: flex-start;
+		justify-content: flex-start;
 		flex: 0 0 200px;
 		line-height: 19px;
 		margin-top: 32px;
