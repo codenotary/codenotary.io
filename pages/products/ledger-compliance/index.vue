@@ -48,6 +48,7 @@ export default {
 	},
 	data: () => ({
 		ledgerComplianceModalOpen: false,
+		webinarModalOpen: false,
 	}),
 	head() {
 		return {
