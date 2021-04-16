@@ -4,10 +4,13 @@
 		variant="light-grey"
 	>
 		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
-			<h4 class="_font-weight-bold _margin-top-0">
-				{{ content.newsletterSection.title }}
-			</h4>
-			<p class="cn-text-muted_blue _font-size-sm _text-center">
+			<PageSectionHeader
+				weight="bold"
+				:title="content.newsletterSection.title"
+				:top="0"
+				:bottom="0"
+			/>
+			<p class="_text-center _margin-top-0">
 				{{ content.newsletterSection.subtitle }}
 			</p>
 			<i-form
