@@ -1,9 +1,6 @@
 <template>
 	<div>
 		<HomeHeader/>
-		<LazyHydrate when-visible>
-			<hero-cards-section />
-		</LazyHydrate>
 
 		<LazyHydrate when-visible>
 			<WhatWeDoSection />
@@ -16,7 +13,7 @@
 		<LazyHydrate when-visible>
 			<NewsletterSection />
 		</LazyHydrate>
-		
+
 	</div>
 </template>
 

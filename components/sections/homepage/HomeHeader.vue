@@ -5,12 +5,12 @@
 	>
 		<i-row class="_align-items-center">
 			<i-column lg="6">
-				<h1 class="h2 _font-weight-bold cn-text-dark">
-					End-to-end tamperproof protection for your software development cycle
-                                </h1>
+				<h1 class="h2 _font-weight-bold cn-text-dark title">
+					{{ content.headerSection.title }}
+        </h1>
 
-				<p class="lead cn-text-muted_blue">
-					Add trust, integrity, and transparency for all identities and artifacts to your CI/CD pipelines in a heartbeat.
+				<p class="lead cn-text-muted_blue subtitle">
+					{{ content.headerSection.subtitle }}
 				</p>
 <!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
 <!--					Powered by the world’s fastest immutable database.-->
@@ -68,6 +68,7 @@
 
 <script>
 import LazyHydrate from 'vue-lazy-hydration';
+import homepage from '@/content/homepage';
 
 export default {
 	name: 'HomeHeader',
@@ -77,7 +78,8 @@ export default {
 	},
 	data() {
 		return {
-                        ledgerComplianceModalOpen: false,
+			ledgerComplianceModalOpen: false,
+			content: homepage,
 			playing: false,
 			timeout: null,
 		};
@@ -102,23 +104,17 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
 $mascot-width: 175px;
 
 #home-header {
-	background: $background-grey;
-	// -webkit-gradient(
-	// 	linear,
-	// 	left top,
-	// 	left bottom,
-	// 	180deg,
-	// 	rgba(20, 96, 182, 1),
-	// 	rgba(15, 72, 136, 1),
-	// 	rgba(10, 48, 90, 1)
-	// );
+	background: $cn-dark-gradient;
+}
+
+::v-deep #home-header {
 	overflow: hidden;
 	width: 100%;
 
@@ -145,6 +141,10 @@ $mascot-width: 175px;
 #video-column {
 	position: relative;
 
+	#video {
+		border-radius: 30px;
+	}
+
 	&.playing {
 		#mascot {
 			transform: translateX($mascot-width);
@@ -159,5 +159,19 @@ $mascot-width: 175px;
 	right: 0;
 	bottom: -1rem;
 	transition: transform 0.5s ease;
+}
+
+.title {
+	color: white !important;
+}
+
+.subtitle {
+	color: white !important;
+}
+
+@media screen and (min-width: 1024px) {
+	.title {
+		text-transform: uppercase;
+	}
 }
 </style>

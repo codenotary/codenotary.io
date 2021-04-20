@@ -14,9 +14,9 @@
 						alt="CodeNotary"
 					>
 					<p class="brand-description">
-                                                We bring trust and integrity into the software life cycle 
-                                                by providing end-to-end cryptographically verifiable tracking and provenance 
-                                                for all artifacts, actions, and dependencies. 
+                                                We bring trust and integrity into the software life cycle
+                                                by providing end-to-end cryptographically verifiable tracking and provenance
+                                                for all artifacts, actions, and dependencies.
 						The only immutable and client-verifiable solutions capable of processing millions of transactions a
 						second.
 					</p>
@@ -77,7 +77,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 .footer {
-	background-color: $cn-color-primary !important;
+	background-color: $cn-color-dark !important;
 
 	.logo {
 		height: 64px;

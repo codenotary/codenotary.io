@@ -1,11 +1,12 @@
 <template>
 	<PageSection
 		id="newsletter-section"
-		variant="light-grey"
+		variant="gradient_inverse"
 	>
 		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<PageSectionHeader
 				weight="bold"
+				color="white"
 				:title="content.newsletterSection.title"
 				:top="0"
 				:bottom="0"
@@ -24,8 +25,7 @@
 					/>
 					<cn-button
 						type="submit"
-						variant="dark"
-						class="action-button _font-weight-bold _text-uppercase"
+						class="action-button"
 						:disabled="!verified || sending"
 						size="sm"
 						block
@@ -118,6 +118,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#newsletter-section {
+	color: white;
+}
+
 .container {
 	max-width: 500px;
 }
@@ -142,7 +146,8 @@ export default {
 		.form-input {
 			border: 3px solid #a1aec0;
 			border-radius: 5px;
-			margin-right: 30px;
+			margin-right: 5px;
+			height: $cn-button-height;
 
 			input {
 				padding: 3px;

@@ -47,11 +47,11 @@ export default {
 	color: $color-gray-30;
 	text-align: center;
 	font-size: 90%;
-	background-color: $cn-color-brand !important;
+	background-color: $cn-color-primary_dark !important;
 
 	a {
 		padding: 0 $spacer-1-2;
-		color: $color-gray-30;
+		color: $cn-color-primary;
 
 		&:hover,
 		&:active {

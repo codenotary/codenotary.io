@@ -49,13 +49,10 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-$navbar-height: 60;
-$navbar-scrolled-height: 60;
-
 section.default-layout {
 	#navbar {
 		position: fixed;
-		height: #{$navbar-height}px;
+		height: #{$cn-navbar-height}px;
 		width: 100%;
 		top: 0;
 		left: 0;
@@ -69,7 +66,7 @@ section.default-layout {
 
 	&.scrolled {
 		#navbar {
-			height: #{$navbar-scrolled-height}px !important;
+			height: #{$cn-navbar-scrolled-height}px !important;
 		}
 
 		#content {

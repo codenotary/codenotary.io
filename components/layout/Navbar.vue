@@ -1,10 +1,8 @@
 <template>
 	<i-navbar
 		:class="{
-			[`-bg-${ navbarBackground }`]: true,
 			'-scrolled': scrolled,
 		}"
-		:variant="navbarLight ? 'light' : 'dark'"
 	>
 		<i-navbar-brand
 			:to="{ name: 'index' }"
@@ -12,7 +10,7 @@
 		>
 			<img
 				class="logo _padding-y-1-2"
-				:src="`/images/logo/logo_blue.svg`"
+				:src="`/images/logo/logo_white.png`"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
@@ -137,10 +135,9 @@
 				<transition name="fade">
 					<cn-button
 						v-if="scrolled"
+						class="cta-button"
 						href="https://democnlc.codenotary.com"
-						variant="dark"
-						size="md"
-						outline
+						variant="secondary"
 					>
 						Download
 					</cn-button>
@@ -202,16 +199,20 @@ export default {
 @import '~@inkline/inkline/src/css/config';
 @import '~@inkline/inkline/src/css/mixins';
 
-$logo-height: 48;
-
 .navbar {
 	//background: transparent !important;
-	background: white !important;
+	background: $cn-dark-gradient !important;
 	transition: all 0.15s ease-out;
 	z-index: 999;
 
+	&.-collapsed {
+		.cta-button {
+			display: none;
+		}
+	}
+
 	.logo {
-		max-height: #{$logo-height}px;
+		max-height: #{$cn-logo-height}px;
 		width: auto;
 		margin-right: 8px;
 	}
@@ -221,7 +222,7 @@ $logo-height: 48;
 	.item,
 	.title {
 		transition: all 0.3s ease-out;
-		color: $text-dark-color !important;
+		color: white !important;
 	}
 
 	/*
@@ -290,12 +291,12 @@ $logo-height: 48;
 		&.-bg-primary,
 		& {
 			padding: 0 !important;
-			background: white !important;
+			//background: white !important;
 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
 
 			.container {
 				.logo {
-					max-height: #{$logo-height}px;
+					max-height: #{$cn-logo-height}px;
 				}
 
 				a:not(.button),

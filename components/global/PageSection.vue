@@ -8,18 +8,21 @@
 
 <script>
 const VARIANTS = [
+	'standard',
 	'white',
 	'blue',
 	'light-blue',
 	'gray', 'grey',
 	'light-gray', 'light-grey',
+	'gradient',
+	'gradient_inverse',
 ];
 export default {
 	name: 'PageSection',
 	props: {
 		variant: {
 			type: String,
-			default: 'white',
+			default: 'standard',
 		},
 		top: {
 			type: Number,
@@ -70,6 +73,18 @@ export default {
 		&light-gray,
 		&light-grey {
 			background-color: $background-grey;
+		}
+
+		&standard {
+			background-color: $cn-color-background;
+		}
+
+		&gradient {
+			background: $cn-dark-gradient;
+		}
+
+		&gradient_inverse {
+			background: $cn-dark-gradient_inverse;
 		}
 	}
 }

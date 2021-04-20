@@ -1,11 +1,9 @@
 <template>
 	<PageSection
 		id="whatwedo-section"
-		variant="white"
 		:bottom="0"
 	>
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
-			<hr class="_width-100"/>
 			<PageSectionHeader
 				weight="bold"
 				:title="content.whatWeDoSection.title"

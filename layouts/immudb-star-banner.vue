@@ -70,8 +70,6 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-$navbar-height: 60;
-$navbar-scrolled-height: 60;
 $banner-height: 40;
 $banner-scrolled-height: 0;
 
@@ -89,7 +87,7 @@ section.immudb-star-banner-layout {
 
 	#navbar {
 		position: fixed;
-		height: #{$navbar-height}px !important;
+		height: #{$cn-navbar-height}px !important;
 		width: 100%;
 		top: #{$banner-height}px !important;
 		left: 0;
@@ -107,7 +105,7 @@ section.immudb-star-banner-layout {
 		}
 
 		#navbar {
-			height: #{$navbar-scrolled-height}px !important;
+			height: #{$cn-navbar-scrolled-height}px !important;
 			top: #{$banner-scrolled-height}px !important;
 		}
 
@@ -127,7 +125,7 @@ section.immudb-star-banner-layout {
 		}
 
 		#content {
-			margin-top: #{$navbar-height}px !important;
+			margin-top: #{$cn-navbar-height}px !important;
 		}
 	}
 
@@ -151,7 +149,7 @@ section.immudb-star-banner-layout {
 		}
 
 		#content {
-			margin-top: #{$banner-height * 2 + $navbar-height}px !important;
+			margin-top: #{$banner-height * 2 + $cn-navbar-height}px !important;
 		}
 	}
 }
