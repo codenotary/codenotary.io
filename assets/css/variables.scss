@@ -20,15 +20,53 @@ $navbar-padding-base: 12px 0;
 
 $background-grey: #edf0f4;
 
+// Brand
+
 // Color scheme
 $cn-color-brand: #244583;
-$cn-color-primary: #1460b6;
-$cn-color-primary_light: #a3dbeb;
-$cn-color-secondary: #f6963d;
+$cn-color-primary: #24c4a1;
+$cn-color-primary_light: #9fefde;
+$cn-color-primary_dark: #153954;
+$cn-color-secondary: #febf2d;
 $cn-color-secondary-light: #fed19a;
-$cn-color-dark: #0b2533;
-$cn-color-grey: #c7cfd6;
-$cn-color-grey_light: #e9ecef;
-$cn-color-light: #f8f9fa;
+$cn-color-dark: #13274b;
+$cn-color-grey: #c1c1c1;
+$cn-color-grey_light: #ebece9;
+$cn-color-light: #faf9f8;
 $cn-color-accent: #db3216;
 $cn-color-black: #000;
+$cn-dark-gradient: linear-gradient(90deg, #13264a 26.04%, #24c4a1 99.98%, #24c3a1 99.99%, #24c4a1 100%);
+$cn-dark-gradient_inverse: linear-gradient(-90deg, #13264a 26.04%, #24c4a1 99.98%, #24c3a1 99.99%, #24c4a1 100%);
+$cn-color-background: #e5e5e5;
+
+// Other
+$cn-button-height: 47px;
+$cn-logo-height: 70;
+$cn-navbar-height: 100;
+$cn-navbar-scrolled-height: 70;
+
+@-webkit-keyframes scale-animation {
+	0% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+
+	50% {
+		-webkit-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-o-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+}
