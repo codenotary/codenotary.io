@@ -52,7 +52,7 @@ export default {
 .cn-button {
 	outline: none;
 	cursor: pointer;
-	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+	box-shadow: $cn-shadow-sm;
 	border-radius: $cn-button-radius;
 	border: unset;
 	height: $cn-button-height;
