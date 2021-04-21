@@ -72,6 +72,11 @@ export default {
 			lang: 'scss',
 			ssr: false,
 		},
+		{
+			src: './assets/css/main.scss',
+			lang: 'scss',
+			ssr: false,
+		},
 	],
 
 	build: {
