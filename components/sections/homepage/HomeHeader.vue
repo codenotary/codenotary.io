@@ -15,25 +15,23 @@
 <!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
 <!--					Powered by the world’s fastest immutable database.-->
 <!--				</h5>-->
-				<p class="action">
-					<i-button
-						size="lg"
-						outline
-						variant="primary"
+				<p class="action _display-flex _flex-direction-row">
+					<cn-button
+						variant="secondary"
 						href="https://dashboard.codenotary.io/auth/signup"
 						target="_blank"
 						rel="nofollow"
 					>
 						Cloud
-					</i-button>
-					<i-button
-						variant="primary"
+					</cn-button>
+					<cn-button
+						variant="light"
 						size="lg"
 						class="_margin-left-1"
 						@click="ledgerComplianceModalOpen = true"
 					>
 						Self-Hosted
-					</i-button>
+					</cn-button>
 					<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 				</p>
 			</i-column>
