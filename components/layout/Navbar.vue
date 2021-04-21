@@ -217,7 +217,7 @@ export default {
 		margin-right: 8px;
 	}
 
-	a:not(.button),
+	& > a:not(.button),
 	span,
 	.item,
 	.title {
@@ -297,12 +297,6 @@ export default {
 			.container {
 				.logo {
 					max-height: #{$cn-logo-height}px;
-				}
-
-				a:not(.button),
-				.item,
-				.title {
-					color: $text-dark-color !important;
 				}
 			}
 
