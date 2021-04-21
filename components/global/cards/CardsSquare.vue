@@ -12,7 +12,7 @@
 
 <script>
 export default {
-	name: 'CardSquare',
+	name: 'CardsSquare',
 	props: {
 		title: {
 			type: String,
