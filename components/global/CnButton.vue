@@ -1,7 +1,6 @@
 <template>
 	<button
 		:class="dynamicClass" v-bind="$attrs"
-		@click="clickHandler"
 	>
 		<nuxt-link v-if="to" class="table_link" :to="to">
 			<slot>
@@ -46,15 +45,6 @@ export default {
 			};
 		},
 	},
-	methods: {
-		clickHandler($event) {
-			if (this.href) {
-				window.open(this.href, this.target);
-			}
-
-			this.$emit('click', $event);
-		},
-	},
 };
 </script>
 <style lang="scss" scoped>
@@ -63,7 +53,7 @@ export default {
 	outline: none;
 	cursor: pointer;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-	border-radius: 7px;
+	border-radius: $cn-button-radius;
 	border: unset;
 	height: $cn-button-height;
 	padding: 14px 30px;
@@ -102,7 +92,17 @@ export default {
 		pointer-events: none;
 	}
 
-	&:hover {
+	a:hover,
+	a:focus,
+	a:active {
+		color: unset;
+		text-decoration: unset;
+		outline-width: 0;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
 		opacity: 0.9;
 	}
 
