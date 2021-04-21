@@ -4,7 +4,7 @@
 		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
 			{{ title }}
 		</h3>
-		<h6 class="_font-weight-bold subtitle">
+		<h6 class="subtitle">
 			{{ subtitle }}
 		</h6>
 	</div>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-	name: 'CnTransparentCard',
+	name: 'CardSquare',
 	props: {
 		title: {
 			type: String,
@@ -40,11 +40,16 @@ export default {
 
 <style lang="scss" scoped>
 .transparent-card {
-	max-width: 200px;
+	max-width: 278px;
+	height: 276px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-radius: $cn-border-radius-lg;
+	background-color: white;
+	padding: 40px;
+	box-shadow: $cn-shadow-sm;
 
 	.card-picture {
 		height: 100px;
