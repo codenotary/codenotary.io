@@ -5,12 +5,7 @@ image: "/images/blog/vcn-github-actions.png"
 tags: ["GitHub Action", "Secure CI/CD", "CodeNotary", "GitOps"]
 ---
 
-# Secure your CI/CD Pipeline with Your Own CodeNotary GitHub Action, From Scratch Using Docker
-
-
-
-
-In this tutorial, you will learn everything you need to secure your CI/CD pipeline by notarizing all of your artifacts with a GitHub Action that uses CodeNotary.
+In this blog post, you will learn everything you need to secure your CI/CD pipeline by notarizing all of your artifacts with a GitHub Action that uses CodeNotary.
 
 
 When your users, clients, or customers download an asset from you, they may want to validate that the file has not been tampered with. With CodeNotary, you can notarize all your assets so that their exact signatures can be compared with the artifacts produced by your CI/CD process. 
@@ -330,4 +325,4 @@ If you want to check a major Open Source project [Home Assistant](https://github
 
 In summary, this process involved writing a Dockerfile to generate a clean working environment which calls an entrypoint script. Our action.yml file defined the inputs and outputs as well as the environment variables to be passed to our Docker image, and our sample Github Workflow utilizes all of this to create a test file and notarize it using the action we wrote.
 
-You can get started in minutes with your [CodeNotary Cloud account] (https://dashboard.codenotary.io/auth/signup)
+You can get started in minutes with your [CodeNotary Cloud account](https://dashboard.codenotary.io/auth/signup)
