@@ -63,8 +63,10 @@
 				</i-column>
 			</i-row>
 		</i-header>
-		<div class="gradient-box"></div>
-		<div class="secondary-box"></div>
+		<client-only>
+			<div class="gradient-box" />
+			<div class="secondary-box" :style="computedStyle" />
+		</client-only>
 	</div>
 </template>
 
@@ -76,7 +78,7 @@ export default {
 	name: 'HomeHeader',
 	components: {
 		LazyHydrate,
-                LedgerComplianceModal: () => import('~/components/global/modals/LedgerComplianceModal'),
+		LedgerComplianceModal: () => import('~/components/global/modals/LedgerComplianceModal'),
 	},
 	data() {
 		return {
@@ -84,12 +86,26 @@ export default {
 			content: homepage,
 			playing: false,
 			timeout: null,
+			rightBarBottom: '0px',
 		};
+	},
+	computed: {
+		computedStyle() {
+			return {
+				bottom: this.rightBarBottom,
+			};
+		},
 	},
 	beforeDestroy () {
 		this.ledgerComplianceModalOpen = null;
 		this.playing = null;
 		this.timeout = null;
+	},
+	mounted() {
+		if (typeof window !== 'undefined') {
+			this.calculateSecondaryBar();
+			window.addEventListener('resize', this.calculateSecondaryBar, { passive: true });
+		}
 	},
 	methods: {
 		onPlayVideo() {
@@ -102,6 +118,17 @@ export default {
 				this.playing = false;
 			}, 500);
 		},
+		calculateSecondaryBar() {
+			if (!process.browser) {
+				return;
+			}
+
+			const gradientDegrees = window.outerWidth > 2800 ? 2 : 5; // Skew of the gradient div
+			const secondaryDegrees = window.outerWidth > 2800 ? 1 : 3; // Skew of the secondary div
+			const gradientLineLength = window.innerWidth / Math.sin((90 - gradientDegrees) * Math.PI / 180) * Math.sin(90 * Math.PI / 180); // How long is the oblique line of the gradient div
+			const secondaryLineSideLength = gradientLineLength / 2 / Math.sin((90 - secondaryDegrees) * Math.PI / 180) * Math.sin((gradientDegrees + secondaryDegrees) * Math.PI / 180); // How long is the right side of the secondary div
+			this.rightBarBottom = (-secondaryLineSideLength + 100) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
+		},
 	},
 };
 </script>
@@ -113,8 +140,9 @@ export default {
 $mascot-width: 175px;
 
 #home-header {
-	background: $cn-dark-gradient;
-	z-index: 2;
+	background: transparent;
+	z-index: 3;
+	position: relative;
 }
 
 ::v-deep #home-header {
@@ -129,7 +157,7 @@ $mascot-width: 175px;
 	@include breakpoint-down(md) {
 		padding-top: 5rem;
 		padding-bottom: 6rem;
-		margin-bottom: 2rem;
+		//margin-bottom: 2rem;
 		text-align: center;
 
 		.button-wrapper {
@@ -143,16 +171,12 @@ $mascot-width: 175px;
 }
 
 #video-column {
-	position: relative;
-	z-index: 4;
-
 	#video {
 		border-radius: 30px;
 	}
 
 	&.playing {
 		#mascot {
-			//transform: translateX($mascot-width);
 			left: 100%;
 			right: 0;
 		}
@@ -160,15 +184,13 @@ $mascot-width: 175px;
 }
 
 #mascot {
-	z-index: 4;
+	//z-index: 4;
 	width: $mascot-width;
 	height: auto;
 	position: absolute;
 	left: 0;
 	bottom: -6rem;
-	//transition: all 0.8s ease-in-out;
-	-webkit-transtition: left 0.8s ease-in-out, right 0.8s ease-in-out;
-	transition: left 0.8s ease-in-out, right 0.8s ease-in-out;
+	transition: all 0.8s ease-in-out;
 
 	@media screen and (max-width: 1000px) {
 		left: calc(#{$mascot-width} * 3);
@@ -191,20 +213,31 @@ $mascot-width: 175px;
 
 .home-header-container {
 	position: relative;
+	background-color: $cn-color-background;
 }
 
+// Oblique box on the bottom
 .gradient-box {
 	width: 100vw;
 	max-width: 100%;
-	height: 150px;
+	height: 100vh;
 	position: absolute;
-	bottom: -75px;
+	bottom: 100px;
 	left: 0;
 	transform: skewY(-5deg);
-	-webkit-transform-origin: left;
-	z-index: 3;
+	-webkit-transform-origin: right;
+	z-index: 2;
 	box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
 	overflow: hidden;
+	transition: all 0.8s ease-in-out;
+
+	@media screen and (min-width: 2800px) {
+		transform: skewY(-2deg);
+
+		&::after {
+			transform: skewY(2deg);
+		}
+	}
 
 	&::after {
 		content: '';
@@ -219,14 +252,18 @@ $mascot-width: 175px;
 .secondary-box {
 	background-color: $cn-color-secondary;
 	width: 50vw;
-	height: 100px;
 	position: absolute;
-	bottom: -50px;
 	right: 0;
+	height: 100vh;
 	-webkit-transform-origin: right;
 	transform: skewY(3deg);
 	z-index: 1;
 	box-shadow: $cn-shadow-sm;
+	transition: all 0.8s ease-in-out;
+
+	@media screen and (min-width: 2800px) {
+		transform: skewY(1deg);
+	}
 }
 
 .main-content {
