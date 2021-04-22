@@ -229,7 +229,7 @@ $mascot-width: 175px;
 	z-index: 2;
 	box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
 	overflow: hidden;
-	transition: transform 0.5s linear;
+	transition: transform 0.5s linear, bottom 0.5s linear;
 
 	@media screen and (min-width: 2800px) {
 		transform: skewY(-2deg);
@@ -259,7 +259,7 @@ $mascot-width: 175px;
 	transform: skewY(3deg);
 	z-index: 1;
 	box-shadow: $cn-shadow-sm;
-	transition: transform 0.5s linear;
+	transition: transform 0.5s linear, bottom 0.5s linear;
 
 	@media screen and (min-width: 2800px) {
 		transform: skewY(1deg);
