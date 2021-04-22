@@ -65,68 +65,32 @@ export default {
 	},
 	benefitsSection: {
 		title: 'Key benefits of using CodeNotary Ledger Compliance',
-		slides: [
+		cards: [
 			{
-				imageUrl: '/images/our_solutions.jpg',
-				imageAlt: 'Our Solutions',
-			},
-			// EXAMPLE OF LIST OF SLIDES
-			// {
-			// 	imageUrl: '/images/our_solutions.jpg',
-			// 	imageAlt: 'Our Solutions',
-			// },
-			// {
-			// 	imageUrl: '/images/our_solutions.jpg',
-			// 	imageAlt: 'Our Solutions',
-			// },
-			// {
-			// 	imageUrl: '/images/our_solutions.jpg',
-			// 	imageAlt: 'Our Solutions',
-			// },
-		],
-		/* OLD VERSION
-		slides: [
-			{
-				imageUrl: '/images/placeholder.svg',
-				imageAlt: 'Placeholder Alt Text 2',
-				imageLabel: 'INSPIRATION',
-				href: null,
-				internalLink: { type: 'blog-post', entry: 'the-trusted-CICD-pipeline' },
-				title: 'Secure your CI/CD pipeline',
-				list: [
-					'Feature 1',
-					'Feature 2',
-				],
-				actionText: 'Read More',
+				iconName: '/icons/pipeline.svg',
+				title: 'Complete & Fully Trusted Pipeline',
+				subtitle: 'Tamperproof bill of material for your workloads, all input data is cryptographically verified.',
+				backgroundColor: 'brand',
 			},
 			{
-				imageUrl: '/images/placeholder.svg',
-				imageAlt: 'Placeholder Alt Text 2',
-				imageLabel: 'INSPIRATION 2',
-				href: null,
-				internalLink: { type: 'blog-post', entry: 'the-trusted-CICD-pipeline' },
-				title: 'Secure your CI/CD pipeline 2',
-				list: [
-					'Feature 1',
-					'Feature 2',
-				],
-				actionText: 'Read More 2',
+				iconName: '/icons/tracking.svg',
+				title: 'Provenance & Tracking',
+				subtitle: 'Spot foreign objects and keep provenance, given the inventory of the objects you own.',
+				backgroundColor: 'primary',
 			},
 			{
-				imageUrl: '/images/placeholder.svg',
-				imageAlt: 'Placeholder Alt Text 3',
-				imageLabel: 'INSPIRATION 3',
-				href: null,
-				internalLink: { type: 'blog-post', entry: 'the-trusted-CICD-pipeline' },
-				title: 'Secure your CI/CD pipeline 3',
-				list: [
-					'Feature 1',
-					'Feature 2',
-				],
-				actionText: 'Read More 3',
+				iconName: '/icons/granularity.svg',
+				title: 'Granular Revocation',
+				subtitle: 'Independent verification of artifacts, actions, and dependencies which can be revoked separately.',
+				backgroundColor: 'secondary',
+			},
+			{
+				iconName: '/icons/storage.svg',
+				title: 'High-performance Immutable Storage',
+				subtitle: 'High-performance immutable ledger that cannot be manipulated, with cryptographic verification.',
+				backgroundColor: 'cyan',
 			},
 		],
-		*/
 	},
 	newsletterSection: {
 		title: 'Subscribe to Our Newsletter',

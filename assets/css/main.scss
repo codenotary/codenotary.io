@@ -1,5 +1,25 @@
 @media screen and (min-width: 1200px) {
 	.container {
-		max-width: 1240px;
+		max-width: 1240px !important;
 	}
+}
+
+.cn-bg-brand {
+	background-color: $cn-color-brand;
+}
+
+.cn-bg-primary {
+	background-color: $cn-color-primary;
+}
+
+.cn-bg-primary_light {
+	background-color: $cn-color-primary_light;
+}
+
+.cn-bg-secondary {
+	background-color: $cn-color-secondary;
+}
+
+.cn-bg-cyan {
+	background-color: $cn-color-cyan;
 }
