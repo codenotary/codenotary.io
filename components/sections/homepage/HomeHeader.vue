@@ -123,8 +123,8 @@ export default {
 				return;
 			}
 
-			const gradientDegrees = window.outerWidth > 2800 ? 2 : 5; // Skew of the gradient div
-			const secondaryDegrees = window.outerWidth > 2800 ? 1 : 3; // Skew of the secondary div
+			const gradientDegrees = window.innerWidth >= 2800 ? 2 : 5; // Skew of the gradient div
+			const secondaryDegrees = window.innerWidth >= 2800 ? 1 : 3; // Skew of the secondary div
 			const gradientLineLength = window.innerWidth / Math.sin((90 - gradientDegrees) * Math.PI / 180) * Math.sin(90 * Math.PI / 180); // How long is the oblique line of the gradient div
 			const secondaryLineSideLength = gradientLineLength / 2 / Math.sin((90 - secondaryDegrees) * Math.PI / 180) * Math.sin((gradientDegrees + secondaryDegrees) * Math.PI / 180); // How long is the right side of the secondary div
 			this.rightBarBottom = (-secondaryLineSideLength + 100) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
@@ -220,7 +220,7 @@ $mascot-width: 175px;
 .gradient-box {
 	width: 100vw;
 	max-width: 100%;
-	height: 100vh;
+	height: 150%;
 	position: absolute;
 	bottom: 100px;
 	left: 0;
@@ -229,7 +229,7 @@ $mascot-width: 175px;
 	z-index: 2;
 	box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
 	overflow: hidden;
-	transition: all 0.8s ease-in-out;
+	transition: transform 0.5s linear;
 
 	@media screen and (min-width: 2800px) {
 		transform: skewY(-2deg);
@@ -251,15 +251,15 @@ $mascot-width: 175px;
 
 .secondary-box {
 	background-color: $cn-color-secondary;
-	width: 50vw;
+	width: 100%;
 	position: absolute;
 	right: 0;
-	height: 100vh;
+	height: 100%;
 	-webkit-transform-origin: right;
 	transform: skewY(3deg);
 	z-index: 1;
 	box-shadow: $cn-shadow-sm;
-	transition: all 0.8s ease-in-out;
+	transition: transform 0.5s linear;
 
 	@media screen and (min-width: 2800px) {
 		transform: skewY(1deg);
