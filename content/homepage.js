@@ -48,17 +48,17 @@ export default {
 			},
 			{
 				title: 'Compliance',
-				subtitle: 'Accountable Data',
+				subtitle: 'Accountable data for all pipelines',
 				imageUrl: '/images/features/compliance.svg',
 			},
 			{
-				title: 'Dev Ops',
-				subtitle: 'Trusted Processes & Artifacts',
+				title: 'DevOps',
+				subtitle: 'Trusted processes & artifacts',
 				imageUrl: '/images/features/dev-ops.svg',
 			},
 			{
 				title: 'Collab',
-				subtitle: 'Data In Transit Integrity',
+				subtitle: 'Bill of material for your workload',
 				imageUrl: '/images/features/collab.svg',
 			},
 		],
