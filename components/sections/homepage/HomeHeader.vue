@@ -29,7 +29,7 @@
 							variant="light"
 							size="lg"
 							class="_margin-left-1"
-							@click="ledgerComplianceModalOpen = true"
+							@click.native="ledgerComplianceModalOpen = true"
 						>
 							Self-Hosted
 						</cn-button>
