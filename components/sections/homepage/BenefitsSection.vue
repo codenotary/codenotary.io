@@ -8,10 +8,10 @@
 				weight="bold"
 				class="_width-75 _text-uppercase"
 				:top="0"
-				:bottom="2"
+				:bottom="1"
 			/>
 			<div class="benefits-body">
-				<div class="benefit-card" v-for="(card, index) in content.benefitsSection.cards" :key="index" :class="'cn-bg-' + card.backgroundColor">
+				<div class="benefit-card _margin-top-1" v-for="(card, index) in content.benefitsSection.cards" :key="index" :class="'cn-bg-' + card.backgroundColor">
 					<div class="benefit-card-header">
 						<img :src="card.iconName">
 					</div>
@@ -69,12 +69,17 @@ export default {
 	justify-content: space-between;
 	align-items: start;
 	width: 100%;
+	flex-wrap: wrap;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
 
 	.benefit-card {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: start;
+		justify-content: flex-start;
 		height: 420px;
 		width: 276px;
 		border-radius: $cn-border-radius-lg;
