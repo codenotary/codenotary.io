@@ -67,7 +67,7 @@ export default {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: start;
+	align-items: flex-start;
 	width: 100%;
 	flex-wrap: wrap;
 
