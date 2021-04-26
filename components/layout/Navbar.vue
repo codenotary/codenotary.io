@@ -102,17 +102,22 @@
 					<i-nav-item
 						:to="{ name: 'products-ledger-compliance' }"
 					>
-						Ledger Compliance (deploy anywhere)
+						CNLC (Self-Hosted)
+					</i-nav-item>
+					<i-nav-item
+						:to="{ name: 'products-ci-cd' }"
+					>
+						CNLC (Cloud)
 					</i-nav-item>
 					<i-nav-item
 						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
 					>
-						Ledger Compliance (Managed Service)
+						CNLC Metrics and Logs
 					</i-nav-item>
 				</i-nav>
 
 				<i-nav-item
-					class="_text-xs-black _visible-lg-and-up"
+					class="_text-xs-black"
 					:to="{ name: 'technologies-immudb' }"
 				>
 					immudb
@@ -120,7 +125,7 @@
 
 				<!-- BLOG POSTS -->
 				<i-nav-item
-					class="_text-xs-black _visible-lg-and-up"
+					class="_text-xs-black"
 					:to="{ name: 'blog' }"
 				>
 					Blog
@@ -134,7 +139,7 @@
 				</i-nav-item>
 				<transition name="fade">
 					<cn-button
-						v-if="scrolled"
+						v-if="scrolled && $route.name === 'index'"
 						class="cta-button"
 						variant="secondary"
 						@click.native="onDownloadClick"
