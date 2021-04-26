@@ -29,11 +29,10 @@
 							variant="light"
 							size="lg"
 							class="_margin-left-1"
-							@click.native="ledgerComplianceModalOpen = true"
+							@click.native="onDownloadClick"
 						>
 							Self-Hosted
 						</cn-button>
-						<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 					</p>
 				</i-column>
 				<i-column
@@ -73,16 +72,15 @@
 <script>
 import LazyHydrate from 'vue-lazy-hydration';
 import homepage from '@/content/homepage';
+import { eventHub } from '@/helpers/eventhub';
 
 export default {
 	name: 'HomeHeader',
 	components: {
 		LazyHydrate,
-		LedgerComplianceModal: () => import('~/components/global/modals/LedgerComplianceModal'),
 	},
 	data() {
 		return {
-			ledgerComplianceModalOpen: false,
 			content: homepage,
 			playing: false,
 			timeout: null,
@@ -128,6 +126,9 @@ export default {
 			const gradientLineLength = window.innerWidth / Math.sin((90 - gradientDegrees) * Math.PI / 180) * Math.sin(90 * Math.PI / 180); // How long is the oblique line of the gradient div
 			const secondaryLineSideLength = gradientLineLength / 2 / Math.sin((90 - secondaryDegrees) * Math.PI / 180) * Math.sin((gradientDegrees + secondaryDegrees) * Math.PI / 180); // How long is the right side of the secondary div
 			this.rightBarBottom = (-secondaryLineSideLength + 100) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
+		},
+		onDownloadClick() {
+			eventHub.$emit('displayTrialModal', true);
 		},
 	},
 };

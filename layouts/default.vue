@@ -11,11 +11,15 @@
 		</div>
 		<Footer />
 		<Copyright />
+		<client-only>
+			<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
+		</client-only>
 	</section>
 </template>
 
 <script>
 import LayoutMixin from '~/mixins/LayoutMixin';
+import { eventHub } from '~/helpers/eventhub';
 
 const SCROLL_THRESHOLD = 80;
 
@@ -25,13 +29,16 @@ export default {
 	data: () => ({
 		scrolled: false,
 		hover: false,
+		ledgerComplianceModalOpen: false,
 	}),
 	beforeDestroy () {
 		this.scrolled = null;
 		this.hover = null;
+		eventHub.$off('displayTrialModal', this.displayTrialModal);
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
+		eventHub.$on('displayTrialModal', this.displayTrialModal);
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
@@ -41,6 +48,9 @@ export default {
 			if (window && window.scrollY !== undefined) {
 				this.scrolled = window.scrollY >= SCROLL_THRESHOLD;
 			}
+		},
+		displayTrialModal() {
+			this.ledgerComplianceModalOpen = true;
 		},
 	},
 };

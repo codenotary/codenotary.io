@@ -136,8 +136,8 @@
 					<cn-button
 						v-if="scrolled"
 						class="cta-button"
-						href="https://democnlc.codenotary.com"
 						variant="secondary"
+						@click.native="onDownloadClick"
 					>
 						Download
 					</cn-button>
@@ -156,6 +156,7 @@ import {
 	NAVBAR_BACKGROUND,
 } from '@/store/view/constants';
 import { breakpoints } from '@inkline/inkline/src/constants/breakpoints';
+import { eventHub } from '@/helpers/eventhub';
 
 export default {
 	name: 'Navbar',
@@ -189,6 +190,9 @@ export default {
 			return paths.some((path) => {
 				return this.$route.path.indexOf(path) === 0;
 			});
+		},
+		onDownloadClick() {
+			eventHub.$emit('displayTrialModal', true);
 		},
 	},
 };
