@@ -5,9 +5,15 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="6">
-					<h1 class="h2 _font-weight-bold cn-text-dark title">
-						{{ content.headerSection.title }}
+				<i-column lg="5">
+					<h1 class="h2 _font-weight-bold cn-text-white title">
+						{{ content.headerSection.title1 }}
+					</h1>
+					<h1 class="h2 _font-weight-bold cn-text-secondary title">
+						{{ content.headerSection.title2 }}
+					</h1>
+					<h1 class="h2 _font-weight-bold cn-text-white title">
+						{{ content.headerSection.title3 }}
 					</h1>
 
 					<p class="lead cn-text-muted_blue subtitle">
@@ -34,6 +40,8 @@
 							Self-Hosted
 						</cn-button>
 					</p>
+				</i-column>
+				<i-column lg="1">
 				</i-column>
 				<i-column
 					id="video-column"
@@ -198,17 +206,27 @@ $mascot-width: 175px;
 	}
 }
 
-.title {
-	color: white !important;
-}
+//.title {
+//	color: white !important;
+//}
 
 .subtitle {
 	color: white !important;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
 	.title {
 		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.title:first-of-type {
+		margin-top: 20px !important;
+	}
+
+	.action {
+		justify-content: center;
 	}
 }
 

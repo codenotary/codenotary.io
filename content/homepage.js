@@ -1,7 +1,9 @@
 export default {
 	// HomePage | Cards located under the main Hero Section (Title, CTAs and Video)
 	headerSection: {
-		title: 'End-to-end tamperproof protection for your software development cycle',
+		title1: 'End-to-end',
+		title2: 'tamperproof',
+		title3: 'protection for your software development cycle',
 		subtitle: 'Add trust, integrity, and transparency for all identities and artifacts to your CI/CD pipelines in a heartbeat.'
 	},
 	heroCardsSection: {

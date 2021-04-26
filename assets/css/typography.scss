@@ -82,6 +82,10 @@
 	color: $text-dark-color !important;
 }
 
+.cn-text-secondary {
+	color: $cn-color-secondary !important;
+}
+
 .cn-text-muted_blue {
 	color: $text-muted_blue-color !important;
 }
@@ -95,5 +99,5 @@
 }
 
 .cn-text-white {
-	color: white;
+	color: white !important;
 }
