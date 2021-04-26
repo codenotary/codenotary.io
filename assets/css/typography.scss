@@ -1,0 +1,103 @@
+// assets/typography.scss
+
+.-display-4 {
+	font-weight: 300;
+	font-size: 6rem;
+	letter-spacing: -0.015625em;
+}
+
+.-display-3 {
+	font-weight: 300;
+	font-size: 3.75rem;
+	letter-spacing: -0.0083333333em;
+}
+
+.-display-2 {
+	font-weight: 400;
+	font-size: 3rem;
+	letter-spacing: normal;
+}
+
+.-display-1 {
+	font-weight: 400;
+	font-size: 2.215rem;
+	letter-spacing: 0.0073529412em;
+}
+
+.-headline {
+	font-weight: 400;
+	font-size: 1.5rem;
+	letter-spacing: normal;
+}
+
+.-title {
+	font-weight: 500;
+	font-size: 1.3rem;
+	letter-spacing: 0.0125em;
+}
+
+.-subtitle-1 {
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.009375em;
+}
+
+.-subtitle-2 {
+	font-weight: 500;
+	font-size: 0.875rem;
+	letter-spacing: 0.0071428571em;
+}
+
+.-body-1 {
+	font-weight: 400;
+	font-size: 1.15rem;
+	letter-spacing: 0.03125em;
+}
+
+.-body-2 {
+	font-weight: 400;
+	font-size: 1rem;
+	letter-spacing: 0.0178571429em;
+}
+
+.-button {
+	font-weight: 500;
+	font-size: 0.875rem;
+	letter-spacing: 0.0892857143em;
+}
+
+.-caption {
+	font-weight: 400;
+	font-size: 0.75rem;
+	letter-spacing: 0.0333333333em;
+}
+
+.-overline {
+	font-weight: 500;
+	font-size: 0.75rem;
+	letter-spacing: 0.1666666667em;
+}
+
+.cn-text-dark {
+	color: $text-dark-color !important;
+}
+
+.cn-text-secondary {
+	color: $cn-color-secondary !important;
+}
+
+.cn-text-muted_blue {
+	color: $text-muted_blue-color !important;
+}
+
+.cn-text-primary {
+	color: $cn-color-primary !important;
+}
+
+.cn-text-brand {
+	color: $cn-color-brand !important;
+}
+
+.cn-text-white {
+	color: white !important;
+}

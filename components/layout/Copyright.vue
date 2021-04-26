@@ -1,6 +1,10 @@
 <template>
-	<page-section class="copyright">
-		<i-container>
+	<PageSection
+		class="copyright"
+		:top="2"
+		:bottom="2"
+	>
+		<i-container class="_font-weight-bold">
 			<i-row>
 				<i-column
 					class="_display-flex _justify-content-start"
@@ -19,11 +23,13 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
+
 export default {
+	name: 'Copyright',
 	data() {
 		return {
 			year: new Date().getFullYear(),
@@ -38,15 +44,14 @@ export default {
 
 .copyright {
 	padding: 1.5rem 0 !important;
-	background: $color-gray-80;
 	color: $color-gray-30;
 	text-align: center;
 	font-size: 90%;
+	background-color: $cn-color-primary_dark !important;
 
 	a {
 		padding: 0 $spacer-1-2;
-		color: $color-gray-30;
-		text-decoration: underline;
+		color: $cn-color-primary;
 
 		&:hover,
 		&:active {

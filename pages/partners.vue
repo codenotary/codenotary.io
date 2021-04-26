@@ -1,24 +1,40 @@
 <template>
-	<page-section id="partners">
-		<page-section-header title="Our partners" tag="h1" />
-		<partners-carousel :partners="partners" />
-		<become-a-partner />
-	</page-section>
+	<PageSection id="partners">
+		<PageSectionHeader title="Our partners" tag="h1" />
+		<LazyHydrate when-visible>
+			<PartnersCarousel :partners="partners" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<BecomeAPartner
+				@onPartnerModal="partnerModalOpen = true"
+			/>
+		</LazyHydrate>
+
+		<!-- ACTIVE CAMPAING MODALS -->
+		<LazyHydrate when-idle>
+			<PartnerModal
+				v-model="partnerModalOpen"
+			/>
+		</LazyHydrate>
+	</PageSection>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
-import PartnersCarousel from '~/components/sections/partners/PartnersCarousel';
-import BecomeAPartner from '~/components/sections/partners/BecomeAPartner';
 
 export default {
-
+	name: 'Partners',
 	components: {
-		PartnersCarousel,
-		BecomeAPartner,
+		LazyHydrate,
 	},
-
 	data: () => ({
+		partnerModalOpen: false,
 		partners: [
 			{
 				title: 'wizlynx group',
@@ -271,6 +287,19 @@ export default {
 		return {
 			title: title('Partners'),
 		};
+	},
+	mounted () {
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
+	},
+	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 	},
 };
 </script>

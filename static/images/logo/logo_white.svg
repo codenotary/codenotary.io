@@ -8,10 +8,10 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="3060.5264"
-   height="1105.2632"
+   width="2849.3147"
+   height="772.26135"
    id="svg18"
-   sodipodi:docname="immudb_codenotary_black.svg"
+   sodipodi:docname="logo_white.svg"
    inkscape:version="1.0.1 (0767f8302a, 2020-10-17)">
   <metadata
      id="metadata24">
@@ -37,67 +37,72 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="2529"
-     inkscape:window-height="1383"
+     inkscape:window-height="1376"
      id="namedview20"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="0.39152459"
-     inkscape:cx="1866.0269"
-     inkscape:cy="888.34807"
+     inkscape:cx="738.27155"
+     inkscape:cy="721.53636"
      inkscape:window-x="2830"
      inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer6"
-     inkscape:document-rotation="0">
+     inkscape:document-rotation="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <sodipodi:guide
-       position="105.26316,776.66909"
+       position="-0.84499062,610.47897"
        orientation="1,0"
        id="guide954" />
     <sodipodi:guide
-       position="492.09434,1000"
+       position="385.98619,833.80988"
        orientation="0,-1"
        id="guide956" />
     <sodipodi:guide
-       position="878.94729,776.6582"
+       position="772.83914,610.46808"
        orientation="1,0"
        id="guide958" />
     <sodipodi:guide
-       position="492.09434,106.65449"
+       position="385.98619,-59.535626"
        orientation="0,-1"
        id="guide960" />
     <sodipodi:guide
-       position="775.52574,551.19127"
+       position="669.41759,385.00115"
        orientation="0,-1"
        id="guide962" />
     <sodipodi:guide
-       position="1293.98,437.36132"
+       position="1187.8718,271.1712"
        orientation="0,-1"
        id="guide866" />
     <sodipodi:guide
-       position="1214.8024,663.72003"
+       position="1108.6942,497.52991"
        orientation="0,-1"
        id="guide1227" />
     <sodipodi:guide
-       position="983.49507,551.19127"
+       position="877.38692,385.00115"
        orientation="1,0"
        id="guide1290" />
     <sodipodi:guide
-       position="2955.7913,620.98032"
+       position="2849.6831,454.7902"
        orientation="1,0"
        id="guide1292" />
     <sodipodi:guide
-       position="3060.5506,551.19127"
+       position="2954.4424,385.00115"
        orientation="1,0"
        id="guide865" />
   </sodipodi:namedview>
   <g
      inkscape:groupmode="layer"
      id="layer8"
-     inkscape:label="text ">
+     inkscape:label="text "
+     transform="translate(-106.10815,-166.81171)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:333.333px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:333.333px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none"
        x="964.37671"
        y="674.60651"
        id="text1233"><tspan
@@ -105,10 +110,10 @@
          id="tspan1231"
          x="964.37671"
          y="674.60651"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:333.333px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;">CodeNotary</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:333.333px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1">CodeNotary</tspan></text>
   </g>
   <g
-     transform="matrix(7.7226132,0,0,7.7226132,-756.98774,504.00557)"
+     transform="matrix(7.7226132,0,0,7.7226132,-863.09589,337.19386)"
      id="g888">
     <defs
        id="SvgjsDefs1908" />
@@ -121,7 +126,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="logo">
+     inkscape:label="logo"
+     transform="translate(-106.10815,-166.81171)">
     <g
        id="SvgjsG1909"
        featureKey="symbolFeature-0"
@@ -144,7 +150,7 @@
            style="fill:#ffffff;fill-opacity:1">
           <path
              id="path854"
-             style="stroke-width:4.09389;fill:#ffffff;fill-opacity:1"
+             style="fill:#ffffff;fill-opacity:1;stroke-width:4.09389"
              transform="matrix(0.24426667,0,0,0.24426667,9.5500075,-281.87505)"
              d="m 431.70117,1156.0117 c -258.88347,0 -468.749998,209.8665 -468.749998,468.75 0,258.8835 209.866528,468.75 468.749998,468.75 258.77125,-0.2708 468.47923,-209.9787 468.75,-468.75 0,-258.8835 -209.86654,-468.75 -468.75,-468.75 z m 0,20.4688 c 247.46627,0.2707 448.00853,200.8149 448.2793,448.2812 0,247.5785 -200.70078,448.2793 -448.2793,448.2793 -247.57852,0 -448.281248,-200.7008 -448.281248,-448.2793 0,-247.5785 200.702728,-448.2812 448.281248,-448.2812 z" />
           <path

@@ -1,5 +1,8 @@
 <template>
-	<page-section id="ci-cd-get-started-section">
+	<PageSection
+		id="ci-cd-get-started-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -8,8 +11,10 @@
 					</h5>
 					<p class="action _text-center">
 						<i-button
-							size="lg" variant="primary"
-							href="https://dashboard.codenotary.io/auth/signup" target="_blank"
+							size="lg"
+							variant="primary"
+							href="https://dashboard.codenotary.io/auth/signup"
+							target="_blank"
 						>
 							Get started
 						</i-button>
@@ -17,7 +22,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -25,13 +30,3 @@ export default {
 	name: 'CiCdGetStarted',
 };
 </script>
-
-<style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
-
-#ci-cd-get-started-section {
-	background-color: white;
-	overflow: hidden;
-}
-</style>

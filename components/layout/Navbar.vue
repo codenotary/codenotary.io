@@ -1,95 +1,189 @@
 <template>
-	<i-navbar>
-		<i-navbar-brand :to="{ name: 'index' }" class="_padding-0">
+	<i-navbar
+		:class="{
+			'-scrolled': scrolled,
+		}"
+	>
+		<i-navbar-brand
+			:to="{ name: 'index' }"
+			class="_padding-0"
+		>
 			<img
-				class="logo" src="/images/logo/logo_blue.png"
+				class="logo _padding-y-1-2"
+				:src="`/images/logo/logo_white.png`"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
 		<i-navbar-items class="_justify-content-end">
 			<i-nav>
+				<!-- PRODUCTS (lg-and-up) -->
+				<i-dropdown
+					class="navbar-dropdown _visible-lg-and-up"
+					trigger="hover"
+					@change="productsMenuOpen = $event"
+				>
+					<i-nav-item
+						:class="{ '-active': subRouteActive('/products') }"
+					>
+						Products
+						<fa
+							class="_margin-left-1-4"
+							:icon="`caret-${ productsMenuOpen ? 'up' : 'down' }`"
+						/>
+					</i-nav-item>
+					<i-dropdown-menu>
+						<i-row class="_margin-0 _padding-0">
+							<i-column
+								class="_margin-0 _padding-0"
+								xs="12"
+							>
+								<nuxt-link
+									class="freeform-item _padding-1"
+									:to="{ name: 'products-ledger-compliance' }"
+								>
+									<h6
+										class="title _margin-0 _padding-xs-0"
+									>
+										CNLC (Self-Hosted)
+									</h6>
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										Self-Hosted trusted CI/CD and artifact protection for your software development cycle
+									</p>
+								</nuxt-link>
+							</i-column>
+							<i-column
+								class="_margin-0 _padding-0"
+								xs="12"
+							>
+								<nuxt-link
+									class="freeform-item _padding-1"
+									:to="{ name: 'products-ci-cd' }"
+								>
+									<h6
+										class="title _margin-0 _padding-xs-0"
+									>
+										CNLC (Cloud)
+									</h6>
+									<p class="_margin-0 padding-top-1-2 subtitle">
+										Trusted CI/CD and artifact protection as a service that allows public verification
+									</p>
+								</nuxt-link>
+							</i-column>
+                                                        <i-column
+                                                                class="_margin-0 _padding-0"
+                                                                xs="12"
+                                                        >
+                                                                <nuxt-link
+                                                                        class="freeform-item _padding-1"
+                                                                        :to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+                                                                >
+                                                                        <h6
+                                                                                class="title _margin-0 _padding-xs-0"
+                                                                        >
+                                                                                CNLC Metrics and Logs
+                                                                        </h6>
+                                                                        <p class="_margin-0 padding-top-1-2 subtitle">
+                                                                                Self-Hosted performance and compliant log analysis for VMware vSphere, container and much more
+                                                                        </p>
+                                                                </nuxt-link>
+                                                        </i-column>
+
+						</i-row>
+					</i-dropdown-menu>
+				</i-dropdown>
+				<!-- PRODUCTS (md-and-down) -->
+				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
+					<i-nav-item
+						class="header"
+						disabled
+					>
+						Products
+					</i-nav-item>
+					<i-nav-item
+						:to="{ name: 'products-ledger-compliance' }"
+					>
+						CNLC (Self-Hosted)
+					</i-nav-item>
+					<i-nav-item
+						:to="{ name: 'products-ci-cd' }"
+					>
+						CNLC (Cloud)
+					</i-nav-item>
+					<i-nav-item
+						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+					>
+						CNLC Metrics and Logs
+					</i-nav-item>
+				</i-nav>
+
+				<i-nav-item
+					class="_text-xs-black"
+					:to="{ name: 'technologies-immudb' }"
+				>
+					immudb
+				</i-nav-item>
+
 				<!-- BLOG POSTS -->
-				<i-nav-item :to="{ name: 'blog' }">
+				<i-nav-item
+					class="_text-xs-black"
+					:to="{ name: 'blog' }"
+				>
 					Blog
 				</i-nav-item>
 
-				<!-- PRODUCTS -->
-				<i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
-					<i-nav-item :class="{ '-active': subRouteActive('/products') }">
-						Products
-					</i-nav-item>
-					<i-dropdown-menu>
-						<i-dropdown-item :to="{ name: 'products-ledger-compliance' }">
-							Ledger Compliance (on-premise)
-						</i-dropdown-item>
-						<i-dropdown-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
-							Ledger Compliance (Metrics and Logs)
-						</i-dropdown-item>
-                                                <i-dropdown-item :to="{ name: 'products-ci-cd' }">
-                                                        Ledger Compliance (Public Cloud)
-                                                </i-dropdown-item>
-
-					</i-dropdown-menu>
-				</i-dropdown>
-				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item class="header" disabled>
-						Products
-					</i-nav-item>
-					<i-nav-item :to="{ name: 'products-ledger-compliance' }">
-						Ledger Compliance (on-premise)
-					</i-nav-item>
-                                        <i-nav-item :to="{ name: 'products-ledger-compliance-metrics-and-logs' }">
-                                                Ledger Compliance (Metrics and Logs)
-                                        </i-nav-item>
-					<i-nav-item :to="{ name: 'products-ci-cd' }">
-						Ledger Compliance (Trusted CI/CD Service)
-					</i-nav-item>
-				</i-nav>
-
-				<!-- TECHNOLOGIES -->
-				<i-dropdown trigger="hover" class="navbar-dropdown _visible-lg-and-up">
-					<i-nav-item :class="{ '-active': subRouteActive('/technologies') }">
-						Technologies
-					</i-nav-item>
-					<i-dropdown-menu>
-						<i-dropdown-item :to="{ name: 'technologies-immudb' }">
-							immudb
-						</i-dropdown-item>
-					</i-dropdown-menu>
-				</i-dropdown>
-				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item class="header" disabled>
-						Technologies
-					</i-nav-item>
-					<i-nav-item href="https://immudb.io">
-						immudb
-					</i-nav-item>
-				</i-nav>
-
-				<!-- COMPANY -->
-				<i-nav-item :to="{ name: 'about' }">
-					About us
-				</i-nav-item>
-				<i-nav-item :to="{ name: 'partners' }">
-					Partners
-				</i-nav-item>
-				<i-nav-item :to="{ name: 'contact' }">
+				<!-- CONTACT US -->
+				<i-nav-item
+					:to="{ name: 'contact' }"
+				>
 					Contact us
 				</i-nav-item>
+				<transition name="fade">
+					<cn-button
+						v-if="scrolled && $route.name === 'index'"
+						class="cta-button"
+						variant="secondary"
+						@click.native="onDownloadClick"
+					>
+						Download
+					</cn-button>
+				</transition>
 			</i-nav>
 		</i-navbar-items>
 	</i-navbar>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+import {
+	VIEW_MODULE,
+	MOBILE,
+	NAVBAR_LIGHT,
+	NAVBAR_BACKGROUND,
+} from '@/store/view/constants';
 import { breakpoints } from '@inkline/inkline/src/constants/breakpoints';
+import { eventHub } from '@/helpers/eventhub';
 
 export default {
 	name: 'Navbar',
+	props: {
+		scrolled: {
+			type: Boolean,
+			default: false,
+		},
+	},
 	data() {
 		return {
 			isNavbarCollapsed: false,
+			productsMenuOpen: false,
+			technologiesMenuOpen: false,
 		};
+	},
+	computed: {
+		...mapGetters(VIEW_MODULE, {
+			mobile: MOBILE,
+			navbarLight: NAVBAR_LIGHT,
+			navbarBackground: NAVBAR_BACKGROUND,
+		}),
 	},
 	methods: {
 		onWindowResize() {
@@ -102,35 +196,175 @@ export default {
 				return this.$route.path.indexOf(path) === 0;
 			});
 		},
+		onDownloadClick() {
+			eventHub.$emit('displayTrialModal', true);
+		},
 	},
 };
+
 </script>
 
 <style lang="scss">
 @import '~@inkline/inkline/src/css/config';
 @import '~@inkline/inkline/src/css/mixins';
 
-$logo-height: 48;
-
 .navbar {
-	background: white !important;
+	//background: transparent !important;
+	background: $cn-dark-gradient !important;
+	transition: all 0.15s ease-out;
+	z-index: 999;
 
-	.logo {
-		max-height: #{$logo-height}px;
-		width: auto;
-		margin-right: 8px;
-
-		@include breakpoint-down(sm) {
-			height: 32px;
+	&.-collapsed {
+		.cta-button {
+			display: none;
 		}
 	}
 
-	&.-light {
-		background: transparent !important;
+	.logo {
+		max-height: #{$cn-logo-height}px;
+		width: auto;
+		margin-right: 8px;
 	}
 
-	.dropdown .menu .item.-active {
-		font-weight: 600 !important;
+	& > a:not(.button),
+	span,
+	.item,
+	.title {
+		transition: all 0.3s ease-out;
+		color: white !important;
+	}
+
+	/*
+	&.-bg-light-transparent,
+	&.-bg-dark-transparent {
+		background-color: transparent !important;
+	}
+	*/
+
+	&.-bg-white {
+		background-color: white !important;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+	}
+
+	&.-bg-primary {
+		background-color: $color-primary !important;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+	}
+
+	&.-bg-light-transparent,
+	&.-bg-white {
+		.container {
+			a,
+			.item,
+			.title {
+				color: $text-dark-color;
+			}
+		}
+
+		.collapse-toggle {
+			> .bars {
+				&::before,
+				&::after,
+				& {
+					background-color: $text-dark-color !important;
+				}
+			}
+		}
+	}
+
+	&.-bg-dark-transparent,
+	&.-bg-primary {
+		.container {
+			a,
+			.item,
+			.title {
+				color: $text-light-color;
+			}
+		}
+
+		.collapse-toggle {
+			> .bars {
+				&::before,
+				&::after,
+				& {
+					background-color: $text-light-color !important;
+				}
+			}
+		}
+	}
+
+	&.-scrolled {
+		&.-bg-light-transparent,
+		&.-bg-dark-transparent,
+		&.-bg-white,
+		&.-bg-primary,
+		& {
+			padding: 0 !important;
+			//background: white !important;
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+
+			.container {
+				.logo {
+					max-height: #{$cn-logo-height}px;
+				}
+			}
+
+			.collapse-toggle {
+				> .bars {
+					&::before,
+					&::after,
+					& {
+						background-color: $text-dark-color !important;
+					}
+				}
+			}
+		}
+	}
+
+	.navbar-dropdown {
+		.menu {
+			min-width: 420px !important;
+			max-width: 800px !important;
+
+			a.freeform-item {
+				position: relative;
+				display: block;
+				text-decoration: none !important;
+				color: $text-dark-color;
+
+				&.-active {
+					&::before {
+						content: '';
+						position: absolute;
+						top: 10%;
+						left: 0;
+						bottom: 10%;
+						width: 4px;
+						background: $color-primary;
+						border-radius: 0 4px 4px 0;
+					}
+				}
+
+				a,
+				.title,
+				.subtitle {
+					color: $text-dark-color !important;
+				}
+
+				.title {
+					line-height: 1.25em;
+					font-weight: 700;
+				}
+
+				.subtitle {
+					font-weight: 300;
+				}
+
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.05);
+				}
+			}
+		}
 	}
 
 	.dropdown-fallback-nav {
@@ -156,10 +390,35 @@ $logo-height: 48;
 			height: 100%;
 			max-height: 100%;
 			position: relative;
+
+			.row {
+				height: 100%;
+				max-height: 100%;
+
+				.navbar-items {
+					.nav {
+						a.item {
+							&:hover {
+								background-color: rgba(0, 0, 0, 0.05);
+							}
+						}
+					}
+				}
+			}
+
+			a,
+			.item,
+			.title {
+				color: $text-dark-color !important;
+			}
 		}
 
 		.navbar-items {
+			background: white !important;
+
 			> .nav {
+				box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+
 				> .dropdown {
 					display: none !important;
 					width: 100%;
@@ -171,7 +430,7 @@ $logo-height: 48;
 						font-weight: 600;
 						font-size: 80%;
 						background: transparent !important;
-						color: $text-muted !important;
+						color: $text-dark-color !important;
 						cursor: default !important;
 					}
 
@@ -194,5 +453,18 @@ $logo-height: 48;
 			}
 		}
 	}
+}
+
+.fade-enter-active {
+	transition: opacity 0.5s !important;
+}
+
+.fade-leave-active {
+	transition: opacity 0.25s !important;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
 }
 </style>

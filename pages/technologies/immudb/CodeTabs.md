@@ -1,10 +1,10 @@
-<page-section id="immudb-code-tabs-section">
-<page-section-header title="By developers, for developers">
-    We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
-</page-section-header>
+<page-section id="immudb-code-tabs-section" class="_padding-y-4 _justify-content-center">
 <i-container>
 <i-row>
 <i-column>
+<page-section-header title="By developers, for developers" :bottom="2">
+    We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
+</page-section-header>
 <i-tabs custom>
 <i-tab title="Connect to immudb">
 

@@ -1,5 +1,5 @@
 <template>
-	<page-section id="ci-cd-analyze-and-manage-section">
+	<PageSection id="ci-cd-analyze-and-manage-section">
 		<i-container>
 			<i-tabs class="analyze-and-manage-tabs" stretch>
 				<i-tab title="Main Dashboard">
@@ -28,7 +28,7 @@
 				</i-tab>
 			</i-tabs>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

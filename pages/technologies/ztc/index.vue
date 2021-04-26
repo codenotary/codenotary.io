@@ -1,34 +1,53 @@
 <template>
 	<div>
-		<ztc-header />
-		<ztc-about-section />
-		<ztc-technology-platform-section />
+		<ZtcHeader />
+		<LazyHydrate when-visible>
+			<ZtcAboutSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ZtcTechnologyPlatformSection />
+		</LazyHydrate>
 		<hr>
-		<ztc-monitoring-section />
-		<ztc-consortium-blockchain-section />
-		<ztc-members-section />
-		<ztc-join-section />
+		<LazyHydrate when-visible>
+			<ZtcMonitoringSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ZtcConsortiumBlockchainSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ZtcMembersSection />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ZtcJoin-Section />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
-import ZtcHeader from '~/components/sections/headers/ZtcHeader';
-import ZtcAboutSection from '~/components/sections/technologies/ztc/ZtcAboutSection';
-import ZtcTechnologyPlatformSection from '~/components/sections/technologies/ztc/ZtcTechnologyPlatformSection';
-import ZtcMonitoringSection from '~/components/sections/technologies/ztc/ZtcMonitoringSection';
-import ZtcConsortiumBlockchainSection from '~/components/sections/technologies/ztc/ZtcConsortiumBlockchainSection';
-import ZtcMembersSection from '~/components/sections/technologies/ztc/ZtcMembersSection';
-import ZtcJoinSection from '~/components/sections/technologies/ztc/ZtcJoinSection';
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
+	name: 'ZtcPage',
 	components: {
-		ZtcHeader,
-		ZtcAboutSection,
-		ZtcTechnologyPlatformSection,
-		ZtcMonitoringSection,
-		ZtcConsortiumBlockchainSection,
-		ZtcMembersSection,
-		ZtcJoinSection,
+		LazyHydrate,
+	},
+	mounted () {
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'white',
+				light: true,
+			});
+		});
+	},
+	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 	},
 };
 </script>

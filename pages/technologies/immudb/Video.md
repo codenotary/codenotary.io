@@ -6,12 +6,12 @@
 
 ## Why immudb?
 immudb is a ledger database that has been developed with performance, scalability and versatility in mind. The user feedback has shown that they love the very high throughput and being able to store hashes as well as data. They see it as a great alternative to using a blockchain or ledger service.
-        
+
 </div>
-</i-column>  
+</i-column>
 </i-row>
 <i-row>
-<i-column>        
+<i-column>
     <div class="video-features">
         <div class="video">
             <div class="_embed _embed-16by9">

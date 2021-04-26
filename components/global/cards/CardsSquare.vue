@@ -1,0 +1,66 @@
+<template>
+	<div class="transparent-card">
+		<div class="card-picture" :style="dynamicBackground"/>
+		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
+			{{ title }}
+		</h3>
+		<h6 class="subtitle">
+			{{ subtitle }}
+		</h6>
+	</div>
+</template>
+
+<script>
+export default {
+	name: 'CardsSquare',
+	props: {
+		title: {
+			type: String,
+			default: null,
+		},
+		subtitle: {
+			type: String,
+			default: null,
+		},
+		imageUrl: {
+			type: String,
+			default: '/images/placeholder.svg',
+		},
+	},
+	computed: {
+		dynamicBackground() {
+			return {
+				background: `url('${ this.imageUrl }') no-repeat center !important`,
+				'background-size': 'contain !important',
+			};
+		},
+	},
+};
+</script>
+
+<style lang="scss" scoped>
+.transparent-card {
+	max-width: 278px;
+	height: 276px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: $cn-border-radius-lg;
+	background-color: white;
+	padding: 40px;
+	box-shadow: $cn-shadow-sm;
+
+	.card-picture {
+		height: 100px;
+		width: 200px;
+	}
+
+	.subtitle {
+		max-width: 150px;
+		margin: 0;
+		//align-self: start;
+		text-align: center;
+	}
+}
+</style>

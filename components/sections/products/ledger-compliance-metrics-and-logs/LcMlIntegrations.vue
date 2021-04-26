@@ -1,47 +1,43 @@
 <template>
-	<page-section id="lc-integrations-section">
+	<PageSection
+		id="lc-integrations-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Ledger Compliance Integrations">
+					<PageSectionHeader title="Ledger Compliance Integrations">
 						<p class="lead">
 							Integrations for Hypervisor, Storage systems, OS and applications.
 						</p>
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
 				<i-column xs="12">
 					<VueSlickCarousel v-if="integrations && integrations.length" v-bind="settings">
 						<div
-							v-for="integration in integrations" :key="integration.slug"
+							v-for="integration in integrations"
+							:key="integration.slug"
 							class="integration-wrapper"
 						>
 							<nuxt-link :to="{ name: 'products-integration-post', params: { post: integration.slug } }">
-								<story-card color="transparent" :image="integration.image " />
+								<StoryCard color="transparent" :image="integration.image " />
 							</nuxt-link>
 						</div>
 					</VueSlickCarousel>
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import StoryCard from '~/components/common/cards/StoryCard';
-
 export default {
 	name: 'LcMlIntegrations',
-
-	components: {
-		StoryCard,
-	},
-
 	props: {
 		integrations: { type: Array, default: () => {} },
 	},
-
 	data: () => ({
 		settings: {
 			slidesToShow: 4,
@@ -80,7 +76,6 @@ export default {
 			],
 		},
 	}),
-
 	beforeDestroy () {
 		this.settings = null;
 	},
@@ -92,7 +87,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #lc-integrations-section {
-	background-color: white;
 	overflow: hidden;
 
 	.story-card {

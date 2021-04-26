@@ -1,28 +1,37 @@
 <template>
 	<div>
 		<LCMlHeader />
-		<lc-ml-features />
-		<lc-ml-integrations :integrations="integrations" />
-		<lc-ml-infrastructure />
-		<lc-ml-testimonials />
+		<LazyHydrate when-visible>
+			<LcMlFeatures />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<LcMlIntegrations :integrations="integrations" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<LcMlInfrastructure />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<HomeVideos class="_margin-top-4" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<LcMlTestimonials />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
-import LCMlHeader from '~/components/sections/headers/LCMlHeader';
-import LcMlFeatures from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlFeatures';
-import LcMlIntegrations from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlIntegrations';
-import LcMlInfrastructure from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlInfrastructure';
-import LcMlTestimonials from '~/components/sections/products/ledger-compliance-metrics-and-logs/LcMlTestimonials';
 
 export default {
+	name: 'LedgerComplianceMetricsAndLogs',
 	components: {
-		LCMlHeader,
-		LcMlFeatures,
-		LcMlIntegrations,
-		LcMlInfrastructure,
-		LcMlTestimonials,
+		LazyHydrate,
 	},
 	async asyncData ({ $content }) {
 		const integrations = await $content('products/integration')
@@ -34,8 +43,21 @@ export default {
 	},
 	head() {
 		return {
-			title: title('Ledger Compliance Metrics and Logs'),
+			title: title('Ledger Compliance (Public Cloud)'),
 		};
+	},
+	mounted () {
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
+	},
+	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 	},
 };
 </script>

@@ -1,4 +1,9 @@
-import { SET_MOBILE, SET_SIDEBAR, SET_POLLING_ID } from './constants';
+import {
+	SET_MOBILE,
+	SET_SIDEBAR,
+	SET_NAVBAR,
+	SET_POLLING_ID,
+} from './constants';
 
 export default {
 	[SET_MOBILE](state, payload) {
@@ -8,8 +13,16 @@ export default {
 		if (payload) {
 			const { mini, collapsed } = payload;
 
-			state.sidebar.mini = mini;
-			state.sidebar.collapsed = collapsed;
+			mini !== undefined && (state.sidebar.mini = mini);
+			collapsed !== undefined && (state.sidebar.collapsed = collapsed);
+		}
+	},
+	[SET_NAVBAR](state, payload) {
+		if (payload) {
+			const { light, background } = payload;
+
+			light !== undefined && (state.navbar.light = light);
+			background !== undefined && (state.navbar.background = background);
 		}
 	},
 	[SET_POLLING_ID](state, payload) {

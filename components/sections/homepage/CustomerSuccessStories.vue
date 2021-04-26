@@ -1,89 +1,87 @@
 <template>
-	<page-section id="customer-success-stories-section">
+	<PageSection
+		id="customer-success-stories-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
 				<i-column xs="12" sm="12">
-					<page-section-header
+					<PageSectionHeader
 						title="Customer Use Cases"
-						bottom="2"
+						:bottom="2"
 					>
 						With CodeNotary Ledger Compliance&reg; you can easily build immutable,
 						tamper-proof solutions and comply with auditor requirements and regulations and laws.
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 				<i-column
 					class="_margin-bottom-4 _display-flex _justify-content-center _align-items-center"
-					xs="12" sm="12"
+					xs="12"
+					sm="12"
 				>
 					<div class="button-wrapper">
 						<i-button
-							variant="primary" size="lg"
-							@click="webinarModalOpen = true"
+							variant="primary"
+							size="lg"
+							@click="$emit('onWebinarModal')"
 						>
 							Schedule a Webinar
 						</i-button>
-						<webinar-modal v-model="webinarModalOpen" />
 					</div>
 				</i-column>
 			</i-row>
 			<i-row>
 				<i-column md="6" lg="4">
-					<story-card
-						title="IT Compliance" color="transparent"
+					<StoryCard
+						title="IT Compliance"
+						color="transparent"
 						image="/images/use-cases/it-compliance.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
-					<story-card
-						title="Finance" color="transparent"
+					<StoryCard
+						title="Finance"
+						color="transparent"
 						image="/images/use-cases/finance.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
-					<story-card
-						title="Healthcare" color="transparent"
+					<StoryCard
+						title="Healthcare"
+						color="transparent"
 						image="/images/use-cases/healthcare.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
-					<story-card
-						title="Government" color="transparent"
+					<StoryCard
+						title="Government"
+						color="transparent"
 						image="/images/use-cases/government.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
-					<story-card
-						title="CI / CD Integrity" color="transparent"
+					<StoryCard
+						title="CI / CD Integrity"
+						color="transparent"
 						image="/images/use-cases/cicd.svg"
 					/>
 				</i-column>
 				<i-column md="6" lg="4">
-					<story-card
-						title="Regulatory Compliance" color="transparent"
+					<StoryCard
+						title="Regulatory Compliance"
+						color="transparent"
 						image="/images/use-cases/regulations.svg"
 					/>
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import StoryCard from '~/components/common/cards/StoryCard';
 
 export default {
-	components: {
-		StoryCard,
-		WebinarModal: () => import('~/components/common/modals/WebinarModal'),
-	},
-	data() {
-		return {
-			webinarModalOpen: false,
-		};
-	},
-	beforeDestroy () {
-		this.webinarModalOpen = null;
-	},
+	name: 'CustomerSuccessStories',
 };
 </script>
 
@@ -92,7 +90,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #customer-success-stories-section {
-	background-color: white;
 	overflow: hidden;
 
 	.story-card {

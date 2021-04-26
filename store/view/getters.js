@@ -1,4 +1,11 @@
-import { MOBILE, SIDEBAR_MINI, SIDEBAR_COLLAPSED, POLLING_ID } from './constants';
+import {
+	MOBILE,
+	SIDEBAR_MINI,
+	SIDEBAR_COLLAPSED,
+	NAVBAR_LIGHT,
+	NAVBAR_BACKGROUND,
+	POLLING_ID,
+} from './constants';
 
 export default {
 	[MOBILE](state) {
@@ -9,6 +16,12 @@ export default {
 	},
 	[SIDEBAR_COLLAPSED](state) {
 		return state.sidebar.collapsed;
+	},
+	[NAVBAR_LIGHT](state) {
+		return state.navbar.light;
+	},
+	[NAVBAR_BACKGROUND](state) {
+		return state.navbar.background;
 	},
 	[POLLING_ID](state) {
 		return state.pollingID;

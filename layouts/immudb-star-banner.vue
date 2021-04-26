@@ -1,11 +1,16 @@
 <template>
 	<section class="immudb-star-banner-layout" :class="{ scrolled, hover, closed }">
 		<ImmudbStarBanner
-			id="immudbStarBanner" @mouseenter.native="hover = true"
-			@mouseleave.native="hover = false" @submit="cta()"
+			id="immudbStarBanner"
+			@mouseenter.native="hover = true"
+			@mouseleave.native="hover = false"
+			@submit="cta()"
 			@close="cta(true)"
 		/>
-		<Navbar id="navbar" />
+		<Navbar
+			id="navbar"
+			:scrolled="scrolled"
+		/>
 		<div id="content">
 			<nuxt />
 		</div>
@@ -15,10 +20,6 @@
 </template>
 
 <script>
-import ImmudbStarBanner from '~/components/layout/ImmudbStarBanner';
-import Navbar from '~/components/layout/Navbar';
-import Footer from '~/components/layout/Footer';
-import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
 const SCROLL_THRESHOLD = 80;
@@ -26,12 +27,6 @@ const IMMUDB_STAR_COOKIE = 'immudb-star-cookie';
 
 export default {
 	name: 'ImmudbStarBannerLayout',
-	components: {
-		ImmudbStarBanner,
-		Navbar,
-		Footer,
-		Copyright,
-	},
 	mixins: LayoutMixin,
 	data: () => ({
 		scrolled: false,
@@ -75,10 +70,7 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-$navbar-height: 60;
-$navbar-scrolled-height: 60;
 $banner-height: 40;
-$banner-hover-height: 60;
 $banner-scrolled-height: 0;
 
 section.immudb-star-banner-layout {
@@ -91,28 +83,20 @@ section.immudb-star-banner-layout {
 		top: 0;
 		left: 0;
 		width: 100%;
-		z-index: 999;
-		transition: all 0.15s ease-out;
-
-		span {
-			transition: all 0.3s ease-out;
-		}
 	}
 
 	#navbar {
 		position: fixed;
-		height: #{$navbar-height}px !important;
+		height: #{$cn-navbar-height}px !important;
 		width: 100%;
 		top: #{$banner-height}px !important;
 		left: 0;
 		padding: 0;
-		background: transparent;
-		z-index: 999;
-		transition: all 0.15s ease-out;
 	}
 
 	#content {
-		margin-top: #{$banner-height + $navbar-height}px !important;
+		// margin-top: #{$banner-height + $navbar-height}px !important;
+		margin-top: #{$banner-height}px !important;
 	}
 
 	&.scrolled {
@@ -121,15 +105,13 @@ section.immudb-star-banner-layout {
 		}
 
 		#navbar {
-			height: #{$navbar-scrolled-height}px !important;
+			height: #{$cn-navbar-scrolled-height}px !important;
 			top: #{$banner-scrolled-height}px !important;
-			padding: 0 !important;
-			background: white !important;
-			box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
 		}
 
 		#content {
-			margin-top: #{$banner-scrolled-height + $navbar-height}px;
+			// margin-top: #{$banner-scrolled-height + $navbar-height}px;
+			margin-top: #{$banner-scrolled-height}px;
 		}
 	}
 
@@ -143,7 +125,7 @@ section.immudb-star-banner-layout {
 		}
 
 		#content {
-			margin-top: #{$navbar-height}px !important;
+			margin-top: #{$cn-navbar-height}px !important;
 		}
 	}
 
@@ -167,7 +149,7 @@ section.immudb-star-banner-layout {
 		}
 
 		#content {
-			margin-top: #{$banner-height * 2 + $navbar-height}px !important;
+			margin-top: #{$banner-height * 2 + $cn-navbar-height}px !important;
 		}
 	}
 }

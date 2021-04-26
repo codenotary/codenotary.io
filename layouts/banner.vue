@@ -1,10 +1,14 @@
 <template>
 	<section class="banner-layout" :class="{ scrolled, hover }">
 		<Banner
-			id="banner" @mouseenter.native="hover = true"
+			id="banner"
+			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
-		<Navbar id="navbar" />
+		<Navbar
+			id="navbar"
+			:scrolled="scrolled"
+		/>
 		<div id="content">
 			<nuxt />
 		</div>
@@ -14,22 +18,12 @@
 </template>
 
 <script>
-import Banner from '~/components/layout/Banner';
-import Navbar from '~/components/layout/Navbar';
-import Footer from '~/components/layout/Footer';
-import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
 
-const SCROLL_THRESHOLD = 120;
+const SCROLL_THRESHOLD = 80;
 
 export default {
 	name: 'BannerLayout',
-	components: {
-		Banner,
-		Navbar,
-		Footer,
-		Copyright,
-	},
 	mixins: LayoutMixin,
 	data: () => ({
 		scrolled: false,
@@ -57,11 +51,11 @@ export default {
 
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
+@import '~@inkline/inkline/src/css/mixins';
 
 $navbar-height: 60;
 $navbar-scrolled-height: 60;
 $banner-height: 40;
-$banner-hover-height: 60;
 $banner-scrolled-height: 40;
 
 section.banner-layout {
@@ -90,13 +84,11 @@ section.banner-layout {
 		top: #{$banner-height}px !important;
 		left: 0;
 		padding: 0;
-		background: transparent;
-		z-index: 999;
-		transition: all 0.15s ease-out;
 	}
 
 	#content {
-		margin-top: #{$banner-height + $navbar-height}px !important;
+		// margin-top: #{$banner-height + $navbar-height}px !important;
+		margin-top: #{$banner-height}px !important;
 	}
 
 	&.scrolled {
@@ -124,40 +116,17 @@ section.banner-layout {
 		#navbar {
 			height: #{$navbar-scrolled-height}px !important;
 			top: #{$banner-scrolled-height}px !important;
-			padding: 0 !important;
-			background: white !important;
-			box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12) !important;
-
-			.logo {
-				max-height: 48px;
-			}
 		}
 
 		#content {
-			margin-top: #{$banner-scrolled-height + $navbar-scrolled-height}px;
+			// margin-top: #{$banner-scrolled-height + $navbar-scrolled-height}px;
+			margin-top: #{$banner-scrolled-height}px;
 		}
 	}
 
-	&.hover {
+	@include breakpoint-down(md) {
 		#banner {
-			height: #{$banner-hover-height}px !important;
-
-			span,
-			.button {
-				font-size: 100% !important;
-			}
-
-			.button {
-				padding: 0.4rem 0.8rem;
-			}
-		}
-
-		#navbar {
-			top: #{$banner-hover-height}px !important;
-		}
-
-		#content {
-			margin-top: #{$banner-hover-height + $navbar-height}px;
+			// height: auto;
 		}
 	}
 }

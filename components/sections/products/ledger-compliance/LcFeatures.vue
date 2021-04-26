@@ -1,67 +1,71 @@
 <template>
-	<page-section id="lc-features-section">
+	<PageSection id="lc-features-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="CodeNotary Ledger Compliance Features" />
+					<PageSectionHeader title="CodeNotary Ledger Compliance Features" />
 				</i-column>
 			</i-row>
 			<i-row center top>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
-					<CommonFeature
+					<FeatureCard
 						subtitle="Immutable and tamperproof transactional ledgers"
 						image="/images/features/immutable.svg"
 					>
 						<p class="lead">
 							Data cannot be deleted or modified. Support for Intel SGX enclaves.
 						</p>
-					</CommonFeature>
+					</FeatureCard>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
-					<CommonFeature
+					<FeatureCard
 						subtitle="Always online - no archival system"
 						image="/images/features/hand.svg"
 					>
 						<p class="lead">
 							Virtual Appliance, Linux or Kubernetes deployment
 						</p>
-					</CommonFeature>
+					</FeatureCard>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
-					<CommonFeature
+					<FeatureCard
 						subtitle="Millions of transaction per second"
 						image="/images/features/cogwheels.svg"
 					>
 						<p class="lead">
 							Can processes millions of transactions per second reliably and with the cryptographic verification.
 						</p>
-					</CommonFeature>
+					</FeatureCard>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
+					xs="12"
+					sm="6"
 					lg="3"
 				>
-					<CommonFeature
+					<FeatureCard
 						subtitle="Compliance and Audit"
 						image="/images/features/audit.svg"
 					>
 						<p class="lead">
 							Complete and sequenced history. Query capabilities for auditors.
 						</p>
-					</CommonFeature>
+					</FeatureCard>
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

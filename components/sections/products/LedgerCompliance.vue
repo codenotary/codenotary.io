@@ -1,14 +1,14 @@
 <template>
-	<page-section id="ledger-compliance-section">
+	<PageSection id="ledger-compliance-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="CodeNotary Ledger Compliance®" block>
+					<PageSectionHeader title="CodeNotary Ledger Compliance®" block>
 						With CodeNotary Ledger Compliance&reg; you can start keeping a tamper-proof and indelible
 						ledger for your mission-critical and sensitive applications. Whether you use Java, Node.js, Python,
 						Go, .NET, on-premise or in the cloud, CodeNotary Ledger Compliance® processes millions of
 						transactions per second reliably and with cryptographic verification.
-					</page-section-header>
+					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -22,26 +22,21 @@
 			>
 				<i-column>
 					<img
-						id="tree-image" src="/images/word-tree.png"
-						alt="CodeNotary Word Cloud" class="image -responsive"
+						id="tree-image"
+						src="/images/word-tree.png"
+						alt="CodeNotary Word Cloud"
+						class="image -responsive"
 						width="650"
 					>
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import PricingTables from '~/components/sections/products/PricingTables';
-
 export default {
 	name: 'LedgerCompliance',
-
-	components: {
-		PricingTables,
-	},
-
 	props: {
 		tree: { type: Boolean, default: false },
 	},

@@ -1,9 +1,9 @@
 <template>
-	<page-section id="codenotary-how-it-works-section">
+	<PageSection id="codenotary-how-it-works-section">
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="How it works" />
+					<PageSectionHeader title="How it works" />
 				</i-column>
 			</i-row>
 			<i-row>
@@ -19,7 +19,8 @@
 								</p>
 								<p class="lead">
 									<a
-										href="https://dashboard.codenotary.io/auth/signup" target="_blank"
+										href="https://dashboard.codenotary.io/auth/signup"
+										target="_blank"
 										rel="noopener"
 									><strong>https://dashboard.codenotary.io</strong></a>
 								</p>
@@ -64,7 +65,8 @@
 								</p>
 								<p class="lead">
 									From the moment a digital asset like a document or a docker image has been notarized, everyone from anywhere in the world can authenticate that asset without uploading the file itself. <a
-										href="https://authenticate.codenotary.io" target="_blank"
+										href="https://authenticate.codenotary.io"
+										target="_blank"
 										rel="noopener"
 									>https://authenticate.codenotary.io</a>
 								</p>
@@ -77,7 +79,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>

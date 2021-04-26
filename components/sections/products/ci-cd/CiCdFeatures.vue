@@ -1,19 +1,26 @@
 <template>
-	<page-section id="ci-cd-features-section">
+	<PageSection
+		id="ci-cd-features-section"
+		variant="white"
+		:bottom="0"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Features" />
+					<PageSectionHeader title="Features" />
 				</i-column>
 			</i-row>
 			<i-row center top>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/ci-cd/features/easy_to_use.svg"
+							slot="image"
+							src="/images/ci-cd/features/easy_to_use.svg"
 							alt="Easy to use"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -25,12 +32,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/ci-cd/features/tamperproof.svg"
+							slot="image"
+							src="/images/ci-cd/features/tamperproof.svg"
 							alt="Tamperproof"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -42,12 +52,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/ci-cd/features/full_transparency.svg"
+							slot="image"
+							src="/images/ci-cd/features/full_transparency.svg"
 							alt="Full transparency"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -59,12 +72,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/ci-cd/features/notarize.svg"
+							slot="image"
+							src="/images/ci-cd/features/notarize.svg"
 							alt="Notarize"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -76,12 +92,15 @@
 					</i-card>
 				</i-column>
 				<i-column
-					xs="12" sm="6"
-					md="6" lg="4"
+					xs="12"
+					sm="6"
+					md="6"
+					lg="4"
 				>
 					<i-card>
 						<img
-							slot="image" src="/images/ci-cd/features/authenticate.svg"
+							slot="image"
+							src="/images/ci-cd/features/authenticate.svg"
 							alt="Authenticate"
 						>
 						<h4 class="title _font-weight-bold _text-primary">
@@ -94,7 +113,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -108,7 +127,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #ci-cd-features-section {
-	background-color: white;
 	overflow: hidden;
 
 	.card {

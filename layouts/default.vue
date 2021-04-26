@@ -2,6 +2,7 @@
 	<section class="default-layout" :class="{ scrolled, hover }">
 		<Navbar
 			id="navbar"
+			:scrolled="scrolled"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
@@ -10,37 +11,34 @@
 		</div>
 		<Footer />
 		<Copyright />
+		<client-only>
+			<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
+		</client-only>
 	</section>
 </template>
 
 <script>
-import Navbar from '~/components/layout/Navbar';
-import Footer from '~/components/layout/Footer';
-import Copyright from '~/components/layout/Copyright';
 import LayoutMixin from '~/mixins/LayoutMixin';
+import { eventHub } from '~/helpers/eventhub';
 
-const SCROLL_THRESHOLD = 200;
+const SCROLL_THRESHOLD = 80;
 
 export default {
 	name: 'DefaultLayout',
-
-	components: {
-		Navbar,
-		Footer,
-		Copyright,
-	},
-
 	mixins: LayoutMixin,
 	data: () => ({
 		scrolled: false,
 		hover: false,
+		ledgerComplianceModalOpen: false,
 	}),
 	beforeDestroy () {
 		this.scrolled = null;
 		this.hover = null;
+		eventHub.$off('displayTrialModal', this.displayTrialModal);
 	},
 	mounted () {
 		window.addEventListener('scroll', this.handleScroll);
+		eventHub.$on('displayTrialModal', this.displayTrialModal);
 	},
 	destroyed () {
 		window.removeEventListener('scroll', this.handleScroll);
@@ -51,6 +49,9 @@ export default {
 				this.scrolled = window.scrollY >= SCROLL_THRESHOLD;
 			}
 		},
+		displayTrialModal() {
+			this.ledgerComplianceModalOpen = true;
+		},
 	},
 };
 </script>
@@ -58,30 +59,29 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-$navbar-height: 60;
-$navbar-scrolled-height: 40;
-
 section.default-layout {
 	#navbar {
 		position: fixed;
+		height: #{$cn-navbar-height}px;
+		width: 100%;
 		top: 0;
 		left: 0;
-		width: 100%;
-		z-index: 999;
+		padding: 0;
 	}
 
 	#content {
-		margin-top: #{$navbar-height}px;
+		// margin-top: #{$navbar-height}px;
+		margin-top: 0;
 	}
 
 	&.scrolled {
 		#navbar {
-			height: #{$navbar-scrolled-height}px !important;
-			background: white !important;
+			height: #{$cn-navbar-scrolled-height}px !important;
 		}
 
 		#content {
-			margin-top: #{$navbar-scrolled-height}px;
+			// margin-top: #{$navbar-scrolled-height}px;
+			margin-top: 0;
 		}
 	}
 }

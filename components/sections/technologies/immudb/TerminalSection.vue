@@ -1,5 +1,5 @@
 <template>
-	<page-section id="immudb-code-examples-section">
+	<PageSection id="immudb-code-examples-section">
 		<i-container>
 			<i-row>
 				<i-column>
@@ -7,7 +7,8 @@
 						<div>
 							<i-row middle class="_padding-1">
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<h4 class="title _font-weight-bold _text-primary">
@@ -24,7 +25,8 @@
 									</ul>
 								</i-column>
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<Terminal title="immudb" language="go">
@@ -45,7 +47,8 @@
 						<div>
 							<i-row middle class="_padding-1">
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<h4 class="title _font-weight-bold _text-primary">
@@ -63,7 +66,8 @@
 									</ul>
 								</i-column>
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<Terminal title="immudb" language="bash">
@@ -85,7 +89,8 @@
 						<div>
 							<i-row middle class="_padding-1">
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<h4 class="title _font-weight-bold _text-primary">
@@ -102,7 +107,8 @@
 									</ul>
 								</i-column>
 								<i-column
-									xs="12" sm="12"
+									xs="12"
+									sm="12"
 									md="6"
 								>
 									<!-- eslint-disable vue/html-indent -->
@@ -125,17 +131,12 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
-import Terminal from '~/components/global/Terminal';
-
 export default {
 	name: 'TerminalSection',
-	components: {
-		Terminal,
-	},
 	data: () => ({
 		settings: {
 			slidesToShow: 1,

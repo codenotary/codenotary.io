@@ -1,33 +1,55 @@
 <template>
 	<div>
-		<ci-cd-header />
-		<ci-cd-integrations />
-		<ci-cd-features />
-		<ci-cd-how-it-works />
-		<ci-cd-get-started />
-		<ci-cd-analyze-and-manage />
-		<ci-cd-videos />
+		<CiCdHeader />
+		<LazyHydrate when-visible>
+			<CiCdIntegrations />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<CiCdFeatures />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<HomeVideos class="_margin-bottom-4" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<CiCdHowItWorks />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<CiCdGetStarted />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<CiCdAnalyzeAndManage />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<CiCdVideos />
+		</LazyHydrate>
 	</div>
 </template>
 
 <script>
-import CiCdHeader from '~/components/sections/headers/CiCdHeader';
-import CiCdIntegrations from '~/components/sections/products/ci-cd/CiCdIntegrations';
-import CiCdFeatures from '~/components/sections/products/ci-cd/CiCdFeatures';
-import CiCdHowItWorks from '~/components/sections/products/ci-cd/CiCdHowItWorks';
-import CiCdGetStarted from '~/components/sections/products/ci-cd/CiCdGetStarted';
-import CiCdAnalyzeAndManage from '~/components/sections/products/ci-cd/CiCdAnalyzeAndManage';
-import CiCdVideos from '~/components/sections/products/ci-cd/CiCdVideos';
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
+	name: 'CiCdPage',
 	components: {
-		CiCdHeader,
-		CiCdIntegrations,
-		CiCdFeatures,
-		CiCdHowItWorks,
-		CiCdGetStarted,
-		CiCdAnalyzeAndManage,
-		CiCdVideos,
+		LazyHydrate,
+	},
+	mounted () {
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
+	},
+	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
 	},
 };
 </script>

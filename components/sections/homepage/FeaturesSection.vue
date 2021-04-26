@@ -1,90 +1,137 @@
 <template>
-	<page-section id="features-section">
+	<PageSection
+		id="features-section"
+		variant="white"
+	>
 		<i-container>
 			<i-row>
-				<i-column xs="12" lg="4">
-					<CommonFeature title="Immutable" image="/images/features/immutable.svg">
-						<ul class="list -unstyled">
-							<li>
-								Any kind of key-value. Clients can choose how to structure data.
-							</li>
-							<li>
-								<strong>No data mutation APIs</strong> are provided.
-							</li>
-							<li>
-								Data is never overwritten and is cryptographically verifiable.
-							</li>
-							<li>
-								Address regulatory compliance: SEC 17a-4(f), CFTC 1.31(d), FINRA, and other regulations.
-							</li>
-						</ul>
-					</CommonFeature>
+				<i-column
+					class="_margin-bottom-xs-2 _margin-bottom-sm-4 _margin-bottom-md-4 _margin-bottom-lg-4 _margin-bottom-xl-4"
+					style="height: 100%;"
+					xs="12"
+				>
+					<Feature
+						image="/images/features/feat-immutability.png"
+						content-side="right"
+						title="Cryptographic verifiable immutable data platform"
+						:inner-content="[
+							{
+								title: '100% immutability',
+								text: 'Complete and sequenced history of data and data changes',
+							},
+							{
+								title: '100% client-cryptographic proof',
+								text: 'Fully integrated hash-tree provides mathematic proof to any client',
+							},
+						]"
+					>
+						<p>
+							Don't trust central or online services to provide immutability for your precious data. CNLC uses the world's fastest immutable database <span class="_font-weight-bold">immudb</span>, to provide full immutability and client-cryptographic proof.
+							That cryptographic verification guarantees data integrity and tamper-evidence.
+						</p>
+					</Feature>
 				</i-column>
-				<i-column xs="12" lg="4">
-					<CommonFeature title="Auditable" image="/images/features/auditable.svg">
-						<ul class="list -unstyled">
-							<li>
-								Tamper-evident history system with <strong>cryptographic proof</strong>
-							</li>
-							<li>
-								Secure document retention and store sensitive information that is critical to litigation or business use in a tamper-proof state for the desired duration.
-							</li>
-							<li>If tampered, clients and auditors will notice that and take actions.</li>
-						</ul>
-					</CommonFeature>
+				<i-column
+					class="_margin-y-xs-2 _margin-y-sm-4 _margin-y-md-4 _margin-y-lg-4 _margin-y-xl-4"
+					style="height: 100%;"
+					xs="12"
+				>
+					<Feature
+						image="/images/features/feat-performance.png"
+						content-side="left"
+						title="World's fastest immutable ledger"
+						:inner-content="[
+							{
+								title: '10.000.000 tx/s',
+								text: 'Limitless performance despite tamper resistance',
+							},
+							{
+								title: '650 times faster',
+								text: 'Highest thruput of any immutable ledger technology',
+							},
+						]"
+					>
+						<p>
+							To keep up with today's need for high-speed applications, you need a high-speed database.
+							This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
+							CNLC is able to support 10.000.000 transactions a second.
+							Immutability and high-speed performance - first time combined.
+						</p>
+						<template #button>
+							<i-button
+								class="_padding-x-4"
+								size="lg"
+								variant="primary"
+								@click="$emit('onLedgerComplianceModal')"
+							>
+								Start trial
+							</i-button>
+						</template>
+					</Feature>
 				</i-column>
-				<i-column xs="12" lg="4">
-					<CommonFeature title="Secure" image="/images/features/secure.svg">
-						<ul class="list -unstyled">
-							<li>
-								Data ownership is verifiable by clients and auditors. Built-in immutable data history against Ransomware (malware encryption).
-							</li>
-							<li>
-								Sign your data using <strong>Public-Key Cryptography</strong>. Support for Intel SGX enclaves.
-							</li>
-							<li>
-								Keys additions and revocations are immutably stored into the database.
-							</li>
-						</ul>
-					</CommonFeature>
+				<i-column
+					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
+					style="height: 100%;"
+					xs="12"
+					sm="6"
+				>
+					<Feature
+						content-side="left"
+						title="CI/CD, Change Data Capture and SDKs"
+						:inner-content="[
+							{
+								title: '100% Trusted pipeline',
+								text: 'Tamperproof provenance for your code and CI/CD pipeline',
+							},
+							{
+								title: '8 SDKs and plugins',
+								text: 'Out of the box support for Go, Java, Python, Node.js to support custom applications',
+							},
+						]"
+					>
+						<p>
+							The SDKs enable your developers to write data to CodeNotary Ledger Compliance using a few lines of code.
+							Write and read your data records into Ledger Compliance making sure your data history trace is always available.
+							Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
+						</p>
+					</Feature>
+				</i-column>
+				<i-column
+					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
+					style="height: 100%;"
+					xs="12"
+					sm="6"
+				>
+					<Feature
+						content-side="left"
+						title="Ready in minutes"
+						:inner-content="[
+							{
+								title: 'Linux, Container or virtual appliance',
+								text: 'Install and run CNLC in minutes using our universal install options',
+							},
+							{
+								title: 'On-premise, cloud-based or managed service',
+								text: 'You run it, or we run it for you. It\'s your choice',
+							},
+						]"
+					>
+						<p>
+							Deploy as a virtual appliance or install on any Linux system, <span class="_font-weight-bold">CNLC</span>
+							is ready within minutes to receive and store your data tamper-proof. You can run CNLC on-premise, in the cloud
+							or in hybrid environments. If you wish for an independent deployment outside of your environment, we offer
+							managed service as well.
+						</p>
+					</Feature>
 				</i-column>
 			</i-row>
-			<i-row v-if="true" class=" _margin-top-4">
+			<i-row
+				class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
+			>
 				<i-column
-					xs="12" sm="6"
-					lg="3"
+					class="_text-center _text-muted"
+					style="height: 100%;"
 				>
-					<CommonFeature subtitle="Record data when it happens" image="/images/features/record_data.svg">
-						<p>Database changes, table history, data access, audit information.</p>
-					</CommonFeature>
-				</i-column>
-				<i-column
-					xs="12" sm="6"
-					lg="3"
-				>
-					<CommonFeature subtitle="Immediate data query" image="/images/features/immediate_query.svg">
-						<p>Extremely fast query engine and always ready to use.</p>
-					</CommonFeature>
-				</i-column>
-				<i-column
-					xs="12" sm="6"
-					lg="3"
-				>
-					<CommonFeature subtitle="Cryptographic verification built-in" image="/images/features/cryptographic_verifcation.svg">
-						<p>Every entry is verifiable using cryptographic proof.</p>
-					</CommonFeature>
-				</i-column>
-				<i-column
-					xs="12" sm="6"
-					lg="3"
-				>
-					<CommonFeature subtitle="Always available" image="/images/features/online.svg">
-						<p>No archive system, data is online and never out of reach.</p>
-					</CommonFeature>
-				</i-column>
-			</i-row>
-			<i-row class=" _margin-top-4">
-				<i-column class="_text-center _text-muted">
 					<ul class="list -unstyled">
 						<li class="_margin-bottom-2">
 							<strong>Immutability</strong> by perimeter defense is proven not to work, <strong>Immutability</strong> needs to be embedded in the data structure!
@@ -93,7 +140,9 @@
 							Powered by
 							<a href="https://immudb.io">
 								<img
-									width="40" src="/images/logo/icon/logo_icon_black.svg"
+									height="48"
+									width="48"
+									src="/images/logo/icon/logo_icon_black.svg"
 									alt="immudb"
 								>
 								<strong class="_text-black">immudb</strong>
@@ -103,12 +152,19 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
 export default {
 	name: 'FeaturesSection',
+	data() {
+		return {
+			ledgerComplianceModalOpen: false,
+			playing: false,
+			timeout: null,
+		};
+	},
 };
 </script>
 
@@ -117,8 +173,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #features-section {
-	background-color: #e9ecef;
-
 	.column {
 		@include breakpoint-down(lg) {
 			.feature {
