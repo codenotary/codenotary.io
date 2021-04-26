@@ -101,7 +101,7 @@ export default {
 			&::after {
 				content: url('/icons/triangle.svg');
 				position: absolute;
-				bottom: -39px;
+				bottom: -36px;
 				transform: rotate(180deg);
 			}
 		}
