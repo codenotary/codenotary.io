@@ -59,7 +59,7 @@ export default {
 				imageUrl: '/images/features/dev-ops.svg',
 			},
 			{
-				title: 'Collab',
+				title: 'Supply Chain',
 				subtitle: 'Bill of material for your workload',
 				imageUrl: '/images/features/collab.svg',
 			},
