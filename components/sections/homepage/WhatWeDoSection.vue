@@ -12,7 +12,7 @@
 				:bottom="0"
 			/>
 		</i-container>
-		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark">
+		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark _padding-left-0 _padding-right-0">
 			<h6 class="subheader _margin-0">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
@@ -44,13 +44,17 @@ export default {
 .what_we_do-cards {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
 	flex: 1 0 100%;
 	flex-wrap: wrap;
 	padding: 0;
 	padding-top: 10px;
 	padding-bottom: 10px;
+
+	@media screen and (max-width: 767px) {
+		justify-content: center;
+	}
 
 	& > * {
 		margin-top: 10px;
