@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<PageSection>
+		<PageSection variant="white">
 			<PageSectionHeader>
 				<h1 slot="title" class="d6">
 					Contact us
