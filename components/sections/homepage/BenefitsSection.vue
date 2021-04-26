@@ -82,15 +82,23 @@ export default {
 
 		.benefit-card-header {
 			background-color: white;
+			position: relative;
 			flex: 0 0 0;
 			width: 100%;
 			min-height: 180px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin-bottom: 20px;
+			margin-bottom: 39px;
 			box-shadow: $cn-shadow-sm;
 			border-radius: $cn-border-radius-lg;
+
+			&::after {
+				content: url('/icons/triangle.svg');
+				position: absolute;
+				bottom: -39px;
+				transform: rotate(180deg);
+			}
 		}
 
 		.benefit-card-body {
