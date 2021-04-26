@@ -71,7 +71,7 @@ export default {
 		filenames: {
 			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
 			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
-		},		
+		},
 		// Extend webpack config
 		extend: (config, ctx) => {
 			config.devtool = ctx.isClient ? 'eval-source-map' : 'inline-source-map';
@@ -112,6 +112,7 @@ export default {
 		{ src: '~plugins/vue-typer', ssr: false },
 		'~plugins/vue-slick-carousel',
 		'~plugins/inkline',
+		{ src: '~plugins/hotjar', ssr: false },
 	],
 	/*
     ** Nuxt.js dev-modules
@@ -170,7 +171,7 @@ export default {
 			],
 		}],
 		// Doc: https://github.com/GrabarzUndPartner/nuxt-font-loader-strategy
-		['nuxt-font-loader-strategy', { 
+		['nuxt-font-loader-strategy', {
 			useWorker: false,
 			ignoreLighthouse: true,
 			ignoredEffectiveTypes: ['2g', 'slow-2g'],
@@ -267,7 +268,7 @@ export default {
 				if (map && map.length) {
 					map.map((path) => {
 						paths = [...paths, {
-							route: `/careers/${ careersRoutes[path] }`,
+							route: `/join/${ careersRoutes[path] }`,
 							payload: path,
 						}];
 					});
@@ -310,7 +311,7 @@ export default {
 				if (map && map.length) {
 					map.map((path) => {
 						paths = [...paths, {
-							route: `/careers/${ careersRoutes[path] }`,
+							route: `/join/${ careersRoutes[path] }`,
 							payload: path,
 						}];
 					});

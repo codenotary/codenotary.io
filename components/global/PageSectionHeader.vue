@@ -18,8 +18,8 @@ export default {
 		title: { type: String, default: '' },
 		tag: { type: String, default: 'h2' },
 		block: { type: Boolean, default: false },
-		top: { type: Number, default: 0 },
-		bottom: { type: Number, default: 6 },
+		top: { type: String, default: '0' },
+		bottom: { type: String, default: '6' },
 	},
 };
 </script>

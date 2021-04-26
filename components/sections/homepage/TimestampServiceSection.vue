@@ -6,7 +6,7 @@
 					<page-section-header
 						title="Free tamperproof timestamp service for your CI/CD process"
 						block
-						:bottom="4"
+						bottom="4"
 					/>
 				</i-column>
 				<i-column

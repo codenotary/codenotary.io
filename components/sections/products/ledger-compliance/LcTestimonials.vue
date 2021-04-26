@@ -3,7 +3,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Customer testimonials" :bottom="4" />
+					<page-section-header title="Customer testimonials" bottom="4" />
 				</i-column>
 			</i-row>
 			<i-row>

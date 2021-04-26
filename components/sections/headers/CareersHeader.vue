@@ -3,10 +3,10 @@
 		<i-row class="_align-items-center">
 			<i-column xs="12">
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
-					Careers
+					Join our Team
 				</h1>
 				<p class="lead _margin-bottom-0">
-					We’re creating highly sophisticated and innovative solutions which our customers love to use. Join us on our journey to bring trust and integrity to all digital objects!
+					We’re creating highly sophisticated and innovative solutions which our customers love to use. Join us on our journey to bring trust and integrity to the digital world!
 				</p>
 				<div class="button-wrapper _margin-top-2">
 					<i-button

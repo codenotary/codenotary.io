@@ -6,7 +6,6 @@
 		<template slot="header">
 			Become a partner
 		</template>
-		<partner-form />
 		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 		<div
 			v-if="!injected"

@@ -2,7 +2,7 @@
 	<page-section>
 		<page-section-header :title="'Terms of Service'" tag="h1" />
 
-		<tos-sub-navbar v-if="!isIndex" />
+		<LayoutSubnavbarTos v-if="!isIndex" />
 
 		<i-container>
 			<i-row>

@@ -6,7 +6,7 @@
 					End-to-end tampering/manipulation protection for your software development cycle
 				</h1>
 				<p class="lead">
-					Add trust, integrity and transparency for all identities and artefacts to your existing CI/CD pipeline in a heartbeat.
+					Add trust, integrity and transparency for all identities and artefacts to your existing CI/CD pipelines in a heartbeat.
 				</p>
 				<p class="_font-weight-bold">
 					Powered by the world’s fastest immutable database.
@@ -16,11 +16,11 @@
 						size="lg"
 						outline
 						variant="primary"
-						href="https://democnlc.codenotary.com"
+						href="https://dashboard.codenotary.io/auth/signup"
 						target="_blank"
 						rel="nofollow"
 					>
-						Demo
+						Cloud
 					</i-button>
 					<i-button
 						variant="primary"
@@ -28,7 +28,7 @@
 						class="_margin-left-1"
 						@click="ledgerComplianceModalOpen = true"
 					>
-						Start trial
+						Self-Hosted
 					</i-button>
 					<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 				</p>
@@ -113,6 +113,10 @@ $mascot-width: 175px;
 		.button-wrapper {
 			margin-bottom: $spacer * 2;
 		}
+	}
+
+	.action {
+		padding-top: 30px;
 	}
 }
 

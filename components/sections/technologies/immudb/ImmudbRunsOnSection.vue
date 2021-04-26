@@ -3,7 +3,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<page-section-header title="Runs on" :bottom="2" />
+					<page-section-header title="Runs on" bottom="2" />
 				</i-column>
 			</i-row>
 			<i-row>

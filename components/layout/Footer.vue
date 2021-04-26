@@ -71,8 +71,8 @@
 							</router-link>
 						</li>
 						<li>
-							<router-link :to="{ name: 'careers' }">
-								Careers
+							<router-link :to="{ name: 'join' }">
+								Join Us
 							</router-link>
 						</li>
 					</ul>
