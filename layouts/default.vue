@@ -1,7 +1,6 @@
 <template>
 	<section class="default-layout" :class="{ scrolled, hover }">
 		<Navbar
-			id="navbar"
 			:scrolled="scrolled"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
