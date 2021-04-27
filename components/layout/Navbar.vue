@@ -221,8 +221,9 @@ export default {
 	}
 
 	.logo {
-		max-height: #{$cn-logo-height}px;
-		width: auto;
+		height: #{$cn-logo-height}px;
+		width: 200px;
+		object-fit: cover;
 		margin-right: 8px;
 	}
 
@@ -302,12 +303,6 @@ export default {
 			padding: 0 !important;
 			//background: white !important;
 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
-
-			.container {
-				.logo {
-					max-height: #{$cn-logo-height}px;
-				}
-			}
 
 			.collapse-toggle {
 				> .bars {
