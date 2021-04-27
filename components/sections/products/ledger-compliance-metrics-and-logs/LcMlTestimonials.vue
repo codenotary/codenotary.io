@@ -16,7 +16,7 @@
 							<i-card>
 								<fa icon="quote-left" class="fa-2x _text-center" />
 								<p class="quote">
-									It makes for a great one-stop shop for monitoring key VMware metrics! I have been using Opvizor’s Performance Analyzer for about a year. Setup and operational in less than 30 minutes. It comes pre-packaged with ready to use dashboards that are color coded with thresholds providing immediate feedback on performance, KPIs, health and areas of concerns. The team is skilled in this area and knows what their customer base is seeking. Overall, I’m very pleased with the application and the support team behind it. Highly recommended!
+									It makes for a great one-stop shop for monitoring key VMware metrics! I have been using CodeNotary CNLC Metrics and Logs for about a year. Setup and operational in less than 30 minutes. It comes pre-packaged with ready to use dashboards that are color coded with thresholds providing immediate feedback on performance, KPIs, health and areas of concerns. The team is skilled in this area and knows what their customer base is seeking. Overall, I’m very pleased with the application and the support team behind it. Highly recommended!
 								</p>
 								<hr>
 								<span class="name _font-weight-bold">Tarun Keswani</span>
@@ -62,7 +62,7 @@
 							<i-card>
 								<fa icon="quote-left" class="fa-2x _text-align-center" />
 								<p class="quote">
-									Performance Analyzer was running in 25 minutes. Opvizor has provided us with insights into our VMware cluster performance that we have never previously had and immediately alerted us to several issues we were unaware of.
+									Performance Analyzer was running in 25 minutes. CodeNotary CNLC Metrics and Logs has provided us with insights into our VMware cluster performance that we have never previously had and immediately alerted us to several issues we were unaware of.
 								</p>
 								<hr>
 								<small class="role _font-weight-bold">Head of Information Systems</small><small>, </small><small class="organization">Brett Martin Ltd</small>
