@@ -1,155 +1,95 @@
 <template>
-	<i-navbar
-		:class="{
+	<div>
+		<i-navbar
+			id="navbar"
+			:class="{
 			'-scrolled': scrolled,
 		}"
-	>
-		<i-navbar-brand
-			:to="{ name: 'index' }"
-			class="_padding-0"
 		>
-			<img
-				class="logo _padding-y-1-2"
-				:src="`/images/logo/logo_white.png`"
-				alt="CodeNotary"
+
+			<i-navbar-brand
+				:to="{ name: 'index' }"
+				class="_padding-0"
 			>
-		</i-navbar-brand>
-		<i-navbar-items class="_justify-content-end">
-			<i-nav>
-				<!-- PRODUCTS (lg-and-up) -->
-				<i-dropdown
-					class="navbar-dropdown _visible-lg-and-up"
-					trigger="hover"
-					@change="productsMenuOpen = $event"
+				<img
+					class="logo _padding-y-1-2"
+					:src="`/images/logo/logo_white.png`"
+					alt="CodeNotary"
 				>
+			</i-navbar-brand>
+			<i-navbar-items class="_justify-content-end">
+				<i-nav>
+					<!-- PRODUCTS (lg-and-up) -->
 					<i-nav-item
-						:class="{ '-active': subRouteActive('/products') }"
+						class="_text-xs-black _visible-lg-and-up _position-relative product-toggle"
+						@click="productsMenuOpen = !productsMenuOpen"
+						:class="{'open': productsMenuOpen, '-active': subRouteActive('/products')}"
 					>
 						Products
-						<fa
-							class="_margin-left-1-4"
-							:icon="`caret-${ productsMenuOpen ? 'up' : 'down' }`"
-						/>
 					</i-nav-item>
-					<i-dropdown-menu>
-						<i-row class="_margin-0 _padding-0">
-							<i-column
-								class="_margin-0 _padding-0"
-								xs="12"
-							>
-								<nuxt-link
-									class="freeform-item _padding-1"
-									:to="{ name: 'products-ledger-compliance' }"
-								>
-									<h6
-										class="title _margin-0 _padding-xs-0"
-									>
-										CNLC (Self-Hosted)
-									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
-										Self-Hosted trusted CI/CD and artifact protection for your software development cycle
-									</p>
-								</nuxt-link>
-							</i-column>
-							<i-column
-								class="_margin-0 _padding-0"
-								xs="12"
-							>
-								<nuxt-link
-									class="freeform-item _padding-1"
-									:to="{ name: 'products-ci-cd' }"
-								>
-									<h6
-										class="title _margin-0 _padding-xs-0"
-									>
-										CNLC (Cloud)
-									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
-										Trusted CI/CD and artifact protection as a service that allows public verification
-									</p>
-								</nuxt-link>
-							</i-column>
-                                                        <i-column
-                                                                class="_margin-0 _padding-0"
-                                                                xs="12"
-                                                        >
-                                                                <nuxt-link
-                                                                        class="freeform-item _padding-1"
-                                                                        :to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
-                                                                >
-                                                                        <h6
-                                                                                class="title _margin-0 _padding-xs-0"
-                                                                        >
-                                                                                CNLC Metrics and Logs
-                                                                        </h6>
-                                                                        <p class="_margin-0 padding-top-1-2 subtitle">
-                                                                                Self-Hosted performance and compliant log analysis for VMware vSphere, container and much more
-                                                                        </p>
-                                                                </nuxt-link>
-                                                        </i-column>
 
-						</i-row>
-					</i-dropdown-menu>
-				</i-dropdown>
-				<!-- PRODUCTS (md-and-down) -->
-				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
+					<!-- PRODUCTS (md-and-down) -->
+					<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
+						<i-nav-item
+							class="header"
+							disabled
+						>
+							Products
+						</i-nav-item>
+						<i-nav-item
+							:to="{ name: 'products-ledger-compliance' }"
+						>
+							CNLC (Self-Hosted)
+						</i-nav-item>
+						<i-nav-item
+							:to="{ name: 'products-ci-cd' }"
+						>
+							CNLC (Cloud)
+						</i-nav-item>
+						<i-nav-item
+							:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+						>
+							CNLC Metrics and Logs
+						</i-nav-item>
+					</i-nav>
+
 					<i-nav-item
-						class="header"
-						disabled
+						class="_text-xs-white"
+						:to="{ name: 'technologies-immudb' }"
 					>
-						Products
+						immudb
 					</i-nav-item>
+
+					<!-- BLOG POSTS -->
 					<i-nav-item
-						:to="{ name: 'products-ledger-compliance' }"
+						class="_text-xs-white"
+						:to="{ name: 'blog' }"
 					>
-						CNLC (Self-Hosted)
+						Blog
 					</i-nav-item>
+
+					<!-- CONTACT US -->
 					<i-nav-item
-						:to="{ name: 'products-ci-cd' }"
+						:to="{ name: 'contact' }"
 					>
-						CNLC (Cloud)
+						Contact us
 					</i-nav-item>
-					<i-nav-item
-						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
-					>
-						CNLC Metrics and Logs
-					</i-nav-item>
+					<transition name="fade">
+						<cn-button
+							v-if="scrolled && $route.name === 'index'"
+							class="cta-button"
+							variant="secondary"
+							@click.native="onDownloadClick"
+						>
+							Download
+						</cn-button>
+					</transition>
 				</i-nav>
+			</i-navbar-items>
+		</i-navbar>
+		<global-menu v-show="productsMenuOpen" :scrolled="scrolled" @close="productsMenuOpen = false"/>
+	</div>
 
-				<i-nav-item
-					class="_text-xs-black"
-					:to="{ name: 'technologies-immudb' }"
-				>
-					immudb
-				</i-nav-item>
-
-				<!-- BLOG POSTS -->
-				<i-nav-item
-					class="_text-xs-black"
-					:to="{ name: 'blog' }"
-				>
-					Blog
-				</i-nav-item>
-
-				<!-- CONTACT US -->
-				<i-nav-item
-					:to="{ name: 'contact' }"
-				>
-					Contact us
-				</i-nav-item>
-				<transition name="fade">
-					<cn-button
-						v-if="scrolled && $route.name === 'index'"
-						class="cta-button"
-						variant="secondary"
-						@click.native="onDownloadClick"
-					>
-						Download
-					</cn-button>
-				</transition>
-			</i-nav>
-		</i-navbar-items>
-	</i-navbar>
 </template>
 
 <script>
@@ -208,6 +148,58 @@ export default {
 @import '~@inkline/inkline/src/css/config';
 @import '~@inkline/inkline/src/css/mixins';
 
+#navbar {
+	z-index: 10;
+
+	@media screen and (max-width: 991px) {
+		text-align: center;
+
+		&.-scrolled {
+			.navbar-items {
+				top: #{$cn-navbar-scrolled-height}px;
+			}
+		}
+
+		.navbar-items {
+			transition: all 0.15s ease-out;
+			position: fixed;
+			left: 0;
+			top: #{$cn-navbar-height}px;
+
+			& > .nav {
+				width: 100%;
+				background: $cn-dark-gradient;
+
+				.dropdown-fallback-nav {
+					border-bottom: none;
+
+					.item.-disabled {
+						font-size: 1rem;
+						margin-top: 50px;
+					}
+				}
+
+				.item {
+					color: white !important;
+					font-weight: bold;
+
+					&.nuxt-link-active {
+						color: $cn-color-secondary !important;
+					}
+				}
+
+				& > a {
+					border-top: 1px solid $cn-color-primary;
+				}
+			}
+		}
+
+		//.column.-xs {
+		//	padding: 0;
+		//}
+	}
+}
+
 .navbar {
 	//background: transparent !important;
 	background: $cn-dark-gradient !important;
@@ -221,8 +213,9 @@ export default {
 	}
 
 	.logo {
-		max-height: #{$cn-logo-height}px;
-		width: auto;
+		height: #{$cn-logo-height}px;
+		width: 200px;
+		object-fit: cover;
 		margin-right: 8px;
 	}
 
@@ -303,12 +296,6 @@ export default {
 			//background: white !important;
 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
 
-			.container {
-				.logo {
-					max-height: #{$cn-logo-height}px;
-				}
-			}
-
 			.collapse-toggle {
 				> .bars {
 					&::before,
@@ -318,6 +305,17 @@ export default {
 					}
 				}
 			}
+		}
+	}
+
+	.product-toggle {
+		position: relative;
+
+		&.open::after {
+			content: url('/icons/triangle.svg');
+			position: absolute;
+			left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
+			bottom: -100%;
 		}
 	}
 
