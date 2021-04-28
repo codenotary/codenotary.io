@@ -1,101 +1,97 @@
 <template>
-	<div>
-		<i-navbar
-			id="navbar"
-			:class="{
-			'-scrolled': scrolled,
-		}"
+	<i-navbar
+		id="navbar"
+		:class="{
+		'-scrolled': scrolled,
+	}"
+	>
+
+		<i-navbar-brand
+			:to="{ name: 'index' }"
+			class="_padding-0"
 		>
-
-			<i-navbar-brand
-				:to="{ name: 'index' }"
-				class="_padding-0"
+			<img
+				class="logo _padding-y-1-2"
+				:src="`/images/logo/logo_white.png`"
+				alt="CodeNotary"
 			>
-				<img
-					class="logo _padding-y-1-2"
-					:src="`/images/logo/logo_white.png`"
-					alt="CodeNotary"
+		</i-navbar-brand>
+		<i-navbar-items class="_justify-content-end no-transform">
+			<i-nav>
+				<i-dropdown
+					class="navbar-dropdown _visible-lg-and-up"
+					trigger="hover"
+					@change="productsMenuOpen = $event"
 				>
-			</i-navbar-brand>
-			<i-navbar-items class="_justify-content-end no-transform">
-				<i-nav>
-					<i-dropdown
-						class="navbar-dropdown _visible-lg-and-up"
-						trigger="hover"
-						@change="productsMenuOpen = $event"
-					>
-						<i-nav-item
-							:class="{ '-active': subRouteActive('/products'), 'open': productsMenuOpen }" class="product-toggle"
-						>
-							Products
-						</i-nav-item>
-						<i-dropdown-menu>
-							<global-menu :scrolled="scrolled" @close="productsMenuOpen = false"/>
-						</i-dropdown-menu>
-					</i-dropdown>
-
-					<!-- PRODUCTS (md-and-down) -->
-					<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-						<i-nav-item
-							class="header"
-							disabled
-						>
-							Products
-						</i-nav-item>
-						<i-nav-item
-							:to="{ name: 'products-ledger-compliance' }"
-						>
-							CNLC (Self-Hosted)
-						</i-nav-item>
-						<i-nav-item
-							:to="{ name: 'products-ci-cd' }"
-						>
-							CNLC (Cloud)
-						</i-nav-item>
-						<i-nav-item
-							:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
-						>
-							CNLC Metrics and Logs
-						</i-nav-item>
-					</i-nav>
-
 					<i-nav-item
-						class="_text-xs-white"
-						:to="{ name: 'technologies-immudb' }"
+						:class="{ '-active': subRouteActive('/products'), 'open': productsMenuOpen }" class="product-toggle"
 					>
-						immudb
+						Products
 					</i-nav-item>
+					<i-dropdown-menu>
+						<global-menu :scrolled="scrolled" />
+					</i-dropdown-menu>
+				</i-dropdown>
 
-					<!-- BLOG POSTS -->
+				<!-- PRODUCTS (md-and-down) -->
+				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
 					<i-nav-item
-						class="_text-xs-white"
-						:to="{ name: 'blog' }"
+						class="header"
+						disabled
 					>
-						Blog
+						Products
 					</i-nav-item>
-
-					<!-- CONTACT US -->
 					<i-nav-item
-						:to="{ name: 'contact' }"
+						:to="{ name: 'products-ledger-compliance' }"
 					>
-						Contact us
+						CNLC (Self-Hosted)
 					</i-nav-item>
-					<transition name="fade">
-						<cn-button
-							v-if="scrolled && $route.name === 'index'"
-							class="cta-button"
-							variant="secondary"
-							@click.native="onDownloadClick"
-						>
-							Download
-						</cn-button>
-					</transition>
+					<i-nav-item
+						:to="{ name: 'products-ci-cd' }"
+					>
+						CNLC (Cloud)
+					</i-nav-item>
+					<i-nav-item
+						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+					>
+						CNLC Metrics and Logs
+					</i-nav-item>
 				</i-nav>
-			</i-navbar-items>
-		</i-navbar>
 
-	</div>
+				<i-nav-item
+					class="_text-xs-white"
+					:to="{ name: 'technologies-immudb' }"
+				>
+					immudb
+				</i-nav-item>
 
+				<!-- BLOG POSTS -->
+				<i-nav-item
+					class="_text-xs-white"
+					:to="{ name: 'blog' }"
+				>
+					Blog
+				</i-nav-item>
+
+				<!-- CONTACT US -->
+				<i-nav-item
+					:to="{ name: 'contact' }"
+				>
+					Contact us
+				</i-nav-item>
+				<transition name="fade">
+					<cn-button
+						v-if="scrolled && $route.name === 'index'"
+						class="cta-button"
+						variant="secondary"
+						@click.native="onDownloadClick"
+					>
+						Download
+					</cn-button>
+				</transition>
+			</i-nav>
+		</i-navbar-items>
+	</i-navbar>
 </template>
 
 <script>
@@ -313,25 +309,6 @@ export default {
 			}
 		}
 	}
-
-	//.product-toggle {
-	//	position: relative;
-	//
-	//	&::after {
-	//		-webkit-transition: all 0.2s ease-out !important;
-	//		transition: all 0.2s ease-out !important;
-	//		transition-delay: 0.5s;
-	//		content: url('/icons/triangle.svg');
-	//		position: absolute;
-	//		left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
-	//		bottom: -100%;
-	//		opacity: 0;
-	//	}
-	//
-	//	&.open::after {
-	//		opacity: 1;
-	//	}
-	//}
 
 	.navbar-dropdown {
 		.menu {

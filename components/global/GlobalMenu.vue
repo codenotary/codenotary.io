@@ -1,5 +1,5 @@
 <template>
-	<div class="global-menu" :class="{'scrolled': scrolled}" @click.stop.prevent>
+	<div class="global-menu" :class="{'scrolled': scrolled}">
 		<div class="menu-vertical-card" v-for="(product, index) in content.menu.products" :key="index">
 			<div class="image">
 				<img :src="product.img" :alt="product.title">
@@ -12,7 +12,7 @@
 				<p class="cn-text-dark _margin-0 _text-center _flex-grow-1">
 					{{ product.subtitle }}6
 				</p>
-				<nuxt-link :to="product.internalLink" @click.native="closeMenu" class="cn-text-brand _font-weight-bold menu-action">
+				<nuxt-link :to="product.internalLink" class="cn-text-brand _font-weight-bold menu-action">
 					{{ product.actionText }}
 				</nuxt-link>
 			</div>
@@ -35,17 +35,6 @@ export default {
 		return {
 			content: global,
 		};
-	},
-	methods: {
-		closeMenu() {
-			// console.log('closeMenu');
-			// eventHub.$emit('closeGlobalMenu');
-			this.$emit('close');
-		},
-	},
-	beforeRouteLeave(to, from, next) {
-		this.closeMenu();
-		next();
 	},
 };
 </script>
