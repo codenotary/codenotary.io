@@ -466,22 +466,24 @@ export default {
 	-webkit-perspective: unset !important;
 	perspective: unset !important;
 
-	.menu {
-		background-color: transparent !important;
-		border: none !important;
+	.navbar-dropdown {
+		.menu {
+			background-color: transparent !important;
+			border: none !important;
 
-		&::after {
-			-webkit-transition: all 0.2s ease-out !important;
-			transition: all 0.2s ease-out !important;
-			transition-delay: 0.5s;
-			content: url('/icons/triangle.svg');
-			position: absolute;
-			left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
-			bottom: -100%;
-		}
+			&::after {
+				-webkit-transition: all 0.2s ease-out !important;
+				transition: all 0.2s ease-out !important;
+				transition-delay: 0.5s;
+				content: url('/icons/triangle.svg');
+				position: absolute;
+				left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
+				bottom: -100%;
+			}
 
-		.arrow {
-			display: none !important;
+			.arrow {
+				display: none !important;
+			}
 		}
 	}
 

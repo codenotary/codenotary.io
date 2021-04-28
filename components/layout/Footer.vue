@@ -1,6 +1,6 @@
 <template>
 	<PageSection
-		class="footer _padding-top-xs-2 _padding-left-xs-1 _padding-right-xs-1"
+		class="footer"
 		:top="3"
 		:bottom="2"
 	>
@@ -78,9 +78,11 @@ export default {
 
 .footer {
 	background-color: $cn-color-dark !important;
+	padding-top: 40px;
+	padding-bottom: 40px;
 
 	.logo {
-		height: 64px;
+		height: 40px;
 		width: auto;
 	}
 
@@ -88,7 +90,10 @@ export default {
 		color: white !important;
 
 		&.brand-description {
-			color: $cn-color-primary_light !important;
+			color: $cn-color-primary !important;
+			max-width: 340px;
+			font-size: 14px;
+			line-height: 17px;
 		}
 	}
 
@@ -97,7 +102,7 @@ export default {
 
 		&:hover,
 		&:active {
-			color: $color-primary-lightest;
+			color: $color-primary-light;
 		}
 	}
 
@@ -107,6 +112,11 @@ export default {
 
 	.social-links {
 		font-size: 32px;
+		margin-bottom: 0;
+
+		a {
+			height: 1em;
+		}
 	}
 
 	.table {
@@ -125,10 +135,14 @@ export default {
 
 		.table_title {
 			margin-bottom: 2px;
+			font-size: 18px;
+			line-height: 22px;
 		}
 
 		.table_link {
-			color: $cn-color-primary_light !important;
+			color: $cn-color-primary !important;
+			font-size: 14px;
+			line-height: 17px;
 		}
 	}
 

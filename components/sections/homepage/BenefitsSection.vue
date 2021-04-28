@@ -81,7 +81,7 @@ export default {
 		align-items: center;
 		justify-content: flex-start;
 		height: 420px;
-		width: 276px;
+		width: 256px;
 		border-radius: $cn-border-radius-lg;
 		box-shadow: $cn-shadow-sm;
 

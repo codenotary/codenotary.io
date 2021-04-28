@@ -46,7 +46,8 @@ export default {
 	padding: 1.5rem 0 !important;
 	color: $color-gray-30;
 	text-align: center;
-	font-size: 90%;
+	font-size: 14px;
+	line-height: 17px;
 	background-color: $cn-color-primary_dark !important;
 
 	a {
@@ -55,7 +56,7 @@ export default {
 
 		&:hover,
 		&:active {
-			color: $color-primary-lightest;
+			color: $color-primary-light;
 		}
 	}
 }

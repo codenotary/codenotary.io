@@ -1,5 +1,5 @@
 <template>
-	<div class="transparent-card">
+	<div class="square-card">
 		<div class="card-picture" :style="dynamicBackground"/>
 		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
 			{{ title }}
@@ -39,16 +39,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.transparent-card {
-	max-width: 278px;
-	height: 276px;
+.square-card {
+	max-width: 250px;
+	height: 228px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border-radius: $cn-border-radius-lg;
 	background-color: white;
-	padding: 40px;
+	padding: 25px;
 	box-shadow: $cn-shadow-sm;
 
 	.card-picture {

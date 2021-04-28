@@ -46,22 +46,22 @@ export default {
 			{
 				title: 'Security',
 				subtitle: 'Identify & stop tampering',
-				imageUrl: '/images/features/security.svg',
+				imageUrl: '/icons/security.svg',
 			},
 			{
 				title: 'Compliance',
 				subtitle: 'Accountable data for all pipelines',
-				imageUrl: '/images/features/compliance.svg',
+				imageUrl: '/icons/compliance.svg',
 			},
 			{
 				title: 'DevOps',
 				subtitle: 'Trusted processes & artifacts',
-				imageUrl: '/images/features/dev-ops.svg',
+				imageUrl: '/icons/dev-ops.svg',
 			},
 			{
 				title: 'Supply Chain',
 				subtitle: 'Bill of material for your workload',
-				imageUrl: '/images/features/collab.svg',
+				imageUrl: '/icons/collab.svg',
 			},
 		],
 	},

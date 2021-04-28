@@ -13,7 +13,7 @@
 			/>
 		</i-container>
 		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark _padding-left-0 _padding-right-0">
-			<h6 class="subheader _margin-0">
+			<h6 class="subheader _margin-0 _text-center">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
 			<i-container class="what_we_do-cards _margin-top-2">
