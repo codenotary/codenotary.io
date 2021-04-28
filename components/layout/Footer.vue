@@ -111,11 +111,12 @@ export default {
 	}
 
 	.social-links {
-		font-size: 32px;
+		font-size: 30px;
 		margin-bottom: 0;
 
 		a {
-			height: 1em;
+			height: 30px;
+			width: 30px;
 		}
 	}
 
@@ -126,7 +127,7 @@ export default {
 		justify-content: flex-start;
 		flex: 0 0 200px;
 		line-height: 19px;
-		margin-top: 32px;
+		margin-top: 18px;
 
 		& > * {
 			margin: 7px 0 0;
@@ -136,6 +137,7 @@ export default {
 		.table_title {
 			margin-bottom: 2px;
 			font-size: 18px;
+			margin-top: 0;
 			line-height: 22px;
 		}
 
