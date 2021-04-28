@@ -17,16 +17,22 @@
 					alt="CodeNotary"
 				>
 			</i-navbar-brand>
-			<i-navbar-items class="_justify-content-end">
+			<i-navbar-items class="_justify-content-end no-transform">
 				<i-nav>
-					<!-- PRODUCTS (lg-and-up) -->
-					<i-nav-item
-						class="_text-xs-black _visible-lg-and-up _position-relative product-toggle"
-						@click="productsMenuOpen = !productsMenuOpen"
-						:class="{'open': productsMenuOpen, '-active': subRouteActive('/products')}"
+					<i-dropdown
+						class="navbar-dropdown _visible-lg-and-up"
+						trigger="hover"
+						@change="productsMenuOpen = $event"
 					>
-						Products
-					</i-nav-item>
+						<i-nav-item
+							:class="{ '-active': subRouteActive('/products'), 'open': productsMenuOpen }" class="product-toggle"
+						>
+							Products
+						</i-nav-item>
+						<i-dropdown-menu>
+							<global-menu :scrolled="scrolled" @close="productsMenuOpen = false"/>
+						</i-dropdown-menu>
+					</i-dropdown>
 
 					<!-- PRODUCTS (md-and-down) -->
 					<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
@@ -87,7 +93,7 @@
 				</i-nav>
 			</i-navbar-items>
 		</i-navbar>
-		<global-menu v-show="productsMenuOpen" :scrolled="scrolled" @close="productsMenuOpen = false"/>
+
 	</div>
 
 </template>
@@ -308,16 +314,24 @@ export default {
 		}
 	}
 
-	.product-toggle {
-		position: relative;
-
-		&.open::after {
-			content: url('/icons/triangle.svg');
-			position: absolute;
-			left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
-			bottom: -100%;
-		}
-	}
+	//.product-toggle {
+	//	position: relative;
+	//
+	//	&::after {
+	//		-webkit-transition: all 0.2s ease-out !important;
+	//		transition: all 0.2s ease-out !important;
+	//		transition-delay: 0.5s;
+	//		content: url('/icons/triangle.svg');
+	//		position: absolute;
+	//		left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
+	//		bottom: -100%;
+	//		opacity: 0;
+	//	}
+	//
+	//	&.open::after {
+	//		opacity: 1;
+	//	}
+	//}
 
 	.navbar-dropdown {
 		.menu {
@@ -464,5 +478,48 @@ export default {
 .fade-enter,
 .fade-leave-to {
 	opacity: 0;
+}
+
+.no-transform {
+	will-change: unset !important;
+	-webkit-transform: unset !important;
+	transform: unset !important;
+	-webkit-backface-visibility: unset !important;
+	backface-visibility: unset !important;
+	-webkit-perspective: unset !important;
+	perspective: unset !important;
+
+	.menu {
+		background-color: transparent !important;
+		border: none !important;
+
+		&::after {
+			-webkit-transition: all 0.2s ease-out !important;
+			transition: all 0.2s ease-out !important;
+			transition-delay: 0.5s;
+			content: url('/icons/triangle.svg');
+			position: absolute;
+			left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
+			bottom: -100%;
+		}
+
+		.arrow {
+			display: none !important;
+		}
+	}
+
+	.zoom-in-top-transition-enter-active {
+		transform: unset !important;
+		-webkit-transform: unset !important;
+		transition: opacity 0.15s ease-out !important;
+		-webkit-transition: opacity 0.15s ease-out !important;
+	}
+
+	.zoom-in-top-transition-leave-active {
+		-webkit-transform: unset !important;
+		transform: unset !important;
+		transition: opacity 0.15s ease-out !important;
+		-webkit-transition: opacity 0.15s ease-out !important;
+	}
 }
 </style>

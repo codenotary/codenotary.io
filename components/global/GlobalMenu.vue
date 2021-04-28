@@ -1,22 +1,20 @@
 <template>
-	<div class="global-menu-container" @click="closeMenu">
-		<div class="global-menu" :class="{'scrolled': scrolled}" @click.stop.prevent>
-			<div class="menu-vertical-card" v-for="(product, index) in content.menu.products" :key="index">
-				<div class="image">
-					<img :src="product.img" :alt="product.title">
-				</div>
+	<div class="global-menu" :class="{'scrolled': scrolled}" @click.stop.prevent>
+		<div class="menu-vertical-card" v-for="(product, index) in content.menu.products" :key="index">
+			<div class="image">
+				<img :src="product.img" :alt="product.title">
+			</div>
 
-				<div class="body">
-					<h4 class="cn-text-brand _font-weight-bold _text-center _margin-0">
-						{{ product.title }}
-					</h4>
-					<p class="cn-text-dark _margin-0 _text-center _flex-grow-1">
-						{{ product.subtitle }}6
-					</p>
-					<nuxt-link :to="product.internalLink" @click.native="closeMenu" class="cn-text-brand _font-weight-bold menu-action">
-						{{ product.actionText }}
-					</nuxt-link>
-				</div>
+			<div class="body">
+				<h4 class="cn-text-brand _font-weight-bold _text-center _margin-0">
+					{{ product.title }}
+				</h4>
+				<p class="cn-text-dark _margin-0 _text-center _flex-grow-1">
+					{{ product.subtitle }}6
+				</p>
+				<nuxt-link :to="product.internalLink" @click.native="closeMenu" class="cn-text-brand _font-weight-bold menu-action">
+					{{ product.actionText }}
+				</nuxt-link>
 			</div>
 		</div>
 	</div>
@@ -53,22 +51,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.global-menu-container {
-	z-index: 11;
-	position: fixed;
-	width: 100vw;
-	height: 100vh;
-	max-width: 100%;
-	max-height: 100%;
-	background-color: transparent;
-
-	@media screen and (max-width: 991px) {
-		display: none;
-	}
-}
-
 .global-menu {
-	//z-index: 11;
+	z-index: 11;
 	box-shadow: $cn-shadow-bottom-sm;
 	transition: all 0.15s ease-out;
 	position: fixed;
@@ -85,6 +69,10 @@ export default {
 	justify-content: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+
+	@media screen and (max-width: 991px) {
+		display: none;
+	}
 
 	&.scrolled {
 		top: #{$cn-navbar-scrolled-height}px;
