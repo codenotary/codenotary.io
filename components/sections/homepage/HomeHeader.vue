@@ -231,12 +231,23 @@ $mascot-width: 175px;
 }
 
 @media screen and (max-width: 991px) {
+	.title {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.subtitle {
+		font-size: 18px;
+		line-height: 22px;
+	}
+
 	.title:first-of-type {
 		margin-top: 20px !important;
 	}
 
 	.action {
 		justify-content: center;
+		margin-bottom: 30px;
 	}
 }
 

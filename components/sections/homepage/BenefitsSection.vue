@@ -124,4 +124,41 @@ export default {
 		}
 	}
 }
+
+@media screen and (max-width: 991px) {
+	::v-deep h2 {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.benefits-body {
+		.benefit-card {
+			width: 200px;
+			height: 353px;
+			margin-left: 10px;
+			margin-right: 10px;
+
+			.benefit-card-body {
+				padding: 16px;
+				min-height: 53px;
+
+				h4 {
+					font-size: 18px;
+					line-height: 24px;
+					min-height: 50px;
+				}
+			}
+
+			.benefit-card-header {
+				min-height: 100px;
+				margin-bottom: 25px;
+
+				img {
+					height: 75px;
+					width: 75px;
+				}
+			}
+		}
+	}
+}
 </style>

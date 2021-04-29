@@ -49,15 +49,39 @@ export default {
 	flex: 1 0 100%;
 	flex-wrap: wrap;
 	padding: 0;
-	padding-top: 10px;
+	//padding-top: 10px;
 	padding-bottom: 10px;
+
+	@media screen and (max-width: 991px) {
+		padding-top: 10px;
+
+		& > ::v-deep .square-card {
+			padding: 16px;
+			max-width: 213px;
+			height: 157px;
+
+			.card-picture {
+				height: 64px;
+				width: 200px;
+			}
+
+			h3 {
+				margin-top: 10px !important;
+				margin-bottom: 4px !important;
+			}
+
+			.subtitle {
+				max-width: unset;
+			}
+		}
+	}
 
 	@media screen and (max-width: 767px) {
 		justify-content: center;
 	}
 
-	& > * {
-		margin-top: 10px;
+	& > .square-card {
+		margin-top: 20px;
 		margin-left: 10px;
 		margin-right: 10px;
 	}
