@@ -55,12 +55,16 @@
 								poster="/videos/ci-cd.jpg"
 								width="1280"
 								height="720"
-								controls
+								:controls="playing"
 								@playing="onPlayVideo"
 								@pause="onPauseVideo"
 								@ended="onPauseVideo"
+								ref="videoPlayer"
 							/>
 						</LazyHydrate>
+						<div class="video-play_button" @click="playVideo">
+							<img src="/icons/play.svg">
+						</div>
 					</div>
 					<img
 						id="mascot"
@@ -117,6 +121,9 @@ export default {
 		onPlayVideo() {
 			clearTimeout(this.timeout);
 			this.playing = true;
+		},
+		playVideo() {
+			this.$refs.videoPlayer.play();
 		},
 		onPauseVideo() {
 			clearTimeout(this.timeout);
@@ -188,6 +195,11 @@ $mascot-width: 175px;
 		#mascot {
 			left: 100%;
 			right: 0;
+		}
+
+		.video-play_button {
+			pointer-events: none;
+			opacity: 0;
 		}
 	}
 }
@@ -287,5 +299,21 @@ $mascot-width: 175px;
 
 .main-content {
 	z-index: 3;
+}
+
+.video-play_button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #15395475;
+	transition: opacity 0.15s ease-in-out;
+	opacity: 1;
 }
 </style>
