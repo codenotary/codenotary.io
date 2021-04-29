@@ -246,23 +246,20 @@ export default {
 		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
 	}
 
-	&.-bg-light-transparent,
-	&.-bg-white {
-		.container {
-			a,
-			.item,
-			.title {
-				color: $text-dark-color;
-			}
+	.container {
+		a,
+		.item,
+		.title {
+			color: $text-dark-color;
 		}
+	}
 
-		.collapse-toggle {
-			> .bars {
-				&::before,
-				&::after,
-				& {
-					background-color: $text-dark-color !important;
-				}
+	.collapse-toggle {
+		> .bars {
+			&::before,
+			&::after,
+			& {
+				background: white !important;
 			}
 		}
 	}
@@ -303,7 +300,7 @@ export default {
 					&::before,
 					&::after,
 					& {
-						background-color: $text-dark-color !important;
+						background-color: white !important;
 					}
 				}
 			}
