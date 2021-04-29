@@ -114,9 +114,8 @@ export default {
 		font-size: 30px;
 		margin-bottom: 0;
 
-		a {
-			height: 30px;
-			width: 30px;
+		li {
+			margin-right: 4px !important;
 		}
 	}
 

@@ -16,7 +16,7 @@
 			<h6 class="subheader _margin-0 _text-center">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
-			<i-container class="what_we_do-cards _margin-top-2">
+			<i-container class="what_we_do-cards">
 				<cards-square v-for="(card, index) in content.whatWeDoSection.cards" :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle" :key="index"/>
 			</i-container>
 		</i-container>
@@ -44,7 +44,7 @@ export default {
 .what_we_do-cards {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	flex: 1 0 100%;
 	flex-wrap: wrap;
@@ -58,8 +58,8 @@ export default {
 
 	& > * {
 		margin-top: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 </style>

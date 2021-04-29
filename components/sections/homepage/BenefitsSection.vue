@@ -8,7 +8,7 @@
 				weight="bold"
 				class="_width-75 _text-uppercase"
 				:top="0"
-				:bottom="1"
+				:bottom="0"
 			/>
 			<div class="benefits-body">
 				<div class="benefit-card _margin-top-1" v-for="(card, index) in content.benefitsSection.cards" :key="index" :class="'cn-bg-' + card.backgroundColor">
@@ -61,6 +61,10 @@ export default {
 .main-container {
 	background-color: white;
 	border-radius: $cn-border-radius-lg;
+
+	::v-deep h2 {
+		margin-bottom: 24px;
+	}
 }
 
 .benefits-body {
@@ -90,7 +94,7 @@ export default {
 			position: relative;
 			flex: 0 0 0;
 			width: 100%;
-			min-height: 180px;
+			min-height: 150px;
 			display: flex;
 			align-items: center;
 			justify-content: center;

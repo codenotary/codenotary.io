@@ -180,10 +180,6 @@ $mascot-width: 175px;
 			margin-bottom: $spacer * 2;
 		}
 	}
-
-	.action {
-		padding-top: 30px;
-	}
 }
 
 #video-column {
@@ -224,6 +220,8 @@ $mascot-width: 175px;
 
 .subtitle {
 	color: white !important;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 @media screen and (min-width: 992px) {

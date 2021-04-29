@@ -4,7 +4,7 @@
 		:top="2"
 		:bottom="2"
 	>
-		<i-container class="_font-weight-bold">
+		<i-container>
 			<i-row>
 				<i-column
 					class="_display-flex _justify-content-start"
@@ -12,7 +12,7 @@
 					Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
 				</i-column>
 				<i-column
-					class="_display-flex _justify-content-end"
+					class="_display-flex _justify-content-end _font-weight-bold"
 				>
 					<router-link :to="{ name: 'terms-of-service' }">
 						Terms of Service
