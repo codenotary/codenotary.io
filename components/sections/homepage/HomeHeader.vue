@@ -123,7 +123,9 @@ export default {
 			this.playing = true;
 		},
 		playVideo() {
-			this.$refs.videoPlayer.play();
+			if (this.$refs.videoPlayer) {
+				this.$refs.videoPlayer.play();
+			}
 		},
 		onPauseVideo() {
 			clearTimeout(this.timeout);
@@ -153,7 +155,8 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-$mascot-width: 175px;
+$mascot-height: 164px;
+$mascot-height-small: 100px;
 
 #home-header {
 	background: transparent;
@@ -202,15 +205,16 @@ $mascot-width: 175px;
 
 #mascot {
 	//z-index: 4;
-	width: $mascot-width;
-	height: auto;
+	height: $mascot-height;
+	width: auto;
 	position: absolute;
 	left: 0;
 	bottom: -6rem;
 	transition: all 0.8s ease-in-out;
 
-	@media screen and (max-width: 1000px) {
-		left: calc(#{$mascot-width} * 3);
+	@media screen and (max-width: 991px) {
+		height: $mascot-height-small;
+		bottom: -3rem;
 	}
 }
 

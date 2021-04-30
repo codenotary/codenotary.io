@@ -5,7 +5,7 @@
 		:bottom="2"
 	>
 		<i-container>
-			<i-row>
+			<i-row class="row-container">
 				<i-column
 					class="_display-flex _justify-content-start"
 				>
@@ -57,6 +57,21 @@ export default {
 		&:hover,
 		&:active {
 			color: $color-primary-light;
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		.row-container {
+			flex-direction: column;
+
+			.column {
+				flex: 1;
+				justify-content: center !important;
+
+				&:first-of-type {
+					margin-bottom: 10px;
+				}
+			}
 		}
 	}
 }

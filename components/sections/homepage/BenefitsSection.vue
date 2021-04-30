@@ -135,7 +135,7 @@ export default {
 
 	.benefits-body {
 		.benefit-card {
-			width: 200px;
+			width: 213px;
 			height: 353px;
 			margin-left: 10px;
 			margin-right: 10px;
