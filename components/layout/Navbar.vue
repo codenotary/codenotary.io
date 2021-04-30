@@ -225,6 +225,11 @@ export default {
 		width: 200px;
 		object-fit: cover;
 		margin-right: 8px;
+
+		@media screen and (max-width: 991px) {
+			width: 150px;
+			height: auto;
+		}
 	}
 
 	& > a:not(.button),
@@ -261,6 +266,8 @@ export default {
 	}
 
 	.collapse-toggle {
+		opacity: 1 !important;
+
 		> .bars {
 			&::before,
 			&::after,
