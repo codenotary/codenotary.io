@@ -35,23 +35,27 @@
 
 				<!-- PRODUCTS (md-and-down) -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item
+					<p
 						class="header"
-						disabled
+						:class="{'cn-text-secondary': productsMenuOpen, '_text-white': !productsMenuOpen}"
+						@click.prevent.stop="productsMenuOpen = !productsMenuOpen"
 					>
 						Products
-					</i-nav-item>
+					</p>
 					<i-nav-item
+						v-if="productsMenuOpen"
 						:to="{ name: 'products-ledger-compliance' }"
 					>
 						CNLC (Self-Hosted)
 					</i-nav-item>
 					<i-nav-item
+						v-if="productsMenuOpen"
 						:to="{ name: 'products-ci-cd' }"
 					>
 						CNLC (Cloud)
 					</i-nav-item>
 					<i-nav-item
+						v-if="productsMenuOpen"
 						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
 					>
 						CNLC Metrics and Logs
@@ -184,6 +188,8 @@ export default {
 				.item {
 					color: white !important;
 					font-weight: bold;
+					font-size: 18px;
+					line-height: 22px;
 
 					&.nuxt-link-active {
 						color: $cn-color-secondary !important;
@@ -361,11 +367,21 @@ export default {
 
 		> .header {
 			font-weight: 600;
-			font-size: 80%;
+			font-size: 18px;
+			line-height: 22px;
+			margin-top: 50px;
 		}
 
 		> .item {
 			width: 100%;
+			font-weight: normal !important;
+			font-size: 18px;
+			line-height: 22px;
+			padding: 4px;
+
+			&:last-of-type {
+				margin-bottom: 28px;
+			}
 		}
 	}
 
