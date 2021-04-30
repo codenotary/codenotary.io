@@ -1,6 +1,8 @@
 <template>
 	<div class="square-card">
-		<div class="card-picture" :style="dynamicBackground"/>
+		<div class="card-picture">
+			<img class="cn-icon" :src="imageUrl">
+		</div>
 		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
 			{{ title }}
 		</h3>
@@ -27,14 +29,6 @@ export default {
 			default: '/images/placeholder.svg',
 		},
 	},
-	computed: {
-		dynamicBackground() {
-			return {
-				background: `url('${ this.imageUrl }') no-repeat center !important`,
-				'background-size': 'contain !important',
-			};
-		},
-	},
 };
 </script>
 
@@ -52,6 +46,9 @@ export default {
 	box-shadow: $cn-shadow-sm;
 
 	.card-picture {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		height: 100px;
 		width: 200px;
 	}
@@ -59,7 +56,6 @@ export default {
 	.subtitle {
 		max-width: 150px;
 		margin: 0;
-		//align-self: start;
 		text-align: center;
 	}
 }

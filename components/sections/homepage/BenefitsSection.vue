@@ -13,7 +13,7 @@
 			<div class="benefits-body">
 				<div class="benefit-card _margin-top-1" v-for="(card, index) in content.benefitsSection.cards" :key="index" :class="'cn-bg-' + card.backgroundColor">
 					<div class="benefit-card-header">
-						<img :src="card.iconName">
+						<img class="cn-icon" :src="card.iconName">
 					</div>
 					<div class="benefit-card-body">
 						<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">{{ card.title }}</h4>
@@ -70,7 +70,7 @@ export default {
 .benefits-body {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
 	flex-wrap: wrap;
@@ -85,9 +85,11 @@ export default {
 		align-items: center;
 		justify-content: flex-start;
 		height: 420px;
-		width: 256px;
+		width: 250px;
 		border-radius: $cn-border-radius-lg;
 		box-shadow: $cn-shadow-sm;
+		margin-left: 10px;
+		margin-right: 10px;
 
 		.benefit-card-header {
 			background-color: white;
@@ -152,11 +154,6 @@ export default {
 			.benefit-card-header {
 				min-height: 100px;
 				margin-bottom: 25px;
-
-				img {
-					height: 75px;
-					width: 75px;
-				}
 			}
 		}
 	}

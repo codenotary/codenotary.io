@@ -23,3 +23,12 @@
 .cn-bg-cyan {
 	background-color: $cn-color-cyan;
 }
+
+.cn-icon {
+	height: 80px;
+	width: auto;
+
+	@media screen and (max-width: 991px) {
+		height: 60px;
+	}
+}

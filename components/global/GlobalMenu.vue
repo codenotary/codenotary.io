@@ -2,7 +2,7 @@
 	<div class="global-menu" :class="{'scrolled': scrolled}">
 		<div class="menu-vertical-card" v-for="(product, index) in content.menu.products" :key="index">
 			<div class="image">
-				<img :src="product.img" :alt="product.title">
+				<img class="cn-icon" :src="product.img" :alt="product.title">
 			</div>
 
 			<div class="body">
@@ -98,13 +98,6 @@ export default {
 			display: flex;
 			align-items: center;
 			justify-content: center;
-
-			img {
-				width: 80px;
-				height: auto;
-				display: block;
-				margin: 0 auto;
-			}
 		}
 
 		.body {
