@@ -138,11 +138,11 @@ export default {
 				return;
 			}
 
-			const gradientDegrees = window.innerWidth >= 2800 ? 2 : 5; // Skew of the gradient div
-			const secondaryDegrees = window.innerWidth >= 2800 ? 1 : 3; // Skew of the secondary div
+			const gradientDegrees = window.innerWidth >= 2800 ? 2 : window.innerWidth <= 991 ? 8 : 5; // Skew of the gradient div
+			const secondaryDegrees = window.innerWidth >= 2800 ? 1 : window.innerWidth <= 991 ? 5 : 3; // Skew of the secondary div
 			const gradientLineLength = window.innerWidth / Math.sin((90 - gradientDegrees) * Math.PI / 180) * Math.sin(90 * Math.PI / 180); // How long is the oblique line of the gradient div
 			const secondaryLineSideLength = gradientLineLength / 2 / Math.sin((90 - secondaryDegrees) * Math.PI / 180) * Math.sin((gradientDegrees + secondaryDegrees) * Math.PI / 180); // How long is the right side of the secondary div
-			this.rightBarBottom = (-secondaryLineSideLength + 100) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
+			this.rightBarBottom = (-secondaryLineSideLength + (window.innerWidth <= 991 ? 50 : 100)) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
 		},
 		onDownloadClick() {
 			eventHub.$emit('displayTrialModal', true);
@@ -283,6 +283,15 @@ $mascot-height-small: 100px;
 		}
 	}
 
+	@media screen and (max-width: 991px) {
+		transform: skewY(-8deg);
+		bottom: 50px;
+
+		&::after {
+			transform: skewY(8deg);
+		}
+	}
+
 	&::after {
 		content: '';
 		background: $cn-dark-gradient;
@@ -307,6 +316,10 @@ $mascot-height-small: 100px;
 
 	@media screen and (min-width: 2800px) {
 		transform: skewY(1deg);
+	}
+
+	@media screen and (max-width: 991px) {
+		transform: skewY(5deg);
 	}
 }
 
