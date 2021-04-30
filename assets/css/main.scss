@@ -1,3 +1,29 @@
+@media screen and (min-width: 0) and (max-width: 575px) {
+	.container {
+		margin-right: 20px !important;
+		margin-left: 20px !important;
+		max-width: calc(100% - 40px) !important;
+	}
+}
+
+@media screen and (min-width: 576px) {
+	.container {
+		max-width: 536px !important;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 728px !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container {
+		max-width: 952px !important;
+	}
+}
+
 @media screen and (min-width: 1200px) {
 	.container {
 		max-width: 1160px !important;
