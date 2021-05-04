@@ -3,7 +3,7 @@
 		<i-row class="_align-items-center">
 			<i-column xs="12" md="6">
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
-					Ledger Compliance (Public Cloud)
+					Immutable Ledger (Public Cloud)
 				</h5>
 				<h1 class="title _font-weight-bold _text-primary _margin-top-0">
 					All you need for performance analysis and log compliance!

@@ -60,7 +60,7 @@ Therefore, our customers use CodeNotary to notarize every step and artifact with
 
 ![trustedcicd](/images/blog/trustedcicd.jpg)
 
-You can think of having the unique identity of every single artifact and the bill of material of your build cryptographically verifiably stored on an immutable ledger. Using CodeNotary Ledger Compliance you can choose to use a fast (up to 60.000 TX/min) worldwide distributed consortium blockchain (CodeNotary Ledger Compliance CI/CD) or an ultra-fast (up to 10.000.000 TX/sec) on-premise deployment (CodeNotary Ledger Compliance) or both.
+You can think of having the unique identity of every single artifact and the bill of material of your build cryptographically verifiably stored on an immutable ledger. Using CodeNotary Immutable Ledger you can choose to use a fast (up to 60.000 TX/min) worldwide distributed consortium blockchain (CodeNotary Immutable Ledger CI/CD) or an ultra-fast (up to 10.000.000 TX/sec) on-premise deployment (CodeNotary Immutable Ledger) or both.
 
 When integrating the CodeNotary solution into your CI/CD pipeline, you gain **4 main benefits**:
 

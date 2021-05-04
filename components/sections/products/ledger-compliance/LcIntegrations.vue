@@ -6,7 +6,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<PageSectionHeader title="Ledger Compliance Integrations">
+					<PageSectionHeader title="Immutable Ledger Integrations">
 						<p class="lead">
 							Integrations for Applications, Databases and Digital objects.
 						</p>

@@ -8,7 +8,7 @@ tags: ["timestamp", "DevOps", "immudb", "Trust"]
 
 Every build has a story to tell - Tamperproof provenance for your code and CI/CD pipeline
 
-Quickstart here: https://timestamp.codenotary.com
+Quickstart here: https://dashboard.codenotary.io
 
 The combination of our free, lightning-fast and always-on timestamp service and the easy to use cli tool, gets you started in a minute.
 
@@ -179,7 +179,7 @@ vcn authenticate --hash fce...
 
 In case you want to unsupport/untrust an asset of yours that you no longer have, you can do so using the asset hash(es) with the following steps below.
 
-First, you’ll need to get the hash of the asset from your CodeNotary Ledger Compliance dashboard or alternatively you can use the `vcn list` command. Then, in the CLI, use:
+First, you’ll need to get the hash of the asset from your CodeNotary Immutable Ledger dashboard or alternatively you can use the `vcn list` command. Then, in the CLI, use:
 
 ```
 vcn untrust --hash <asset's hash>

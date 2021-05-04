@@ -52,7 +52,7 @@ export default {
 	}),
 	head() {
 		return {
-			title: title('Ledger Compliance (on-premise)'),
+			title: title('Immutable Ledger (on-premise)'),
 		};
 	},
 	mounted () {

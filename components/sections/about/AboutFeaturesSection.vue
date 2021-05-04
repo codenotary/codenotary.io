@@ -19,7 +19,7 @@
 					<FeatureCard title="How do we do it?">
 						Based on our widely acclaimed <nuxt-link :to="{ name: 'technologies-immudb' }">
 							immudb
-						</nuxt-link> Open Source immutable database, CodeNotary Ledger Compliance® provides a tamper-proof and indelible solution for processing millions of transactions per second, on-premise or in the cloud, and with cryptographic verification.
+						</nuxt-link> Open Source immutable database, CodeNotary Immutable Ledger® provides a tamper-proof and indelible solution for processing millions of transactions per second, on-premise or in the cloud, and with cryptographic verification.
 					</FeatureCard>
 				</i-column>
 			</i-row>

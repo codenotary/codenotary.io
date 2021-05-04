@@ -44,13 +44,6 @@ export default {
 				text: '',
 			},
 			{
-				title: 'DevopsInternational',
-				image: '/images/partners/devopsint_logo.png',
-				tag: 'Europe',
-				link: { url: 'https://devopsinternational.nl/', target: '_blank' },
-				text: '',
-			},
-			{
 				title: 'Corporate IT Solutions',
 				image: '/images/partners/corporate_it_solutions.png',
 				tag: 'North America',
