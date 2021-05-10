@@ -11,13 +11,15 @@
 				:bottom="0"
 			/>
 			<div class="benefits-body">
-				<div class="benefit-card _margin-top-1" v-for="(card, index) in content.benefitsSection.cards" :key="index" :class="'cn-bg-' + card.backgroundColor">
-					<div class="benefit-card-header">
-						<img class="cn-icon" :src="card.iconName">
-					</div>
-					<div class="benefit-card-body">
-						<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">{{ card.title }}</h4>
-						<p class="cn-text-white _margin-0 _text-center">{{ card.subtitle }}</p>
+				<div v-for="(card, index) in content.benefitsSection.cards" :key="index">
+					<div class="benefit-card _margin-top-1" :class="'cn-bg-' + card.backgroundColor">
+						<div class="benefit-card-header">
+							<img class="cn-icon" :src="card.iconName">
+						</div>
+						<div class="benefit-card-body">
+							<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">{{ card.title }}</h4>
+							<p class="cn-text-white _margin-0 _text-center">{{ card.subtitle }}</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -61,6 +63,8 @@ export default {
 .main-container {
 	background-color: white;
 	border-radius: $cn-border-radius-lg;
+	z-index: 2;
+	position: relative;
 
 	::v-deep h2 {
 		margin-bottom: 24px;
@@ -77,6 +81,21 @@ export default {
 
 	@media screen and (max-width: 767px) {
 		justify-content: center;
+	}
+
+	@media screen and (max-width: 1199px) {
+		& > * {
+			flex-basis: 50%;
+			display: flex;
+
+			&:nth-child(even) {
+				justify-content: flex-start;
+			}
+
+			&:nth-child(odd) {
+				justify-content: flex-end;
+			}
+		}
 	}
 
 	.benefit-card {
