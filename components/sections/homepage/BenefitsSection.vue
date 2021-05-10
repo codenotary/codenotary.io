@@ -146,7 +146,7 @@ export default {
 	}
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $mobile-max-width) {
 	::v-deep h2 {
 		font-size: 24px;
 		line-height: 24px;

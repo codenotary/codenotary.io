@@ -60,7 +60,7 @@ export default {
 		}
 	}
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		.row-container {
 			flex-direction: column;
 

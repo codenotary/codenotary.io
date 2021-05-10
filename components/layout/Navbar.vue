@@ -157,7 +157,7 @@ export default {
 #navbar {
 	z-index: 10;
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		text-align: center;
 
 		&.-scrolled {
@@ -226,7 +226,7 @@ export default {
 		object-fit: cover;
 		margin-right: 8px;
 
-		@media screen and (max-width: 991px) {
+		@media screen and (max-width: $mobile-max-width) {
 			width: 150px;
 			height: auto;
 		}

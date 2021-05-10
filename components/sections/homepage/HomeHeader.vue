@@ -212,7 +212,7 @@ $mascot-height-small: 100px;
 	bottom: -6rem;
 	transition: all 0.8s ease-in-out;
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		height: $mascot-height-small;
 		bottom: -3rem;
 	}
@@ -234,7 +234,7 @@ $mascot-height-small: 100px;
 	}
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $mobile-max-width) {
 	.title {
 		font-size: 24px;
 		line-height: 24px;
@@ -283,7 +283,7 @@ $mascot-height-small: 100px;
 		}
 	}
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		transform: skewY(-8deg);
 		bottom: 50px;
 
@@ -318,7 +318,7 @@ $mascot-height-small: 100px;
 		transform: skewY(1deg);
 	}
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		transform: skewY(5deg);
 	}
 }

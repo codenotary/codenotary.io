@@ -147,7 +147,7 @@ export default {
 		}
 	}
 
-	@media (max-width: 991px) {
+	@media (max-width: $mobile-max-width) {
 		.brand {
 			display: flex;
 			flex-direction: column;

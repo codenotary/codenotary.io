@@ -59,7 +59,7 @@ export default {
 	padding-top: 50px;
 	padding-bottom: 50px;
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		display: none;
 	}
 

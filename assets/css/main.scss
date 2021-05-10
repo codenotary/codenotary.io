@@ -54,7 +54,7 @@
 	height: 80px;
 	width: auto;
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		height: 60px;
 	}
 }

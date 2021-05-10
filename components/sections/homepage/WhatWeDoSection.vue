@@ -52,7 +52,7 @@ export default {
 	//padding-top: 10px;
 	padding-bottom: 10px;
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 10px;
 
 		& > ::v-deep .square-card {
