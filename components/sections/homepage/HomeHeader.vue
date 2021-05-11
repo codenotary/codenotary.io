@@ -6,17 +6,17 @@
 		>
 			<i-row class="_align-items-center main-content">
 				<i-column lg="5">
-					<h1 class="h2 _font-weight-bold cn-text-white title first">
+					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
-					</h1>
-					<h1 class="h2 _font-weight-bold cn-text-secondary title first">
+					</h2>
+					<h2 class="_font-weight-bold cn-text-secondary title first">
 						{{ content.headerSection.title2 }}
-					</h1>
-					<h1 class="h2 _font-weight-bold cn-text-white title">
+					</h2>
+					<h2 class="_font-weight-bold cn-text-white title">
 						{{ content.headerSection.title3 }}
-					</h1>
+					</h2>
 
-					<p class="lead cn-text-muted_blue subtitle">
+					<p class="lead cn-text-muted_blue subtitle cn-text-sm">
 						{{ content.headerSection.subtitle }}
 					</p>
 					<!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
@@ -168,7 +168,7 @@ $mascot-height-small: 100px;
 	overflow-x: hidden;
 	width: 100%;
 
-	h1 {
+	h2 {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
@@ -235,16 +235,6 @@ $mascot-height-small: 100px;
 }
 
 @media screen and (max-width: $mobile-max-width) {
-	.title {
-		font-size: 24px;
-		line-height: 24px;
-	}
-
-	.subtitle {
-		font-size: 18px;
-		line-height: 22px;
-	}
-
 	.title:first-of-type {
 		margin-top: 20px !important;
 	}
