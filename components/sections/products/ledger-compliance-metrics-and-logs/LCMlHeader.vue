@@ -3,10 +3,10 @@
 		<i-row class="_align-items-center">
 			<i-column xs="12" md="6">
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
-					Immutable Ledger (Public Cloud)
+				        CNIL Metrics and Logs (virtual appliance)	
 				</h5>
 				<h1 class="title _font-weight-bold _text-primary _margin-top-0">
-					All you need for performance analysis and log compliance!
+					VMware vSphere & Cloud, all you need for performance and log analysis!
 				</h1>
 				<p class="lead _margin-bottom-0">
 					Monitor and Analyze Performance and Log files:&nbsp;
