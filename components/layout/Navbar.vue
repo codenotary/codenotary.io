@@ -198,6 +198,14 @@ export default {
 
 				& > a {
 					border-top: 1px solid $cn-color-primary;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					height: 60px;
+
+					&:last-of-type {
+						margin-bottom: 35px;
+					}
 				}
 			}
 		}

@@ -341,5 +341,12 @@ $mascot-height-small: 100px;
 	background-color: #15395475;
 	transition: opacity 0.15s ease-in-out;
 	opacity: 1;
+
+	@media screen and (max-width: $mobile-max-width) {
+		img {
+			height: 70px;
+			width: 70px;
+		}
+	}
 }
 </style>

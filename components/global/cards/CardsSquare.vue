@@ -6,7 +6,7 @@
 		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
 			{{ title }}
 		</h3>
-		<h6 class="subtitle">
+		<h6 class="subtitle cn-text-sm">
 			{{ subtitle }}
 		</h6>
 	</div>
