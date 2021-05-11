@@ -12,7 +12,10 @@
 				<p class="cn-text-dark _margin-0 _text-center _flex-grow-1">
 					{{ product.subtitle }}6
 				</p>
-				<nuxt-link :to="product.internalLink" class="cn-text-brand _font-weight-bold menu-action">
+				<nuxt-link
+					:to="product.internalLink" class="cn-text-brand _font-weight-bold menu-action"
+					@click.native="$emit('close')"
+				>
 					{{ product.actionText }}
 				</nuxt-link>
 			</div>

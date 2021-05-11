@@ -21,6 +21,8 @@
 				<i-dropdown
 					class="navbar-dropdown _visible-lg-and-up"
 					trigger="hover"
+					ref="dropdownRef"
+					:value="productsMenuOpen"
 					@change="productsMenuOpen = $event"
 				>
 					<i-nav-item
@@ -29,7 +31,7 @@
 						Products
 					</i-nav-item>
 					<i-dropdown-menu>
-						<global-menu :scrolled="scrolled" />
+						<global-menu :scrolled="scrolled" @close="closeNavbar"/>
 					</i-dropdown-menu>
 				</i-dropdown>
 
@@ -144,6 +146,10 @@ export default {
 		},
 		onDownloadClick() {
 			eventHub.$emit('displayTrialModal', true);
+		},
+		closeNavbar() {
+			this.$refs.dropdownRef.visible = false;
+			this.productsMenuOpen = false;
 		},
 	},
 };
