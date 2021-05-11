@@ -17,7 +17,9 @@
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
 			<i-container class="what_we_do-cards">
-				<cards-square v-for="(card, index) in content.whatWeDoSection.cards" :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle" :key="index"/>
+				<div v-for="(card, index) in content.whatWeDoSection.cards" :key="index">
+					<cards-square :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle"/>
+				</div>
 			</i-container>
 		</i-container>
 	</PageSection>
@@ -55,7 +57,7 @@ export default {
 	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 10px;
 
-		& > ::v-deep .square-card {
+		& ::v-deep .square-card {
 			padding: 16px;
 			max-width: 213px;
 			height: 157px;
@@ -80,10 +82,25 @@ export default {
 		justify-content: center;
 	}
 
-	& > .square-card {
+	& > div {
 		margin-top: 20px;
 		margin-left: 10px;
 		margin-right: 10px;
+
+		@media screen and (max-width: 1199px) {
+			& {
+				flex-basis: calc(50% - 40px);
+				display: flex;
+
+				&:nth-child(even) {
+					justify-content: flex-start;
+				}
+
+				&:nth-child(odd) {
+					justify-content: flex-end;
+				}
+			}
+		}
 	}
 }
 </style>
