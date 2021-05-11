@@ -3,13 +3,13 @@ title: "Bookkeper"
 location: "Houston, Galleria Area" 
 type: "Full time" 
 requires: "" 
-weight: 10
+weight: 7
 active: true
 ---
 
-[CodeNotary](https://codenotary.com/) is the leading Open Source company for immutable recording of data and processes.
+[CodeNotary](https://codenotary.com/) is the leading company for trusted CI/CD. We bring trust and integrity into the DevOps process by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
 
-Our software solution [CodeNotary Ledger Compliance®](https://codenotary.com/products/ledger-compliance/) can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with the same cryptographic verification of traditional distributed ledger solutions. The core engine of CodeNotary Ledger Compliance® is [immudb](https://codenotary.com/technologies/immudb/), our industry-leading lightweight and extremely fast immutable ledger database.
+Our software solution can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with cryptographic verification of no-tampering. The core engine of CodeNotary Immutable Ledger® is open-source [immudb](https://codenotary.com/technologies/immudb/), the world’s fastest immutable database.
 
 
 ## What you’ll be doing

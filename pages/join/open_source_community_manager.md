@@ -4,16 +4,16 @@ location: "Remote"
 type: "Full time" 
 requires: "" 
 apply: "https://docs.google.com/forms/d/e/1FAIpQLScmNsglJ33doaTWzDM0JpayK501fHenXuaSteg3ohcpVGQ4Xg/viewform?usp=sf_link"
-weight: 1
+weight: 2
 active: true
 ---
 
-[CodeNotary](https://codenotary.com/) is the leading Open Source company for immutable recording of data and processes.
-
-We are the authors of the highly innovative and acclaimed [immudb](https://codenotary.com/technologies/immudb/), open source immutable ledger database. With many millions of downloads and deployments in healthcare, finance, government, and e-commerce, immudb is quickly becoming the standard for tamper-evident, cryptographically verifiable datastore. Our user and developer community is growing in tandem with the growing adoption of immudb. 
-
 We are looking to add an Open-Source Community Manager to our team to drive adoption of our Open-Source immutable database immudb and build community and awareness through public channels of influence including community meetups and other events. 
 Equally important are an active and thriving education and information campaign by means of written articles and blogs, frequent contributions to Open-Source projects, and synthesizing product feedback from the community.
+
+[CodeNotary](https://codenotary.com/) is the leading company for trusted CI/CD. We bring trust and integrity into the DevOps process by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
+
+Our software solution can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with cryptographic verification of no-tampering. The core engine of CodeNotary Immutable Ledger® is open-source [immudb](https://codenotary.com/technologies/immudb/), the world’s fastest immutable database.
 
 ## Qualifications
 
