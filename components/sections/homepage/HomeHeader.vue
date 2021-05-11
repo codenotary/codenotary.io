@@ -6,10 +6,10 @@
 		>
 			<i-row class="_align-items-center main-content">
 				<i-column lg="5">
-					<h1 class="h2 _font-weight-bold cn-text-white title">
+					<h1 class="h2 _font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h1>
-					<h1 class="h2 _font-weight-bold cn-text-secondary title">
+					<h1 class="h2 _font-weight-bold cn-text-secondary title first">
 						{{ content.headerSection.title2 }}
 					</h1>
 					<h1 class="h2 _font-weight-bold cn-text-white title">
@@ -325,6 +325,14 @@ $mascot-height-small: 100px;
 
 .main-content {
 	z-index: 3;
+
+	@media screen and (max-width: $mobile-max-width) {
+		padding-top: 16px;
+
+		.title.first {
+			display: inline;
+		}
+	}
 }
 
 .video-play_button {
