@@ -28,7 +28,7 @@ import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 const ACTIVE_CAMPAIGN_FORM_ID = 22;
 
 export default {
-	name: 'StartTrialModal',
+	name: 'LedgerComplianceModal',
 	mixins: [scriptInjectMixin],
 	props: {
 		value: {
