@@ -105,8 +105,8 @@
 //Font-sizing
 
 h1 {
-	font-size: 46px;
-	line-height: 56px;
+	font-size: 46px !important;
+	line-height: 56px !important;
 
 	@media screen and (max-width: $mobile-max-width) {
 		font-size: 32px;

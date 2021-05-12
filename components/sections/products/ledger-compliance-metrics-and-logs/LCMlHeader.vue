@@ -129,6 +129,8 @@ export default {
 
 	h1 {
 		margin-top: 0;
+		font-size: 2.5rem !important;
+		line-height: 1.1 !important;
 	}
 
 	.vue-typer {
