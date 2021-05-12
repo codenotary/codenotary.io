@@ -27,7 +27,7 @@ Sounds like a lot of work? Actually, it is surprisingly easy with CodeNotary.
 
 ## Trusted CI/CD with CodeNotary
 
-Secure your sensitive data by creating immutable ledger proofs of existence notarizations and seals either inside (on-premise) your Enterprise with [CodeNotary Ledger Compliance](https://codenotary.com/products/ledger-compliance) and/or with worldwide availability and distribution using the CodeNotary service leveraging the [Zero Trust Consortium Blockchain](https://codenotary.com/technologies/ztc). 
+Secure your sensitive data by creating immutable ledger proofs of existence notarizations and seals either inside (on-premise) your Enterprise with [CodeNotary Immutable Ledger](https://codenotary.com/products/ledger-compliance) and/or with worldwide availability and distribution using the CodeNotary service leveraging the [Zero Trust Consortium Blockchain](https://codenotary.com/technologies/ztc). 
 
 CodeNotary integrates easily the most popular CI, CI/CD, and DevOps tools, and you can new ones quickly without API and command-line tools. Instead of hacking into a single signing server, a potential attacker would have to get the credentials from every stakeholder in the processes. CodeNotary is an advanced substitute for existing digital certificate solutions build on immutable data storage. 
 

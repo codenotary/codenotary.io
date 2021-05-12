@@ -46,27 +46,27 @@ export default {
 			{
 				title: 'Security',
 				subtitle: 'Identify & stop tampering',
-				imageUrl: '/images/features/security.svg',
+				imageUrl: '/icons/security.svg',
 			},
 			{
 				title: 'Compliance',
 				subtitle: 'Accountable data for all pipelines',
-				imageUrl: '/images/features/compliance.svg',
+				imageUrl: '/icons/compliance.svg',
 			},
 			{
 				title: 'DevOps',
 				subtitle: 'Trusted processes & artifacts',
-				imageUrl: '/images/features/dev-ops.svg',
+				imageUrl: '/icons/dev-ops.svg',
 			},
 			{
 				title: 'Supply Chain',
 				subtitle: 'Bill of material for your workload',
-				imageUrl: '/images/features/collab.svg',
+				imageUrl: '/icons/collab.svg',
 			},
 		],
 	},
 	benefitsSection: {
-		title: 'Key benefits of using CodeNotary Ledger Compliance',
+		title: 'Key benefits of using CodeNotary Immutable Ledger',
 		cards: [
 			{
 				iconName: '/icons/pipeline.svg',
@@ -106,13 +106,13 @@ export default {
 				title: 'PRODUCTS',
 				links: [
 					{
-						label: 'CNLC (Self-Hosted)', internalLink: '/products/ledger-compliance', href: null,
+						label: 'CNIL (Self-Hosted)', internalLink: '/products/ledger-compliance', href: null,
 					},
 					{
-						label: 'CNLC (Cloud)', internalLink: '/products/ci-cd', href: null,
+						label: 'CNIL (Cloud)', internalLink: '/products/ci-cd', href: null,
 					},
 					{
-						label: 'CNLC Metrics & Logs', internalLink: '/products/ledger-compliance-metrics-and-logs', href: null,
+						label: 'CNIL Metrics & Logs', internalLink: '/products/ledger-compliance-metrics-and-logs', href: null,
 					},
 				],
 			},

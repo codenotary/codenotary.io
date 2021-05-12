@@ -1,9 +1,9 @@
 ---
-title: Codenotary Ledger Compliance® Subscription Agreement
-download: "/resources/CNLC_LicenseAgreement_December2020.pdf"
+title: Codenotary Immutable Ledger® Subscription Agreement
+download: "/resources/CNIL_LicenseAgreement_December2020.pdf"
 ---
 
-## **CodeNotary Ledger Compliance® Subscription Agreement**
+## **CodeNotary Immutable Ledger® Subscription Agreement**
 
 IMPORTANT -- READ CAREFULLY: This Subscription Agreement (hereinafter
 the "Agreement") is a legal agreement between you (either an individual
@@ -17,10 +17,10 @@ NOT AGREE, DO NOT USE THE SERVICES.
     Services by you over the internet. The Services may include the
     following:
 
-    1.1  CodeNotary Ledger Compliance, i.e. CodeNotary Inc's suite of
+    1.1  CodeNotary Immutable Ledger, i.e. CodeNotary Inc's suite of
         immutable data software solutions provided to you for
         installation and deployment within your own environment.
-        CodeNotary Ledger Compliance can only be used through the
+        CodeNotary Immutable Ledger can only be used through the
         initial term set forth in the Purchase Order signed by you, in
         accordance with the cryptographic License Key provided to you.
 
@@ -33,15 +33,15 @@ NOT AGREE, DO NOT USE THE SERVICES.
         between You and CodeNotary Inc from time to time. All Purchase
         Orders shall be deemed incorporated herein by reference.
 
-2.  **Per CodeNotary Ledger Compliance Instance License.** CodeNotary
-    Ledger Compliance products are licensed per running instance. An
+2.  **Per CodeNotary Immutable Ledger Instance License.** CodeNotary
+    Immutable Ledger products are licensed per running instance. An
     "instance" as a single occurrence of an operating system (physical
     or virtual) running an application which links to or otherwise
-    incorporates CodeNotary Ledger Compliance software. Licenses are
+    incorporates CodeNotary Immutable Ledger software. Licenses are
     bound to the purchased instance and can't be used in roaming
     environments or transferred between different instances running
     concurrently. Our instance-based licenses allow you to install
-    CodeNotary Ledger Compliance software on a hosted platform. The
+    CodeNotary Immutable Ledger software on a hosted platform. The
     instance count will depend on the scope of your requirements. The
     pricing for this license is based on the specific number of
     instances that your company installs, ensuring you only pay for what
@@ -49,14 +49,14 @@ NOT AGREE, DO NOT USE THE SERVICES.
     accordance with the Purchase Order. Should you desire to acquire
     additional instances, you will be required to issue a new Purchase
     Order for the additional instance(s). Additional licensing might be
-    necessary for CodeNotary Ledger Compliance increased number of
+    necessary for CodeNotary Immutable Ledger increased number of
     ledgers, plug-ins, and extensions.
 
 3.  **Provision of the Services and Deployment.** CodeNotary Inc will
     provide the Services in regard to any active subscription which you
     have acquired and maintain. The specifications, functionalities,
     requirements, service levels and availability of each subscription
-    for CodeNotary Ledger Compliance software are described and defined
+    for CodeNotary Immutable Ledger software are described and defined
     on the web page provided by CodeNotary Inc for the respective
     subscription. CodeNotary Inc may -- to a reasonable extent -- change
     such non-material specifications, functionalities, requirements,
@@ -65,7 +65,7 @@ NOT AGREE, DO NOT USE THE SERVICES.
     to the extent these do not materially reduce the functionalities of
     the Services.
 
-> CodeNotary Ledger Compliance software is provided by CodeNotary Inc by
+> CodeNotary Immutable Ledger software is provided by CodeNotary Inc by
 > delivering to you the applicable media or download and configure
 > within your environment.
 
@@ -74,7 +74,7 @@ NOT AGREE, DO NOT USE THE SERVICES.
     the Services for your internal purposes and/or for your end
     customer's internal purpose in compliance with this Agreement for
     the duration of your active and paid subscription. The CodeNotary
-    Ledger Compliance software may only be used in conjunction with
+    Immutable Ledger software may only be used in conjunction with
     plug-ins, software development kits and Application Programming
     Interface calls provided by CodeNotary Inc and through the web
     interface accessible with supported web browsers (such as Google
@@ -88,7 +88,7 @@ NOT AGREE, DO NOT USE THE SERVICES.
     and in combination with the Services, solely to the extent required
     to use the Services.
 
-> Any use of the CodeNotary Ledger Compliance for illegal or criminal
+> Any use of the CodeNotary Immutable Ledger for illegal or criminal
 > purposes or otherwise in violation of applicable law is strictly
 > prohibited. You acknowledge to fully indemnify CodeNotary Inc for any
 > costs and liabilities resulting from any illegal use of the Services
@@ -101,12 +101,12 @@ NOT AGREE, DO NOT USE THE SERVICES.
 > Compliance, delete or remove such data from the CodeNotary Inc
 > distributed ledger platform, or take any other action CodeNotary Inc
 > deems appropriate. CodeNotary Inc may immediately suspend or terminate
-> your use of CodeNotary Ledger Compliance without notice, in instances
+> your use of CodeNotary Immutable Ledger without notice, in instances
 > where such continued use would have a material adverse effect on
 > CodeNotary Inc.
 >
 > You agree to keep the administration password for the CodeNotary
-> Ledger Compliance software confidential and to protect it from
+> Immutable Ledger software confidential and to protect it from
 > unauthorized access by third parties. You remain fully responsible for
 > any actions taken through your account.
 >
@@ -123,26 +123,26 @@ NOT AGREE, DO NOT USE THE SERVICES.
 > discretion to block any access to your account indefinitely.
 
 5.  **Data Storage.** You will provide adequate quality and speed
-    storage for the use of CodeNotary Ledger Compliance. You are solely
+    storage for the use of CodeNotary Immutable Ledger. You are solely
     responsible to back up your data on your own system. If any data is
-    lost on CodeNotary Ledger Compliance 's storage, CodeNotary Inc
+    lost on CodeNotary Immutable Ledger 's storage, CodeNotary Inc
     shall not be responsible to recover any data and CodeNotary Inc
     shall not be liable for any costs incurred to you for restoring the
-    data on CodeNotary Ledger Compliance.
+    data on CodeNotary Immutable Ledger.
 
 > CodeNotary Inc is not responsible for the quality of the data stored
-> inside the CodeNotary Ledger Compliance software.
+> inside the CodeNotary Immutable Ledger software.
 >
 > When a subscription is about to expire or terminate, you are
 > responsible for creating a dump and/or backup any data stored inside
-> CodeNotary Ledger Compliance before the expiration or termination of
+> CodeNotary Immutable Ledger before the expiration or termination of
 > the subscription. After expiration or termination of any subscription,
-> data stored inside CodeNotary Ledger Compliance maybe never again
+> data stored inside CodeNotary Immutable Ledger maybe never again
 > become accessible to you again. CodeNotary Inc has no obligation to
 > provide advance warnings of the expiration of your license.
 
 6.  **Data Sharing.** Depending on the type of subscription, CodeNotary
-    Ledger Compliance may include the possibility to notarize data dump
+    Immutable Ledger may include the possibility to notarize data dump
     with a distributed ledger platform of our own choosing. Any
     cryptographic hashes of your data stored in a publicly accessible
     distributed ledger platform is the property of CodeNotary Inc.
@@ -347,7 +347,7 @@ NOT AGREE, DO NOT USE THE SERVICES.
     written consent.
 
 20. **Data Privacy.** You acknowledge that the provision of CodeNotary
-    Ledger Compliance may require the collection and processing of
+    Immutable Ledger may require the collection and processing of
     personal data concerning you as individual or legal entity. You
     agree that CodeNotary Inc may use such data only in connection with
     its business relationship to you and to transfer or disclose
@@ -356,7 +356,7 @@ NOT AGREE, DO NOT USE THE SERVICES.
     States, Austria, or abroad. CodeNotary Inc will not actively
     transfer your personal data to any other third parties. CodeNotary
     Inc is not responsible for any data uploaded by you for use with
-    CodeNotary Ledger Compliance and shall not be considered owner of
+    CodeNotary Immutable Ledger and shall not be considered owner of
     any such data for the purpose of data protection laws. You confirm
     that any data stored inside CodeNotary Inc has been collected and
     processed in accordance with the applicable data protection laws and

@@ -79,11 +79,15 @@ section.banner-layout {
 
 	#navbar {
 		position: fixed;
-		height: #{$navbar-height}px;
+		height: #{$cn-navbar-height}px !important;
 		width: 100%;
 		top: #{$banner-height}px !important;
 		left: 0;
 		padding: 0;
+	}
+
+	.global-menu {
+		top: #{$cn-navbar-height + $banner-height}px;
 	}
 
 	#content {
@@ -94,39 +98,59 @@ section.banner-layout {
 	&.scrolled {
 		#banner {
 			height: #{$banner-scrolled-height}px !important;
-
-			span,
-			.button {
-				font-size: 84% !important;
-			}
-
-			.button {
-				padding: 0;
-				border: none;
-				text-decoration: underline;
-
-				&:hover,
-				&:active,
-				&.nuxt-link-active {
-					background-color: transparent !important;
-				}
-			}
 		}
 
 		#navbar {
-			height: #{$navbar-scrolled-height}px !important;
+			height: #{$cn-navbar-scrolled-height}px !important;
 			top: #{$banner-scrolled-height}px !important;
 		}
 
+		.global-menu {
+			top: #{$cn-navbar-scrolled-height + $banner-scrolled-height }px;
+		}
+
 		#content {
-			// margin-top: #{$banner-scrolled-height + $navbar-scrolled-height}px;
+			// margin-top: #{$banner-scrolled-height + $navbar-height}px;
 			margin-top: #{$banner-scrolled-height}px;
 		}
 	}
 
-	@include breakpoint-down(md) {
+	&.closed {
 		#banner {
-			// height: auto;
+			height: 0 !important;
+			z-index: -1 !important;
+		}
+
+		#navbar {
+			top: 0 !important;
+		}
+
+		#content {
+			margin-top: #{$cn-navbar-height}px !important;
+		}
+	}
+
+	@media (max-width: 480px) {
+		#banner {
+			height: #{$banner-height * 2}px;
+			padding-right: 2.4rem;
+
+			span {
+				font-size: 0.9rem;
+			}
+		}
+
+		#navbar {
+			position: fixed;
+			top: #{$banner-height * 2}px !important;
+			left: 0;
+			width: 100%;
+			z-index: 999;
+			transition: all 0.15s ease-out;
+		}
+
+		#content {
+			margin-top: #{$banner-height * 2 + $cn-navbar-height}px !important;
 		}
 	}
 }

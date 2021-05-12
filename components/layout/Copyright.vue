@@ -4,15 +4,15 @@
 		:top="2"
 		:bottom="2"
 	>
-		<i-container class="_font-weight-bold">
-			<i-row>
+		<i-container>
+			<i-row class="row-container">
 				<i-column
 					class="_display-flex _justify-content-start"
 				>
 					Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
 				</i-column>
 				<i-column
-					class="_display-flex _justify-content-end"
+					class="_display-flex _justify-content-end _font-weight-bold"
 				>
 					<router-link :to="{ name: 'terms-of-service' }">
 						Terms of Service
@@ -46,7 +46,8 @@ export default {
 	padding: 1.5rem 0 !important;
 	color: $color-gray-30;
 	text-align: center;
-	font-size: 90%;
+	font-size: 14px;
+	line-height: 17px;
 	background-color: $cn-color-primary_dark !important;
 
 	a {
@@ -55,7 +56,22 @@ export default {
 
 		&:hover,
 		&:active {
-			color: $color-primary-lightest;
+			color: $color-primary-light;
+		}
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		.row-container {
+			flex-direction: column;
+
+			.column {
+				flex: 1;
+				justify-content: center !important;
+
+				&:first-of-type {
+					margin-bottom: 10px;
+				}
+			}
 		}
 	}
 }

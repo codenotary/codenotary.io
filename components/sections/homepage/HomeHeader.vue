@@ -6,17 +6,17 @@
 		>
 			<i-row class="_align-items-center main-content">
 				<i-column lg="5">
-					<h1 class="h2 _font-weight-bold cn-text-white title">
+					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
-					</h1>
-					<h1 class="h2 _font-weight-bold cn-text-secondary title">
+					</h2>
+					<h2 class="_font-weight-bold cn-text-secondary title first">
 						{{ content.headerSection.title2 }}
-					</h1>
-					<h1 class="h2 _font-weight-bold cn-text-white title">
+					</h2>
+					<h2 class="_font-weight-bold cn-text-white title">
 						{{ content.headerSection.title3 }}
-					</h1>
+					</h2>
 
-					<p class="lead cn-text-muted_blue subtitle">
+					<p class="lead cn-text-muted_blue subtitle cn-text-sm">
 						{{ content.headerSection.subtitle }}
 					</p>
 					<!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
@@ -55,12 +55,16 @@
 								poster="/videos/ci-cd.jpg"
 								width="1280"
 								height="720"
-								controls
+								:controls="playing"
 								@playing="onPlayVideo"
 								@pause="onPauseVideo"
 								@ended="onPauseVideo"
+								ref="videoPlayer"
 							/>
 						</LazyHydrate>
+						<div class="video-play_button" @click="playVideo">
+							<img src="/icons/play.svg">
+						</div>
 					</div>
 					<img
 						id="mascot"
@@ -118,6 +122,11 @@ export default {
 			clearTimeout(this.timeout);
 			this.playing = true;
 		},
+		playVideo() {
+			if (this.$refs.videoPlayer) {
+				this.$refs.videoPlayer.play();
+			}
+		},
 		onPauseVideo() {
 			clearTimeout(this.timeout);
 			this.timeout = setTimeout(() => {
@@ -129,11 +138,11 @@ export default {
 				return;
 			}
 
-			const gradientDegrees = window.innerWidth >= 2800 ? 2 : 5; // Skew of the gradient div
-			const secondaryDegrees = window.innerWidth >= 2800 ? 1 : 3; // Skew of the secondary div
+			const gradientDegrees = window.innerWidth >= 2800 ? 2 : window.innerWidth <= 991 ? 8 : 5; // Skew of the gradient div
+			const secondaryDegrees = window.innerWidth >= 2800 ? 1 : window.innerWidth <= 991 ? 5 : 3; // Skew of the secondary div
 			const gradientLineLength = window.innerWidth / Math.sin((90 - gradientDegrees) * Math.PI / 180) * Math.sin(90 * Math.PI / 180); // How long is the oblique line of the gradient div
 			const secondaryLineSideLength = gradientLineLength / 2 / Math.sin((90 - secondaryDegrees) * Math.PI / 180) * Math.sin((gradientDegrees + secondaryDegrees) * Math.PI / 180); // How long is the right side of the secondary div
-			this.rightBarBottom = (-secondaryLineSideLength + 100) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
+			this.rightBarBottom = (-secondaryLineSideLength + (window.innerWidth <= 991 ? 50 : 100)) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
 		},
 		onDownloadClick() {
 			eventHub.$emit('displayTrialModal', true);
@@ -146,7 +155,8 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-$mascot-width: 175px;
+$mascot-height: 164px;
+$mascot-height-small: 100px;
 
 #home-header {
 	background: transparent;
@@ -158,7 +168,7 @@ $mascot-width: 175px;
 	overflow-x: hidden;
 	width: 100%;
 
-	h1 {
+	h2 {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
@@ -173,10 +183,6 @@ $mascot-width: 175px;
 			margin-bottom: $spacer * 2;
 		}
 	}
-
-	.action {
-		padding-top: 30px;
-	}
 }
 
 #video-column {
@@ -189,20 +195,26 @@ $mascot-width: 175px;
 			left: 100%;
 			right: 0;
 		}
+
+		.video-play_button {
+			pointer-events: none;
+			opacity: 0;
+		}
 	}
 }
 
 #mascot {
 	//z-index: 4;
-	width: $mascot-width;
-	height: auto;
+	height: $mascot-height;
+	width: auto;
 	position: absolute;
 	left: 0;
 	bottom: -6rem;
 	transition: all 0.8s ease-in-out;
 
-	@media screen and (max-width: 1000px) {
-		left: calc(#{$mascot-width} * 3);
+	@media screen and (max-width: $mobile-max-width) {
+		height: $mascot-height-small;
+		bottom: -3rem;
 	}
 }
 
@@ -212,6 +224,8 @@ $mascot-width: 175px;
 
 .subtitle {
 	color: white !important;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -220,13 +234,14 @@ $mascot-width: 175px;
 	}
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: $mobile-max-width) {
 	.title:first-of-type {
 		margin-top: 20px !important;
 	}
 
 	.action {
 		justify-content: center;
+		margin-bottom: 30px;
 	}
 }
 
@@ -258,6 +273,15 @@ $mascot-width: 175px;
 		}
 	}
 
+	@media screen and (max-width: $mobile-max-width) {
+		transform: skewY(-8deg);
+		bottom: 50px;
+
+		&::after {
+			transform: skewY(8deg);
+		}
+	}
+
 	&::after {
 		content: '';
 		background: $cn-dark-gradient;
@@ -283,9 +307,44 @@ $mascot-width: 175px;
 	@media screen and (min-width: 2800px) {
 		transform: skewY(1deg);
 	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		transform: skewY(5deg);
+	}
 }
 
 .main-content {
 	z-index: 3;
+
+	@media screen and (max-width: $mobile-max-width) {
+		padding-top: 16px;
+
+		.title.first {
+			display: inline;
+		}
+	}
+}
+
+.video-play_button {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #15395475;
+	transition: opacity 0.15s ease-in-out;
+	opacity: 1;
+
+	@media screen and (max-width: $mobile-max-width) {
+		img {
+			height: 70px;
+			width: 70px;
+		}
+	}
 }
 </style>

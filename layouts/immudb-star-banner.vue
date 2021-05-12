@@ -8,7 +8,6 @@
 			@close="cta(true)"
 		/>
 		<Navbar
-			id="navbar"
 			:scrolled="scrolled"
 		/>
 		<div id="content">
@@ -56,7 +55,7 @@ export default {
 			}
 		},
 		cta (closed = false) {
-			this.closed = true;
+			this.closed = closed;
 			this.$cookies.set(IMMUDB_STAR_COOKIE, closed ? 1 : 2, {
 				path: '/',
 				maxAge: 60 * 60 * 24 * (closed ? 1 : 7),
@@ -71,7 +70,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 $banner-height: 40;
-$banner-scrolled-height: 0;
+$banner-scrolled-height: 32;
 
 section.immudb-star-banner-layout {
 	#immudbStarBanner {
@@ -94,6 +93,10 @@ section.immudb-star-banner-layout {
 		padding: 0;
 	}
 
+	.global-menu {
+		top: #{$cn-navbar-height + $banner-height}px;
+	}
+
 	#content {
 		// margin-top: #{$banner-height + $navbar-height}px !important;
 		margin-top: #{$banner-height}px !important;
@@ -109,6 +112,10 @@ section.immudb-star-banner-layout {
 			top: #{$banner-scrolled-height}px !important;
 		}
 
+		.global-menu {
+			top: #{$cn-navbar-scrolled-height + $banner-scrolled-height }px;
+		}
+
 		#content {
 			// margin-top: #{$banner-scrolled-height + $navbar-height}px;
 			margin-top: #{$banner-scrolled-height}px;
@@ -118,6 +125,7 @@ section.immudb-star-banner-layout {
 	&.closed {
 		#immudbStarBanner {
 			height: 0 !important;
+			z-index: -1 !important;
 		}
 
 		#navbar {

@@ -26,7 +26,7 @@
 						]"
 					>
 						<p>
-							Don't trust central or online services to provide immutability for your precious data. CNLC uses the world's fastest immutable database <span class="_font-weight-bold">immudb</span>, to provide full immutability and client-cryptographic proof.
+							Don't trust central or online services to provide immutability for your precious data. CNIL uses the world's fastest immutable database <span class="_font-weight-bold">immudb</span>, to provide full immutability and client-cryptographic proof.
 							That cryptographic verification guarantees data integrity and tamper-evidence.
 						</p>
 					</Feature>
@@ -54,7 +54,7 @@
 						<p>
 							To keep up with today's need for high-speed applications, you need a high-speed database.
 							This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
-							CNLC is able to support 10.000.000 transactions a second.
+							CNIL is able to support 10.000.000 transactions a second.
 							Immutability and high-speed performance - first time combined.
 						</p>
 						<template #button>
@@ -90,8 +90,8 @@
 						]"
 					>
 						<p>
-							The SDKs enable your developers to write data to CodeNotary Ledger Compliance using a few lines of code.
-							Write and read your data records into Ledger Compliance making sure your data history trace is always available.
+							The SDKs enable your developers to write data to CodeNotary Immutable Ledger using a few lines of code.
+							Write and read your data records into Immutable Ledger making sure your data history trace is always available.
 							Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
 						</p>
 					</Feature>
@@ -108,7 +108,7 @@
 						:inner-content="[
 							{
 								title: 'Linux, Container or virtual appliance',
-								text: 'Install and run CNLC in minutes using our universal install options',
+								text: 'Install and run CNIL in minutes using our universal install options',
 							},
 							{
 								title: 'On-premise, cloud-based or managed service',
@@ -117,8 +117,8 @@
 						]"
 					>
 						<p>
-							Deploy as a virtual appliance or install on any Linux system, <span class="_font-weight-bold">CNLC</span>
-							is ready within minutes to receive and store your data tamper-proof. You can run CNLC on-premise, in the cloud
+							Deploy as a virtual appliance or install on any Linux system, <span class="_font-weight-bold">CNIL</span>
+							is ready within minutes to receive and store your data tamper-proof. You can run CNIL on-premise, in the cloud
 							or in hybrid environments. If you wish for an independent deployment outside of your environment, we offer
 							managed service as well.
 						</p>

@@ -5,7 +5,7 @@
 			class="header"
 		>
 			<h5>
-				Get CodeNotary Ledger Compliance&reg; up and running in no time
+				Get CodeNotary Immutable Ledger&reg; up and running in no time
 			</h5>
 		</div>
 		<i-row class="_display-flex _justify-content-center _align-items-start">
@@ -184,7 +184,7 @@
 				class="_display-flex _flex-direction-row _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 			>
 				<PricingTable
-					title="CodeNotary Ledger Compliance features"
+					title="CodeNotary Immutable Ledger features"
 					:price="false"
 					:cta="false"
 				>

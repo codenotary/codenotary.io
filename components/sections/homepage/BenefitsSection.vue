@@ -8,16 +8,18 @@
 				weight="bold"
 				class="_width-75 _text-uppercase"
 				:top="0"
-				:bottom="1"
+				:bottom="0"
 			/>
 			<div class="benefits-body">
-				<div class="benefit-card _margin-top-1" v-for="(card, index) in content.benefitsSection.cards" :key="index" :class="'cn-bg-' + card.backgroundColor">
-					<div class="benefit-card-header">
-						<img :src="card.iconName">
-					</div>
-					<div class="benefit-card-body">
-						<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">{{ card.title }}</h4>
-						<p class="cn-text-white _margin-0 _text-center">{{ card.subtitle }}</p>
+				<div v-for="(card, index) in content.benefitsSection.cards" :key="index">
+					<div class="benefit-card _margin-top-1" :class="'cn-bg-' + card.backgroundColor">
+						<div class="benefit-card-header">
+							<img class="cn-icon" :src="card.iconName">
+						</div>
+						<div class="benefit-card-body">
+							<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">{{ card.title }}</h4>
+							<p class="cn-text-white _margin-0 _text-center">{{ card.subtitle }}</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -61,12 +63,18 @@ export default {
 .main-container {
 	background-color: white;
 	border-radius: $cn-border-radius-lg;
+	z-index: 2;
+	position: relative;
+
+	::v-deep h2 {
+		margin-bottom: 24px;
+	}
 }
 
 .benefits-body {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: flex-start;
 	width: 100%;
 	flex-wrap: wrap;
@@ -75,22 +83,39 @@ export default {
 		justify-content: center;
 	}
 
+	@media screen and (max-width: 1199px) {
+		& > * {
+			flex-basis: 50%;
+			display: flex;
+
+			&:nth-child(even) {
+				justify-content: flex-start;
+			}
+
+			&:nth-child(odd) {
+				justify-content: flex-end;
+			}
+		}
+	}
+
 	.benefit-card {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
 		height: 420px;
-		width: 276px;
+		width: 250px;
 		border-radius: $cn-border-radius-lg;
 		box-shadow: $cn-shadow-sm;
+		margin-left: 10px;
+		margin-right: 10px;
 
 		.benefit-card-header {
 			background-color: white;
 			position: relative;
 			flex: 0 0 0;
 			width: 100%;
-			min-height: 180px;
+			min-height: 150px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -116,6 +141,38 @@ export default {
 
 			h4 {
 				min-height: 70px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile-max-width) {
+	::v-deep h2 {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	.benefits-body {
+		.benefit-card {
+			width: 213px;
+			height: 353px;
+			margin-left: 10px;
+			margin-right: 10px;
+
+			.benefit-card-body {
+				padding: 16px;
+				min-height: 53px;
+
+				h4 {
+					font-size: 18px;
+					line-height: 24px;
+					min-height: 50px;
+				}
+			}
+
+			.benefit-card-header {
+				min-height: 100px;
+				margin-bottom: 25px;
 			}
 		}
 	}

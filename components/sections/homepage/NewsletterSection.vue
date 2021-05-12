@@ -45,6 +45,8 @@ export default {
 <style lang="scss" scoped>
 #newsletter-section {
 	color: white;
+	margin-top: -138px;
+	padding-top: 178px;
 }
 
 .container {

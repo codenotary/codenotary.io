@@ -1,10 +1,12 @@
 <template>
-	<div class="transparent-card">
-		<div class="card-picture" :style="dynamicBackground"/>
+	<div class="square-card">
+		<div class="card-picture">
+			<img class="cn-icon" :src="imageUrl">
+		</div>
 		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
 			{{ title }}
 		</h3>
-		<h6 class="subtitle">
+		<h6 class="subtitle cn-text-sm">
 			{{ subtitle }}
 		</h6>
 	</div>
@@ -27,31 +29,26 @@ export default {
 			default: '/images/placeholder.svg',
 		},
 	},
-	computed: {
-		dynamicBackground() {
-			return {
-				background: `url('${ this.imageUrl }') no-repeat center !important`,
-				'background-size': 'contain !important',
-			};
-		},
-	},
 };
 </script>
 
 <style lang="scss" scoped>
-.transparent-card {
-	max-width: 278px;
-	height: 276px;
+.square-card {
+	max-width: 250px;
+	height: 228px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	border-radius: $cn-border-radius-lg;
 	background-color: white;
-	padding: 40px;
+	padding: 25px;
 	box-shadow: $cn-shadow-sm;
 
 	.card-picture {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		height: 100px;
 		width: 200px;
 	}
@@ -59,7 +56,6 @@ export default {
 	.subtitle {
 		max-width: 150px;
 		margin: 0;
-		//align-self: start;
 		text-align: center;
 	}
 }

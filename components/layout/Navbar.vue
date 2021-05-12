@@ -1,9 +1,11 @@
 <template>
 	<i-navbar
+		id="navbar"
 		:class="{
-			'-scrolled': scrolled,
-		}"
+		'-scrolled': scrolled,
+	}"
 	>
+
 		<i-navbar-brand
 			:to="{ name: 'index' }"
 			class="_padding-0"
@@ -14,110 +16,56 @@
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
-		<i-navbar-items class="_justify-content-end">
+		<i-navbar-items class="_justify-content-end no-transform">
 			<i-nav>
-				<!-- PRODUCTS (lg-and-up) -->
 				<i-dropdown
 					class="navbar-dropdown _visible-lg-and-up"
 					trigger="hover"
+					ref="dropdownRef"
+					:value="productsMenuOpen"
 					@change="productsMenuOpen = $event"
 				>
 					<i-nav-item
-						:class="{ '-active': subRouteActive('/products') }"
+						:class="{ '-active': subRouteActive('/products'), 'open': productsMenuOpen }" class="product-toggle"
 					>
 						Products
-						<fa
-							class="_margin-left-1-4"
-							:icon="`caret-${ productsMenuOpen ? 'up' : 'down' }`"
-						/>
 					</i-nav-item>
 					<i-dropdown-menu>
-						<i-row class="_margin-0 _padding-0">
-							<i-column
-								class="_margin-0 _padding-0"
-								xs="12"
-							>
-								<nuxt-link
-									class="freeform-item _padding-1"
-									:to="{ name: 'products-ledger-compliance' }"
-								>
-									<h6
-										class="title _margin-0 _padding-xs-0"
-									>
-										CNLC (Self-Hosted)
-									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
-										Self-Hosted trusted CI/CD and artifact protection for your software development cycle
-									</p>
-								</nuxt-link>
-							</i-column>
-							<i-column
-								class="_margin-0 _padding-0"
-								xs="12"
-							>
-								<nuxt-link
-									class="freeform-item _padding-1"
-									:to="{ name: 'products-ci-cd' }"
-								>
-									<h6
-										class="title _margin-0 _padding-xs-0"
-									>
-										CNLC (Cloud)
-									</h6>
-									<p class="_margin-0 padding-top-1-2 subtitle">
-										Trusted CI/CD and artifact protection as a service that allows public verification
-									</p>
-								</nuxt-link>
-							</i-column>
-                                                        <i-column
-                                                                class="_margin-0 _padding-0"
-                                                                xs="12"
-                                                        >
-                                                                <nuxt-link
-                                                                        class="freeform-item _padding-1"
-                                                                        :to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
-                                                                >
-                                                                        <h6
-                                                                                class="title _margin-0 _padding-xs-0"
-                                                                        >
-                                                                                CNLC Metrics and Logs
-                                                                        </h6>
-                                                                        <p class="_margin-0 padding-top-1-2 subtitle">
-                                                                                Self-Hosted performance and compliant log analysis for VMware vSphere, container and much more
-                                                                        </p>
-                                                                </nuxt-link>
-                                                        </i-column>
-
-						</i-row>
+						<global-menu :scrolled="scrolled" @close="closeNavbar"/>
 					</i-dropdown-menu>
 				</i-dropdown>
+
 				<!-- PRODUCTS (md-and-down) -->
 				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<i-nav-item
+					<p
 						class="header"
-						disabled
+						:class="{'cn-text-secondary': productsMenuOpen, '_text-white': !productsMenuOpen}"
+						@click.prevent.stop="productsMenuOpen = !productsMenuOpen"
 					>
 						Products
-					</i-nav-item>
+					</p>
 					<i-nav-item
+						v-if="productsMenuOpen"
 						:to="{ name: 'products-ledger-compliance' }"
 					>
-						CNLC (Self-Hosted)
+						CNIL (Self-Hosted)
 					</i-nav-item>
 					<i-nav-item
+						v-if="productsMenuOpen"
 						:to="{ name: 'products-ci-cd' }"
 					>
-						CNLC (Cloud)
+						CNIL (Cloud)
 					</i-nav-item>
 					<i-nav-item
+						v-if="productsMenuOpen"
 						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
 					>
-						CNLC Metrics and Logs
+						CNIL Metrics and Logs
 					</i-nav-item>
 				</i-nav>
 
 				<i-nav-item
-					class="_text-xs-black"
+					class="_text-xs-white"
 					:to="{ name: 'technologies-immudb' }"
 				>
 					immudb
@@ -125,7 +73,7 @@
 
 				<!-- BLOG POSTS -->
 				<i-nav-item
-					class="_text-xs-black"
+					class="_text-xs-white"
 					:to="{ name: 'blog' }"
 				>
 					Blog
@@ -199,6 +147,10 @@ export default {
 		onDownloadClick() {
 			eventHub.$emit('displayTrialModal', true);
 		},
+		closeNavbar() {
+			this.$refs.dropdownRef.visible = false;
+			this.productsMenuOpen = false;
+		},
 	},
 };
 
@@ -207,6 +159,68 @@ export default {
 <style lang="scss">
 @import '~@inkline/inkline/src/css/config';
 @import '~@inkline/inkline/src/css/mixins';
+
+#navbar {
+	z-index: 10;
+
+	@media screen and (max-width: $mobile-max-width) {
+		text-align: center;
+
+		&.-scrolled {
+			.navbar-items {
+				top: #{$cn-navbar-scrolled-height}px;
+			}
+		}
+
+		.navbar-items {
+			transition: all 0.15s ease-out;
+			position: fixed;
+			left: 0;
+			top: #{$cn-navbar-height}px;
+
+			& > .nav {
+				width: 100%;
+				background: $cn-dark-gradient;
+
+				.dropdown-fallback-nav {
+					border-bottom: none;
+
+					.item.-disabled {
+						font-size: 1rem;
+						margin-top: 50px;
+					}
+				}
+
+				.item {
+					color: white !important;
+					font-weight: bold;
+					font-size: 18px;
+					line-height: 22px;
+
+					&.nuxt-link-active {
+						color: $cn-color-secondary !important;
+					}
+				}
+
+				& > a {
+					border-top: 1px solid $cn-color-primary;
+					align-items: center;
+					justify-content: center;
+					display: flex;
+					height: 60px;
+
+					&:last-of-type {
+						margin-bottom: 35px;
+					}
+				}
+			}
+		}
+
+		//.column.-xs {
+		//	padding: 0;
+		//}
+	}
+}
 
 .navbar {
 	//background: transparent !important;
@@ -221,9 +235,15 @@ export default {
 	}
 
 	.logo {
-		max-height: #{$cn-logo-height}px;
-		width: auto;
+		height: #{$cn-logo-height}px;
+		width: 200px;
+		object-fit: cover;
 		margin-right: 8px;
+
+		@media screen and (max-width: $mobile-max-width) {
+			width: 150px;
+			height: auto;
+		}
 	}
 
 	& > a:not(.button),
@@ -251,23 +271,22 @@ export default {
 		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
 	}
 
-	&.-bg-light-transparent,
-	&.-bg-white {
-		.container {
-			a,
-			.item,
-			.title {
-				color: $text-dark-color;
-			}
+	.container {
+		a,
+		.item,
+		.title {
+			color: $text-dark-color;
 		}
+	}
 
-		.collapse-toggle {
-			> .bars {
-				&::before,
-				&::after,
-				& {
-					background-color: $text-dark-color !important;
-				}
+	.collapse-toggle {
+		opacity: 1 !important;
+
+		> .bars {
+			&::before,
+			&::after,
+			& {
+				background: white !important;
 			}
 		}
 	}
@@ -303,18 +322,12 @@ export default {
 			//background: white !important;
 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
 
-			.container {
-				.logo {
-					max-height: #{$cn-logo-height}px;
-				}
-			}
-
 			.collapse-toggle {
 				> .bars {
 					&::before,
 					&::after,
 					& {
-						background-color: $text-dark-color !important;
+						background-color: white !important;
 					}
 				}
 			}
@@ -375,11 +388,21 @@ export default {
 
 		> .header {
 			font-weight: 600;
-			font-size: 80%;
+			font-size: 18px;
+			line-height: 22px;
+			margin-top: 50px;
 		}
 
 		> .item {
 			width: 100%;
+			font-weight: normal !important;
+			font-size: 18px;
+			line-height: 22px;
+			padding: 4px;
+
+			&:last-of-type {
+				margin-bottom: 28px;
+			}
 		}
 	}
 
@@ -466,5 +489,50 @@ export default {
 .fade-enter,
 .fade-leave-to {
 	opacity: 0;
+}
+
+.no-transform {
+	will-change: unset !important;
+	-webkit-transform: unset !important;
+	transform: unset !important;
+	-webkit-backface-visibility: unset !important;
+	backface-visibility: unset !important;
+	-webkit-perspective: unset !important;
+	perspective: unset !important;
+
+	.navbar-dropdown {
+		.menu {
+			background-color: transparent !important;
+			border: none !important;
+
+			&::after {
+				-webkit-transition: all 0.2s ease-out !important;
+				transition: all 0.2s ease-out !important;
+				transition-delay: 0.5s;
+				content: url('/icons/triangle.svg');
+				position: absolute;
+				left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
+				bottom: -100%;
+			}
+
+			.arrow {
+				display: none !important;
+			}
+		}
+	}
+
+	.zoom-in-top-transition-enter-active {
+		transform: unset !important;
+		-webkit-transform: unset !important;
+		transition: opacity 0.15s ease-out !important;
+		-webkit-transition: opacity 0.15s ease-out !important;
+	}
+
+	.zoom-in-top-transition-leave-active {
+		-webkit-transform: unset !important;
+		transform: unset !important;
+		transition: opacity 0.15s ease-out !important;
+		-webkit-transition: opacity 0.15s ease-out !important;
+	}
 }
 </style>

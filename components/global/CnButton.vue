@@ -48,6 +48,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+a:hover,
+a:focus,
+a:active {
+	color: unset;
+	text-decoration: unset;
+	outline-width: 0;
+}
 
 .cn-button {
 	outline: none;
@@ -65,7 +72,7 @@ export default {
 
 	&_light {
 		background-color: $cn-color-light;
-		color: $cn-color-primary_dark;
+		color: $cn-color-dark;
 	}
 
 	&_secondary {
@@ -74,7 +81,7 @@ export default {
 	}
 
 	&_primary {
-		color: white;
+		color: white !important;
 		background-color: $cn-color-primary;
 	}
 
@@ -92,14 +99,6 @@ export default {
 		pointer-events: none;
 	}
 
-	a:hover,
-	a:focus,
-	a:active {
-		color: unset;
-		text-decoration: unset;
-		outline-width: 0;
-	}
-
 	&:hover,
 	&:focus,
 	&:active {
@@ -108,6 +107,10 @@ export default {
 
 	&:active {
 		-webkit-animation: scale-animation 100ms linear;
+	}
+
+	& > a {
+		color: inherit;
 	}
 }
 </style>

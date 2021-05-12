@@ -1,6 +1,6 @@
 <template>
 	<section
-		:class="`section ${ getVariant } _padding-top-xs-0 _padding-bottom-xs-2 _padding-top-sm-${ top } _padding-bottom-sm-${bottom} _padding-top-md-${ top } _padding-bottom-md-${bottom} _padding-top-lg-${ top } _padding-bottom-lg-${bottom} _padding-top-xl-${ top } _padding-bottom-xl-${bottom}`"
+		:class="`section ${ getVariant } _padding-top-${ top } _padding-bottom-${bottom}`"
 	>
 		<slot />
 	</section>

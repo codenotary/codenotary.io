@@ -13,11 +13,13 @@
 			/>
 		</i-container>
 		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark _padding-left-0 _padding-right-0">
-			<h6 class="subheader _margin-0">
+			<h6 class="subheader _margin-0 _text-center">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
-			<i-container class="what_we_do-cards _margin-top-2">
-				<cards-square v-for="(card, index) in content.whatWeDoSection.cards" :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle" :key="index"/>
+			<i-container class="what_we_do-cards">
+				<div v-for="(card, index) in content.whatWeDoSection.cards" :key="index">
+					<cards-square :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle"/>
+				</div>
 			</i-container>
 		</i-container>
 	</PageSection>
@@ -44,22 +46,61 @@ export default {
 .what_we_do-cards {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	flex: 1 0 100%;
 	flex-wrap: wrap;
 	padding: 0;
-	padding-top: 10px;
+	//padding-top: 10px;
 	padding-bottom: 10px;
+
+	@media screen and (max-width: $mobile-max-width) {
+		padding-top: 10px;
+
+		& ::v-deep .square-card {
+			padding: 16px;
+			max-width: 213px;
+			height: 157px;
+
+			.card-picture {
+				height: 64px;
+				width: 200px;
+			}
+
+			h3 {
+				margin-top: 10px !important;
+				margin-bottom: 4px !important;
+			}
+
+			.subtitle {
+				max-width: unset;
+			}
+		}
+	}
 
 	@media screen and (max-width: 767px) {
 		justify-content: center;
 	}
 
-	& > * {
-		margin-top: 10px;
-		padding-left: 10px;
-		padding-right: 10px;
+	& > div {
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		@media screen and (max-width: 1199px) {
+			& {
+				flex-basis: calc(50% - 40px);
+				display: flex;
+
+				&:nth-child(even) {
+					justify-content: flex-start;
+				}
+
+				&:nth-child(odd) {
+					justify-content: flex-end;
+				}
+			}
+		}
 	}
 }
 </style>
