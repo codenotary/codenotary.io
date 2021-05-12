@@ -6,7 +6,7 @@
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-bottom-6">
 			<hr class="_width-100"/>
 			<PageSectionHeader
-				title="Key benefits of using CodeNotary Ledger Compliance"
+				title="Key benefits of using CodeNotary Immutable Ledger"
 				:top="0"
 				:bottom="0"
 			/>

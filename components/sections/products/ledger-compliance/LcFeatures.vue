@@ -3,7 +3,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<PageSectionHeader title="CodeNotary Ledger Compliance Features" />
+					<PageSectionHeader title="CodeNotary Immutable Ledger Features" />
 				</i-column>
 			</i-row>
 			<i-row center top>

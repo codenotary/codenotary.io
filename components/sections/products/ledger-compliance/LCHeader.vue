@@ -3,7 +3,7 @@
 		<i-row class="_align-items-center">
 			<i-column xs="12" md="6">
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
-					Ledger Compliance (on-premise)
+					Immutable Ledger (on-premise)
 				</h5>
 				<h1 class="title _font-weight-bold _text-primary _margin-top-0">
 					We provide an immutable and tamperproof ledger for your transactional systems
@@ -11,7 +11,7 @@
 				<p class="lead _margin-bottom-0">
 					Simple to use online audit queries and reports and easily able to process millions of transactions per second.
 
-					CodeNotary Ledger Compliance provides the versatility of a key value store without the hazzle of blockchains.
+					CodeNotary Immutable Ledger provides the versatility of a key value store without the hazzle of blockchains.
 				</p>
 				<p class="action">
 					<i-button

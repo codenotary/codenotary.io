@@ -43,7 +43,7 @@ export default {
 	},
 	head() {
 		return {
-			title: title('Ledger Compliance (Public Cloud)'),
+			title: title('Immutable Ledger (Public Cloud)'),
 		};
 	},
 	mounted () {

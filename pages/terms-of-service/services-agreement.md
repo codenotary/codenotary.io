@@ -1,6 +1,6 @@
 ---
 title: CodeNotary Subscription Agreement
-download: "/resources/CNLC_SubscriptionAgreement_December2020.pdf"
+download: "/resources/CNIL_SubscriptionAgreement_December2020.pdf"
 ---
 
 ## **CodeNotary Subscription Agreement**

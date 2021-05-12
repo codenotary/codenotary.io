@@ -39,7 +39,7 @@
 								Java SDK
 							</h5>
 							<p class="lead">
-								The SDKs enable your developers to write data to CodeNotary Ledger Compliance using a few lines of code.
+								The SDKs enable your developers to write data to CodeNotary Immutable Ledger using a few lines of code.
 							</p>
 						</i-column>
 						<i-column
@@ -71,7 +71,7 @@
 								Python SDKs
 							</h5>
 							<p class="lead">
-								The Python SDK is fast and simple to use. Write and read your data records into Ledger Compliance making sure your data history trace is always available.
+								The Python SDK is fast and simple to use. Write and read your data records into Immutable Ledger making sure your data history trace is always available.
 							</p>
 						</i-column>
 						<i-column

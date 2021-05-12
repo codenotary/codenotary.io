@@ -6,7 +6,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<PageSectionHeader title="Ledger Compliance Integrations">
+					<PageSectionHeader title="Immutable Ledger Integrations">
 						<p class="lead">
 							Integrations for Hypervisor, Storage systems, OS and applications.
 						</p>

@@ -48,19 +48,19 @@
 						v-if="productsMenuOpen"
 						:to="{ name: 'products-ledger-compliance' }"
 					>
-						CNLC (Self-Hosted)
+						CNIL (Self-Hosted)
 					</i-nav-item>
 					<i-nav-item
 						v-if="productsMenuOpen"
 						:to="{ name: 'products-ci-cd' }"
 					>
-						CNLC (Cloud)
+						CNIL (Cloud)
 					</i-nav-item>
 					<i-nav-item
 						v-if="productsMenuOpen"
 						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
 					>
-						CNLC Metrics and Logs
+						CNIL Metrics and Logs
 					</i-nav-item>
 				</i-nav>
 

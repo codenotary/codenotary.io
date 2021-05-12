@@ -66,7 +66,7 @@ export default {
 		],
 	},
 	benefitsSection: {
-		title: 'Key benefits of using CodeNotary Ledger Compliance',
+		title: 'Key benefits of using CodeNotary Immutable Ledger',
 		cards: [
 			{
 				iconName: '/icons/pipeline.svg',
@@ -106,13 +106,13 @@ export default {
 				title: 'PRODUCTS',
 				links: [
 					{
-						label: 'CNLC (Self-Hosted)', internalLink: '/products/ledger-compliance', href: null,
+						label: 'CNIL (Self-Hosted)', internalLink: '/products/ledger-compliance', href: null,
 					},
 					{
-						label: 'CNLC (Cloud)', internalLink: '/products/ci-cd', href: null,
+						label: 'CNIL (Cloud)', internalLink: '/products/ci-cd', href: null,
 					},
 					{
-						label: 'CNLC Metrics & Logs', internalLink: '/products/ledger-compliance-metrics-and-logs', href: null,
+						label: 'CNIL Metrics & Logs', internalLink: '/products/ledger-compliance-metrics-and-logs', href: null,
 					},
 				],
 			},

@@ -10,7 +10,7 @@
 					{{ product.title }}
 				</h4>
 				<p class="cn-text-dark _margin-0 _text-center _flex-grow-1">
-					{{ product.subtitle }}6
+					{{ product.subtitle }}
 				</p>
 				<nuxt-link
 					:to="product.internalLink" class="cn-text-brand _font-weight-bold menu-action"
