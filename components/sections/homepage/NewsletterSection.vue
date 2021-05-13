@@ -11,7 +11,7 @@
 				:top="0"
 				:bottom="0"
 			/>
-			<p class="_text-center _margin-top-0">
+			<p class="_text-center _margin-top-0 subtitle">
 				{{ content.newsletterSection.subtitle }}
 			</p>
 			<div class="_display-flex _width-100 _justify-content-center _align-items-center">
@@ -46,14 +46,18 @@ export default {
 #newsletter-section {
 	color: white;
 	margin-top: -138px;
-	padding-top: 178px;
-}
+	padding-top: 154px !important;
 
-.container {
-	max-width: 500px;
-}
+	.container {
+		max-width: 500px;
+	}
 
-.action-button {
-	flex: 0 1 20%;
+	.action-button {
+		flex: 0 1 20%;
+	}
+
+	.subtitle {
+		max-width: 580px;
+	}
 }
 </style>
