@@ -2,6 +2,7 @@
 	<PageSection
 		id="newsletter-section"
 		variant="gradient_inverse"
+		:top="6"
 	>
 		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<PageSectionHeader
@@ -45,8 +46,7 @@ export default {
 <style lang="scss" scoped>
 #newsletter-section {
 	color: white;
-	margin-top: -138px;
-	padding-top: 154px !important;
+	margin-top: -136px;
 
 	.container {
 		max-width: 500px;
