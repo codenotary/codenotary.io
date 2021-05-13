@@ -19,7 +19,7 @@ export default {
 			},
 			{
 				title: 'CNIL Metrics and Logs',
-				subtitle: 'Self-Hosted performance and compliant log analysis for VMware vSphere, container and much more',
+				subtitle: 'VMware vSphere and Cloud  performance monitoring, license compliance and log analysis. (former Opvizor Performance Analyzer)',
 				img: '/icons/cnlc_metrics.svg',
 				actionText: 'Discover More',
 				href: null,
