@@ -144,6 +144,10 @@ export default {
 			color: $cn-color-primary !important;
 			font-size: 14px;
 			line-height: 17px;
+
+			&:hover {
+				color: $cn-color-secondary !important;
+			}
 		}
 	}
 
