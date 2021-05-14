@@ -340,10 +340,16 @@ $mascot-height-small: 100px;
 	transition: opacity 0.15s ease-in-out;
 	opacity: 1;
 
-	@media screen and (max-width: $mobile-max-width) {
-		img {
+	img {
+		transition: transform 100ms linear;
+
+		@media screen and (max-width: $mobile-max-width) {
 			height: 70px;
 			width: 70px;
+		}
+
+		&:hover {
+			transform: scale(1.1);
 		}
 	}
 }
