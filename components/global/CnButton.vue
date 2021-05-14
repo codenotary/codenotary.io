@@ -6,7 +6,7 @@
 			<slot>
 			</slot>
 		</nuxt-link>
-		<a :href="href" v-else-if="href">
+		<a class="no-hover" :href="href" v-else-if="href">
 			<slot></slot>
 		</a>
 		<slot v-else></slot>
@@ -73,22 +73,52 @@ a:active {
 	&_light {
 		background-color: $cn-color-light;
 		color: $cn-color-dark;
+
+		&:hover,
+		&:focus,
+		&:active { // Becomes secondary
+			background-color: $cn-color-secondary;
+			color: $cn-color-dark;
+		}
 	}
 
 	&_secondary {
 		background-color: $cn-color-secondary;
 		color: $cn-color-dark;
+
+		&:hover,
+		&:focus,
+		&:active { // Becomes light
+			background-color: $cn-color-light;
+			color: $cn-color-dark;
+		}
 	}
 
 	&_primary {
 		color: white !important;
 		background-color: $cn-color-primary;
+
+		&:hover,
+		&:focus,
+		&:active { // Becomes primary inverse
+			color: $cn-color-primary;
+			background-color: white;
+			border: 1px solid $cn-color-primary;
+		}
 	}
 
 	&_primary-inverse {
 		color: $cn-color-primary;
 		background-color: white;
 		border: 1px solid $cn-color-primary;
+
+		&:hover,
+		&:focus,
+		&:active { // Becomes primary
+			color: white !important;
+			background-color: $cn-color-primary;
+			border: none;
+		}
 	}
 
 	&:disabled,
@@ -99,11 +129,11 @@ a:active {
 		pointer-events: none;
 	}
 
-	&:hover,
-	&:focus,
-	&:active {
-		opacity: 0.9;
-	}
+	//&:hover,
+	//&:focus,
+	//&:active {
+	//	opacity: 0.9;
+	//}
 
 	&:active {
 		-webkit-animation: scale-animation 100ms linear;

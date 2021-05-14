@@ -58,3 +58,7 @@
 		height: 60px;
 	}
 }
+
+a:hover:not(.no-hover) {
+	color: $cn-color-secondary !important;
+}

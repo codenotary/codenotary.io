@@ -252,6 +252,10 @@ export default {
 	.title {
 		transition: all 0.3s ease-out;
 		color: white !important;
+
+		&:hover {
+			color: $cn-color-secondary !important;
+		}
 	}
 
 	/*
