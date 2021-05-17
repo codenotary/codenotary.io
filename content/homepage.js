@@ -106,13 +106,13 @@ export default {
 				title: 'PRODUCTS',
 				links: [
 					{
-						label: 'CNIL (Self-Hosted)', internalLink: '/products/ledger-compliance', href: null,
+						label: 'CNIL (Self-Hosted)', internalLink: '/products/immutable-ledger', href: null,
 					},
 					{
 						label: 'CNIL (Cloud)', internalLink: '/products/ci-cd', href: null,
 					},
 					{
-						label: 'CNIL Metrics & Logs', internalLink: '/products/ledger-compliance-metrics-and-logs', href: null,
+						label: 'CNIL Metrics & Logs', internalLink: '/products/immutable-ledger-metrics-and-logs', href: null,
 					},
 				],
 			},
