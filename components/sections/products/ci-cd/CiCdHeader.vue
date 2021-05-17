@@ -9,6 +9,9 @@
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
 			</i-column>
 			<i-column md="8">
+                                <h5 class="-title" style="text-transform: uppercase; color: #444;">
+                                        Immutable Ledger (Cloud)
+                                </h5>
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
 					Tamperproof ledger solutions for all your sensitive data
 				</h1>
