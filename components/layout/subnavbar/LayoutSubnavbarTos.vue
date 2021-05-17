@@ -1,7 +1,7 @@
 <template>
 	<i-navbar
 		id="tos-sub-navbar"
-		class="sub-navbar _margin-bottom-3 _padding-bottom-0"
+		class="sub-navbar _margin-bottom-3"
 		fluid
 		:collapse="false"
 	>

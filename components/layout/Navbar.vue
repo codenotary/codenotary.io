@@ -46,7 +46,7 @@
 					</p>
 					<i-nav-item
 						v-if="productsMenuOpen"
-						:to="{ name: 'products-ledger-compliance' }"
+						:to="{ name: 'products-immutable-ledger' }"
 					>
 						CNIL (Self-Hosted)
 					</i-nav-item>
@@ -58,7 +58,7 @@
 					</i-nav-item>
 					<i-nav-item
 						v-if="productsMenuOpen"
-						:to="{ name: 'products-ledger-compliance-metrics-and-logs' }"
+						:to="{ name: 'products-immutable-ledger-metrics-and-logs' }"
 					>
 						CNIL Metrics and Logs
 					</i-nav-item>

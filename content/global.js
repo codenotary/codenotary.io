@@ -15,7 +15,7 @@ export default {
 				img: '/icons/cnlc_hosted.svg',
 				actionText: 'Discover More',
 				href: null,
-				internalLink: '/products/ledger-compliance',
+				internalLink: '/products/immutable-ledger',
 			},
 			{
 				title: 'CNIL Metrics and Logs',
@@ -23,7 +23,7 @@ export default {
 				img: '/icons/cnlc_metrics.svg',
 				actionText: 'Discover More',
 				href: null,
-				internalLink: '/products/ledger-compliance-metrics-and-logs',
+				internalLink: '/products/immutable-ledger-metrics-and-logs',
 			},
 		],
 	},

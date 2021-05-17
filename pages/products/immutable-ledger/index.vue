@@ -42,7 +42,7 @@ import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
-	name: 'LedgerComplianceOnPremise',
+	name: 'ImmutableLedgerOnPremise',
 	components: {
 		LazyHydrate,
 	},
