@@ -1,12 +1,12 @@
 ---
-title: "Is immutable infrastructure secure?"
+title: "Is Immutable Infrastructure secure?"
 author: "Duncan Mac-Vicar P."
 date: "2021-05-17"
 image: "/images/blog/trustedcicd.jpg"
 tags: ["devops", "ci", "cd", "infrastructure", "immutable"]
 ---
 
-# What is immutable infrastructure?
+# What is Immutable Infrastructure?
 
 Immutable infrastructure is a paradigm in which IT services, servers and deployments are never modified after they’re deployed, but rather replaced.
 
@@ -18,7 +18,7 @@ For example, a pipeline could consist of taking some Go code, build it into a co
 
 As long as we don't change our source repository, builds will produce the same application, as Go applications pin their dependencies using checksums. Off-the-self referenced dependencies like databases have their own checksums and unless we refer to a newer one, the same image will be used.
 
-# Does immutable infrastructure mean secure?
+# Does Immutable Infrastructure mean secure?
 
 The term "immutable infrastructure", as normally defined, only guarantees integrity during the process. It does not protect you when:
 
