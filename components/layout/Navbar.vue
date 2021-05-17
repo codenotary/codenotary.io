@@ -215,18 +215,12 @@ export default {
 				}
 			}
 		}
-
-		//.column.-xs {
-		//	padding: 0;
-		//}
 	}
 }
 
 .navbar {
-	//background: transparent !important;
 	background: $cn-dark-gradient !important;
 	transition: all 0.15s ease-out;
-	z-index: 999;
 
 	&.-collapsed {
 		.cta-button {
@@ -258,13 +252,6 @@ export default {
 		}
 	}
 
-	/*
-	&.-bg-light-transparent,
-	&.-bg-dark-transparent {
-		background-color: transparent !important;
-	}
-	*/
-
 	&.-bg-white {
 		background-color: white !important;
 		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
@@ -273,14 +260,6 @@ export default {
 	&.-bg-primary {
 		background-color: $color-primary !important;
 		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
-	}
-
-	.container {
-		a,
-		.item,
-		.title {
-			color: $text-dark-color;
-		}
 	}
 
 	.collapse-toggle {
@@ -323,7 +302,6 @@ export default {
 		&.-bg-primary,
 		& {
 			padding: 0 !important;
-			//background: white !important;
 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
 
 			.collapse-toggle {
@@ -432,17 +410,9 @@ export default {
 					}
 				}
 			}
-
-			a,
-			.item,
-			.title {
-				color: $text-dark-color !important;
-			}
 		}
 
 		.navbar-items {
-			background: white !important;
-
 			> .nav {
 				box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
 
@@ -457,7 +427,6 @@ export default {
 						font-weight: 600;
 						font-size: 80%;
 						background: transparent !important;
-						color: $text-dark-color !important;
 						cursor: default !important;
 					}
 
