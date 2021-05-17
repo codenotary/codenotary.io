@@ -15,7 +15,7 @@ We are looking for a Marketing Specialist for our team to drive adoption of our 
 Our software solution can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with cryptographic verification of no-tampering. The core engine of CodeNotary Immutable Ledger® is open-source [immudb](https://codenotary.com/technologies/immudb/), the world’s fastest immutable database.
 
 
-## Qualifications|
+## Qualifications
 
 - Experienced marketer with 5+ years spent creating and implementing growth and marketing strategies based on data-driven insights 
 - Excellent understanding of today’s developers’ mindset
