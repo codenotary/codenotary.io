@@ -71,7 +71,7 @@ export default {
 			{
 				iconName: '/icons/pipeline.svg',
 				title: 'Complete & Fully Trusted Pipeline',
-				subtitle: 'Tamperproof bill of material for your workloads, all input data is cryptographically verified.',
+				subtitle: 'Tamperproof bill of material for your workloads, all input data is cryptographically verified. Zero Trust DevOps pipeline.',
 				backgroundColor: 'brand',
 			},
 			{
