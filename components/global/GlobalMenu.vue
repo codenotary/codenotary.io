@@ -1,8 +1,16 @@
 <template>
 	<div class="global-menu" :class="{'scrolled': scrolled}">
-		<div class="menu-vertical-card" v-for="(product, index) in content.menu.products" :key="index">
+		<div
+			v-for="(product, index) in content.menu.products"
+			:key="index"
+			class="menu-vertical-card"
+		>
 			<div class="image">
-				<img class="cn-icon" :src="product.img" :alt="product.title">
+				<img
+					class="cn-icon"
+					:src="product.img"
+					:alt="product.title"
+				>
 			</div>
 
 			<div class="body">
@@ -13,7 +21,8 @@
 					{{ product.subtitle }}
 				</p>
 				<nuxt-link
-					:to="product.internalLink" class="cn-text-brand _font-weight-bold menu-action"
+					class="cn-text-brand _font-weight-bold menu-action"
+					:to="product.internalLink"
 					@click.native="$emit('close')"
 				>
 					{{ product.actionText }}

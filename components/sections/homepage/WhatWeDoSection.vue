@@ -18,7 +18,11 @@
 			</h6>
 			<i-container class="what_we_do-cards">
 				<div v-for="(card, index) in content.whatWeDoSection.cards" :key="index">
-					<cards-square :title="card.title" :image-url="card.imageUrl" :subtitle="card.subtitle"/>
+					<cards-square
+						:title="card.title"
+						:image-url="card.imageUrl"
+						:subtitle="card.subtitle"
+					/>
 				</div>
 			</i-container>
 		</i-container>

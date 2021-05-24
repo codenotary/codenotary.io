@@ -4,7 +4,7 @@ export default {
 		title1: 'End-to-end',
 		title2: 'tamperproof',
 		title3: 'protection for your software development cycle',
-		subtitle: 'Add trust, integrity, and transparency for all identities and artifacts to your CI/CD pipelines in a heartbeat.'
+		subtitle: 'Add trust, integrity, and transparency for all identities and artifacts to your CI/CD pipelines in a heartbeat.',
 	},
 	heroCardsSection: {
 		cards: [

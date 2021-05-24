@@ -2,10 +2,9 @@
 	<i-navbar
 		id="navbar"
 		:class="{
-		'-scrolled': scrolled,
-	}"
+			'-scrolled': scrolled,
+		}"
 	>
-
 		<i-navbar-brand
 			:to="{ name: 'index' }"
 			class="_padding-0"
@@ -19,19 +18,26 @@
 		<i-navbar-items class="_justify-content-end no-transform">
 			<i-nav>
 				<i-dropdown
+					ref="dropdownRef"
 					class="navbar-dropdown _visible-lg-and-up"
 					trigger="hover"
-					ref="dropdownRef"
 					:value="productsMenuOpen"
 					@change="productsMenuOpen = $event"
 				>
 					<i-nav-item
-						:class="{ '-active': subRouteActive('/products'), 'open': productsMenuOpen }" class="product-toggle"
+						class="product-toggle"
+						:class="{
+							'-active': subRouteActive('/products'),
+							'open': productsMenuOpen,
+						}"
 					>
 						Products
 					</i-nav-item>
 					<i-dropdown-menu>
-						<global-menu :scrolled="scrolled" @close="closeNavbar"/>
+						<global-menu
+							:scrolled="scrolled"
+							@close="closeNavbar"
+						/>
 					</i-dropdown-menu>
 				</i-dropdown>
 

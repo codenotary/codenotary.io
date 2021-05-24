@@ -41,8 +41,7 @@
 						</cn-button>
 					</p>
 				</i-column>
-				<i-column lg="1">
-				</i-column>
+				<i-column lg="1" />
 				<i-column
 					id="video-column"
 					lg="6"
@@ -51,6 +50,7 @@
 					<div id="video" class="_embed _embed-16by9">
 						<LazyHydrate when-idle>
 							<video
+								ref="videoPlayer"
 								src="/videos/ci-cd.mp4"
 								poster="/videos/ci-cd.jpg"
 								width="1280"
@@ -59,7 +59,6 @@
 								@playing="onPlayVideo"
 								@pause="onPauseVideo"
 								@ended="onPauseVideo"
-								ref="videoPlayer"
 							/>
 						</LazyHydrate>
 						<div class="video-play_button" @click="playVideo">

@@ -9,10 +9,15 @@
 			</p>
 			<div class="action">
 				<slot name="action">
-					<cn-button link variant="dark"
-						:to="internalLink ? { name: internalLink.type, params: { post: internalLink.entry }} : null" :href="actionHref"
+					<cn-button
+						link variant="dark"
+						:to="internalLink
+							? { name: internalLink.type, params: { post: internalLink.entry }}
+							: null"
+						:href="actionHref"
 					>
-						<img class="icon"
+						<img
+							class="icon"
 							src="/icons/arrow-right.svg"
 						>
 						{{ actionText }}

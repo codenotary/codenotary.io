@@ -6,17 +6,16 @@
 	>
 		<i-container>
 			<i-row>
-				<i-column class="brand"
-				>
+				<i-column class="brand">
 					<img
 						class="logo"
 						src="/images/logo/logo_white.png"
 						alt="CodeNotary"
 					>
 					<p class="brand-description">
-                                                We bring trust and integrity into the software life cycle
-                                                by providing end-to-end cryptographically verifiable tracking and provenance
-                                                for all artifacts, actions, and dependencies.
+						We bring trust and integrity into the software life cycle
+						by providing end-to-end cryptographically verifiable tracking and provenance
+						for all artifacts, actions, and dependencies.
 						The only immutable and client-verifiable solutions capable of processing millions of transactions a
 						second.
 					</p>
@@ -43,13 +42,30 @@
 						</li>
 					</ul>
 				</i-column>
-				<i-column class="table" v-for="(table, index) in content.footer.tables" :key="index">
-					<p class="table_title _font-weight-bold"> {{ table.title }} </p>
-					<div v-for="(link, linkIndex) in table.links" :key="linkIndex">
-						<nuxt-link v-if="link.internalLink" class="table_link" :to="link.internalLink">
+				<i-column
+					v-for="(table, index) in content.footer.tables"
+					:key="index"
+					class="table"
+				>
+					<p class="table_title _font-weight-bold">
+						{{ table.title }}
+					</p>
+					<div
+						v-for="(link, linkIndex) in table.links"
+						:key="linkIndex"
+					>
+						<nuxt-link
+							v-if="link.internalLink"
+							class="table_link"
+							:to="link.internalLink"
+						>
 							{{ link.label }}
 						</nuxt-link>
-						<a v-else class="table_link" :href="link.href">
+						<a
+							v-else
+							class="table_link"
+							:href="link.href"
+						>
 							{{ link.label }}
 						</a>
 					</div>

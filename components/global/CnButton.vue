@@ -2,14 +2,21 @@
 	<button
 		:class="dynamicClass" v-bind="$attrs"
 	>
-		<nuxt-link v-if="to" class="table_link" :to="to">
-			<slot>
-			</slot>
+		<nuxt-link
+			v-if="to"
+			class="table_link"
+			:to="to"
+		>
+			<slot />
 		</nuxt-link>
-		<a class="no-hover" :href="href" v-else-if="href">
-			<slot></slot>
+		<a
+			v-else-if="href"
+			class="no-hover"
+			:href="href"
+		>
+			<slot />
 		</a>
-		<slot v-else></slot>
+		<slot v-else />
 	</button>
 </template>
 <script>

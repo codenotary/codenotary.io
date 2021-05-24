@@ -63,7 +63,6 @@
 		<ResearchPaperModal
 			v-model="researchPaperModalVisible"
 		/>
-
 	</i-header>
 </template>
 

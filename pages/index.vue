@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<HomeHeader/>
+		<HomeHeader />
 
 		<LazyHydrate when-visible>
 			<WhatWeDoSection />
@@ -13,7 +13,6 @@
 		<LazyHydrate when-visible>
 			<NewsletterSection />
 		</LazyHydrate>
-
 	</div>
 </template>
 

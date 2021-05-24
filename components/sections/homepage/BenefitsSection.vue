@@ -17,8 +17,12 @@
 							<img class="cn-icon" :src="card.iconName">
 						</div>
 						<div class="benefit-card-body">
-							<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">{{ card.title }}</h4>
-							<p class="cn-text-white _margin-0 _text-center">{{ card.subtitle }}</p>
+							<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">
+								{{ card.title }}
+							</h4>
+							<p class="cn-text-white _margin-0 _text-center">
+								{{ card.subtitle }}
+							</p>
 						</div>
 					</div>
 				</div>
