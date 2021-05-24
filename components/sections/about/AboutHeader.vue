@@ -6,10 +6,10 @@
 					CodeNotary Inc. - The Immutability Specialists
 				</h1>
 				<h2 class="_font-weight-bold _margin-top-1">
-					the leading company for immutable recording of business data.
+					the leading company for trusted CI/CD.
 				</h2>
 				<p class="lead _margin-bottom-0">
-					Immutable ledgers are a requirement to enable businesses to successfully move to cloud solutions without compromising trust and integrity.
+					We bring trust and integrity into the software life cycle by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
 				</p>
 			</i-column>
 			<i-column md="4" class="_padding-left-4 _text-left">

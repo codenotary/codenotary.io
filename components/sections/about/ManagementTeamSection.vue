@@ -73,7 +73,7 @@
 							He holds a degree in Computer Engineering and a post-graduate MSc from the Pontifical Catholic University of Chile.
 						</p>
 					</team-member>
-				</i-column>	
+				</i-column>
 				<i-column lg="4">
 					<team-member
 						name="Jerónimo Irazábal" position="Chief Architect & immudb Community Manager"
@@ -101,7 +101,7 @@
 							He consulted leading high-tech companies, such as IBM, HP, Microsoft, and Verint.
 						</p>
 					</team-member>
-				</i-column>			
+				</i-column>
 			</i-row>
 		</i-container>
 	</PageSection>
