@@ -36,7 +36,7 @@ One may think: It is just a matter of revoking those certificates. Like in the p
 
 Here we can see digital certificates first adding a sense of trust to a compromised piece of software, and then ruining the trust chain for legitimate assets.
 
-The problem with Digital Certificates is that they are only able to express that a piece of software is coming from a certain party, unmodified. Trust is static and never to change, never to be revised.
+The problem with Digital Certificates is that they are only able to express that a piece of software is coming from a certain party, unmodified. Trust is static and never to change, never to be revised. This does not work in a world heading towards zero-trust models, where trust is dynamic and fine-grained.
 
 # Trust Agility
 
@@ -70,9 +70,9 @@ Notarization of individual assets provides a more fine grained and agile trust m
 
 Start notarizing today.
 
-## About Codenotary
+## About CodeNotary
 
-To learn more how you can implement end-to-end tamper-proof protection for your CI pipeline, visit [CodeNotary](https://www.codenotary.com) and [signup for the Cloud version](https://www.codenotary.com/products/ci-cd) or [download the Self-Hosted edition](https://www.codenotary.com/products/ledger-compliance).
+To learn more how you can implement end-to-end zero-trust protection for your CI pipeline, visit [CodeNotary](https://www.codenotary.com) and [signup for the Cloud version](https://www.codenotary.com/products/ci-cd) or [download the Self-Hosted edition](https://www.codenotary.com/products/ledger-compliance).
 
 
 
