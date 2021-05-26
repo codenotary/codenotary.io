@@ -9,7 +9,7 @@ tags: ["immudb", "party", "release", "1.0", "data security", "immutable"]
 
 CodeNotary [announced last week the release of version 1.0](https://www.codenotary.com/blog/immudb-release-1-0) of its immutable database immudb, now with support for SQL and the new TimeTravel feature.
 
-The team will host a virtual release-party on May 31st, 2021 at 18:00 CET ([check your timezone](https://dateful.com/eventlink/3140190706)).
+The team will host a virtual release-party on May 31st, 2021 at 6pm (18:00) CET ([check your timezone](https://dateful.com/eventlink/3140190706)).
 
 Everyone is invited. You will be able to ask questions about immudb and the team will be happy to answer those!.
 
