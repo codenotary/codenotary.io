@@ -41,6 +41,6 @@ Downloads for all major platforms are [available on Github](https://github.com/c
 For any question contact us on [Discord](https://discord.com/invite/ThSJxNEHhZ).
 
 Codenotary Inc.<br>
-4141 Southwest Freeway<br>
-Houston, TX, USA<br>
+6750 West Loop South, Suite 845<br>
+Bellaire, TX 77401, United States<br>
 

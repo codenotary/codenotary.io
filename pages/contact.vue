@@ -14,7 +14,7 @@
 								<iframe
 									width="1200"
 									height="400"
-									src="https://maps.google.com/maps?hl=en&amp;q=4141 Southwest Freeway, Houston Texas+(Maps)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.2142910512503!2d-95.46195250127549!3d29.706598157895197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c19696e55555%3A0x5481fd1592819481!2s6750%20W%20Loop%20S%20Suite%20845%2C%20Houston%2C%20TX%2077081%2C%20USA!5e1!3m2!1sen!2sit!4v1622041088336!5m2!1sen!2sit"
 									frameborder="0"
 									scrolling="no"
 									marginheight="0"
@@ -26,10 +26,10 @@
 							CodeNotary, Inc.
 						</h3>
 						<div class="_margin-top-1">
-							4141 Southwest Fwy, Suite 340
+							6750 West Loop South, Suite 845
 						</div>
 						<div class="_margin-bottom-1 _font-size-sm">
-							Houston, TX 77027, United States
+							Bellaire, TX 77401, United States
 						</div>
 					</i-column>
 				</i-row>

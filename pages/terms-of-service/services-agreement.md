@@ -7,7 +7,7 @@ download: "/resources/CNIL_SubscriptionAgreement_December2020.pdf"
 
 These are the Terms and Conditions ("Terms") that apply to the use of the CodeNotary Website and Services ([https://codenotary.com][1]) (together with all associated website linked to such website by CodeNotary Inc., its subsidiaries and affiliated companies).
 
-Please read them carefully because the Terms, together with CodeNotary Privacy Statement located at [https://codenotary.com/privacy-statement][2] ("Privacy Statement"), form a legal contract ("agreement") between you (either an individual or a legal entity) and CodeNotary Inc., with its principal office at 4141 Southwest Freeway, Suite 340, 77027 Houston (Texas) ("CodeNotary") (each a "Party" and together, the "Parties") for the use of the CodeNotary Website and Services ("Services").
+Please read them carefully because the Terms, together with CodeNotary Privacy Statement located at [https://codenotary.com/privacy-statement][2] ("Privacy Statement"), form a legal contract ("agreement") between you (either an individual or a legal entity) and CodeNotary Inc., with its principal office at 6750 West Loop South, Suite 845, 77401 Bellaire (Texas) ("CodeNotary") (each a "Party" and together, the "Parties") for the use of the CodeNotary Website and Services ("Services").
 
 By using the Services you are irrevocably agreeing to all the terms and conditions of the agreement. If you do not agree with any of the terms and conditions in the agreement, you may not use the Services.
 

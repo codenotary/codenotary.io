@@ -2,7 +2,7 @@ The following provisions regulate how CodeNotary treats your personal data.
 
 ## **1\. Data Controller**
 
-The data controller (data protection laws) is: CodeNotary, Inc. 4141 Southwest Freeway, Houston, TX 77027, United States
+The data controller (data protection laws) is: CodeNotary, Inc. 6750 West Loop South, Suite 845, Bellaire, TX 77401, United States
 
 ## **2\. Automatic data collection when visiting the website or the platform**
 
