@@ -26,10 +26,13 @@
 							CodeNotary, Inc.
 						</h3>
 						<div class="_margin-top-1">
-							6750 West Loop South, Suite 845
+							6750 West Loop South
+						</div>
+						<div class="_margin-top-1">
+							Suite 845
 						</div>
 						<div class="_margin-bottom-1 _font-size-sm">
-							Bellaire, TX 77401, United States
+							Bellaire, TX 77401
 						</div>
 					</i-column>
 				</i-row>
