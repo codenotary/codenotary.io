@@ -38,7 +38,7 @@ import { title, meta, DEFAULT_META } from '@/helpers/meta/index';
 
 export default {
 	name: 'BlogPost',
-	layout: 'banner',
+	layout: 'immudb-star-banner',
 	async asyncData({ $content, params }) {
 		const BLOG_POST_PATH = 'blog';
 		const post = params && params.post ? params.post.replace('.md', '') : '';

@@ -117,7 +117,7 @@ export default {
 	components: {
 		'no-ssr': NoSSR,
 	},
-	layout: 'banner',
+	layout: 'immudb-star-banner',
 	async asyncData ({ $content }) {
 		const articles = await $content('blog')
 				.only(['title', 'date', 'image', 'slug', 'tags'])
