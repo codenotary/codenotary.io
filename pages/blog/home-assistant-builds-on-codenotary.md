@@ -1,6 +1,6 @@
 ---
 title: "Top GitHub Project Home Assistant Builds on CodeNotary to Secure Software Supply Chain at Scale"
-date: "2021-05-25"
+date: "2021-05-27"
 image: "https://www.home-assistant.io/images/hero_screenshot.png"
 tags: ["Home Assistant", "GitHub", "securedevops", "codesigning"]
 ---
