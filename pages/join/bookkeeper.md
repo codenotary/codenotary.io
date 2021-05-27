@@ -1,6 +1,6 @@
 ---
 title: "Bookkeper"
-location: "Houston, Galleria Area" 
+location: "Bellaire, 6750 West Loop South, Suite 845" 
 type: "Full time" 
 requires: "" 
 weight: 7

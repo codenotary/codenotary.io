@@ -20,6 +20,6 @@ To join the event, click [here](https://meet.jit.si/immudb) at the specified dat
 For any question contact us on [Discord](https://discord.com/invite/ThSJxNEHhZ).
 
 Codenotary Inc.<br>
-4141 Southwest Freeway<br>
-Houston, TX, USA<br>
+6750 West Loop South, Suite 845<br>
+Bellaire, TX, USA<br>
 
