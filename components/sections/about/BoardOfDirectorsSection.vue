@@ -2,8 +2,8 @@
 	<PageSection
 		id="board-of-directors-section"
 		variant="white"
-		:top='2'
-		:bottom='4'
+		:top="2"
+		:bottom="4"
 	>
 		<i-row>
 			<i-column>
