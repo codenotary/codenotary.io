@@ -3,16 +3,16 @@
 		<about-header />
 		<hr>
 		<LazyHydrate when-visible>
-			<about-features-section />
+			<AboutFeaturesSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<management-team-section />
+			<ManagementTeamSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<board-of-directors-section />
+			<ScientificBoardSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<scientific-board-section v-if="false" />
+			<BoardOfDirectorsSection />
 		</LazyHydrate>
 	</div>
 </template>

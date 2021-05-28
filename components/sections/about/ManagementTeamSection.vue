@@ -2,6 +2,7 @@
 	<PageSection
 		id="management-team-section"
 		variant="white"
+		:top="4"
 	>
 		<i-row>
 			<i-column>
@@ -61,7 +62,7 @@
 					<team-member
 						name="Duncan Mac-Vicar"
 						position="VP Engineering"
-						image="/images/teams/duncan-mac-vicar.png"
+						image="/images/teams/duncan-mac-vicar.jpg"
 					>
 						<p>
 							Duncan Mac-Vicar is an experienced Engineering leader and long-time Open-Source developer and contributor.
@@ -77,28 +78,11 @@
 				<i-column lg="4">
 					<team-member
 						name="Jerónimo Irazábal" position="Chief Architect & immudb Community Manager"
-						image="/images/teams/jeronimo-irazabal.png"
+						image="/images/teams/jeronimo-irazabal.jpg"
 					>
 						<p>
 							Jerónimo Irazábal is a Software Engineer with research background. He has published academic articles in international conferences and co-authored a book for the courses of Program Verification and Theory of Computer Science.
 							He worked at IBM as a Research Scientist, made contributions to projects related to Watson, Hyperledger Fabric, and Advanced Access Control System, co-authored several patent applications and co-chaired a global team in charge of the evaluation and guidance of inventors in Blockchain Technology. He was awarded first Master Inventor at IBM Argentina.
-						</p>
-					</team-member>
-				</i-column>
-				<i-column lg="4">
-					<team-member
-						name="Prof. Assaf Schuster"
-						position="Scientific Advisor"
-						image="/images/teams/prof-assaf-schuster.jpg"
-					>
-						<p>
-							Prof. Assaf Schuster of the Computer Science Department at the Technion is an ACM fellow and a world leading expert of distributed and scalable data mining, Big Data technologies, cyber security, privacy preserving, cloud resource management, and more.
-						</p>
-						<p>
-							Prof. Schuster published more than 200 papers in highly selective conferences and journals, some of which won prestigious awards.
-						</p>
-						<p>
-							He consulted leading high-tech companies, such as IBM, HP, Microsoft, and Verint.
 						</p>
 					</team-member>
 				</i-column>
