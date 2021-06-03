@@ -122,7 +122,6 @@ export default {
 		const articles = await $content('blog')
 				.only(['title', 'date', 'image', 'slug', 'tags'])
 				.sortBy('date', 'desc')
-				.limit(BLOG_POSTS_PER_PAGE)
 				.fetch();
 
 		return { articles };
@@ -145,9 +144,11 @@ export default {
 					const date = _.date.includes(this.filter.replace(/\//g, '-'));
 					const tags = _.tags ? _.tags.map(_ => _.toLowerCase()).includes(this.filter.toLowerCase()) : false;
 					return title || date || tags;
-				});
+				}).slice(0, 50);
 			}
-			return this.articles;
+			else {
+				return this.articles.slice(0, BLOG_POSTS_PER_PAGE * this.page);
+			}
 		},
 	},
 	mounted () {
@@ -172,17 +173,9 @@ export default {
 			setNavbar: SET_NAVBAR,
 		}),
 		infiniteHandler ($state) {
-			setTimeout(async () => {
+			setTimeout(() => {
 				this.page += 1;
-				const lazyArticles = await this.$content('blog')
-						.only(['title', 'date', 'image', 'slug', 'tags'])
-						.sortBy('date', 'desc')
-						.limit(BLOG_POSTS_PER_PAGE)
-						.skip(BLOG_POSTS_PER_PAGE * this.page)
-						.fetch();
-
-				if (lazyArticles && lazyArticles.length > 0) {
-					this.articles.push(...lazyArticles);
+				if (this.page < (this.articles.length / BLOG_POSTS_PER_PAGE)) {
 					$state.loaded();
 				}
 				else {
