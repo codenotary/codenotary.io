@@ -72,7 +72,7 @@
 							</masonry>
 						</no-ssr>
 						<no-ssr>
-							<infinite-loading @infinite="infiniteHandler">
+							<infinite-loading v-if="!filter" @infinite="infiniteHandler">
 								<template
 									slot="spinner"
 									class="text-muted small-text"

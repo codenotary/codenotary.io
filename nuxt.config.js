@@ -301,6 +301,7 @@ export default {
 			}
 			return paths;
 		},
+		cache: false,
 	},
 
 	sitemap: {
