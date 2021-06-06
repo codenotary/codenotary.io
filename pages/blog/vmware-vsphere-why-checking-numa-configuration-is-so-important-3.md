@@ -17,6 +17,8 @@ The main take away is, that the cpu — memory access is always the fastest,
 
 Remote node memory access is super-slow, not just 1 or 2% and the impact is not isolated to a single VM.
 
+#### [Sign up](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs) for CNIL Metrics and Logs to check your NUMA situationfor free!
+
 We've seen environments with hundred-thousands of NUMA migrations a day and dozens of TB remote memory usage. Oracle databases, SAP HANA, MS SQL, Microsoft Exchange, CAD applications and many more resource-intense applications were unbearable slow. When your server applications slow down, all of your clients suffer from the performance drop as well.
 
 The most common way to check on an ESXi what VMs are using home or remote node memory is using esxtop on the command line. 
