@@ -1,6 +1,6 @@
 ---
 title: "VMware vSphere — a missing NUMA strategy can hit your VM performance by 70%!"
-image: /images/blog/1.png
+image: /images/blog/numa-KPIs.png
 tags: ["NUMA", "metrics", "VMware", "performance"]
 date: "2021-06-07"
 ---
@@ -94,7 +94,7 @@ Metrics and Logs, collects all important NUMA metrics over a long period of time
 2) Remote Node usage (% and GByte)
 3) NUMA migrations
 4) Behaviour over time
-5) Coloring codes (warning, critical)
+5) Color codes (warning, critical)
 
 Check out [CNIL Metrics and Logs](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs). You can use the 30 day free trial to get started.
 
