@@ -98,11 +98,9 @@ Metrics and Logs, collects all important NUMA metrics over a long period of time
 
 Check out [CNIL Metrics and Logs](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs). You can use the 30 day free trial to get started.
 
-![NUMA](/images/blog/2.png)
+![NUMA](/images/blog/numa-2.png)
 
 The important Metrics can be found in the Starter: VMware Virtual Machine Dashboard under Virtual Machine Memory Access Slowdown indicators
-
-![NUMA](/images/blog/3.png)
 
 NUMA Home Node % shows the percentage of memory access that stays in the NUMA Home Node (the fastest memory access). That value should always be 100% or very close to 100%. If it goes below 90% for some time you should start optimizing.
 
@@ -110,7 +108,7 @@ NUMA Remote Node Access shows the memory amount in Byte that is accessed using t
 
 Just make sure to use a vCenter role for the Metrics and Logs  user that allows Service Managers access.
 
-![NUMA](/images/blog/4.png)
+![NUMA](/images/blog/numa-3.png)
 
 ## Key take aways: VMware configuration for NUMA optimization
 
