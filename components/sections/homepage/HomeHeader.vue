@@ -28,9 +28,11 @@
 							href="https://dashboard.codenotary.io/auth/signup"
 							target="_blank"
 							rel="nofollow"
+							size="lg"
 						>
-							Cloud
+							Free Trial
 						</cn-button>
+<!--
 						<cn-button
 							variant="light"
 							size="lg"
@@ -39,6 +41,7 @@
 						>
 							Self-Hosted
 						</cn-button>
+-->
 					</p>
 				</i-column>
 				<i-column lg="1" />
