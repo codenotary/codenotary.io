@@ -30,7 +30,7 @@ export default {
 		},
 		size: {
 			type: String,
-			default: 'lg',
+			default: 'md',
 		},
 		target: {
 			type: String,
@@ -42,6 +42,7 @@ export default {
 			return {
 				'cn-button': true,
 				['cn-button_' + this.variant]: true,
+				['cn-button_' + this.size]: true,
 			};
 		},
 	},
@@ -69,6 +70,17 @@ a:active {
 	justify-content: center;
 	align-items: center;
 	transition: all 0.3s ease-out;
+
+	&_lg {
+		height: 54px;
+		font-size: 24px !important;
+		line-height: 24px !important;
+
+		@media screen and (max-width: $mobile-max-width) {
+			font-size: 18px !important;
+			line-height: 22px !important;
+		}
+	}
 
 	&_light {
 		background-color: $cn-color-light;
