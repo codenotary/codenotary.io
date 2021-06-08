@@ -105,9 +105,9 @@ contained, the parties hereby agree as follows:
 
     d.  access the Software in order to
 
-        i.  build a competitive product or service, or
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.  build a competitive product or service, or
 
-        ii. copy any features, functions, or graphics of the Software;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. copy any features, functions, or graphics of the Software;
 
     e.  enable or allow others to use the Software using the Licensee
         Information;
@@ -119,13 +119,13 @@ contained, the parties hereby agree as follows:
 
     g.  use the Software to share content or engage in behavior that:
 
-        i.  violates anyone's intellectual property right, including
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.  violates anyone's intellectual property right, including
             copyright, moral rights, trademark, trade dress, patent,
             trade secret, unfair competition, right of privacy, right
             of publicity, and any other proprietary rights
             ("Intellectual Property Rights") or
 
-        ii. is unlawful, harmful, threatening, abusive, tortious,
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. is unlawful, harmful, threatening, abusive, tortious,
             defamatory, libelous, vulgar, lewd, profane, invasive of
             another's privacy, or hateful; or
 
@@ -263,21 +263,21 @@ contained, the parties hereby agree as follows:
     support fees at the termination date will be refunded based on the
     unexpired portion of the annual term. Unless otherwise stated herein,
     CodeNotary may at any time terminate these terms if:
-    
-        i. Licensee breaches any provision of these terms (or acts in a
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i. Licensee breaches any provision of these terms (or acts in a
               manner that clearly shows it does not intend to, or is unable to,
               comply with these terms);
-    
-        ii. Licensee fails to make the timely payment of Fees for the
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii. Licensee fails to make the timely payment of Fees for the
               Software or the Support Fees, if any;
-    
-        iii. CodeNotary is required to do so by law (for example, where the
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. CodeNotary is required to do so by law (for example, where the
               provision of the support services or Software to Licensee is, or
               becomes, unlawful); or
-    
-        iv. CodeNotary elects to discontinue the support services or
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iv. CodeNotary elects to discontinue the support services or
               Software, in whole or in part.
-    
+
     c. **Survival**. Upon expiration or termination of these terms,
     any perpetual licenses Licensee has granted, Licensee's
     indemnification obligations, CodeNotary's warranty disclaimers or
