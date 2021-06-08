@@ -1,9 +1,10 @@
 ---
-title: "VMware vSphere — Why checking NUMA Configuration is so important!"
-image: /images/blog/1.png
-tags: ["Ops", "opvizor"]
-date: "2018-03-07"
+title: "VMware vSphere — a missing NUMA strategy can hit your VM performance by 70%!"
+image: /images/blog/numa-KPIs.png
+tags: ["NUMA", "metrics", "VMware", "performance"]
+date: "2021-06-07"
 ---
+
 ## What is NUMA
 
 Non-uniform memory access (NUMA) is a computer memory design used in multiprocessing, where the memory access time depends on the memory location relative to the processor. Under NUMA, a processor can access its own local memory faster than non-local memory (memory local to another processor or memory shared between processors). The benefits of NUMA are limited to particular workloads, notably on servers where the data is often associated strongly with certain tasks or users. 
@@ -15,6 +16,8 @@ Wikipedia — https://en.wikipedia.org/wiki/Non-uniform\_memory\_access
 The main take away is, that the cpu — memory access is always the fastest, when the cpu can access its local memory. NUMA Nodes are CPU/Memory couples. Typically, the CPU Socket and the closest memory banks built a NUMA Node. Whenever a CPU needs to access the memory of another NUMA node, it cannot access it directly but is required to access it through the CPU owning the memory.
 
 Remote node memory access is super-slow, not just 1 or 2% and the impact is not isolated to a single VM.
+
+#### [Sign up](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs) for CNIL Metrics and Logs to check your NUMA situationfor free!
 
 We've seen environments with hundred-thousands of NUMA migrations a day and dozens of TB remote memory usage. Oracle databases, SAP HANA, MS SQL, Microsoft Exchange, CAD applications and many more resource-intense applications were unbearable slow. When your server applications slow down, all of your clients suffer from the performance drop as well.
 
@@ -93,7 +96,7 @@ Metrics and Logs, collects all important NUMA metrics over a long period of time
 2) Remote Node usage (% and GByte)
 3) NUMA migrations
 4) Behaviour over time
-5) Coloring codes (warning, critical)
+5) Color codes (warning, critical)
 
 Check out [CNIL Metrics and Logs](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs). You can use the 30 day free trial to get started.
 
@@ -133,4 +136,3 @@ Just make sure to use a vCenter role for the Metrics and Logs  user that allows 
 [http://frankdenneman.nl/2016/08/22/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/](http://frankdenneman.nl/2016/08/22/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/)
 
 ### [Sign up](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs) for CNIL Metrics and Logs today and start 30 days for free!
-
