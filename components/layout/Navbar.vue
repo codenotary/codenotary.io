@@ -44,17 +44,17 @@
 					>
 						Products
 					</p>
-					<i-nav-item
+<!--					<i-nav-item
 						v-if="productsMenuOpen"
 						:to="{ name: 'products-immutable-ledger' }"
 					>
 						CNIL (Self-Hosted)
-					</i-nav-item>
+					</i-nav-item>-->
 					<i-nav-item
 						v-if="productsMenuOpen"
 						:to="{ name: 'products-ci-cd' }"
 					>
-						CNIL (Cloud)
+						CNIL Cloud
 					</i-nav-item>
 					<i-nav-item
 						v-if="productsMenuOpen"
