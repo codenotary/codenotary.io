@@ -7,7 +7,7 @@ This is still a work in progress, however the main goal of this repository is to
 
 The following instructions will allow you to run this test suite against a local instance
 
- 1. Create a .env file inside this directory and make sure the contents match or resemble this closely:
+1. Create a .env file inside this directory and make sure the contents match or resemble this closely:
 
 ```bash
 CURRENT_UID=0:0
@@ -15,7 +15,10 @@ SITE_URL=http://codenotary:8080/
 BROWSER=chrome
 SCREENSHOT_ON_FAIL=true
 BEHAVE_OPTS=""
+```
+
  2. Run the tests using the below commands
+
 ```bash
 docker-compose build
 docker-compose run integration-test
@@ -36,8 +39,6 @@ The currently supported browsers are:
 # Requirements
 
 * All you need to run the tests is docker and docker-compose
-
-*
 
 # Development
 
