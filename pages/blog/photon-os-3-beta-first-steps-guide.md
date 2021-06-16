@@ -36,7 +36,7 @@ You can find the latest OVF Template here and add the download link into the dep
 
 Finish the Deploy OVF template wizard and power on the Photon OS VM that will use a DHCP address for now.
 
-Before you start the new virtual machine, please make sure to configure the cpu and memory resources to match your requirements. Running container inside a virtual machine is very resource intense any you should keep an eye on the resource usage. Btw. you can always monitor the Photon OS as well as the docker container using Opvizor Performance Analyzer. Just start a free trial today.
+Before you start the new virtual machine, please make sure to configure the cpu and memory resources to match your requirements. Running container inside a virtual machine is very resource intense any you should keep an eye on the resource usage. Btw. you can always monitor the Photon OS as well as the docker container using CNIL Metrics and Logs. Just start a free trial today.
 
 # Set a manual ip address
 

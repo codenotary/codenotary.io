@@ -1,11 +1,11 @@
 ---
-title: "Opvizor Performance Analyzer for vSAN"
+title: "CNIL Metrics and Logs for vSAN"
 image: /images/blog/1-5.jpg
 tags: ["Ops", "opvizor"]
 date: "2018-07-19"
 ---
 
-# Opvizor Performance Analyzer for vSAN
+# CNIL Metrics and Logs for vSAN
 
 We are very proud to share some of our communities opinions about our Performance Analyzer. Please scroll down for [Duncan Epping's](http://twitter.com/duncanyb) blog post as well as [Brandon Lee's](https://www.virtualizationhowto.com/) blog post and their opinion about Performance Analyzer and vSAN.
 
@@ -17,7 +17,7 @@ We also wanted to thank Duncan and Brandon for these interesting articles and th
 
 At a VMUG a couple of months ago I bumped into my old friend Dennis Zimmer. Dennis told me that he was working on something cool for vSAN but couldn’t reveal what it was just yet. Last week I had a call with Dennis about what that thing was. Dennis is the CEO for [Opvizor](https://www.opvizor.com/), and some of you may recall the different tooling that Opvizor has produced over the years, of which the Health Analyzer was probably the most famous one back then. I’ve used it in the past on various occasions and I had various customers using it. During the briefing, Dennis explained to me that Opvizor started focussing on performance monitoring and analytics a while ago as the health analyzer market was overly crowded and had the issue that is was a one-off business (checks once in a while instead of daily use). On top of that, many products now come with some form of health analysis included. (See vSAN for instance.) I have to agree with Dennis, so this pivot towards Performance Monitoring makes much sense to me.
 
-Dennis explained to me how they are seeing more and more customer demand for vSAN performance monitoring especially combined with VMware ESXi, VM and App data. Although vCenter has various metrics, and there’s VROps, he told me that Opvizor has many customers who need more than vCenter or vROPS standard has to offer today and don’t own VROps advanced. This is where Opvizor Performance Analyzer comes in to play and that is why [today Opvizor announced they are including vSAN specific dashboards](https://www.opvizor.com/new-vmware-vsan-monitoring-and-performance-troubleshooting-extension). Now, this isn’t just for vSAN of course. Opvizor Performance Analyzer includes not just vSAN but also vSphere and various other parts of the stack. When talking with Dennis one thing became clear, Opvizor is taking a different approach than most other solutions. Where most focus on simplifying, hiding, and aggregating, the focus for Opvizor is on providing as much relevant detail as possible to fulfill the needs of beginner and professional.
+Dennis explained to me how they are seeing more and more customer demand for vSAN performance monitoring especially combined with VMware ESXi, VM and App data. Although vCenter has various metrics, and there’s VROps, he told me that Opvizor has many customers who need more than vCenter or vROPS standard has to offer today and don’t own VROps advanced. This is where CNIL Metrics and Logs comes in to play and that is why [today Opvizor announced they are including vSAN specific dashboards](https://www.opvizor.com/new-vmware-vsan-monitoring-and-performance-troubleshooting-extension). Now, this isn’t just for vSAN of course. CNIL Metrics and Logs includes not just vSAN but also vSphere and various other parts of the stack. When talking with Dennis one thing became clear, Opvizor is taking a different approach than most other solutions. Where most focus on simplifying, hiding, and aggregating, the focus for Opvizor is on providing as much relevant detail as possible to fulfill the needs of beginner and professional.
 
 So how does it work? Opvizor provides a virtual appliance. You simply deploy it in your environment and connect it to vCenter and you are ready to go. The appliance collects data every 5 minutes (but 20 seconds intervals of these 5 minutes) and has a retention of up to 5 years. As I said, the focus is on infrastructure statistics and performance analytics and as such Opvizor delivers all the data you ever need.
 
@@ -32,7 +32,7 @@ It doesn’t just provide you with all the info you will ever need. It will also
 - Cache Diskgroup stats
 - vSAN Monitor
 
-Now I said this is the expert´s troubleshooting tool, but Opvizor Performance Analyzer also provided in-depth information about what each metric is / means and provides starter dashboards for beginners. You can simply click on the “i” in the top left corner of the widget and you get all the info about that particular widget.
+Now I said this is the expert´s troubleshooting tool, but CNIL Metrics and Logs also provided in-depth information about what each metric is / means and provides starter dashboards for beginners. You can simply click on the “i” in the top left corner of the widget and you get all the info about that particular widget.
 
 ![vSAN with Performance Analyzer](/images/blog/2-4.jpg)
 
@@ -109,7 +109,7 @@ The VMware vSAN 6.7 monitor screen shows all the pertinent vSAN information for 
 
 ### Takeaways
 
-Opvizor Performance Analyzer is one of the easiest and most powerful performance analysis tools that you will find on the market today.  It is one of those tools that from deployment to real value is literally minutes.  With the starter dashboards and the built in dashboards already available, you already have a powerful analysis of any [VMware vSphere](https://www.virtualizationhowto.com/2018/07/vmware-vsphere-6-7-new-performance-improvements/) environment readily available.  The new VMware vSAN 6.7 compatible dashboards are a great way to identify problems with any vSAN environment, including [VMware vSAN 6.7](https://www.virtualizationhowto.com/2018/04/configuring-vmware-esxi-6-7-quick-boot-and-html5-vsphere-update-manager-vum/).  You can see just about any statistic you want to see in the components and architecture behind vSAN running on any host.  Be sure to check out Opvizor Performance Analyzer as they offer a free 30-day trial to try out the product.  You can [download it here](https://www.opvizor.com/).
+CNIL Metrics and Logs is one of the easiest and most powerful performance analysis tools that you will find on the market today.  It is one of those tools that from deployment to real value is literally minutes.  With the starter dashboards and the built in dashboards already available, you already have a powerful analysis of any [VMware vSphere](https://www.virtualizationhowto.com/2018/07/vmware-vsphere-6-7-new-performance-improvements/) environment readily available.  The new VMware vSAN 6.7 compatible dashboards are a great way to identify problems with any vSAN environment, including [VMware vSAN 6.7](https://www.virtualizationhowto.com/2018/04/configuring-vmware-esxi-6-7-quick-boot-and-html5-vsphere-update-manager-vum/).  You can see just about any statistic you want to see in the components and architecture behind vSAN running on any host.  Be sure to check out CNIL Metrics and Logs as they offer a free 30-day trial to try out the product.  You can [download it here](https://www.opvizor.com/).
 
 ### A big thank you Brandon! Great blog post and screenshots! 
 

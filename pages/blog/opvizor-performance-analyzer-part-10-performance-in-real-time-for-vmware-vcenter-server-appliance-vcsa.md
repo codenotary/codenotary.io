@@ -1,5 +1,5 @@
 ---
-title: "Opvizor Performance Analyzer: Part 10 – Performance in real time for VMware vCenter Server Appliance (vCSA)"
+title: "CNIL Metrics and Logs: Part 10 – Performance in real time for VMware vCenter Server Appliance (vCSA)"
 image: /images/blog/vcsa-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-10-04"

@@ -88,4 +88,4 @@ Don't miss to run Performance Analyzer in your own environment if you haven't do
 
 <iframe src="https://player.vimeo.com/video/221810085" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen="" allowfullscreen=""></iframe>
 
-[Opvizor Performance Analyzer - Use Playlists to optimize your daily routine](https://vimeo.com/221810085) from [opvizor](https://vimeo.com/opvizor) on [Vimeo](https://vimeo.com).
+[CNIL Metrics and Logs - Use Playlists to optimize your daily routine](https://vimeo.com/221810085) from [opvizor](https://vimeo.com/opvizor) on [Vimeo](https://vimeo.com).

@@ -48,11 +48,11 @@ When there is no misconfiguration at all, you can find yourself in a 10% or more
 
 ## The ugly...
 
-Ready values of **10% or more** per vCPU should already be seen as an error and the performance situation can get really nasty. Very high Ready times for the vCPU can even trigger application errors and crashes. Again, very hard to find when just looking inside of the VM guest. It's very important to watch the outside VMkernel metrics either using ESXtop or tools like Opvizor Performance Analyzer.
+Ready values of **10% or more** per vCPU should already be seen as an error and the performance situation can get really nasty. Very high Ready times for the vCPU can even trigger application errors and crashes. Again, very hard to find when just looking inside of the VM guest. It's very important to watch the outside VMkernel metrics either using ESXtop or tools like CNIL Metrics and Logs.
 
 \[optin title="Get more informations like that post!" text="VMware Hints and more" buttontext="Sign Up for news" successMessage="Message has been submitted successfully." errorMessage="Failed to send your message. Please try later." invalidEmailMessage="Your email address does not appear valid." border="false" collectfirstname="false" collectlastname="false" collectphone="false" collectcompany="false"\]
 
-## Surveilling and fixing VM CPU ready using Opvizor Performance Analyzer
+## Surveilling and fixing VM CPU ready using CNIL Metrics and Logs
 
 # 
 

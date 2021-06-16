@@ -29,7 +29,7 @@ The founders realized that existing blockchains are too expensive (on a per tran
 
 The Zero Trust Consortium serves as the host and center of administrative and user support for the Zero Trust Permissioned Blockchain environment. This includes the open-source software developed as part of the Zero Trust project and, when appropriate and feasible, software developed by (1) additional follow-on research and development projects, and (2) members of the Zero Trust user community.
 
-Opvizor Performance Analyzer has been chosen to monitor blockchain performance and other vital metrics for the ZTC. 
+CNIL Metrics and Logs has been chosen to monitor blockchain performance and other vital metrics for the ZTC. 
 
 [![ZTC](/images/blog/ztc-2.png)](https://www.zerotrustconsortium.org)
 

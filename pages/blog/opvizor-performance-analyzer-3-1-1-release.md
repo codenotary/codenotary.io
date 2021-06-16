@@ -1,11 +1,11 @@
 ---
-title: "Opvizor Performance Analyzer 3.1.1 - Release"
+title: "CNIL Metrics and Logs 3.1.1 - Release"
 image: /images/blog/vmsnapshot_img.png
 tags: ["Ops", "opvizor"]
 date: "2016-08-16"
 ---
 
-# Opvizor Performance Analyzer 3.1.1 - New Release
+# CNIL Metrics and Logs 3.1.1 - New Release
 
 ## Many New Features, including: HTML and PDF Reports for Cluster Capacity Management
 

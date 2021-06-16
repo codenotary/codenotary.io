@@ -1,23 +1,23 @@
 ---
-title: "Opvizor Performance Analyzer VMware Performance Monitoring"
+title: "CNIL Metrics and Logs VMware Performance Monitoring"
 image: /images/blog/1-2.png
 tags: ["Ops", "opvizor"]
 date: "2018-01-02"
 ---
 
-We are very pleased to share [Brandon Lee's](http://twitter.com/vspinmaster) blog post about Opvizor Performance Analyzer. Please find Brandon's article [here](https://www.virtualizationhowto.com/2017/12/opvizor-performance-analyzer-vmware-performance-monitoring/) and many other very helpful tips and information from Brandon on [https://www.virtualizationhowto.com/](https://www.virtualizationhowto.com/).
+We are very pleased to share [Brandon Lee's](http://twitter.com/vspinmaster) blog post about CNIL Metrics and Logs. Please find Brandon's article [here](https://www.virtualizationhowto.com/2017/12/opvizor-performance-analyzer-vmware-performance-monitoring/) and many other very helpful tips and information from Brandon on [https://www.virtualizationhowto.com/](https://www.virtualizationhowto.com/).
 
 Here is Brandon's blog post.
 
-Monitoring your vSphere environment at the cluster, host, or virtual machine level is key in understanding where performance bottlenecks may exist and why production workloads may not be performing adequately. In addition, monitoring certain vSphere metrics can also help to identify hotspots in the environment before potential performance bottlenecks present themselves. We have covered various tools and utilities that can be used to monitor and troubleshoot performance in a vSphere environment. Today we take a closer look at one of those tools – Opvizor Performance Analyzer. It is an impressive tool to be able to quickly have all the important information at your fingertips. Opvizor comes with a wide range of prebuilt dashboards that display much of the information that vSphere administrators want to see. However, you have the ability as well to create additional dashboards. In this post we will take a look at Opvizor Performance Analyzer VMware Performance Monitoring.
+Monitoring your vSphere environment at the cluster, host, or virtual machine level is key in understanding where performance bottlenecks may exist and why production workloads may not be performing adequately. In addition, monitoring certain vSphere metrics can also help to identify hotspots in the environment before potential performance bottlenecks present themselves. We have covered various tools and utilities that can be used to monitor and troubleshoot performance in a vSphere environment. Today we take a closer look at one of those tools – CNIL Metrics and Logs. It is an impressive tool to be able to quickly have all the important information at your fingertips. Opvizor comes with a wide range of prebuilt dashboards that display much of the information that vSphere administrators want to see. However, you have the ability as well to create additional dashboards. In this post we will take a look at CNIL Metrics and Logs VMware Performance Monitoring.
 
-## Opvizor Performance Analyzer VMware Performance Monitoring
+## CNIL Metrics and Logs VMware Performance Monitoring
 
-Opvizor Performance Analyzer is a great product that allows vSphere administrators to quickly get up and running with intelligent VMware Performance Monitoring of important metrics in the vSphere environment. The thing I really like about Opvizor is the prebuilt dashboards.  Other vSphere performance monitors and analyzers may include a good number of performance monitoring capabilities, however, by default, YOU have to build all the alerts, dashboards, etc.  It is great that right out of the box, this is a powerful preconfigured analyzer and tool for monitoring performance and capacity.  The result is that from the first boot of the appliance, it is a value add to any vSphere environment.  Additionally, it is built on top of [Grafana](https://grafana.com/) so the dashboards are beautiful.
+CNIL Metrics and Logs is a great product that allows vSphere administrators to quickly get up and running with intelligent VMware Performance Monitoring of important metrics in the vSphere environment. The thing I really like about Opvizor is the prebuilt dashboards.  Other vSphere performance monitors and analyzers may include a good number of performance monitoring capabilities, however, by default, YOU have to build all the alerts, dashboards, etc.  It is great that right out of the box, this is a powerful preconfigured analyzer and tool for monitoring performance and capacity.  The result is that from the first boot of the appliance, it is a value add to any vSphere environment.  Additionally, it is built on top of [Grafana](https://grafana.com/) so the dashboards are beautiful.
 
-Performance Analyzer is deployed via a [small OVF appliance](https://www.virtualizationhowto.com/2017/09/reinstall-vmware-tools-vmware-vcsa-appliance/).  We won’t highlight the deployment process as it is a standard OVA/OVF deploy with no surprises.  For the purposes of this post, we are using the **Opvizor Performance Analyzer 4.6** appliance.
+Performance Analyzer is deployed via a [small OVF appliance](https://www.virtualizationhowto.com/2017/09/reinstall-vmware-tools-vmware-vcsa-appliance/).  We won’t highlight the deployment process as it is a standard OVA/OVF deploy with no surprises.  For the purposes of this post, we are using the **CNIL Metrics and Logs 4.6** appliance.
 
-Features of Opvizor Performance Analyzer include:
+Features of CNIL Metrics and Logs include:
 
 - Easy OVF appliance deployment
 - Prebuilt Dashboards highlighting performance and capacity views
@@ -108,7 +108,7 @@ _Opvizor VMware Performance Monitoring reports_
 
 ## Thoughts
 
-**Opvizor Performance Analyzer** is one of the best monitoring tools you can spin up and quickly get valuable metrics from your vSphere environment.  With Opvizor Performance Analyzer VMware Performance Monitoring, the prebuilt dashboards provide valuable information, displayed intelligently and beautifully in such a way that is extremely intuitive.  Opvizor is a pay for product, but does have a **30 day demo appliance**[](http://try.opvizor.com/opvizor-perfanalyzer-product-page/) you can spin up and take for a test drive.  Additionally, there is an online demo environment you can log into and explore without provisioning your own appliance.  I give Opvizor Performance Analyzer two thumbs up!  Great product, easy to use, and quickly adds value.
+**CNIL Metrics and Logs** is one of the best monitoring tools you can spin up and quickly get valuable metrics from your vSphere environment.  With CNIL Metrics and Logs VMware Performance Monitoring, the prebuilt dashboards provide valuable information, displayed intelligently and beautifully in such a way that is extremely intuitive.  Opvizor is a pay for product, but does have a **30 day demo appliance**[](http://try.opvizor.com/opvizor-perfanalyzer-product-page/) you can spin up and take for a test drive.  Additionally, there is an online demo environment you can log into and explore without provisioning your own appliance.  I give CNIL Metrics and Logs two thumbs up!  Great product, easy to use, and quickly adds value.
 
 **THANK YOU** so much Brandon for your great [blog post](https://www.virtualizationhowto.com/2017/12/opvizor-performance-analyzer-vmware-performance-monitoring/). We really appreciate your opinion and feedback!
 

@@ -9,7 +9,7 @@ date: "2017-07-18"
 
 [Here](http://weblogic.sys-con.com/node/4015525) is the link to Greg's article, please scroll down for more information and some dashboards for a quick overview about our solution.
 
-Thanks [Greg](http://twitter.com/sysconmedia) for your article and also mentioning Opvizor Performance Analyzer - to monitor all important KPIs of your environment, start your 30 day trial today!
+Thanks [Greg](http://twitter.com/sysconmedia) for your article and also mentioning CNIL Metrics and Logs - to monitor all important KPIs of your environment, start your 30 day trial today!
 
 [![Download Performance Analyzer](/images/blog/button_download-performance-analyzer-6.png)](http://try.opvizor.com/perfanalyzer)
 

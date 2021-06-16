@@ -61,7 +61,7 @@ There is also a great new article from one of my investors and famous Moshe Bar,
 
 <iframe src="https://player.vimeo.com/video/165686351" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen="" allowfullscreen=""></iframe>
 
-[Opvizor Performance Analyzer - VMware VM performance](https://vimeo.com/165686351) from [opvizor](https://vimeo.com/opvizor) on [Vimeo](https://vimeo.com).
+[CNIL Metrics and Logs - VMware VM performance](https://vimeo.com/165686351) from [opvizor](https://vimeo.com/opvizor) on [Vimeo](https://vimeo.com).
 
 Check out our [Performance Analyzer](http://try.opvizor.com/perfanalyzer/) - just contact us for Docker integration
 

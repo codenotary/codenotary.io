@@ -1,5 +1,5 @@
 ---
-title: "Opvizor Performance Analyzer: Part 19 – Performance in real time for Dell EMC Isilon"
+title: "CNIL Metrics and Logs: Part 19 – Performance in real time for Dell EMC Isilon"
 image: /images/blog/1.png
 tags: ["Ops", "opvizor"]
 date: "2016-11-22"

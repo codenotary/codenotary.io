@@ -1,5 +1,5 @@
 ---
-title: "Opvizor Performance Analyzer: Part 13 – Performance in real time for Apache HTTP Server"
+title: "CNIL Metrics and Logs: Part 13 – Performance in real time for Apache HTTP Server"
 image: /images/blog/1-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-10-13"

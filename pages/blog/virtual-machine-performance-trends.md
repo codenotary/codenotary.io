@@ -62,7 +62,7 @@ Virtual Machine Compute Optimizer Report:
 
 Definitely create one of these before your start optimizing as, it helps you to keep track.
 
-One of the many benefits of using Opvizor Performance Analyzer is, that it can store common configuration and performance data for months or even years, so the benchmark is built-in by selecting the past time range. **Btw. we're working hard on a new feature to compare VM performance before and after certain changes.**
+One of the many benefits of using CNIL Metrics and Logs is, that it can store common configuration and performance data for months or even years, so the benchmark is built-in by selecting the past time range. **Btw. we're working hard on a new feature to compare VM performance before and after certain changes.**
 
 ![](/images/blog/benchmark-1024x733.png)
 

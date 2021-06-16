@@ -1,5 +1,5 @@
 ---
-title: "New release - Opvizor Performance Analyzer 4.4"
+title: "New release - CNIL Metrics and Logs 4.4"
 image: /images/blog/pa4.4_admin.png
 tags: ["Ops", "opvizor"]
 date: "2017-09-13"

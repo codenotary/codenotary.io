@@ -1,5 +1,5 @@
 ---
-title: "Opvizor Performance Analyzer: Part 3 - Performance in real time for DataCore SAN Symphony"
+title: "CNIL Metrics and Logs: Part 3 - Performance in real time for DataCore SAN Symphony"
 image: /images/blog/1-1.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-08"

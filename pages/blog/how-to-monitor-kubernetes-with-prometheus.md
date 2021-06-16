@@ -134,7 +134,7 @@ You can monitor internal components in the same way you monitor any other Promet
 
 This tutorial explains how to collect and monitor metrics with Prometheus on Kubernetes. Monitoring enables you to achieve more transparency and get insight on your Kubernetes application. In addition, monitoring ensures the health, performance, and behavior of your system. Proactive monitoring should be an integral part of your application development process.
 
-Products like Opvizor Performance Analyzer provide all these monitoring capabilities out of the box. If you run Kubernetes on top of VMware vSphere, you get a 360 degree view. And stay tuned for the pure Kubernetes edition.
+Products like CNIL Metrics and Logs provide all these monitoring capabilities out of the box. If you run Kubernetes on top of VMware vSphere, you get a 360 degree view. And stay tuned for the pure Kubernetes edition.
 
 \--------------------
 

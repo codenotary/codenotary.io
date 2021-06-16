@@ -1,11 +1,11 @@
 ---
-title: "Opvizor Performance Analyzer: Part 2 - Performance troubleshooting for VMware vSphere"
+title: "CNIL Metrics and Logs: Part 2 - Performance troubleshooting for VMware vSphere"
 image: /images/blog/1.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-06"
 ---
 
-# Opvizor Performance Analyzer: Part 2 - Performance troubleshooting for VMware vSphere
+# CNIL Metrics and Logs: Part 2 - Performance troubleshooting for VMware vSphere
 
 There is a white paper available from VMware regarding best practices for vSphere, you can find the compete pdf-File here:
 

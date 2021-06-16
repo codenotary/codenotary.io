@@ -1,5 +1,5 @@
 ---
-title: "Release - Opvizor Performance Analyzer version 4.8"
+title: "Release - CNIL Metrics and Logs version 4.8"
 image: /images/blog/paads.png
 tags: ["Ops", "opvizor"]
 date: "2018-03-01"

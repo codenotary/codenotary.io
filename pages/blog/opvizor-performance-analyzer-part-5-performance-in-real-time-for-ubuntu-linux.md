@@ -1,5 +1,5 @@
 ---
-title: "Opvizor Performance Analyzer: Part 5 - Performance in real time for Ubuntu Linux"
+title: "CNIL Metrics and Logs: Part 5 - Performance in real time for Ubuntu Linux"
 image: /images/blog/1-3.png
 tags: ["Ops", "opvizor"]
 date: "2016-09-15"

@@ -1,5 +1,5 @@
 ---
-title: "Opvizor Performance Analyzer: Part 17 – Performance in real time for Microsoft SQL Server"
+title: "CNIL Metrics and Logs: Part 17 – Performance in real time for Microsoft SQL Server"
 image: /images/blog/1-5.png
 tags: ["Ops", "opvizor"]
 date: "2016-11-02"

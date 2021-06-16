@@ -1,11 +1,11 @@
 ---
-title: "Opvizor Performance Analyzer 3.0 Provides Real-Time Performance Analysis for virtual data center"
+title: "CNIL Metrics and Logs 3.0 Provides Real-Time Performance Analysis for virtual data center"
 image: /images/blog/vm_perfanalyzer.png
 tags: ["Ops", "opvizor"]
 date: "2016-06-09"
 ---
 
-Today we announced a significant new release, opvizor Performance Analyzer 3.0 of their virtual Datacenter product portfolio. The latest release provides a flexible dashboard engine including dozens of different focused dashboards that enables full-stack performance analysis for the virtual data center.
+Today we announced a significant new release, CNIL Metrics and Logs 3.0 of their virtual Datacenter product portfolio. The latest release provides a flexible dashboard engine including dozens of different focused dashboards that enables full-stack performance analysis for the virtual data center.
 
 "Our customers often request the addition of real-time performance and statistics to Health Analyzer. But Health Analyzer was designed for predictive analytics and deep health checking, not real-time business.  Therefore, we´re proud to release our Performance Analyzer 3.0 that supports real time performance analysis through the full stack, from NetApp filer or Datacore Storage System to VMware vSphere or Microsoft Hyper-V and Docker or Microsoft SQL.  This is all done using a highly flexible Dashboard Engine" said Dennis Zimmer, CEO - opvizor.
 
@@ -17,7 +17,7 @@ Administrators often have to employ a variety of products to view and gather key
 
 The updated solution provides insights and value at each level of the stack simultaneously:  at the performance level, anomalies can be detected, at the log level, failures can be prevented and at the configuration level, the foundation can be optimized.  The transparency at each level empowers the user and keeps the virtual environment running smoothly.
 
-Opvizor Performance Analyzer 3.0 is revolutionary and unique in its ability to enable users to see performance metrics and statistics about the full virtual datacenter stack in one dashboard.
+CNIL Metrics and Logs 3.0 is revolutionary and unique in its ability to enable users to see performance metrics and statistics about the full virtual datacenter stack in one dashboard.
 
 ![Microsoft Hyper-V performance](/images/blog/hyperv.png)
 

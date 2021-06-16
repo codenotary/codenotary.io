@@ -23,7 +23,7 @@ Linux brings the power of Open Source software and tools to the S/390 mainframe.
 
 # The IBM S/390 architecture
 
-To be honest, the different architecture was the only real challenge for us, as we knew ones the data collectors are up and running, we can display everything in a beautiful and helpful dashboard. Our ultimate goal was to automate the collection of Linux for S/390 performance metrics in a central time series database to be visualized in Performance Analyzer. All required components are part of the Opvizor Performance Analyzer virtual appliance - so no worries.
+To be honest, the different architecture was the only real challenge for us, as we knew ones the data collectors are up and running, we can display everything in a beautiful and helpful dashboard. Our ultimate goal was to automate the collection of Linux for S/390 performance metrics in a central time series database to be visualized in Performance Analyzer. All required components are part of the CNIL Metrics and Logs virtual appliance - so no worries.
 
 The only missing part was the data collector to run on IBM S/390 architecture.
 
@@ -61,7 +61,7 @@ That´s it - image is ready to be tested or used.
 
 ## Telegraf configuration and first container start
 
-Before starting the container, please make sure that you changed the config/telegraf.conf file according to your needs. Opvizor Performance Analyzer customers can always start with our existing linux template files:
+Before starting the container, please make sure that you changed the config/telegraf.conf file according to your needs. CNIL Metrics and Logs customers can always start with our existing linux template files:
 
 ![Performance Analyzer Linux telegraf.conf](/images/blog/linuxconfig.png)
 
@@ -138,7 +138,7 @@ Here comes the docker run command including some further information:
 
  **opvizor/s390alpine-telegraf:latest # container image**
 
-Linux information Dashboard on Opvizor Performance Analyzer
+Linux information Dashboard on CNIL Metrics and Logs
 
 ![Linux for S/390 performance](/images/blog/s390-system1.png)
 

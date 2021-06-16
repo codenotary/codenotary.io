@@ -1,5 +1,5 @@
 ---
-title: "Opvizor Performance Analyzer - Cisco UCS Performance"
+title: "CNIL Metrics and Logs - Cisco UCS Performance"
 image: /images/blog/admin_infra.png
 tags: ["Ops", "opvizor"]
 date: "2018-05-22"
