@@ -93,3 +93,7 @@ sw.*
 blog.json
 careers.json
 tos.json
+# Python cache and other files
+__pycache__/
+*.py[cod]
+*$py.class
