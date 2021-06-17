@@ -8,7 +8,7 @@ import requests
 def before_all(context):
     if not context.config.log_capture:
         logging.basicConfig(level=logging.DEBUG)
-    download_dir = os.environ.get('DOWNLOAD_DIR') if 'DOWNLOAD_DIR' in os.environ else '/work'
+    download_dir = os.environ.get('DOWNLOAD_DIR', "/work")
     logging.info("Found all environment variables, attaching to selenium-hub")
     options = webdriver.ChromeOptions()
     options.add_argument("--disable-gpu")
@@ -19,10 +19,7 @@ def before_all(context):
     capabilities = options.to_capabilities()
     capabilities['acceptSslCerts'] = True
     capabilities['acceptInsecureCerts'] = True
-    try:
-        selenium_hub = os.environ.get('SELENIUM_HUB')
-    except:
-        selenium_hub = 'http://selenium-hub:4444/wd/hub'
+    selenium_hub = os.environ.get('SELENIUM_HUB', 'http://selenium-hub:4444/wd/hub')
     context.browser = webdriver.Remote(selenium_hub, desired_capabilities=capabilities)
     context.browser.implicitly_wait(10)
     context.driver = context.browser
