@@ -18,7 +18,7 @@ services:
       - BEHAVE_OPTS=${BEHAVE_OPTS}
       - SITE_URL=${SITE_URL} 
       - SELENIUM_HUB=${SELENIUM_HUB}
-    command: bash -c "cd /tests && SITE_URL=${SITE_URL} behave --junit --no-capture ${BEHAVE_OPTS}"
+    command: bash -c "sleep 20 && cul ${SELENIUM_HUB}/status && cd /tests && SITE_URL=${SITE_URL} behave --junit --no-capture ${BEHAVE_OPTS}"
   codenotary:
     build:
       context: ../
