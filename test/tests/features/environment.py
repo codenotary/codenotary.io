@@ -19,7 +19,11 @@ def before_all(context):
     capabilities = options.to_capabilities()
     capabilities['acceptSslCerts'] = True
     capabilities['acceptInsecureCerts'] = True
-    context.browser = webdriver.Remote('http://selenium-hub:4444/wd/hub', desired_capabilities=capabilities)
+    try:
+        selenium_hub = os.environ.get('SELENIUM_HUB')
+    except:
+        selenium_hub = 'http://selenium-hub:4444/wd/hub'
+    context.browser = webdriver.Remote(selenium_hub, desired_capabilities=capabilities)
     context.browser.implicitly_wait(10)
     context.driver = context.browser
 
