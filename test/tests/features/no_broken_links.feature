@@ -11,9 +11,9 @@ Feature: No broken links in main page
 
     Examples: Site URL's
     |url|
-    |"http://codenotary:8080/products/ci-cd"|
-    |"http://codenotary:8080/products/ledger-compliance"|
-    |"http://codenotary:8080/products/ledger-compliance-metrics-and-logs"|
-    |"http://codenotary:8080/products/technologies/immudb"|
-    |"http://codenotary:8080/blog"|
-    |"http://codenotary:8080/contact"|
+    |"/products/ci-cd"|
+    |"/ledger-compliance"|
+    |"/products/ledger-compliance-metrics-and-logs"|
+    |"/products/technologies/immudb"|
+    |"/blog"|
+    |"/contact"|

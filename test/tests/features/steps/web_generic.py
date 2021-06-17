@@ -27,7 +27,10 @@ def step_impl(context):
 
 @given('I open the url "{url}"')
 def step_impl(context, url):
-    context.browser.get(url)
+    if not 'http' in url:
+        context.browser.get(BasePage.URL+url)
+    else:
+        context.browser.get(url)
 
 
 @given('I click on link to "{url}"')
