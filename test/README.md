@@ -2,6 +2,7 @@
 # Codenotary's site E2E Testing project
 
 This is still a work in progress, however the main goal of this repository is to be able to run integration tests for codenotary.com builds to avoid breaking the site
+Note: this directory includes the necessary files to lint the project using vale
 
 # Running
 

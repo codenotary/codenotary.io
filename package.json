@@ -16,7 +16,9 @@
     "lint:all": "npm run lint:js && npm run lint:style",
     "lint:all:fix": "npm run lint:js:fix && npm run lint:style:fix",
     "test": "jest",
-    "scripts": "./scripts/update_blog_files.sh && ./scripts/update_careers_files.sh && ./scripts/update_tos_files.sh && ./scripts/update_blog_images.sh"
+    "scripts": "./scripts/update_blog_files.sh && ./scripts/update_careers_files.sh && ./scripts/update_tos_files.sh && ./scripts/update_blog_images.sh",
+    "vale": "./scripts/vale_lint.sh",
+    "vale:docker": "./scripts/vale_lint.sh --docker"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
