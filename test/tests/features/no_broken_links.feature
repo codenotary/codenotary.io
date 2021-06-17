@@ -5,7 +5,7 @@ Feature: No broken links in main page
 
   @wip
   Scenario Outline: Scenario Outline name: No broken links codenotary website
-    Given I open the url <url>
+    Given I am in the main page
     When I click on all links
     Then all clicked links should work
 
