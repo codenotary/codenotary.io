@@ -4,7 +4,7 @@ export default {
 		title1: 'Protect',
 		title2: 'your software development pipeline',
 		title3: 'from supply chain attacks',
-		subtitle: 'Add trust, integrity, and transparency for all identities and artifacts to your CI/CD pipelines in a heartbeat.',
+		subtitle: 'Trust, integrity, and an auditable bill of material for all identities and artifacts of your software supply chain.',
 	},
 	heroCardsSection: {
 		cards: [
