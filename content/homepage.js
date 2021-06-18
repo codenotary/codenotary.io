@@ -41,7 +41,7 @@ export default {
 	},
 	whatWeDoSection: {
 		title: 'WHAT WE DO',
-		subtitle: 'We bring trust and integrity into the software life cycle by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.',
+		subtitle: 'We bring trust and integrity into the software supply chain by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.',
 		cards: [
 			{
 				title: 'Security',
