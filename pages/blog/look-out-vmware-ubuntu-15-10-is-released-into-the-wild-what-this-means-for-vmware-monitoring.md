@@ -1,7 +1,7 @@
 ---
 title: "Look Out, VMware: Ubuntu 15.10 is Released Into the Wild & What This Means for VMware Monitoring"
 image: /images/blog/bigstock-Hand-working-with-a-Cloud-Comp-88987550.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-02-11"
 ---
 

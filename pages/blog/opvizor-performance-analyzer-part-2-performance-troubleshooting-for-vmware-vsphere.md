@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs: Part 2 - Performance troubleshooting for VMware vSphere"
 image: /images/blog/1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-06"
 ---
 

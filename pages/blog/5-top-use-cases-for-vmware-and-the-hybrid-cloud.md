@@ -1,7 +1,7 @@
 ---
 title: "5 Top Use Cases for VMware and the Hybrid Cloud"
 image: /images/blog/bigstock-IT-consultant-replaces-SAN-har-86898866.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-03-03"
 ---
 

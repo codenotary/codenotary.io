@@ -1,7 +1,7 @@
 ---
 title: "DABCC Radio - VMware Management and Optimization Podcast with Dennis Zimmer"
 image: /images/blog/DABCC-RADIO-200x200.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-24"
 ---
 

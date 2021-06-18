@@ -1,7 +1,7 @@
 ---
 title: "David Davis, vExpert, video trainer and famous blogger reviewed Snapwatcher"
 image: /images/blog/wpid-6f6a837a4509b60dbb7df3f3fff63bae.jpeg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-17"
 ---
 

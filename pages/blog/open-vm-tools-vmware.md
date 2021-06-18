@@ -1,11 +1,11 @@
 ---
 title: "Open-VM-Tools For VMware"
 image: /images/blog/digital-marketing.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-07-26"
 ---
 
-  
+
 
 Digital business has completely revolutionized the way business is done in today’s day and age. It has created a very strong impact on how we buy, sell and work. It also plays a major role in the alteration of the society, by changing their perception towards accepting the digital technologies. This is a basic introduction of about what digital technology stands for.
 

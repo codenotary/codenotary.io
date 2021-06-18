@@ -1,7 +1,7 @@
 ---
 title: "Why opvizor Is The Best VMware Performance Tool"
 image: /images/blog/foundation_performance-1024x570.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-04"
 ---
 

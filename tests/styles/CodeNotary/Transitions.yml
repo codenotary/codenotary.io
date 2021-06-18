@@ -1,0 +1,10 @@
+extends: existence
+message: "'%s' has transitioned, please use the new preferred wording."
+ignorecase: true
+level: error
+tokens:
+  - cnlc
+  - ledger compliance
+  - log compliance
+  - performance analyzer
+  - opvizor

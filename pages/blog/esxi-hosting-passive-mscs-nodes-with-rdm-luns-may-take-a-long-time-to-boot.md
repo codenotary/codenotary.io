@@ -1,6 +1,6 @@
 ---
 title: "ESXi Hosting Passive MSCS Nodes With RDM LUNs May Take A Long Time To Boot"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-20"
 ---
 

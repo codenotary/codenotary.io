@@ -1,7 +1,7 @@
 ---
 title: "Linux for S/390 performance monitoring using Opvizor"
 image: /images/blog/s390-system1sm.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-01-22"
 ---
 

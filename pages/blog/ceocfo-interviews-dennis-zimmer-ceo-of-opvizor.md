@@ -1,7 +1,7 @@
 ---
 title: "CEOCFO Interviews Dennis Zimmer, CEO of opvizor"
 image: /images/blog/CEOCFO14.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-06"
 ---
 

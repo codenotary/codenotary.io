@@ -1,7 +1,7 @@
 ---
 title: "So .... Containers are the Future ... or Not?"
 image: /images/blog/wpid-bigstock-Whale-tale-73547695.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-11-03"
 ---
 

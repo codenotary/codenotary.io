@@ -1,7 +1,7 @@
 ---
 title: "opvizor VMware VM Application optimizer"
 image: /images/blog/application-optimizer-button.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-31"
 ---
 

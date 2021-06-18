@@ -1,7 +1,7 @@
 ---
 title: "And the Crystal Ball Says ... 4 VMware Predictions for 2016"
 image: /images/blog/wpid-bigstock-technology-business-mass-med-101964896.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-11-12"
 ---
 

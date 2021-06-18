@@ -1,7 +1,7 @@
 ---
 title: "New VMware Security Advisory VMSA-2017-0007"
 image: /images/blog/vmworld.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-05-31"
 ---
 

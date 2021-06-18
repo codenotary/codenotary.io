@@ -1,7 +1,7 @@
 ---
 title: "VMware Fusion 8: How to Put Windows 10 & OS X Together in Simple Harmony"
 image: /images/blog/bigstock-Windows--technical-preview-r-85522592.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-03-22"
 ---
 

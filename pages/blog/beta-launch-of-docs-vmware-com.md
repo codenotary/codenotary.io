@@ -1,7 +1,7 @@
 ---
 title: "Beta Launch of docs.vmware.com"
 image: /images/blog/1-2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-06-06"
 ---
 

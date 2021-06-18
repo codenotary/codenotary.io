@@ -1,7 +1,7 @@
 ---
 title: "Snapwatcher review by VMware vExpert Andrea Mauro"
 image: /images/blog/10268837315_da32f5ab7b.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-09-09"
 ---
 

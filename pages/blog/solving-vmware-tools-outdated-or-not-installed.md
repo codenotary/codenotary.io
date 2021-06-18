@@ -1,7 +1,7 @@
 ---
 title: "Solving VMware Tools Outdated or Not Installed"
 image: /images/blog/wpid-6f6a837a4509b60dbb7df3f3fff63bae.jpeg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-27"
 ---
 

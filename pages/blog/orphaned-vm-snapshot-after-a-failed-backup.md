@@ -1,7 +1,7 @@
 ---
 title: "Orphaned VM snapshot after a failed backup"
 image: /images/blog/4529216647_ff16dd1354.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-13"
 ---
 

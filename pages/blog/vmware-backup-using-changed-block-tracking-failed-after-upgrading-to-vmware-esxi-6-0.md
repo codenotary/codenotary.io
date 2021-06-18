@@ -1,6 +1,6 @@
 ---
 title: "VMware Backup using Changed Block Tracking failed after upgrading to VMware ESXi 6.0"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-22"
 ---
 

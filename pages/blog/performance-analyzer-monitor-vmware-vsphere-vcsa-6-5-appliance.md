@@ -1,7 +1,7 @@
 ---
 title: "Performance Analyzer: Monitor VMware vSphere VCSA 6.5 Appliance"
 image: /images/blog/vcsa.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-10-05"
 ---
 

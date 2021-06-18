@@ -1,7 +1,7 @@
 ---
 title: "Install and use Docker Swarm"
 image: /images/blog/init_master.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-08-13"
 ---
 
@@ -127,32 +127,32 @@ docker network create -d overlay wordpress-net
 
 ### Create MariaDB service
 
-docker service create 
-    --name mariadb 
-    --replicas 1 
-    --constraint=node.role==manager 
-    --network wordpress-net 
-    --secret source=root\_db\_password,target=root\_db\_password 
-    --secret source=wp\_db\_password,target=wp\_db\_password 
-    -e MYSQL\_ROOT\_PASSWORD\_FILE=/run/secrets/root\_db\_password 
-    -e MYSQL\_PASSWORD\_FILE=/run/secrets/wp\_db\_password 
-    -e MYSQL\_USER=wp 
-    -e MYSQL\_DATABASE=wp 
+docker service create
+    --name mariadb
+    --replicas 1
+    --constraint=node.role==manager
+    --network wordpress-net
+    --secret source=root\_db\_password,target=root\_db\_password
+    --secret source=wp\_db\_password,target=wp\_db\_password
+    -e MYSQL\_ROOT\_PASSWORD\_FILE=/run/secrets/root\_db\_password
+    -e MYSQL\_PASSWORD\_FILE=/run/secrets/wp\_db\_password
+    -e MYSQL\_USER=wp
+    -e MYSQL\_DATABASE=wp
     mariadb:10.1
 
 ### Create Wordpress service
 
-docker service create 
-    --name wp 
-    --constraint=node.role==worker 
-    --replicas 1 
-    --network wordpress-net 
-    --publish 80:80 
-    --secret source=wp\_db\_password,target=wp\_db\_password,mode=0400 
-    -e WORDPRESS\_DB\_USER=wp 
-    -e WORDPRESS\_DB\_PASSWORD\_FILE=/run/secrets/wp\_db\_password 
-    -e WORDPRESS\_DB\_HOST=mariadb 
-    -e WORDPRESS\_DB\_NAME=wp 
+docker service create
+    --name wp
+    --constraint=node.role==worker
+    --replicas 1
+    --network wordpress-net
+    --publish 80:80
+    --secret source=wp\_db\_password,target=wp\_db\_password,mode=0400
+    -e WORDPRESS\_DB\_USER=wp
+    -e WORDPRESS\_DB\_PASSWORD\_FILE=/run/secrets/wp\_db\_password
+    -e WORDPRESS\_DB\_HOST=mariadb
+    -e WORDPRESS\_DB\_NAME=wp
     wordpress:4.7
 
 If you visit any Docker Swarm node on Port 80 you should see the Wordpress installer.

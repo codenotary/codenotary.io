@@ -1,7 +1,7 @@
 ---
 title: "Will Network Virtualization be the Saving Grace of VMware?"
 image: /images/blog/bigstock-Hosting-and-servers-room-6295151.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-03-08"
 ---
 

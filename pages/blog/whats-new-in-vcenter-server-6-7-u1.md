@@ -1,6 +1,6 @@
 ---
 title: "What´s new in vCenter Server 6.7 U1"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-10-26"
 ---
 

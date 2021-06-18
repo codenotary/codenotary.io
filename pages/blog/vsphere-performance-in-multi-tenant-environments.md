@@ -1,7 +1,7 @@
 ---
 title: "vSphere Performance in multi-tenant environments"
 image: /images/blog/button_download-performance-analyzer-7.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-06-27"
 ---
 

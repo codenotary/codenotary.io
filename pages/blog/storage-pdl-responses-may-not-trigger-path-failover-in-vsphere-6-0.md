@@ -1,6 +1,6 @@
 ---
 title: "Storage PDL responses may not trigger path failover in vSphere 6.0"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-02-23"
 ---
 

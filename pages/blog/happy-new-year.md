@@ -1,7 +1,7 @@
 ---
 title: "HAPPY NEW YEAR!"
 image: /images/blog/pexels-photo.jpeg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-12-31"
 ---
 

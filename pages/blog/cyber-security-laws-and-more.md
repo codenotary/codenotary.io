@@ -1,7 +1,7 @@
 ---
 title: "Cyber Security Laws And More"
 image: /images/blog/afd77089db984bbaa3b754c0ef21f78d.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-08-25"
 ---
 

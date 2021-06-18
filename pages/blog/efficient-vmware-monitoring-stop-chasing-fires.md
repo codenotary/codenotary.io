@@ -1,7 +1,7 @@
 ---
 title: "Efficient VMware Monitoring: Stop Chasing Fires"
 image: /images/blog/wpid-bigstock-Many-working-tools-in-the-box-85469660.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-09-25"
 ---
 

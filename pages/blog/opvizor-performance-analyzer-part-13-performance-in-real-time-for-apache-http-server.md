@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs: Part 13 – Performance in real time for Apache HTTP Server"
 image: /images/blog/1-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-13"
 ---
 

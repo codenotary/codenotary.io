@@ -1,7 +1,7 @@
 ---
 title: "Release - CNIL Metrics and Logs version 4.9.1"
 image: /images/blog/ciscoucs_pa491.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-05-17"
 ---
 

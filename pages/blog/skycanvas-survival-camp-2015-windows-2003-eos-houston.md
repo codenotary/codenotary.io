@@ -1,7 +1,7 @@
 ---
 title: "skycanvas survival camp 2015 Windows 2003 EoS, Houston"
 image: /images/blog/83cc2d61a5b088d72253364f0edd26e8_AMD_workshop_750px.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-15"
 ---
 

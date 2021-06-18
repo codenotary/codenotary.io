@@ -1,7 +1,7 @@
 ---
 title: "Photon OS 3 Beta first steps guide"
 image: /images/blog/highlights.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-12-11"
 ---
 

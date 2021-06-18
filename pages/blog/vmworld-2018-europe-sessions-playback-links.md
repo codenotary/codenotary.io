@@ -1,6 +1,6 @@
 ---
 title: "VMworld 2018 Europe Sessions Playback Links"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-11-09"
 ---
 

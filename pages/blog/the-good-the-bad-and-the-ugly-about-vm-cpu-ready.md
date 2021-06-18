@@ -1,7 +1,7 @@
 ---
 title: "The good, the bad and the ugly about VM CPU ready"
 image: /images/blog/pacpuready.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-07"
 top: true
 ---
@@ -54,7 +54,7 @@ Ready values of **10% or more** per vCPU should already be seen as an error and
 
 ## Surveilling and fixing VM CPU ready using CNIL Metrics and Logs
 
-# 
+#
 
 Our Performance Analyzer solution gets you insights into your VMware vSphere environment within minutes and these insights include of course CPU related performance issues. Of course not just CPU related, but any performance related issue you can imagine. All information within seconds.
 

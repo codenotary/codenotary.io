@@ -1,7 +1,7 @@
 ---
 title: "First Login vSphere 6 – vCSA (vCenter Server Appliance)"
 image: /images/blog/1_login.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-14"
 ---
 

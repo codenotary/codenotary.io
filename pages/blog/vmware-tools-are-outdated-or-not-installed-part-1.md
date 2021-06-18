@@ -1,7 +1,7 @@
 ---
 title: "VMware Tools Are Outdated or Not Installed (Part 1)"
 image: /images/blog/vmtoolsoutdated.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-06"
 ---
 

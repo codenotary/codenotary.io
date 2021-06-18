@@ -1,7 +1,7 @@
 ---
 title: "Restarting VMware vCenter service triggers large Amount of DRS vMotions"
 image: /images/blog/vmotionreport-300x300.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-27"
 ---
 

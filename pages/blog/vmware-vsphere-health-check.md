@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere Health check"
 image: /images/blog/wpid-health-service.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-23"
 ---
 

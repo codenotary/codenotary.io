@@ -1,6 +1,6 @@
 ---
 title: "Intel Design Bug - What about VMware ESXi and VMs?"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-01-05"
 ---
 

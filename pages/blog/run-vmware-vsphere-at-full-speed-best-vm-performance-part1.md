@@ -1,6 +1,6 @@
 ---
 title: "Run VMware vSphere at full speed - best vm performance - Part1"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-23"
 ---
 

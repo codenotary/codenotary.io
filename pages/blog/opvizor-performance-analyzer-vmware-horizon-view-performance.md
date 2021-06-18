@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs - VMware Horizon View Performance"
 image: /images/blog/vmware_view-3.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-06-05"
 ---
 

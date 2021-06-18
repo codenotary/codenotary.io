@@ -1,6 +1,6 @@
 ---
 title: "vCenter Server Appliance 6.0 performance charts fail to load with the error: Performance Charts service returned an invalid response (2118223)"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-02-16"
 ---
 
@@ -10,7 +10,7 @@ If you encounter an error as mentioned in the blog title you´ll be surprised wh
 
 Within the log files you can find the following messages:
 
-_Performance Charts Service returns an invalid response._ 
+_Performance Charts Service returns an invalid response._
 
 and in the /var/log/vmware/perfcharts/wrapper.log file you can see entries similar to here:
 

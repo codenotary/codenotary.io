@@ -1,6 +1,6 @@
 ---
 title: "Cloud Computing Profit Requires Trust Of Technology - InformationWeek"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-07-07"
 ---
 

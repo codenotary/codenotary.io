@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs: Part 4 - Performance in real time for Microsoft Hyper-V"
 image: /images/blog/1-2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-13"
 ---
 

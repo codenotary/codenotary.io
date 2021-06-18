@@ -1,7 +1,7 @@
 ---
 title: "Webinar - Your Top VMware VM Issues Solved (for good!)"
 image: /images/blog/5306788744_e450db5ecc.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-08-13"
 ---
 

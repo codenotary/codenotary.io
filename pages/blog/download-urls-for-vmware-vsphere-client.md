@@ -1,7 +1,7 @@
 ---
 title: "Download URLs for VMware vSphere Client"
 image: /images/blog/vsphereclient_dwnload.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-08-31"
 ---
 

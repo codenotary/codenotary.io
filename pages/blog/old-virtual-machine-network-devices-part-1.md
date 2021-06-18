@@ -1,7 +1,7 @@
 ---
 title: "Old Virtual Machine Network Devices - low VMware performance - Part 1"
 image: /images/blog/oldnic1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-10"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Protect your docker environment using Performance Analyzer and CodeNotary"
 image: /images/blog/dockerhub-parity.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-05-08"
 ---
 
@@ -99,13 +99,13 @@ node=$(echo "${NODENAME}")function ok() {
     status=$(jq -r ".verification.status" <<< ${2})
     publisher=$(jq -r ".artifact.publisher" <<< ${2})
     echo "Container ${1} (${name}) check successful (publisher: ${publisher}, level: ${level}, status: ${status})"
-    curl -i -XPOST 'http://influx:8086/write?db=mydb'  
-	--data-binary "vcn\_verification,hostname=$node,container\_name=${3},container\_id=${1},status=${status},level=${level} failed=0,status=${status},level=${level}" 
+    curl -i -XPOST 'http://influx:8086/write?db=mydb'
+	--data-binary "vcn\_verification,hostname=$node,container\_name=${3},container\_id=${1},status=${status},level=${level} failed=0,status=${status},level=${level}"
 	> /dev/null 2>&1
    } function err() {
     echo "Container ${1} (${2}) verification failed" >&2
-    curl -i -XPOST 'http://influx:8086/write?db=mydb' --data-binary 
-	"vcn\_verification,hostname=$node,container\_name=${2},container\_id=${1} failed=1" 
+    curl -i -XPOST 'http://influx:8086/write?db=mydb' --data-binary
+	"vcn\_verification,hostname=$node,container\_name=${2},container\_id=${1} failed=1"
 	> /dev/null 2>&1
    }while true; do
     docker ps -q | grep -v ${HOSTNAME} | while read id; do

@@ -1,7 +1,7 @@
 ---
 title: "THE WHOLE TEAM AT OPVIZOR WISHES YOU A HAPPY HOLIDAYS!"
 image: /images/blog/dog-christmas-xmas-bulldog.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-12-24"
 ---
 

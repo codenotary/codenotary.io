@@ -1,7 +1,7 @@
 ---
 title: "Installing vSphere 6.0 ESXi Hosts nested - preconfiguration"
 image: /images/blog/new_vm_1.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-23"
 ---
 
@@ -80,6 +80,6 @@ And second to make sure to enable the Failed Boot Recovery option. Using this op
 ![more VM advanced settings to run nested ESXi Failed Boot Recovery option](/images/blog/new_vm_advsettings_7.jpg)
 ## Installation of ESXi within the VM
 
-You are ready now to install **ESXi Hosts nested**. The installation itself will be [covered in the next article](/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/). 
+You are ready now to install **ESXi Hosts nested**. The installation itself will be [covered in the next article](/blog/installing-vsphere-6-0-esxi-hosts-nested-install-2/).
 
 <script>setInterval(_gaq.push(['_trackEvent', 'blog post', 'read 15 seconds', '']), 15000);</script>

@@ -1,7 +1,7 @@
 ---
 title: "Potentially poor vSphere NFS Read I/O performance with 10GbE vmnics"
 image: /images/blog/19776471439_0542ab0257.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-08-24"
 ---
 

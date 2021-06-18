@@ -1,7 +1,7 @@
 ---
 title: "only few weeks away: Nutanix Prism Element and Prism Central support"
 image: /images/blog/host-highlights.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-02-05"
 ---
 

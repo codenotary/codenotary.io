@@ -1,7 +1,7 @@
 ---
 title: "Storage Administrators Have a Lot to Take Advantage of With vSphere 6 and VMware Performance Monitoring Tools"
 image: /images/blog/bigstock-Cloud-Computing-Word-Cloud-81470858.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-01-08"
 ---
 

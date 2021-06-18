@@ -1,7 +1,7 @@
 ---
 title: "Introducing VMware Kubernetes Engine™ (VKE)"
 image: /images/blog/cloud-hand-hero-img.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-07-17"
 ---
 

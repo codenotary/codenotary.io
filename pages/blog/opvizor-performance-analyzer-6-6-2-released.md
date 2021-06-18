@@ -1,11 +1,11 @@
 ---
 title: "CNIL Metrics and Logs 6.6.2 released"
 image: /images/blog/admin_config.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2020-05-07"
 ---
 
-After a long period of adding new features, bug fixing and testing we're excited to announce the Performance Analyzer 6.6.2 release.  
+After a long period of adding new features, bug fixing and testing we're excited to announce the Performance Analyzer 6.6.2 release.
 Before we get into more bugfixing and improvement details, we want to highlight some new extensions.
 
 Dell EMC PowerMax support and VMware Log Analysis.

@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs: Part 10 – Performance in real time for VMware vCenter Server Appliance (vCSA)"
 image: /images/blog/vcsa-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-04"
 ---
 
@@ -10,11 +10,11 @@ There is a white paper available from VMware. You can download the complete file
 ### On [Derek Seaman](https://twitter.com/vdereks)'s [Blog](http://www.derekseaman.com/author/derek858) you can find a few sessions regarding vCenter Performance, e.g.:
 
 > Session: INF8108
-> 
+>
 > Teaser: 5.5 to 6.0 is 300% faster for vCenter operations From 6.0 to 6.5(?) is another 100% higher.
-> 
+>
 > HTML5 vs. Flex client: Shows a chart with dramatically faster HtML5 performance over Flash client.
-> 
+>
 > VCSA vs. windows – When you have a datacenter with heavy load the VCSA far out performs Windows vCenter.
 
 A short overview from [OpManagers](https://www.manageengine.com/network-monitoring/) VMware Monitoring:

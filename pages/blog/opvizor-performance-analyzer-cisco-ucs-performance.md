@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs - Cisco UCS Performance"
 image: /images/blog/admin_infra.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-05-22"
 ---
 

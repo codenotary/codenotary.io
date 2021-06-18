@@ -1,7 +1,7 @@
 ---
 title: "VMotion and Storage VMotion : What These Are and How They Work"
 image: /images/blog/bigstock-Businesswoman-Hard-At-Work-In--70382983.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-04-07"
 ---
 

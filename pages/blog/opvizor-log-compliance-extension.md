@@ -1,7 +1,7 @@
 ---
 title: "Opvizor Log Compliance extension"
 image: /images/blog/loganalyzer-1024x598.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2020-08-03"
 ---
 
@@ -71,7 +71,7 @@ When starting Log Analyzer for the first time you'll see an empty search bar and
 
 1. Navigation: select the vCSA, ESXi or cluster to run the query against. The better you preselect, the less overhead logs will be shown
 2. Log Labels: you can further filter the log result using labels (i. e. severity, VM, ...)
-3. The log search bar and the cheat sheet below. You can also find more information about the search in our guidelines:  
+3. The log search bar and the cheat sheet below. You can also find more information about the search in our guidelines:
     [https://github.com/opvizor/log-guide/blob/master/README.md](https://github.com/opvizor/log-guide/blob/master/README.md)
 4. Timerange selection: you can either go for an absolute or relative timerange to filter the search result
 5. Run the query immediately or set a refresh frequency to automatically run the query continuously

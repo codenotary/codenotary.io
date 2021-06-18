@@ -1,7 +1,7 @@
 ---
 title: "VMware – vShere Basics – Re-packing an ova"
 image: /images/blog/1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-05-10"
 ---
 

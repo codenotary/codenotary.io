@@ -1,7 +1,7 @@
 ---
 title: "The New VMware Motto: 'One Cloud, Any App, Any Device'"
 image: /images/blog/wpid-bigstock-Cloud-Computing-84811181.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-09-28"
 ---
 

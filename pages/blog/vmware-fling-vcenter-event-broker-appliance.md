@@ -1,7 +1,7 @@
 ---
 title: "VMware Fling: vCenter Event Broker Appliance"
 image: /images/blog/deploy-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-11-13"
 ---
 
@@ -25,7 +25,7 @@ To avoid a nasty troubleshooting later on, make sure to set the hostname of the 
 
 I can really recommend making sure that name resolution is set up correctly, as the web applications might not show up. 
 
-**Don't just try the ip address or a different name than used during the deployment.** 
+**Don't just try the ip address or a different name than used during the deployment.**
 
 Therefore, either have DNS setup or use your local host file on the client and the system you're using to deploy the FaaS stuff (in case its not the same system).
 
@@ -99,7 +99,7 @@ Start by cloning the repository:
 
 Enter the **vCSA URL**, your **user account** and the **password** as well as the urn you remembered when creating the tag.
 
-cd pytagfncat 
+cd pytagfncat
 cat vcconfig.toml
 \[vcenter\]
 server = "vcsa.mydomain.local"

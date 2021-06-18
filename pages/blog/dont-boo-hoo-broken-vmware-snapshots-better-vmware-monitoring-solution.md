@@ -1,7 +1,7 @@
 ---
 title: "Don't Boo Hoo Over Broken VMware Snapshots: A Better VMware Monitoring Solution is Here"
 image: /images/blog/photographer-1026441_640.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-05-05"
 ---
 
@@ -29,7 +29,7 @@ A single delta file can get as large as the original VMDK, consuming many teraby
 
 ![Snapwatcher inconsistent VM Snapshots](/images/blog/photo-1015961_640.jpg)
 
-_Snapwatcher can find those hidden snapshots and fix them or delete them, so that you can regain all of that valuable storage space._ 
+_Snapwatcher can find those hidden snapshots and fix them or delete them, so that you can regain all of that valuable storage space._
 
 Fortunately, there is a [solution for finding](http://www.mindthevirt.com/snapwatcher-stop-the-pain-with-broken-vmware-snapshots-467), identifying, and deleting these bad snapshots so that you can free up memory and improve the operating environment for VMware. Opvizor, an US company, has developed a free solution so that VMware administrators can find and exterminate those bad snapshots. The product is called Snapwatcher.
 

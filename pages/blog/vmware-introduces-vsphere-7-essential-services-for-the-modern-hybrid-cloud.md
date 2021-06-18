@@ -1,7 +1,7 @@
 ---
 title: "VMware introduces vSphere 7: Essential Services for the Modern Hybrid Cloud"
 image: /images/blog/vSphere-Icon-Color-2020.png)](http://blogs.vmware.com/vsphere/files/2020/03/vSphere-Icon-Color-2020.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2020-03-10"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs: Part 6 – Performance in real time for Docker Container"
 image: /images/blog/1-4.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-20"
 ---
 

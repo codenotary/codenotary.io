@@ -1,7 +1,7 @@
 ---
 title: "What are VMware Validated Designs and How Do These Affect Your VMware Monitoring"
 image: /images/blog/bigstock-Servers-room-6295149_600x.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-07-19"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "opvizor Private Cloud edition - on premise"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-16"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Deep Learning Isn’t a Dangerous Magic Genie. It’s Just Math"
 image: /images/blog/3d3579ee-82fd-4be1-a3a5-b103e111123e.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-07-06"
 ---
 

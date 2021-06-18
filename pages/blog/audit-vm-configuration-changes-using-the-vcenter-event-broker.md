@@ -1,7 +1,7 @@
 ---
 title: "Audit VM configuration changes using the vCenter Event Broker"
 image: /images/blog/veba_slack_alert.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-11-25"
 ---
 

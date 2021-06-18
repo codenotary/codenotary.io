@@ -1,7 +1,7 @@
 ---
 title: "VMware vMotion Special Features - Part 3"
 image: /images/blog/wpid-confmax_net.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-20"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Combine Docker, Kubernetes and Windows WSL"
 image: /images/blog/wsl-linux.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-07-09"
 ---
 
@@ -91,8 +91,8 @@ As Docker likes to access the filesystem the same way, we also need to change th
 
 Please create the file /etc/wsl.conf (sudo touch /etc/wsl.conf) and add the following content.
 
-\[automount\] 
-root = / 
+\[automount\]
+root = /
 options = "metadata"
 
 We also need to configure Docker to expose the communication port on Port 2375:
@@ -105,7 +105,7 @@ To make sure all works, please restart your computer now.
 
 The last step after the restart is the installation of the kubectl command. Open the Windows WSL (you can just type bash in the program search) and run the following commands:
 
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - 
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update && sudo apt-get install -y kubectl
 

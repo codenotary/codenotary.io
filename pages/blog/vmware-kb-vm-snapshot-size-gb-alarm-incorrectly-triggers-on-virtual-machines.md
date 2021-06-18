@@ -1,7 +1,7 @@
 ---
 title: "VMware KB VM Snapshot Size (GB) alarm incorrectly triggers on virtual machines"
 image: /images/blog/wpid-toomanysnaps-s.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-19"
 ---
 
@@ -16,15 +16,15 @@ Of course we investigated that environment as the customer expected an inconsist
 The result was a VMware bug, that is covered in [VMware KB article 2037464](http://kb.vmware.com/selfservice/microsites/microsite.do?cmd=displayKC&docType=kc&externalId=2037464&sliceId=1&docTypeID=DT_KB_1_1 "VMware KB article 2037464"):
 
 > In VMware vCenter Server 5.1:
-> 
+>
 > - You configured a vCenter Server alarm to send alarms when virtual machines are running from snapshots
-> 
+>
 > - The alarm is falsely triggered even when the virtual machine does not have snapshots
-> 
+>
 > - You created the VM Snapshot Size (GB) alarm in vCenter Server
-> 
+>
 > - You see false alarms for multiple virtual machines in the inventory
-> 
+>
 > - Snapshot Alarms get triggered regardless of Alarm Definition Threshold setting
 
 The workaround is plain simple, but not really satisfying - **disable the alarm**

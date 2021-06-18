@@ -1,7 +1,7 @@
 ---
 title: "Software Defined Management Dashboards - The Opvizor Solution"
 image: /images/blog/button_download-performance-analyzer-6.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-07-18"
 ---
 
@@ -31,7 +31,7 @@ Photo courtesy of [Greg Schulz](http://weblogic.sys-con.com/node/4015525)
 
 _Data Infrastructures (hardware, software, services, servers, storage, I/O and networks)_
 
-## 
+##
 
 [![VM Highlights Dashboard](/images/blog/highlights.png)](http://try.opvizor.com/perfanalyzer)
 

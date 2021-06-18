@@ -1,7 +1,7 @@
 ---
 title: "The 7 Most Important Things You Should Know About vCSA"
 image: /images/blog/bigstock-Business-User-Touching-Server--120625976.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-04-12"
 ---
 

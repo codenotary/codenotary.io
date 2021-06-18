@@ -1,7 +1,7 @@
 ---
 title: "Docker Swarm monitoring"
 image: /images/blog/nodes_meta.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-08-19"
 ---
 
@@ -100,7 +100,7 @@ Let's add the node exporter service to your docker-compose.stack.yml (make sure 
 
 **Important: never use tab spaces in yaml files**
 
-  
+
   node-exporter:
     image: prom/node-exporter:latest
     networks:

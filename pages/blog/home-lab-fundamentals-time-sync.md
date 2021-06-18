@@ -1,7 +1,7 @@
 ---
 title: "Home Lab Fundamentals: Time Sync"
 image: /images/blog/1-2.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-05-03"
 ---
 

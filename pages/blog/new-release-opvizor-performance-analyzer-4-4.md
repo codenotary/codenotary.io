@@ -1,7 +1,7 @@
 ---
 title: "New release - CNIL Metrics and Logs 4.4"
 image: /images/blog/pa4.4_admin.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-09-13"
 ---
 

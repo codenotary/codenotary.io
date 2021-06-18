@@ -1,7 +1,7 @@
 ---
 title: "vSphere 6.7 release notes & download links"
 image: /images/blog/button_download-performance-analyzer-6-360x41-3.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-04-19"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "VMGU.RU - Russian VMware blogger covers Snapwatcher"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-21"
 ---
 

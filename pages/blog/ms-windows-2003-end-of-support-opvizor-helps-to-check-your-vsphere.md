@@ -1,6 +1,6 @@
 ---
 title: "MS Windows 2003 End of Support - opvizor helps to check your vSphere"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-22"
 ---
 

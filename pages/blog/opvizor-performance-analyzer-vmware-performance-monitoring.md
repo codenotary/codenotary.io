@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs VMware Performance Monitoring"
 image: /images/blog/1-2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-01-02"
 ---
 

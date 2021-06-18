@@ -1,7 +1,7 @@
 ---
 title: "VMware default usernames and passwords"
 image: /images/blog/Password-624x416.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-05-01"
 ---
 
@@ -107,7 +107,7 @@ vsphere.local             deployment                        �
 
 **VMware Site Recovery**           vCenter username      vCenter Password                       http://IP\_or\_DNS\_name:8080/cbmui/
 
-**Manager** 
+**Manager**
 
 **VMware AirWatch Console**   administrator               airwatch                                        https://IP\_or\_DNS\_name/airwatch
 

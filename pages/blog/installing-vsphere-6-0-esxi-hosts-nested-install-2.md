@@ -1,7 +1,7 @@
 ---
 title: "Installing vSphere 6.0 ESXi Hosts nested - install"
 image: /images/blog/wpid-vmhw_esx-300x212.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-12"
 ---
 

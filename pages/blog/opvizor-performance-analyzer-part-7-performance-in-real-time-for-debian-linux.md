@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs: Part 7 – Performance in real time for Debian Linux"
 image: /images/blog/Capture.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-23"
 ---
 

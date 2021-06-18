@@ -1,7 +1,7 @@
 ---
 title: "6 Top VMware Tips & Tricks for the New Year"
 image: /images/blog/bigstock-Happy-With-His-Accomplish-2790844.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-03-01"
 ---
 

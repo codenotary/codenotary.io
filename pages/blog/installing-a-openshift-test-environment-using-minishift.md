@@ -1,7 +1,7 @@
 ---
 title: "Installing a OpenShift test environment using Minishift"
 image: /images/blog/minishift_start.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-06-11"
 ---
 
@@ -32,19 +32,19 @@ If your running macOS or Windows, please check the installation steps for these 
 macOS
 
 - [xhyve](https://github.com/mist64/xhyve)
-    
+
 
 Windows
 
 - [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
-    
+
     To use Minishift with Hyper-V ensure that, after you [install Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v), you also [add a Virtual Switch](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/quick-start/connect-to-network) using the Hyper-V Manager and set the configuration option hyperv-virtual-switch to this virtual switch. For specific configuration steps see the [Setting Up the Hyper-V Driver](https://docs.okd.io/latest/minishift/getting-started/setting-up-virtualization-environment.html#setting-up-hyper-v-driver) section.
-    
+
 
 All Platforms
 
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-    
+
 
 ## KVM
 

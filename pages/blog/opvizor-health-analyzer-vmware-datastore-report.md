@@ -1,7 +1,7 @@
 ---
 title: "opvizor Health Analyzer - VMware Datastore report"
 image: /images/blog/datastore_report2-300x300.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-04"
 ---
 

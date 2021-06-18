@@ -1,7 +1,7 @@
 ---
 title: "VMware Embraces 'People-Centric' Computing as Opposed to 'Device-Centric' Computing: What This Means for VMware Monitoring & More"
 image: /images/blog/bigstock-Update-Screen-Of-Microsoft-Win-98985728_600x.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-06-02"
 ---
 
@@ -17,7 +17,7 @@ One world exists for physical endpoints, while another is solely dedicated to vi
 
 ## **VMware Introduces People-Centric Design with Project A2**
 
-## 
+##
 
 ![VMware monitoring - Microsoft Windows 10](/images/blog/bigstock-Update-Screen-Of-Microsoft-Win-98985728_600x.jpg)
 

@@ -1,7 +1,7 @@
 ---
 title: "vSphere HA Waiting for cluster election to complete Operation timed out"
 image: /images/blog/reconfigha.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-02-25"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs 3.0 Provides Real-Time Performance Analysis for virtual data center"
 image: /images/blog/vm_perfanalyzer.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-06-09"
 ---
 

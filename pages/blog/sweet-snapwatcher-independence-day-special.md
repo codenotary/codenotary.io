@@ -1,7 +1,7 @@
 ---
 title: "Sweet Snapwatcher Independence Day Special"
 image: /images/blog/wpid-independence_day.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-01"
 ---
 

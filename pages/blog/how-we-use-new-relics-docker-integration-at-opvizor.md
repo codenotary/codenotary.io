@@ -1,7 +1,7 @@
 ---
 title: "How we use New Relic's Docker integration at Opvizor"
 image: /images/blog/wpid-docker.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-26"
 ---
 

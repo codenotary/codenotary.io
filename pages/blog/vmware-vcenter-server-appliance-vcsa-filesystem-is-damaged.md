@@ -1,7 +1,7 @@
 ---
 title: "VMware vCenter Server Appliance VCSA filesystem is damaged"
 image: /images/blog/wpid-vcsa_grub.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-10-05"
 top: true
 ---
@@ -52,6 +52,6 @@ When all is done, the command **reboot** is all you need and VCSA should start w
 
 You can read more about VMware vCenter Server Appliance (VCSA) filesystem issues here:
 
-[vCenter Appliance fsck failed](http://www.virtualizationteam.com/server-virtualization/vcenter-appliance-fsck-failed.html "vCenter Appliance fsck failed ") 
+[vCenter Appliance fsck failed](http://www.virtualizationteam.com/server-virtualization/vcenter-appliance-fsck-failed.html "vCenter Appliance fsck failed ")
 
 [fsck of vCenter Server Appliance 6.0 partitions](http://cormachogan.com/2015/06/03/fsck-of-vcenter-server-appliance-6-0-partitions/ "fsck of vCenter Server Appliance 6.0 partitions")

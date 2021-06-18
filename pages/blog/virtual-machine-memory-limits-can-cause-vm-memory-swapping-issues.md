@@ -1,7 +1,7 @@
 ---
 title: "VM memory limit can cause VM memory swapping issues"
 image: /images/blog/memorylimit.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-02"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs Review: Simple, Elegant, Efficient Monitoring for Your Virtual Environment"
 image: /images/blog/fig5.jpeg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-03-20"
 ---
 

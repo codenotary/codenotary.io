@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs: Part 3 - Performance in real time for DataCore SAN Symphony"
 image: /images/blog/1-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-08"
 ---
 

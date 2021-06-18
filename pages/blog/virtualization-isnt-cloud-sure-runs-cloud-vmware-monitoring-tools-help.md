@@ -1,7 +1,7 @@
 ---
 title: "Virtualization Isn't the Cloud, but It Sure Runs the Cloud (and VMware Monitoring Tools Help)"
 image: /images/blog/smartphone-1445489_640_600x.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-07-14"
 ---
 

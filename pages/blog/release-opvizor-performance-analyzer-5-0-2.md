@@ -1,7 +1,7 @@
 ---
 title: "Release – CNIL Metrics and Logs 5.0.2"
 image: /images/blog/shortvscsiStats_-Cluster_VM.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-01-10"
 ---
 

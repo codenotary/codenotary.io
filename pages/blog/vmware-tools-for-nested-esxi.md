@@ -1,7 +1,7 @@
 ---
 title: "VMware Tools for Nested ESXi"
 image: /images/blog/11372361034_72c276d26e.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-09-16"
 ---
 

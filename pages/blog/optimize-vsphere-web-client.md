@@ -1,7 +1,7 @@
 ---
 title: "Optimize vSphere Web client"
 image: /images/blog/wpid-flash_storage.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-22"
 ---
 

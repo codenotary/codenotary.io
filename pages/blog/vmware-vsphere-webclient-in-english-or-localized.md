@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere Webclient in English or localized"
 image: /images/blog/wpid-webclient.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-08-31"
 ---
 

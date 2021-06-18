@@ -1,6 +1,6 @@
 ---
 title: "Fully Featured vSphere Client in vSphere 6.7 Update 1"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-10-24"
 ---
 

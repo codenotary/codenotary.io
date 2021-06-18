@@ -1,6 +1,6 @@
 ---
 title: "Opvizor VMware health analyzer by Paolo Valsecchi"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-03"
 ---
 

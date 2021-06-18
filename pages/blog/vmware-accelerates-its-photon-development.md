@@ -1,6 +1,6 @@
 ---
 title: "VMware Accelerates Its Photon Development"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-06-28"
 ---
 

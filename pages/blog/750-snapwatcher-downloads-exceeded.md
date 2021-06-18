@@ -1,6 +1,6 @@
 ---
 title: "750 Snapwatcher Downloads exceeded!"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-12"
 ---
 

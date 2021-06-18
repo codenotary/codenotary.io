@@ -1,7 +1,7 @@
 ---
 title: "opvizor Health Analyzer - VMware Inventory report"
 image: /images/blog/inventory-report-300x300.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-10"
 ---
 

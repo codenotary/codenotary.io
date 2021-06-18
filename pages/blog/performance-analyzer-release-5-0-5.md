@@ -1,7 +1,7 @@
 ---
 title: "Performance Analyzer Release 5.0.5"
 image: /images/blog/nutanix.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-02-25"
 ---
 
@@ -16,9 +16,9 @@ Last but not least we integrated a nice VMware vSAN memory calculation, that hel
 _Functional Improvements:_
 
 - Nutanix Prism Element and Prism Central support
-    
+
     ![Nutanix Highlights](/images/blog/nutanix.png)
-    
+
 - Oracle support for Container Databases and Plug-able Databases (needs also the new Oracle\_v2-Patch)
 - Added VSAN Memory Calculation
 - Added Password Change Option in Console Menu

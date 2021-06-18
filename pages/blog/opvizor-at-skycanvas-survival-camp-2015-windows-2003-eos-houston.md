@@ -1,7 +1,7 @@
 ---
 title: "opvizor at skycanvas survival camp 2015 Windows 2003 EoS, Houston"
 image: /images/blog/skycanvas-300x300.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-17"
 ---
 

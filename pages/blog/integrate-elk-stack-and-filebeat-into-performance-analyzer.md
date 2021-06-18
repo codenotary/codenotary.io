@@ -1,7 +1,7 @@
 ---
 title: "Integrate ELK stack and filebeat into Performance Analyzer"
 image: /images/blog/elk.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-02-19"
 ---
 
@@ -30,14 +30,14 @@ While there are plenty of ELK container we figured that one project is maintaine
 There is also a great documentation about how to use the container as well: [elk-docker](https://elk-docker.readthedocs.io/)As we want to run multiple container, docker-compose is always the best bet to go for.**docker-compose.yml**
 
 version: '3.7'
-services:  
-   elk:    
-        image: sebp/elk    
-        ports:      
-               - "5601:5601"      
-               - "9200:9200"      
-               - "5044:5044"      
-        restart: "unless-stopped"    
+services:
+   elk:
+        image: sebp/elk
+        ports:
+               - "5601:5601"
+               - "9200:9200"
+               - "5044:5044"
+        restart: "unless-stopped"
         container\_name: opvizor-elk
 
 docker-compose up -d  && docker-compose ps
@@ -62,10 +62,10 @@ Typically the network is named like the service and \_default is added.
 
 There are so many ways to connect docker container, feel free to use alternatives you like more.
 
-docker run  
---network=elk\_default docker.elastic.co/beats/filebeat:6.6.0  
-setup -E setup.kibana.host=opvizor-elk:5601   
--E output.elasticsearch.hosts=\["opvizor-elk:9200"\] 
+docker run
+--network=elk\_default docker.elastic.co/beats/filebeat:6.6.0
+setup -E setup.kibana.host=opvizor-elk:5601
+-E output.elasticsearch.hosts=\["opvizor-elk:9200"\]
 
 If all went well, you should see the following output:
 
@@ -93,19 +93,19 @@ In our case adding filebeat to the docker-compose.yml makes sense:
 
  filebeat:
     image: docker.elastic.co/beats/filebeat:${ELASTIC\_VERSION:-6.5.0}
-    hostname: "opvizor-elk-filebeat"    
-    container\_name: filebeat   
-    restart: unless-stopped    
-    user: root    
-    volumes:      
-           - ./filebeat.docker.yml:/usr/share/filebeat/filebeat.yml      
-           - filebeat:/usr/share/filebeat/data     
-           - /var/run/docker.sock:/var/run/docker.sock      
-           - /var/lib/docker/containers/:/var/lib/docker/containers/:ro     
-           - /var/log/:/var/log/:ro    
-    environment:      
-           - ELASTICSEARCH\_HOST=opvizor-elk:9200    
-           # disable strict permission checks    
+    hostname: "opvizor-elk-filebeat"
+    container\_name: filebeat
+    restart: unless-stopped
+    user: root
+    volumes:
+           - ./filebeat.docker.yml:/usr/share/filebeat/filebeat.yml
+           - filebeat:/usr/share/filebeat/data
+           - /var/run/docker.sock:/var/run/docker.sock
+           - /var/lib/docker/containers/:/var/lib/docker/containers/:ro
+           - /var/log/:/var/log/:ro
+    environment:
+           - ELASTICSEARCH\_HOST=opvizor-elk:9200
+           # disable strict permission checks
     command: \["--strict.perms=false"\]
 volumes:  filebeat:
 
@@ -145,21 +145,21 @@ Change of the **docker-compose.yml** file to open port 1514
 
  filebeat:
     image: docker.elastic.co/beats/filebeat:${ELASTIC\_VERSION:-6.5.0}
-    hostname: "opvizor-elk-filebeat"    
-    container\_name: filebeat   
-    restart: unless-stopped    
-    user: root    
-    ports:     
-           - "1514:1514" 
-    volumes:      
-           - ./filebeat.docker.yml:/usr/share/filebeat/filebeat.yml      
-           - filebeat:/usr/share/filebeat/data     
-           - /var/run/docker.sock:/var/run/docker.sock      
-           - /var/lib/docker/containers/:/var/lib/docker/containers/:ro     
-           - /var/log/:/var/log/:ro    
-    environment:      
-           - ELASTICSEARCH\_HOST=opvizor-elk:9200    
-           # disable strict permission checks    
+    hostname: "opvizor-elk-filebeat"
+    container\_name: filebeat
+    restart: unless-stopped
+    user: root
+    ports:
+           - "1514:1514"
+    volumes:
+           - ./filebeat.docker.yml:/usr/share/filebeat/filebeat.yml
+           - filebeat:/usr/share/filebeat/data
+           - /var/run/docker.sock:/var/run/docker.sock
+           - /var/lib/docker/containers/:/var/lib/docker/containers/:ro
+           - /var/log/:/var/log/:ro
+    environment:
+           - ELASTICSEARCH\_HOST=opvizor-elk:9200
+           # disable strict permission checks
     command: \["--strict.perms=false"\]
 volumes:  filebeat:
 

@@ -1,6 +1,6 @@
 ---
 title: "Emad Younis about opvizor Health Analyzer Reporting Overview"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-19"
 ---
 

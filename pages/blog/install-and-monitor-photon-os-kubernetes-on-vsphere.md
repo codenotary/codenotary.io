@@ -1,7 +1,7 @@
 ---
 title: "Install and monitor Photon OS, Kubernetes on vSphere"
 image: /images/blog/photon_image.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-04-17"
 ---
 
@@ -148,7 +148,7 @@ _**
  **```
 
 docker run -it -v /tmp:/tmp --rm --env="PS1=[container]:w> " --net=host cnastorage/kubernetes-anywhere:latest /bin/bash
-```** 
+```**
 
 ## Creating the Kubernetes Cluster config
 
@@ -199,7 +199,7 @@ To find out the port use the following command:
  **```
 
 kubectl describe service kubernetes-dashboard --namespace=kube-system| grep -i NodePort
-```** 
+```**
 
 You get a output similar to the one below and use that to connect to the kubernetes-master VM: http://kubernetes-master-ip:**31673**
 
@@ -232,7 +232,7 @@ Search for the spec section (1), then command section (2), then click the button
  **```
 
 --sink=influxdb:http://performance_analyzer_appliance_dns_or_ip:8086
-```** 
+```**
 
 Then click update and the existing heapster container will be destroyed and a new one with the updated configuration created.
 

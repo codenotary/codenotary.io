@@ -1,14 +1,14 @@
 ---
 title: "PowerShell Remoting Cheatsheet by Scott Sutherland"
 image: /images/blog/5728486437_1f69302183.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-09-07"
 ---
 
 Scott Sutherland published a great blog article covering the little hints and tricks when using PowerShell Remote Execution functionality. 
 
 > I have become a big fan of PowerShell Remoting. I find my self using it for both penetration testing and standard management tasks. In this blog I'll share a basic PowerShell Remoting cheatsheet so you can too. 
-> 
+>
 > PowerShell Remoting is essentially a native Windows remote command execution feature that’s build on top of the Windows Remote Management (WinRM) protocol.  Based on my super Google results, WinRM is supported by Windows Vista with Service Pack 1 or later, Windows 7, Windows Server 2008, and Windows Server 2012.
 
 [![PowerShell Remoting](/images/blog/5728486437_1f69302183.jpg)](https://blog.netspi.com/powershell-remoting-cheatsheet/)

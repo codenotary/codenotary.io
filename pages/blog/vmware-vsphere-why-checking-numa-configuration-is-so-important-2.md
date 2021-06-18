@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere — Why checking NUMA Configuration is so important!"
 image: /images/blog/1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-03-07"
 ---
 

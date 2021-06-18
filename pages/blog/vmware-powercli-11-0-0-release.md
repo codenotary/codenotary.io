@@ -1,6 +1,6 @@
 ---
 title: "VMware PowerCLI 11.0.0 release"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-10-12"
 ---
 

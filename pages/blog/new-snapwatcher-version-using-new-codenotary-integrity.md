@@ -1,7 +1,7 @@
 ---
 title: "new Snapwatcher version using new CodeNotary integrity"
 image: /images/blog/build.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-04-05"
 ---
 
@@ -53,7 +53,7 @@ Sign means that the vcn command calculates a unique, military-grade hash of the 
 
 By default files or code is signed private, not disclosing much information. If you want to sign public, you need to run the vcn command with the -public flag:
 
-vcn.exe sign -public 
+vcn.exe sign -public
 
 You will directly notice the different output, when verifying the file.
 

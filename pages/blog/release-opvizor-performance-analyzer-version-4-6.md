@@ -1,7 +1,7 @@
 ---
 title: "Release - CNIL Metrics and Logs version 4.6"
 image: /images/blog/numa_sm.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-12-13"
 ---
 
@@ -11,7 +11,7 @@ We're thrilled to announce the new release 4.6 of our extremely popular Performa
 
 Enabling HTTPS on your appliance is still optional, but now extremly easy using our admin interface. No command line configuration anymore!
 
-**More and more customers switching from highly complex operations management tools and old-style monitoring products to Performance Analyzer. Because they are tired of "where did I find that information" or "I know its possible, but I have no idea how to customize that view".** 
+**More and more customers switching from highly complex operations management tools and old-style monitoring products to Performance Analyzer. Because they are tired of "where did I find that information" or "I know its possible, but I have no idea how to customize that view".**
 
 10 minutes, and Performance Analyzer is up and running in your vSphere environment, ready to check for noisy neighbors, storage bottlenecks or fast growing snapshots. Some more minutes and you have NetApp, Microsoft Windows, MS SQL, Linux, DataCore or Veeam Enterprise Backup manager integrated.
 

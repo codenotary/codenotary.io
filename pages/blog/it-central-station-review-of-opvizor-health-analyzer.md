@@ -1,6 +1,6 @@
 ---
 title: "IT Central Station review of opvizor Health Analyzer"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-20"
 ---
 

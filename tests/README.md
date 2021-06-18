@@ -1,10 +1,10 @@
 
-# Codenotary's site E2E Testing project
+# Codenotary's site Testing project
 
 This is still a work in progress, however the main goal of this repository is to be able to run integration tests for codenotary.com builds to avoid breaking the site
 Note: this directory includes the necessary files to lint the project using vale
 
-# Running
+# Running Integration tests (browser)
 
 The following instructions will allow you to run this test suite against a local instance
 
@@ -36,6 +36,22 @@ The currently supported browsers are:
 * chrome
 * firefox
 * opera
+# Running unit tests
+
+If you have a local npm installation, you can run:
+```bash
+npm run test
+```
+Otherwise, you can first build the image locally and run it or use docker-compose:
+```bash
+# From the main repository's directory (i.e. one directory up)
+cd ../ # Only necessary if you're not in the root directory for the main project
+docker build . -t codenotary --target test
+# now run the container with the default command
+docker run -it codenotary
+#Alternatively, use docker-compose for a full test and Vale lint for writing style and specific words
+docker-compose run app-test
+```
 
 # Requirements
 

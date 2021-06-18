@@ -1,7 +1,7 @@
 ---
 title: "VM gets unresponsive when removing a snapshot - issue rule"
 image: /images/blog/snapshot_issue_vm_unresponsive.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-23"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Snapshots, we don’t need no stinking snapshots!"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-19"
 ---
 

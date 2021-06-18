@@ -1,7 +1,7 @@
 ---
 title: "VMware PowerCLI Macro recorder - Onyx for the Web Client"
 image: /images/blog/wpid-Screenshot-2015-07-08-15.53.55_thumb.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-27"
 ---
 

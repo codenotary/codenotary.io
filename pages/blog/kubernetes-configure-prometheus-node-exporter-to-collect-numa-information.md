@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes - Configure Prometheus Node Exporter to collect NUMA information"
 image: /images/blog/prometheus.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-04-25"
 ---
 

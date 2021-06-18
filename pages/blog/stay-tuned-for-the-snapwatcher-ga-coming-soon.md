@@ -1,6 +1,6 @@
 ---
 title: "Stay Tuned For The Snapwatcher GA Coming Soon"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-22"
 ---
 

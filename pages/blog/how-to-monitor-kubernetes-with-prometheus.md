@@ -1,16 +1,16 @@
 ---
 title: "How To Monitor Kubernetes With Prometheus"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2020-03-12"
 ---
 
 ![](https://lh5.googleusercontent.com/C-f4PeAccx0cqOrcJTOmT9PvGmx1tWHHllKrOW1B6vwjxQj6XZw0QwwdmUGQ9CcObjCexkMCuDh9_hNa0T02BTJhQDQ48puDCk0-kkizNt5xOu2k657B2sfzsZVN6w4rCyA-C-gB)
 
-[Image Source](https://pixabay.com/photos/stock-trading-monitor-business-1863880/)  
+[Image Source](https://pixabay.com/photos/stock-trading-monitor-business-1863880/)
 
-Monitoring ensures the availability of an application and verifies that it meets the service level agreement in any DevOps project. Monitoring starts with provisioning and exposing information from the relevant application. Then you need to continuously overview the state of the application and gather metrics of the underlying infrastructure.  
+Monitoring ensures the availability of an application and verifies that it meets the service level agreement in any DevOps project. Monitoring starts with provisioning and exposing information from the relevant application. Then you need to continuously overview the state of the application and gather metrics of the underlying infrastructure.
 
-Prometheus is an open source monitoring system. Prometheus is well suited for complex workloads, thanks to its ability to process large amounts of data every second. One of the main benefits of Prometheus is the simple text-based metrics format.   
+Prometheus is an open source monitoring system. Prometheus is well suited for complex workloads, thanks to its ability to process large amounts of data every second. One of the main benefits of Prometheus is the simple text-based metrics format. 
 
 Another advantage of Prometheus is an extensive list of supported products, including Kubernetes, databases, server applications, and Java Virtual Machines (JVM). In this article, you will learn how to monitor Kubernetes with Promoetheus, which is the default monitoring option in Kubernetes.
 
@@ -78,7 +78,7 @@ Add the new monitoring target to the YAML configuration file
     - targets: ['localhost:9090']
 ```
 
-**Monitor Kubernetes services using Prometheus exporters** 
+**Monitor Kubernetes services using Prometheus exporters**
 
 A Prometheus exporter is a kind of adapter that converts main service metric formats to Prometheus metrics format.
 
@@ -138,11 +138,11 @@ Products like CNIL Metrics and Logs provide all these monitoring capabilities ou
 
 \--------------------
 
-Guest Author Bio  
+Guest Author Bio
 
 ![](https://lh4.googleusercontent.com/u0jDrpEIXrvMaefcR1ERd6SW1HyMUBYZrWjc7V6hsMGG5b4oVbqeBras57QH3e1J_-R91OwZ3URu82XRalAX-nnhZxXzeFdc1iIndGKmhBz0FT7VwZGFcI5PlGNCfeF3yKsxsNn_)
 
-[Image source](https://drive.google.com/file/d/1--uUhyKZrH4XAm3fm88yQivTdfVwhQTP/view?usp=sharing)  
+[Image source](https://drive.google.com/file/d/1--uUhyKZrH4XAm3fm88yQivTdfVwhQTP/view?usp=sharing)
 
 Gilad David Maayan is a technology writer who has worked with over 150 technology companies including SAP, Samsung NEXT, NetApp and Imperva, producing technical and thought leadership content that elucidates technical solutions for developers and IT leadership.
 

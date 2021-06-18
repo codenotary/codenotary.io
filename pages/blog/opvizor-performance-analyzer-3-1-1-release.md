@@ -1,7 +1,7 @@
 ---
 title: "CNIL Metrics and Logs 3.1.1 - Release"
 image: /images/blog/vmsnapshot_img.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-08-16"
 ---
 

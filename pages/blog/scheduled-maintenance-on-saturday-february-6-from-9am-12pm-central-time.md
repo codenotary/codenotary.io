@@ -1,6 +1,6 @@
 ---
 title: "Scheduled maintenance on Saturday, February 6 from 9am-12pm Central Time"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-03"
 ---
 

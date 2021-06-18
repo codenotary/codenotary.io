@@ -1,7 +1,7 @@
 ---
 title: "What's Up With the All-New VMware Virtual SAN 6.2?"
 image: /images/blog/bigstock--123061796.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-05-24"
 ---
 

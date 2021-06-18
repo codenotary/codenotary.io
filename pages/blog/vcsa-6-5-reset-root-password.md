@@ -1,7 +1,7 @@
 ---
 title: "VCSA 6.5 reset root password"
 image: /images/blog/splash.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-10-12"
 ---
 
@@ -33,7 +33,7 @@ In many cases you should check the root partition usage, using the **df -h** com
 
 If you're sure that you have to reset the root password, please follow these steps:
 
-**passwd** 
+**passwd**
 
 then enter a strong password twice and remember it.
 

@@ -1,7 +1,7 @@
 ---
 title: "vSphere Client: The Future Client Software of VMware vSphere"
 image: /images/blog/2016-03-07_1741_H5client_-_screenshot0-1024x684.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-06-30"
 ---
 
@@ -33,7 +33,7 @@ Based on the advanced HTML5, this product will be a catalyst in starting the tra
 
 Photo courtesy of [VMware Blog](http://blogs.vmware.com/vsphere/2016/05/goodbye-vsphere-client-for-windows-c-hello-html5.html)
 
-## **Users Of C# Client** 
+## **Users Of C# Client**
 
 Users of the current C# client don´t need to worry. They will continue to get support for the client software they are currently using. There will not be any new version of this software, but the current version will remain for some time. But you should consider moving away from the C# client sooner than later, not to miss the future features. 
 

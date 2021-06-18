@@ -1,6 +1,6 @@
 ---
 title: "Top 10 virtualization startups you'll hear about in 2015"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-01-26"
 ---
 

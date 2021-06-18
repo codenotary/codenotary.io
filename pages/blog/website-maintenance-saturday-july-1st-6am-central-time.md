@@ -1,6 +1,6 @@
 ---
 title: "Website Maintenance, Saturday July 1st, 6am Central time"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-31"
 ---
 

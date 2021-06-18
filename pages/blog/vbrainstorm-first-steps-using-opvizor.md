@@ -1,6 +1,6 @@
 ---
 title: "vBrainstorm - first steps using opvizor"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-16"
 ---
 

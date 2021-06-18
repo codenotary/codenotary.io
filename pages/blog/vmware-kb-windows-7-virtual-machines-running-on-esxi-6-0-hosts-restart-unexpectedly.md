@@ -1,6 +1,6 @@
 ---
 title: "VMware KB: Windows 7 virtual machines running on ESXi 6.0 hosts restart unexpectedly"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-28"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Top 50 PowerShell Blogs And Websites For Developers"
 image: /images/blog/PowerShell.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-05-09"
 ---
 
