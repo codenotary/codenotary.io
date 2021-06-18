@@ -100,3 +100,6 @@ __pycache__/
 
 # vale linter
 vale_dir
+
+#vscode workspace
+.vscode

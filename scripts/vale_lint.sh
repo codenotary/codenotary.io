@@ -1,7 +1,7 @@
 #!/bin/bash
 if [[ -n "$1" ]] && [[ "$1" == "--docker" ]]; then
     if docker --version > /dev/null 2>&1; then
-        pushd ./test
+        pushd ./tests
         docker run -u $(id -u ${USER}):$(id -g ${USER}) --rm -v $(pwd)/styles:/styles --rm -v $(realpath ../pages):/pages --rm -v $(pwd):/work -w /work jdkato/vale /pages
         popd
         exit 0
@@ -12,7 +12,7 @@ if [[ -n "$1" ]] && [[ "$1" == "--docker" ]]; then
 fi
 
 if vale --help > /dev/null 2>&1; then
-    pushd ./test
+    pushd ./tests
     vale ../pages
     popd
 else
@@ -21,14 +21,14 @@ else
         curl -sfL https://install.goreleaser.com/github.com/ValeLint/vale.sh | sh -s v2.10.3
         export PATH="$(pwd)/bin:$PATH"
         popd
-        pushd ./test
+        pushd ./tests
         vale ../pages
         popd
     else
         pushd vale_dir
         export PATH="$(pwd)/bin:$PATH"
         popd
-        pushd ./test
+        pushd ./tests
         echo $PATH
         vale ../pages
         popd

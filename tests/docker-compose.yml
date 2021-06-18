@@ -1,0 +1,61 @@
+# To execute this docker-compose yml file use `docker-compose -f <file_name> up`
+# Add the `-d` flag at the end for detached execution
+version: "3"
+services:
+  integration-test:
+    volumes: 
+      - ./tests:/tests
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - ${BROWSER}
+      - codenotary
+    user: ${CURRENT_UID}
+    environment:
+      - BROWSER=${BROWSER}
+      - SCREENSHOT_ON_FAIL=${SCREENSHOT_ON_FAIL}
+      - BEHAVE_OPTS=${BEHAVE_OPTS}
+      - SITE_URL=${SITE_URL} 
+      - SELENIUM_HUB=${SELENIUM_HUB}
+    command: bash -c "sleep 20 && cul ${SELENIUM_HUB}/status && cd /tests && SITE_URL=${SITE_URL} behave --junit --no-capture ${BEHAVE_OPTS}"
+  codenotary:
+    build:
+      context: ../
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:8080"
+    command: start
+
+  selenium-hub:
+    image: selenium/hub:3.141.59-20210422
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+  chrome:
+    image: selenium/node-chrome:3.141.59-20210422
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+  firefox:
+    image: selenium/node-firefox:3.141.59-20210422
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+  opera:
+    image: selenium/node-opera:3.141.59-20210422
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
