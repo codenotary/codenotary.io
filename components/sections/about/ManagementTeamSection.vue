@@ -60,23 +60,6 @@
 			<i-row class="team-member-items">
 				<i-column lg="4">
 					<team-member
-						name="Duncan Mac-Vicar"
-						position="VP Engineering"
-						image="/images/teams/duncan-mac-vicar.jpg"
-					>
-						<p>
-							Duncan Mac-Vicar is an experienced Engineering leader and long-time Open-Source developer and contributor.
-						</p>
-						<p>
-							He worked at SUSE as Director of Engineering, leading and bootstrapping international teams in areas like Systems Management and Automation, Containers, High Availability cluster engines and filesystems, Online Services, and responsible for the delivery of major products of the company. He has contributed to projects like KDE, Salt, openSUSE, Spacewalk and started open-source projects like Kopete and terraform-provider-libvirt.
-						</p>
-						<p>
-							He holds a degree in Computer Engineering and a post-graduate MSc from the Pontifical Catholic University of Chile.
-						</p>
-					</team-member>
-				</i-column>
-				<i-column lg="4">
-					<team-member
 						name="Jerónimo Irazábal" position="Chief Architect & immudb Community Manager"
 						image="/images/teams/jeronimo-irazabal.jpg"
 					>
