@@ -1,7 +1,7 @@
 ---
 title: "Enlarge a disk and partition of any Linux VM without a reboot"
 image: /images/blog/diagram1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2020-02-24"
 ---
 
@@ -28,9 +28,9 @@ Something we didn't mention - all is done without LVM!
 
 Let's get into some details:
 
-The Performance Analyzer appliance has a two disk configuration. The first disk holds the operating system, the second disk the data. We skipped the swap partition and have a swap file within the root file system. That is acceptable since we avoid swapping at all costs anyway.  
-  
-It's important to know that only the last or the only partition within a disks (green color) can be resized in an straightforward way.  
+The Performance Analyzer appliance has a two disk configuration. The first disk holds the operating system, the second disk the data. We skipped the swap partition and have a swap file within the root file system. That is acceptable since we avoid swapping at all costs anyway.
+
+It's important to know that only the last or the only partition within a disks (green color) can be resized in an straightforward way.
 The disk layout of Performance Analyzer looks like this:
 
 ![](/images/blog/diagram1.png)
@@ -73,7 +73,7 @@ The partition is not automatically adjusted and needs to be resized as well in t
 - resizing the partition
 - make the kernel aware of the bigger partition
 
-Typically fdisk was the tool of choice for the first step and a utility like partprobe (or a reboot) for the second step.  
+Typically fdisk was the tool of choice for the first step and a utility like partprobe (or a reboot) for the second step.
 But things changed and you can use a great software called _**growpart**_
 
 **_growpart_** is part of the **cloud-utils-package**, and should be available in your distro's repositories, in case its not already installed with your OS. Debian or Ubuntu:

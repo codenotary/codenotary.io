@@ -1,7 +1,7 @@
 ---
 title: "Configuration of a nested vSphere 6.0 ESXi Host"
 image: /images/blog/wpid-esxi6_splash.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-13"
 ---
 

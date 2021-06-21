@@ -1,7 +1,7 @@
 ---
 title: "Measure IOPS to detect the noisy neighbor VM"
 image: /images/blog/vmiops_detail-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-28"
 ---
 

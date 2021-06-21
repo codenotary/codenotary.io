@@ -1,7 +1,7 @@
 ---
 title: "Understanding VMware vSphere Terminology When Switching From Microsoft Hyper-V"
 image: /images/blog/bigstock-Jargon-Concept-36887773.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-12-17"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Docker running on top of VMware at optimized speed"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-02"
 ---
 

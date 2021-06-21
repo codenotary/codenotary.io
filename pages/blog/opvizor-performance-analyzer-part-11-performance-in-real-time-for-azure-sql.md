@@ -1,7 +1,7 @@
 ---
-title: "Opvizor Performance Analyzer: Part 11 – Performance in real time for Azure SQL"
+title: "CNIL Metrics and Logs: Part 11 – Performance in real time for Azure SQL"
 image: /images/blog/mssql1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-06"
 ---
 

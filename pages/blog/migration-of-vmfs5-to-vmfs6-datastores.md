@@ -1,7 +1,7 @@
 ---
 title: "Migration of VMFS5 to VMFS6 Datastores"
 image: /images/blog/vmfs1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-10-30"
 ---
 
@@ -70,7 +70,7 @@ _$Source = Get-Datastore "DSS"_
 
 _$Temp = Get-Datastore "DST"_
 
-_$Server = (Get-VIServer -Server "vCenter")_ 
+_$Server = (Get-VIServer -Server "vCenter")_
 
 _Update-VmfsDatastore -Datastore $Source -TemporaryDatastore $Temp -TargetVmfsVersion "6" -Server $Server_
 

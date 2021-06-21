@@ -1,7 +1,7 @@
 ---
 title: "VMware Targets DevOps"
 image: /images/blog/bigstock-Business-Company-Corporate-Ent-99084614.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-01-14"
 ---
 

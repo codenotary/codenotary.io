@@ -1,7 +1,7 @@
 ---
 title: "vSAN: What is VMware vSAN?"
 image: /images/blog/1-3.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-07-03"
 ---
 

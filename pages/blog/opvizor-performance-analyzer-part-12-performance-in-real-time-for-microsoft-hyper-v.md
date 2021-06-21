@@ -1,7 +1,7 @@
 ---
-title: "Opvizor Performance Analyzer: Part 12 – Performance in real time for Microsoft Hyper-V"
+title: "CNIL Metrics and Logs: Part 12 – Performance in real time for Microsoft Hyper-V"
 image: /images/blog/1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-11"
 ---
 

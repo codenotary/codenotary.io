@@ -1,7 +1,7 @@
 ---
 title: "Are Your IT Assets, also VMware Tools, Being All They Can Be?"
 image: /images/blog/bigstock-Students-in-computing-class-wi-85242983.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-11-19"
 ---
 

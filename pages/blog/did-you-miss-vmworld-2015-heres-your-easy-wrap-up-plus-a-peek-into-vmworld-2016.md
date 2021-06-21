@@ -1,7 +1,7 @@
 ---
 title: "Did You Miss VMworld 2015? Here's Your Easy Wrap-Up (Plus a Peek Into VMworld 2016)"
 image: /images/blog/wpid-0d992ed7b9b94d3db884d88e421c5570.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-10-01"
 ---
 

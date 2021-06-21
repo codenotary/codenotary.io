@@ -1,7 +1,7 @@
 ---
 title: "Snapwatcher 2.5 released to solve all common VM snapshot problems in VMware"
 image: /images/blog/wpid-snapwatcher.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-02"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "The good, the bad and the ugly about VM CPU ready"
 image: /images/blog/pacpuready.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-07"
 top: true
 ---
@@ -48,13 +48,13 @@ When there is no misconfiguration at all, you can find yourself in a 10% or more
 
 ## The ugly...
 
-Ready values of **10% or more** per vCPU should already be seen as an error and the performance situation can get really nasty. Very high Ready times for the vCPU can even trigger application errors and crashes. Again, very hard to find when just looking inside of the VM guest. It's very important to watch the outside VMkernel metrics either using ESXtop or tools like Opvizor Performance Analyzer.
+Ready values of **10% or more** per vCPU should already be seen as an error and the performance situation can get really nasty. Very high Ready times for the vCPU can even trigger application errors and crashes. Again, very hard to find when just looking inside of the VM guest. It's very important to watch the outside VMkernel metrics either using ESXtop or tools like CNIL Metrics and Logs.
 
 \[optin title="Get more informations like that post!" text="VMware Hints and more" buttontext="Sign Up for news" successMessage="Message has been submitted successfully." errorMessage="Failed to send your message. Please try later." invalidEmailMessage="Your email address does not appear valid." border="false" collectfirstname="false" collectlastname="false" collectphone="false" collectcompany="false"\]
 
-## Surveilling and fixing VM CPU ready using Opvizor Performance Analyzer
+## Surveilling and fixing VM CPU ready using CNIL Metrics and Logs
 
-# 
+#
 
 Our Performance Analyzer solution gets you insights into your VMware vSphere environment within minutes and these insights include of course CPU related performance issues. Of course not just CPU related, but any performance related issue you can imagine. All information within seconds.
 

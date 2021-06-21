@@ -1,7 +1,7 @@
 ---
 title: "Storage performance: IOPS, latency and throughput"
 image: /images/blog/iops.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-02-09"
 top: true
 ---
@@ -10,7 +10,7 @@ This blog post is a summary  of articles I found about IOPS, latency and throug
 
 Our Performance Analyzer product can become the easiest and best source to track these in real time. Tracking storage performance is an important part.
 
-## 
+##
 
 [![Performance Analyzer Storage performance](/images/blog/iops.png)](http://try.opvizor.com/perfanalyzer)
 

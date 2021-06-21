@@ -1,7 +1,7 @@
 ---
 title: "New release - Performance Analyzer 4.2"
 image: /images/blog/highlights-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-05-23"
 ---
 

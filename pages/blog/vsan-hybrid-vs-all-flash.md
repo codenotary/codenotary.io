@@ -1,7 +1,7 @@
 ---
 title: "vSAN: Hybrid vs. All Flash"
 image: /images/blog/1-4.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-07-12"
 ---
 

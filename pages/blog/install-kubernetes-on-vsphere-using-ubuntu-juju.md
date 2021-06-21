@@ -1,7 +1,7 @@
 ---
 title: "Install Kubernetes on vSphere using Ubuntu juju"
 image: /images/blog/startcommand.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-04-02"
 ---
 

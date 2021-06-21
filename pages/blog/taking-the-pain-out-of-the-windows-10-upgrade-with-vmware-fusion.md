@@ -1,7 +1,7 @@
 ---
 title: "Taking the Pain Out of the Windows 10 Upgrade With VMware Fusion"
 image: /images/blog/bigstock-Hand-holds-Windows--logotype-103334195.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-03-17"
 ---
 
@@ -23,7 +23,7 @@ Fortunately, there is a [fast and easy work-around](http://www.mikeroysoft.com/w
 
 ![VMware Fusion](/images/blog/bigstock-coffee-break-25335509.jpg)
 
-_For a relatively new Mac with a reasonably fast Internet connection, the whole process should only take about 10 minutes. Starting the download requires answering a few questions, but once it begins, it's a pretty hands-off process._ 
+_For a relatively new Mac with a reasonably fast Internet connection, the whole process should only take about 10 minutes. Starting the download requires answering a few questions, but once it begins, it's a pretty hands-off process._
 
 _Take a break and it should be ready when you get back._Instead of using the upgrade method inside the virtual machine, download the .ISO and allow Fusion 7 to handle the upgrade. 
 

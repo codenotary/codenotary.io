@@ -1,7 +1,7 @@
 ---
 title: "Fix VM snapshot in VMware vSphere when file lock cannot be released"
 image: /images/blog/snapwatcher-locked-file.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-18"
 ---
 
@@ -9,7 +9,7 @@ date: "2015-03-18"
 
 # Fix VM snapshot in VMware vSphere when file lock cannot be released
 
-  
+
 
 Finding VMware snapshots can already be a nasty and difficult task as some of these hidden or just hard to find as the vSphere environment is pretty large. Therefore it's important to have scripts, reports and tools like [Snapwatcher](http://try.opvizor.com/snapwatcher) or [opvizor Health Analyzer](https://www.opvizor.com/register) to get an idea about the current situation in your environment.
 
@@ -21,7 +21,7 @@ There are many different kinds of locking mechanism VMware vSphere uses and I wa
 
 ## Given VM Snapshot situation
 
-  
+
 
 In this case it doesn´t matter if the VM snapshot is inconsistent or not, the message you receive when running either Snapshot remove or Snapshot consolidate is a short and simple file is locked.
 
@@ -37,7 +37,7 @@ When checking the virtual machine log file vmware.log in the home directory of t
 
 `2015-03-05T20:08:25.112Z| vcpu-0| I120: AIOGNRC: Failed to open '/vmfs/volumes/0025909bfda0/WinVM/WinVM-flat.vmdk' : Failed to lock the file (40003) (0x2013). 2015-03-05T20:08:25.112Z| vcpu-0| I120: AIOMGR: AIOMgr_OpenWithRetry: Descriptor file '/vmfs/volumes/0025909bfda0/WinVM/WinVM-flat.vmdk' locked (try 0)`
 
-  
+
 
 When checking the Snapwatcher log that automatically initiates Snapshot deletion and Snapshot Consolidate the following message is found showing that is was not succesful to fix VM snapshot:
 
@@ -57,12 +57,12 @@ After the successful datastore relocation the snapshots can be easily consilidat
 
 Definitely a VMware vSphere bug that can end up nasty when you don´t have any space left on a datastore to move the VM to get the file unlocked and fix a VM snapshot.
 
-  
+
 ![opvizor Snapwatcher - Say Goodbye to Broken Snapshots](/images/blog/snapwatcher_2.png)
-opvizor provides a solution called Snapwatcher that can be downloaded on the opvizor website [here at http://try.opvizor.com/snapwatcher/](http://try.opvizor.com/snapwatcher/)  
+opvizor provides a solution called Snapwatcher that can be downloaded on the opvizor website [here at http://try.opvizor.com/snapwatcher/](http://try.opvizor.com/snapwatcher/)
 
 **opvizor owns ten different rules for detecting different VM snapshot-related errors and problems.**
 
-## 
+##
 
 [**Sign Up for opvizor**](/register)

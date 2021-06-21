@@ -1,7 +1,7 @@
 ---
 title: "reverse-engineer docker files and visualize docker-compose files"
 image: /images/blog/dive.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-10-09"
 ---
 

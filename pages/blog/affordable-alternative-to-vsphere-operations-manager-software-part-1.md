@@ -1,7 +1,7 @@
 ---
 title: "Affordable alternative to vSphere Operations Manager Software Part 1"
 image: /images/blog/opvizor_main_image-3.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-03-28"
 ---
 

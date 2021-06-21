@@ -1,7 +1,7 @@
 ---
 title: "4 Things to Consider When Planning a VMware vSphere Deployment"
 image: /images/blog/wpid-bigstock-network-engineer-working-in-se-65646097.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-09-21"
 ---
 

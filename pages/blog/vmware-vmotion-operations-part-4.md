@@ -1,7 +1,7 @@
 ---
 title: "VMware vMotion Operations - Part 4"
 image: /images/blog/wpid-vmotionop1.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-08-28"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "VMware VirtualCenter Server service fails to start with the error: Access Violation"
 image: /images/blog/3143577951_5c6a8c39bd.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-15"
 ---
 

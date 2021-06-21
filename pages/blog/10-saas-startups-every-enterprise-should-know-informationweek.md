@@ -1,7 +1,7 @@
 ---
 title: "10 SaaS Startups Every Enterprise Should Know - InformationWeek"
 image: /images/blog/bbade04d-c9a7-4617-9b4e-19e3a6824bc3.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-07-06"
 ---
 

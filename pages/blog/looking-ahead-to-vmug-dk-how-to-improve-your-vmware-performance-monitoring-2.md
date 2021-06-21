@@ -1,7 +1,7 @@
 ---
 title: "Looking Ahead to VMUG.DK: How to Improve Your VMware Performance Monitoring"
 image: /images/blog/bigstock-Young-adult-in-business-traini-28561364-2.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-11-26"
 ---
 

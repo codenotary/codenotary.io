@@ -1,7 +1,7 @@
 ---
 title: "VMware Cloud™ on AWS"
 image: /images/blog/VMware-AWS_750-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-17"
 ---
 

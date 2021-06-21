@@ -1,7 +1,7 @@
 ---
 title: "Check out our new monthly payment options"
 image: /images/blog/wpid-66037d549e064f3e8705045acf8b54e5.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-08"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Michael White blog about opvizor anonymization"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-19"
 ---
 

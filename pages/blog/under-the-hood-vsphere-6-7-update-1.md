@@ -1,7 +1,7 @@
 ---
 title: "Under the Hood – vSphere 6.7 Update 1"
 image: /images/blog/1-8.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-09-04"
 ---
 

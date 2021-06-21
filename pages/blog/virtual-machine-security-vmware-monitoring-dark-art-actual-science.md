@@ -1,7 +1,7 @@
 ---
 title: "Virtual Machine Security & VMware Monitoring: Dark Art or Actual Science?"
 image: /images/blog/security-265130_640_600x.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-07-05"
 ---
 

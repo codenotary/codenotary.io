@@ -1,7 +1,7 @@
 ---
 title: "Resize Photon OS system disk"
 image: /images/blog/vmdk-resize.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-12-03"
 ---
 

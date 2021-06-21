@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere VM Snapshot Size And Age issues"
 image: /images/blog/snapshotmanager.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-09"
 ---
 

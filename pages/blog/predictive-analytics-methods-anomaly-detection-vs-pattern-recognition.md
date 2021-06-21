@@ -1,7 +1,7 @@
 ---
 title: "Predictive Analytics Methods - Anomaly Detection vs. Pattern Recognition"
 image: /images/blog/tact-300x300.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-26"
 ---
 

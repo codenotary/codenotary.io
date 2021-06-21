@@ -1,6 +1,6 @@
 ---
 title: "new Snapwatcher Beta Version Released"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-10"
 ---
 

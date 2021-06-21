@@ -1,7 +1,7 @@
 ---
 title: "VMware Healthcheck-as-a-Service - HaaS"
 image: /images/blog/snapage2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-30"
 ---
 

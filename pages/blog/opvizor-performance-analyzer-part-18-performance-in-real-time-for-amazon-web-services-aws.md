@@ -1,7 +1,7 @@
 ---
-title: "Opvizor Performance Analyzer: Part 18 – Performance in real time for Amazon Web Services (AWS)"
+title: "CNIL Metrics and Logs: Part 18 – Performance in real time for Amazon Web Services (AWS)"
 image: /images/blog/1-6.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-11-10"
 ---
 

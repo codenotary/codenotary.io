@@ -1,7 +1,7 @@
 ---
-title: "Opvizor Performance Analyzer: Part 9 – Performance in real time for NetApp"
+title: "CNIL Metrics and Logs: Part 9 – Performance in real time for NetApp"
 image: /images/blog/netapp_dashboard-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-29"
 ---
 

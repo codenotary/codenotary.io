@@ -1,7 +1,7 @@
 ---
 title: "Opvizor vSphere Health Analyzer Update 2.8 released"
 image: /images/blog/autofix.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-03-03"
 ---
 

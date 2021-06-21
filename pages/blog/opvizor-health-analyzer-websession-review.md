@@ -1,7 +1,7 @@
 ---
 title: "Opvizor Health Analyzer Websession Review"
 image: /images/blog/wpid-3de7838ff6b444b78c8da4153b503955.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-10-06"
 ---
 

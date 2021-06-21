@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere 6.5 Update 1"
 image: /images/blog/65U1_Upgrade-768x257.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-09-14"
 ---
 

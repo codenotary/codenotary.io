@@ -1,7 +1,7 @@
 ---
 title: "Not a Search engine, opvizor is the Find engine for VMware vSphere"
 image: /images/blog/wpid-snapage2_down.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-29"
 ---
 

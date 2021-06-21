@@ -1,7 +1,7 @@
 ---
 title: "Opvizor Achieves Record Revenue Growth, Doubling Number of Active Clients"
 image: /images/blog/wpid-thomasreinig.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-16"
 ---
 

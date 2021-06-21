@@ -1,7 +1,7 @@
 ---
 title: "VMware Tanzu projects: Octant - Kubernetes runtime overview"
 image: /images/blog/octant.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-10-15"
 ---
 
@@ -24,33 +24,33 @@ Octant offers a combination of introspective tooling, cluster navigation, and ob
 ## Features
 
 - **Resource Viewer**
-    
+
     Graphically visualizate relationships between objects in a Kubernetes cluster. The status of individual objects are represented by color to show workload performance.
-    
+
 - **Summary View**
-    
+
     Consolidated status and configuration information in a single page aggregated from output typically found using multiple kubectl commands.
-    
+
 - **Port Forward**
-    
+
     Forward a local port to a running pod with a single button for debugging applications and even port forward multiple pods across namespaces.
-    
+
 - **Log Stream**
-    
+
     View log streams of pod and container activity for troubleshooting or monitoring without holding multiple terminals open.
-    
+
 - **Label Filter**
-    
+
     Organize workloads with label filtering for inspecting clusters with a high volume of objects in a namespace.
-    
+
 - **Cluster Navigation**
-    
+
     Easily change between namespaces or contexts across different clusters. Multiple kubeconfig files are also supported.
-    
+
 - **Plugin System**
-    
+
     Highly extensible plugin system for users to provide additional functionality through gRPC. Plugin authors can add components on top of existing views.
-    
+
 
 ## Deployment
 

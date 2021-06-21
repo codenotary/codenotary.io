@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere Versus Microsoft Hyper-V: How Can You Decide? VMware Performance Monitoring and Other Considerations"
 image: /images/blog/bigstock-Small-business-owner-of-a-co-15610985.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-12-29"
 ---
 
@@ -21,7 +21,7 @@ vSphere also offers some features that aren't yet offered in Hyper-V. 
 
 VMware vSphere is scalable up to 64 hosts per cluster, which is twice what it used to be at 32 hosts per cluster. A vSphere cluster is able to handle [as many as 8,000 virtual machines](http://www.computerweekly.com/feature/VMware-vs-Hyper-V-storage-comparison), which is twice the number it used to be capable of. A single vSphere host can manage as many as 1,000 virtual machines, and each host is able to support as many as 480 physical CPUs and 12 TB of RAM. Comparatively, Hyper-V is able to support 320 logical processors and just 4 TB or RAM. A single Hyper-V server is capable of hosting 1,024 virtual machines. 
 
-## vSphere Now Offers Excellent Security Capabilities 
+## vSphere Now Offers Excellent Security Capabilities
 
 ![VM Security Breach](/images/blog/bigstock-Computer-Security-Breach-83131844.jpg)
 

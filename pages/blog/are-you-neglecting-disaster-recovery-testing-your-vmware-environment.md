@@ -1,7 +1,7 @@
 ---
 title: "Are You Neglecting Disaster Recovery Testing Your VMware Environment?"
 image: /images/blog/bigstock-Notepad-with-disaster-plan-99581807.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-12-10"
 ---
 
@@ -24,7 +24,7 @@ _A good disaster recovery plan is well documented, well tested, and well underst
 - A definition of what "fully restored" means: what systems, data, etc. will be restored to the granular (file) level 
 - A process for restoring according to that definition, along with contingency plans for uncontrollable events, such as power outages, Internet outages, and damaged or destroyed facilities 
 
-**Testing and Perfecting the Disaster Recovery Plan** 
+**Testing and Perfecting the Disaster Recovery Plan**
 
 ![DR Testing VMware](/images/blog/bigstock-Disaster-Recovery-88399853.jpg)
 

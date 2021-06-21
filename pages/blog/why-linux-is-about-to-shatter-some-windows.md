@@ -1,7 +1,7 @@
 ---
 title: "Why Linux is About to Shatter Some Windows"
 image: /images/blog/bigstock-Young-Businesswoman-Analyzing-64912354.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-12-01"
 ---
 

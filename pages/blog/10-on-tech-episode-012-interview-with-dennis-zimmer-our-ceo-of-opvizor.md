@@ -1,7 +1,7 @@
 ---
 title: "10 ON TECH Episode 012: Interview with Dennis Zimmer, our CEO of Opvizor"
 image: /images/blog/Version-3.5-1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-11-08"
 ---
 

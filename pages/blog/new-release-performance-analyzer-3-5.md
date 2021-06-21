@@ -1,7 +1,7 @@
 ---
 title: "New release - Performance Analyzer 3.5"
 image: /images/blog/Version-3.5.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-25"
 ---
 

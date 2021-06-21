@@ -1,7 +1,7 @@
 ---
 title: "Opvizor - Wishes you a Happy Easter!"
 image: /images/blog/ID-100317646.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-02"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "VM disk is missing"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-17"
 ---
 

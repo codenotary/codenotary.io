@@ -1,7 +1,7 @@
 ---
 title: "VirtXpert Free Infrastructure Resources List – Host, Network, Storage"
 image: /images/blog/wpid-virtxpert.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-08"
 ---
 

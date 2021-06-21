@@ -1,7 +1,7 @@
 ---
 title: "vExpert 2017 Award Announcement"
 image: /images/blog/vmware.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-02-16"
 ---
 

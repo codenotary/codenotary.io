@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere — Why checking NUMA Configuration is so important!"
 image: /images/blog/1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-03-07"
 ---
 
@@ -56,7 +56,7 @@ There are great articles and documents for esxtop:
 
 [http://www.exitthefastlane.com/2016/04/vsphere-design-for-numa-architecture.html](http://www.exitthefastlane.com/2016/04/vsphere-design-for-numa-architecture.html)
 
-## Opvizor Performance Analyzer
+## CNIL Metrics and Logs
 
 If you´re looking for a simpler solution, that stores and visualizes that information over a long period of time and for all your ESXi hosts and VMs, then you should check out [Performance Analyzer](https://try.opvizor.com/perfanalyzer). You can use the 30 day free trial to get started.
 

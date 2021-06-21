@@ -1,7 +1,7 @@
 ---
 title: "Webinar Recording - Your Top VMware VM Issues Solved"
 image: /images/blog/4532962327_c5a219d992.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-09-18"
 ---
 

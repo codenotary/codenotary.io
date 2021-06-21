@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere Capacity Planning simplified"
 image: /images/blog/headline.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-09-27"
 ---
 

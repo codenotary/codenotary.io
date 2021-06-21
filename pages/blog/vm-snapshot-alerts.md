@@ -1,7 +1,7 @@
 ---
 title: "VM Snapshot Alerts"
 image: /images/blog/snapwatcher.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-06-22"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "VM Swap File handling when a virtual machine cannot start"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-25"
 ---
 

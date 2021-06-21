@@ -1,7 +1,7 @@
 ---
 title: "4 Virtualization and VMware Trends to Stay on Top in 2016"
 image: /images/blog/bigstock-Cheerful-guy-sitting-in-front-53542399.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-12-15"
 ---
 

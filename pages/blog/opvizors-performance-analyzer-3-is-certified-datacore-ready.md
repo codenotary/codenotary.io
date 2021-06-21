@@ -1,7 +1,7 @@
 ---
 title: "Opvizor's Performance Analyzer 3 is certified DataCore Ready"
 image: /images/blog/Orig1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-22"
 ---
 

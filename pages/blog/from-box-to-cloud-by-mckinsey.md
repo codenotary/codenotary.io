@@ -1,6 +1,6 @@
 ---
 title: "From Box to Cloud by McKinsey"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-18"
 ---
 

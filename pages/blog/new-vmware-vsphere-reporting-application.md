@@ -1,7 +1,7 @@
 ---
 title: "New VMware vSphere reporting application"
 image: /images/blog/wpid-reports.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-24"
 ---
 

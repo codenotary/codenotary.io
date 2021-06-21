@@ -1,7 +1,7 @@
 ---
 title: "VMware Monitoring, Capacity and Performance Tools"
 image: /images/blog/wpid-recommendedtools.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-05"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Containers and Docker and VMware, Oh My! Are Docker Containers the Yellow Brick Road to Oz?"
 image: /images/blog/wpid-bigstock-Engineer-Repair-Server-80393855.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-10-20"
 ---
 

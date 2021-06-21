@@ -1,7 +1,7 @@
 ---
 title: "VM Gets Unresponsive When Removing A Snapshot - Snapshot Consolidation"
 image: /images/blog/snapwatcher_2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-11"
 ---
 

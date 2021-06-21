@@ -1,7 +1,7 @@
 ---
-title: "Opvizor Performance Analyzer: Part 16 – Performance in real time for VMware Virtual SAN"
+title: "CNIL Metrics and Logs: Part 16 – Performance in real time for VMware Virtual SAN"
 image: /images/blog/1-4.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-26"
 ---
 

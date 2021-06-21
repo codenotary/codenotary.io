@@ -1,6 +1,6 @@
 ---
 title: "Dennis Zimmer, VMware vExpert Of The Year 2015"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-05"
 ---
 

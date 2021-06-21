@@ -1,6 +1,6 @@
 ---
 title: "Recover kubectl config running Kubernetes on Ubuntu"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-06-18"
 ---
 

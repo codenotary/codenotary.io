@@ -1,7 +1,7 @@
 ---
 title: "Winner for the US-A-BIZ Award 2015 aka Economy Oscar - Category Startup is opvizor"
 image: /images/blog/us-a-biz-award.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-20"
 ---
 

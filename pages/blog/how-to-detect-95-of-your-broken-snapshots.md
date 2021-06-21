@@ -1,7 +1,7 @@
 ---
 title: "How to Solve All of Your Broken Snapshots Problems"
 image: /images/blog/snapwatcher_enterprise_smaller-300x300.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-24"
 ---
 

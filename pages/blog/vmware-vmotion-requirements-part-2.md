@@ -1,7 +1,7 @@
 ---
 title: "VMware vMotion requirements - Part 2"
 image: /images/blog/wpid-vmotion-cpusetting.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-08"
 ---
 

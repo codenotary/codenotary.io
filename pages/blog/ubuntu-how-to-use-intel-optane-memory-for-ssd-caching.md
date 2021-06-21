@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu - How to use Intel Optane Memory for SSD Caching"
 image: /images/blog/install.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2020-03-25"
 top: true
 ---
@@ -10,15 +10,15 @@ top: true
 
 Recently Michael from Opvizor ordered a new laptop - a HP ProBook 650 G5. And here comes his story to enable Intel Optane using Ubuntu.
 
-Addicted to Linux, the decision was clear to purge Windows and to setup **Ubuntu**, currently 18.04 LTS.  
+Addicted to Linux, the decision was clear to purge Windows and to setup **Ubuntu**, currently 18.04 LTS.
 But wait:
 
 **The machine is equiped with an "INTEL® OPTANE™ MEMORY H10 WITH SOLID STATE STORAGE".**
 
-**What is that?  
+**What is that?
 **Ask Google helped:
 
-It is a solid state disk with an additional non volatile cache memory. That cache is build up of Optane memory, which is slower than DRAM, but faster than flash memory, and non volatile too.  
+It is a solid state disk with an additional non volatile cache memory. That cache is build up of Optane memory, which is slower than DRAM, but faster than flash memory, and non volatile too.
 Its easy for Windows users - there is the preinstalled Intel RST-Driver, which setups the Optane memory as cache for the SSD. But in Linux? No driver support from Intel for that.
 
 However, using the Optane Memory isn't that hard. Many people on the net suggest to use it as an independent, fast, but also small disk.
@@ -35,7 +35,7 @@ lspci | grep "Non-Volatile"
 03:00.0 Non-Volatile memory controller: Intel Corporation Device 0975
 ```
 
-These devices are mapped as /dev/nvme0 and /dev/nvme1, and because of nvme technology, the usable blockdevices are /dev/nvme0n1 and /dev/nvme1n1 (aka nvme namespaces).  
+These devices are mapped as /dev/nvme0 and /dev/nvme1, and because of nvme technology, the usable blockdevices are /dev/nvme0n1 and /dev/nvme1n1 (aka nvme namespaces).
 So the first step is to disable the BIOS option "Advanced / System options / Configure Storage Controller for Intel Optane". Have a look in the option ROM of the controller too, to make sure there is no combined device anymore. These options are intended for the RST-driver to recognize a device constructed of the two components. But in Linux we will do that without RST, so no need for that options.
 
 Be aware: Since there is no support for RST's caching with Optane memory in Linux, you can't dual boot Windows with RST caching configured, and Linux. Either turn of Optane in Windows or put Windows into a VM in the Linux OS. To make things not complicated, the following won't consider dual boot.
@@ -76,8 +76,8 @@ sudo vgextend ubuntu-vg /dev/mapper/nvme1n1_crypt
 # Get the UUID of the LUKS container:
 sudo blkid /dev/nvme1n1
 
-# Copy the blkid to you clipboard. Now edit the file /etc/crypttab, e.g. with the command 
-sudo pico /etc/crypttab 
+# Copy the blkid to you clipboard. Now edit the file /etc/crypttab, e.g. with the command
+sudo pico /etc/crypttab
 ```
 
 The purpose of _/etc/crypttab_ is to hold a list of encrypted devices. This information is essential for booting the system. There should be already one line for the device _nvme0n1p3\_crypt_ . Now add the line for nvme1n1\_crypt, using the UUID from the last step.

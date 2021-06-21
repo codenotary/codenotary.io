@@ -1,7 +1,7 @@
 ---
 title: "Opvizor Health Analyzer private cloud edition - major update"
 image: /images/blog/wpid-011.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-30"
 ---
 

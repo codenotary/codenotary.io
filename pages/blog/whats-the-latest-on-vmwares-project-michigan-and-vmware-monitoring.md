@@ -1,7 +1,7 @@
 ---
 title: "What's the Latest on VMware's Project Michigan and VMware Monitoring?"
 image: /images/blog/bigstock-Recovery-70268152.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-01-05"
 ---
 

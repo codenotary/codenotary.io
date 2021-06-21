@@ -1,7 +1,7 @@
 ---
 title: "Installing vSphere 6 – vCSA (vCenter Server Appliance)"
 image: /images/blog/pacpuready-2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-09"
 ---
 

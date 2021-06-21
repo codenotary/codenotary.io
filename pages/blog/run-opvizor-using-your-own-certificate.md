@@ -1,6 +1,6 @@
 ---
 title: "Run opvizor using your own certificate"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-03-19"
 ---
 

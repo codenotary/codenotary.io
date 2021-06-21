@@ -1,7 +1,7 @@
 ---
 title: "Photon OS 3.0 Release Candidate guideline"
 image: /images/blog/highlights-2.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-01-03"
 ---
 

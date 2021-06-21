@@ -1,7 +1,7 @@
 ---
 title: "How to make VMware faster"
 image: /images/blog/7175577368_d2d3a0e4fb.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-17"
 ---
 

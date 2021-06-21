@@ -1,7 +1,7 @@
 ---
 title: "Debugging crashed Kubernetes container"
 image: /images/blog/unmet-volumeclaim.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-04-04"
 ---
 

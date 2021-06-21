@@ -1,7 +1,7 @@
 ---
 title: "VMware Virtual Machine Performance Heatmap"
 image: /images/blog/heatmap-2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-09-25"
 ---
 

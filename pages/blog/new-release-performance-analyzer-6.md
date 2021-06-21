@@ -1,7 +1,7 @@
 ---
 title: "New Release: Performance Analyzer 6"
 image: /images/blog/k8scontainerproc.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-05-09"
 ---
 

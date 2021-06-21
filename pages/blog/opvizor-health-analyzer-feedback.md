@@ -1,6 +1,6 @@
 ---
 title: "opvizor Health Analyzer Feedback"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-08"
 ---
 

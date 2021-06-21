@@ -1,7 +1,7 @@
 ---
 title: "How to avoid VMware ESXi timedrift"
 image: /images/blog/timeshift.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-04-11"
 ---
 

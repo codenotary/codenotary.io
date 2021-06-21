@@ -1,7 +1,7 @@
 ---
 title: "Real issue prediction goes a long way toward optimizing VMware and Docker"
 image: /images/blog/wpid-Ruxit.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-07-29"
 ---
 
@@ -54,15 +54,15 @@ Ruxit analysis capabilities solved this problem for us by connecting our VMware 
 Some of the features we use internally:
 
 - Root cause analysis
-    
+
 - Checking for dependencies
-    
+
 - Possibility to compare application performance before and after deployments
-    
+
 - Monitor transactions to pinpoint the causes of performance bottlenecks
-    
+
 - Transactions are traced across tiers and services of an app to provide end-to-end visibility
-    
+
 
 Ruxit is hosted in Amazon Web Services using globally distributed clusters (for example, European customers data privacy issues are addressed via the European Amazon cloud, US-based customer issues are managed via the US-based cloud). Of course all services are multi-tenant and offer high-availability and horizontal scalability.
 

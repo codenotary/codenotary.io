@@ -1,7 +1,7 @@
 ---
 title: "Pure Storage Multipathing and Best Practices"
 image: /images/blog/pure_1.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-14"
 ---
 

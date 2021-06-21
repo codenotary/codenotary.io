@@ -1,13 +1,13 @@
 ---
 title: "KB VMware: VM vMotion fails because of multiple VM registration"
 image: /images/blog/3769283867_01c3214399.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-22"
 ---
 
 A pretty old Knowledge Base article has been updated by VMware as the issue is still existing when running vSphere 6.
 
-## 
+##
 
 ![vMotion fails](/images/blog/3769283867_01c3214399.jpg)
 

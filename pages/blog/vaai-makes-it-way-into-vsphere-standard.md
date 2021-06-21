@@ -1,7 +1,7 @@
 ---
 title: "VAAI makes it way into vSphere Standard"
 image: /images/blog/wpid-vaai_vspher.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-06-12"
 ---
 

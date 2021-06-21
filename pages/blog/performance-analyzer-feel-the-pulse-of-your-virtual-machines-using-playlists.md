@@ -1,7 +1,7 @@
 ---
 title: "Performance Analyzer - feel the pulse of your virtual machines using playlists"
 image: /images/blog/button_download-performance-analyzer-2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-06-20"
 ---
 
@@ -29,7 +29,7 @@ Think about a multi-tenant setup of Performance Analyzer and you want to rotate 
 
 ![pulse of your virtual machines](/images/blog/heartbeat-163709_1280.jpg)
 
-**In any case, we got you covered.** 
+**In any case, we got you covered.**
 
 We chose the fantastic Open Source project [Grafana](http://www.grafana.org) for the visualization of our collected metrics. That choice has many positive benefits for you as a customer:
 
@@ -88,4 +88,4 @@ Don't miss to run Performance Analyzer in your own environment if you haven't do
 
 <iframe src="https://player.vimeo.com/video/221810085" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen="" allowfullscreen=""></iframe>
 
-[Opvizor Performance Analyzer - Use Playlists to optimize your daily routine](https://vimeo.com/221810085) from [opvizor](https://vimeo.com/opvizor) on [Vimeo](https://vimeo.com).
+[CNIL Metrics and Logs - Use Playlists to optimize your daily routine](https://vimeo.com/221810085) from [opvizor](https://vimeo.com/opvizor) on [Vimeo](https://vimeo.com).

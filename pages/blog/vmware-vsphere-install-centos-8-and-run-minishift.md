@@ -1,7 +1,7 @@
 ---
 title: "VMware vSphere - install Centos 8 and run minishift"
 image: /images/blog/selectos.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-10-29"
 ---
 

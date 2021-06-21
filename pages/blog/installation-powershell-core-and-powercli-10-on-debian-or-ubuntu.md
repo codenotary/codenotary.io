@@ -1,7 +1,7 @@
 ---
 title: "Installation PowerShell Core and PowerCLI 10 on Debian or Ubuntu"
 image: /images/blog/download_powershell_core.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-04-24"
 ---
 

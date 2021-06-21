@@ -1,7 +1,7 @@
 ---
 title: "Understanding VMware Tools (and how it affects VMware Monitoring)"
 image: /images/blog/printer-159612_640.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-04-05"
 ---
 

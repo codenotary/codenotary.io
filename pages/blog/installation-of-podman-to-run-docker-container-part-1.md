@@ -1,7 +1,7 @@
 ---
 title: "Installation of Podman to run docker container - Part 1"
 image: /images/blog/install.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-03-12"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Windows Server 2003 support is ending July 14, 2015"
 image: /images/blog/report-setting.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-13"
 ---
 
@@ -21,5 +21,5 @@ Entisys is using opvizor Health Analyzer as many other partners and customers to
 
 ![MS Windows Server 2003 Support report](/images/blog/w2k3eos_report-300x300.jpg)
 
-  
+
 [Check IT yourself!](https://www.opvizor.com/register/ "Register – Sign up for the #1 VMware Health analyzer")

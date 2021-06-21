@@ -1,6 +1,6 @@
 ---
 title: "opvizor VMware vExpert Promo"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-15"
 ---
 

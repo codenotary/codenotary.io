@@ -1,7 +1,7 @@
 ---
 title: "Nested vSphere 7 and  Kubernetes Lab Deployment explained"
 image: /images/blog/switch_nested.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2020-05-06"
 ---
 
@@ -32,9 +32,9 @@ This one is the requirements part that William proposes to run his script:
             - 32 x IP Addresses (/27) for Ingress CIDR range is the minimum (must not overlap with Egress CIDR)
             - All IP Addresses should be able to communicate with each other
     - Storage
-        
+
         - Ability to provision up to 1TB of storage
-        
+
         **Note:** For detailed requirements, plesae refer to the official document [here](https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-kubernetes/GUID-B1388E77-2EEC-41E2-8681-5AE549D50C77.html)
 - [VMware Cloud Foundation Licenses](https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-kubernetes/GUID-9A190942-BDB1-4A19-BA09-728820A716F2.html)
 - Desktop (Windows, Mac or Linux) with latest PowerShell Core and PowerCLI 12.0 Core installed. See [instructions here](https://blogs.vmware.com/PowerCLI/2018/03/installing-powercli-10-0-0-macos.html) for more details

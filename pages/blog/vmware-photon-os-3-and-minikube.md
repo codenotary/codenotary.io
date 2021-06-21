@@ -1,7 +1,7 @@
 ---
 title: "VMware Photon OS 3 and Minikube"
 image: /images/blog/minikubeversion.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-01-08"
 ---
 
@@ -35,7 +35,7 @@ First make sure that docker is configured and started: **_systemctl start docker
 
 Just run 
 
-_**minikube start --vm-driver=none**_ 
+_**minikube start --vm-driver=none**_
 
 and the process will download all required installation files. The parameter --vm-driver=none is important to let Minikube know, that it shouldn't use any local virtualization engine, like Virtualbox.
 
@@ -51,7 +51,7 @@ When using the none driver, the kubectl config and credentials generated will be
 
 You will need to move the files to the appropriate location and then set the correct permissions.  An example of this is below:
 
-        
+
 sudo mv /root/.kube $HOME/.kube # this will write over any previous configuration
 sudo chown -R $USER $HOME/.kube
 sudo chgrp -R $USER $HOME/.kube

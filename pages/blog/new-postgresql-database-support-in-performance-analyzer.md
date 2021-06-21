@@ -1,7 +1,7 @@
 ---
 title: "New PostgreSQL Database support in Performance Analyzer"
 image: /images/blog/PostgreSQL_logo.3colors.120x120.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2019-08-05"
 ---
 

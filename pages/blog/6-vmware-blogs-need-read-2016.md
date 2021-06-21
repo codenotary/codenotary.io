@@ -1,7 +1,7 @@
 ---
 title: "6 VMware Blogs You Need to Read in 2016"
 image: /images/blog/bigstock-Technical-drawings-with-the-be-47169388.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-03-29"
 ---
 

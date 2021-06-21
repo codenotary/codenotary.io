@@ -1,7 +1,7 @@
 ---
-title: "Opvizor Performance Analyzer: Part 8 – Performance in real time for MongoDB"
+title: "CNIL Metrics and Logs: Part 8 – Performance in real time for MongoDB"
 image: /images/blog/mongodb1.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-27"
 ---
 

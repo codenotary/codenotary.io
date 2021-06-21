@@ -1,7 +1,7 @@
 ---
 title: "4 Best Practices for Software Testing With VMware"
 image: /images/blog/wpid-bigstock-Stethoscope-On-Laptop-Keyboard-79833199.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-11-17"
 ---
 

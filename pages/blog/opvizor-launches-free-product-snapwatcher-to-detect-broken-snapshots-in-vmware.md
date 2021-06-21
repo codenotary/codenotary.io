@@ -1,6 +1,6 @@
 ---
 title: "opvizor Launches Free Product Snapwatcher to Detect Broken Snapshots in VMware"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-25"
 ---
 

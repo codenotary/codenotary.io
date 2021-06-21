@@ -1,6 +1,6 @@
 ---
 title: "VMware vCSA 6.7 upgrade issues"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-10-23"
 ---
 

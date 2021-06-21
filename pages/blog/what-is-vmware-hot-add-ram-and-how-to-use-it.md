@@ -1,6 +1,6 @@
 ---
 title: "What is VMware Hot-Add RAM and How to use it?"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-04-18"
 ---
 

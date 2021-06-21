@@ -1,7 +1,7 @@
 ---
 title: "Say Goodbye to inconsistent VM snapshots with Snapwatcher - fix VM snapshot"
 image: /images/blog/snapwatcher_2.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-25"
 ---
 

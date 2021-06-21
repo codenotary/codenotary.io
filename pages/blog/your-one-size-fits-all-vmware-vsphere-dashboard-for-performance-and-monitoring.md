@@ -1,7 +1,7 @@
 ---
 title: "Your one size fits all VMware vSphere Dashboard for Performance and Monitoring"
 image: /images/blog/esxihost.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-09-14"
 ---
 
@@ -17,7 +17,7 @@ Within a a few minutes the Performance Analyzer virtual appliance is deployed in
 
 We deliver out of the box over a dozen VMware related dashboards that can be completely customized to your needs. And it doesn´t matter if your run 100 or 10000 VMs, the appliance just needs some tweaking (more memory) and all is fine.
 
-**Out of the box is the key! You can change the look and feel, but you don´t need to. The whole product is working without any changes and some customers could find bottlenecks within 15 minutes after deployment.** 
+**Out of the box is the key! You can change the look and feel, but you don´t need to. The whole product is working without any changes and some customers could find bottlenecks within 15 minutes after deployment.**
 
 We continuously add important improvements to our data collectors as well as the dashboards, that you can access at any time you want.
 

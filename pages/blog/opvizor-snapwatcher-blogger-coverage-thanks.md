@@ -1,6 +1,6 @@
 ---
 title: "opvizor Snapwatcher Blogger Coverage - Thanks!"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-25"
 ---
 

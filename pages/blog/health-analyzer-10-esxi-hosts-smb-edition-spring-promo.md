@@ -1,7 +1,7 @@
 ---
 title: "Health Analyzer 10 ESXi Hosts SMB Edition - Spring Promo!"
 image: /images/blog/Dashboard-300x218-300x218.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-16"
 ---
 

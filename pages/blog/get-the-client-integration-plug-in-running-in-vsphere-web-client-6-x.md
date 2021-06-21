@@ -1,7 +1,7 @@
 ---
 title: "Get the Client Integration Plug-In running in vSphere Web Client 6.x"
 image: /images/blog/firefox_uninstall.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2017-07-11"
 top: true
 ---

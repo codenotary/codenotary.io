@@ -1,7 +1,7 @@
 ---
 title: "Alltop.com features Opvizor Blog"
 image: /images/blog/wpid-alltop_opvizor.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-29"
 ---
 

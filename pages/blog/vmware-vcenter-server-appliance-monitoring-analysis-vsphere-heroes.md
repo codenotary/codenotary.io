@@ -1,6 +1,6 @@
 ---
 title: "VMware vCenter Server Appliance monitoring and analysis for vSphere Heroes!"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2016-10-03"
 ---
 

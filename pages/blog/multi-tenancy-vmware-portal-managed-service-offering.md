@@ -1,7 +1,7 @@
 ---
 title: "Multi-Tenancy VMware Portal - Managed Service Offering"
 image: /images/blog/wpid-partner_view_11.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-04-30"
 ---
 

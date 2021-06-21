@@ -1,6 +1,6 @@
 ---
 title: "Quote - Victor Watson, Tucson Embedded Systems"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-02-17"
 ---
 

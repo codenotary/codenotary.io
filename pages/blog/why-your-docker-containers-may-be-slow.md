@@ -1,7 +1,7 @@
 ---
 title: "Why your Docker containers may be slow"
 image: /images/blog/1-1.jpg
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-04-26"
 ---
 

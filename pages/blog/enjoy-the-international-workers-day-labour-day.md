@@ -1,6 +1,6 @@
 ---
 title: "Enjoy the International Workers' Day (Labour Day)"
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2015-05-01"
 ---
 

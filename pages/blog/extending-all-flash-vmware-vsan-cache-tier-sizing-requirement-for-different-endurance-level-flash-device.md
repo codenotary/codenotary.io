@@ -1,7 +1,7 @@
 ---
 title: "Extending All Flash VMware vSAN Cache Tier Sizing Requirement for Different Endurance Level Flash Device"
 image: /images/blog/1-9.png
-tags: ["Ops", "opvizor"]
+tags: ["Ops", "opvizor", "metrics", "logs"]
 date: "2018-09-13"
 ---
 
