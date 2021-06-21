@@ -55,8 +55,8 @@ export default {
 	mixins: [colorUtils],
 	data: () => ({
 		items: [
-			{ title: 'Operating Systems', subitems: ['Windows', 'Linux', 'macOS', 'FreeBSD'] },
-			{ title: 'Architectures', subitems: ['x86', 'x86-64', 'ARM', 's390x', 'RISC-V'] },
+			{ title: 'Operating Systems', subitems: ['Windows', 'Linux', 'macOS', 'FreeBSD', 'z/OS'] },
+			{ title: 'Architectures', subitems: ['x86', 'x86-64', 'ARM', 's390x', 'RISC-V', 'z/Architecture'] },
 			{ title: 'Connectors', subitems: ['Java', '.Net', 'Node.js', 'Python', 'Go', 'REST API'] },
 		],
 	}),
