@@ -192,10 +192,11 @@ export default {
 				{
 					set: '@fortawesome/free-brands-svg-icons',
 					icons: [
+						'faDiscord',
 						'faFacebookSquare',
-						'faTwitterSquare',
-						'faLinkedin',
 						'faGithubSquare',
+						'faLinkedin',
+						'faTwitterSquare',
 					],
 				},
 			],

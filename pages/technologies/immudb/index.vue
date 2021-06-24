@@ -34,6 +34,7 @@
 		<LazyHydrate when-visible>
 			<nuxt-content :document="getStarted" />
 		</LazyHydrate>
+		<DiscordChatWidget id="chat-widget" />
 	</article>
 </template>
 
@@ -304,6 +305,13 @@ export default {
 		img:hover {
 			transform: scale(1.1);
 		}
+	}
+
+	#chat-widget {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 100;
 	}
 }
 </style>
