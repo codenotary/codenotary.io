@@ -19,7 +19,7 @@ The massive increase of software packages being built, distributed, and used mus
 
 It is important to mention that there is an obligation to disclose data and software breaches when companies become aware of it. The more information has been collected - and that includes a complete bill of material, recorded pipeline jobs, and the software approval process -, the better it is for further investigation and to get back to a normal business as fast as possible.
 
-At [CodeNotary](https://www.codenotary.com/products/ci-cd) we provide the platform and the integration required to record a fully searchable and comprehensive catalog or inventory of all your software components including its dependencies and vulnerability check results for internally developed, third-party, and open-source code.
+[CodeNotary](https://www.codenotary.com/products/ci-cd) provides the platform and the integration required to record a fully searchable and comprehensive catalog or inventory of all your software components including its dependencies and vulnerability check results for internally developed, third-party, and open-source code.
 
 ### What is a Bill of Material / Software Bill of Material or BOM/SBOM?
 
@@ -33,7 +33,7 @@ Therefore, when using these projects, all the quality and security issues are in
 
 You can't really blame the software developers themselves as they might be unaware of the vulnerabilities in dependencies within the code they reuse.
 
-An immutable SBOM is not just a list of software artifacts stored in the company archive. It’s a process that continuously gathers all used software with its dependencies, including versions and known vulnerabilities. CodeNotary provides command line tools to integrate into CI/CD pipelines (GitHub, GitLab, Jenkins, CircleCI, TravisCI and many more) and GitHub actions to automate the process of collecting the software build dependencies that ultimately leads to a BOM. CodeNotary Immutable Ledger also stores that information as transactions in an immutable and cryptographically verifiable ledger. These transactions include as well artifact metadata, vulnerability scanner reports, and the involved parties (CI/CD tool, QA engineer, vulnerability server aso.). 
+An immutable SBOM is not just a list of software artifacts stored in the company archive. It’s a process that continuously gathers all used software with its dependencies, including versions and known vulnerabilities. CodeNotary provides command line tools to integrate into CI/CD pipelines (GitHub, GitLab, Jenkins, CircleCI, TravisCI and many more) and GitHub actions to automate the process of collecting the software build dependencies that ultimately leads to a BOM. Our solution CodeNotary Immutable Ledger also stores that information as transactions in an immutable and cryptographically verifiable ledger. These transactions include as well artifact metadata, vulnerability scanner reports, and the involved parties (CI/CD tool, QA engineer, vulnerability server aso.). 
 
 Next to a code to binary integration, CodeNotary also provides a binary to dependency integration for Go and Java applications.
 
@@ -83,9 +83,9 @@ When reading all the news about recent software supply chain attacks, one big qu
 
 #### Quick introduction CodeNotary Immutable Ledger 2.2
 
-CodeNotary Immutable Ledger is the only solution that combines a complete immutable and cryptographically-verifiable data ledger with an integration to protect the full software lifecycle, software supply chain and application workload. Every timestamped notarization transaction consists of an user or machine identity, the unique digital artifact identity, the trust level (trusted, untrusted, unsupported) and metadata. As every historic transaction is an immutable version the platform is fully auditable.
+CodeNotary Immutable Ledger is the only solution that combines a complete immutable and cryptographically-verifiable data ledger with an integration to protect the full software lifecycle, software supply chain and application workload. Every timestamped notarization transaction consists of a user or machine identity, the unique digital artifact identity, the trust level (trusted, untrusted, unsupported), and metadata. As every historic transaction is an immutable version, the platform is fully auditable.
 
-The integration with any CI, CI/CD, and DevOps tools is easy using our API's and/or command-line tools. 
+The integration with any CI, CI/CD, and DevOps tool is easy using our APIs and/or command-line tools. 
 
 ![trustedcicd](/images/blog/trustedcicd.jpg)
 
@@ -97,14 +97,14 @@ CodeNotary can cover the whole supply chain and instead of signing the final bin
 When integrating the CodeNotary solution into your CI/CD pipeline, you gain **4 main benefits**:
 
 1. Tamperproof history of all digital artifacts (single artifact and bill of material of the build)
-2. Machines and people can notarize and authenticate every individual artifact inside or outside of your premises
+2. Machines and people can notarize and authenticate every individual artifact inside or outside your premises
 3. Notarization can be done for every individual artifact using different states (Trusted, Untrusted, Unsupported)
 4. Authentication can be done publicly by anyone with internet access (i. e. to check the current state of the download or build)
 
 The CI/CD protection can **uniquely identify**:
 
 - git repositories (source code)
-- CI/CD pipeline ([Jenkins](https://www.jenkins.io/), [CircleCI](https://circleci.com/), [GitLab](https://about.gitlab.com/), [TravisCI](https://travis-ci.com/), [GitHub Actions](https://github.com/features/actions) and many more)
+- CI/CD CI/CD pipelines ([Jenkins](https://www.jenkins.io/), [CircleCI](https://circleci.com/), [GitLab](https://about.gitlab.com/), [TravisCI](https://travis-ci.com/), [GitHub Actions](https://github.com/features/actions) and many more)
 - Container images
 - Files and folders (i. e. configuration files, build files, CI/CD recipes, installer binaries and many more)
 
@@ -137,7 +137,7 @@ You can read more about it here: https://www.codenotary.com/blog/the-trusted-CIC
 
 Many of your software is already built, so you only have the binary code, but not the sources from the date of the build. As dependencies can be updated quite often, even builds between Monday and Tuesday can already differ when it comes to the bill of material.
 
-Therefore, having access to the source code or the build protocol doesn't help - you need to extract the dependencies out of existing binary code.
+Therefore, having access to the source code or the build protocol doesn't help - you need to read the dependencies out of existing binary code.
 
 At CodeNotary, we already have working integrations for Go and Java to gather dependencies including their unique fingerprint by checking existing software binaries to recreate a BOM.
 
@@ -154,5 +154,6 @@ CodeNotary is not simply providing a SBOM for your software supply chain, it als
 That way, you can prove and query the present and the past whenever you need to know if and how you're affected by new vulnerabilities or supply chain attacks.
 
 We have an online trial that you can use to start protecting your software supply chain:  [CodeNotary CNIL Online](https://www.codenotary.com/products/ci-cd)
+
 
 
