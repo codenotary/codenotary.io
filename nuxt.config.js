@@ -6,6 +6,28 @@ import tosRoutes from './tos';
 const IS_PROD = process.env.NODE_ENV === 'production';
 const EXPERIMENTAL = false && !IS_PROD;
 
+const baseUrlArticles = process.env === 'production'
+	? 'https://codenotary.com'
+	: 'http://localhost:3000';
+const createFeedArticles = async function (feed) {
+	feed.options = {
+		title: 'Blog — CodeNotary',
+		description: 'Blog posts by CodeNotary team',
+		link: baseUrlArticles,
+		generator: 'CodeNotary Inc.',
+	};
+	const { $content } = require('@nuxt/content');
+	const articles = await $content('blog').fetch();
+
+	articles.forEach(({ title, slug }) => {
+		feed.addItem({
+			title,
+			id: title,
+			link: `${ baseUrlArticles }/${ slug }`,
+		});
+	});
+};
+
 export default {
 	/*
     ** ssr propery
@@ -358,7 +380,7 @@ export default {
 		},
 	},
 
-	feed () {
+	/* feed () {
 		const baseUrlArticles = process.env === 'production'
 			? 'https://codenotary.com'
 			: 'http://localhost:3000';
@@ -391,5 +413,14 @@ export default {
 			type,
 			create: createFeedArticles,
 		}));
-	},
+	}, */
+	feed: [
+		{
+			path: '/feed.xml',
+			create: createFeedArticles,
+			cacheTime: 1000 * 60 * 15,
+			type: 'rss2',
+			data: [],
+		},
+	],
 };

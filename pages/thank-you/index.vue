@@ -24,9 +24,7 @@ import { title } from '~/helpers/meta';
 export default {
 	name: 'ThankYou',
 	async asyncData({ $content, params }) {
-		console.log(params);
 		const page = await $content('thank-you', 'index').fetch();
-		console.log(page);
 
 		return { page };
 	},
