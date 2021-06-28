@@ -241,6 +241,8 @@ export default {
 		'@nuxtjs/robots',
 		// Doc: https://github.com/nuxt-community/sitemap-module
 		'@nuxtjs/sitemap',
+		// Doc: https://github.com/nuxt-community/feed-module
+		'@nuxtjs/feed',
 	],
 
 	/*
@@ -354,5 +356,40 @@ export default {
 			priority: 1,
 			lastmod: new Date(),
 		},
+	},
+
+	feed () {
+		const baseUrlArticles = process.env === 'production'
+			? 'https://codenotary.com'
+			: 'http://localhost:3000';
+		const baseLinkFeedArticles = '/feed/blog';
+		const feedFormats = {
+			rss: { type: 'rss2', file: 'rss.xml' },
+		};
+		const { $content } = require('@nuxt/content');
+
+		const createFeedArticles = async function (feed) {
+			feed.options = {
+				title: 'Blog — CodeNotary',
+				description: 'Blog posts by CodeNotary team',
+				link: baseUrlArticles,
+				generator: 'CodeNotary Inc.',
+			};
+			const articles = await $content('blog').fetch();
+
+			articles.forEach(({ title, slug }) => {
+				feed.addItem({
+					title,
+					id: title,
+					link: `${ baseUrlArticles }/${ slug }`,
+				});
+			});
+		};
+
+		return Object.values(feedFormats).map(({ file, type }) => ({
+			path: `${ baseLinkFeedArticles }/${ file }`,
+			type,
+			create: createFeedArticles,
+		}));
 	},
 };
