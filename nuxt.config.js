@@ -6,7 +6,7 @@ import tosRoutes from './tos';
 const IS_PROD = process.env.NODE_ENV === 'production';
 const EXPERIMENTAL = false && !IS_PROD;
 
-const baseUrlArticles = process.env === 'production'
+const baseUrlArticles = IS_PROD
 	? 'https://codenotary.com'
 	: 'http://localhost:3000';
 const createFeedArticles = async function (feed) {
