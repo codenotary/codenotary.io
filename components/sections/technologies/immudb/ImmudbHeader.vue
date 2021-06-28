@@ -69,6 +69,8 @@
 <script>
 import GithubButton from 'vue-github-button';
 
+import { IMMUCHALLENGE_URL } from '@/common/consts';
+
 export default {
 	name: 'ImmudbHeader',
 	components: {
@@ -81,8 +83,7 @@ export default {
 	},
 	methods: {
 		openCodingChallenge () {
-			const data = 'https://github.com/codenotary/immuchallenge';
-			data && window.open(data, '_blank');
+			window.open(IMMUCHALLENGE_URL, '_blank');
 		},
 	},
 };

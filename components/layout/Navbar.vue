@@ -50,7 +50,7 @@
 					>
 						Products
 					</p>
-<!--					<i-nav-item
+					<!--					<i-nav-item
 						v-if="productsMenuOpen"
 						:to="{ name: 'products-immutable-ledger' }"
 					>
