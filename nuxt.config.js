@@ -7,8 +7,8 @@ const IS_PROD = process.env.NODE_ENV === 'production';
 const EXPERIMENTAL = false && !IS_PROD;
 
 const baseUrlArticles = IS_PROD
-	? 'https://codenotary.com'
-	: 'http://localhost:3000';
+	? 'https://codenotary.com/blog'
+	: 'http://localhost:3000/blog';
 const createFeedArticles = async function (feed) {
 	feed.options = {
 		title: 'Blog — CodeNotary',
