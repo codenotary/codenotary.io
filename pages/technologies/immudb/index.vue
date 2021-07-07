@@ -103,6 +103,10 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 .immudb {
+	h2 {
+		font-weight: 700 !important;
+	}
+
 	#immudb-easy-setup-section {
 		margin-top: -2rem;
 		text-align: center;
