@@ -6,7 +6,7 @@
 		@input="onVisibilityChange"
 	>
 		<template slot="header">
-			<span class="cn-text-white _fornt-weight-bold">Download Research Paper</span>
+			<span class="cn-text-white _font-weight-bold">Download Research Paper</span>
 		</template>
 
 		<i-alert
@@ -32,22 +32,28 @@
 		</i-alert>
 
 		<p class="_margin-top-0">
-			We'll send you the research paper via email.
+			We will send you the research paper via email.
 		</p>
 
 		<i-form v-model="form" @submit.prevent="onSubmit">
-			<i-input :schema="form.contactEmail" placeholder="Enter your email" />
+			<i-input
+				class="_margin-bottom-1"
+				:schema="form.contactEmail"
+				placeholder="Enter your email"
+			/>
 			<vue-recaptcha
 				ref="recaptcha"
+				class="_margin-bottom-1"
 				load-recaptcha-script
 				:sitekey="sitekey"
 				@verify="onVerify"
 			/>
 			<cn-button
+				class="_margin-bottom-1"
 				type="submit"
 				:disabled="!verified || sending"
 			>
-				{{ sending ? 'Sending..' : 'Send me the document' }}
+				{{ sending ? 'Sending..' : 'Send the document' }}
 			</cn-button>
 		</i-form>
 	</i-modal>
@@ -140,6 +146,11 @@ export default {
 		background: $cn-dark-gradient !important;
 	}
 
+	.body {
+		border-bottom-left-radius: 30px !important;
+		border-bottom-right-radius: 30px !important;
+	}
+
 	.close {
 		display: none !important;
 
@@ -157,6 +168,10 @@ export default {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+	}
+
+	input[name="contactEmail"] {
+		border-radius: 8px;
 	}
 }
 </style>
