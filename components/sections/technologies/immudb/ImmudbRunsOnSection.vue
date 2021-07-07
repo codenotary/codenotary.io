@@ -1,6 +1,6 @@
 <template>
 	<PageSection id="immudb-runs-on-section">
-		<i-container>
+		<i-container class="floating-container">
 			<i-row>
 				<i-column>
 					<PageSectionHeader
@@ -32,11 +32,13 @@
 									md="3"
 									lg="3"
 								>
-									<StoryCard
-										:title="subitem"
-										:color="getColor(6)"
-										outlined
-									/>
+									<img
+										v-if="subitem"
+										class="image -responsive"
+										:class="{'image-only': !title && !subtitle }"
+										:src="subitem.image"
+										:alt="subitem.label"
+									>
 								</i-column>
 							</i-row>
 						</i-tab>
@@ -55,9 +57,89 @@ export default {
 	mixins: [colorUtils],
 	data: () => ({
 		items: [
-			{ title: 'Operating Systems', subitems: ['Windows', 'Linux', 'macOS', 'FreeBSD', 'z/OS'] },
-			{ title: 'Architectures', subitems: ['x86', 'x86-64', 'ARM', 's390x', 'RISC-V', 'z/Architecture'] },
-			{ title: 'Connectors', subitems: ['Java', '.Net', 'Node.js', 'Python', 'Go', 'REST API'] },
+			{
+				title: 'Operating Systems',
+				subitems: [
+					{
+						label: 'Windows',
+						image: '',
+					},
+					{
+						label: 'Linux',
+						image: '',
+					},
+					{
+						label: 'macOS',
+						image: '',
+					},
+					{
+						label: 'FreeBSD',
+						image: '',
+					},
+					{
+						label: 'z/OS',
+						image: '',
+					},
+				],
+			},
+			{
+				title: 'Architectures',
+				subitems: [
+					{
+						label: 'x86',
+						image: '',
+					},
+					{
+						label: 'x86-64',
+						image: '',
+					},
+					{
+						label: 'ARM',
+						image: '',
+					},
+					{
+						label: 's390x',
+						image: '',
+					},
+					{
+						label: 'RISC-V',
+						image: '',
+					},
+					{
+						label: 'z/Architecture',
+						image: '',
+					},
+				],
+			},
+			{
+				title: 'Connectors',
+				subitems: [
+					{
+						label: 'Java',
+						image: '',
+					},
+					{
+						label: '.Net',
+						image: '',
+					},
+					{
+						label: 'Node.js',
+						image: '',
+					},
+					{
+						label: 'Python',
+						image: '',
+					},
+					{
+						label: 'Go',
+						image: '',
+					},
+					{
+						label: 'REST API',
+						image: '',
+					},
+				],
+			},
 		],
 	}),
 	beforeDestroy () {
@@ -71,21 +153,54 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-runs-on-section {
-	background-color: $color-gray-10;
-	overflow: hidden;
+	position: relative;
+	background-color: $cn-color-background;
+	height: 320px;
+	overflow: unset !important;
 
-	.story-card {
-		margin-bottom: 2rem;
-		padding: 1rem;
+	.floating-container {
+		position: absolute;
+		z-index: 99;
+		bottom: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
 
-		h5 {
-			margin: 0;
+	.tabs {
+		.button-group {
+			position: relative;
+			padding-top: 48px;
+
+			.button {
+				position: absolute;
+				width: calc(33.33% - 8px);
+				padding: 16px 0 40px 0;
+				bottom: -28px;
+				background-color: $cn-color-grey;
+				border-radius: 30px 30px 0 0;
+				color: $cn-color-dark;
+				box-shadow: $cn-shadow-sm;
+				z-index: 1;
+
+				&.-active {
+					background-color: #fff !important;
+				}
+			}
+
+			.button:nth-child(2) {
+				left: calc(33.33% + 4px);
+			}
+
+			.button:nth-child(3) {
+				left: calc(66.66% + 8px);
+			}
 		}
 
-		@include breakpoint-down(xs) {
-			h5 {
-				font-size: 1rem;
-			}
+		.tab {
+			padding: 30px 0;
+			border-radius: 30px;
+			box-shadow: $cn-shadow-sm;
+			z-index: 5;
 		}
 	}
 
