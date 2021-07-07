@@ -5,16 +5,10 @@
 			<ImmudbCardsSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="playground" />
+			<nuxt-content :document="features" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ImmudbRunsOnSection />
-		</LazyHydrate>
-		<LazyHydrate when-visible>
-			<nuxt-content :document="easySetup" />
-		</LazyHydrate>
-		<LazyHydrate when-visible>
-			<nuxt-content :document="performance" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<nuxt-content :document="video" />
@@ -23,13 +17,22 @@
 			<TerminalSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="features" />
+			<nuxt-content :document="webconsole" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="usedBy" />
+			<nuxt-content :document="easySetup" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<nuxt-content :document="codeTabs" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="performance" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="playground" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<nuxt-content :document="usedBy" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<nuxt-content :document="getStarted" />
@@ -62,6 +65,7 @@ export default {
 		const codeTabs = await $content('technologies/immudb/CodeTabs').fetch();
 		const getStarted = await $content('technologies/immudb/GetStarted').fetch();
 		const playground = await $content('technologies/immudb/Playground').fetch();
+		const webconsole = await $content('technologies/immudb/Webconsole').fetch();
 
 		return {
 			easySetup,
@@ -72,6 +76,7 @@ export default {
 			codeTabs,
 			getStarted,
 			playground,
+			webconsole,
 		};
 	},
 	head() {
@@ -101,6 +106,7 @@ export default {
 	#immudb-easy-setup-section {
 		margin-top: -2rem;
 		text-align: center;
+		background: $cn-dark-gradient_inverse;
 
 		.container {
 			max-width: 980px;
@@ -110,6 +116,9 @@ export default {
 			width: auto;
 			display: inline-block;
 			max-width: 100%;
+			background: $cn-color-dark;
+			border-radius: 30px;
+			padding: 1em 2em;
 		}
 	}
 
@@ -133,12 +142,8 @@ export default {
 
 	#immudb-video-section {
 		color: white;
-		background-color: $color-primary;
+		background: $cn-dark-gradient;
 		text-align: center;
-		background-image: url('/images/immudb/corner-left-right-asymmetric-gray.png');
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-		background-position: top center;
 
 		h2 {
 			margin-top: 0;
@@ -152,67 +157,41 @@ export default {
 
 		.video-features {
 			display: flex;
-			width: 100%;
-			margin-top: 4rem;
+			flex-direction: column;
 
-			ul {
-				width: 33%;
-				text-align: left;
-				margin-left: 2rem;
-
-				li {
+			.video-feature {
+				&-items {
 					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					margin-bottom: 15px;
+				}
+
+				&-item {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
 					align-items: center;
-					margin-bottom: 0.5rem;
-				}
 
-				svg {
-					margin-right: 1rem;
+					p {
+						font-weight: 600;
+					}
 				}
-			}
-
-			.video {
-				padding: 1rem;
-				background: white;
-				display: block;
-				width: 67%;
-				box-sizing: border-box;
 			}
 
 			@media screen and (max-width: 979px) {
-				flex-direction: column;
-
-				ul,
 				.video {
 					width: 100%;
-					margin-left: 0;
-				}
-
-				ul {
-					margin-top: 2rem;
 				}
 			}
 		}
 	}
 
 	#immudb-features-section {
-		background-color: $color-white;
-		text-align: center;
-
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-
-		ul {
-			display: inline-block;
-			font-weight: bold;
-
-			li._text-muted {
-				@media screen and (max-width: 767px) {
-					display: none;
-				}
-			}
+		.immudb-feature {
+			padding: 30px 20px;
+			border-radius: $cn-border-radius-lg;
+			margin: 16px 0;
 		}
 	}
 
@@ -295,16 +274,27 @@ export default {
 
 	#immudb-get-started-end-section {
 		text-align: center;
+		background: $cn-dark-gradient_inverse;
+		color: white;
 	}
 
-	#immudb-playground {
-		img {
-			transition: transform 0.3s ease-in-out;
+	#immudb-playground,
+	#immudb-webconsole {
+		.image {
+			border-radius: $cn-border-radius-lg;
 		}
 
-		img:hover {
-			transform: scale(1.1);
+		.section-header {
+			background: $cn-dark-gradient;
+			margin-bottom: -50px;
 		}
+		// img {
+		// 	transition: transform 0.3s ease-in-out;
+		// }
+
+		// img:hover {
+		// 	transform: scale(1.1);
+		// }
 	}
 
 	#chat-widget {

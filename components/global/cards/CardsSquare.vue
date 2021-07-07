@@ -1,14 +1,12 @@
 <template>
-	<div class="square-card">
+	<div class="square-card" :class="{ wide }">
 		<div class="card-picture">
 			<img class="cn-icon" :src="imageUrl">
 		</div>
 		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
 			{{ title }}
 		</h3>
-		<h6 class="subtitle cn-text-sm">
-			{{ subtitle }}
-		</h6>
+		<h6 class="subtitle cn-text-sm" v-html="subtitle" />
 	</div>
 </template>
 
@@ -28,6 +26,10 @@ export default {
 			type: String,
 			default: '/images/placeholder.svg',
 		},
+		wide: {
+			type: Boolean,
+			default: false,
+		},
 	},
 };
 </script>
@@ -44,6 +46,11 @@ export default {
 	background-color: white;
 	padding: 25px;
 	box-shadow: $cn-shadow-sm;
+
+	&.wide {
+		max-width: 373px;
+		height: 385px;
+	}
 
 	.card-picture {
 		display: flex;

@@ -1,6 +1,7 @@
 <template>
 	<button
 		:class="dynamicClass" v-bind="$attrs"
+		:disabled="disabled"
 	>
 		<nuxt-link
 			v-if="to"
@@ -13,6 +14,8 @@
 			v-else-if="href"
 			class="no-hover"
 			:href="href"
+			:target="target"
+			:rel="rel"
 		>
 			<slot />
 		</a>
@@ -42,6 +45,14 @@ export default {
 		target: {
 			type: String,
 			default: '_self',
+		},
+		rel: {
+			type: String,
+			default: '',
+		},
+		disabled: {
+			type: Boolean,
+			default: false,
 		},
 	},
 	computed: {

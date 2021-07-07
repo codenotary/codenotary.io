@@ -13,6 +13,28 @@ immudb is a ledger database that has been developed with performance, scalabilit
 <i-row>
 <i-column>
     <div class="video-features">
+				<div class="video-feature-items">
+					<div class="video-feature-item">
+						<img class="cn-icon" src="/icons/easy_setup.svg">
+						<p>Easy setup</p>
+					</div>
+					<div class="video-feature-item">
+						<img class="cn-icon" src="/icons/reliable_database.svg">
+						<p>Fast and reliable immutable database</p>
+					</div>
+					<div class="video-feature-item">
+						<img class="cn-icon" src="/icons/secure_api.svg">
+						<p>Secure REST API gateway</p>
+					</div>
+					<div class="video-feature-item">
+						<img class="cn-icon" src="/icons/admin.svg">
+						<p>Powerful, easy to use admin</p>
+					</div>
+					<div class="video-feature-item">
+						<img class="cn-icon" src="/icons/open_source.svg">
+						<p>Open source</p>
+					</div>
+				</div>
         <div class="video">
             <div class="_embed _embed-16by9">
                 <iframe width="560" height="315" frameborder="0"
@@ -21,7 +43,7 @@ immudb is a ledger database that has been developed with performance, scalabilit
                         allowfullscreen></iframe>
             </div>
         </div>
-        <ul>
+        <!-- <ul>
             <li>
                 <fa icon="check-circle"></fa>
                 Easy setup
@@ -42,7 +64,7 @@ immudb is a ledger database that has been developed with performance, scalabilit
                 <fa icon="check-circle"></fa>
                 Open source
             </li>
-        </ul>
+        </ul> -->
     </div>
 </i-column>
 </i-row>

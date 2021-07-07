@@ -6,7 +6,7 @@
 		@input="onVisibilityChange"
 	>
 		<template slot="header">
-			Download Research Paper
+			<span class="cn-text-white _fornt-weight-bold">Download Research Paper</span>
 		</template>
 
 		<i-alert
@@ -36,27 +36,19 @@
 		</p>
 
 		<i-form v-model="form" @submit.prevent="onSubmit">
-			<i-form-group>
-				<i-input :schema="form.contactEmail" placeholder="Enter your email" />
-			</i-form-group>
-			<i-form-group>
-				<vue-recaptcha
-					ref="recaptcha"
-					:load-recaptcha-script="true"
-					:sitekey="sitekey"
-					@verify="onVerify"
-				/>
-			</i-form-group>
-			<i-form-group>
-				<i-button
-					type="submit"
-					variant="primary"
-					:disabled="!verified || sending"
-					block
-				>
-					{{ sending ? 'Sending..' : 'Send me the document' }}
-				</i-button>
-			</i-form-group>
+			<i-input :schema="form.contactEmail" placeholder="Enter your email" />
+			<vue-recaptcha
+				ref="recaptcha"
+				load-recaptcha-script
+				:sitekey="sitekey"
+				@verify="onVerify"
+			/>
+			<cn-button
+				type="submit"
+				:disabled="!verified || sending"
+			>
+				{{ sending ? 'Sending..' : 'Send me the document' }}
+			</cn-button>
 		</i-form>
 	</i-modal>
 </template>
@@ -141,17 +133,30 @@ export default {
 
 <style lang="scss">
 .subscribe-modal {
+	.header {
+		border: none !important;
+		border-top-left-radius: 30px !important;
+		border-top-right-radius: 30px !important;
+		background: $cn-dark-gradient !important;
+	}
+
 	.close {
-		.icon {
-			display: none;
-		}
+		display: none !important;
 
 		&::before {
-			font-family: Helvetica, monospace;
-			content: "x";
-			font-size: 12px;
-			display: inline-block;
+			content: '';
+			background: url('/icons/close.svg');
 		}
+	}
+
+	p {
+		text-align: center;
+	}
+
+	.form {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 }
 </style>
