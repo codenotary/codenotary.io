@@ -105,9 +105,11 @@ export default {
 			{
 				title: 'PRODUCTS',
 				links: [
-					/*{
+					/*
+					{
 						label: 'CNIL (Self-Hosted)', internalLink: '/products/immutable-ledger', href: null,
-					},*/
+					},
+					*/
 					{
 						label: 'CNIL Cloud', internalLink: '/products/ci-cd', href: null,
 					},
