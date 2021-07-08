@@ -167,7 +167,7 @@ export default {
 @import '~@inkline/inkline/src/css/mixins';
 
 #navbar {
-	z-index: 10;
+	z-index: 50;
 
 	@media screen and (max-width: $mobile-max-width) {
 		text-align: center;

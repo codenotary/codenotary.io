@@ -1,11 +1,13 @@
-<page-section id="immudb-video-section" style="padding: 160px !important;">
+<page-section id="immudb-video-section" style="padding: 180px !important;">
 <i-container>
 <i-row>
 <i-column>
 <div class="section-center">
 
 ## Why immudb?
+<p style="width: 66.66%; margin: 0 auto 48px;">
 immudb is a ledger database that has been developed with performance, scalability and versatility in mind. The user feedback has shown that they love the very high throughput and being able to store hashes as well as data. They see it as a great alternative to using a blockchain or ledger service.
+</p>
 
 </div>
 </i-column>

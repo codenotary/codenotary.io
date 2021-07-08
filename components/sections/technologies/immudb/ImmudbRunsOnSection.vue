@@ -23,22 +23,31 @@
 							class="_padding-top-2"
 							:title="item.title"
 						>
-							<i-row>
+							<i-row
+								class="image-wrapper _display-flex _justify-content-center"
+							>
 								<i-column
 									v-for="(subitem, idx) in item.subitems"
 									:key="`${subitem}-${idx}`"
-									xs="6"
-									sm="4"
-									md="3"
-									lg="3"
+									class="_display-flex _justify-content-center _align-items-center"
+									xs="12"
+									sm="6"
+									md="2"
+									lg="2"
 								>
 									<img
-										v-if="subitem"
-										class="image -responsive"
-										:class="{'image-only': !title && !subtitle }"
+										v-if="subitem && subitem.image"
+										class="image -responsive _padding-y-2"
+										:class="{'image-only': !subitem.label }"
 										:src="subitem.image"
 										:alt="subitem.label"
 									>
+									<StoryCard
+										v-else-if="subitem"
+										:title="subitem.label"
+										:color="getColor(6)"
+										outlined
+									/>
 								</i-column>
 							</i-row>
 						</i-tab>
@@ -62,23 +71,23 @@ export default {
 				subitems: [
 					{
 						label: 'Windows',
-						image: '',
+						image: '/images/immudb/runs-on/windows.svg',
 					},
 					{
 						label: 'Linux',
-						image: '',
+						image: '/images/immudb/runs-on/linux.svg',
 					},
 					{
 						label: 'macOS',
-						image: '',
+						image: '/images/immudb/runs-on/mac-os.svg',
 					},
 					{
 						label: 'FreeBSD',
-						image: '',
+						image: '/images/immudb/runs-on/free-bsd.svg',
 					},
 					{
 						label: 'z/OS',
-						image: '',
+						image: '/images/immudb/runs-on/z-os.png',
 					},
 				],
 			},
@@ -87,27 +96,21 @@ export default {
 				subitems: [
 					{
 						label: 'x86',
-						image: '',
 					},
 					{
 						label: 'x86-64',
-						image: '',
 					},
 					{
 						label: 'ARM',
-						image: '',
 					},
 					{
 						label: 's390x',
-						image: '',
 					},
 					{
 						label: 'RISC-V',
-						image: '',
 					},
 					{
 						label: 'z/Architecture',
-						image: '',
 					},
 				],
 			},
@@ -116,27 +119,27 @@ export default {
 				subitems: [
 					{
 						label: 'Java',
-						image: '',
+						image: '/images/immudb/runs-on/java.svg',
 					},
 					{
 						label: '.Net',
-						image: '',
+						image: '/images/immudb/runs-on/dot-net.svg',
 					},
 					{
 						label: 'Node.js',
-						image: '',
+						image: '/images/immudb/runs-on/nodejs.svg',
 					},
 					{
 						label: 'Python',
-						image: '',
+						image: '/images/immudb/runs-on/python.svg',
 					},
 					{
 						label: 'Go',
-						image: '',
+						image: '/images/immudb/runs-on/go.svg',
 					},
 					{
 						label: 'REST API',
-						image: '',
+						image: '/images/immudb/runs-on/rest-api.svg',
 					},
 				],
 			},
@@ -155,13 +158,14 @@ export default {
 #immudb-runs-on-section {
 	position: relative;
 	background-color: $cn-color-background;
-	height: 320px;
+	height: auto;
+	min-height: 240px;
 	overflow: unset !important;
 
 	.floating-container {
 		position: absolute;
 		z-index: 99;
-		bottom: -100px;
+		bottom: -120px;
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -180,6 +184,7 @@ export default {
 				border-radius: 30px 30px 0 0;
 				color: $cn-color-dark;
 				box-shadow: $cn-shadow-sm;
+				border: none;
 				z-index: 1;
 
 				&.-active {
@@ -200,7 +205,48 @@ export default {
 			padding: 30px 0;
 			border-radius: 30px;
 			box-shadow: $cn-shadow-sm;
+			border: none !important;
 			z-index: 5;
+		}
+	}
+
+	.image-wrapper {
+		.image {
+			position: relative;
+			padding: 16px;
+			object-fit: contain !important;
+			height: 160px;
+		}
+
+		.column {
+			&:not(:last-child) {
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					width: 1px;
+					height: 100%;
+					background-color: $cn-color-grey;
+					z-index: 2;
+				}
+			}
+		}
+
+		.story-card {
+			margin: 51px 0;
+			width: 100%;
+			padding: 1rem !important;
+
+			h5 {
+				margin: 0;
+			}
+
+			@include breakpoint-down(xs) {
+				h5 {
+					font-size: 1rem;
+				}
+			}
 		}
 	}
 
