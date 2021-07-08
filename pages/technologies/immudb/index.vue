@@ -32,7 +32,8 @@
 			<nuxt-content :document="playground" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="usedBy" />
+			<!-- <nuxt-content :document="usedBy" /> -->
+			<ImmudbUsers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<nuxt-content :document="getStarted" />
