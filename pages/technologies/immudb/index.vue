@@ -23,7 +23,7 @@
 			<nuxt-content :document="easySetup" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="codeTabs" />
+			<ImmudbByDevelopersForDeverlopers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<nuxt-content :document="performance" />
@@ -61,7 +61,6 @@ export default {
 		const performance = await $content('technologies/immudb/Performance').fetch();
 		const video = await $content('technologies/immudb/Video').fetch();
 		const features = await $content('technologies/immudb/Features').fetch();
-		const codeTabs = await $content('technologies/immudb/CodeTabs').fetch();
 		const getStarted = await $content('technologies/immudb/GetStarted').fetch();
 		const playground = await $content('technologies/immudb/Playground').fetch();
 		const webconsole = await $content('technologies/immudb/Webconsole').fetch();
@@ -71,7 +70,6 @@ export default {
 			performance,
 			video,
 			features,
-			codeTabs,
 			getStarted,
 			playground,
 			webconsole,
@@ -121,6 +119,10 @@ export default {
 			background: $cn-color-dark;
 			border-radius: 30px;
 			padding: 1em 2em;
+
+			.line-numbers-rows {
+				display: none !important;
+			}
 		}
 	}
 
@@ -253,12 +255,28 @@ export default {
 		}
 
 		.image {
+			position: relative !important;
 			border-radius: $cn-border-radius-lg;
 		}
 
 		.section-header {
 			background: $cn-dark-gradient;
 			margin-bottom: -50px;
+		}
+	}
+
+	#immudb-webconsole {
+		position: relative;
+		height: auto;
+		height: 0 !important;
+		overflow: unset !important;
+
+		.container {
+			position: absolute;
+			bottom: -120px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 10;
 		}
 	}
 

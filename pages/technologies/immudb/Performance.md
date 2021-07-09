@@ -1,4 +1,4 @@
-<page-section id="immudb-performance-section">
+<page-section id="immudb-performance-section" style="padding-top: 260px !important;">
 <page-section-header title="Unmatched performance" :bottom="2">
     immudb has been designed with read and write performance in mind while being tamper-proof. The benchmarks we've done show great results.
 </page-section-header>

@@ -158,8 +158,7 @@ export default {
 #immudb-runs-on-section {
 	position: relative;
 	background-color: $cn-color-background;
-	height: auto;
-	min-height: 240px;
+	height: 0 !important;
 	overflow: unset !important;
 
 	.floating-container {
