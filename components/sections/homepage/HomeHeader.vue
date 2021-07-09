@@ -41,7 +41,7 @@
 						>
 							Self-Hosted
 						</cn-button>
--->
+						-->
 					</p>
 				</i-column>
 				<i-column lg="1" />
