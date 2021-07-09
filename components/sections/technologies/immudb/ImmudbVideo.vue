@@ -76,7 +76,21 @@
 					lg="10"
 					xl="10"
 				>
-					<div class="video">
+					<div
+						v-if="showVideo"
+						class="thumbnail"
+						@click="showVideo = !showVideo"
+					>
+						<img
+							class="image-box image -responsive _margin-y-0 _margin-x-auto"
+							:src="'/images/video/preview.png'"
+							:alt="'immudb video thumbanil'"
+						>
+					</div>
+					<div
+						v-else
+						class="video"
+					>
 						<div class="_embed _embed-16by9">
 							<iframe
 								height="260" frameborder="0"
@@ -96,6 +110,9 @@
 <script>
 export default {
 	name: 'ImmudbVideo',
+	data: () => ({
+		showVideo: false,
+	}),
 };
 </script>
 
@@ -113,6 +130,17 @@ export default {
 
 	p {
 		color: rgba(white, 0.8);
+	}
+
+	.thumbnail {
+		background-color: white;
+		position: relative;
+		flex: 0 0 0;
+		width: 100%;
+		min-height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.video-features {
