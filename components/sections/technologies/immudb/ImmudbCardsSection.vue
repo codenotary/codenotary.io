@@ -50,6 +50,8 @@ export default {
 
 #immudb-cards-section {
 	@include breakpoint-down(sm) {
+		margin-bottom: -40px !important;
+
 		.container {
 			width: 100%;
 

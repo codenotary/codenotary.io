@@ -235,8 +235,8 @@ export default {
 
 		@include breakpoint-down(sm) {
 			.container {
-				margin: 0 0 -180px 0 !important;
-				padding: 0 !important;
+				margin: 0 auto -180px !important;
+				padding: 0 24px !important;
 				width: 100% !important;
 				min-width: 100%;
 			}
