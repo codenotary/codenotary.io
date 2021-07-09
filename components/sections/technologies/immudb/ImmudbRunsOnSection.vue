@@ -169,6 +169,18 @@ export default {
 		z-index: 10;
 	}
 
+	@include breakpoint-down(sm) {
+		height: auto !important;
+
+		.floating-container {
+			position: relative;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+			bottom: -20px;
+		}
+	}
+
 	.tabs {
 		.button-group {
 			position: relative;

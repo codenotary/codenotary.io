@@ -34,36 +34,73 @@
 				>
 					<div class="video-features">
 						<div class="video-feature-items">
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/easy_setup.svg">
-								<p>
-									Easy setup
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/reliable_database.svg">
-								<p>
-									Fast and reliable immutable database
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/secure_api.svg">
-								<p>
-									Secure REST API gateway
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/admin.svg">
-								<p>
-									Powerful, easy to use admin
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/open_source.svg">
-								<p>
-									Open source
-								</p>
-							</div>
+							<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/easy_setup.svg">
+									<p>
+										Easy setup
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/reliable_database.svg">
+									<p>
+										Fast and reliable immutable database
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/secure_api.svg">
+									<p>
+										Secure REST API gateway
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/admin.svg">
+									<p>
+										Powerful, easy to use admin
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/open_source.svg">
+									<p>
+										Open source
+									</p>
+								</i-column>
+							</i-row>
 						</div>
 					</div>
 				</i-column>

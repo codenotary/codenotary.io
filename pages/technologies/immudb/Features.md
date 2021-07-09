@@ -10,7 +10,7 @@
 			</i-column>
 		</i-row>
 		<i-row>
-			<i-column>
+			<i-column xs="6" sm="6" md="6" lg="6" xl="6">
 				<div class="immudb-feature cn-bg-brand cn-text-white _display-flex _flex-direction-column">
 					<img class="cn-icon" src="/icons/integrity.svg">
 					<h4 class="cn-text-white _font-weight-bold _text-center _margin-0 _margin-top-1">
@@ -18,7 +18,7 @@
 					</h4>
 				</div>
 			</i-column>
-			<i-column>
+			<i-column xs="6" sm="6" md="6" lg="6" xl="6">
 				<div class="immudb-feature cn-bg-primary cn-text-white _display-flex _flex-direction-column">
 					<img class="cn-icon" src="/icons/acid_compliance.svg">
 					<h4 class="cn-text-white _font-weight-bold _text-center _margin-0 _margin-top-1">
