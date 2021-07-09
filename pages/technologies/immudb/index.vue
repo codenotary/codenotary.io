@@ -23,7 +23,7 @@
 			<nuxt-content :document="easySetup" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="codeTabs" />
+			<ImmudbByDevelopersForDeverlopers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<nuxt-content :document="performance" />
@@ -61,7 +61,6 @@ export default {
 		const performance = await $content('technologies/immudb/Performance').fetch();
 		const video = await $content('technologies/immudb/Video').fetch();
 		const features = await $content('technologies/immudb/Features').fetch();
-		const codeTabs = await $content('technologies/immudb/CodeTabs').fetch();
 		const getStarted = await $content('technologies/immudb/GetStarted').fetch();
 		const playground = await $content('technologies/immudb/Playground').fetch();
 		const webconsole = await $content('technologies/immudb/Webconsole').fetch();
@@ -71,7 +70,6 @@ export default {
 			performance,
 			video,
 			features,
-			codeTabs,
 			getStarted,
 			playground,
 			webconsole,

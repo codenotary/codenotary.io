@@ -110,7 +110,7 @@ export default {
 				display: block;
 				margin: 0;
 				padding: 1rem;
-				background: #282a36;
+				background: $cn-color-dark !important;
 				box-sizing: border-box;
 				overflow: auto;
 				min-height: 240px;

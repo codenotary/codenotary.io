@@ -30,18 +30,20 @@
 										sm="12"
 										md="6"
 									>
+										<!-- eslint-disable -->
 										<Terminal rounded language="go">
 											// Store any key, value auditproof and tamperproof
 											key2, value2 := []byte("myClient"), []byte("Visa 6679499384784022 11/23")
 											verifiedIndex, err := client.SafeSet(ctx, key2, value2)
 
 											if err != nil {
-											exit(err)
+												exit(err)
 											}
 
 											fmt.Println("   SafeSet - add and verify entry:")
 											printItem(key2, value2, verifiedIndex)
 										</Terminal>
+										<!-- eslint-enable -->
 									</i-column>
 								</i-row>
 							</div>
