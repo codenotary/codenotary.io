@@ -1,0 +1,149 @@
+<template>
+	<PageSection
+		id="immudb-video-section"
+		style="padding: 180px 0 320px !important;"
+	>
+		<i-container>
+			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+				<i-column
+					xs="12"
+					sm="12"
+					md="10"
+					lg="10"
+					xl="10"
+				>
+					<PageSectionHeader
+						title="Why immudb?"
+						:bottom="2"
+						color="white"
+						weight="bold"
+					>
+						<p class="_margin-bottom-1">
+							immudb is a ledger database that has been developed with performance, scalability and versatility in mind. The user feedback has shown that they love the very high throughput and being able to store hashes as well as data. They see it as a great alternative to using a blockchain or ledger service.
+						</p>
+					</PageSectionHeader>
+				</i-column>
+			</i-row>
+			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+				<i-column
+					xs="12"
+					sm="12"
+					md="10"
+					lg="10"
+					xl="10"
+				>
+					<div class="video-features">
+						<div class="video-feature-items">
+							<div class="video-feature-item">
+								<img class="cn-icon" src="/icons/easy_setup.svg">
+								<p>
+									Easy setup
+								</p>
+							</div>
+							<div class="video-feature-item">
+								<img class="cn-icon" src="/icons/reliable_database.svg">
+								<p>
+									Fast and reliable immutable database
+								</p>
+							</div>
+							<div class="video-feature-item">
+								<img class="cn-icon" src="/icons/secure_api.svg">
+								<p>
+									Secure REST API gateway
+								</p>
+							</div>
+							<div class="video-feature-item">
+								<img class="cn-icon" src="/icons/admin.svg">
+								<p>
+									Powerful, easy to use admin
+								</p>
+							</div>
+							<div class="video-feature-item">
+								<img class="cn-icon" src="/icons/open_source.svg">
+								<p>
+									Open source
+								</p>
+							</div>
+						</div>
+					</div>
+				</i-column>
+			</i-row>
+			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+				<i-column
+					xs="12"
+					sm="12"
+					md="10"
+					lg="10"
+					xl="10"
+				>
+					<div class="video">
+						<div class="_embed _embed-16by9">
+							<iframe
+								height="260" frameborder="0"
+								src="https://www.youtube.com/embed/rQ4iZAM14m0?controls=0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							/>
+						</div>
+					</div>
+					</div>
+				</i-column>
+			</i-row>
+		</i-container>
+	</PageSection>
+</template>
+
+<script>
+export default {
+	name: 'ImmudbVideo',
+};
+</script>
+
+<style lang="scss">
+#immudb-video-section {
+	color: white;
+	background: $cn-dark-gradient;
+	text-align: center;
+
+	h2 {
+		margin-top: 0;
+		border-bottom: 0;
+		color: white;
+	}
+
+	p {
+		color: rgba(white, 0.8);
+	}
+
+	.video-features {
+		display: flex;
+		flex-direction: column;
+
+		.video-feature {
+			&-items {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-bottom: 15px;
+			}
+
+			&-item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				p {
+					font-weight: 600;
+				}
+			}
+		}
+
+		@media screen and (max-width: 979px) {
+			.video {
+				width: 100%;
+			}
+		}
+	}
+}
+</style>
