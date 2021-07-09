@@ -40,7 +40,7 @@ export default {
 @import '~@inkline/inkline/src/css/mixins';
 
 section.banner {
-	background-color: $color-primary-dark;
+	background-color: $cn-color-dark;
 
 	.row,
 	.column {
