@@ -1,4 +1,4 @@
-<page-section id="immudb-video-section" style="padding: 180px !important;">
+<page-section id="immudb-video-section" style="padding: 180px 0 320px !important;">
 <i-container>
 <i-row>
 <i-column>

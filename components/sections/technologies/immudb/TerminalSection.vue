@@ -1,12 +1,12 @@
 <template>
-	<PageSection id="immudb-code-examples-section" style="padding-bottom: 420px !important;">
-		<i-container class="_padding-x-4">
+	<PageSection id="immudb-code-examples-section">
+		<i-container class="floating-container _padding-x-4">
 			<i-row>
 				<i-column>
 					<div>
 						<VueSlickCarousel v-bind="settings">
 							<div>
-								<i-row middle class="_padding-1">
+								<i-row middle>
 									<i-column
 										xs="12"
 										sm="12"
@@ -196,6 +196,19 @@ export default {
 // }
 
 #immudb-code-examples-section {
+	position: relative;
+	background-color: $cn-color-background;
+	height: 760px !important;
+	overflow: unset !important;
+
+	.floating-container {
+		position: absolute;
+		top: -240px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 10;
+	}
+
 	svg {
 		width: 3rem;
 		height: 3rem;
@@ -239,6 +252,7 @@ export default {
 				height: 15px;
 				border-radius: 30px;
 				background: $cn-color-primary_light;
+				border: 1px solid $cn-color-dark !important;
 			}
 
 			.slick-active {
