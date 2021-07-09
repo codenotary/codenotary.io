@@ -11,13 +11,13 @@
 			<ImmudbRunsOnSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="video" />
+			<ImmudbVideo />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<TerminalSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="webconsole" />
+			<ImmudbWebconsole />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<nuxt-content :document="easySetup" />
@@ -29,7 +29,7 @@
 			<nuxt-content :document="performance" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="playground" />
+			<ImmudbPlayground />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ImmudbUsers />
@@ -59,20 +59,14 @@ export default {
 	async asyncData ({ $content }) {
 		const easySetup = await $content('technologies/immudb/EasySetup').fetch();
 		const performance = await $content('technologies/immudb/Performance').fetch();
-		const video = await $content('technologies/immudb/Video').fetch();
 		const features = await $content('technologies/immudb/Features').fetch();
 		const getStarted = await $content('technologies/immudb/GetStarted').fetch();
-		const playground = await $content('technologies/immudb/Playground').fetch();
-		const webconsole = await $content('technologies/immudb/Webconsole').fetch();
 
 		return {
 			easySetup,
 			performance,
-			video,
 			features,
 			getStarted,
-			playground,
-			webconsole,
 		};
 	},
 	head() {
@@ -144,53 +138,6 @@ export default {
 		}
 	}
 
-	#immudb-video-section {
-		color: white;
-		background: $cn-dark-gradient;
-		text-align: center;
-
-		h2 {
-			margin-top: 0;
-			border-bottom: 0;
-			color: white;
-		}
-
-		p {
-			color: rgba(white, 0.8);
-		}
-
-		.video-features {
-			display: flex;
-			flex-direction: column;
-
-			.video-feature {
-				&-items {
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					margin-bottom: 15px;
-				}
-
-				&-item {
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-
-					p {
-						font-weight: 600;
-					}
-				}
-			}
-
-			@media screen and (max-width: 979px) {
-				.video {
-					width: 100%;
-				}
-			}
-		}
-	}
-
 	#immudb-features-section {
 		.immudb-feature {
 			padding: 30px 20px;
@@ -245,39 +192,6 @@ export default {
 		text-align: center;
 		background: $cn-dark-gradient_inverse;
 		color: white;
-	}
-
-	#immudb-playground,
-	#immudb-webconsole {
-		h2 {
-			margin-top: 8px !important;
-			margin-bottom: 32px !important;
-		}
-
-		.image {
-			position: relative !important;
-			border-radius: $cn-border-radius-lg;
-		}
-
-		.section-header {
-			background: $cn-dark-gradient;
-			margin-bottom: -50px;
-		}
-	}
-
-	#immudb-webconsole {
-		position: relative;
-		height: auto;
-		height: 0 !important;
-		overflow: unset !important;
-
-		.container {
-			position: absolute;
-			bottom: -120px;
-			left: 50%;
-			transform: translateX(-50%);
-			z-index: 10;
-		}
 	}
 
 	#chat-widget {
