@@ -1,5 +1,5 @@
 <template>
-	<PageSection id="immudb-playground">
+	<PageSection id="immudb-playground" :top="1">
 		<i-container>
 			<i-row middle>
 				<i-column
@@ -51,6 +51,7 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
+		margin-bottom: -50px;
 
 		.container {
 			position: relative;

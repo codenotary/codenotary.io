@@ -30,7 +30,7 @@
 									v-for="(subitem, idx) in item.subitems"
 									:key="`${subitem}-${idx}`"
 									class="_display-flex _justify-content-center _align-items-center"
-									xs="12"
+									xs="6"
 									sm="6"
 									md="2"
 									lg="2"
@@ -171,6 +171,7 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
+		padding-top: 0 !important;
 
 		.floating-container {
 			position: relative;

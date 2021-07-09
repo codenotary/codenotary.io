@@ -122,6 +122,13 @@ export default {
 
 	#immudb-performance-section {
 		background: $cn-color-grey_light;
+		padding-top: 260px !important;
+
+		@include breakpoint-down(sm) {
+			&.section.variant-standard {
+				padding-top: 40px !important;
+			}
+		}
 
 		.container {
 			background: white;
@@ -228,7 +235,8 @@ export default {
 
 		@include breakpoint-down(sm) {
 			.container {
-				margin: 0 !important;
+				margin: 0 0 -180px 0 !important;
+				padding: 0 !important;
 				width: 100% !important;
 				min-width: 100%;
 			}
@@ -238,6 +246,7 @@ export default {
 
 				.immudb-feature {
 					margin: 0 !important;
+					width: 100% !important;
 
 					h4 {
 						min-height: 32px;
@@ -294,6 +303,11 @@ export default {
 		text-align: center;
 		background: $cn-dark-gradient_inverse;
 		color: white;
+		padding-top: 160px !important;
+
+		@include breakpoint-down(sm) {
+			padding-top: 30px !important;
+		}
 	}
 
 	#chat-widget {

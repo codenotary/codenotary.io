@@ -138,6 +138,7 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
+		margin-bottom: -260px;
 
 		.floating-container {
 			position: relative;

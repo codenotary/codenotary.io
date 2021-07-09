@@ -211,6 +211,7 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
+		margin-bottom: 400px;
 
 		.floating-container {
 			position: relative;
@@ -218,6 +219,14 @@ export default {
 			padding: 0 !important;
 			width: 100% !important;
 			bottom: -20px;
+		}
+
+		.slick-arrow.slick-next {
+			right: -16px !important;
+		}
+
+		.slick-arrow.slick-prev {
+			left: -16px !important;
 		}
 	}
 

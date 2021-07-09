@@ -162,6 +162,11 @@ export default {
 	background: $cn-dark-gradient;
 	text-align: center;
 
+	@include breakpoint-down(sm) {
+		height: auto !important;
+		margin-bottom: -60px;
+	}
+
 	h2 {
 		margin-top: 0;
 		border-bottom: 0;

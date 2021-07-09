@@ -1,4 +1,4 @@
-<page-section id="immudb-performance-section" style="padding-top: 260px !important;">
+<page-section id="immudb-performance-section">
 	<i-container>
 		<i-row>
 			<i-column>

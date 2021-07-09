@@ -41,8 +41,23 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 .subheader {
 	max-width: 700px;
+}
+
+#immudb-cards-section {
+	@include breakpoint-down(sm) {
+		.container {
+			width: 100%;
+
+			> div {
+				min-width: 100%;
+			}
+		}
+	}
 }
 
 .about-immudb-cards {
@@ -57,11 +72,6 @@ export default {
 
 	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 10px;
-
-		.container {
-			width: 100%;
-			margin: 0 !important;
-		}
 
 		& ::v-deep .square-card {
 			padding: 16px;
