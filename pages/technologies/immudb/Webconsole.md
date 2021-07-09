@@ -1,5 +1,5 @@
 <page-section id="immudb-webconsole">
-<i-container>
+<i-container class="floating-container">
 <i-row middle>
 	<i-column xs="1" sm="1" md="2" ls="2" xl="2"></i-column>
 	<i-column>

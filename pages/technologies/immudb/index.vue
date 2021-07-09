@@ -253,12 +253,28 @@ export default {
 		}
 
 		.image {
+			position: relative !important;
 			border-radius: $cn-border-radius-lg;
 		}
 
 		.section-header {
 			background: $cn-dark-gradient;
 			margin-bottom: -50px;
+		}
+	}
+
+	#immudb-webconsole {
+		position: relative;
+		height: auto;
+		min-height: 420px;
+		overflow: unset !important;
+
+		.floating-container {
+			position: absolute;
+			bottom: -210px;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 10;
 		}
 	}
 
