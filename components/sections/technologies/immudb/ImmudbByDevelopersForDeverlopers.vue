@@ -9,7 +9,7 @@
 						color="white"
 						weight="bold"
 					>
-						<p class="_padding-x-8 _text-white">
+						<p class="_text-white">
 							We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
 						</p>
 					</PageSectionHeader>
@@ -144,7 +144,7 @@ export default {
 			margin: 0 !important;
 			padding: 0 !important;
 			width: 100% !important;
-			bottom: -20px;
+			top: -320px;
 		}
 	}
 

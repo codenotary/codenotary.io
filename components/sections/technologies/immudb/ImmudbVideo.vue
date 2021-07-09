@@ -154,6 +154,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 #immudb-video-section {
 	color: white;
 	background: $cn-dark-gradient;

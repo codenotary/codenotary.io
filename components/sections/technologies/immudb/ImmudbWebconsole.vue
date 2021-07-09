@@ -3,7 +3,7 @@
 		<i-container>
 			<i-row middle>
 				<i-column
-					xs="1" sm="1"
+					xs="0" sm="1"
 					md="2" ls="2"
 					xl="2"
 				/>
@@ -25,7 +25,7 @@
 					</a>
 				</i-column>
 				<i-column
-					xs="1" sm="1"
+					xs="0" sm="1"
 					md="2" ls="2"
 					xl="2"
 				/>
@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 #immudb-webconsole {
 	position: relative;
 	height: auto;
@@ -53,6 +56,17 @@ export default {
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
+	}
+
+	@include breakpoint-down(sm) {
+		height: auto !important;
+
+		.container {
+			position: relative;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+		}
 	}
 
 	h2 {

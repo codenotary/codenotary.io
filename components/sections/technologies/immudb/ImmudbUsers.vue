@@ -17,7 +17,7 @@
 					v-for="(item, idx) in items"
 					:key="`${item}-${idx}`"
 					class="_display-flex _justify-content-center _align-items-center"
-					xs="12"
+					xs="6"
 					sm="6"
 					md="2"
 					lg="2"
