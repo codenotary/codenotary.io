@@ -47,7 +47,7 @@ export default {
 
 section.immudb-star-banner {
 	position: relative;
-	background-color: $color-primary-dark;
+	background-color: $cn-color-dark;
 	transition: all 0.15s ease-out;
 	z-index: 995;
 

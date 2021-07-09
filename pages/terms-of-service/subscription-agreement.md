@@ -1,6 +1,6 @@
 ---
 title: Codenotary Immutable Ledger® Subscription Agreement
-download: "/resources/CNIL_LicenseAgreement_December2020.pdf"
+download: "/resources/CNIL_LicenseAgreement_July2021.pdf"
 ---
 
 ## **CodeNotary Immutable Ledger® Subscription Agreement**

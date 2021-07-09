@@ -6,16 +6,11 @@ export default {
 				const script = document.createElement('script');
 				script.type = 'text/javascript';
 				script.src = src;
-<<<<<<< HEAD
-				document.body.appendChild(script);
-			}
-=======
 				this.$nextTick(() => {
 					document.body.appendChild(script);
 				});
 			}
 			return false;
->>>>>>> 93b39656c7366c5f7495c48cd74885a253c07ada
 		},
 	},
 };
