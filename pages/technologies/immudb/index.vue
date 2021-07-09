@@ -247,6 +247,11 @@ export default {
 
 	#immudb-playground,
 	#immudb-webconsole {
+		h2 {
+			margin-top: 8px !important;
+			margin-bottom: 32px !important;
+		}
+
 		.image {
 			border-radius: $cn-border-radius-lg;
 		}
@@ -255,13 +260,6 @@ export default {
 			background: $cn-dark-gradient;
 			margin-bottom: -50px;
 		}
-		// img {
-		// 	transition: transform 0.3s ease-in-out;
-		// }
-
-		// img:hover {
-		// 	transform: scale(1.1);
-		// }
 	}
 
 	#chat-widget {
