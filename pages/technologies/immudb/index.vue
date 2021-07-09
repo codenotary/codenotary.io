@@ -121,7 +121,7 @@ export default {
 	}
 
 	#immudb-performance-section {
-		background: $color-gray-10;
+		background: $cn-color-grey_light;
 
 		.container {
 			background: white;

@@ -79,7 +79,7 @@
 					<div
 						v-if="!showVideo"
 						class="thumbnail"
-						@click="showVideo = !showVideo"
+						@click="playVideo"
 					>
 						<img
 							class="image-box image -responsive _margin-y-0 _margin-x-auto"
@@ -90,16 +90,11 @@
 					<div
 						v-else
 					>
-						<div class="_embed _embed-16by9">
-							<iframe
-								src="https://www.youtube.com/embed/rQ4iZAM14m0"
-								title="YouTube video player"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
-							/>
-						</div>
-					</div>
+						<youtube
+							ref="player"
+							video-id="rQ4iZAM14m0"
+							:player-vars="{ autoplay: 1 }"
+						/>
 					</div>
 				</i-column>
 			</i-row>
@@ -113,6 +108,11 @@ export default {
 	data: () => ({
 		showVideo: false,
 	}),
+	methods: {
+		playVideo () {
+			this.showVideo = true;
+		},
+	},
 };
 </script>
 

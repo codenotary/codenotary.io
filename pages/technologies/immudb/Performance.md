@@ -63,7 +63,6 @@
 						</div>
 					</i-column>
 				</i-row>
-
 			</i-column>
 		</i-row>
 	</i-container>

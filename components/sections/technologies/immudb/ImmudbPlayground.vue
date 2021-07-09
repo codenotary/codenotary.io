@@ -41,7 +41,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 #immudb-playground {
+	background: $cn-color-grey_light;
+
 	h2 {
 		margin-top: 8px !important;
 		margin-bottom: 32px !important;
