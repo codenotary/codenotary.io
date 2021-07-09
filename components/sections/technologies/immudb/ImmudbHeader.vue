@@ -96,8 +96,6 @@ export default {
 		const { data } = await axios.get('https://api.github.com/repos/codenotary/immudb');
 		const { stargazers_count: stargazersCount } = data;
 
-		console.log({ stargazersCount });
-
 		this.stargazersCount = stargazersCount;
 	},
 	computed: {
