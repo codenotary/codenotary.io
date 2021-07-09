@@ -37,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 .square-card {
 	max-width: 250px;
-	height: 228px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -49,7 +49,11 @@ export default {
 
 	&.wide {
 		max-width: 373px;
-		height: 385px;
+		flex: 1;
+
+		.subtitle {
+			max-width: none;
+		}
 	}
 
 	.card-picture {

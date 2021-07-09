@@ -41,22 +41,6 @@ export default {
 </script>
 
 <style lang="scss">
-// @import "~@inkline/inkline/src/css/mixins";
-// @import "~@inkline/inkline/src/css/config";
-
-// #immudb-cards-section {
-// 	background-color: transparent;
-// 	margin-top: -2rem;
-// 	padding-top: 0;
-
-// 	.feature {
-// 		padding: 2rem 1rem;
-// 		background: white;
-// 		border: 1px solid $border-color-light;
-// 		border-bottom: 2px solid $color-primary;
-// 	}
-// }
-
 .subheader {
 	max-width: 700px;
 }
@@ -65,11 +49,10 @@ export default {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
 	flex: 1 0 100%;
 	flex-wrap: wrap;
 	padding: 0;
-	//padding-top: 10px;
 	padding-bottom: 10px;
 
 	@media screen and (max-width: $mobile-max-width) {
