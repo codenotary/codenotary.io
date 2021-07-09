@@ -204,7 +204,7 @@ export default {
 					font-size: 18px;
 					line-height: 22px;
 
-					&.nuxt-link-active {
+					&.-active.nuxt-link-active {
 						color: $cn-color-secondary !important;
 					}
 				}
@@ -255,6 +255,10 @@ export default {
 		color: white !important;
 
 		&:hover {
+			color: $cn-color-secondary !important;
+		}
+
+		&.-active.nuxt-link-active {
 			color: $cn-color-secondary !important;
 		}
 	}
