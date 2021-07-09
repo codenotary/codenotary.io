@@ -68,7 +68,7 @@
 					</div>
 				</i-column>
 			</i-row>
-			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+			<i-row class="_display-flex _justify-content-center">
 				<i-column
 					xs="12"
 					sm="12"
@@ -77,25 +77,25 @@
 					xl="10"
 				>
 					<div
-						v-if="showVideo"
+						v-if="!showVideo"
 						class="thumbnail"
 						@click="showVideo = !showVideo"
 					>
 						<img
 							class="image-box image -responsive _margin-y-0 _margin-x-auto"
-							:src="'/images/video/preview.png'"
-							:alt="'immudb video thumbanil'"
+							:src="'/videos/thumbnail.png'"
+							:alt="'immudb video thumbnail'"
 						>
 					</div>
 					<div
 						v-else
-						class="video"
 					>
 						<div class="_embed _embed-16by9">
 							<iframe
-								height="260" frameborder="0"
-								src="https://www.youtube.com/embed/rQ4iZAM14m0?controls=0"
-								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								src="https://www.youtube.com/embed/rQ4iZAM14m0"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 								allowfullscreen
 							/>
 						</div>
@@ -133,14 +133,22 @@ export default {
 	}
 
 	.thumbnail {
-		background-color: white;
 		position: relative;
 		flex: 0 0 0;
 		width: 100%;
-		min-height: 90px;
+		max-height: 360px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		img {
+			max-height: 360px;
+		}
+	}
+
+	.video {
+		width: 100%;
+		max-height: 360px;
 	}
 
 	.video-features {
