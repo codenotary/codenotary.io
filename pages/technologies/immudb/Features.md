@@ -1,7 +1,7 @@
 <page-section id="immudb-features-section" style="padding-bottom: 180px !important;">
 <i-container>
 <i-row class="_display-flex _justify-content-center">
-	<i-column xs="12" sm="12" md="10" lg="10" xl="10">
+	<i-column class="_padding-x-0" xs="12" sm="12" md="10" lg="10" xl="10">
 		<i-row>
 			<i-column>
 					<page-section-header :bottom="2" title="Features">

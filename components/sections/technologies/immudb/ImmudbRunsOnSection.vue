@@ -11,7 +11,7 @@
 				</i-column>
 			</i-row>
 			<i-row>
-				<i-column>
+				<i-column class="_padding-x-0">
 					<i-tabs
 						class="analyze-and-manage-tabs"
 						stretch
