@@ -121,6 +121,10 @@ export default {
 			background: $cn-color-dark;
 			border-radius: 30px;
 			padding: 1em 2em;
+
+			.line-numbers-rows {
+				display: none !important;
+			}
 		}
 	}
 
@@ -269,7 +273,7 @@ export default {
 		min-height: 420px;
 		overflow: unset !important;
 
-		.floating-container {
+		.container {
 			position: absolute;
 			bottom: -210px;
 			left: 50%;

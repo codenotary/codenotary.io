@@ -1,4 +1,4 @@
-<page-section id="immudb-easy-setup-section" style="padding: 240px !important;">
+<page-section id="immudb-easy-setup-section" style="padding-top: 260px !important;">
 <i-container>
 <i-row>
     <i-column>
