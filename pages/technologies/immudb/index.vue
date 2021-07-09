@@ -268,12 +268,12 @@ export default {
 	#immudb-webconsole {
 		position: relative;
 		height: auto;
-		min-height: 420px;
+		height: 0 !important;
 		overflow: unset !important;
 
 		.container {
 			position: absolute;
-			bottom: -210px;
+			bottom: -120px;
 			left: 50%;
 			transform: translateX(-50%);
 			z-index: 10;

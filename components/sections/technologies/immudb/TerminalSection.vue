@@ -1,5 +1,5 @@
 <template>
-	<PageSection id="immudb-code-examples-section">
+	<PageSection id="immudb-code-examples-section" style="padding-bottom: 420px !important;">
 		<i-container class="_padding-x-4">
 			<i-row>
 				<i-column>

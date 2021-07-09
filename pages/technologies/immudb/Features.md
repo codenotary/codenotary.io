@@ -1,4 +1,4 @@
-<page-section id="immudb-features-section">
+<page-section id="immudb-features-section" style="padding-bottom: 180px !important;">
 <i-container>
 <i-row>
 	<i-column>
