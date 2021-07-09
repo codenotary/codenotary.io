@@ -284,7 +284,7 @@ export default {
 		}
 
 		p,
-		ul {
+		ul:not(.slick-dots) {
 			text-align: left;
 		}
 

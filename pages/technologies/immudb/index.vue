@@ -129,8 +129,81 @@ export default {
 	#immudb-performance-section {
 		background: $color-gray-10;
 
-		img {
-			margin: 1rem auto 0;
+		.container {
+			background: white;
+			padding: 30px 120px;
+			border-radius: 30px;
+			box-shadow: $cn-shadow-sm;
+			border: none !important;
+
+			table {
+				margin: 0 auto;
+				overflow: hidden;
+
+				thead {
+					color: $cn-color-primary_light;
+
+					th {
+						&:first-child {
+							border-top-left-radius: 30px;
+						}
+
+						&:last-child {
+							border-top-right-radius: 30px;
+						}
+					}
+				}
+
+				tbody {
+					color: white;
+
+					tr:last-child {
+						td {
+							&:first-child {
+								border-bottom-left-radius: 30px;
+							}
+
+							&:last-child {
+								border-bottom-right-radius: 30px;
+							}
+						}
+					}
+				}
+
+				th,
+				td {
+					background: $cn-color-primary_dark;
+					padding: 15px 40px;
+					text-align: center;
+					border: 1px solid white;
+
+					@media screen and (max-width: $mobile-max-width) {
+						padding: 15px;
+					}
+
+					@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
+						padding: 15px 30px;
+					}
+				}
+			}
+
+			.options {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				margin-top: 35px;
+
+				.option {
+					padding: 20px 30px;
+					border: 1px solid $cn-color-primary;
+					border-radius: 8px;
+					background: $cn-color-light;
+				}
+
+				.option + .option {
+					margin-left: 10px;
+				}
+			}
 		}
 	}
 
