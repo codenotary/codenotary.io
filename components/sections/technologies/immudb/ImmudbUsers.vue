@@ -17,7 +17,7 @@
 					v-for="(item, idx) in items"
 					:key="`${item}-${idx}`"
 					class="_display-flex _justify-content-center _align-items-center"
-					xs="12"
+					xs="6"
 					sm="6"
 					md="2"
 					lg="2"
@@ -107,7 +107,7 @@ export default {
 
 #immudb-users-section {
 	position: relative;
-	background-color: $cn-color-background;
+	background: $cn-color-grey_light;
 	height: auto;
 	min-height: 280px;
 	overflow: unset !important;
@@ -120,6 +120,18 @@ export default {
 		background-color: #fff;
 		border-radius: 30px;
 		z-index: 10;
+	}
+
+	@include breakpoint-down(sm) {
+		height: auto !important;
+
+		.floating-container {
+			position: relative;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+			bottom: -20px;
+		}
 	}
 
 	.image-wrapper {

@@ -121,7 +121,7 @@ export default {
 	}
 
 	#immudb-performance-section {
-		background: $color-gray-10;
+		background: $cn-color-grey_light;
 
 		.container {
 			background: white;
@@ -224,6 +224,27 @@ export default {
 			padding: 30px 20px;
 			border-radius: $cn-border-radius-lg;
 			margin: 16px 0;
+		}
+
+		@include breakpoint-down(sm) {
+			.container {
+				margin: 0 !important;
+				width: 100% !important;
+				min-width: 100%;
+			}
+
+			.column {
+				padding: 8px !important;
+
+				.immudb-feature {
+					margin: 0 !important;
+
+					h4 {
+						min-height: 32px;
+						font-size: 0.75rem;
+					}
+				}
+			}
 		}
 	}
 

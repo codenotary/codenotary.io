@@ -34,41 +34,78 @@
 				>
 					<div class="video-features">
 						<div class="video-feature-items">
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/easy_setup.svg">
-								<p>
-									Easy setup
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/reliable_database.svg">
-								<p>
-									Fast and reliable immutable database
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/secure_api.svg">
-								<p>
-									Secure REST API gateway
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/admin.svg">
-								<p>
-									Powerful, easy to use admin
-								</p>
-							</div>
-							<div class="video-feature-item">
-								<img class="cn-icon" src="/icons/open_source.svg">
-								<p>
-									Open source
-								</p>
-							</div>
+							<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/easy_setup.svg">
+									<p>
+										Easy setup
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/reliable_database.svg">
+									<p>
+										Fast and reliable immutable database
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/secure_api.svg">
+									<p>
+										Secure REST API gateway
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/admin.svg">
+									<p>
+										Powerful, easy to use admin
+									</p>
+								</i-column>
+								<i-column
+									class="video-feature-item"
+									xs="6"
+									sm="4"
+									md="3"
+									lg="2"
+									xl="2"
+								>
+									<img class="cn-icon" src="/icons/open_source.svg">
+									<p>
+										Open source
+									</p>
+								</i-column>
+							</i-row>
 						</div>
 					</div>
 				</i-column>
 			</i-row>
-			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+			<i-row class="_display-flex _justify-content-center">
 				<i-column
 					xs="12"
 					sm="12"
@@ -77,29 +114,24 @@
 					xl="10"
 				>
 					<div
-						v-if="showVideo"
+						v-if="!showVideo"
 						class="thumbnail"
-						@click="showVideo = !showVideo"
+						@click="playVideo"
 					>
 						<img
 							class="image-box image -responsive _margin-y-0 _margin-x-auto"
-							:src="'/images/video/preview.png'"
-							:alt="'immudb video thumbanil'"
+							:src="'/videos/thumbnail.png'"
+							:alt="'immudb video thumbnail'"
 						>
 					</div>
 					<div
 						v-else
-						class="video"
 					>
-						<div class="_embed _embed-16by9">
-							<iframe
-								height="260" frameborder="0"
-								src="https://www.youtube.com/embed/rQ4iZAM14m0?controls=0"
-								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen
-							/>
-						</div>
-					</div>
+						<youtube
+							ref="player"
+							video-id="rQ4iZAM14m0"
+							:player-vars="{ autoplay: 1 }"
+						/>
 					</div>
 				</i-column>
 			</i-row>
@@ -113,10 +145,18 @@ export default {
 	data: () => ({
 		showVideo: false,
 	}),
+	methods: {
+		playVideo () {
+			this.showVideo = true;
+		},
+	},
 };
 </script>
 
 <style lang="scss">
+@import "~@inkline/inkline/src/css/mixins";
+@import "~@inkline/inkline/src/css/config";
+
 #immudb-video-section {
 	color: white;
 	background: $cn-dark-gradient;
@@ -133,14 +173,22 @@ export default {
 	}
 
 	.thumbnail {
-		background-color: white;
 		position: relative;
 		flex: 0 0 0;
 		width: 100%;
-		min-height: 90px;
+		max-height: 360px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
+		img {
+			max-height: 360px;
+		}
+	}
+
+	.video {
+		width: 100%;
+		max-height: 360px;
 	}
 
 	.video-features {

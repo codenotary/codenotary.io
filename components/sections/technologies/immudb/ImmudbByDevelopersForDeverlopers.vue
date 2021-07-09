@@ -9,14 +9,14 @@
 						color="white"
 						weight="bold"
 					>
-						<p class="_padding-x-8 _text-white">
+						<p class="_text-white">
 							We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
 						</p>
 					</PageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row>
-				<i-column>
+				<i-column class="_padding-x-0">
 					<i-tabs
 						class="analyze-and-manage-tabs"
 						stretch
@@ -134,6 +134,18 @@ export default {
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
+	}
+
+	@include breakpoint-down(sm) {
+		height: auto !important;
+
+		.floating-container {
+			position: relative;
+			margin: 0 !important;
+			padding: 0 !important;
+			width: 100% !important;
+			top: -320px;
+		}
 	}
 
 	.tabs {
