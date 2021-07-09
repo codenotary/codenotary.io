@@ -1,6 +1,6 @@
 <template>
 	<button
-		:class="dynamicClass" v-bind="$attrs"
+		:class="`cn-button cn-button_${variant} cn-button_${size}`" v-bind="$attrs"
 		:disabled="disabled"
 	>
 		<nuxt-link
@@ -53,15 +53,6 @@ export default {
 		disabled: {
 			type: Boolean,
 			default: false,
-		},
-	},
-	computed: {
-		dynamicClass() {
-			return {
-				'cn-button': true,
-				['cn-button_' + this.variant]: true,
-				['cn-button_' + this.size]: true,
-			};
 		},
 	},
 };

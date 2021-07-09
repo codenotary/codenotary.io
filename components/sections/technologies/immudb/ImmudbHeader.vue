@@ -13,36 +13,39 @@
 					<h2 class="_font-weight-bold cn-text-white title third">
 						{{ content.headerSection.title3 }}
 					</h2>
-					<p class="lead cn-text-muted_blue subtitle cn-text-sm">
-						<i-button :loading="$fetchState.pending" class="cn-button">
-							{{ stargazersCount }}
-						</i-button>
+					<div class="action-buttons">
+						<a
+							class="github-link"
+							href="https://github.com/codenotary/immudb"
+							target="_blank"
+							rel="nofollow"
+						>
+							<div class="github-star-button">
+								<div class="github-logo">
+									<img src="/icons/github.svg" alt="">
+								</div>
+								<div class="github-count">
+									<span>{{ stargazersCount }}</span>
+									<img src="/icons/star.svg">
+								</div>
+							</div>
+						</a>
 						<cn-button
 							variant="secondary"
 							href="https://dashboard.codenotary.io/auth/signup"
 							target="_blank"
 							rel="nofollow"
 							size="lg"
+							class="_margin-left-1"
 						>
 							Get Started Now
 						</cn-button>
-					</p>
-				</i-column>
-				<i-column lg="1" />
-				<i-column
-					id="mascot-column"
-					lg="6"
-				>
-					<img src="/images/immudb-header-mascot.png" style="width: 100%;">
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column>
+					</div>
 					<div class="useful-links">
-						<span class="useful-link cn-text-white" @click="researchPaperModalVisible = true">
+						<a class="useful-link research-paper cn-text-white" @click="researchPaperModalVisible = true">
 							<img src="/icons/research_paper.svg" alt="">
 							Research Paper
-						</span>
+						</a>
 						<a href="https://www.codenotary.com/technologies/immudb/immutable-data-science" class="useful-link cn-text-white">
 							<img src="/icons/immutable_data_science.svg" alt="">
 							Immutable Data Science
@@ -52,6 +55,13 @@
 							GitHub
 						</a>
 					</div>
+				</i-column>
+				<i-column lg="1" />
+				<i-column
+					id="mascot-column"
+					lg="6"
+				>
+					<img class="mascot-image" src="/images/immudb-header-mascot.png">
 				</i-column>
 			</i-row>
 		</i-header>
@@ -264,11 +274,68 @@ $mascot-height-small: 100px;
 .useful-links {
 	display: flex;
 	flex-direction: column;
+	margin-top: 20px;
 
 	.useful-link {
 		text-decoration: underline;
 		font-weight: 700;
 		font-size: 14px;
+
+		&:not(:first-child) {
+			margin-top: 10px;
+		}
+
+		&.research-paper {
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
+}
+
+.action-buttons {
+	display: flex;
+	align-items: flex-start;
+
+	.github-link {
+		&:hover {
+			text-decoration: none;
+		}
+
+		.github-star-button {
+			display: flex;
+			align-items: center;
+
+			.github-logo {
+				background: $cn-color-primary;
+				padding: 14px;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+
+			.github-count {
+				background: white;
+				padding: 14px;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+				display: flex;
+				align-items: center;
+
+				img {
+					margin-left: 10px;
+				}
+
+				span {
+					color: $cn-color-brand;
+				}
+			}
+		}
+	}
+}
+
+.mascot-image {
+	width: 100%;
 }
 </style>

@@ -169,7 +169,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
@@ -229,7 +229,8 @@ export default {
 		border-radius: 30px;
 
 		.slick-dots {
-			color: red;
+			bottom: 15px;
+			left: 0;
 
 			.custom-dot {
 				width: 15px;
