@@ -171,7 +171,11 @@ export default {
 					text-align: center;
 					border: 1px solid white;
 
-					@media screen and (max-width: $mobile-max-width) {
+					@media screen and (max-width: 768px) {
+						padding: 15px 5px;
+					}
+
+					@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
 						padding: 15px;
 					}
 
@@ -197,6 +201,10 @@ export default {
 				.option + .option {
 					margin-left: 10px;
 				}
+			}
+
+			@media screen and (max-width: $mobile-max-width) {
+				padding: 30px 60px;
 			}
 		}
 	}

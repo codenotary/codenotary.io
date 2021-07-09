@@ -113,7 +113,6 @@ export default {
 				background: $cn-color-dark !important;
 				box-sizing: border-box;
 				overflow: auto;
-				min-height: 240px;
 				border-radius: 0;
 			}
 

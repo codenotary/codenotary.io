@@ -36,7 +36,7 @@
 							target="_blank"
 							rel="nofollow"
 							size="lg"
-							class="_margin-left-1"
+							class="get-started-button"
 						>
 							Get Started Now
 						</cn-button>
@@ -192,6 +192,10 @@ $mascot-height-small: 100px;
 .immudb-header-container {
 	position: relative;
 	background-color: $cn-color-background;
+
+	.get-started-button {
+		font-size: 16px !important;
+	}
 }
 
 // Oblique box on the bottom
@@ -273,6 +277,7 @@ $mascot-height-small: 100px;
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
+	max-width: 200px;
 
 	.useful-link {
 		text-decoration: underline;
@@ -291,11 +296,19 @@ $mascot-height-small: 100px;
 			}
 		}
 	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		align-items: flex-start;
+		margin: 20px auto 0;
+		padding-left: 20px;
+	}
 }
 
 .action-buttons {
 	display: flex;
 	align-items: flex-start;
+	justify-content: space-between;
+	max-width: 340px;
 
 	.github-link {
 		&:hover {
@@ -305,6 +318,7 @@ $mascot-height-small: 100px;
 		.github-star-button {
 			display: flex;
 			align-items: center;
+			border: 1px solid transparent;
 
 			.github-logo {
 				background: $cn-color-primary;
@@ -330,6 +344,13 @@ $mascot-height-small: 100px;
 				}
 			}
 		}
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		flex-direction: column;
+		align-items: center;
+		height: 130px;
+		max-width: none;
 	}
 }
 
