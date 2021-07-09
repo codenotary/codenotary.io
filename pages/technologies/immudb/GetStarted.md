@@ -1,4 +1,4 @@
-<page-section id="immudb-get-started-end-section" style="padding: 180px !important;">
+<page-section id="immudb-get-started-end-section" style="padding: 160px !important;">
 <page-section-header color="white" title="The open-source immutable database" :bottom="2">
     Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
 </page-section-header>

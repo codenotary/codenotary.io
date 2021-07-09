@@ -32,7 +32,6 @@
 			<nuxt-content :document="playground" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<!-- <nuxt-content :document="usedBy" /> -->
 			<ImmudbUsers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
@@ -62,7 +61,6 @@ export default {
 		const performance = await $content('technologies/immudb/Performance').fetch();
 		const video = await $content('technologies/immudb/Video').fetch();
 		const features = await $content('technologies/immudb/Features').fetch();
-		const usedBy = await $content('technologies/immudb/UsedBy').fetch();
 		const codeTabs = await $content('technologies/immudb/CodeTabs').fetch();
 		const getStarted = await $content('technologies/immudb/GetStarted').fetch();
 		const playground = await $content('technologies/immudb/Playground').fetch();
@@ -73,7 +71,6 @@ export default {
 			performance,
 			video,
 			features,
-			usedBy,
 			codeTabs,
 			getStarted,
 			playground,
@@ -197,41 +194,6 @@ export default {
 			padding: 30px 20px;
 			border-radius: $cn-border-radius-lg;
 			margin: 16px 0;
-		}
-	}
-
-	#immudb-usedby-section {
-		padding-top: 4rem;
-		padding-bottom: 2rem;
-		justify-content: space-between;
-		text-align: center;
-
-		.column {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-
-			a {
-				margin: 1rem;
-			}
-		}
-
-		img {
-			display: block;
-			height: 80px !important;
-			max-width: 140px !important;
-			width: auto;
-			margin: 0 0.75rem 2rem;
-			opacity: 0.75;
-			transition:
-				opacity 0.3s ease,
-				transform 0.2s ease-in-out;
-			object-fit: contain;
-
-			&:hover {
-				opacity: 0.95;
-				transform: translateY(-16%) scale(1.15);
-			}
 		}
 	}
 

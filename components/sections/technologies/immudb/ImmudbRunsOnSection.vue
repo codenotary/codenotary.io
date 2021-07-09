@@ -24,7 +24,7 @@
 							:title="item.title"
 						>
 							<i-row
-								class="image-wrapper _display-flex _justify-content-center"
+								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
 							>
 								<i-column
 									v-for="(subitem, idx) in item.subitems"
@@ -164,10 +164,10 @@ export default {
 
 	.floating-container {
 		position: absolute;
-		z-index: 99;
 		bottom: -120px;
 		left: 50%;
 		transform: translateX(-50%);
+		z-index: 10;
 	}
 
 	.tabs {
@@ -218,20 +218,20 @@ export default {
 			height: 160px;
 		}
 
-		.column {
-			&:not(:last-child) {
-				&::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					right: 0;
-					width: 1px;
-					height: 100%;
-					background-color: $cn-color-grey;
-					z-index: 2;
-				}
-			}
-		}
+		// .column {
+		// 	&:not(:last-child) {
+		// 		&::before {
+		// 			content: '';
+		// 			position: absolute;
+		// 			top: 0;
+		// 			right: 0;
+		// 			width: 1px;
+		// 			height: 100%;
+		// 			background-color: $cn-color-grey;
+		// 			z-index: 2;
+		// 		}
+		// 	}
+		// }
 
 		.story-card {
 			margin: 51px 0;
