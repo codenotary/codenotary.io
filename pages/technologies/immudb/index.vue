@@ -122,7 +122,7 @@ export default {
 
 	#immudb-performance-section {
 		background: $cn-color-grey_light;
-		padding-top: 260px !important;
+		padding-top: 200px !important;
 
 		@include breakpoint-down(sm) {
 			&.section.variant-standard {

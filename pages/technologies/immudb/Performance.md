@@ -1,4 +1,4 @@
-<page-section id="immudb-performance-section">
+<page-section id="immudb-performance-section" :top="1">
 	<i-container>
 		<i-row>
 			<i-column>
