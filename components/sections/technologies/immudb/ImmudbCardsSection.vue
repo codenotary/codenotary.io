@@ -50,14 +50,8 @@ export default {
 
 #immudb-cards-section {
 	@include breakpoint-down(sm) {
-		margin-bottom: -40px !important;
-
 		.container {
 			width: 100%;
-
-			> div {
-				min-width: 100%;
-			}
 		}
 	}
 }
@@ -74,6 +68,9 @@ export default {
 
 	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 10px;
+		flex-direction: column;
+		align-items: center;
+		width: min-content !important;
 
 		& ::v-deep .square-card {
 			padding: 16px;
@@ -98,6 +95,7 @@ export default {
 
 	@media screen and (max-width: 767px) {
 		justify-content: center;
+		width: min-content !important;
 	}
 
 	& > div {
@@ -109,14 +107,7 @@ export default {
 			& {
 				flex-basis: calc(50% - 40px);
 				display: flex;
-
-				&:nth-child(even) {
-					justify-content: flex-start;
-				}
-
-				&:nth-child(odd) {
-					justify-content: flex-end;
-				}
+				min-width: 315px;
 			}
 		}
 	}
