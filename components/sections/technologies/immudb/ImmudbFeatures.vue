@@ -95,9 +95,11 @@ export default {
 	padding-bottom: 180px !important;
 
 	.immudb-feature {
+		margin: 16px 0;
 		padding: 30px 20px;
 		border-radius: $cn-border-radius-lg;
-		margin: 16px 0;
+		box-shadow: $cn-shadow-sm;
+		border: none;
 	}
 
 	@include breakpoint-down(sm) {
