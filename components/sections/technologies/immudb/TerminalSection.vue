@@ -220,12 +220,27 @@ export default {
 			bottom: -20px;
 		}
 
-		.slick-arrow.slick-next {
-			right: -16px !important;
-		}
+		.slick-slider {
+			padding: 10px 10px 30px 10px !important;
 
-		.slick-arrow.slick-prev {
-			left: -16px !important;
+			.slick-arrow {
+				&.slick-prev,
+				&.slick-next {
+					&,
+					img {
+						height: 40px !important;
+						max-width: 40px !important;
+					}
+				}
+
+				&.slick-next {
+					right: -16px !important;
+				}
+
+				&.slick-prev {
+					left: -16px !important;
+				}
+			}
 		}
 	}
 
@@ -282,6 +297,16 @@ export default {
 			}
 		}
 
+		.slick-arrow {
+			&.slick-next {
+				right: -50px;
+			}
+
+			&.slick-prev {
+				left: -50px;
+			}
+		}
+
 		.custom-arrow {
 			width: 100px;
 			height: 100px;
@@ -290,27 +315,8 @@ export default {
 				content: none;
 			}
 
-			&.slick-prev,
-			&.slick-next {
-				&,
-				img {
-					height: 48px !important;
-					max-width: 48px !important;
-				}
-			}
-
-			&.slick-prev {
-				margin-left: -4px;
-			}
-
-			&.slick-next {
-				margin-right: -4px;
-			}
-
 			img {
 				transform: scale(1.5);
-				// 	position: absolute;
-				// 	top: 50%;
 			}
 		}
 	}

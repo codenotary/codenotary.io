@@ -52,7 +52,7 @@ export default {
 
 	.container {
 		position: absolute;
-		bottom: -120px;
+		bottom: -240px;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
