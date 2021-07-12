@@ -18,7 +18,7 @@
 						block
 					>
 						<i-tab
-							v-for="item in items"
+							v-for="(item, itemIdx) in items"
 							:key="item.title"
 							class="_padding-top-2"
 							:title="item.title"
@@ -36,6 +36,7 @@
 									lg="2"
 								>
 									<a
+										v-if="itemIdx === 0"
 										href="https://github.com/codenotary/immudb/releases/"
 										target="_blank"
 										rel="nofollow"
@@ -54,6 +55,21 @@
 											outlined
 										/>
 									</a>
+									<template v-else>
+										<img
+											v-if="subitem && subitem.image"
+											class="image -responsive _padding-y-2"
+											:class="{'image-only': !subitem.label }"
+											:src="subitem.image"
+											:alt="subitem.label"
+										>
+										<StoryCard
+											v-else-if="subitem"
+											:title="subitem.label"
+											:color="getColor(6)"
+											outlined
+										/>
+									</template>
 								</i-column>
 							</i-row>
 						</i-tab>
