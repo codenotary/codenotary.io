@@ -11,8 +11,10 @@
 			</i-row>
 			<i-row class="_padding-x-0 _display-flex _justify-content-center">
 				<i-column
-					class="_margin-top-2 _margin-x-auto" xs="12"
-					sm="12" md="8"
+					class="_margin-x-auto"
+					xs="12"
+					sm="12"
+					md="8"
 					lg="8"
 				>
 					<span class="cn-text-white">
@@ -22,9 +24,12 @@
 				</i-column>
 			</i-row>
 			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-row class="_padding-x-0 _display-flex _justify-content-center">
+				<i-row
+					class="_padding-x-0 _display-flex _justify-content-center"
+					style="max-width: 100%;"
+				>
 					<i-column
-						class="_margin-top-2 _margin-x-auto"
+						class="_margin-top-2 _margin-x-auto _padding-x-0"
 						xs="12"
 						sm="12"
 						md="12"

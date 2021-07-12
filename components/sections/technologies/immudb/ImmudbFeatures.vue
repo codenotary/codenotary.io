@@ -12,8 +12,10 @@
 			</i-row>
 			<i-row class="_padding-x-0 _display-flex _flex-direction-column _justify-content-center">
 				<i-column
-					class="_margin-top-2 _margin-x-auto _text-center" xs="12"
-					sm="12" md="8"
+					class="_margin-top-0 _margin-x-auto _text-center"
+					xs="12"
+					sm="12"
+					md="8"
 					lg="8"
 				>
 					A super-fast, immutable, and cryptographically verifiable ledger database that provides:

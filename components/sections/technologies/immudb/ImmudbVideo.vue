@@ -3,7 +3,7 @@
 		id="immudb-video-section"
 	>
 		<i-container>
-			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+			<i-row class="_display-flex _justify-content-center">
 				<i-column
 					xs="12"
 					sm="12"
@@ -21,8 +21,10 @@
 			</i-row>
 			<i-row class="_padding-x-0 _display-flex _justify-content-center">
 				<i-column
-					class="_margin-bottom-2 _margin-x-auto" xs="12"
-					sm="12" md="8"
+					class="_margin-bottom-3 _margin-x-auto"
+					xs="12"
+					sm="12"
+					md="8"
 					lg="8"
 				>
 					<span class="_text-white _text-center">

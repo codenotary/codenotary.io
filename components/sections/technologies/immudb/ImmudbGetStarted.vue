@@ -7,7 +7,7 @@
 		<i-container>
 			<i-row class="_padding-x-0 _display-flex _justify-content-center">
 				<i-column
-					class="_margin-top-2 _margin-x-auto" xs="12"
+					class="_margin-x-auto" xs="12"
 					sm="12" md="8"
 					lg="8"
 				>
