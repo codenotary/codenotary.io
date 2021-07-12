@@ -124,6 +124,8 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
+		padding-top: 40px !important;
+		padding-bottom: 81px !important;
 
 		.floating-container {
 			position: relative;
@@ -131,6 +133,10 @@ export default {
 			padding: 0 !important;
 			width: 100% !important;
 			bottom: -20px;
+
+			h2 {
+				margin-top: 30px !important;
+			}
 		}
 	}
 

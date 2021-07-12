@@ -234,11 +234,11 @@ export default {
 				}
 
 				&.slick-next {
-					right: -12px !important;
+					right: -8px !important;
 				}
 
 				&.slick-prev {
-					left: -12px !important;
+					left: -8px !important;
 				}
 			}
 		}

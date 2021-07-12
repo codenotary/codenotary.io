@@ -56,6 +56,7 @@ export default {
 	@media screen and (max-width: $mobile-max-width) {
 		align-items: start;
 		padding: 0 0 16px 0 !important;
+		margin-bottom: -18px !important;
 		width: 100% !important;
 		min-width: 100%;
 		z-index: 2;
@@ -74,7 +75,7 @@ export default {
 				padding: 0;
 
 				.column {
-					padding: 0 !important;
+					padding: 0 auto !important;
 
 					.square-card {
 						max-width: 100%;

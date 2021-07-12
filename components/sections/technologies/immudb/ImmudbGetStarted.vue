@@ -51,11 +51,11 @@ export default {
 	text-align: center;
 	background: $cn-dark-gradient_inverse;
 	color: white;
-	padding-top: 186px !important;
-	padding-bottom: 72px !important;
+	padding-top: 168px !important;
+	padding-bottom: 54px !important;
 
 	@include breakpoint-down(sm) {
-		padding: 30px 20px 30px !important;
+		padding: 30px 20px 44px !important;
 	}
 }
 </style>

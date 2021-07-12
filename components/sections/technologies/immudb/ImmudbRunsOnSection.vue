@@ -178,7 +178,11 @@ export default {
 			margin: 0 !important;
 			padding: 0 !important;
 			width: 100% !important;
-			bottom: -20px;
+			bottom: -34px !important;
+
+			h2 {
+				margin-top: 17px !important;
+			}
 		}
 	}
 

@@ -80,12 +80,12 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-easy-setup-section {
-	padding: 155px 0 351px 0 !important;
+	padding: 120px 0 333px 0 !important;
 	text-align: center;
 	background: $cn-dark-gradient_inverse;
 
 	@include breakpoint-down(sm) {
-		padding: 480px 0 351px 0 !important;
+		padding: 419px 0 351px 0 !important;
 	}
 
 	pre.language-bash {

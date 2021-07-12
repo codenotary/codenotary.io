@@ -82,11 +82,20 @@ export default {
 
 #immudb-performance-section {
 	background: $cn-color-grey_light;
-	padding-top: 214px !important;
+	padding-top: 196px !important;
 
 	@include breakpoint-down(sm) {
+		position: relative;
+		padding: 30px 0 60px !important;
+		top: -193px !important;
+
 		&.section.variant-standard {
-			padding-top: 40px !important;
+			padding-top: 161px !important;
+			margin-bottom: -194px !important;
+
+			.container {
+				padding: 0 0 40px 0 !important;
+			}
 		}
 	}
 
@@ -189,10 +198,6 @@ export default {
 			.option + .option {
 				margin-left: 10px;
 			}
-		}
-
-		@media screen and (max-width: $mobile-max-width) {
-			padding: 30px 60px;
 		}
 
 		@media screen and (max-width: 573px) {

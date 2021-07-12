@@ -155,7 +155,7 @@ export default {
 			margin: 0 !important;
 			padding: 0 !important;
 			width: 100% !important;
-			top: -320px;
+			top: -352px;
 
 			.row {
 				.column {

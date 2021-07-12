@@ -94,7 +94,8 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-features-section {
-	padding-bottom: 180px !important;
+	padding-top: 14px !important;
+	padding-bottom: 162px !important;
 
 	.immudb-feature {
 		margin: 16px 0;
@@ -106,7 +107,7 @@ export default {
 
 	@include breakpoint-down(sm) {
 		.container {
-			margin: 0 auto -180px !important;
+			margin: 0 auto -170px !important;
 			padding: 0 22px !important;
 			width: 100% !important;
 			min-width: 100%;
@@ -114,6 +115,10 @@ export default {
 
 		.column {
 			padding: 8px !important;
+
+			.section-header {
+				margin-bottom: -16px !important;
+			}
 
 			.immudb-feature {
 				margin: 0 !important;

@@ -52,7 +52,7 @@ export default {
 
 	.container {
 		position: absolute;
-		bottom: -111px;
+		bottom: -93px;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
@@ -62,7 +62,7 @@ export default {
 		height: auto !important;
 
 		.container {
-			bottom: -470px;
+			bottom: -402px;
 			padding: 0 !important;
 			left: 0;
 			right: 16px;

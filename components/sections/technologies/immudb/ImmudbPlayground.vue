@@ -48,12 +48,14 @@ export default {
 	position: relative;
 	height: auto;
 	background: $cn-color-grey_light;
-	padding-top: 25px !important;
-	padding-bottom: 92px !important;
+	padding-top: 7px !important;
+	padding-bottom: 74px !important;
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
-		margin-bottom: -50px;
+		margin-bottom: -54px;
+		padding-top: 0 !important;
+		padding-bottom: 56px !important;
 
 		.container {
 			position: relative;
