@@ -146,6 +146,12 @@ export default {
 			padding: 0 !important;
 			width: 100% !important;
 			top: -320px;
+
+			.row {
+				.column {
+					padding: 0 12px !important;
+				}
+			}
 		}
 	}
 

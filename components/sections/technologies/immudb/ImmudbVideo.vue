@@ -165,6 +165,15 @@ export default {
 	@include breakpoint-down(sm) {
 		height: auto !important;
 		margin-bottom: -60px;
+
+		.column {
+			padding: 0;
+
+			.thumbnail {
+				height: auto;
+				max-width: 100%;
+			}
+		}
 	}
 
 	h2 {

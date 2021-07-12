@@ -52,56 +52,45 @@ export default {
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-.subheader {
-	max-width: 700px;
-}
-
 #immudb-cards-section {
-	@include breakpoint-down(sm) {
-		.container {
-			width: 100%;
-		}
-	}
-}
-
-.about-immudb-cards {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: stretch;
-	flex: 1 0 100%;
-	flex-wrap: wrap;
-	margin: 0;
-	padding: 0;
-
 	@media screen and (max-width: $mobile-max-width) {
 		align-items: start;
-		margin: 0 auto -180px !important;
-		padding: 0 !important;
+		padding: 0 0 16px 0 !important;
 		width: 100% !important;
 		min-width: 100%;
+		z-index: 2;
 
-		.column {
+		.container {
 			padding: 0 !important;
 
-			.card-picture {
-				height: 64px;
-			}
+			.row.about-immudb-cards {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: stretch;
+				flex: 1 0 100%;
+				flex-wrap: wrap;
+				margin: 0;
+				padding: 0;
 
-			h3 {
-				margin-top: 10px !important;
-				margin-bottom: 4px !important;
-			}
+				.column {
+					padding: 0 !important;
 
-			.subtitle {
-				max-width: unset;
+					.square-card {
+						max-width: 100%;
+					}
+
+					h3 {
+						margin-top: 8px !important;
+						margin-bottom: 4px !important;
+					}
+
+					.subtitle {
+						max-width: unset;
+					}
+				}
 			}
 		}
-	}
-
-	@media screen and (max-width: 767px) {
-		justify-content: center;
-		width: min-content !important;
 	}
 }
 </style>

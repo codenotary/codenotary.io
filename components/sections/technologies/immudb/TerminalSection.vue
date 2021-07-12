@@ -221,7 +221,7 @@ export default {
 		}
 
 		.slick-slider {
-			padding: 10px 10px 30px 10px !important;
+			padding: 16px 16px 32px 16px !important;
 
 			.slick-arrow {
 				&.slick-prev,
@@ -234,11 +234,11 @@ export default {
 				}
 
 				&.slick-next {
-					right: -16px !important;
+					right: -12px !important;
 				}
 
 				&.slick-prev {
-					left: -16px !important;
+					left: -12px !important;
 				}
 			}
 		}

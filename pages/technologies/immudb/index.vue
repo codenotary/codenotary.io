@@ -107,7 +107,7 @@ export default {
 		@include breakpoint-down(sm) {
 			.container {
 				margin: 0 auto -180px !important;
-				padding: 0 24px !important;
+				padding: 0 22px !important;
 				width: 100% !important;
 				min-width: 100%;
 			}
@@ -133,8 +133,8 @@ export default {
 		text-align: center;
 		background: $cn-dark-gradient_inverse;
 
-		.container {
-			max-width: 980px;
+		@include breakpoint-down(sm) {
+			padding: 480px 0 351px 0 !important;
 		}
 
 		pre.language-bash {

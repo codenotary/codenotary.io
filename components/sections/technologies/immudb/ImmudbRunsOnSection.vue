@@ -171,7 +171,7 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
-		padding-top: 0 !important;
+		padding: 0 12px 0 !important;
 
 		.floating-container {
 			position: relative;
@@ -242,21 +242,6 @@ export default {
 			height: 160px;
 		}
 
-		// .column {
-		// 	&:not(:last-child) {
-		// 		&::before {
-		// 			content: '';
-		// 			position: absolute;
-		// 			top: 0;
-		// 			right: 0;
-		// 			width: 1px;
-		// 			height: 100%;
-		// 			background-color: $cn-color-grey;
-		// 			z-index: 2;
-		// 		}
-		// 	}
-		// }
-
 		.story-card {
 			margin: 51px 0;
 			width: 100%;
@@ -267,6 +252,9 @@ export default {
 			}
 
 			@include breakpoint-down(xs) {
+				margin: 16px !important;
+				padding: 16px !important;
+
 				h5 {
 					font-size: 1rem;
 				}

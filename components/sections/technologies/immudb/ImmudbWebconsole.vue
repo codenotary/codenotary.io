@@ -62,10 +62,11 @@ export default {
 		height: auto !important;
 
 		.container {
-			position: relative;
-			margin: 0 !important;
+			bottom: -470px;
 			padding: 0 !important;
-			width: 100% !important;
+			left: 0;
+			right: 16px;
+			transform: unset;
 		}
 	}
 
