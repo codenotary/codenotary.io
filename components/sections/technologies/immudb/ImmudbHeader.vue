@@ -28,7 +28,7 @@
 									<img src="/icons/github.svg" alt="">
 								</div>
 								<div class="github-count">
-									<span>{{ stargazersCount }}</span>
+									<span>{{ parsedStars }}</span>
 									<img src="/icons/star.svg">
 								</div>
 							</div>
@@ -109,14 +109,14 @@ export default {
 			researchPaperModalVisible: false,
 			content: immudbContent,
 			rightBarBottom: '0px',
-			stargazersCount: null,
+			stars: null,
 		};
 	},
 	async fetch() {
 		const { data } = await GithubService.getStars();
 		const { stargazers_count: stargazersCount } = data;
 
-		this.stargazersCount = stargazersCount;
+		this.stars = stargazersCount;
 	},
 	fetchOnServer: false,
 	computed: {
@@ -124,6 +124,12 @@ export default {
 			return {
 				bottom: this.rightBarBottom,
 			};
+		},
+		parsedStars () {
+			if (this.stars && typeof this.stars === 'string') {
+				return Number(this.stars).toLocaleString();
+			}
+			return this.stars;
 		},
 	},
 	methods: {
