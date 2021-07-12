@@ -163,7 +163,7 @@ export default {
 
 	.floating-container {
 		position: absolute;
-		bottom: -120px;
+		bottom: -127px;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;

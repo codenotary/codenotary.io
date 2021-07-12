@@ -1,8 +1,8 @@
 <template>
 	<PageSection
 		id="immudb-cards-section"
-		:bottom="0"
 		:top="1"
+		:bottom="0"
 	>
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<PageSectionHeader
@@ -12,17 +12,25 @@
 				:bottom="0"
 			/>
 		</i-container>
-		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark _padding-left-0 _padding-right-0">
-			<i-container class="about-immudb-cards">
-				<div v-for="(card, index) in content.heroCardsSection.cards" :key="index">
+		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-row-wrap cn-text-dark">
+			<i-row class="about-immudb-cards">
+				<i-column
+					v-for="(card, index) in content.heroCardsSection.cards"
+					:key="index"
+					class="_margin-top-1 _padding-bottom-1"
+					xs="12"
+					sm="6"
+					md="4"
+					lg="4"
+				>
 					<cards-square
 						wide
 						:title="card.title"
 						:image-url="card.imageUrl"
 						:subtitle="card.subtitle"
 					/>
-				</div>
-			</i-container>
+				</i-column>
+			</i-row>
 		</i-container>
 	</PageSection>
 </template>
@@ -63,26 +71,21 @@ export default {
 	align-items: stretch;
 	flex: 1 0 100%;
 	flex-wrap: wrap;
+	margin: 0;
 	padding: 0;
-	padding-bottom: 10px;
 
 	@media screen and (max-width: $mobile-max-width) {
-		flex-direction: column;
-		align-items: center;
+		align-items: start;
 		margin: 0 auto -180px !important;
 		padding: 0 !important;
 		width: 100% !important;
 		min-width: 100%;
 
-		& ::v-deep .square-card {
-			margin: 0;
-			padding: 16px;
-			max-width: 213px;
-			height: 157px;
+		.column {
+			padding: 0 !important;
 
 			.card-picture {
 				height: 64px;
-				width: 200px;
 			}
 
 			h3 {
@@ -99,20 +102,6 @@ export default {
 	@media screen and (max-width: 767px) {
 		justify-content: center;
 		width: min-content !important;
-	}
-
-	& > div {
-		margin-top: 20px;
-		margin-left: 10px;
-		margin-right: 10px;
-
-		@media screen and (max-width: 1199px) {
-			& {
-				flex-basis: calc(50% - 40px);
-				display: flex;
-				min-width: 315px;
-			}
-		}
 	}
 }
 </style>

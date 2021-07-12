@@ -11,7 +11,7 @@
 		>
 			<img
 				class="logo _padding-y-1-2"
-				:src="`/images/logo/logo_white.png`"
+				:src="`/images/logo/logo_white.svg`"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>

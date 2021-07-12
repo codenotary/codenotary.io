@@ -129,7 +129,7 @@ export default {
 	}
 
 	#immudb-easy-setup-section {
-		margin-top: -2rem;
+		padding: 155px 0 351px 0 !important;
 		text-align: center;
 		background: $cn-dark-gradient_inverse;
 
@@ -153,7 +153,7 @@ export default {
 
 	#immudb-performance-section {
 		background: $cn-color-grey_light;
-		padding-top: 200px !important;
+		padding-top: 214px !important;
 
 		@include breakpoint-down(sm) {
 			&.section.variant-standard {
@@ -328,7 +328,8 @@ export default {
 		text-align: center;
 		background: $cn-dark-gradient_inverse;
 		color: white;
-		padding-top: 160px !important;
+		padding-top: 186px !important;
+		padding-bottom: 72px !important;
 
 		@include breakpoint-down(sm) {
 			padding: 30px 20px 30px !important;

@@ -274,6 +274,7 @@ $mascot-height-small: 100px;
 .mascot-image {
 	height: auto;
 	max-height: 520px;
+	object-fit: contain;
 
 	@media screen and (max-width: $mobile-max-width) {
 		width: 100%;
