@@ -166,7 +166,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-video-section {
-	padding: 94px 0 297px !important;
+	padding: 187px 0 297px !important;
 	color: white;
 	background: $cn-dark-gradient;
 	text-align: center;
