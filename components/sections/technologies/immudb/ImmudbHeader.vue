@@ -142,6 +142,8 @@ $mascot-height-small: 100px;
 
 #immudb-header {
 	background: transparent;
+	padding-top: 0;
+	padding-bottom: 3rem;
 	z-index: 3;
 	position: relative;
 }
@@ -323,7 +325,7 @@ $mascot-height-small: 100px;
 
 	.useful-link {
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		text-align: left;
 		font-weight: 700;
 		font-size: 14px;
