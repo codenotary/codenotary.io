@@ -168,9 +168,8 @@ $mascot-height-small: 100px;
 	}
 
 	@include breakpoint-down(md) {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		//margin-bottom: 2rem;
+		padding-top: 0;
+		padding-bottom: 0;
 		text-align: center;
 
 		.button-wrapper {
@@ -272,6 +271,17 @@ $mascot-height-small: 100px;
 	}
 }
 
+.mascot-image {
+	height: auto;
+	max-height: 520px;
+
+	@media screen and (max-width: $mobile-max-width) {
+		width: 100%;
+		max-width: unset;
+		margin-bottom: 40px;
+	}
+}
+
 .secondary-box {
 	background-color: $cn-color-secondary;
 	width: 100%;
@@ -309,10 +319,11 @@ $mascot-height-small: 100px;
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
-	max-width: 200px;
 
 	.useful-link {
-		// text-decoration: underline;
+		display: flex;
+		justify-content: start;
+		text-align: left;
 		font-weight: 700;
 		font-size: 14px;
 
@@ -336,8 +347,13 @@ $mascot-height-small: 100px;
 
 	@media screen and (max-width: $mobile-max-width) {
 		align-items: flex-start;
-		margin: 20px auto 0;
-		padding-left: 20px;
+
+		.useful-link {
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			// max-width: 240px;
+		}
 	}
 }
 
@@ -392,9 +408,5 @@ $mascot-height-small: 100px;
 		height: 130px;
 		max-width: none;
 	}
-}
-
-.mascot-image {
-	width: 100%;
 }
 </style>

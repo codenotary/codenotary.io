@@ -306,7 +306,7 @@ export default {
 		padding-top: 160px !important;
 
 		@include breakpoint-down(sm) {
-			padding-top: 30px !important;
+			padding: 30px 20px 30px !important;
 		}
 	}
 
