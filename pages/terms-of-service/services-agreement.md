@@ -13,7 +13,7 @@ By using the Services you are irrevocably agreeing to all the terms and conditio
 
 CodeNotary reserves the right to change, update, add or remove provisions of these Terms, at any time by posting the updated Terms on the Services, along with a notice of the effective date of the updated Terms. By using the Services after CodeNotary has updated the Terms, you are agreeing to all of the updated Terms. If you do not agree with any of the updated Terms, your only recourse will be to stop using the Services.
 
-## **Updated: March 1st 2019**
+## **Updated: July 8th 2021**
 
 ### **1\. Subject Matter**
 

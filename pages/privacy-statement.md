@@ -30,7 +30,7 @@ Your personal data required in order to allow and to invoice the usage of featur
 
 ## **4\. Cookies Policy**
 
-Last updated: March 5, 2019
+Last updated: July 8th 2021
 
 CodeNotary, Inc. ("us", "we", or "our") uses cookies on [https://codenotary.com][1] website (the "Service"). By using the Service, you consent to the use of cookies.
 
