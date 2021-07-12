@@ -72,7 +72,7 @@ a:active {
 	box-shadow: $cn-shadow-sm;
 	border-radius: $cn-button-radius;
 	border: unset;
-	height: $cn-button-height;
+	height: $cn-button-height !important;
 	padding: 14px 30px;
 	display: flex;
 	flex-direction: column;
