@@ -43,9 +43,12 @@ $cn-dark-gradient_inverse: linear-gradient(-90deg, #13264a 26.04%, #24c4a1 99.98
 
 $cn-color-background: #e5e5e5;
 
+$color-primary: $cn-color-dark;
+$color-secondary: $cn-color-secondary;
+
 // Other
-$cn-button-height: 47px;
-$cn-button-radius: 7px;
+$cn-button-height: 48px;
+$cn-button-radius: 8px;
 $cn-logo-height: 70;
 $cn-navbar-height: 100;
 $cn-navbar-scrolled-height: 70;

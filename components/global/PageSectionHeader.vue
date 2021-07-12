@@ -1,6 +1,7 @@
 <template>
 	<header
-		:class="`section-header ${ block ? '-block' : '' } _font-weight-${ weight } _margin-top-${top} _margin-bottom-${bottom}`"
+		class="section-header"
+		:class="`${ block ? '-block' : '' } _font-weight-${ weight } _${offsetType}-top-${top} _${offsetType}-bottom-${bottom} ${ round ? '-round' : '' }`"
 	>
 		<slot name="title">
 			<h2 :is="tag" :class="`cn-text-${ color } _font-weight-${ weight }`">
@@ -48,6 +49,14 @@ export default {
 			type: Number,
 			default: 4,
 		},
+		offsetType: {
+			type: String,
+			default: 'margin',
+		},
+		round: {
+			type: Boolean,
+			default: false,
+		},
 	},
 	computed: {
 		hasDefaultSlot () {
@@ -64,6 +73,10 @@ export default {
 	&.-block {
 		max-width: none;
 		width: 100%;
+	}
+
+	&.-round {
+		border-radius: $cn-border-radius-lg;
 	}
 }
 </style>

@@ -11,7 +11,7 @@
 		>
 			<img
 				class="logo _padding-y-1-2"
-				:src="`/images/logo/logo_white.png`"
+				:src="`/images/logo/logo_white.svg`"
 				alt="CodeNotary"
 			>
 		</i-navbar-brand>
@@ -102,6 +102,18 @@
 						Download
 					</cn-button>
 				</transition>
+				<transition name="fade">
+					<cn-button
+						v-if="scrolled && $route.name === 'technologies-immudb'"
+						class="cta-button"
+						variant="secondary"
+						href="https://docs.immudb.io/"
+						target="_blank"
+						rel="nofollow"
+					>
+						Documentation
+					</cn-button>
+				</transition>
 			</i-nav>
 		</i-navbar-items>
 	</i-navbar>
@@ -168,7 +180,7 @@ export default {
 @import '~@inkline/inkline/src/css/mixins';
 
 #navbar {
-	z-index: 10;
+	z-index: 50;
 
 	@media screen and (max-width: $mobile-max-width) {
 		text-align: center;
@@ -204,7 +216,7 @@ export default {
 					font-size: 18px;
 					line-height: 22px;
 
-					&.nuxt-link-active {
+					&.-active.nuxt-link-active {
 						color: $cn-color-secondary !important;
 					}
 				}
@@ -255,6 +267,10 @@ export default {
 		color: white !important;
 
 		&:hover {
+			color: $cn-color-secondary !important;
+		}
+
+		&.-active.nuxt-link-active {
 			color: $cn-color-secondary !important;
 		}
 	}

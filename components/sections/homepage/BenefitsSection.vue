@@ -12,7 +12,7 @@
 			/>
 			<div class="benefits-body">
 				<div v-for="(card, index) in content.benefitsSection.cards" :key="index">
-					<div class="benefit-card _margin-top-1" :class="'cn-bg-' + card.backgroundColor">
+					<div class="benefit-card _margin-top-1" :class="`cn-bg-${card.backgroundColor}`">
 						<div class="benefit-card-header">
 							<img class="cn-icon" :src="card.iconName">
 						</div>

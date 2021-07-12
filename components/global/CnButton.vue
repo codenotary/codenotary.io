@@ -1,6 +1,7 @@
 <template>
 	<button
-		:class="dynamicClass" v-bind="$attrs"
+		:class="`cn-button cn-button_${variant} cn-button_${size}`" v-bind="$attrs"
+		:disabled="disabled"
 	>
 		<nuxt-link
 			v-if="to"
@@ -13,6 +14,8 @@
 			v-else-if="href"
 			class="no-hover"
 			:href="href"
+			:target="target"
+			:rel="rel"
 		>
 			<slot />
 		</a>
@@ -43,14 +46,13 @@ export default {
 			type: String,
 			default: '_self',
 		},
-	},
-	computed: {
-		dynamicClass() {
-			return {
-				'cn-button': true,
-				['cn-button_' + this.variant]: true,
-				['cn-button_' + this.size]: true,
-			};
+		rel: {
+			type: String,
+			default: '',
+		},
+		disabled: {
+			type: Boolean,
+			default: false,
 		},
 	},
 };
@@ -70,7 +72,7 @@ a:active {
 	box-shadow: $cn-shadow-sm;
 	border-radius: $cn-button-radius;
 	border: unset;
-	height: $cn-button-height;
+	height: $cn-button-height !important;
 	padding: 14px 30px;
 	display: flex;
 	flex-direction: column;

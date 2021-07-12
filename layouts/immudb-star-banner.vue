@@ -137,7 +137,7 @@ section.immudb-star-banner-layout {
 		}
 	}
 
-	@media (max-width: 480px) {
+	@media screen and (max-width: $mobile-max-width) {
 		#immudbStarBanner {
 			height: #{$banner-height * 2}px;
 			padding-right: 2.4rem;

@@ -152,9 +152,10 @@ export default {
 		{ src: '~plugins/vue-meta', ssr: false },
 		{ src: '~plugins/vue-truncate-filter', ssr: false },
 		{ src: '~plugins/vue-typer', ssr: false },
+		{ src: '~plugins/vue-youtube', ssr: false },
+		{ src: '~plugins/hotjar', ssr: false },
 		'~plugins/vue-slick-carousel',
 		'~plugins/inkline',
-		{ src: '~plugins/hotjar', ssr: false },
 	],
 	/*
     ** Nuxt.js dev-modules

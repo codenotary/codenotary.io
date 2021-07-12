@@ -2,7 +2,7 @@
 	<no-ssr>
 		<div class="terminal-wrapper">
 			<div class="terminal">
-				<div class="bar">
+				<div v-if="hasTitle" class="bar">
 					<div class="buttons">
 						<span class="circle red" />
 						<span class="circle yellow" />
@@ -12,7 +12,7 @@
 						{{ title }}
 					</div>
 				</div>
-				<div class="body">
+				<div class="body" :class="{ rounded }">
 					<prism :lang="language">
 						<slot />
 					</prism>
@@ -31,8 +31,14 @@ export default {
 		'no-ssr': NoSSR,
 	},
 	props: {
-		title: { type: String, default: 'immudb' },
+		title: { type: String, default: null },
 		language: { type: String, default: 'go' },
+		rounded: { type: Boolean, default: false },
+	},
+	computed: {
+		hasTitle() {
+			return this.title !== null;
+		},
 	},
 };
 </script>
@@ -94,15 +100,19 @@ export default {
 	}
 
 	.body {
+		&.rounded {
+			border-radius: 30px;
+			overflow: hidden;
+		}
+
 		.prism {
 			pre[class*="language-"] {
 				display: block;
 				margin: 0;
 				padding: 1rem;
-				background: #282a36;
+				background: $cn-color-dark !important;
 				box-sizing: border-box;
 				overflow: auto;
-				min-height: 240px;
 				border-radius: 0;
 			}
 

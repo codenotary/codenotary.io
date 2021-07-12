@@ -1,145 +1,415 @@
 <template>
-	<i-header id="immudb-header">
-		<img src="/images/immudb/mascot.png" alt="immudb mascot">
-
-		<h1 class="d6 _margin-top-1 _text-primary">
-			immudb
-		</h1>
-
-		<div id="github-button">
-			<github-button
-				href="https://github.com/codenotary/immudb"
-				data-icon="octicon-star"
-				data-size="large"
-				data-show-count="true"
-				aria-label="Star codenotary/immudb on GitHub"
-			>
-				Star
-			</github-button>
-		</div>
-
-		<h3 class="_margin-bottom-1 description _font-weight-bold">
-			World’s fastest immutable database.
-		</h3>
-		<p class="_margin-top-0 description lead">
-			Open Source and easy to use in new applications and easy to integrate into existing application.
-		</p>
-
-		<p class="action">
-			<i-button
-				size="lg"
-				variant="primary"
-				href="https://docs.immudb.io"
-				target="_blank"
-				rel="nofollow"
-			>
-				Get started now
-			</i-button>
-		</p>
-
-		<i-nav class="header-nav">
-			<i-button
-				id="research-paper-button"
-				link
-				variant="primary"
-				@click="researchPaperModalVisible = true"
-			>
-				<span class="underline">Research Paper</span>
-			</i-button>
-			<i-nav-item class="dot _hidden-sm-and-down">
-				&middot;
-			</i-nav-item>
-			<i-nav-item class="underline" :to="{ name: 'technologies-immudb-immutable-data-science' }">
-				Immutable Data Science
-			</i-nav-item>
-			<i-nav-item class="dot _hidden-sm-and-down">
-				&middot;
-			</i-nav-item>
-			<i-nav-item class="underline" href="https://github.com/codenotary/immudb">
-				GitHub
-			</i-nav-item>
-		</i-nav>
-
+	<div class="immudb-header-container">
+		<i-header
+			id="immudb-header"
+			size="sm"
+		>
+			<i-row class="_align-items-center main-content">
+				<i-column lg="5">
+					<h1 class="_font-weight-bold cn-text-white title first">
+						{{ content.headerSection.title1 }}
+					</h1>
+					<h3
+						class="_font-weight-bold _font-uppercase cn-text-white title second"
+						v-html="content.headerSection.title2"
+					/>
+					<p class="cn-text-white title third">
+						{{ content.headerSection.title3 }}
+					</p>
+					<div class="action-buttons">
+						<a
+							class="github-link"
+							href="https://github.com/codenotary/immudb"
+							target="_blank"
+							rel="nofollow"
+						>
+							<div class="github-star-button">
+								<div class="github-logo">
+									<img src="/icons/github.svg" alt="">
+								</div>
+								<div class="github-count">
+									<span>{{ stargazersCount }}</span>
+									<img src="/icons/star.svg">
+								</div>
+							</div>
+						</a>
+						<cn-button
+							variant="secondary"
+							href="https://dashboard.codenotary.io/auth/signup"
+							target="_blank"
+							rel="nofollow"
+							class="get-started-button"
+						>
+							Get Started Now
+						</cn-button>
+					</div>
+					<div class="useful-links">
+						<a class="useful-link research-paper cn-text-white" @click="researchPaperModalVisible = true">
+							<img
+								src="/icons/research_paper.svg"
+								alt="research paper"
+							>
+							<span class="_margin-left-1-2 _text-decoration-underline">
+								Research Paper
+							</span>
+						</a>
+						<a href="https://www.codenotary.com/technologies/immudb/immutable-data-science" class="useful-link cn-text-white">
+							<img
+								src="/icons/immutable_data_science.svg"
+								alt="immutable data science"
+							>
+							<span class="_margin-left-1-2 _text-decoration-underline">
+								Immutable Data Science
+							</span>
+						</a>
+						<a
+							href="https://github.com/codenotary/immudb/"
+							class="useful-link cn-text-white"
+						>
+							<img
+								src="/icons/github.svg"
+								alt="github"
+							>
+							<span class="_margin-left-1-2 _text-decoration-underline">
+								GitHub
+							</span>
+						</a>
+					</div>
+				</i-column>
+				<i-column lg="1" />
+				<i-column
+					id="mascot-column"
+					lg="6"
+				>
+					<img class="mascot-image" src="/images/immudb-header-mascot.png">
+				</i-column>
+			</i-row>
+		</i-header>
+		<client-only>
+			<div class="gradient-box" />
+			<div class="secondary-box" :style="computedStyle" />
+		</client-only>
 		<ResearchPaperModal
 			v-model="researchPaperModalVisible"
 		/>
-	</i-header>
+	</div>
 </template>
 
 <script>
-import GithubButton from 'vue-github-button';
+import axios from 'axios';
+
+import { IMMUCHALLENGE_URL } from '@/common/consts';
+
+import immudbContent from '@/content/immudb';
 
 export default {
 	name: 'ImmudbHeader',
-	components: {
-		GithubButton,
-	},
 	data() {
 		return {
 			researchPaperModalVisible: false,
+			content: immudbContent,
+			rightBarBottom: '0px',
+			stargazersCount: null,
 		};
+	},
+	async fetch() {
+		const { data } = await axios.get('https://api.github.com/repos/codenotary/immudb');
+		const { stargazers_count: stargazersCount } = data;
+
+		this.stargazersCount = stargazersCount;
+	},
+	computed: {
+		computedStyle() {
+			return {
+				bottom: this.rightBarBottom,
+			};
+		},
 	},
 	methods: {
 		openCodingChallenge () {
-			const data = 'https://github.com/codenotary/immuchallenge';
-			data && window.open(data, '_blank');
+			window.open(IMMUCHALLENGE_URL, '_blank');
 		},
 	},
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~@inkline/inkline/src/css/mixins";
 @import "~@inkline/inkline/src/css/config";
 
-#immudb-header {
-	padding-top: $spacer-4;
-	background-color: white;
-	background-image: url('/images/immudb/header.jpg');
-	text-align: center;
+$mascot-height: 164px;
+$mascot-height-small: 100px;
 
-	img {
-		height: 280px;
-		width: auto;
-		display: block;
-		margin: $spacer auto;
-	}
+#immudb-header {
+	background: transparent;
+	padding-top: 0;
+	padding-bottom: 3rem;
+	z-index: 3;
+	position: relative;
+}
+
+::v-deep #immudb-header {
+	overflow-x: hidden;
+	width: 100%;
 
 	h1 {
-		font-weight: bold;
+		font-size: 68px !important;
+
+		@media screen and (max-width: $mobile-max-width) {
+			font-size: 40px !important;
+		}
 	}
 
-	.description {
-		margin: 2rem auto;
-		max-width: 35rem;
+	h3 {
+		margin-top: 0;
+		margin-bottom: 20px;
+
+		@media screen and (max-width: $mobile-max-width) {
+			margin: 0 auto !important;
+		}
 	}
 
-	.header-nav {
+	@include breakpoint-down(md) {
+		padding-top: 0;
+		padding-bottom: 0;
+		text-align: center;
+
+		.button-wrapper {
+			margin-bottom: $spacer * 2;
+		}
+	}
+}
+
+#mascot {
+	//z-index: 4;
+	height: $mascot-height;
+	width: auto;
+	position: absolute;
+	left: 0;
+	bottom: -6rem;
+	transition: all 0.8s ease-in-out;
+
+	@media screen and (max-width: $mobile-max-width) {
+		height: $mascot-height-small;
+		bottom: -3rem;
+	}
+}
+
+//.title {
+//	color: white !important;
+//}
+
+.subtitle {
+	color: white !important;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+	.title.second {
+		text-transform: uppercase;
+	}
+}
+
+@media screen and (max-width: $mobile-max-width) {
+	.title:first-of-type {
+		margin-top: 20px !important;
+	}
+
+	.action {
 		justify-content: center;
+		margin-bottom: 30px;
+	}
+}
 
-		.dot {
-			color: $text-muted;
-		}
+.immudb-header-container {
+	position: relative;
+	background-color: $cn-color-background;
 
-		@include breakpoint-up(sm) {
-			margin-left: -62px;
+	.get-started-button {
+		font-size: 16px !important;
+	}
+}
+
+// Oblique box on the bottom
+.gradient-box {
+	width: 100vw;
+	max-width: 100%;
+	height: 150%;
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	transform: skewY(-5deg);
+	-webkit-transform-origin: right;
+	z-index: 2;
+	box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
+	overflow: hidden;
+	transition: transform 0.5s linear, bottom 0.5s linear;
+
+	@media screen and (min-width: 2800px) {
+		transform: skewY(-2deg);
+
+		&::after {
+			transform: skewY(2deg);
 		}
 	}
 
-	.underline {
-		text-decoration: underline;
+	@media screen and (max-width: $mobile-max-width) {
+		transform: skewY(-8deg);
+		bottom: 50px;
 
-		.dont-underline {
-			text-decoration: none !important;
+		&::after {
+			transform: skewY(8deg);
 		}
 	}
 
-	.dont-underline {
-		text-decoration: none !important;
+	&::after {
+		content: '';
+		background: $cn-dark-gradient;
+		transform: skewY(5deg);
+		width: 100%;
+		height: 200%;
+		position: inherit;
+	}
+}
+
+.mascot-image {
+	height: auto;
+	max-height: 480px;
+	object-fit: contain;
+
+	@media screen and (max-width: $mobile-max-width) {
+		width: 100%;
+		max-width: unset;
+		margin-bottom: 40px;
+	}
+}
+
+.secondary-box {
+	background-color: $cn-color-secondary;
+	width: 100%;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	-webkit-transform-origin: right;
+	transform: skewY(3deg);
+	z-index: 1;
+	box-shadow: $cn-shadow-sm;
+	transition: transform 0.5s linear, bottom 0.5s linear;
+
+	@media screen and (min-width: 2800px) {
+		transform: skewY(1deg);
 	}
 
-	@media screen and (max-width: 767px) {
-		background-image: none;
+	@media screen and (max-width: $mobile-max-width) {
+		transform: skewY(5deg);
+	}
+}
+
+.main-content {
+	z-index: 3;
+
+	@media screen and (max-width: $mobile-max-width) {
+		padding-top: 16px;
+
+		.title.first {
+			display: inline;
+		}
+	}
+}
+
+.useful-links {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+
+	.useful-link {
+		display: flex;
+		justify-content: flex-start;
+		text-align: left;
+		font-weight: 700;
+		font-size: 14px;
+
+		img {
+			height: 20px !important;
+			width: 20px !important;
+		}
+
+		&:not(:first-child) {
+			margin-top: 10px;
+		}
+
+		&.research-paper {
+			cursor: pointer;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		align-items: flex-start;
+
+		.useful-link {
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			// max-width: 240px;
+		}
+	}
+}
+
+.action-buttons {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	max-width: 340px;
+
+	.github-link {
+		&:hover {
+			text-decoration: none;
+		}
+
+		.github-star-button {
+			display: flex;
+			height: $cn-button-height !important;
+			align-items: center;
+			border: 1px solid transparent;
+
+			.github-logo {
+				height: $cn-button-height !important;
+				padding: 14px;
+				background: $cn-color-primary;
+				border-top-left-radius: 8px;
+				border-bottom-left-radius: 8px;
+			}
+
+			.github-count {
+				display: flex;
+				align-items: center;
+				height: $cn-button-height !important;
+				padding: 14px;
+				background: white;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+
+				img {
+					margin-left: 10px;
+				}
+
+				span {
+					color: $cn-color-brand;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		flex-direction: column;
+		align-items: center;
+		height: 112px;
+		max-width: none;
 	}
 }
 </style>
