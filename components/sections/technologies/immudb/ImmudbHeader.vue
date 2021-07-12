@@ -406,7 +406,7 @@ $mascot-height-small: 100px;
 	@media screen and (max-width: $mobile-max-width) {
 		flex-direction: column;
 		align-items: center;
-		height: 130px;
+		height: 112px;
 		max-width: none;
 	}
 }
