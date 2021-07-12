@@ -102,6 +102,18 @@
 						Download
 					</cn-button>
 				</transition>
+				<transition name="fade">
+					<cn-button
+						v-if="scrolled && $route.name === 'technologies-immudb'"
+						class="cta-button"
+						variant="secondary"
+						href="https://docs.immudb.io/"
+						target="_blank"
+						rel="nofollow"
+					>
+						Documentation
+					</cn-button>
+				</transition>
 			</i-nav>
 		</i-navbar-items>
 	</i-navbar>
