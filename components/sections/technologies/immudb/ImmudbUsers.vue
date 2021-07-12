@@ -89,10 +89,10 @@ export default {
 				label: 'Ruag',
 				image: '/images/immudb/users/ruag.svg',
 			},
-			// {
-			// 	label: 'Cisco',
-			// 	image: '/images/immudb/users/cisco.jpeg',
-			// },
+			{
+				label: 'Cisco',
+				image: '/images/immudb/users/cisco.jpeg',
+			},
 		],
 	}),
 	beforeDestroy () {
