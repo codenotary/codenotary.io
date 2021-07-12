@@ -168,8 +168,8 @@ $mascot-height-small: 100px;
 	}
 
 	@include breakpoint-down(md) {
-		padding-top: 5rem;
-		padding-bottom: 6rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 		//margin-bottom: 2rem;
 		text-align: center;
 
