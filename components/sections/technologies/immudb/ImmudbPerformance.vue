@@ -6,7 +6,7 @@
 					<i-row>
 						<i-column>
 							<page-section-header title="Unmatched performance" :bottom="2">
-								immudb can handle millions of writes per second. The following table shows performance of the embedded store inserting 1M entries on a 4-core E3-1275v6 CPU and SSD disk with 20-100 parallel workers:
+								immudb can handle millions of writes per second. The following table shows performance of the embedded store inserting 1M entries on a 4-core Intel® Xeon® E3-1275v6 CPU and SSD disk with 20-100 parallel workers:
 							</page-section-header>
 						</i-column>
 					</i-row>
@@ -56,7 +56,7 @@
 						<i-column>
 							<div class="options">
 								<div class="option">
-									4-core E3-1275v6 CPU
+									4-core Intel® Xeon® E3-1275v6 CPU
 								</div>
 								<div class="option">
 									SSD disk
