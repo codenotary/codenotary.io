@@ -96,7 +96,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+import { GithubService } from '@/services/github';
 
 import { IMMUCHALLENGE_URL } from '@/common/consts';
 
@@ -113,11 +113,12 @@ export default {
 		};
 	},
 	async fetch() {
-		const { data } = await axios.get('https://api.github.com/repos/codenotary/immudb');
+		const { data } = await GithubService.getStars();
 		const { stargazers_count: stargazersCount } = data;
 
 		this.stargazersCount = stargazersCount;
 	},
+	fetchOnServer: false,
 	computed: {
 		computedStyle() {
 			return {
@@ -142,7 +143,7 @@ $mascot-height-small: 100px;
 
 #immudb-header {
 	background: transparent;
-	padding-top: 0;
+	padding-top: 3rem;
 	padding-bottom: 3rem;
 	z-index: 3;
 	position: relative;

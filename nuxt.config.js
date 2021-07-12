@@ -269,6 +269,14 @@ export default {
 	],
 
 	/*
+	** The env Property
+	** https://nuxtjs.org/api/configuration-env/
+	*/
+	env: {
+		GITHUB_API_URL: 'https://api.github.com',
+	},
+
+	/*
     ** Build configuration
     */
 	content: {
