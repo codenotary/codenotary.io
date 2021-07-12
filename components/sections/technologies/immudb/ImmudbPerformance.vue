@@ -3,14 +3,14 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<i-row>
+					<i-row class="_margin-x-0">
 						<i-column>
 							<page-section-header title="Unmatched performance" :bottom="2">
 								immudb can handle millions of writes per second. The following table shows performance of the embedded store inserting 1M entries on a 4-core Intel® Xeon® E3-1275v6 CPU and SSD disk with 20-100 parallel workers:
 							</page-section-header>
 						</i-column>
 					</i-row>
-					<i-row>
+					<i-row class="_margin-x-0">
 						<i-column>
 							<table>
 								<thead>
@@ -52,8 +52,8 @@
 							</table>
 						</i-column>
 					</i-row>
-					<i-row>
-						<i-column>
+					<i-row class="_margin-x-0">
+						<i-column class="padding-x-1-2">
 							<div class="options">
 								<div class="option">
 									4-core Intel® Xeon® E3-1275v6 CPU
@@ -185,6 +185,7 @@ export default {
 		.options {
 			display: flex;
 			flex-direction: row;
+			flex-wrap: wrap;
 			justify-content: center;
 			margin-top: 35px;
 
@@ -193,6 +194,10 @@ export default {
 				border: 1px solid $cn-color-primary;
 				border-radius: 8px;
 				background: $cn-color-light;
+
+				@include breakpoint-down(sm) {
+					margin-bottom: 16px;
+				}
 			}
 
 			.option + .option {
