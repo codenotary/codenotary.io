@@ -202,6 +202,18 @@ export default {
 				&.-active {
 					background-color: #fff !important;
 				}
+
+				@media screen and (max-width: 380px) {
+					font-size: 10px;
+				}
+
+				@media screen and (min-width: 381px) and (max-width: 430px) {
+					font-size: 12px;
+				}
+
+				@media screen and (min-width: 431px) and (max-width: 485px) {
+					font-size: 14px;
+				}
 			}
 
 			.button:nth-child(2) {
