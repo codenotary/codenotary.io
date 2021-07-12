@@ -147,10 +147,18 @@ export default {
 					th {
 						&:first-child {
 							border-top-left-radius: 30px;
+
+							@media screen and (max-width: 573px) {
+								border-top-left-radius: 8px;
+							}
 						}
 
 						&:last-child {
 							border-top-right-radius: 30px;
+
+							@media screen and (max-width: 573px) {
+								border-top-right-radius: 8px;
+							}
 						}
 					}
 				}
@@ -162,10 +170,18 @@ export default {
 						td {
 							&:first-child {
 								border-bottom-left-radius: 30px;
+
+								@media screen and (max-width: 573px) {
+									border-bottom-left-radius: 8px;
+								}
 							}
 
 							&:last-child {
 								border-bottom-right-radius: 30px;
+
+								@media screen and (max-width: 573px) {
+									border-bottom-right-radius: 8px;
+								}
 							}
 						}
 					}
@@ -178,7 +194,12 @@ export default {
 					text-align: center;
 					border: 1px solid white;
 
-					@media screen and (max-width: 768px) {
+					@media screen and (max-width: 573px) {
+						padding: 15px 3px;
+						font-size: 12px;
+					}
+
+					@media screen and (min-width: 573px) and (max-width: 768px) {
 						padding: 15px 5px;
 					}
 
@@ -212,6 +233,10 @@ export default {
 
 			@media screen and (max-width: $mobile-max-width) {
 				padding: 30px 60px;
+			}
+
+			@media screen and (max-width: 573px) {
+				padding: 30px 5px;
 			}
 		}
 	}
