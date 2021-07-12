@@ -1,10 +1,13 @@
 <page-section id="immudb-get-started-end-section">
-<page-section-header color="white" title="The open-source immutable database" :bottom="2">
-    Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
-</page-section-header>
+<page-section-header color="white" title="The open-source immutable database" :bottom="0"></page-section-header>
 <i-container>
-<i-row>
-<i-column class="_margin-top-2 _margin-x-auto">
+<i-row class="_padding-x-0 _display-flex _justify-content-center">
+	<i-column class="_margin-top-2 _margin-x-auto" xs="12" sm="12" md="8" lg="8">
+		Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
+	</i-column>
+</i-row>
+<i-row class="_padding-x-0 _display-flex _justify-content-center">
+	<i-column class="_margin-top-2 _margin-x-auto" xs="12" sm="12" md="8" lg="8">
 		<p class="action _display-flex _flex-direction-row _justify-content-center">
 			<cn-button
 				variant="secondary"
@@ -16,7 +19,7 @@
 				Get started today
 			</cn-button>
 		</p>
-</i-column>
+	</i-column>
 </i-row>
 </i-container>
 </page-section>

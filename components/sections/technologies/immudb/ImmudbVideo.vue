@@ -13,14 +13,21 @@
 				>
 					<PageSectionHeader
 						title="Why immudb?"
-						:bottom="2"
+						:bottom="0"
 						color="white"
 						weight="bold"
-					>
-						<p class="_margin-bottom-1">
-							immudb is a ledger database that has been developed with performance, scalability and versatility in mind. The user feedback has shown that they love the very high throughput and being able to store hashes as well as data. They see it as a great alternative to using a blockchain or ledger service.
-						</p>
-					</PageSectionHeader>
+					/>
+				</i-column>
+			</i-row>
+			<i-row class="_padding-x-0 _display-flex _justify-content-center">
+				<i-column
+					class="_margin-bottom-2 _margin-x-auto" xs="12"
+					sm="12" md="8"
+					lg="8"
+				>
+					<span class="_text-white _text-center">
+						immudb is a ledger database that has been developed with performance, scalability and versatility in mind. The user feedback has shown that they love the very high throughput and being able to store hashes as well as data. They see it as a great alternative to using a blockchain or ledger service.
+					</span>
 				</i-column>
 			</i-row>
 			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">

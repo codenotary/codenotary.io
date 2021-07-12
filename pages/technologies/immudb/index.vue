@@ -5,7 +5,7 @@
 			<ImmudbCardsSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="features" />
+			<ImmudbFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ImmudbRunsOnSection />
@@ -20,7 +20,7 @@
 			<ImmudbWebconsole />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<nuxt-content :document="easySetup" />
+			<ImmudbEasySetup />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ImmudbByDevelopersForDeverlopers />
@@ -57,15 +57,11 @@ export default {
 	},
 	layout: 'immudb-star-banner',
 	async asyncData ({ $content }) {
-		const easySetup = await $content('technologies/immudb/EasySetup').fetch();
 		const performance = await $content('technologies/immudb/Performance').fetch();
-		const features = await $content('technologies/immudb/Features').fetch();
 		const getStarted = await $content('technologies/immudb/GetStarted').fetch();
 
 		return {
-			easySetup,
 			performance,
-			features,
 			getStarted,
 		};
 	},
@@ -95,60 +91,6 @@ export default {
 .immudb {
 	h2 {
 		font-weight: 700 !important;
-	}
-
-	#immudb-features-section {
-		.immudb-feature {
-			padding: 30px 20px;
-			border-radius: $cn-border-radius-lg;
-			margin: 16px 0;
-		}
-
-		@include breakpoint-down(sm) {
-			.container {
-				margin: 0 auto -180px !important;
-				padding: 0 22px !important;
-				width: 100% !important;
-				min-width: 100%;
-			}
-
-			.column {
-				padding: 8px !important;
-
-				.immudb-feature {
-					margin: 0 !important;
-					width: 100% !important;
-
-					h4 {
-						min-height: 32px;
-						font-size: 0.75rem;
-					}
-				}
-			}
-		}
-	}
-
-	#immudb-easy-setup-section {
-		padding: 155px 0 351px 0 !important;
-		text-align: center;
-		background: $cn-dark-gradient_inverse;
-
-		@include breakpoint-down(sm) {
-			padding: 480px 0 351px 0 !important;
-		}
-
-		pre.language-bash {
-			width: auto;
-			display: inline-block;
-			max-width: 100%;
-			background: $cn-color-dark;
-			border-radius: 30px;
-			padding: 1em 2em;
-
-			.line-numbers-rows {
-				display: none !important;
-			}
-		}
 	}
 
 	#immudb-performance-section {

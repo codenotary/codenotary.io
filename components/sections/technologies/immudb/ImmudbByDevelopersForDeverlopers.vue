@@ -5,14 +5,21 @@
 				<i-column>
 					<PageSectionHeader
 						title="by Developers, for Developers"
-						:bottom="2"
+						:bottom="0"
 						color="white"
 						weight="bold"
-					>
-						<p class="_text-white">
-							We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
-						</p>
-					</PageSectionHeader>
+					/>
+				</i-column>
+			</i-row>
+			<i-row class="_padding-x-0 _display-flex _justify-content-center">
+				<i-column
+					class="_margin-bottom-2 _margin-x-auto _text-center" xs="12"
+					sm="12" md="8"
+					lg="8"
+				>
+					<span class="_text-white _text-center">
+						We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
+					</span>
 				</i-column>
 			</i-row>
 			<i-row>
@@ -38,7 +45,10 @@
 									lg="12"
 								>
 									<!-- eslint-disable -->
-									<Terminal rounded language="go">
+									<Terminal
+										language="go"
+										rounded
+									>
 										client, err := immuclient.NewImmuClient(immuclient.DefaultOptions())
 										if err != nil {
 											exit(err)
