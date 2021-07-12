@@ -290,12 +290,21 @@ export default {
 				content: none;
 			}
 
+			&.slick-prev,
+			&.slick-next {
+				&,
+				img {
+					height: 48px !important;
+					max-width: 48px !important;
+				}
+			}
+
 			&.slick-prev {
-				margin-left: -20px;
+				margin-left: -4px;
 			}
 
 			&.slick-next {
-				margin-right: -30px;
+				margin-right: -4px;
 			}
 
 			img {
