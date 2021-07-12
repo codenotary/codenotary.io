@@ -67,12 +67,15 @@ export default {
 	padding-bottom: 10px;
 
 	@media screen and (max-width: $mobile-max-width) {
-		padding-top: 10px;
 		flex-direction: column;
 		align-items: center;
-		width: min-content !important;
+		margin: 0 auto -180px !important;
+		padding: 0 !important;
+		width: 100% !important;
+		min-width: 100%;
 
 		& ::v-deep .square-card {
+			margin: 0;
 			padding: 16px;
 			max-width: 213px;
 			height: 157px;

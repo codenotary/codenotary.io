@@ -6,13 +6,16 @@
 		>
 			<i-row class="_align-items-center main-content">
 				<i-column lg="5">
-					<h2 class="_font-weight-bold cn-text-white title first">
+					<h1 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
-					</h2>
-					<h2 class="_font-weight-bold cn-text-white title second" v-html="content.headerSection.title2" />
-					<h2 class="_font-weight-bold cn-text-white title third">
+					</h1>
+					<h3
+						class="_font-weight-bold _font-uppercase cn-text-white title second"
+						v-html="content.headerSection.title2"
+					/>
+					<p class="cn-text-white title third">
 						{{ content.headerSection.title3 }}
-					</h2>
+					</p>
 					<div class="action-buttons">
 						<a
 							class="github-link"
@@ -35,7 +38,6 @@
 							href="https://dashboard.codenotary.io/auth/signup"
 							target="_blank"
 							rel="nofollow"
-							size="lg"
 							class="get-started-button"
 						>
 							Get Started Now
@@ -43,16 +45,34 @@
 					</div>
 					<div class="useful-links">
 						<a class="useful-link research-paper cn-text-white" @click="researchPaperModalVisible = true">
-							<img src="/icons/research_paper.svg" alt="">
-							Research Paper
+							<img
+								src="/icons/research_paper.svg"
+								alt="research paper"
+							>
+							<span class="_margin-left-1-2 _text-decoration-underline">
+								Research Paper
+							</span>
 						</a>
 						<a href="https://www.codenotary.com/technologies/immudb/immutable-data-science" class="useful-link cn-text-white">
-							<img src="/icons/immutable_data_science.svg" alt="">
-							Immutable Data Science
+							<img
+								src="/icons/immutable_data_science.svg"
+								alt="immutable data science"
+							>
+							<span class="_margin-left-1-2 _text-decoration-underline">
+								Immutable Data Science
+							</span>
 						</a>
-						<a href="https://github.com/codenotary/immudb/" class="useful-link cn-text-white">
-							<img src="/icons/github.svg" alt="">
-							GitHub
+						<a
+							href="https://github.com/codenotary/immudb/"
+							class="useful-link cn-text-white"
+						>
+							<img
+								src="/icons/github.svg"
+								alt="github"
+							>
+							<span class="_margin-left-1-2 _text-decoration-underline">
+								GitHub
+							</span>
 						</a>
 					</div>
 				</i-column>
@@ -130,15 +150,26 @@ $mascot-height-small: 100px;
 	overflow-x: hidden;
 	width: 100%;
 
-	h2 {
+	h1 {
+		font-size: 68px !important;
+
+		@media screen and (max-width: $mobile-max-width) {
+			font-size: 40px !important;
+		}
+	}
+
+	h3 {
 		margin-top: 0;
 		margin-bottom: 20px;
+
+		@media screen and (max-width: $mobile-max-width) {
+			margin: 0 auto !important;
+		}
 	}
 
 	@include breakpoint-down(md) {
-		padding-top: 5rem;
-		padding-bottom: 6rem;
-		//margin-bottom: 2rem;
+		padding-top: 0;
+		padding-bottom: 0;
 		text-align: center;
 
 		.button-wrapper {
@@ -240,6 +271,17 @@ $mascot-height-small: 100px;
 	}
 }
 
+.mascot-image {
+	height: auto;
+	max-height: 520px;
+
+	@media screen and (max-width: $mobile-max-width) {
+		width: 100%;
+		max-width: unset;
+		margin-bottom: 40px;
+	}
+}
+
 .secondary-box {
 	background-color: $cn-color-secondary;
 	width: 100%;
@@ -277,12 +319,18 @@ $mascot-height-small: 100px;
 	display: flex;
 	flex-direction: column;
 	margin-top: 20px;
-	max-width: 200px;
 
 	.useful-link {
-		text-decoration: underline;
+		display: flex;
+		justify-content: start;
+		text-align: left;
 		font-weight: 700;
 		font-size: 14px;
+
+		img {
+			height: 20px !important;
+			width: 20px !important;
+		}
 
 		&:not(:first-child) {
 			margin-top: 10px;
@@ -299,8 +347,13 @@ $mascot-height-small: 100px;
 
 	@media screen and (max-width: $mobile-max-width) {
 		align-items: flex-start;
-		margin: 20px auto 0;
-		padding-left: 20px;
+
+		.useful-link {
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			// max-width: 240px;
+		}
 	}
 }
 
@@ -317,23 +370,26 @@ $mascot-height-small: 100px;
 
 		.github-star-button {
 			display: flex;
+			height: $cn-button-height !important;
 			align-items: center;
 			border: 1px solid transparent;
 
 			.github-logo {
-				background: $cn-color-primary;
+				height: $cn-button-height !important;
 				padding: 14px;
+				background: $cn-color-primary;
 				border-top-left-radius: 8px;
 				border-bottom-left-radius: 8px;
 			}
 
 			.github-count {
-				background: white;
-				padding: 14px;
-				border-top-right-radius: 8px;
-				border-bottom-right-radius: 8px;
 				display: flex;
 				align-items: center;
+				height: $cn-button-height !important;
+				padding: 14px;
+				background: white;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
 
 				img {
 					margin-left: 10px;
@@ -352,9 +408,5 @@ $mascot-height-small: 100px;
 		height: 130px;
 		max-width: none;
 	}
-}
-
-.mascot-image {
-	width: 100%;
 }
 </style>

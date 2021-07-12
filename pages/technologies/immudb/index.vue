@@ -97,6 +97,37 @@ export default {
 		font-weight: 700 !important;
 	}
 
+	#immudb-features-section {
+		.immudb-feature {
+			padding: 30px 20px;
+			border-radius: $cn-border-radius-lg;
+			margin: 16px 0;
+		}
+
+		@include breakpoint-down(sm) {
+			.container {
+				margin: 0 auto -180px !important;
+				padding: 0 24px !important;
+				width: 100% !important;
+				min-width: 100%;
+			}
+
+			.column {
+				padding: 8px !important;
+
+				.immudb-feature {
+					margin: 0 !important;
+					width: 100% !important;
+
+					h4 {
+						min-height: 32px;
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+
 	#immudb-easy-setup-section {
 		margin-top: -2rem;
 		text-align: center;
@@ -251,37 +282,6 @@ export default {
 		}
 	}
 
-	#immudb-features-section {
-		.immudb-feature {
-			padding: 30px 20px;
-			border-radius: $cn-border-radius-lg;
-			margin: 16px 0;
-		}
-
-		@include breakpoint-down(sm) {
-			.container {
-				margin: 0 auto -180px !important;
-				padding: 0 24px !important;
-				width: 100% !important;
-				min-width: 100%;
-			}
-
-			.column {
-				padding: 8px !important;
-
-				.immudb-feature {
-					margin: 0 !important;
-					width: 100% !important;
-
-					h4 {
-						min-height: 32px;
-						font-size: 0.75rem;
-					}
-				}
-			}
-		}
-	}
-
 	#immudb-code-tabs-section {
 		background: $color-gray-10;
 
@@ -331,7 +331,7 @@ export default {
 		padding-top: 160px !important;
 
 		@include breakpoint-down(sm) {
-			padding-top: 30px !important;
+			padding: 30px 20px 30px !important;
 		}
 	}
 
