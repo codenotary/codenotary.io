@@ -12,7 +12,7 @@ export default {
 				title: 'Immutable',
 				subtitle: `
 					<p>
-						<b>Any kind of key-value.</b><br>
+						<b>Any kind of key-value or relational data.</b><br>
 						Clients can choose how to structure data.
 					</p>
 					<p>
