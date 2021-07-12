@@ -61,7 +61,7 @@
 						</i-tab>
 						<i-tab
 							class="_padding-top-2"
-							:title="'Store verified items'"
+							title="Store data tamperproof"
 						>
 							<i-row
 								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
@@ -89,7 +89,7 @@
 						</i-tab>
 						<i-tab
 							class="_padding-top-2"
-							:title="'Get verified items'"
+							title="Read verified data"
 						>
 							<i-row
 								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"

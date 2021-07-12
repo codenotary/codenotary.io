@@ -35,19 +35,25 @@
 									md="2"
 									lg="2"
 								>
-									<img
-										v-if="subitem && subitem.image"
-										class="image -responsive _padding-y-2"
-										:class="{'image-only': !subitem.label }"
-										:src="subitem.image"
-										:alt="subitem.label"
+									<a
+										href="https://github.com/codenotary/immudb/releases/"
+										target="_blank"
+										rel="nofollow"
 									>
-									<StoryCard
-										v-else-if="subitem"
-										:title="subitem.label"
-										:color="getColor(6)"
-										outlined
-									/>
+										<img
+											v-if="subitem && subitem.image"
+											class="image -responsive _padding-y-2"
+											:class="{'image-only': !subitem.label }"
+											:src="subitem.image"
+											:alt="subitem.label"
+										>
+										<StoryCard
+											v-else-if="subitem"
+											:title="subitem.label"
+											:color="getColor(6)"
+											outlined
+										/>
+									</a>
 								</i-column>
 							</i-row>
 						</i-tab>

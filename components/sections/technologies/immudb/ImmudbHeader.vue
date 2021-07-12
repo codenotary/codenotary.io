@@ -35,7 +35,7 @@
 						</a>
 						<cn-button
 							variant="secondary"
-							href="https://dashboard.codenotary.io/auth/signup"
+							href="https://docs.immudb.io/"
 							target="_blank"
 							rel="nofollow"
 							class="get-started-button"
