@@ -1,41 +1,4 @@
 <template>
-	<!-- <PageSection>
-		<i-container>
-			<i-row>
-				<i-column>
-					<PageSectionHeader class="_text-left _margin-left-0 _margin-bottom-2">
-						<h1 slot="title">
-							Immutable Data Science
-						</h1>
-					</PageSectionHeader>
-					<div class="ppp-info-alert">
-						<p>
-							We are the developers of <nuxt-link :to="{ name: 'technologies-immudb' }">
-								immudb
-							</nuxt-link>, an Open Source immutable database for systems and applications. Given the immutability of anything that is stored inside our immudb database, we think that it can be a valuable platform to store sensitive data important to current political or social discourse, so that data scientists can then get insight from data without fear of partisan or malevolent meddling with the core datasets. We started with the US federal government PPP dataset but we will add more in the future. Our service is free for all to use.
-						</p>
-					</div>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column>
-					<PageSectionHeader class="_text-left _margin-left-0 _margin-bottom-0 _margin-top-4">
-						<h2 slot="title">
-							Immutable Datasets
-						</h2>
-					</PageSectionHeader>
-				</i-column>
-			</i-row>
-			<i-row class="_margin-bottom-2">
-				<i-column>
-					<i-card class="link-card">
-						<fa class="icon" icon="chevron-right" />
-						<a class="_overlay-link" href="https://ppp.immudb.io"><strong>U.S. Federal Reserve Payment Protection Program</strong></a>
-					</i-card>
-				</i-column>
-			</i-row>
-		</i-container>
-	</PageSection> -->
 	<div>
 		<div class="immutable-data-science-header-container">
 			<i-header
@@ -86,7 +49,7 @@
 					rel="nofollow"
 					class="protection-program-link"
 				>
-					<span>U.S. Federal Reserve Payment Protection Program</span>
+					<span class="text">U.S. Federal Reserve Payment Protection Program</span>
 					<fa class="icon" icon="chevron-right" />
 				</a>
 			</div>
@@ -143,6 +106,13 @@ $mascot-height-small: 100px;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-align: center;
+		font-size: 32px !important;
+		line-height: 34px !important;
+
+		@media screen and (max-width: $mobile-max-width) {
+			font-size: 24px !important;
+			line-height: 24px !important;
+		}
 	}
 }
 
@@ -236,7 +206,11 @@ $mascot-height-small: 100px;
 
 .immutable-data-science-description-container {
 	background: $cn-color-background;
-	padding: 20px 30px 0;
+	padding: 70px 30px 0;
+
+	@media screen and (max-width: $mobile-max-width) {
+		padding-top: 40px;
+	}
 
 	.immutable-data-science-description {
 		display: flex;
@@ -277,15 +251,21 @@ $mascot-height-small: 100px;
 		.title {
 			margin: 0;
 			color: $cn-color-brand;
-			font-size: 24px !important;
 			font-weight: 700;
 			padding-bottom: 10px;
+			font-size: 32px !important;
+			line-height: 34px !important;
+
+			@media screen and (max-width: $mobile-max-width) {
+				font-size: 24px !important;
+				line-height: 24px !important;
+			}
 		}
 
 		.protection-program-link {
 			background: $cn-light-gradient;
 			box-shadow: $cn-shadow-sm;
-			padding: 10px 20px;
+			padding: 20px;
 			border-radius: 8px 30px 30px 8px;
 			display: flex;
 			justify-content: space-between;
@@ -293,9 +273,27 @@ $mascot-height-small: 100px;
 			max-width: 740px;
 			margin: 0 auto;
 
+			.text {
+				font-size: 16px;
+				line-height: 22px;
+			}
+
 			.icon {
 				color: $cn-color-primary;
 				font-size: 20px;
+			}
+
+			@media screen and (max-width: $mobile-max-width) {
+				padding: 18px 10px;
+
+				.text {
+					font-size: 12px;
+					line-height: 14px;
+				}
+
+				.icon {
+					font-size: 15px;
+				}
 			}
 		}
 	}
@@ -303,5 +301,10 @@ $mascot-height-small: 100px;
 
 .newsletter {
 	margin: 0 !important;
+	padding-top: 76px !important;
+
+	h2 {
+		margin-top: 0 !important;
+	}
 }
 </style>
