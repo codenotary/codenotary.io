@@ -1,0 +1,75 @@
+<template>
+	<UiPageSection
+		class="copyright"
+		:top="2"
+		:bottom="2"
+	>
+		<i-container>
+			<i-row class="row-container">
+				<i-column
+					class="_display-flex _justify-content-start"
+				>
+					Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
+				</i-column>
+				<i-column
+					class="_display-flex _justify-content-end _font-weight-bold"
+				>
+					<router-link :to="{ name: 'terms-of-service' }">
+						Terms of Service
+					</router-link>
+					<router-link :to="{ name: 'privacy-statement' }">
+						Privacy statement
+					</router-link>
+				</i-column>
+			</i-row>
+		</i-container>
+	</UiPageSection>
+</template>
+
+<script>
+
+export default {
+	name: 'TheCopyright',
+	data() {
+		return {
+			year: new Date().getFullYear(),
+		};
+	},
+};
+</script>
+
+<style lang="scss">
+.copyright {
+	padding: 1.5rem 0 !important;
+	color: var(--v-grey-lighten1);
+	text-align: center;
+	font-size: 14px;
+	line-height: 17px;
+	background-color: var(--v-accent-darken3) !important;
+
+	a {
+		padding: 0 $spacer-1-2;
+		color: var(--v-accent-base-lighten1);
+
+		&:hover,
+		&:active {
+			color: var(--v-primary-lighten3);
+		}
+	}
+
+	@media (max-width: $xs) {
+		.row-container {
+			flex-direction: column;
+
+			.column {
+				flex: 1;
+				justify-content: center !important;
+
+				&:first-of-type {
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+</style>

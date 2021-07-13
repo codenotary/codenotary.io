@@ -1,5 +1,5 @@
 import Sass from 'sass';
-import { meta, DEFAULT_META } from './helpers/meta';
+import { meta, DEFAULT_META } from './src/helpers/meta';
 import blogRoutes from './blog';
 import careersRoutes from './careers';
 import tosRoutes from './tos';
@@ -47,6 +47,19 @@ export default {
     ** Doc: https://nuxtjs.org/api/configuration-components/
     */
 	components: true,
+
+	/*
+	** Nuxt rootDir value
+	** See https://nuxtjs.org/api/configuration-srcdir
+	*/
+	srcDir: 'src/',
+
+	/*
+	** Devtools enabled
+	** See https://https://nuxtjs.org/api/configuration-srcdir
+	*/
+	devtools: !IS_PROD,
+
 	/*
     ** Headers of the page
     */
@@ -75,33 +88,30 @@ export default {
 	},
 
 	/*
-    ** Customize the progress-bar color
-    */
-	loading: {
-		color: '#fff',
-	},
-
-	/*
     ** Global CSS
     */
 	css: [
-		{
-			src: './assets/css/colors.scss',
-			lang: 'scss',
-			ssr: false,
-		},
-		{
-			src: './assets/css/typography.scss',
-			lang: 'scss',
-			ssr: false,
-		},
 		{
 			src: './assets/css/main.scss',
 			lang: 'scss',
 			ssr: false,
 		},
+		{
+			src: './assets/css/scrollbar.scss',
+			lang: 'scss',
+			ssr: false,
+		},
+		{
+			src: './assets/css/tooltip.scss',
+			lang: 'scss',
+			ssr: false,
+		},
 	],
 
+	/*
+	** Build configuration
+	** See https://nuxtjs.org/api/configuration-build/
+	*/
 	build: {
 		analyze: false,
 		parallel: EXPERIMENTAL,
@@ -193,6 +203,10 @@ export default {
 		},
 	},
 
+	/*
+	** Set authenticated as default middleware
+	** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-router
+	*/
 	router: {
 		mode: 'history',
 		middleware: [],
@@ -380,12 +394,13 @@ export default {
 				customProperties: true,
 				variations: true,
 			},
-			dark: true,
+			dark: false,
 			themes: {
 				light: {
-					primary: '#24c4a1',
+					brand: '#244583',
+					primary: '#1460b6',
 					secondary: '#febf2d',
-					accent: '#7c4dff',
+					accent: '#24c4a1',
 					error: '#c06b6f',
 					info: '#9fefde',
 					success: '#7ec699',
@@ -405,9 +420,10 @@ export default {
 					'font-100': '#fff',
 				},
 				dark: {
-					primary: '#24c4a1',
+					brand: '#244583',
+					primary: '#1460b6',
 					secondary: '#febf2d',
-					accent: '#7c4dff',
+					accent: '#24c4a1',
 					error: '#c06b6f',
 					info: '#9fefde',
 					success: '#7ec699',
