@@ -52,13 +52,15 @@
 
 <script>
 import axios from 'axios';
-import { title } from '~/helpers/meta';
 
 export default {
 	name: 'TosPageMixin',
-	head() {
+	head () {
 		return {
-			title: title(this.isIndex ? 'Terms of Service' : `Terms of Service - ${ this.article.title }`),
+			// title: title(this.isIndex ? 'Terms of Service' : `Terms of Service - ${ this.article.title }`),
+			title: this.isIndex
+				? 'Terms of Service'
+				: `Terms of Service - ${ this.article.title }`,
 		};
 	},
 	computed: {

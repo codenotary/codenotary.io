@@ -58,7 +58,6 @@ import {
 	SET_NAVBAR,
 } from '@/store/view/constants';
 import LazyHydrate from 'vue-lazy-hydration';
-import { title } from '~/helpers/meta';
 
 const ACTIVE_CAMPAIGN_FORM_ID = 10;
 
@@ -72,9 +71,9 @@ export default {
 		ACTIVE_CAMPAIGN_FORM_ID,
 		injected: false,
 	}),
-	head() {
+	head () {
 		return {
-			title: title('Contact us'),
+			title: 'Contact us',
 		};
 	},
 	mounted () {

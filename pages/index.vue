@@ -35,6 +35,11 @@ export default {
 			webinarModalOpen: false,
 		};
 	},
+	head () {
+		return {
+			title: 'Homepage',
+		};
+	},
 	mounted () {
 		this.$nextTick(() => {
 			this.setNavbar({
