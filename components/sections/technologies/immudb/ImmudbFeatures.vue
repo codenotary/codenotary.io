@@ -103,6 +103,10 @@ export default {
 		border-radius: $cn-border-radius-lg;
 		box-shadow: $cn-shadow-sm;
 		border: none;
+
+		img {
+			object-fit: contain;
+		}
 	}
 
 	@include breakpoint-down(sm) {

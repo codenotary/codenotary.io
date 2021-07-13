@@ -298,6 +298,10 @@ export default {
 		}
 
 		.slick-arrow {
+			img {
+				object-fit: contain;
+			}
+
 			&.slick-next {
 				right: -50px;
 			}

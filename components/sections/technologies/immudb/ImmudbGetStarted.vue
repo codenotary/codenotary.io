@@ -22,11 +22,11 @@
 				>
 					<p class="action _display-flex _flex-direction-row _justify-content-center">
 						<cn-button
+							class="cta-button"
 							variant="secondary"
 							href="https://docs.immudb.io"
 							target="_blank"
 							rel="nofollow"
-							size="lg"
 						>
 							Get started today
 						</cn-button>

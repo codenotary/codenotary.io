@@ -19,7 +19,7 @@
 					<a href="https://github.com/codenotary/immudb-webconsole">
 						<img
 							class="image -responsive"
-							src="/images/immudb/webconsole.png"
+							src="/images/immudb/webconsole.jpg"
 							alt="Immudb - Web Console"
 						>
 					</a>

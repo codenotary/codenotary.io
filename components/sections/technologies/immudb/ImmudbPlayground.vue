@@ -19,7 +19,7 @@
 					<a href="https://play.codenotary.com">
 						<img
 							class="image -responsive"
-							src="/images/immudb/playground.png"
+							src="/images/immudb/playground.jpg"
 							alt="Immudb - Playground"
 						>
 					</a>
