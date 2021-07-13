@@ -1,6 +1,6 @@
 <template>
 	<section class="default-layout" :class="{ scrolled, hover }">
-		<Navbar
+		<TheNavbar
 			:scrolled="scrolled"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
@@ -8,10 +8,10 @@
 		<div id="content">
 			<nuxt />
 		</div>
-		<Footer />
-		<Copyright />
+		<TheFooter />
+		<TheCopyright />
 		<client-only>
-			<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
+			<UiModalLedgerCompliance v-model="ledgerComplianceModalOpen" />
 		</client-only>
 	</section>
 </template>

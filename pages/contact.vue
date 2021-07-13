@@ -1,53 +1,51 @@
 <template>
-	<div>
-		<PageSection variant="white">
-			<PageSectionHeader>
-				<h1 slot="title" class="d6">
-					Contact us
-				</h1>
-			</PageSectionHeader>
+	<UiPageSection variant="white">
+		<UiPageSectionHeader>
+			<h1 slot="title" class="d6">
+				Contact us
+			</h1>
+		</UiPageSectionHeader>
+		<i-container>
+			<i-row class="_text-center">
+				<i-column id="map-embed">
+					<div class="_embed-16by9">
+						<LazyHydrate when-idle>
+							<iframe
+								width="1200"
+								height="400"
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.2142910512503!2d-95.46195250127549!3d29.706598157895197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c19696e55555%3A0x5481fd1592819481!2s6750%20W%20Loop%20S%20Suite%20845%2C%20Houston%2C%20TX%2077081%2C%20USA!5e1!3m2!1sen!2sit!4v1622041088336!5m2!1sen!2sit"
+								frameborder="0"
+								scrolling="no"
+								marginheight="0"
+								marginwidth="0"
+							/>
+						</LazyHydrate>
+					</div>
+					<h3 class="_margin-top-1">
+						CodeNotary, Inc.
+					</h3>
+					<div class="_margin-top-1">
+						6750 West Loop South
+					</div>
+					<div class="_margin-top-1">
+						Suite 845
+					</div>
+					<div class="_margin-bottom-1 _font-size-sm">
+						Bellaire, TX 77401
+					</div>
+				</i-column>
+			</i-row>
+		</i-container>
+		<LazyHydrate when-visible>
 			<i-container>
-				<i-row class="_text-center">
-					<i-column id="map-embed">
-						<div class="_embed-16by9">
-							<LazyHydrate when-idle>
-								<iframe
-									width="1200"
-									height="400"
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3477.2142910512503!2d-95.46195250127549!3d29.706598157895197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c19696e55555%3A0x5481fd1592819481!2s6750%20W%20Loop%20S%20Suite%20845%2C%20Houston%2C%20TX%2077081%2C%20USA!5e1!3m2!1sen!2sit!4v1622041088336!5m2!1sen!2sit"
-									frameborder="0"
-									scrolling="no"
-									marginheight="0"
-									marginwidth="0"
-								/>
-							</LazyHydrate>
-						</div>
-						<h3 class="_margin-top-1">
-							CodeNotary, Inc.
-						</h3>
-						<div class="_margin-top-1">
-							6750 West Loop South
-						</div>
-						<div class="_margin-top-1">
-							Suite 845
-						</div>
-						<div class="_margin-bottom-1 _font-size-sm">
-							Bellaire, TX 77401
-						</div>
+				<i-row>
+					<i-column>
+						<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 					</i-column>
 				</i-row>
 			</i-container>
-			<LazyHydrate when-visible>
-				<i-container>
-					<i-row>
-						<i-column>
-							<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
-						</i-column>
-					</i-row>
-				</i-container>
-			</LazyHydrate>
-		</PageSection>
-	</div>
+		</LazyHydrate>
+	</UiPageSection>
 </template>
 
 <script>

@@ -1,22 +1,22 @@
 <template>
-	<PageSection id="partners">
-		<PageSectionHeader title="Our partners" tag="h1" />
+	<UiPageSection id="partners">
+		<UiPageSectionHeader title="Our partners" tag="h1" />
 		<LazyHydrate when-visible>
 			<PartnersCarousel :partners="partners" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<BecomeAPartner
+			<PartnersBecomeAPartner
 				@onPartnerModal="partnerModalOpen = true"
 			/>
 		</LazyHydrate>
 
 		<!-- ACTIVE CAMPAING MODALS -->
 		<LazyHydrate when-idle>
-			<PartnerModal
+			<UiModalPartner
 				v-model="partnerModalOpen"
 			/>
 		</LazyHydrate>
-	</PageSection>
+	</UiPageSection>
 </template>
 
 <script>

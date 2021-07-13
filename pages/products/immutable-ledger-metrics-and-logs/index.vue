@@ -1,20 +1,20 @@
 <template>
 	<div>
-		<LCMlHeader />
+		<ProductsLedgerComplianceMetricsAndLogsHeader />
 		<LazyHydrate when-visible>
-			<LcMlFeatures />
+			<ProductsLedgerComplianceMetricsAndLogsFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<LcMlIntegrations :integrations="integrations" />
+			<ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<LcMlInfrastructure />
+			<ProductsLedgerComplianceMetricsAndLogsInfrastructure />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<HomeVideos class="_margin-top-4" />
+			<HomepageVideos class="_margin-top-4" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<LcMlTestimonials />
+			<ProductsLedgerComplianceMetricsAndLogsTestimonials />
 		</LazyHydrate>
 	</div>
 </template>

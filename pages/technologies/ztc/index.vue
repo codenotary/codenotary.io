@@ -1,24 +1,24 @@
 <template>
 	<div>
-		<ZtcHeader />
+		<TechnologiesZtcHeader />
 		<LazyHydrate when-visible>
-			<ZtcAboutSection />
+			<TechnologiesZtcAbout />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ZtcTechnologyPlatformSection />
+			<TechnologiesZtcTechnologyPlatform />
 		</LazyHydrate>
 		<hr>
 		<LazyHydrate when-visible>
-			<ZtcMonitoringSection />
+			<TechnologiesZtcMonitoring />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ZtcConsortiumBlockchainSection />
+			<TechnologiesZtcConsortiumBlockchain />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ZtcMembersSection />
+			<TechnologiesZtcMembers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ZtcJoin-Section />
+			<TechnologiesZtcJoin />
 		</LazyHydrate>
 	</div>
 </template>

@@ -1,13 +1,13 @@
 <template>
-	<PageSection>
+	<UiPageSection>
 		<i-container>
 			<i-row>
 				<i-column>
-					<PageSectionHeader class="_text-left _margin-left-0 _margin-bottom-2">
+					<UiPageSectionHeader class="_text-left _margin-left-0 _margin-bottom-2">
 						<h1 slot="title">
 							Immutable Data Science
 						</h1>
-					</PageSectionHeader>
+					</UiPageSectionHeader>
 					<div class="ppp-info-alert">
 						<p>
 							We are the developers of <nuxt-link :to="{ name: 'technologies-immudb' }">
@@ -19,11 +19,11 @@
 			</i-row>
 			<i-row>
 				<i-column>
-					<PageSectionHeader class="_text-left _margin-left-0 _margin-bottom-0 _margin-top-4">
+					<UiPageSectionHeader class="_text-left _margin-left-0 _margin-bottom-0 _margin-top-4">
 						<h2 slot="title">
 							Immutable Datasets
 						</h2>
-					</PageSectionHeader>
+					</UiPageSectionHeader>
 				</i-column>
 			</i-row>
 			<i-row class="_margin-bottom-2">
@@ -35,7 +35,8 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</PageSection>
+		</PageSection>
+	</uipagesection>
 </template>
 
 <script>

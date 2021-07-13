@@ -34,7 +34,7 @@ export default {
     ** ssr propery
     ** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
     */
-	ssr: false,
+	ssr: true,
 
 	/*
 	** Nuxt target
@@ -147,8 +147,10 @@ export default {
 			},
 		},
 		transpile: [
-			'@inkline/inkline',
+			'/^vuetify/',
+			'vee-validate',
 			'vue-github-button',
+			'vue-toasted',
 		],
 		optimization: {
 			splitChunks: {
@@ -206,6 +208,7 @@ export default {
 		{ src: '~plugins/leadfeeder', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
 		{ src: '~plugins/tawk', mode: 'client' },
+		{ src: '~/plugins/vee-validate.js', ssr: false },
 		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/vue-aos', ssr: false },
 		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
@@ -218,7 +221,6 @@ export default {
 		{ src: '~plugins/vue-youtube', ssr: false },
 		{ src: '~plugins/hotjar', ssr: false },
 		'~plugins/vue-slick-carousel',
-		'~plugins/inkline',
 	],
 	/*
     ** Nuxt.js dev-modules
@@ -232,6 +234,8 @@ export default {
 		['@nuxtjs/google-analytics', {
 			id: 'UA-136167888-1',
 		}],
+		// Doc: https://github.com/nuxt-community/vuetify-module
+		'@nuxtjs/vuetify',
 	],
 	/*
     ** Nuxt.js modules
@@ -323,6 +327,8 @@ export default {
 				},
 			],
 		}],
+		// Doc: https://github.com/geeogi/nuxt-responsive-loader
+		'nuxt-responsive-loader',
 		// Doc: https://github.com/nuxt-community/robots-module
 		'@nuxtjs/robots',
 		// Doc: https://github.com/nuxt-community/sitemap-module
@@ -351,10 +357,77 @@ export default {
 		},
 	},
 
-	styleResources: {
-		scss: [
-			'~/assets/css/variables.scss',
+	/*
+	** vuetify module configuration
+	** https://github.com/nuxt-community/vuetify-module
+	*/
+	vuetify: {
+		customVariables: [
+			'./src/assets/css/typography.scss',
+			'./src/assets/css/variables.scss',
+			'./src/assets/css/spacer.scss',
 		],
+		treeShake: true,
+		icons: {
+			iconfont: 'mdiSvg',
+		},
+		defaultAssets: {
+			font: false,
+			icons: false,
+		},
+		theme: {
+			options: {
+				customProperties: true,
+				variations: true,
+			},
+			dark: true,
+			themes: {
+				light: {
+					primary: '#24c4a1',
+					secondary: '#febf2d',
+					accent: '#7c4dff',
+					error: '#c06b6f',
+					info: '#9fefde',
+					success: '#7ec699',
+					warning: '#f08d49',
+					gray: '#616161',
+					grey: '#616161',
+					bg: '#fff',
+					'bg-secondary': '#ebece9',
+					'bg-tertiary': '#dfe6ed',
+					'bg-terminal': '#768e98',
+					'bg-code': '#768e98',
+					'font-700': '#111',
+					'font-500': '#333',
+					'font-400': '#999',
+					'font-300': '#666',
+					'font-200': '#f1f1f1',
+					'font-100': '#fff',
+				},
+				dark: {
+					primary: '#24c4a1',
+					secondary: '#febf2d',
+					accent: '#7c4dff',
+					error: '#c06b6f',
+					info: '#9fefde',
+					success: '#7ec699',
+					warning: '#f08d49',
+					gray: '#616161',
+					grey: '#616161',
+					bg: '#153954',
+					'bg-secondary': '#0d3049',
+					'bg-tertiary': '#45475b',
+					'bg-terminal': '#1c273a',
+					'bg-code': '#1c273a',
+					'font-700': '#fff',
+					'font-500': '#f1f1f1',
+					'font-400': '#666',
+					'font-300': '#999',
+					'font-200': '#333',
+					'font-100': '#111',
+				},
+			},
+		},
 	},
 
 	generate: {

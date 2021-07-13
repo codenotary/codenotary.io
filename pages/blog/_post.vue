@@ -1,6 +1,6 @@
 <template>
-	<PageSection class="article-section">
-		<PageSectionHeader :title="article.title" tag="h1" />
+	<UiPageSection class="article-section">
+		<UiPageSectionHeader :title="article.title" tag="h1" />
 		<i-container>
 			<i-row>
 				<i-column
@@ -17,7 +17,7 @@
 					sm="12"
 					md="3"
 				>
-					<MostPopular
+					<BlogMostPopular
 						class="most-popular-wrapper"
 						:articles="mostPopular"
 						card
@@ -25,7 +25,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</PageSection>
+	</UiPageSection>
 </template>
 
 <script>

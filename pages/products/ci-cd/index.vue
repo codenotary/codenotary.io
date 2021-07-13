@@ -1,26 +1,26 @@
 <template>
 	<div>
-		<CiCdHeader />
+		<ProductsCiCdHeader />
 		<LazyHydrate when-visible>
-			<CiCdIntegrations />
+			<ProductsCiCdIntegrations />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<CiCdFeatures />
+			<ProductsCiCdFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<HomeVideos class="_margin-bottom-4" />
+			<HomepageVideos class="_margin-bottom-4" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<CiCdHowItWorks />
+			<ProductsCiCdHowItWorks />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<CiCdGetStarted />
+			<ProductsCiCdGetStarted />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<CiCdAnalyzeAndManage />
+			<ProductsCiCdAnalyzeAndManage />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<CiCdVideos />
+			<ProductsCiCdVideos />
 		</LazyHydrate>
 	</div>
 </template>

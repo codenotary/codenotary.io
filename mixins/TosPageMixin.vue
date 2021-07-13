@@ -1,8 +1,8 @@
 <template>
-	<PageSection>
-		<PageSectionHeader :title="'Terms of Service'" tag="h1" />
+	<UiPageSection>
+		<UiPageSectionHeader :title="'Terms of Service'" tag="h1" />
 
-		<LayoutSubnavbarTos v-if="!isIndex" />
+		<TheSubnavbarTos v-if="!isIndex" />
 
 		<i-container>
 			<i-row>
@@ -47,7 +47,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</PageSection>
+	</UiPageSection>
 </template>
 
 <script>

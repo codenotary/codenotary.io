@@ -1,43 +1,43 @@
 <template>
 	<article class="immudb">
-		<ImmudbHeader />
+		<TechnologiesImmudbHeader />
 		<LazyHydrate when-visible>
-			<ImmudbCardsSection />
+			<TechnologiesImmudbCardsSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbFeatures />
+			<TechnologiesImmudbFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbRunsOnSection />
+			<TechnologiesImmudbRunsOnSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbVideo />
+			<TechnologiesImmudbVideo />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<TerminalSection />
+			<TechnologiesImmudbTerminalSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbWebconsole />
+			<TechnologiesImmudbWebconsole />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbEasySetup />
+			<TechnologiesImmudbEasySetup />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbByDevelopersForDeverlopers />
+			<TechnologiesImmudbByDevelopersForDeverlopers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbPerformance />
+			<TechnologiesImmudbPerformance />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbPlayground />
+			<TechnologiesImmudbPlayground />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbUsers />
+			<TechnologiesImmudbUsers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ImmudbGetStarted />
+			<TechnologiesImmudbGetStarted />
 		</LazyHydrate>
-		<DiscordChatWidget id="chat-widget" />
+		<UiDiscordChatWidget id="chat-widget" />
 	</article>
 </template>
 

@@ -1,9 +1,12 @@
 <template>
 	<div>
 		<CareersHeader @scrollMeTo="scrollMeTo('openPosition')" />
-		<OurValues />
-		<RemoteFriendly />
-		<OpenPositions ref="openPosition" :open-positions="openPositions" />
+		<CareersOurValues />
+		<CareersRemoteFriendly />
+		<CareersOpenPositions
+			ref="openPosition"
+			:open-positions="openPositions"
+		/>
 	</div>
 </template>
 

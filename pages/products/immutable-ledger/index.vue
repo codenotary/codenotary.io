@@ -1,10 +1,10 @@
 <template>
 	<div>
-		<LCHeader
+		<LedgerComplianceHeader
 			@onLedgerComplianceModal="ledgerComplianceModalOpen = true"
 		/>
 		<LazyHydrate when-visible>
-			<LcFeatures />
+			<LedgerComplianceFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<HomeVideos class="_margin-top-4" />
@@ -15,17 +15,17 @@
 			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<LcInfrastructure />
+			<LedgerComplianceInfrastructure />
 		</LazyHydrate>
 
 		<!-- ACTIVE CAMPAING MODALS -->
 		<LazyHydrate when-idle>
-			<LedgerComplianceModal
+			<UiModalLedgerCompliance
 				v-model="ledgerComplianceModalOpen"
 			/>
 		</LazyHydrate>
 		<LazyHydrate when-idle>
-			<WebinarModal
+			<UiModalWebinarModal
 				v-model="webinarModalOpen"
 			/>
 		</LazyHydrate>

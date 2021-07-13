@@ -1,17 +1,17 @@
 <template>
 	<div>
-		<HomeHeader />
+		<HomepageHeader />
 
 		<LazyHydrate when-visible>
-			<WhatWeDoSection />
+			<HomepageWhatWeDo />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<BenefitsSection />
+			<HomepageBenefits />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<NewsletterSection />
+			<HomepageNewsletter />
 		</LazyHydrate>
 	</div>
 </template>

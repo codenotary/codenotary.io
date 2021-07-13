@@ -1,19 +1,19 @@
 <template>
 	<section class="banner-layout" :class="{ scrolled, hover }">
-		<BannerCodenotary
+		<TheBannerCodenotary
 			id="banner-codenotary"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
-		<Navbar
+		<TheNavbar
 			id="navbar"
 			:scrolled="scrolled"
 		/>
 		<div id="content">
 			<nuxt />
 		</div>
-		<Footer />
-		<Copyright />
+		<TheFooter />
+		<TheCopyright />
 	</section>
 </template>
 

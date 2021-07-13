@@ -1,6 +1,7 @@
 <template>
 	<div class="careers-post-page" />
 </template>
+
 <script>
 export default {
 	name: 'CareersPost',
