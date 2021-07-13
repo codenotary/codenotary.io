@@ -53,7 +53,7 @@
 								Research Paper
 							</span>
 						</a>
-						<a href="https://www.codenotary.com/technologies/immudb/immutable-data-science" class="useful-link cn-text-white">
+						<a href="/technologies/immudb/immutable-data-science" class="useful-link cn-text-white">
 							<img
 								src="/icons/immutable_data_science.svg"
 								alt="immutable data science"
