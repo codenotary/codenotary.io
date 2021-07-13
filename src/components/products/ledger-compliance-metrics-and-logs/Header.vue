@@ -1,7 +1,7 @@
 <template>
 	<i-header id="lc-metrics-and-logs-header">
-		<i-row class="_align-items-center">
-			<i-column xs="12" md="6">
+		<v-row class="_align-items-center">
+			<v-col xs="12" md="6">
 				<h2 class="-title _margin-bottom-0" style="text-transform: uppercase;">
 					CNIL Metrics and Logs
 				</h2>
@@ -50,8 +50,8 @@
 						Start trial
 					</i-button>
 				</p>
-			</i-column>
-			<i-column
+			</v-col>
+			<v-col
 				xs="12"
 				md="6"
 				class="_text-center _margin-top-xs-2"
@@ -63,8 +63,8 @@
 					@click="index = 0"
 				>
 				{{ index }}
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<UiModalStartTrial
 			v-model="startTrialModalOpen"
 		/>

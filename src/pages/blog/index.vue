@@ -3,24 +3,24 @@
 		<UiPageSection>
 			<UiPageSectionHeader title="Blog" tag="h1" />
 			<i-container>
-				<i-row>
-					<i-column xs="12" class="blog-search-wrapper _hidden-sm-and-down _padding-right-2 _padding-left-2 _margin-bottom-2">
+				<v-row>
+					<v-col xs="12" class="blog-search-wrapper _hidden-sm-and-down _padding-right-2 _padding-left-2 _margin-bottom-2">
 						<i-input
 							v-model="filter"
 							class="blog-search"
 							placeholder="Filter post by title, date or tag"
 							:clearable="!!filter"
 						/>
-					</i-column>
-					<i-column xs="12" class="blog-search-wrapper mobile _hidden-md-and-up _padding-right-1 _padding-left-1 _margin-bottom-2">
+					</v-col>
+					<v-col xs="12" class="blog-search-wrapper mobile _hidden-md-and-up _padding-right-1 _padding-left-1 _margin-bottom-2">
 						<i-input
 							v-model="filter"
 							class="blog-search"
 							placeholder="Filter post by title, date or tag"
 							:clearable="!!filter"
 						/>
-					</i-column>
-					<i-column xs="12">
+					</v-col>
+					<v-col xs="12">
 						<no-ssr>
 							<masonry
 								class="_width-100"
@@ -93,8 +93,8 @@
 								</div>
 							</infinite-loading>
 						</no-ssr>
-					</i-column>
-				</i-row>
+					</v-col>
+				</v-row>
 			</i-container>
 		</UiPageSection>
 	</div>

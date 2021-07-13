@@ -1,14 +1,14 @@
 <template>
 	<i-header id="ci-cd-header">
-		<i-row class="_align-items-center">
-			<i-column
+		<v-row class="_align-items-center">
+			<v-col
 				xs="12"
 				md="4"
 				class="_text-center _margin-bottom-1 _hidden-md-and-up"
 			>
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
-			</i-column>
-			<i-column md="8">
+			</v-col>
+			<v-col md="8">
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
 					Immutable Ledger (Cloud)
 				</h5>
@@ -41,15 +41,15 @@
 						Sign up
 					</i-button>
 				</p>
-			</i-column>
-			<i-column
+			</v-col>
+			<v-col
 				xs="12"
 				md="4"
 				class="_text-center  _hidden-sm-and-down"
 			>
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 	</i-header>
 </template>
 

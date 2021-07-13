@@ -1,13 +1,13 @@
 <template>
 	<UiPageSection id="codenotary-how-it-works-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="How it works" />
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column>
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col>
 					<VueSlickCarousel v-bind="settings">
 						<div>
 							<i-card>
@@ -76,8 +76,8 @@
 							</i-card>
 						</div>
 					</VueSlickCarousel>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

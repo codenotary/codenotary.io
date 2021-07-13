@@ -1,8 +1,8 @@
 <template>
 	<UiPageSection id="ztc-consortium-blockchain">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="The Consortium Blockchain" block>
 						The Zero-Trust Consortium does not use the public Etherum Blockchain because of the current limitations in scalability due to high latency and very high costs involved to store data and run distributed applications.
 					</UiPageSectionHeader>
@@ -22,8 +22,8 @@
 						<li><fa icon="check-square" /> Synchronize in hours, not days with Warp Sync</li>
 						<li><fa icon="check-square" /> Modular for light integration into your service or product</li>
 					</ul>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

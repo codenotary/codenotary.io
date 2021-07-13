@@ -5,17 +5,17 @@
 			:bottom="0"
 		/>
 		<i-container>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-column
+			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+				<v-col
 					class="_margin-x-auto" xs="12"
 					sm="12" md="8"
 					lg="8"
 				>
 					Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
-				</i-column>
-			</i-row>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+				<v-col
 					class="_margin-top-2 _margin-x-auto" xs="12"
 					sm="12" md="8"
 					lg="8"
@@ -31,8 +31,8 @@
 							Get started today
 						</UiButtonCn>
 					</p>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

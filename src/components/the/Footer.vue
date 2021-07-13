@@ -5,8 +5,8 @@
 		:bottom="2"
 	>
 		<i-container>
-			<i-row>
-				<i-column class="brand">
+			<v-row>
+				<v-col class="brand">
 					<img
 						class="logo"
 						src="/images/logo/logo_white.png"
@@ -41,8 +41,8 @@
 							</a>
 						</li>
 					</ul>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					v-for="(table, index) in content.footer.tables"
 					:key="index"
 					class="table"
@@ -69,8 +69,8 @@
 							{{ link.label }}
 						</a>
 					</div>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

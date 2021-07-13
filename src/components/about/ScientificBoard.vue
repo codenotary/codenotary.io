@@ -5,14 +5,14 @@
 		:top="2"
 		:bottom="2"
 	>
-		<i-row>
-			<i-column>
+		<v-row>
+			<v-col>
 				<UiPageSectionHeader title="Our Scientific Board" />
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<i-container>
-			<i-row class="scientific-team-member-items _justify-content-center">
-				<i-column
+			<v-row class="scientific-team-member-items _justify-content-center">
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -33,8 +33,8 @@
 							He consulted leading high-tech companies, such as IBM, HP, Microsoft, and Verint.
 						</p>
 					</AboutUiTeamMember>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -56,8 +56,8 @@
 							He had numerous cooperation with industry, e.g. a project with IBM Germany for using machine learning technologies to predict work load behavior in Mainframes.
 						</p>
 					</AboutUiTeamMember>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

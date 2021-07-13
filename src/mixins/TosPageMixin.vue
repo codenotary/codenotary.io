@@ -5,8 +5,8 @@
 		<TheSubnavbarTos v-if="!isIndex" />
 
 		<i-container>
-			<i-row>
-				<i-column v-if="isIndex && articles">
+			<v-row>
+				<v-col v-if="isIndex && articles">
 					<ul class="list -unstyled">
 						<li
 							v-for="article in articles"
@@ -18,18 +18,18 @@
 							</nuxt-link>
 						</li>
 					</ul>
-				</i-column>
-				<i-column v-else>
+				</v-col>
+				<v-col v-else>
 					<article>
 						<nuxt-content :document="article" />
 					</article>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					v-if="article.download"
 					xs="12"
 					class="_margin-top-4 _display-flex _justify-content-center _align-content-center"
 				>
-					<i-column
+					<v-col
 						xs="12"
 						sm="10"
 						md="8"
@@ -43,9 +43,9 @@
 						>
 							DOWNLOAD
 						</i-button>
-					</i-column>
-				</i-column>
-			</i-row>
+					</v-col>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

@@ -5,13 +5,13 @@
 		:bottom="2"
 	>
 		<i-container>
-			<i-row class="row-container">
-				<i-column
+			<v-row class="row-container">
+				<v-col
 					class="_display-flex _justify-content-start"
 				>
 					Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					class="_display-flex _justify-content-end _font-weight-bold"
 				>
 					<router-link :to="{ name: 'terms-of-service' }">
@@ -20,8 +20,8 @@
 					<router-link :to="{ name: 'privacy-statement' }">
 						Privacy statement
 					</router-link>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

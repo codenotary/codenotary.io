@@ -1,13 +1,13 @@
 <template>
 	<UiPageSection id="lc-features-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Features" />
-				</i-column>
-			</i-row>
-			<i-row center top>
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row center top>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -26,8 +26,8 @@
 							(5 minute install).
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -46,8 +46,8 @@
 							(15 minutes after configuration).
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -66,8 +66,8 @@
 							Simple yet powerful.
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -86,8 +86,8 @@
 							be a hero.
 						</p>
 					</i-card>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

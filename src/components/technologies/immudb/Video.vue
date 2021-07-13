@@ -3,8 +3,8 @@
 		id="immudb-video-section"
 	>
 		<i-container>
-			<i-row class="_display-flex _justify-content-center">
-				<i-column
+			<v-row class="_display-flex _justify-content-center">
+				<v-col
 					xs="12"
 					sm="12"
 					md="10"
@@ -17,10 +17,10 @@
 						color="white"
 						weight="bold"
 					/>
-				</i-column>
-			</i-row>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+				<v-col
 					class="_margin-bottom-3 _margin-x-auto"
 					xs="12"
 					sm="12"
@@ -30,10 +30,10 @@
 					<span class="_text-white _text-center">
 						immudb is a ledger database that has been developed with performance, scalability and versatility in mind. The user feedback has shown that they love the very high throughput and being able to store hashes as well as data. They see it as a great alternative to using a blockchain or ledger service.
 					</span>
-				</i-column>
-			</i-row>
-			<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="_margin-bottom-1 _display-flex _justify-content-center">
+				<v-col
 					xs="12"
 					sm="12"
 					md="10"
@@ -42,8 +42,8 @@
 				>
 					<div class="video-features">
 						<div class="video-feature-items">
-							<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
-								<i-column
+							<v-row class="_margin-bottom-1 _display-flex _justify-content-center">
+								<v-col
 									class="video-feature-item"
 									xs="6"
 									sm="4"
@@ -55,8 +55,8 @@
 									<p>
 										Easy setup
 									</p>
-								</i-column>
-								<i-column
+								</v-col>
+								<v-col
 									class="video-feature-item"
 									xs="6"
 									sm="4"
@@ -68,8 +68,8 @@
 									<p>
 										Fast and reliable immutable database
 									</p>
-								</i-column>
-								<i-column
+								</v-col>
+								<v-col
 									class="video-feature-item"
 									xs="6"
 									sm="4"
@@ -81,8 +81,8 @@
 									<p>
 										Secure REST API gateway
 									</p>
-								</i-column>
-								<i-column
+								</v-col>
+								<v-col
 									class="video-feature-item"
 									xs="6"
 									sm="4"
@@ -94,8 +94,8 @@
 									<p>
 										Powerful, easy to use admin
 									</p>
-								</i-column>
-								<i-column
+								</v-col>
+								<v-col
 									class="video-feature-item"
 									xs="6"
 									sm="4"
@@ -107,14 +107,14 @@
 									<p>
 										Open source
 									</p>
-								</i-column>
-							</i-row>
+								</v-col>
+							</v-row>
 						</div>
 					</div>
-				</i-column>
-			</i-row>
-			<i-row class="_display-flex _justify-content-center">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="_display-flex _justify-content-center">
+				<v-col
 					xs="12"
 					sm="12"
 					md="10"
@@ -141,8 +141,8 @@
 							:player-vars="{ autoplay: 1 }"
 						/>
 					</div>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

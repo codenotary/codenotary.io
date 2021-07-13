@@ -1,7 +1,7 @@
 <template>
 	<i-header id="about-header">
-		<i-row class="_align-items-center">
-			<i-column xs="12" md="8">
+		<v-row class="_align-items-center">
+			<v-col xs="12" md="8">
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
 					CodeNotary Inc. - The Immutability Specialists
 				</h1>
@@ -11,8 +11,8 @@
 				<p class="lead _margin-bottom-0">
 					We bring trust and integrity into the software life cycle by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
 				</p>
-			</i-column>
-			<i-column md="4" class="_padding-left-4 _text-left">
+			</v-col>
+			<v-col md="4" class="_padding-left-4 _text-left">
 				<p class="_padding-0 margin-0 _margin-bottom-2">
 					<img
 						src="/images/logo/logo_black.png"
@@ -46,8 +46,8 @@
 						>
 					</a>
 				</p>
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 	</i-header>
 </template>
 

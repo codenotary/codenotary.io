@@ -4,8 +4,8 @@
 			id="immudb-header"
 			size="sm"
 		>
-			<i-row class="_align-items-center main-content">
-				<i-column lg="5">
+			<v-row class="_align-items-center main-content">
+				<v-col lg="5">
 					<h1 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h1>
@@ -75,15 +75,15 @@
 							</span>
 						</a>
 					</div>
-				</i-column>
-				<i-column lg="1" />
-				<i-column
+				</v-col>
+				<v-col lg="1" />
+				<v-col
 					id="mascot-column"
 					lg="6"
 				>
 					<img class="mascot-image" src="/images/immudb-header-mascot.png">
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-header>
 		<client-only>
 			<div class="gradient-box" />

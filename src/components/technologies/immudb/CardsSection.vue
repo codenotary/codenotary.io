@@ -13,8 +13,8 @@
 			/>
 		</i-container>
 		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-row-wrap cn-text-dark">
-			<i-row class="about-immudb-cards">
-				<i-column
+			<v-row class="about-immudb-cards">
+				<v-col
 					v-for="(card, index) in content.heroCardsSection.cards"
 					:key="index"
 					class="_margin-top-1 _padding-bottom-1"
@@ -29,8 +29,8 @@
 						:image-url="card.imageUrl"
 						:subtitle="card.subtitle"
 					/>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

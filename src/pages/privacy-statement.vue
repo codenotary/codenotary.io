@@ -3,11 +3,11 @@
 		<UiPageSection>
 			<UiPageSectionHeader title="Privacy Statement" tag="h1" />
 			<i-container>
-				<i-row>
-					<i-column>
+				<v-row>
+					<v-col>
 						<nuxt-content :document="page" />
-					</i-column>
-				</i-row>
+					</v-col>
+				</v-row>
 			</i-container>
 		</UiPageSection>
 	</article>

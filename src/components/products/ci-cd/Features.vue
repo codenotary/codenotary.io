@@ -5,13 +5,13 @@
 		:bottom="0"
 	>
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Features" />
-				</i-column>
-			</i-row>
-			<i-row center top>
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row center top>
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -30,8 +30,8 @@
 							Unlike cumbersome and expensive digital certificates CodeNotary allows you to notarize your digital assets yourself in a split second, without any intermediary.
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -50,8 +50,8 @@
 							Your notarizations are written in stone, in a blockchain and you can easily revoke any of your notarized assets in seconds. The blockchain is spread around the globe and is always up.
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -70,8 +70,8 @@
 							Anyone can authenticate the authenticity and provenance of any of your notarized assets using cryptographic verification of their SHA256 hashes stored in the blockchain.
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -90,8 +90,8 @@
 							Notarize your source code, documents, libraries, builds, and containers onto the blockchain in one simple step and immutably attach your identity, reputation, and trust to them, independently or as an organization.
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -110,8 +110,8 @@
 							Automate and continuously authenticate the integrity of any digital asset in your environment. Enable anyone, anywhere, at any time to verify the authenticity of your solutions simply and for free.
 						</p>
 					</i-card>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

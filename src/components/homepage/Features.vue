@@ -4,8 +4,8 @@
 		variant="white"
 	>
 		<i-container>
-			<i-row>
-				<i-column
+			<v-row>
+				<v-col
 					class="_margin-bottom-xs-2 _margin-bottom-sm-4 _margin-bottom-md-4 _margin-bottom-lg-4 _margin-bottom-xl-4"
 					style="height: 100%;"
 					xs="12"
@@ -30,8 +30,8 @@
 							That cryptographic verification guarantees data integrity and tamper-evidence.
 						</p>
 					</UiFeature>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					class="_margin-y-xs-2 _margin-y-sm-4 _margin-y-md-4 _margin-y-lg-4 _margin-y-xl-4"
 					style="height: 100%;"
 					xs="12"
@@ -68,8 +68,8 @@
 							</i-button>
 						</template>
 					</UiFeature>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
 					style="height: 100%;"
 					xs="12"
@@ -95,8 +95,8 @@
 							Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
 						</p>
 					</UiFeature>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
 					style="height: 100%;"
 					xs="12"
@@ -123,12 +123,12 @@
 							managed service as well.
 						</p>
 					</UiFeature>
-				</i-column>
-			</i-row>
-			<i-row
+				</v-col>
+			</v-row>
+			<v-row
 				class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
 			>
-				<i-column
+				<v-col
 					class="_text-center _text-muted"
 					style="height: 100%;"
 				>
@@ -149,8 +149,8 @@
 							</a>
 						</li>
 					</ul>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

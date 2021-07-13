@@ -11,8 +11,8 @@
 				@beforeChange="page = $event"
 			>
 				<div>
-					<i-row middle class="_padding-1">
-						<i-column
+					<v-row middle class="_padding-1">
+						<v-col
 							class="_margin-x-auto"
 							xs="8"
 						>
@@ -30,8 +30,8 @@
 								/>
 							</div>
 							<div v-else class="_embed _embed-16by9 video-placeholder" />
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</div>
 			</VueSlickCarousel>
 		</i-container>

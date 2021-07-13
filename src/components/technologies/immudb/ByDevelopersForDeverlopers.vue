@@ -1,18 +1,18 @@
 <template>
 	<UiPageSection id="immudb-by-developers-for-developers">
 		<i-container class="floating-container">
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader
 						title="by Developers, for Developers"
 						:bottom="0"
 						color="white"
 						weight="bold"
 					/>
-				</i-column>
-			</i-row>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+				<v-col
 					class="_margin-bottom-2 _margin-x-auto _text-center" xs="12"
 					sm="12" md="8"
 					lg="8"
@@ -20,10 +20,10 @@
 					<span class="_text-white _text-center">
 						We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
 					</span>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column class="_padding-x-0">
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col class="_padding-x-0">
 					<i-tabs
 						class="analyze-and-manage-tabs"
 						stretch
@@ -33,10 +33,10 @@
 							class="_padding-top-2"
 							:title="'Connect to immudb'"
 						>
-							<i-row
+							<v-row
 								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
 							>
-								<i-column
+								<v-col
 
 									class="_display-flex _justify-content-center _align-items-center"
 									xs="12"
@@ -56,17 +56,17 @@
 										ctx := context.Background()
 									</UiTerminal>
 									<!-- eslint-enable -->
-								</i-column>
-							</i-row>
+								</v-col>
+							</v-row>
 						</i-tab>
 						<i-tab
 							class="_padding-top-2"
 							title="Store data tamperproof"
 						>
-							<i-row
+							<v-row
 								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
 							>
-								<i-column
+								<v-col
 
 									class="_display-flex _justify-content-center _align-items-center"
 									xs="12"
@@ -84,17 +84,17 @@
 										fmt.Printf("VerifiedSet - entry successfully committed and verified: %v", tx)
 									</UiTerminal>
 									<!-- eslint-enable -->
-								</i-column>
-							</i-row>
+								</v-col>
+							</v-row>
 						</i-tab>
 						<i-tab
 							class="_padding-top-2"
 							title="Read verified data"
 						>
-							<i-row
+							<v-row
 								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
 							>
-								<i-column
+								<v-col
 
 									class="_display-flex _justify-content-center _align-items-center"
 									xs="12"
@@ -111,12 +111,12 @@
 										fmt.Printf("VerifiedGet - entry was found and verified: %v", vEntry)
 									</UiTerminal>
 									<!-- eslint-enable -->
-								</i-column>
-							</i-row>
+								</v-col>
+							</v-row>
 						</i-tab>
 					</i-tabs>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

@@ -4,15 +4,15 @@
 		class="_padding-top-0"
 	>
 		<i-container>
-			<i-row class="_margin-0 _padding-0">
-				<i-column class="_margin-0 _padding-0">
+			<v-row class="_margin-0 _padding-0">
+				<v-col class="_margin-0 _padding-0">
 					<UiPageSectioNHeader
 						title="Community videos"
 						:top="0"
 						:bottom="2"
 					/>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 			<VueSlickCarousel
 				class="fill-width"
 				v-bind="settings"

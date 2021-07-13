@@ -2,8 +2,8 @@
 	<UiPageSection class="article-section">
 		<UiPageSectionHeader :title="article.title" tag="h1" />
 		<i-container>
-			<i-row>
-				<i-column
+			<v-row>
+				<v-col
 					xs="12"
 					sm="12"
 					md="9"
@@ -11,8 +11,8 @@
 					<article class="blog-post-page">
 						<nuxt-content :document="article" />
 					</article>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="12"
 					md="3"
@@ -22,8 +22,8 @@
 						:articles="mostPopular"
 						card
 					/>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

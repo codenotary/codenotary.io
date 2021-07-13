@@ -1,20 +1,20 @@
 <template>
 	<UiPageSection id="our-values-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Our values" />
 					<p class="lead">
 						We are an open and welcoming environment, we pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 					</p>
-				</i-column>
-			</i-row>
-			<i-row
+				</v-col>
+			</v-row>
+			<v-row
 				class="_margin-top-4"
 				center
 				top
 			>
-				<i-column
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -33,8 +33,8 @@
 							We ask ourselves the tough questions. We don't take easy shortcuts. We are honest and truthful to each other and the people we communicate with.
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -53,8 +53,8 @@
 							As a startup, our only advantages are speed of execution and excellence. We do what we do quickly and we get things done in a flash. And we do it right, each time.
 						</p>
 					</i-card>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="6"
@@ -73,8 +73,8 @@
 							We are a team of highly intelligent and capable people. We find amazing solutions to complex problems and we are an example to each other and the community.
 						</p>
 					</i-card>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

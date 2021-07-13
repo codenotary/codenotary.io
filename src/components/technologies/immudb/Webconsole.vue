@@ -1,13 +1,13 @@
 <template>
 	<UiPageSection id="immudb-webconsole">
 		<i-container>
-			<i-row middle>
-				<i-column
+			<v-row middle>
+				<v-col
 					xs="0" sm="1"
 					md="2" ls="2"
 					xl="2"
 				/>
-				<i-column>
+				<v-col>
 					<UiPageSectionHeader
 						title="immudb Web Console"
 						color="white"
@@ -23,13 +23,13 @@
 							alt="Immudb - Web Console"
 						>
 					</a>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="0" sm="1"
 					md="2" ls="2"
 					xl="2"
 				/>
-			</i-row>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

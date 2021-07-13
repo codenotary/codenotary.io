@@ -1,23 +1,23 @@
 <template>
 	<UiPageSection id="ztc-monitoring">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Monitoring the Network" block>
 						The ZTC has implemented a monitoring infrastructure using <a href="http://www.opvizor.com/">Opvizor Performance Analyzer</a> to ensure nodes health, valid runtime configurations and working mining activities.
 					</UiPageSectionHeader>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column class="_text-center">
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col class="_text-center">
 					<img
 						id="ztc-monitoring-image"
 						class="image -responsive"
 						src="/images/ztc/monitoring.png"
 						alt="Monitoring"
 					>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

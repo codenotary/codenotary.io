@@ -1,7 +1,7 @@
 <template>
 	<i-header id="about-header">
-		<i-row class="_align-items-center">
-			<i-column xs="12" md="8">
+		<v-row class="_align-items-center">
+			<v-col xs="12" md="8">
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
 					Our Partners
 				</h1>
@@ -17,8 +17,8 @@
 						Become a partner
 					</i-button>
 				</div>
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 	</i-header>
 </template>
 

@@ -5,13 +5,13 @@
 		:bottom="2"
 	>
 		<i-container>
-			<i-row class="_display-flex _justify-content-center">
-				<i-column>
+			<v-row class="_display-flex _justify-content-center">
+				<v-col>
 					<UiPageSectionHeader :bottom="0" title="Features" />
-				</i-column>
-			</i-row>
-			<i-row class="_padding-x-0 _display-flex _flex-direction-column _justify-content-center">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="_padding-x-0 _display-flex _flex-direction-column _justify-content-center">
+				<v-col
 					class="_margin-top-0 _margin-x-auto _text-center"
 					xs="12"
 					sm="12"
@@ -19,14 +19,14 @@
 					lg="8"
 				>
 					A super-fast, immutable, and cryptographically verifiable ledger database that provides:
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					class="_margin-top-2 _margin-x-auto" xs="12"
 					sm="12" md="10"
 					xl="10"
 				>
-					<i-row class="_padding-x-0 _display-flex _justify-content-center">
-						<i-column
+					<v-row class="_padding-x-0 _display-flex _justify-content-center">
+						<v-col
 							xs="6" sm="6"
 							md="6" lg="6"
 							xl="6"
@@ -37,8 +37,8 @@
 									Transactional Integrity
 								</h4>
 							</div>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="6" sm="6"
 							md="6" lg="6"
 							xl="6"
@@ -49,10 +49,10 @@
 									ACID Compliance
 								</h4>
 							</div>
-						</i-column>
-					</i-row>
-					<i-row>
-						<i-column
+						</v-col>
+					</v-row>
+					<v-row>
+						<v-col
 							xs="6" sm="6"
 							md="4" lg="4"
 							xl="4"
@@ -63,8 +63,8 @@
 									Auditor
 								</h4>
 							</div>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="6" sm="6"
 							md="8" lg="8"
 							xl="8"
@@ -75,10 +75,10 @@
 									SDKs for Python, Node.js, Java, Go
 								</h4>
 							</div>
-						</i-column>
-					</i-row>
-				</i-column>
-			</i-row>
+						</v-col>
+					</v-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UipageSection>
 </template>

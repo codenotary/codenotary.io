@@ -8,8 +8,8 @@
 				Get CodeNotary Immutable Ledger&reg; up and running in no time
 			</h5>
 		</div>
-		<i-row class="_display-flex _justify-content-center _align-items-start">
-			<i-column
+		<v-row class="_display-flex _justify-content-center _align-items-start">
+			<v-col
 				class="_display-flex _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12"
 				sm="8"
@@ -66,8 +66,8 @@
 						24/7 support
 					</UiPricingTableRow>
 				</UiPricingTable>
-			</i-column>
-			<i-column
+			</v-col>
+			<v-col
 				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12"
 				sm="8"
@@ -127,8 +127,8 @@
 						24/7 support
 					</UiPricingTableRow>
 				</UiPricingTable>
-			</i-column>
-			<i-column
+			</v-col>
+			<v-col
 				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12"
 				sm="8"
@@ -177,10 +177,10 @@
 						24/7 support
 					</UiPricingTableRow>
 				</UiPricingTable>
-			</i-column>
-		</i-row>
-		<i-row class="_margin-top-1">
-			<i-column
+			</v-col>
+		</v-row>
+		<v-row class="_margin-top-1">
+			<v-col
 				class="_display-flex _flex-direction-row _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 			>
 				<UiPricingTable
@@ -209,8 +209,8 @@
 						</i-button>
 					</template>
 				</UiPricingTable>
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<LedgerComplianceModal
 			v-model="trialModalOpen"
 		/>

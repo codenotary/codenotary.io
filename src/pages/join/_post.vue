@@ -2,8 +2,8 @@
 	<UiPageSection>
 		<UiPageSectionHeader :title="article.title" tag="h1" />
 		<i-container>
-			<i-row class="_display-flex _flex-direction-column">
-				<i-column
+			<v-row class="_display-flex _flex-direction-column">
+				<v-col
 					v-if="article.location || article.type || article.requires" class="_margin-bottom-1"
 					xs="12"
 				>
@@ -29,17 +29,17 @@
 							{{ article.requires }}
 						</p>
 					</i-card>
-				</i-column>
-				<i-column xs="12">
+				</v-col>
+				<v-col xs="12">
 					<article>
 						<nuxt-content :document="article" :layout="'banner'" />
 					</article>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					v-if="article.apply" xs="12"
 					class="_margin-top-4 _display-flex _justify-content-center _align-content-center"
 				>
-					<i-column
+					<v-col
 						xs="12" sm="10"
 						md="8" lg="6"
 					>
@@ -49,9 +49,9 @@
 						>
 							APPLY
 						</i-button>
-					</i-column>
-				</i-column>
-			</i-row>
+					</v-col>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

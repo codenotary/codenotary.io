@@ -1,13 +1,13 @@
 <template>
 	<UiPageSection id="ztc-members-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Founding Members" block />
-				</i-column>
-			</i-row>
-			<i-row class="ztc-members-list">
-				<i-column sm="4" md="3">
+				</v-col>
+			</v-row>
+			<v-row class="ztc-members-list">
+				<v-col sm="4" md="3">
 					<nuxt-link :to="{ name: 'about' }">
 						<img
 							src="/images/ztc/members/codenotary.png"
@@ -15,8 +15,8 @@
 							class="image -responsive"
 						>
 					</nuxt-link>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.acronis.com/en-us/" rel="nofollow">
 						<img
 							src="/images/ztc/members/acronis.png"
@@ -24,8 +24,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://chainstack.com/" rel="nofollow">
 						<img
 							src="/images/ztc/members/chainstack.png"
@@ -33,8 +33,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="http://www.ta.capital/" rel="nofollow">
 						<img
 							src="/images/ztc/members/tacapital.png"
@@ -42,8 +42,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.opvizor.com/" rel="nofollow">
 						<img
 							src="/images/ztc/members/opvizor.png"
@@ -51,8 +51,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.dzlabs.ch/" rel="nofollow">
 						<img
 							src="/images/ztc/members/dzlabs.png"
@@ -60,8 +60,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.c99.at/" rel="nofollow">
 						<img
 							src="/images/ztc/members/c99.png"
@@ -69,19 +69,19 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column>
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader
 						class="_margin-top-5"
 						title="Non-Founding Members"
 						block
 					/>
-				</i-column>
-			</i-row>
-			<i-row class="ztc-members-list">
-				<i-column sm="4" md="3">
+				</v-col>
+			</v-row>
+			<v-row class="ztc-members-list">
+				<v-col sm="4" md="3">
 					<a href="https://www.dogado.de/" rel="nofollow">
 						<img
 							src="/images/ztc/members/dogado.png"
@@ -89,8 +89,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.tinaba.bancaprofilo.it/" rel="nofollow">
 						<img
 							src="/images/ztc/members/tinaba.png"
@@ -98,8 +98,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.greentube.com/" rel="nofollow">
 						<img
 							src="/images/ztc/members/greentube.png"
@@ -107,8 +107,8 @@
 							class="image -responsive -vertical"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.cloud-r.eu/en" rel="nofollow">
 						<img
 							src="/images/ztc/members/cloudr.png"
@@ -116,8 +116,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.uni-leipzig.de/en/" rel="nofollow">
 						<img
 							src="/images/ztc/members/unileipzig.png"
@@ -125,8 +125,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.webscience.it/" rel="nofollow">
 						<img
 							src="/images/ztc/members/webscience.png"
@@ -134,8 +134,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="http://www.barrco-llc.com/" rel="nofollow">
 						<img
 							src="/images/ztc/members/barrco.png"
@@ -143,8 +143,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.wu.ac.at/" rel="nofollow">
 						<img
 							src="/images/ztc/members/wienuniversity.png"
@@ -152,8 +152,8 @@
 							class="image -responsive -vertical"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://www.esoftthings.com/en/" rel="nofollow">
 						<img
 							src="/images/ztc/members/esoftthings.jpg"
@@ -161,8 +161,8 @@
 							class="image -responsive -vertical"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="https://talixo.com/" rel="nofollow">
 						<img
 							src="/images/ztc/members/talixo.png"
@@ -170,8 +170,8 @@
 							class="image -responsive"
 						>
 					</a>
-				</i-column>
-				<i-column sm="4" md="3">
+				</v-col>
+				<v-col sm="4" md="3">
 					<a href="http://chemiumcorp.com/" rel="nofollow">
 						<img
 							src="/images/ztc/members/chemiumcorp.png"
@@ -179,8 +179,8 @@
 							class="image -responsive -vertical"
 						>
 					</a>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

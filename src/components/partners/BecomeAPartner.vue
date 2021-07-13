@@ -1,8 +1,8 @@
 <template>
 	<UiPageSection id="become-a-partner-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<p class="action _text-center">
 						<i-button
 							size="lg"
@@ -12,8 +12,8 @@
 							Become a partner
 						</i-button>
 					</p>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

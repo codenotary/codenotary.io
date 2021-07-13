@@ -2,13 +2,13 @@
 	<UiPageSection>
 		<UiPageSectionHeader :title="article.title" tag="h1" />
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<article>
 						<nuxt-content :document="article" />
 					</article>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

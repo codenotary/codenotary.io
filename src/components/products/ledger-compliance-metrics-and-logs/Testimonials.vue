@@ -4,13 +4,13 @@
 		variant="white"
 	>
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Client testimonials" :bottom="4" />
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column>
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col>
 					<VueSlickCarousel v-bind="settings">
 						<div>
 							<i-card>
@@ -69,8 +69,8 @@
 							</i-card>
 						</div>
 					</VueSlickCarousel>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

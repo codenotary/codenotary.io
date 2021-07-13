@@ -6,8 +6,8 @@
 		<i-container>
 			<VueSlickCarousel v-bind="settings" @beforeChange="page = $event">
 				<div>
-					<i-row middle class="_padding-1">
-						<i-column
+					<v-row middle class="_padding-1">
+						<v-col
 							xs="12"
 							sm="12"
 							md="4"
@@ -18,8 +18,8 @@
 							<p class="lead">
 								With immudb you can track changes in sensitive data in your transactional databases and then record those changes indelibly in a the tamperproof immudb database. This allows you to keep an indelible history of, say, your debit/credit transactions.
 							</p>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="12"
 							sm="12"
 							md="8"
@@ -35,12 +35,12 @@
 								/>
 							</div>
 							<div v-else class="_embed _embed-16by9 video-placeholder" />
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</div>
 				<div>
-					<i-row middle class="_padding-1">
-						<i-column
+					<v-row middle class="_padding-1">
+						<v-col
 							xs="12"
 							sm="12"
 							md="4"
@@ -51,8 +51,8 @@
 							<p class="lead">
 								Protect yourself and your colleagues by enabling file integrity and origin verification (email, wetransfer, aso).
 							</p>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="12"
 							sm="12"
 							md="8"
@@ -68,12 +68,12 @@
 								/>
 							</div>
 							<div v-else class="_embed _embed-16by9 video-placeholder" />
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</div>
 				<div>
-					<i-row middle class="_padding-1">
-						<i-column
+					<v-row middle class="_padding-1">
+						<v-col
 							xs="12"
 							sm="12"
 							md="4"
@@ -84,8 +84,8 @@
 							<p class="lead">
 								CodeNotary enables any company, developer, automation engineer, DevOps engineer ... to secure a single or all stages of a Continous Integration & Continuous Deployment pipeline. Authenticate all incoming data and notarize all results including metadata on a Blockchain using the CodeNotary.io service.
 							</p>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="12"
 							sm="12"
 							md="8"
@@ -101,8 +101,8 @@
 								/>
 							</div>
 							<div v-else class="_embed _embed-16by9 video-placeholder" />
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</div>
 			</VueSlickCarousel>
 		</i-container>

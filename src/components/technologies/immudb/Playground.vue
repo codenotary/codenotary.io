@@ -1,13 +1,13 @@
 <template>
 	<UiPageSection id="immudb-playground" :top="1">
 		<i-container>
-			<i-row middle>
-				<i-column
+			<v-row middle>
+				<v-col
 					xs="0" sm="1"
 					md="2" ls="2"
 					xl="2"
 				/>
-				<i-column>
+				<v-col>
 					<UiPageSectionHeader
 						title="immudb Playground"
 						color="white"
@@ -23,13 +23,13 @@
 							alt="Immudb - Playground"
 						>
 					</a>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="0" sm="1"
 					md="2" ls="2"
 					xl="2"
 				/>
-			</i-row>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

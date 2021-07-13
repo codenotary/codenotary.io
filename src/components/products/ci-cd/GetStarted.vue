@@ -4,8 +4,8 @@
 		variant="white"
 	>
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<h5 class="description lead _text-center _margin-bottom-3">
 						Ready to try? Get started in a fistful of clicks!
 					</h5>
@@ -19,8 +19,8 @@
 							Get started
 						</i-button>
 					</p>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

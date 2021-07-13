@@ -1,17 +1,17 @@
 <template>
 	<UiPageSection id="immudb-runs-on-section">
 		<i-container class="floating-container">
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader
 						title="Runs on"
 						:bottom="2"
 						weight="bold"
 					/>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column class="_padding-x-0">
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col class="_padding-x-0">
 					<i-tabs
 						class="analyze-and-manage-tabs"
 						stretch
@@ -23,10 +23,10 @@
 							class="_padding-top-2"
 							:title="item.title"
 						>
-							<i-row
+							<v-row
 								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
 							>
-								<i-column
+								<v-col
 									v-for="(subitem, idx) in item.subitems"
 									:key="`${subitem}-${idx}`"
 									class="_display-flex _justify-content-center _align-items-center"
@@ -70,12 +70,12 @@
 											outlined
 										/>
 									</template>
-								</i-column>
-							</i-row>
+								</v-col>
+							</v-row>
 						</i-tab>
 					</i-tabs>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

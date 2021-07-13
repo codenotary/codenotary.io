@@ -1,14 +1,14 @@
 <template>
 	<section class="most-popular">
-		<i-row class="_margin-bottom-1">
-			<i-column class="_margin-0 _padding-xs-0" xs="12">
+		<v-row class="_margin-bottom-1">
+			<v-col class="_margin-0 _padding-xs-0" xs="12">
 				<h3 class="_margin-0 _padding-xs-0 _font-weight-bold">
 					Most popular
 				</h3>
-			</i-column>
-		</i-row>
-		<i-row v-if="card">
-			<i-column
+			</v-col>
+		</v-row>
+		<v-row v-if="card">
+			<v-col
 				v-for="article in articles"
 				:key="article.slug"
 				xs="12"
@@ -27,10 +27,10 @@
 						{{ article.title }}
 					</i-card>
 				</nuxt-link>
-			</i-column>
-		</i-row>
-		<i-row v-else>
-			<i-column
+			</v-col>
+		</v-row>
+		<v-row v-else>
+			<v-col
 				v-for="article in articles"
 				:key="article.slug"
 				xs="12"
@@ -38,8 +38,8 @@
 				<nuxt-link :to="{ name: 'blog-post', params: { post: article.slug } }">
 					- {{ article.title }}
 				</nuxt-link>
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 	</section>
 </template>
 

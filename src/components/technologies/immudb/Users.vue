@@ -1,19 +1,19 @@
 <template>
 	<UiPageSection id="immudb-users-section">
 		<i-container class="floating-container">
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader
 						title="immudb Users"
 						:bottom="2"
 						weight="bold"
 					/>
-				</i-column>
-			</i-row>
-			<i-row
+				</v-col>
+			</v-row>
+			<v-row
 				class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
 			>
-				<i-column
+				<v-col
 					v-for="(item, idx) in items"
 					:key="`${item}-${idx}`"
 					class="_display-flex _justify-content-center _align-items-center"
@@ -35,8 +35,8 @@
 						:color="getColor(6)"
 						outlined
 					/>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

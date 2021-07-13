@@ -3,8 +3,8 @@
 		<i-container>
 			<i-tabs class="infrastructure-tabs" stretch>
 				<i-tab title="Query Ledger data">
-					<i-row center middle>
-						<i-column
+					<v-row center middle>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
@@ -16,20 +16,20 @@
 							<p class="lead">
 								Query Ledger lets you query ledger contents directly through the browser UI. Search independent of any SDK or application and check if any of the data has been tampered or is inconsistent.
 							</p>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
 							lg="6"
 						>
 							<img src="/images/cn-lc/features/query-ledger.png" alt="Ledger Query">
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</i-tab>
 				<i-tab title="Java SDK">
-					<i-row center middle>
-						<i-column
+					<v-row center middle>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
@@ -41,8 +41,8 @@
 							<p class="lead">
 								The SDKs enable your developers to write data to CodeNotary Immutable Ledger using a few lines of code.
 							</p>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
@@ -56,12 +56,12 @@
 								//TODO: tampering detected!
 								}
 							</UiTerminal>
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</i-tab>
 				<i-tab title="Python SDKs">
-					<i-row center middle>
-						<i-column
+					<v-row center middle>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
@@ -73,8 +73,8 @@
 							<p class="lead">
 								The Python SDK is fast and simple to use. Write and read your data records into Immutable Ledger making sure your data history trace is always available.
 							</p>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
@@ -93,12 +93,12 @@
 									print("Proof is:",resp.proof)
 							</UiTerminal>
 							<!-- eslint-enable -->
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</i-tab>
 				<i-tab title="Change Data Capture (CDC)">
-					<i-row center middle>
-						<i-column
+					<v-row center middle>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
@@ -110,16 +110,16 @@
 							<p class="lead">
 								Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
 							</p>
-						</i-column>
-						<i-column
+						</v-col>
+						<v-col
 							xs="12"
 							sm="6"
 							md="6"
 							lg="6"
 						>
 							<img src="/images/cn-lc/features/cdc.png" alt="Change Data Capture">
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</i-tab>
 			</i-tabs>
 		</i-container>

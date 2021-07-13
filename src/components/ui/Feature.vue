@@ -3,12 +3,12 @@
 		class="feature"
 		data-aos="fade-zoom-in"
 	>
-		<i-row
+		<v-row
 			class="_display-flex _flex-direction-xs-column _flex-direction-sm-row"
 			:class="`_flex-direction-md-row${ getContentSide === 'right' ? '' : '-reverse' }`"
 			style="height: 100%;"
 		>
-			<i-column
+			<v-col
 				v-if="image"
 				class="_margin-bottom-4 _margin-bottom-sm-0 _margin-0 _padding-0"
 				xs="12" sm="4"
@@ -33,8 +33,8 @@
 						:alt="title"
 					>
 				</div>
-			</i-column>
-			<i-column
+			</v-col>
+			<v-col
 				class="_margin-0 _padding-0 _display-flex _flex-direction-column _justify-content-space-between"
 				style="height: 100%;"
 				xs="12"
@@ -58,11 +58,11 @@
 					</p>
 				</div>
 				<div class="_visible-lg-and-up">
-					<i-row
+					<v-row
 						v-if="innerContent && innerContent.length > 0"
 						class="_margin-top-2 _display-flex _justify-content-space-between"
 					>
-						<i-column
+						<v-col
 							v-for="(item, idx) in innerContent"
 							:key="`inner-content-${ idx }`"
 							xs="12" sm="6"
@@ -86,17 +86,17 @@
 									{{ item.text }}
 								</p>
 							</div>
-						</i-column>
-					</i-row>
+						</v-col>
+					</v-row>
 				</div>
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<div class="_visible-md-and-down">
-			<i-row
+			<v-row
 				v-if="innerContent && innerContent.length > 0"
 				class="_margin-top-2 _display-flex _justify-content-space-between"
 			>
-				<i-column
+				<v-col
 					v-for="(item, idx) in innerContent"
 					:key="`inner-content-${ idx }`"
 					class="_margin-bottom-1"
@@ -121,15 +121,15 @@
 							{{ item.text }}
 						</p>
 					</div>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</div>
-		<i-row
+		<v-row
 			v-if="hasButtonSlot"
 			class="cta-wrapper _margin-top-2 _margin-top-sm-4 _margin-bottom-sm-4 _display-flex _justify-content-center _align-items-center"
 		>
 			<slot name="button" />
-		</i-row>
+		</v-row>
 	</i-container>
 </template>
 

@@ -4,14 +4,14 @@
 		variant="white"
 		:top="4"
 	>
-		<i-row>
-			<i-column>
+		<v-row>
+			<v-col>
 				<UiPageSectionHeader title="Our Management Team" />
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<i-container>
-			<i-row class="team-member-items">
-				<i-column lg="4">
+			<v-row class="team-member-items">
+				<v-col lg="4">
 					<AboutUiTeamMember
 						name="Moshe Bar"
 						position="CEO"
@@ -27,8 +27,8 @@
 							Moshe is at this time a board member of Tinaba SpA, Graylog Inc, ePrice SpA, Quandoo AG, Cascade Partners LP and Optigrowth Sarl.
 						</p>
 					</AboutUiTeamMember>
-				</i-column>
-				<i-column lg="4">
+				</v-col>
+				<v-col lg="4">
 					<AboutUiTeamMember
 						name="Dennis Zimmer"
 						position="CTO"
@@ -41,8 +41,8 @@
 							Dennis has been awarded the VMware vExpert recognition (only 30 world-wide) for 11 years in a row, he’s also a thought leader within the Virtualization Community.
 						</p>
 					</AboutUiTeamMember>
-				</i-column>
-				<i-column lg="4">
+				</v-col>
+				<v-col lg="4">
 					<AboutUiTeamMember
 						name="Amelie Scheuermeyer"
 						position="VP Administration"
@@ -55,10 +55,10 @@
 							Amelie has practical experience in HR and recruiting, as well as in consulting, e.g. at Capgemini Invent.
 						</p>
 					</AboutUiTeamMember>
-				</i-column>
-			</i-row>
-			<i-row class="team-member-items">
-				<i-column lg="4">
+				</v-col>
+			</v-row>
+			<v-row class="team-member-items">
+				<v-col lg="4">
 					<AboutUiTeamMember
 						name="Jerónimo Irazábal" position="Chief Architect & immudb Community Manager"
 						image="/images/teams/jeronimo-irazabal.jpg"
@@ -68,8 +68,8 @@
 							He worked at IBM as a Research Scientist, made contributions to projects related to Watson, Hyperledger Fabric, and Advanced Access Control System, co-authored several patent applications and co-chaired a global team in charge of the evaluation and guidance of inventors in Blockchain Technology. He was awarded first Master Inventor at IBM Argentina.
 						</p>
 					</AboutUiTeamMember>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

@@ -1,16 +1,16 @@
 <template>
 	<UiPageSection id="immudb-easy-setup-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader
 						title="Easy setup" color="white"
 						:bottom="0"
 					/>
-				</i-column>
-			</i-row>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+				<v-col
 					class="_margin-x-auto"
 					xs="12"
 					sm="12"
@@ -21,14 +21,14 @@
 						Build Docker images based on the Dockerfiles in the GitHub repository
 						for the most common architectures or use the prebuild ones on Dockerhub for Linux.
 					</span>
-				</i-column>
-			</i-row>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-row
+				</v-col>
+			</v-row>
+			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+				<v-row
 					class="_padding-x-0 _display-flex _justify-content-center"
 					style="max-width: 100%;"
 				>
-					<i-column
+					<v-col
 						class="_margin-top-2 _margin-x-auto _padding-x-0"
 						xs="12"
 						sm="12"
@@ -43,8 +43,8 @@
 							docker run -it -d -p 3322:3322 -p 9497:9497 --name immudb codenotary/immudb:latest
 						</UiTerminal>
 						<!-- eslint-enable -->
-					</i-column>
-					<i-column
+					</v-col>
+					<v-col
 						class="_margin-top-2 _margin-x-auto"
 						xs="12"
 						sm="12"
@@ -62,9 +62,9 @@
 								Documentation
 							</UiButtonCn>
 						</p>
-					</i-column>
-				</i-row>
-			</i-row>
+					</v-col>
+				</v-row>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

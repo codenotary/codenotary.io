@@ -1,8 +1,8 @@
 <template>
 	<section class="banner _padding-y-0 _justify-content-center _align-items-center">
 		<!-- <i-container fluid> -->
-		<i-row>
-			<i-column
+		<v-row>
+			<v-col
 				class="_display-flex _justify-content-center _align-items-center"
 				:xs="true"
 			>
@@ -23,8 +23,8 @@
 				>
 					Start now
 				</a>
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<!-- </i-container> -->
 	</section>
 </template>

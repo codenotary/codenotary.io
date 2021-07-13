@@ -4,8 +4,8 @@
 			id="home-header"
 			size="sm"
 		>
-			<i-row class="_align-items-center main-content">
-				<i-column lg="5">
+			<v-row class="_align-items-center main-content">
+				<v-col lg="5">
 					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h2>
@@ -43,9 +43,9 @@
 						</UiButtonCn>
 						-->
 					</p>
-				</i-column>
-				<i-column lg="1" />
-				<i-column
+				</v-col>
+				<v-col lg="1" />
+				<v-col
 					id="video-column"
 					lg="6"
 					:class="{ 'playing': playing }"
@@ -73,8 +73,8 @@
 						src="/images/mascot.png"
 						alt="CodeNotary Mascot"
 					>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-header>
 		<client-only>
 			<div class="gradient-box" />

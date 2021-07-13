@@ -1,13 +1,13 @@
 <template>
 	<UiPageSection id="immudb-code-examples-section">
 		<i-container class="floating-container _padding-x-4">
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<div>
 						<VueSlickCarousel v-bind="settings">
 							<div>
-								<i-row middle>
-									<i-column
+								<v-row middle>
+									<v-col
 										xs="12"
 										sm="12"
 										md="6"
@@ -24,8 +24,8 @@
 											<li>Store public certificates</li>
 											<li>Store tamper-proof log streams (i. e. audit logs)</li>
 										</ul>
-									</i-column>
-									<i-column
+									</v-col>
+									<v-col
 										xs="12"
 										sm="12"
 										md="6"
@@ -44,12 +44,12 @@
 											printItem(key2, value2, verifiedIndex)
 										</UiTerminal>
 										<!-- eslint-enable -->
-									</i-column>
-								</i-row>
+									</v-col>
+								</v-row>
 							</div>
 							<div>
-								<i-row middle class="_padding-1">
-									<i-column
+								<v-row middle class="_padding-1">
+									<v-col
 										xs="12"
 										sm="12"
 										md="6"
@@ -67,8 +67,8 @@
 											<li>RESTful interfaces and easy to use clients</li>
 											<li>Combine with any existing application</li>
 										</ul>
-									</i-column>
-									<i-column
+									</v-col>
+									<v-col
 										xs="12"
 										sm="12"
 										md="6"
@@ -86,12 +86,12 @@
 											# check immugw service
 											./immuadmin service immugw status
 										</UiTerminal>
-									</i-column>
-								</i-row>
+									</v-col>
+								</v-row>
 							</div>
 							<div>
-								<i-row middle class="_padding-1">
-									<i-column
+								<v-row middle class="_padding-1">
+									<v-col
 										xs="12"
 										sm="12"
 										md="6"
@@ -108,8 +108,8 @@
 											<li>immuclient has built-in data consistency and integrity checks</li>
 											<li>API's provide data ownership proof, verification and integrity functions</li>
 										</ul>
-									</i-column>
-									<i-column
+									</v-col>
+									<v-col
 										xs="12"
 										sm="12"
 										md="6"
@@ -127,8 +127,8 @@
 												printItem(nil, nil, verifiedItem)
 										</UiTerminal>
 										<!-- eslint-enable vue/html-indent -->
-									</i-column>
-								</i-row>
+									</v-col>
+								</v-row>
 							</div>
 							<template #prevArrow>
 								<div class="custom-arrow _display-flex _justify-content-center _align-items-center">
@@ -145,8 +145,8 @@
 							</template>
 						</VueSlickCarousel>
 					</div>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

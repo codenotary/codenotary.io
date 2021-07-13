@@ -1,8 +1,8 @@
 <template>
 	<UiPageSection id="ztc-join">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader
 						title="Join the Zero-Trust Consortium"
 						block
@@ -18,8 +18,8 @@
 					<JoinZtcModal
 						v-model="joinZtcModalVisible"
 					/>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

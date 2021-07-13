@@ -4,8 +4,8 @@
 		variant="white"
 	>
 		<i-container>
-			<i-row>
-				<i-column xs="12">
+			<v-row>
+				<v-col xs="12">
 					<VueSlickCarousel v-if="partners && partners.length" v-bind="settings">
 						<div
 							v-for="partner in partners"
@@ -35,8 +35,8 @@
 							/>
 						</div>
 					</VueSlickCarousel>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

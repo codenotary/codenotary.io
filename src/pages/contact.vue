@@ -6,8 +6,8 @@
 			</h1>
 		</UiPageSectionHeader>
 		<i-container>
-			<i-row class="_text-center">
-				<i-column id="map-embed">
+			<v-row class="_text-center">
+				<v-col id="map-embed">
 					<div class="_embed-16by9">
 						<LazyHydrate when-idle>
 							<iframe
@@ -33,16 +33,16 @@
 					<div class="_margin-bottom-1 _font-size-sm">
 						Bellaire, TX 77401
 					</div>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 		<LazyHydrate when-visible>
 			<i-container>
-				<i-row>
-					<i-column>
+				<v-row>
+					<v-col>
 						<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
-					</i-column>
-				</i-row>
+					</v-col>
+				</v-row>
 			</i-container>
 		</LazyHydrate>
 	</UiPageSection>

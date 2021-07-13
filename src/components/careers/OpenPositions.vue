@@ -4,12 +4,12 @@
 		variant="white"
 	>
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Open positions" />
-				</i-column>
-			</i-row>
-			<i-row>
+				</v-col>
+			</v-row>
+			<v-row>
 				<no-ssr>
 					<masonry
 						class="_width-100"
@@ -54,7 +54,7 @@
 						</div>
 					</masonry>
 				</no-ssr>
-			</i-row>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

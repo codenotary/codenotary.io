@@ -4,16 +4,16 @@
 		variant="white"
 	>
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="The Technology Platform" block>
 						We operate a <a href="https://www.parity.io/ethereum/">Parity Ethereum</a> multi-purpose blockchain. It enables our consortium members to develop and operate their own distributed applications without the cost and complex aspects of running their own operations.
 						Parity is a derivative of Ethereum. It combines the advantages of the public Ethereum chain with key benefits of consortium-based chains.
 					</UiPageSectionHeader>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column lg="6">
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col lg="6">
 					<ul class="list -unstyled">
 						<li>
 							<img
@@ -37,8 +37,8 @@
 							>
 						</li>
 					</ul>
-				</i-column>
-				<i-column lg="6">
+				</v-col>
+				<v-col lg="6">
 					<ul class="list -unstyled">
 						<li>
 							<img
@@ -62,8 +62,8 @@
 							>
 						</li>
 					</ul>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

@@ -1,26 +1,26 @@
 <template>
 	<UiPageSection id="ledger-compliance-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="CodeNotary Immutable Ledger®" block>
 						With CodeNotary Immutable Ledger&reg; you can start keeping a tamper-proof and indelible
 						ledger for your mission-critical and sensitive applications. Whether you use Java, Node.js, Python,
 						Go, .NET, on-premise or in the cloud, CodeNotary Immutable Ledger® processes millions of
 						transactions per second reliably and with cryptographic verification.
 					</UiPageSectionHeader>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column>
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col>
 					<UiPricingTables />
-				</i-column>
-			</i-row>
-			<i-row
+				</v-col>
+			</v-row>
+			<v-row
 				v-if="tree"
 				class="_text-center"
 			>
-				<i-column>
+				<v-col>
 					<img
 						id="tree-image"
 						src="/images/word-tree.png"
@@ -28,8 +28,8 @@
 						class="image -responsive"
 						width="650"
 					>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

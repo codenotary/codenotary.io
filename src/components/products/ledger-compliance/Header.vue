@@ -1,7 +1,7 @@
 <template>
 	<i-header id="lc-header">
-		<i-row class="_align-items-center">
-			<i-column xs="12" md="6">
+		<v-row class="_align-items-center">
+			<v-col xs="12" md="6">
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
 					Immutable Ledger (on-premise)
 				</h5>
@@ -33,8 +33,8 @@
 						Start trial
 					</i-button>
 				</p>
-			</i-column>
-			<i-column
+			</v-col>
+			<v-col
 				class="_text-center _margin-top-xs-2"
 				xs="12"
 				md="6"
@@ -46,8 +46,8 @@
 					@click="index = 0"
 				>
 				{{ index }}
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<CoolLightBox
 			:items="[src]"
 			:index="index"

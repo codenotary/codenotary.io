@@ -1,17 +1,17 @@
 <template>
 	<UiPageSection id="integrations-section">
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="CodeNotary Integrations">
 						<p class="lead">
 							CodeNotary integrates easily the most popular CI, CI/CD and DevOps tools, and you can add new ones in a flash with our API and command line tools.
 						</p>
 					</UiPageSectionHeader>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -23,8 +23,8 @@
 						color="transparent"
 						image="/images/immudb/mascot.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -36,8 +36,8 @@
 						color="transparent"
 						image="/images/integrations/square/docker.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -49,8 +49,8 @@
 						color="transparent"
 						image="/images/integrations/square/kubernetes.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -62,8 +62,8 @@
 						color="transparent"
 						image="/images/integrations/square/javascript.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -75,8 +75,8 @@
 						color="transparent"
 						image="/images/integrations/square/java.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -88,8 +88,8 @@
 						color="transparent"
 						image="/images/integrations/square/maven.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -101,8 +101,8 @@
 						color="transparent"
 						image="/images/integrations/square/jenkins.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -114,8 +114,8 @@
 						color="transparent"
 						image="/images/integrations/square/powershell.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -127,8 +127,8 @@
 						color="transparent"
 						image="/images/integrations/square/github.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -140,8 +140,8 @@
 						color="transparent"
 						image="/images/integrations/square/gitlab.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -153,8 +153,8 @@
 						color="transparent"
 						image="/images/integrations/square/git.png"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="6"
 					sm="4"
 					md="3"
@@ -166,8 +166,8 @@
 						color="transparent"
 						image="/images/integrations/square/travis.png"
 					/>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

@@ -5,14 +5,14 @@
 		:top="2"
 		:bottom="4"
 	>
-		<i-row>
-			<i-column>
+		<v-row>
+			<v-col>
 				<UiPageSectionHeader title="Our Board of Directors" />
-			</i-column>
-		</i-row>
+			</v-col>
+		</v-row>
 		<i-container>
-			<i-row class="board-team-member-items border-top">
-				<i-column
+			<v-row class="board-team-member-items border-top">
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -21,8 +21,8 @@
 						name="Moshe Bar"
 						position="CEO, Co-Chairman"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -31,8 +31,8 @@
 						name="Prof. Dr. Marcus Englert"
 						position="Co-Chairman"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -41,10 +41,10 @@
 						name="Pascal Blum"
 						position="Board Member"
 					/>
-				</i-column>
-			</i-row>
-			<i-row class="board-team-member-items border-bottom">
-				<i-column
+				</v-col>
+			</v-row>
+			<v-row class="board-team-member-items border-bottom">
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -53,8 +53,8 @@
 						name="Shayne Higdon"
 						position="Board Member"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -63,8 +63,8 @@
 						name="Bart Markus"
 						position="Board Member"
 					/>
-				</i-column>
-				<i-column
+				</v-col>
+				<v-col
 					xs="12"
 					sm="6"
 					md="4"
@@ -73,8 +73,8 @@
 						name="Marc Rougier"
 						position="Board Member"
 					/>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>

@@ -4,17 +4,17 @@
 		variant="white"
 	>
 		<i-container>
-			<i-row>
-				<i-column>
+			<v-row>
+				<v-col>
 					<UiPageSectionHeader title="Immutable Ledger Integrations">
 						<p class="lead">
 							Integrations for Applications, Databases and Digital objects.
 						</p>
 					</UiPageSectionHeader>
-				</i-column>
-			</i-row>
-			<i-row>
-				<i-column xs="12">
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col xs="12">
 					<VueSlickCarousel v-if="integrations && integrations.length" v-bind="settings">
 						<div
 							v-for="integration in integrations"
@@ -29,8 +29,8 @@
 							</nuxt-link>
 						</div>
 					</VueSlickCarousel>
-				</i-column>
-			</i-row>
+				</v-col>
+			</v-row>
 		</i-container>
 	</UiPageSection>
 </template>
