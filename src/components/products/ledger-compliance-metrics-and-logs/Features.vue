@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="lc-features-section">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="Features" />
@@ -88,7 +88,7 @@
 					</i-card>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

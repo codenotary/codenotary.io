@@ -3,7 +3,7 @@
 		id="ztc-technology-platform"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="The Technology Platform" block>
@@ -64,7 +64,7 @@
 					</ul>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

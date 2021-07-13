@@ -4,19 +4,19 @@
 		:bottom="0"
 		:top="1"
 	>
-		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
+		<v-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<UiPageSectionHeader
 				weight="bold"
 				:title="content.whatWeDoSection.title"
 				:top="0"
 				:bottom="0"
 			/>
-		</i-container>
-		<i-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark _padding-left-0 _padding-right-0">
+		</v-container>
+		<v-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark _padding-left-0 _padding-right-0">
 			<h6 class="subheader _margin-0 _text-center">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
-			<i-container class="what_we_do-cards">
+			<v-container class="what_we_do-cards">
 				<div v-for="(card, index) in content.whatWeDoSection.cards" :key="index">
 					<UiCardSquare
 						:title="card.title"
@@ -24,8 +24,8 @@
 						:subtitle="card.subtitle"
 					/>
 				</div>
-			</i-container>
-		</i-container>
+			</v-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

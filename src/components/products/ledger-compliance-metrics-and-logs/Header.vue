@@ -1,5 +1,5 @@
 <template>
-	<i-header id="lc-metrics-and-logs-header">
+	<v-app-bar id="lc-metrics-and-logs-header">
 		<v-row class="_align-items-center">
 			<v-col xs="12" md="6">
 				<h2 class="-title _margin-bottom-0" style="text-transform: uppercase;">
@@ -31,24 +31,22 @@
 					Systems and application performance monitoring, log analysis (tamperproof using immudb) and license compliance (RedHat, Oracle, SAP and more) in one virtual appliance
 				</p>
 				<p class="action">
-					<i-button
-						size="lg"
+					<v-btn
 						outline
-						variant="primary"
+						color="primary"
 						href="https://demoml.codenotary.io/"
 						target="_blank"
 						rel="nofollow"
 					>
 						Demo
-					</i-button>
-					<i-button
-						variant="primary"
-						size="lg"
+					</v-btn>
+					<v-btn
+						color="primary"
 						class="_margin-left-1"
 						@click="startTrialModalOpen = true"
 					>
 						Start trial
-					</i-button>
+					</v-btn>
 				</p>
 			</v-col>
 			<v-col
@@ -74,7 +72,7 @@
 			use-zoom-bar
 			@close="index = null"
 		/>
-	</i-header>
+	</v-app-bar>
 </template>
 
 <script>

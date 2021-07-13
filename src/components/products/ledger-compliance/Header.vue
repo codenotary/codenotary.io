@@ -1,5 +1,5 @@
 <template>
-	<i-header id="lc-header">
+	<v-app-bar id="lc-header">
 		<v-row class="_align-items-center">
 			<v-col xs="12" md="6">
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
@@ -14,24 +14,22 @@
 					CodeNotary Immutable Ledger provides the versatility of a key value store without the hazzle of blockchains.
 				</p>
 				<p class="action">
-					<i-button
-						size="lg"
+					<v-btn
 						outline
-						variant="primary"
+						color="primary"
 						href="https://democnlc.codenotary.com"
 						target="_blank"
 						rel="nofollow"
 					>
 						Demo
-					</i-button>
-					<i-button
-						variant="primary"
-						size="lg"
+					</v-btn>
+					<v-btn
+						color="primary"
 						class="_margin-left-1"
 						@click="$emit('onLedgerComplianceModal')"
 					>
 						Start trial
-					</i-button>
+					</v-btn>
 				</p>
 			</v-col>
 			<v-col
@@ -54,7 +52,7 @@
 			use-zoom-bar
 			@close="index = null"
 		/>
-	</i-header>
+	</v-app-bar>
 </template>
 
 <script>

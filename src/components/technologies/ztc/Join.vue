@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="ztc-join">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader
@@ -8,19 +8,18 @@
 						block
 						class="_margin-bottom-2"
 					/>
-					<i-button
-						size="lg"
-						variant="light"
+					<v-btn
+						color="light"
 						@click="joinZtcModalVisible = true"
 					>
 						Join the Consortium
-					</i-button>
-					<JoinZtcModal
-						v-model="joinZtcModalVisible"
-					/>
+						<JoinZtcModal
+							v-model="joinZtcModalVisible"
+						/>
+					</v-btn>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

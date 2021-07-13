@@ -1,20 +1,19 @@
 <template>
 	<UiPageSection id="become-a-partner-section">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<p class="action _text-center">
-						<i-button
-							size="lg"
-							variant="primary"
+						<v-btn
+							color="primary"
 							@click="$emit('onPartnerModal')"
 						>
 							Become a partner
-						</i-button>
+						</v-btn>
 					</p>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

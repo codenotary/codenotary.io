@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="ci-cd-analyze-and-manage-section">
-		<i-container>
+		<v-container>
 			<i-tabs class="analyze-and-manage-tabs" stretch>
 				<i-tab title="Main Dashboard">
 					<h5 class="title _text-primary">
@@ -27,7 +27,7 @@
 					<img src="/images/ci-cd/analyze-and-manage/my_organizations.png" alt="Allow users to authenticate assets notarized by your organization and its members">
 				</i-tab>
 			</i-tabs>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

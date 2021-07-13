@@ -5,7 +5,7 @@
 		:top="0"
 		:bottom="0"
 	>
-		<i-container>
+		<v-container>
 			<VueSlickCarousel
 				v-bind="settings"
 				@beforeChange="page = $event"
@@ -34,7 +34,7 @@
 					</v-row>
 				</div>
 			</VueSlickCarousel>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

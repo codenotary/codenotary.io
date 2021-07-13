@@ -3,7 +3,7 @@
 		id="ci-cd-videos-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<VueSlickCarousel v-bind="settings" @beforeChange="page = $event">
 				<div>
 					<v-row middle class="_padding-1">
@@ -105,7 +105,7 @@
 					</v-row>
 				</div>
 			</VueSlickCarousel>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

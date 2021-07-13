@@ -10,7 +10,7 @@
 				<UiPageSectionHeader title="Our Board of Directors" />
 			</v-col>
 		</v-row>
-		<i-container>
+		<v-container>
 			<v-row class="board-team-member-items border-top">
 				<v-col
 					xs="12"
@@ -75,7 +75,7 @@
 					/>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

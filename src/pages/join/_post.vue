@@ -1,7 +1,7 @@
 <template>
 	<UiPageSection>
 		<UiPageSectionHeader :title="article.title" tag="h1" />
-		<i-container>
+		<v-container>
 			<v-row class="_display-flex _flex-direction-column">
 				<v-col
 					v-if="article.location || article.type || article.requires" class="_margin-bottom-1"
@@ -43,16 +43,17 @@
 						xs="12" sm="10"
 						md="8" lg="6"
 					>
-						<i-button
-							variant="primary" large
+						<v-btn
+							color="primary"
+							large
 							block @click="apply(article.apply)"
 						>
 							APPLY
-						</i-button>
+						</v-btn>
 					</v-col>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

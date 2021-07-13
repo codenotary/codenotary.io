@@ -1,8 +1,7 @@
 <template>
 	<div class="immudb-header-container">
-		<i-header
+		<v-app-bar
 			id="immudb-header"
-			size="sm"
 		>
 			<v-row class="_align-items-center main-content">
 				<v-col lg="5">
@@ -84,7 +83,7 @@
 					<img class="mascot-image" src="/images/immudb-header-mascot.png">
 				</v-col>
 			</v-row>
-		</i-header>
+		</v-app-bar>
 		<client-only>
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="computedStyle" />

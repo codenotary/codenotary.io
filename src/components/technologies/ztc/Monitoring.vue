@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="ztc-monitoring">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="Monitoring the Network" block>
@@ -18,7 +18,7 @@
 					>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

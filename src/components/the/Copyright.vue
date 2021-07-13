@@ -4,7 +4,7 @@
 		:top="2"
 		:bottom="2"
 	>
-		<i-container>
+		<v-container>
 			<v-row class="row-container">
 				<v-col
 					class="_display-flex _justify-content-start"
@@ -22,7 +22,7 @@
 					</router-link>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

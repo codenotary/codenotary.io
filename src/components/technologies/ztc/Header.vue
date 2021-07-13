@@ -1,5 +1,5 @@
 <template>
-	<i-header id="ztc-header">
+	<v-app-bar id="ztc-header">
 		<img
 			class="ztc-logo"
 			src="/images/ztc/logo.png"
@@ -15,18 +15,17 @@
 		</p>
 
 		<p class="action">
-			<i-button
-				size="lg"
-				variant="primary"
+			<v-btn
+				color="primary"
 				@click="joinZtcModalVisible = true"
 			>
 				Join the consortium
-			</i-button>
-			<JoinZtcModal
-				v-model="joinZtcModalVisible"
-			/>
+				<JoinZtcModal
+					v-model="joinZtcModalVisible"
+				/>
+			</v-btn>
 		</p>
-	</i-header>
+	</v-app-bar>
 </template>
 
 <script>

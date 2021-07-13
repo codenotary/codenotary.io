@@ -3,7 +3,7 @@
 		id="about-features-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col lg="4">
 					<UiCardFeature title="Who are we?">
@@ -23,7 +23,7 @@
 					</UiCardFeature>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

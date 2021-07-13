@@ -1,6 +1,6 @@
 <template>
 	<section class="banner _padding-y-0 _justify-content-center _align-items-center">
-		<!-- <i-container fluid> -->
+		<!-- <v-container fluid> -->
 		<v-row>
 			<v-col
 				class="_display-flex _justify-content-center _align-items-center"
@@ -25,7 +25,7 @@
 				</a>
 			</v-col>
 		</v-row>
-		<!-- </i-container> -->
+		<!-- </v-container> -->
 	</section>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="immudb-playground" :top="1">
-		<i-container>
+		<v-container>
 			<v-row middle>
 				<v-col
 					xs="0" sm="1"
@@ -30,7 +30,7 @@
 					xl="2"
 				/>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

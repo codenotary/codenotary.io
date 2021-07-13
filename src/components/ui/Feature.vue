@@ -1,5 +1,5 @@
 <template>
-	<i-container
+	<v-container
 		class="feature"
 		data-aos="fade-zoom-in"
 	>
@@ -130,7 +130,7 @@
 		>
 			<slot name="button" />
 		</v-row>
-	</i-container>
+	</v-container>
 </template>
 
 <script>

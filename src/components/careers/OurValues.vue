@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="our-values-section">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="Our values" />
@@ -75,7 +75,7 @@
 					</i-card>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

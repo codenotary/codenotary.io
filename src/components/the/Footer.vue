@@ -4,7 +4,7 @@
 		:top="3"
 		:bottom="2"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col class="brand">
 					<img
@@ -71,7 +71,7 @@
 					</div>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

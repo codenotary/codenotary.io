@@ -4,7 +4,7 @@
 
 		<TheSubnavbarTos v-if="!isIndex" />
 
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col v-if="isIndex && articles">
 					<ul class="list -unstyled">
@@ -35,18 +35,18 @@
 						md="8"
 						lg="6"
 					>
-						<i-button
-							variant="primary"
+						<v-btn
+							color="primary"
 							large
 							block
 							@click.prevent="download(article.download, article.title)"
 						>
 							DOWNLOAD
-						</i-button>
+						</v-btn>
 					</v-col>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

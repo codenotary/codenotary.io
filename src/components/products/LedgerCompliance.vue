@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="ledger-compliance-section">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="CodeNotary Immutable Ledger®" block>
@@ -30,7 +30,7 @@
 					>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

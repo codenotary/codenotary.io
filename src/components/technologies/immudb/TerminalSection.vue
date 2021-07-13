@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="immudb-code-examples-section">
-		<i-container class="floating-container _padding-x-4">
+		<v-container class="floating-container _padding-x-4">
 			<v-row>
 				<v-col>
 					<div>
@@ -147,7 +147,7 @@
 					</div>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

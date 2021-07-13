@@ -4,7 +4,7 @@
 		:top="2"
 		:bottom="2"
 	>
-		<i-container>
+		<v-container>
 			<v-row class="_display-flex _justify-content-center">
 				<v-col>
 					<UiPageSectionHeader :bottom="0" title="Features" />
@@ -79,7 +79,7 @@
 					</v-row>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UipageSection>
 </template>
 

@@ -4,7 +4,7 @@
 			color="white" title="The open-source immutable database"
 			:bottom="0"
 		/>
-		<i-container>
+		<v-container>
 			<v-row class="_padding-x-0 _display-flex _justify-content-center">
 				<v-col
 					class="_margin-x-auto" xs="12"
@@ -33,7 +33,7 @@
 					</p>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

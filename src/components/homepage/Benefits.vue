@@ -2,7 +2,7 @@
 	<UiPageSection
 		id="benefits-section"
 	>
-		<i-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
+		<v-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<UiPageSectionHeader
 				:title="content.benefitsSection.title"
 				weight="bold"
@@ -27,7 +27,7 @@
 					</div>
 				</div>
 			</div>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

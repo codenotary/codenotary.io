@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="immudb-performance-section" :top="1">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<v-row class="_margin-x-0">
@@ -66,7 +66,7 @@
 					</v-row>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

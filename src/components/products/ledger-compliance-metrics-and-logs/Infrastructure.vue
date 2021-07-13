@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="lc-infrastructure-section">
-		<i-container>
+		<v-container>
 			<i-tabs class="infrastructure-tabs" stretch>
 				<i-tab title="Infrastructure Health">
 					<v-row center middle>
@@ -174,7 +174,7 @@
 					</v-row>
 				</i-tab>
 			</i-tabs>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

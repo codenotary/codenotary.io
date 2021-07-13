@@ -3,7 +3,7 @@
 		id="features-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col
 					class="_margin-bottom-xs-2 _margin-bottom-sm-4 _margin-bottom-md-4 _margin-bottom-lg-4 _margin-bottom-xl-4"
@@ -58,14 +58,13 @@
 							Immutability and high-speed performance - first time combined.
 						</p>
 						<template #button>
-							<i-button
+							<v-btn
 								class="_padding-x-4"
-								size="lg"
-								variant="primary"
+								color="primary"
 								@click="$emit('onLedgerComplianceModal')"
 							>
 								Start trial
-							</i-button>
+							</v-btn>
 						</template>
 					</UiFeature>
 				</v-col>
@@ -151,7 +150,7 @@
 					</ul>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

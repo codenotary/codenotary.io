@@ -25,15 +25,15 @@
 						</strong>
 					</template>
 					<template slot="cta">
-						<i-button
+						<v-btn
 							class="_font-weight-bold"
-							variant="primary"
+							color="primary"
 							style="min-width: 144px; border-width: 2px;"
 							:outline="true"
 							@click="trialModalOpen = true"
 						>
 							Start trial
-						</i-button>
+						</v-btn>
 					</template>
 					<hr
 						class="line _margin-top-2 _margin-bottom-1"
@@ -86,15 +86,15 @@
 						</small>
 					</template>
 					<template slot="cta">
-						<i-button
+						<v-btn
 							class="_font-weight-bold"
-							variant="primary"
+							color="primary"
 							style="min-width: 144px; border-width: 2px;"
 							:outline="true"
 							@click="trialModalOpen = true"
 						>
 							Start trial
-						</i-button>
+						</v-btn>
 					</template>
 					<hr
 						class="line _margin-top-2 _margin-bottom-1"
@@ -139,12 +139,12 @@
 					title="Hardware Appliance"
 				>
 					<template slot="cta">
-						<i-button
-							variant="primary"
+						<v-btn
+							color="primary"
 							:to="{ name: 'contact' }"
 						>
 							Contact us for details
-						</i-button>
+						</v-btn>
 					</template>
 					<hr
 						class="line _margin-top-2 _margin-bottom-1"
@@ -198,15 +198,15 @@
 						>
 							{{ item && item.label }}
 						</UiPricingTableRow>
-						<i-button
+						<v-btn
 							class="_margin-top-1"
 							link
 							style="height: 37px;"
-							variant="secondary"
+							color="secondary"
 							@click="showMore = !showMore"
 						>
 							show {{ showMore ? 'less...' : 'more...' }}
-						</i-button>
+						</v-btn>
 					</template>
 				</UiPricingTable>
 			</v-col>

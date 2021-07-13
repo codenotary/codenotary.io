@@ -1,5 +1,5 @@
 <template>
-	<i-header id="about-header">
+	<v-app-bar id="about-header">
 		<v-row class="_align-items-center">
 			<v-col xs="12" md="8">
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
@@ -9,17 +9,16 @@
 					<UiModalPartner
 						v-model="partnerModalOpen"
 					/>
-					<i-button
-						variant="primary"
-						size="lg"
+					<v-btn
+						color="primary"
 						@click="webinarModalOpen = true"
 					>
 						Become a partner
-					</i-button>
+					</v-btn>
 				</div>
 			</v-col>
 		</v-row>
-	</i-header>
+	</v-app-bar>
 </template>
 
 <script>

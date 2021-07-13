@@ -3,7 +3,7 @@
 		id="remote-friendly-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="We are remote friendly" />
@@ -23,7 +23,7 @@
 					</i-card>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

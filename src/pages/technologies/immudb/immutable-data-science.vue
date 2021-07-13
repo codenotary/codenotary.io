@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader class="_text-left _margin-left-0 _margin-bottom-2">
@@ -34,7 +34,7 @@
 					</i-card>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 		</PageSection>
 	</uipagesection>
 </template>

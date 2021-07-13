@@ -1,73 +1,123 @@
 <template>
-	<i-modal
-		class="subscribe-modal"
-		size="lg"
+	<v-dialog
+		content-class="primary-outlined"
 		:value="value"
-		@input="onVisibilityChange"
+		max-width="600px"
+		persistent
+		:overlay-opacity="0.55"
+		@input="$emit('input', value)"
 	>
-		<template slot="header">
-			<span class="cn-text-white _font-weight-bold">Download Research Paper</span>
-		</template>
-
-		<i-alert
-			v-if="sent"
-			variant="success"
-			class="_margin-bottom-1"
-		>
-			<template slot="icon">
-				<fa icon="check-circle" />
-			</template>
-			<p>Email sent successfully!</p>
-		</i-alert>
-
-		<i-alert
-			v-if="error"
-			variant="danger"
-			class="_margin-bottom-1"
-		>
-			<template slot="icon">
-				<fa icon="times-circle" />
-			</template>
-			<p>Something went wrong. Please try again later!</p>
-		</i-alert>
-
-		<p class="_margin-top-0">
-			We will send you the research paper via email.
-		</p>
-
-		<i-form v-model="form" @submit.prevent="onSubmit">
-			<i-input
-				class="_margin-bottom-1"
-				:schema="form.contactEmail"
-				placeholder="Enter your email"
+		<v-card class="ma-0 pa-0 bg">
+			<v-card-title class="ma-0 mb-2 py-2 px-4 primary d-flex justify-start align-center">
+				<span class="cn-text-white _font-weight-bold">
+					Download Research Paper
+				</span>
+			</v-card-title>
+			<v-card-text
+				class="ma-0 mb-2 pa-4 pt-2"
+				style="overflow-x: hidden !important;"
 			/>
-			<vue-recaptcha
-				ref="recaptcha"
+			<i-alert
+				v-if="sent"
+				variant="success"
 				class="_margin-bottom-1"
-				load-recaptcha-script
-				:sitekey="sitekey"
-				@verify="onVerify"
-			/>
-			<UiButtonCn
-				class="_margin-bottom-1"
-				type="submit"
-				:disabled="!verified || sending"
 			>
-				{{ sending ? 'Sending..' : 'Send the document' }}
-			</UiButtonCn>
-		</i-form>
-	</i-modal>
+				<template slot="icon">
+					<fa icon="check-circle" />
+				</template>
+				<p>Email sent successfully!</p>
+			</i-alert>
+
+			<i-alert
+				v-if="error"
+				variant="danger"
+				class="_margin-bottom-1"
+			>
+				<template slot="icon">
+					<fa icon="times-circle" />
+				</template>
+				<p>Something went wrong. Please try again later!</p>
+			</i-alert>
+
+			<p class="_margin-top-0">
+				We will send you the research paper via email.
+			</p>
+
+			<ValidationObserver
+				ref="observer"
+				v-slot="{ validate }"
+			>
+				<v-form
+					id="UpdatePasswordForm"
+					v-model="form"
+					@submit.prevent="validate().then(onSubmit)"
+				>
+					<ValidationProvider
+						v-slot="{ errors }"
+						name="contactEmail"
+						:rules="`required`"
+						mode="aggressive"
+						:debounce="300"
+					>
+						<v-text-field
+							v-model="form.contactEmail"
+							:error-messages="errors"
+							label="Enter your email"
+							placeholder="Enter your email"
+							required
+							autofocus
+							:type="show.oldPassword ? 'text' : 'password'"
+							:append-icon="show.oldPassword ? mdiEye : mdiEyeOff"
+							@click:append="show.oldPassword = !show.oldPassword"
+						/>
+					</ValidationProvider>
+					<vue-recaptcha
+						ref="recaptcha"
+						class="_margin-bottom-1"
+						load-recaptcha-script
+						:sitekey="sitekey"
+						@verify="onVerify"
+					/>
+					<UiButtonCn
+						class="_margin-bottom-1"
+						type="submit"
+						:disabled="!verified || sending"
+					>
+						{{ sending ? 'Sending..' : 'Send the document' }}
+					</UiButtonCn>
+				</v-form>
+			</ValidationObserver>
+		</v-card>
+	</v-dialog>
 </template>
 
 <script>
 import axios from 'axios';
 import VueRecaptcha from 'vue-recaptcha';
+import {
+	required,
+} from 'vee-validate/dist/rules';
+import {
+	extend,
+	ValidationObserver,
+	ValidationProvider,
+	setInteractionMode,
+} from 'vee-validate';
 import { API_URL } from '~/services/api';
+
+extend('required', {
+	...required,
+	message: 'This field is required',
+});
+
+setInteractionMode('eager');
 
 export default {
 	name: 'UiModalResearchPaper',
 	components: {
 		VueRecaptcha,
+		ValidationObserver,
+		ValidationProvider,
 	},
 	props: {
 		value: {
@@ -82,20 +132,12 @@ export default {
 			error: false,
 			sent: false,
 			sitekey: '6LeB9PUZAAAAAGJtwPEegkY2OeH1rVzHDwmdTguT',
-			form: this.$inkline.form({
-				contactEmail: {
-					validators: [
-						{ rule: 'required' },
-						{ rule: 'email' },
-					],
-				},
-			}),
+			form: {
+				contactEmail: '',
+			},
 		};
 	},
 	methods: {
-		onVisibilityChange(value) {
-			this.$emit('input', value);
-		},
 		async onSubmit() {
 			if (!this.verified) {
 				return;
@@ -103,7 +145,7 @@ export default {
 
 			this.sending = true;
 
-			const email = this.form.contactEmail.value;
+			const email = this.form.contactEmail;
 			const data = {
 				email,
 			};

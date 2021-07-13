@@ -9,7 +9,7 @@
 				<UiPageSectionHeader title="Our Management Team" />
 			</v-col>
 		</v-row>
-		<i-container>
+		<v-container>
 			<v-row class="team-member-items">
 				<v-col lg="4">
 					<AboutUiTeamMember
@@ -70,7 +70,7 @@
 					</AboutUiTeamMember>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

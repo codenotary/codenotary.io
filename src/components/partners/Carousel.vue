@@ -3,7 +3,7 @@
 		id="partners-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col xs="12">
 					<VueSlickCarousel v-if="partners && partners.length" v-bind="settings">
@@ -37,7 +37,7 @@
 					</VueSlickCarousel>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

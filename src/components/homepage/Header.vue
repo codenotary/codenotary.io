@@ -1,6 +1,6 @@
 <template>
 	<div class="home-header-container">
-		<i-header
+		<v-app-bar
 			id="home-header"
 			size="sm"
 		>
@@ -75,7 +75,7 @@
 					>
 				</v-col>
 			</v-row>
-		</i-header>
+		</v-app-bar>
 		<client-only>
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="computedStyle" />

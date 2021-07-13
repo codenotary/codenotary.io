@@ -2,7 +2,7 @@
 	<div>
 		<UiPageSection>
 			<UiPageSectionHeader title="Blog" tag="h1" />
-			<i-container>
+			<v-container>
 				<v-row>
 					<v-col xs="12" class="blog-search-wrapper _hidden-sm-and-down _padding-right-2 _padding-left-2 _margin-bottom-2">
 						<i-input
@@ -95,7 +95,7 @@
 						</no-ssr>
 					</v-col>
 				</v-row>
-			</i-container>
+			</v-container>
 		</UiPageSection>
 	</div>
 </template>

@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="immudb-easy-setup-section">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader
@@ -65,7 +65,7 @@
 					</v-col>
 				</v-row>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

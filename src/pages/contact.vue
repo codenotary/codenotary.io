@@ -5,7 +5,7 @@
 				Contact us
 			</h1>
 		</UiPageSectionHeader>
-		<i-container>
+		<v-container>
 			<v-row class="_text-center">
 				<v-col id="map-embed">
 					<div class="_embed-16by9">
@@ -35,15 +35,15 @@
 					</div>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 		<LazyHydrate when-visible>
-			<i-container>
+			<v-container>
 				<v-row>
 					<v-col>
 						<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 					</v-col>
 				</v-row>
-			</i-container>
+			</v-container>
 		</LazyHydrate>
 	</UiPageSection>
 </template>

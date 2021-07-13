@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="ztc-members-section">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="Founding Members" block />
@@ -181,7 +181,7 @@
 					</a>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

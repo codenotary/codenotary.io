@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="immudb-by-developers-for-developers">
-		<i-container class="floating-container">
+		<v-container class="floating-container">
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader
@@ -24,12 +24,12 @@
 			</v-row>
 			<v-row>
 				<v-col class="_padding-x-0">
-					<i-tabs
+					<v-tabs
 						class="analyze-and-manage-tabs"
 						stretch
 						block
 					>
-						<i-tab
+						<v-tab
 							class="_padding-top-2"
 							:title="'Connect to immudb'"
 						>
@@ -58,8 +58,8 @@
 									<!-- eslint-enable -->
 								</v-col>
 							</v-row>
-						</i-tab>
-						<i-tab
+						</v-tab>
+						<v-tab
 							class="_padding-top-2"
 							title="Store data tamperproof"
 						>
@@ -86,8 +86,8 @@
 									<!-- eslint-enable -->
 								</v-col>
 							</v-row>
-						</i-tab>
-						<i-tab
+						</v-tab>
+						<v-tab
 							class="_padding-top-2"
 							title="Read verified data"
 						>
@@ -113,11 +113,11 @@
 									<!-- eslint-enable -->
 								</v-col>
 							</v-row>
-						</i-tab>
-					</i-tabs>
+						</v-tab>
+					</v-tabs>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

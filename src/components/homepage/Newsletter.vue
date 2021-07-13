@@ -4,7 +4,7 @@
 		variant="gradient_inverse"
 		:top="6"
 	>
-		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
+		<v-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<UiPageSectionHeader
 				weight="bold"
 				color="white"
@@ -24,7 +24,7 @@
 					{{ content.newsletterSection.actionText }}
 				</UiButtonCn>
 			</div>
-		</i-container>
+		</v-container>
 		<UiModalNewsletter v-model="newsletterModalOpen" />
 	</UiPageSection>
 </template>

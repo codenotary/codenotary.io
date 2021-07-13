@@ -15,14 +15,13 @@
 				<fa icon="star" class="_margin-left-1-2" />
 			</span>
 		</div>
-		<i-button
+		<v-btn
 			link
 			class="close-button"
-			size="sm"
 			@click="close()"
 		>
 			<i-icon icon="times" size="sm" />
-		</i-button>
+		</v-btn>
 	</section>
 </template>
 

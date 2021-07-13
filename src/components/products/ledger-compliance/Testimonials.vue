@@ -3,7 +3,7 @@
 		id="lc-testimonials-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="Customer testimonials" :bottom="4" />
@@ -71,7 +71,7 @@
 					</VueSlickCarousel>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

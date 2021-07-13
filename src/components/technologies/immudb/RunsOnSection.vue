@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="immudb-runs-on-section">
-		<i-container class="floating-container">
+		<v-container class="floating-container">
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader
@@ -76,7 +76,7 @@
 					</i-tabs>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

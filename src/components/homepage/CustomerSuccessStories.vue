@@ -3,7 +3,7 @@
 		id="customer-success-stories-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col xs="12" sm="12">
 					<UiPageSectionHeader
@@ -20,13 +20,12 @@
 					sm="12"
 				>
 					<div class="button-wrapper">
-						<i-button
-							variant="primary"
-							size="lg"
+						<v-btn
+							color="primary"
 							@click="$emit('onWebinarModal')"
 						>
 							Schedule a Webinar
-						</i-button>
+						</v-btn>
 					</div>
 				</v-col>
 			</v-row>
@@ -74,7 +73,7 @@
 					/>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

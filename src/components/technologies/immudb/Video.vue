@@ -2,7 +2,7 @@
 	<UiPageSection
 		id="immudb-video-section"
 	>
-		<i-container>
+		<v-container>
 			<v-row class="_display-flex _justify-content-center">
 				<v-col
 					xs="12"
@@ -143,7 +143,7 @@
 					</div>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

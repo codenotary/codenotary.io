@@ -3,7 +3,7 @@
 		id="open-positions-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="Open positions" />
@@ -42,20 +42,19 @@
 									</div>
 								</div>
 								<div>
-									<i-button
-										variant="primary"
-										large
+									<v-btn
+										color="primary"
 										block
 									>
 										More info
-									</i-button>
+									</v-btn>
 								</div>
 							</i-card>
 						</div>
 					</masonry>
 				</no-ssr>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

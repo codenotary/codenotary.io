@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="immudb-users-section">
-		<i-container class="floating-container">
+		<v-container class="floating-container">
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader
@@ -37,7 +37,7 @@
 					/>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

@@ -10,7 +10,7 @@
 				<UiPageSectionHeader title="Our Scientific Board" />
 			</v-col>
 		</v-row>
-		<i-container>
+		<v-container>
 			<v-row class="scientific-team-member-items _justify-content-center">
 				<v-col
 					xs="12"
@@ -58,7 +58,7 @@
 					</AboutUiTeamMember>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

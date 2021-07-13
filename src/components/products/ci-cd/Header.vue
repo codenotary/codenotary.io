@@ -1,5 +1,5 @@
 <template>
-	<i-header id="ci-cd-header">
+	<v-app-bar id="ci-cd-header">
 		<v-row class="_align-items-center">
 			<v-col
 				xs="12"
@@ -22,24 +22,22 @@
 					Our highly scalable service already processes tens of millions of transactions every single month.
 				</p>
 				<p class="action">
-					<i-button
-						size="lg"
+					<v-btn
 						outline
-						variant="primary"
+						color="primary"
 						href="https://dashboard.codenotary.io/auth/signin"
 						target="_blank"
 					>
 						Sign in
-					</i-button>
-					<i-button
-						size="lg"
-						class="_margin-left-1"
-						variant="primary"
-						href="https://dashboard.codenotary.io/auth/signup"
-						target="_blank"
-					>
-						Sign up
-					</i-button>
+						<v-btn
+							class="_margin-left-1"
+							color="primary"
+							href="https://dashboard.codenotary.io/auth/signup"
+							target="_blank"
+						>
+							Sign up
+						</v-btn>
+					</v-btn>
 				</p>
 			</v-col>
 			<v-col
@@ -50,7 +48,7 @@
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
 			</v-col>
 		</v-row>
-	</i-header>
+	</v-app-bar>
 </template>
 
 <script>

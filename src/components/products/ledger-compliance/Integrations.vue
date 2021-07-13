@@ -3,7 +3,7 @@
 		id="lc-integrations-section"
 		variant="white"
 	>
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="Immutable Ledger Integrations">
@@ -31,7 +31,7 @@
 					</VueSlickCarousel>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

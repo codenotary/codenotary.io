@@ -1,7 +1,7 @@
 <template>
 	<UiPageSection>
 		<UiPageSectionHeader :title="article.title" tag="h1" />
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<article>
@@ -9,7 +9,7 @@
 					</article>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

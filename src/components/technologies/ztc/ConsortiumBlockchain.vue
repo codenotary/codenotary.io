@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="ztc-consortium-blockchain">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="The Consortium Blockchain" block>
@@ -24,7 +24,7 @@
 					</ul>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

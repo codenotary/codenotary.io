@@ -1,6 +1,6 @@
 <template>
 	<UiPageSection id="ztc-about">
-		<i-container>
+		<v-container>
 			<v-row>
 				<v-col>
 					<UiPageSectionHeader title="What is the Zero-Trust Consortium?" block>
@@ -26,7 +26,7 @@
 					</ul>
 				</v-col>
 			</v-row>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 

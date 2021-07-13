@@ -1,12 +1,12 @@
 <template>
-	<i-container cass="highlighted-cards">
+	<v-container cass="highlighted-cards">
 		<UiCardHero
 			v-for="(card, index) in content.heroCardsSection.cards" :key="index"
 			:title="card.title" :subtitle="card.subtitle"
 			:action-href="card.href" :internal-link="card.internalLink"
 			:action-text="card.actionText"
 		/>
-	</i-container>
+	</v-container>
 </template>
 
 <script>

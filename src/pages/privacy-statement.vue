@@ -2,13 +2,13 @@
 	<article>
 		<UiPageSection>
 			<UiPageSectionHeader title="Privacy Statement" tag="h1" />
-			<i-container>
+			<v-container>
 				<v-row>
 					<v-col>
 						<nuxt-content :document="page" />
 					</v-col>
 				</v-row>
-			</i-container>
+			</v-container>
 		</UiPageSection>
 	</article>
 </template>

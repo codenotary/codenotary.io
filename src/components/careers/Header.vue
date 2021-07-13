@@ -1,5 +1,5 @@
 <template>
-	<i-header id="about-header">
+	<v-app-bar id="about-header">
 		<v-row class="_align-items-center">
 			<v-col xs="12">
 				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
@@ -9,17 +9,16 @@
 					We’re creating highly sophisticated and innovative solutions which our customers love to use. Join us on our journey to bring trust and integrity to the digital world!
 				</p>
 				<div class="button-wrapper _margin-top-2 _display-flex _justify-content-center">
-					<i-button
-						variant="primary"
-						size="lg"
+					<v-btn
+						color="primary"
 						@click="scrolleMeTo()"
 					>
 						See open positions
-					</i-button>
+					</v-btn>
 				</div>
 			</v-col>
 		</v-row>
-	</i-header>
+	</v-app-bar>
 </template>
 
 <script>

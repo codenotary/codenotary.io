@@ -3,7 +3,7 @@
 		id="ci-cd-videos-section"
 		class="_padding-top-0"
 	>
-		<i-container>
+		<v-container>
 			<v-row class="_margin-0 _padding-0">
 				<v-col class="_margin-0 _padding-0">
 					<UiPageSectioNHeader
@@ -39,7 +39,7 @@
 					<!-- <div v-else class="_embed _embed-16by9 video-placeholder" /> -->
 				</div>
 			</VueSlickCarousel>
-		</i-container>
+		</v-container>
 	</UiPageSection>
 </template>
 
