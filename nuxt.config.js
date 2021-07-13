@@ -1,4 +1,3 @@
-import Sass from 'sass';
 import { meta, DEFAULT_META } from './helpers/meta';
 import blogRoutes from './blog';
 import careersRoutes from './careers';
@@ -34,7 +33,7 @@ export default {
     ** ssr propery
     ** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-ssr
     */
-	ssr: false,
+	ssr: true,
 
 	/*
 	** Nuxt target
@@ -52,7 +51,7 @@ export default {
     */
 	head: {
 		htmlAttrs: { lang: 'en' },
-		// title: DEFAULT_META.TITLE,
+		title: DEFAULT_META.TITLE,
 		meta: [
 			...meta(),
 			{ charset: 'utf-8' },
@@ -103,98 +102,36 @@ export default {
 	],
 
 	build: {
-		analyze: false,
 		parallel: EXPERIMENTAL,
 		cache: EXPERIMENTAL,
 		hardSource: EXPERIMENTAL,
 		extractCSS: IS_PROD,
 		optimizeCSS: IS_PROD,
 		filenames: {
-			app: IS_PROD ? '[chunkhash].js' : '[name].[hash].js',
-			chunk: IS_PROD ? '[chunkhash].js' : '[name].[hash].js',
-			css: IS_PROD ? '[name].[contenthash].css' : '[name].js',
+			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
+			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
 		},
 		// Extend webpack config
-		extend: (config, { isDev, isClient }) => {
-			config.devtool = isClient ? 'eval-source-map' : 'inline-source-map';
-
-			// image-webpack-loader
-			config.module.rules.forEach((rule) => {
-				if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
-					// add a second loader when loading images
-					rule.use.push({
-						loader: 'image-webpack-loader',
-						options: {
-							svgo: {
-								plugins: [
-								// use these settings for internet explorer for proper scalable SVGs
-								// https://css-tricks.com/scale-svg/
-									{ removeViewBox: false },
-									{ removeDimensions: true },
-								],
-							},
-						},
-					});
-				}
-			});
+		extend: (config, ctx) => {
+			config.devtool = ctx.isClient ? 'eval-source-map' : 'inline-source-map';
 		},
 		loaders: {
 			vue: {
 				prettify: false,
-			},
-			sass: {
-				implementation: Sass,
 			},
 		},
 		transpile: [
 			'@inkline/inkline',
 			'vue-github-button',
 		],
-		optimization: {
-			splitChunks: {
-				chunks: 'async',
-			},
-		},
 		babel: {
 			plugins: [
-				['@babel/plugin-proposal-private-methods', { loose: true }],
+				'@babel/plugin-proposal-optional-chaining',
 			],
-		},
-		postcss: {
-			plugins: {
-				'postcss-url': false,
-				'postcss-nested': {},
-				'postcss-responsive-type': {},
-				'postcss-hexrgba': {},
-			},
-			preset: {
-				autoprefixer: {
-					grid: true,
-				},
-			},
-		},
-	},
-
-	/*
-	** Serve static assets with cache policy
-	** Doc: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-render/
-	*/
-	render: {
-		static: {
-			maxAge: 1000 * 60 * 60 * 24 * 7,
-		},
-		bundleRenderer: {
-			shouldPrefetch: (_, type) => ['script', 'style', 'font'].includes(type) &&
-				!_.includes('admin'),
-			shouldPreload: (_, type) => ['script', 'style', 'font'].includes(type) &&
-				!_.includes('admin'),
 		},
 	},
 
 	router: {
-		mode: 'history',
-		middleware: [],
-		base: '/',
 		linkExactActiveClass: '-active',
 	},
 
