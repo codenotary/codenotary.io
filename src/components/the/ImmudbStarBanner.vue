@@ -1,10 +1,10 @@
 <template>
-	<section class="immudb-star-banner _justify-content-center">
-		<div class="_display-flex _align-items-center">
+	<section class="immudb-star-banner justify-center">
+		<div class="d-flex align-center">
 			<span>
 				If you like immudb,
 				<a
-					class="_font-weight-bold _text-decoration-underline"
+					class="font-weight-bold text-decoration-underline"
 					href="https://github.com/codenotary/immudb"
 					target="_blank"
 					rel="noopener"
@@ -12,7 +12,12 @@
 				>
 					give us a star on Github!
 				</a>
-				<fa icon="star" class="_margin-left-1-2" />
+				<v-icon
+					class="ml-2 secondary--text"
+					:size="20"
+				>
+					{{ mdiStar }}
+				</v-icon>
 			</span>
 		</div>
 		<v-btn
@@ -20,15 +25,29 @@
 			class="close-button"
 			@click="close()"
 		>
-			<i-icon icon="times" size="sm" />
+			<v-icon
+				:size="20"
+			>
+				{{ mdiClose }}
+			</v-icon>
 		</v-btn>
 	</section>
 </template>
 
 <script>
+import {
+	mdiStar,
+	mdiClose,
+} from '@mdi/js';
+
 export default {
 	name: 'TheImmudbStarBanner',
-
+	data() {
+		return {
+			mdiStar,
+			mdiClose,
+		};
+	},
 	methods: {
 		submit () {
 			this.$emit('submit');

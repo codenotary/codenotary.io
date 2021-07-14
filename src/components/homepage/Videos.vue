@@ -11,7 +11,7 @@
 				@beforeChange="page = $event"
 			>
 				<div>
-					<v-row middle class="_padding-1">
+					<v-row middle class="pa-4">
 						<v-col
 							class="_margin-x-auto"
 							xs="8"

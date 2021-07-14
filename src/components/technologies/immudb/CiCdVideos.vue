@@ -18,7 +18,7 @@
 				v-bind="settings"
 				@beforeChange="page = $event"
 			>
-				<div class="_padding-1-2">
+				<div class="pa-4-2">
 					<div class="_embed _embed-16by9">
 						<iframe
 							width="504" height="284"
@@ -28,7 +28,7 @@
 					</div>
 					<!-- <div v-else class="_embed _embed-16by9 video-placeholder" /> -->
 				</div>
-				<div class="_padding-1-2">
+				<div class="pa-4-2">
 					<div class="_embed _embed-16by9">
 						<iframe
 							width="504" height="284"

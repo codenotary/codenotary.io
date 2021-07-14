@@ -3,7 +3,7 @@
 		<div class="card-picture">
 			<img class="cn-icon" :src="imageUrl">
 		</div>
-		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
+		<h3 class="font-weight-bold cn-text-brand mt-4">
 			{{ title }}
 		</h3>
 		<h6 class="subtitle cn-text-sm" v-html="subtitle" />

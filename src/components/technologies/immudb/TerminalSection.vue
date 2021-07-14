@@ -12,7 +12,7 @@
 										sm="12"
 										md="6"
 									>
-										<h4 class="title _font-weight-bold _text-primary">
+										<h4 class="title font-weight-bold primary--text">
 											Very high throughput, immutable database with cryptographic verification
 										</h4>
 										<p class="lead">
@@ -48,13 +48,13 @@
 								</v-row>
 							</div>
 							<div>
-								<v-row middle class="_padding-1">
+								<v-row middle class="pa-4">
 									<v-col
 										xs="12"
 										sm="12"
 										md="6"
 									>
-										<h4 class="title _font-weight-bold _text-primary">
+										<h4 class="title font-weight-bold primary--text">
 											Intuitive setup
 										</h4>
 										<p class="lead">
@@ -90,13 +90,13 @@
 								</v-row>
 							</div>
 							<div>
-								<v-row middle class="_padding-1">
+								<v-row middle class="pa-4">
 									<v-col
 										xs="12"
 										sm="12"
 										md="6"
 									>
-										<h4 class="title _font-weight-bold _text-primary">
+										<h4 class="title font-weight-bold primary--text">
 											Consistency check built-in
 										</h4>
 										<p class="lead">
@@ -131,12 +131,12 @@
 								</v-row>
 							</div>
 							<template #prevArrow>
-								<div class="custom-arrow _display-flex _justify-content-center _align-items-center">
+								<div class="custom-arrow d-flex justify-center align-center">
 									<img class="cn-icon" src="/icons/carousel-arrow-left.svg">
 								</div>
 							</template>
 							<template #nextArrow>
-								<div class="custom-arrow _display-flex _justify-content-center _align-items-center">
+								<div class="custom-arrow d-flex justify-center align-center">
 									<img class="cn-icon" src="/icons/carousel-arrow-right.svg">
 								</div>
 							</template>

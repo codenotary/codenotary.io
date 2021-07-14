@@ -2,7 +2,7 @@
 	<UiPageSection
 		id="benefits-section"
 	>
-		<v-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
+		<v-container class="main-container d-flex flex-column align-center justify-center">
 			<UiPageSectionHeader
 				:title="content.benefitsSection.title"
 				weight="bold"
@@ -12,15 +12,15 @@
 			/>
 			<div class="benefits-body">
 				<div v-for="(card, index) in content.benefitsSection.cards" :key="index">
-					<div class="benefit-card _margin-top-1" :class="`cn-bg-${card.backgroundColor}`">
+					<div class="benefit-card mt-4" :class="`cn-bg-${card.backgroundColor}`">
 						<div class="benefit-card-header">
 							<img class="cn-icon" :src="card.iconName">
 						</div>
 						<div class="benefit-card-body">
-							<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">
+							<h4 class="cn-text-white font-weight-bold text-center _margin-0">
 								{{ card.title }}
 							</h4>
-							<p class="cn-text-white _margin-0 _text-center">
+							<p class="cn-text-white _margin-0 text-center">
 								{{ card.subtitle }}
 							</p>
 						</div>

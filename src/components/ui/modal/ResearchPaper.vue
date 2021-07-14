@@ -9,7 +9,7 @@
 	>
 		<v-card class="ma-0 pa-0 bg">
 			<v-card-title class="ma-0 mb-2 py-2 px-4 primary d-flex justify-start align-center">
-				<span class="cn-text-white _font-weight-bold">
+				<span class="cn-text-white font-weight-bold">
 					Download Research Paper
 				</span>
 			</v-card-title>
@@ -20,7 +20,7 @@
 			<i-alert
 				v-if="sent"
 				variant="success"
-				class="_margin-bottom-1"
+				class="mb-4"
 			>
 				<template slot="icon">
 					<fa icon="check-circle" />
@@ -31,7 +31,7 @@
 			<i-alert
 				v-if="error"
 				variant="danger"
-				class="_margin-bottom-1"
+				class="mb-4"
 			>
 				<template slot="icon">
 					<fa icon="times-circle" />
@@ -73,13 +73,13 @@
 					</ValidationProvider>
 					<vue-recaptcha
 						ref="recaptcha"
-						class="_margin-bottom-1"
+						class="mb-4"
 						load-recaptcha-script
 						:sitekey="sitekey"
 						@verify="onVerify"
 					/>
 					<UiButtonCn
-						class="_margin-bottom-1"
+						class="mb-4"
 						type="submit"
 						:disabled="!verified || sending"
 					>

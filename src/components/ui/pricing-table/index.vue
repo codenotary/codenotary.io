@@ -15,7 +15,7 @@
 		</div>
 		<div
 			v-if="title || subtitle"
-			class="title-and-subtitle-wrapper _margin-bottom-1"
+			class="title-and-subtitle-wrapper mb-4"
 		>
 			<h4
 				v-if="title"
@@ -33,7 +33,7 @@
 		<div class="body">
 			<div
 				v-if="price"
-				class="price-wrapper _margin-bottom-1"
+				class="price-wrapper mb-4"
 			>
 				<slot name="price" />
 			</div>
@@ -46,7 +46,7 @@
 			<div class="rows">
 				<slot />
 			</div>
-			<div class="rows flex _justify-content-center">
+			<div class="rows flex justify-center">
 				<slot name="short-row" />
 			</div>
 		</div>

@@ -12,7 +12,7 @@
 							:clearable="!!filter"
 						/>
 					</v-col>
-					<v-col xs="12" class="blog-search-wrapper mobile _hidden-md-and-up _padding-right-1 _padding-left-1 _margin-bottom-2">
+					<v-col xs="12" class="blog-search-wrapper mobile _hidden-md-and-up pr-4 pl-4 _margin-bottom-2">
 						<i-input
 							v-model="filter"
 							class="blog-search"
@@ -33,7 +33,7 @@
 									class="item"
 									column-width="33px"
 								>
-									<i-card class="blog-post _display-flex _flex-direction-column _justify-content-space-between">
+									<i-card class="blog-post d-flex flex-column _justify-content-space-between">
 										<div>
 											<div class="image-wrapper">
 												<img
@@ -60,7 +60,7 @@
 											<i-badge
 												v-for="(tag, idx) in article.tags"
 												:key="`${tag}-${idx}`"
-												class="_margin-top-1-4 _margin-right-1-4"
+												class="mt-4-4 mr-4-4"
 												size="sm"
 												@click.stop.prevent="filter=tag"
 											>

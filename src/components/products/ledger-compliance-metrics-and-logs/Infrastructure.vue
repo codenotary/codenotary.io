@@ -10,7 +10,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Virtual Infrastructure Health.
 							</h5>
 							<p class="lead">
@@ -35,7 +35,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Find performance bottlenecks quick and easy.
 							</h5>
 							<p class="lead">
@@ -60,7 +60,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Capacity planning of VMs and ESXi hosts.
 							</h5>
 							<p class="lead">
@@ -85,7 +85,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Visual warnings and alerts for KPIs.
 							</h5>
 							<p class="lead">
@@ -111,7 +111,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Track VM hardware and configuration changes.
 							</h5>
 							<p class="lead">
@@ -131,7 +131,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Merge Events and Performance data.
 							</h5>
 							<p class="lead">
@@ -156,7 +156,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Not just the hypervisor.
 							</h5>
 							<p class="lead">

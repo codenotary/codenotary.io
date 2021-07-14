@@ -47,7 +47,7 @@
 					:key="index"
 					class="table"
 				>
-					<p class="table_title _font-weight-bold">
+					<p class="table_title font-weight-bold">
 						{{ table.title }}
 					</p>
 					<div

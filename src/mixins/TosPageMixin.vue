@@ -11,7 +11,7 @@
 						<li
 							v-for="article in articles"
 							:key="article.slug"
-							class="_margin-top-1 _text-center"
+							class="mt-4 text-center"
 						>
 							<nuxt-link :to="{ name: 'terms-of-service-slug', params: { slug: article.slug } }">
 								{{ article.title }}
@@ -27,7 +27,7 @@
 				<v-col
 					v-if="article.download"
 					xs="12"
-					class="_margin-top-4 _display-flex _justify-content-center _align-content-center"
+					class="_margin-top-4 d-flex justify-center _align-content-center"
 				>
 					<v-col
 						xs="12"

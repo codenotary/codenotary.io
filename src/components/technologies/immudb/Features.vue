@@ -5,14 +5,14 @@
 		:bottom="2"
 	>
 		<v-container>
-			<v-row class="_display-flex _justify-content-center">
+			<v-row class="d-flex justify-center">
 				<v-col>
 					<UiPageSectionHeader :bottom="0" title="Features" />
 				</v-col>
 			</v-row>
-			<v-row class="_padding-x-0 _display-flex _flex-direction-column _justify-content-center">
+			<v-row class="_padding-x-0 d-flex flex-column justify-center">
 				<v-col
-					class="_margin-top-0 _margin-x-auto _text-center"
+					class="_margin-top-0 _margin-x-auto text-center"
 					xs="12"
 					sm="12"
 					md="8"
@@ -25,15 +25,15 @@
 					sm="12" md="10"
 					xl="10"
 				>
-					<v-row class="_padding-x-0 _display-flex _justify-content-center">
+					<v-row class="_padding-x-0 d-flex justify-center">
 						<v-col
 							xs="6" sm="6"
 							md="6" lg="6"
 							xl="6"
 						>
-							<div class="immudb-feature cn-bg-brand cn-text-white _display-flex _flex-direction-column">
+							<div class="immudb-feature cn-bg-brand cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/integrity.svg">
-								<h4 class="cn-text-white _font-weight-bold _text-center _margin-0 _margin-top-1">
+								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
 									Transactional Integrity
 								</h4>
 							</div>
@@ -43,9 +43,9 @@
 							md="6" lg="6"
 							xl="6"
 						>
-							<div class="immudb-feature cn-bg-primary cn-text-white _display-flex _flex-direction-column">
+							<div class="immudb-feature cn-bg-primary cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/acid_compliance.svg">
-								<h4 class="cn-text-white _font-weight-bold _text-center _margin-0 _margin-top-1">
+								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
 									ACID Compliance
 								</h4>
 							</div>
@@ -57,9 +57,9 @@
 							md="4" lg="4"
 							xl="4"
 						>
-							<div class="immudb-feature cn-bg-secondary cn-text-white _display-flex _flex-direction-column">
+							<div class="immudb-feature cn-bg-secondary cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/auditor.svg">
-								<h4 class="cn-text-white _font-weight-bold _text-center _margin-0 _margin-top-1">
+								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
 									Auditor
 								</h4>
 							</div>
@@ -69,9 +69,9 @@
 							md="8" lg="8"
 							xl="8"
 						>
-							<div class="immudb-feature cn-bg-cyan cn-text-white _display-flex _flex-direction-column">
+							<div class="immudb-feature cn-bg-cyan cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/sdk.svg">
-								<h4 class="cn-text-white _font-weight-bold _text-center _margin-0 _margin-top-1">
+								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
 									SDKs for Python, Node.js, Java, Go
 								</h4>
 							</div>

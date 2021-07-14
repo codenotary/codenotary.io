@@ -23,7 +23,7 @@
 							src="/images/ci-cd/features/easy_to_use.svg"
 							alt="Easy to use"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Easy to use
 						</h4>
 						<p class="lead">
@@ -43,7 +43,7 @@
 							src="/images/ci-cd/features/tamperproof.svg"
 							alt="Tamperproof"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Tamperproof
 						</h4>
 						<p class="lead">
@@ -63,7 +63,7 @@
 							src="/images/ci-cd/features/full_transparency.svg"
 							alt="Full transparency"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Full transparency
 						</h4>
 						<p class="lead">
@@ -83,7 +83,7 @@
 							src="/images/ci-cd/features/notarize.svg"
 							alt="Notarize"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Notarize
 						</h4>
 						<p class="lead">
@@ -103,7 +103,7 @@
 							src="/images/ci-cd/features/authenticate.svg"
 							alt="Authenticate"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Authenticate
 						</h4>
 						<p class="lead">

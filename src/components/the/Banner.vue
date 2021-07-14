@@ -1,19 +1,19 @@
 <template>
-	<section class="banner _padding-y-0 _justify-content-center _align-items-center">
+	<section class="banner _padding-y-0 justify-center align-center">
 		<!-- <v-container fluid> -->
 		<v-row>
 			<v-col
-				class="_display-flex _justify-content-center _align-items-center"
+				class="d-flex justify-center align-center"
 				:xs="true"
 			>
 				<span
-					class="-caption _font-weight-bold"
+					class="-caption font-weight-bold"
 				>
 					Free tamperproof timestamp service for your CI/CD process
 				</span>
 				&nbsp;
 				<a
-					class="_margin-left-0 _margin-sm-left-2 _font-weight-bold _text-decoration-underline"
+					class="_margin-left-0 _margin-sm-left-2 font-weight-bold text-decoration-underline"
 					variant="dark"
 					outline
 					size="sm"

@@ -5,7 +5,7 @@
 			:bottom="0"
 		/>
 		<v-container>
-			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+			<v-row class="_padding-x-0 d-flex justify-center">
 				<v-col
 					class="_margin-x-auto" xs="12"
 					sm="12" md="8"
@@ -14,13 +14,13 @@
 					Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems derived from them, such as Kubernetes and Docker.
 				</v-col>
 			</v-row>
-			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+			<v-row class="_padding-x-0 d-flex justify-center">
 				<v-col
 					class="_margin-top-2 _margin-x-auto" xs="12"
 					sm="12" md="8"
 					lg="8"
 				>
-					<p class="action _display-flex _flex-direction-row _justify-content-center">
+					<p class="action d-flex flex-row justify-center">
 						<UiButtonCn
 							variant="secondary"
 							href="https://docs.immudb.io"

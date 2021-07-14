@@ -7,7 +7,7 @@
 		>
 
 		<h1 class="d6">
-			<span class="_text-primary">Zero-Trust</span> Consortium
+			<span class="primary--text">Zero-Trust</span> Consortium
 		</h1>
 		<p class="description lead">
 			A very fast consortium blockchain for the software industry

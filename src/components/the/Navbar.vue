@@ -1,122 +1,126 @@
 <template>
-	<i-navbar
+	<v-app-bar
 		id="navbar"
 		:class="{
 			'-scrolled': scrolled,
 		}"
+		:elevation="2"
 	>
-		<i-navbar-brand
+		<v-app-bar-nav-icon
 			:to="{ name: 'index' }"
 			class="_padding-0"
 		>
 			<img
-				class="logo _padding-y-1-2"
+				class="logo py-4-2"
 				:src="`/images/logo/logo_white.svg`"
 				alt="CodeNotary"
 			>
-		</i-navbar-brand>
-		<i-navbar-items class="_justify-content-end no-transform">
-			<i-nav>
-				<i-dropdown
-					ref="dropdownRef"
-					class="navbar-dropdown _visible-lg-and-up"
-					trigger="hover"
-					:value="productsMenuOpen"
-					@change="productsMenuOpen = $event"
+		</v-app-bar-nav-icon>
+		<v-container
+			class="ma-0 pa-0 d-flex flex-column justify-start align-center"
+			fluid
+		>
+			<v-row class="h-64 ma-0 pa-0 d-flex flex-start align-center fill-width">
+				<v-col
+					class="ma-0 pa-0 d-flex align-center"
+					cols="12"
 				>
-					<i-nav-item
-						class="product-toggle"
-						:class="{
-							'-active': subRouteActive('/products'),
-							'open': productsMenuOpen,
-						}"
-					>
-						Products
-					</i-nav-item>
-					<i-dropdown-menu>
-						<UiMenuGlobal
-							:scrolled="scrolled"
-							@close="closeNavbar"
-						/>
-					</i-dropdown-menu>
-				</i-dropdown>
+					<div class="d-none-md-and-down">
+						<v-menu
+							ref="dropdownRef"
+							class="navbar-dropdown _visible-lg-and-up"
+							trigger="hover"
+							:value="productsMenuOpen"
+							@change="productsMenuOpen = $event"
+						>
+							<div
+								class="product-toggle"
+								:class="{
+									'-active': subRouteActive('/products'),
+									'open': productsMenuOpen,
+								}"
+							>
+								Products
+							</div>
+							<v-menu>
+								<UiMenuGlobal
+									:scrolled="scrolled"
+									@close="closeNavbar"
+								/>
+							</v-menu>
+						</v-menu>
+					</div>
+					<div class="d-none-lg-and-up">
+						<p
+							class="header"
+							:class="{'cn-text-secondary': productsMenuOpen, 'white--text': !productsMenuOpen}"
+							@click.prevent.stop="productsMenuOpen = !productsMenuOpen"
+						>
+							Products
+						</p>
+						<div
+							v-if="productsMenuOpen"
+							:to="{ name: 'products-ci-cd' }"
+						>
+							CNIL Cloud
+						</div>
+						<div
+							v-if="productsMenuOpen"
+							:to="{ name: 'products-immutable-ledger-metrics-and-logs' }"
+						>
+							CNIL Metrics and Logs
+						</div>
+					</div>
 
-				<!-- PRODUCTS (md-and-down) -->
-				<i-nav class="dropdown-fallback-nav _visible-md-and-down" vertical>
-					<p
-						class="header"
-						:class="{'cn-text-secondary': productsMenuOpen, '_text-white': !productsMenuOpen}"
-						@click.prevent.stop="productsMenuOpen = !productsMenuOpen"
+					<div
+						class="white--text"
+						:to="{ name: 'technologies-immudb' }"
 					>
-						Products
-					</p>
-					<!--
-					<i-nav-item
-						v-if="productsMenuOpen"
-						:to="{ name: 'products-immutable-ledger' }"
-					>
-						CNIL (Self-Hosted)
-					</i-nav-item>-->
-					<i-nav-item
-						v-if="productsMenuOpen"
-						:to="{ name: 'products-ci-cd' }"
-					>
-						CNIL Cloud
-					</i-nav-item>
-					<i-nav-item
-						v-if="productsMenuOpen"
-						:to="{ name: 'products-immutable-ledger-metrics-and-logs' }"
-					>
-						CNIL Metrics and Logs
-					</i-nav-item>
-				</i-nav>
+						immudb
+					</div>
 
-				<i-nav-item
-					class="_text-xs-white"
-					:to="{ name: 'technologies-immudb' }"
-				>
-					immudb
-				</i-nav-item>
-
-				<!-- BLOG POSTS -->
-				<i-nav-item
-					class="_text-xs-white"
-					:to="{ name: 'blog' }"
-				>
-					Blog
-				</i-nav-item>
-
-				<!-- CONTACT US -->
-				<i-nav-item
-					:to="{ name: 'contact' }"
-				>
-					Contact us
-				</i-nav-item>
-				<transition name="fade">
-					<UiButtonCn
-						v-if="scrolled && $route.name === 'index'"
-						class="cta-button"
-						variant="secondary"
-						@click.native="onDownloadClick"
+					<!-- BLOG POSTS -->
+					<div
+						class="white--text"
+						:to="{ name: 'blog' }"
 					>
-						Download
-					</UiButtonCn>
-				</transition>
-				<transition name="fade">
-					<UiButtonCn
-						v-if="scrolled && $route.name === 'technologies-immudb'"
-						class="cta-button"
-						variant="secondary"
-						href="https://docs.immudb.io/"
-						target="_blank"
-						rel="nofollow"
+						Blog
+					</div>
+
+					<!-- CONTACT US -->
+					<div
+						:to="{ name: 'contact' }"
 					>
-						Documentation
-					</UiButtonCn>
-				</transition>
-			</i-nav>
-		</i-navbar-items>
-	</i-navbar>
+						Contact us
+					</div>
+
+					<!-- CTAs -->
+					<transition name="fade">
+						<UiButtonCn
+							v-if="scrolled && $route.name === 'index'"
+							class="cta-button"
+							variant="secondary"
+							@click.native="onDownloadClick"
+						>
+							Download
+						</UiButtonCn>
+					</transition>
+					<transition name="fade">
+						<UiButtonCn
+							v-if="scrolled && $route.name === 'technologies-immudb'"
+							class="cta-button"
+							variant="secondary"
+							href="https://docs.immudb.io/"
+							target="_blank"
+							rel="nofollow"
+						>
+							Documentation
+						</UiButtonCn>
+					</transition>
+				</v-col>
+			</v-row>
+		</v-container>
+	</v-app-bar>
 </template>
 
 <script>

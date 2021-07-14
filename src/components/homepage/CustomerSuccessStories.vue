@@ -15,7 +15,7 @@
 					</UiPageSectionHeader>
 				</v-col>
 				<v-col
-					class="_margin-bottom-4 _display-flex _justify-content-center _align-items-center"
+					class="_margin-bottom-4 d-flex justify-center align-center"
 					xs="12"
 					sm="12"
 				>

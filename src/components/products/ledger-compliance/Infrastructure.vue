@@ -10,7 +10,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Query Ledger data.
 							</h5>
 							<p class="lead">
@@ -35,7 +35,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Java SDK
 							</h5>
 							<p class="lead">
@@ -67,7 +67,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Python SDKs
 							</h5>
 							<p class="lead">
@@ -104,7 +104,7 @@
 							md="6"
 							lg="6"
 						>
-							<h5 class="title _text-primary _font-weight-bold">
+							<h5 class="title primary--text font-weight-bold">
 								Change data capture recording for databases.
 							</h5>
 							<p class="lead">

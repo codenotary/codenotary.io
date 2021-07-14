@@ -1,33 +1,33 @@
 <template>
-	<i-navbar
+	<v-app-vbar
 		id="tos-sub-navbar"
 		class="sub-navbar _padding-0"
 		fluid
 		:collapse="false"
 	>
-		<i-navbar-items class="_justify-content-center">
-			<i-nav>
-				<i-nav-item
-					class="_padding-1"
-					:to="{ name: 'terms-of-service-slug', params: { slug: 'services-agreement' } }"
-				>
-					Services Agreement
-				</i-nav-item>
-				<i-nav-item
-					class="_padding-1"
-					:to="{ name: 'terms-of-service-slug', params: { slug: 'subscription-agreement' } }"
-				>
-					Codenotary Immutable Ledger® Subscription Agreement
-				</i-nav-item>
-				<i-nav-item
-					class="_padding-1"
-					:to="{ name: 'terms-of-service-slug', params: { slug: 'metrics-and-logs-perpetual-agreement' } }"
-				>
-					Metrics and Logs Perpetual Agreement
-				</i-nav-item>
-			</i-nav>
-		</i-navbar-items>
-	</i-navbar>
+		<v-tabs
+			class="d-flex align-center justify-center"
+		>
+			<v-tab
+				class="pa-4"
+				:to="{ name: 'terms-of-service-slug', params: { slug: 'services-agreement' } }"
+			>
+				Services Agreement
+			</v-tab>
+			<v-tab
+				class="pa-4"
+				:to="{ name: 'terms-of-service-slug', params: { slug: 'subscription-agreement' } }"
+			>
+				Codenotary Immutable Ledger® Subscription Agreement
+			</v-tab>
+			<v-tab
+				class="pa-4"
+				:to="{ name: 'terms-of-service-slug', params: { slug: 'metrics-and-logs-perpetual-agreement' } }"
+			>
+				Metrics and Logs Perpetual Agreement
+			</v-tab>
+		</v-tabs>
+	</v-app-vbar>
 </template>
 
 <script>

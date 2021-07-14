@@ -2,28 +2,28 @@
 	<UiPageSection>
 		<UiPageSectionHeader :title="article.title" tag="h1" />
 		<v-container>
-			<v-row class="_display-flex _flex-direction-column">
+			<v-row class="d-flex flex-column">
 				<v-col
-					v-if="article.location || article.type || article.requires" class="_margin-bottom-1"
+					v-if="article.location || article.type || article.requires" class="mb-4"
 					xs="12"
 				>
 					<i-card>
 						<p v-if="article.location || article.type" class="_margin-top-0 _margin-bottom-0">
 							<i-badge
-								v-if="article.location" class="_margin-top-1-4 _margin-right-1-4"
+								v-if="article.location" class="mt-4-4 mr-4-4"
 								size="sm"
 							>
 								{{ article.location }}
 							</i-badge>
 							<i-badge
-								v-if="article.type" class="_margin-top-1-4 _margin-right-1-4"
+								v-if="article.type" class="mt-4-4 mr-4-4"
 								size="sm"
 							>
 								{{ article.type }}
 							</i-badge>
 						</p>
 						<p
-							v-if="article.requires" class="lead _margin-top-1 _margin-right-1-4 _margin-bottom-0"
+							v-if="article.requires" class="lead mt-4 mr-4-4 _margin-bottom-0"
 							style="font-size: 80%;"
 						>
 							{{ article.requires }}
@@ -37,7 +37,7 @@
 				</v-col>
 				<v-col
 					v-if="article.apply" xs="12"
-					class="_margin-top-4 _display-flex _justify-content-center _align-content-center"
+					class="_margin-top-4 d-flex justify-center _align-content-center"
 				>
 					<v-col
 						xs="12" sm="10"

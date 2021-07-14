@@ -9,7 +9,7 @@
 					/>
 				</v-col>
 			</v-row>
-			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+			<v-row class="_padding-x-0 d-flex justify-center">
 				<v-col
 					class="_margin-x-auto"
 					xs="12"
@@ -23,9 +23,9 @@
 					</span>
 				</v-col>
 			</v-row>
-			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+			<v-row class="_padding-x-0 d-flex justify-center">
 				<v-row
-					class="_padding-x-0 _display-flex _justify-content-center"
+					class="_padding-x-0 d-flex justify-center"
 					style="max-width: 100%;"
 				>
 					<v-col
@@ -51,7 +51,7 @@
 						md="12"
 						lg="12"
 					>
-						<p class="action _display-flex _flex-direction-row _justify-content-center">
+						<p class="action d-flex flex-row justify-center">
 							<UiButtonCn
 								variant="secondary"
 								href="https://docs.immudb.io"

@@ -11,13 +11,13 @@
 					/>
 				</v-col>
 			</v-row>
-			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+			<v-row class="_padding-x-0 d-flex justify-center">
 				<v-col
-					class="_margin-bottom-2 _margin-x-auto _text-center" xs="12"
+					class="_margin-bottom-2 _margin-x-auto text-center" xs="12"
 					sm="12" md="8"
 					lg="8"
 				>
-					<span class="_text-white _text-center">
+					<span class="white--text text-center">
 						We have carefully designed immudb to be the one-stop intuitive immutable database solution, simple to write and simple to use.
 					</span>
 				</v-col>
@@ -34,11 +34,11 @@
 							:title="'Connect to immudb'"
 						>
 							<v-row
-								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
+								class="image-wrapper px-4 d-flex justify-center"
 							>
 								<v-col
 
-									class="_display-flex _justify-content-center _align-items-center"
+									class="d-flex justify-center align-center"
 									xs="12"
 									sm="12"
 									md="12"
@@ -64,11 +64,11 @@
 							title="Store data tamperproof"
 						>
 							<v-row
-								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
+								class="image-wrapper px-4 d-flex justify-center"
 							>
 								<v-col
 
-									class="_display-flex _justify-content-center _align-items-center"
+									class="d-flex justify-center align-center"
 									xs="12"
 									sm="12"
 									md="12"
@@ -92,11 +92,11 @@
 							title="Read verified data"
 						>
 							<v-row
-								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
+								class="image-wrapper px-4 d-flex justify-center"
 							>
 								<v-col
 
-									class="_display-flex _justify-content-center _align-items-center"
+									class="d-flex justify-center align-center"
 									xs="12"
 									sm="12"
 									md="12"

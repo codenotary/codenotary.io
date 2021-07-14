@@ -6,7 +6,7 @@
 			</h1>
 		</UiPageSectionHeader>
 		<v-container>
-			<v-row class="_text-center">
+			<v-row class="text-center">
 				<v-col id="map-embed">
 					<div class="_embed-16by9">
 						<LazyHydrate when-idle>
@@ -21,16 +21,16 @@
 							/>
 						</LazyHydrate>
 					</div>
-					<h3 class="_margin-top-1">
+					<h3 class="mt-4">
 						CodeNotary, Inc.
 					</h3>
-					<div class="_margin-top-1">
+					<div class="mt-4">
 						6750 West Loop South
 					</div>
-					<div class="_margin-top-1">
+					<div class="mt-4">
 						Suite 845
 					</div>
-					<div class="_margin-bottom-1 _font-size-sm">
+					<div class="mb-4 _font-size-sm">
 						Bellaire, TX 77401
 					</div>
 				</v-col>

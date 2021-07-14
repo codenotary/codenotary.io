@@ -4,7 +4,7 @@
 		:top="1"
 		:bottom="0"
 	>
-		<v-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
+		<v-container class="d-flex flex-column align-center justify-center">
 			<UiPageSectionHeader
 				weight="bold"
 				:title="content.heroCardsSection.title"
@@ -12,12 +12,12 @@
 				:bottom="0"
 			/>
 		</v-container>
-		<v-container class="_display-flex _align-items-center _justify-content-center _flex-direction-row-wrap cn-text-dark">
+		<v-container class="d-flex align-center justify-center flex-row-wrap cn-text-dark">
 			<v-row class="about-immudb-cards">
 				<v-col
 					v-for="(card, index) in content.heroCardsSection.cards"
 					:key="index"
-					class="_margin-top-1 _padding-bottom-1"
+					class="mt-4 pb-4"
 					xs="12"
 					sm="6"
 					md="4"

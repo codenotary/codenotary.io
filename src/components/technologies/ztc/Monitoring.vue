@@ -9,7 +9,7 @@
 				</v-col>
 			</v-row>
 			<v-row>
-				<v-col class="_text-center">
+				<v-col class="text-center">
 					<img
 						id="ztc-monitoring-image"
 						class="image -responsive"

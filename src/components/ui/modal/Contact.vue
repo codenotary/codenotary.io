@@ -11,7 +11,7 @@
 		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 		<div
 			v-if="!injected"
-			class="_display-flex _justify-content-center _align-items-center"
+			class="d-flex justify-center align-center"
 			style="height: 240px; width: 100%;"
 		>
 			<i-loader

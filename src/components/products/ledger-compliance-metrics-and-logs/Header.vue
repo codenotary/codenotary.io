@@ -1,6 +1,6 @@
 <template>
 	<v-app-bar id="lc-metrics-and-logs-header">
-		<v-row class="_align-items-center">
+		<v-row class="align-center">
 			<v-col xs="12" md="6">
 				<h2 class="-title _margin-bottom-0" style="text-transform: uppercase;">
 					CNIL Metrics and Logs
@@ -8,7 +8,7 @@
 				<p class="cn-text-xs _font-italic _margin-top-0">
 					(former Opvizor Performance Analyzer)
 				</p>
-				<h1 class="title _font-weight-bold _text-primary _margin-top-0">
+				<h1 class="title font-weight-bold primary--text _margin-top-0">
 					VMware vSphere & Cloud - Performance monitoring, log analysis, license compliance!
 				</h1>
 				<p class="lead _margin-bottom-0">
@@ -42,7 +42,7 @@
 					</v-btn>
 					<v-btn
 						color="primary"
-						class="_margin-left-1"
+						class="ml-4"
 						@click="startTrialModalOpen = true"
 					>
 						Start trial
@@ -52,7 +52,7 @@
 			<v-col
 				xs="12"
 				md="6"
-				class="_text-center _margin-top-xs-2"
+				class="text-center _margin-top-xs-2"
 			>
 				<img
 					class="zoom"

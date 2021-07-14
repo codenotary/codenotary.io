@@ -4,7 +4,7 @@
 		:bottom="0"
 		:top="1"
 	>
-		<v-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
+		<v-container class="d-flex flex-column align-center justify-center">
 			<UiPageSectionHeader
 				weight="bold"
 				:title="content.whatWeDoSection.title"
@@ -12,8 +12,8 @@
 				:bottom="0"
 			/>
 		</v-container>
-		<v-container class="_display-flex _align-items-center _justify-content-center _flex-direction-column cn-text-dark _padding-left-0 _padding-right-0">
-			<h6 class="subheader _margin-0 _text-center">
+		<v-container class="d-flex align-center justify-center flex-column cn-text-dark _padding-left-0 _padding-right-0">
+			<h6 class="subheader _margin-0 text-center">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
 			<v-container class="what_we_do-cards">

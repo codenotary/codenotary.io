@@ -26,7 +26,7 @@
 						]"
 					>
 						<p>
-							Don't trust central or online services to provide immutability for your precious data. CNIL uses the world's fastest immutable database <span class="_font-weight-bold">immudb</span>, to provide full immutability and client-cryptographic proof.
+							Don't trust central or online services to provide immutability for your precious data. CNIL uses the world's fastest immutable database <span class="font-weight-bold">immudb</span>, to provide full immutability and client-cryptographic proof.
 							That cryptographic verification guarantees data integrity and tamper-evidence.
 						</p>
 					</UiFeature>
@@ -53,7 +53,7 @@
 					>
 						<p>
 							To keep up with today's need for high-speed applications, you need a high-speed database.
-							This new class of immutable database, allows to directly store and access data, without compromising <span class="_font-weight-bold">performance</span>.
+							This new class of immutable database, allows to directly store and access data, without compromising <span class="font-weight-bold">performance</span>.
 							CNIL is able to support 10.000.000 transactions a second.
 							Immutability and high-speed performance - first time combined.
 						</p>
@@ -116,7 +116,7 @@
 						]"
 					>
 						<p>
-							Deploy as a virtual appliance or install on any Linux system, <span class="_font-weight-bold">CNIL</span>
+							Deploy as a virtual appliance or install on any Linux system, <span class="font-weight-bold">CNIL</span>
 							is ready within minutes to receive and store your data tamper-proof. You can run CNIL on-premise, in the cloud
 							or in hybrid environments. If you wish for an independent deployment outside of your environment, we offer
 							managed service as well.
@@ -128,7 +128,7 @@
 				class="_margin-top-xs-2 _margin-top-sm-4 _margin-top-md-4 _margin-top-lg-4 _margin-top-xl-4"
 			>
 				<v-col
-					class="_text-center _text-muted"
+					class="text-center _text-muted"
 					style="height: 100%;"
 				>
 					<ul class="list -unstyled">

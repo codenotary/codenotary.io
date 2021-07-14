@@ -25,19 +25,19 @@
 							<i-card v-if="article.active" class="career-post">
 								<div>
 									<nuxt-link :to="{ name: 'join-post', params: { post: article.slug } }">
-										<div v-if="article.title" class="_overlay-link title _margin-bottom-1 _text-weight-bold">
+										<div v-if="article.title" class="_overlay-link title mb-4 _text-weight-bold">
 											{{ article.title | truncate(64, '...') }}
 										</div>
 									</nuxt-link>
-									<div v-if="article.location" class="location _margin-bottom-1">
+									<div v-if="article.location" class="location mb-4">
 										<fa icon="globe" style="margin-right: 0.5rem;" />
 										{{ article.location }}
 									</div>
-									<div v-if="article.type" class="type _margin-bottom-1">
+									<div v-if="article.type" class="type mb-4">
 										<fa icon="award" style="margin-right: 0.5rem;" />
 										{{ article.type }}
 									</div>
-									<div v-if="article.requires" class="requires lead _margin-bottom-1">
+									<div v-if="article.requires" class="requires lead mb-4">
 										{{ article.requires }}
 									</div>
 								</div>

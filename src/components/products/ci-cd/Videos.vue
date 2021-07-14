@@ -6,13 +6,13 @@
 		<v-container>
 			<VueSlickCarousel v-bind="settings" @beforeChange="page = $event">
 				<div>
-					<v-row middle class="_padding-1">
+					<v-row middle class="pa-4">
 						<v-col
 							xs="12"
 							sm="12"
 							md="4"
 						>
-							<h4 class="title _font-weight-bold _text-primary">
+							<h4 class="title font-weight-bold primary--text">
 								immudb is a lightweight, high-speed immutable database for systems and applications.
 							</h4>
 							<p class="lead">
@@ -39,13 +39,13 @@
 					</v-row>
 				</div>
 				<div>
-					<v-row middle class="_padding-1">
+					<v-row middle class="pa-4">
 						<v-col
 							xs="12"
 							sm="12"
 							md="4"
 						>
-							<h4 class="title _font-weight-bold _text-primary">
+							<h4 class="title font-weight-bold primary--text">
 								Email and Attachment Trust & Integrity
 							</h4>
 							<p class="lead">
@@ -72,13 +72,13 @@
 					</v-row>
 				</div>
 				<div>
-					<v-row middle class="_padding-1">
+					<v-row middle class="pa-4">
 						<v-col
 							xs="12"
 							sm="12"
 							md="4"
 						>
-							<h4 class="title _font-weight-bold _text-primary">
+							<h4 class="title font-weight-bold primary--text">
 								Trusted DevOps and CI/CD using CodeNotary.
 							</h4>
 							<p class="lead">

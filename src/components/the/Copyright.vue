@@ -7,12 +7,12 @@
 		<v-container>
 			<v-row class="row-container">
 				<v-col
-					class="_display-flex _justify-content-start"
+					class="d-flex justify-start"
 				>
 					Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
 				</v-col>
 				<v-col
-					class="_display-flex _justify-content-end _font-weight-bold"
+					class="d-flex justify-end font-weight-bold"
 				>
 					<router-link :to="{ name: 'terms-of-service' }">
 						Terms of Service

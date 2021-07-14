@@ -3,7 +3,7 @@
 		<v-container>
 			<v-row>
 				<v-col>
-					<p class="action _text-center">
+					<p class="action text-center">
 						<v-btn
 							color="primary"
 							@click="$emit('onPartnerModal')"

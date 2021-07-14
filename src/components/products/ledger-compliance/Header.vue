@@ -1,11 +1,11 @@
 <template>
 	<v-app-bar id="lc-header">
-		<v-row class="_align-items-center">
+		<v-row class="align-center">
 			<v-col xs="12" md="6">
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
 					Immutable Ledger (on-premise)
 				</h5>
-				<h1 class="title _font-weight-bold _text-primary _margin-top-0">
+				<h1 class="title font-weight-bold primary--text _margin-top-0">
 					We provide an immutable and tamperproof ledger for your transactional systems
 				</h1>
 				<p class="lead _margin-bottom-0">
@@ -25,7 +25,7 @@
 					</v-btn>
 					<v-btn
 						color="primary"
-						class="_margin-left-1"
+						class="ml-4"
 						@click="$emit('onLedgerComplianceModal')"
 					>
 						Start trial
@@ -33,7 +33,7 @@
 				</p>
 			</v-col>
 			<v-col
-				class="_text-center _margin-top-xs-2"
+				class="text-center _margin-top-xs-2"
 				xs="12"
 				md="6"
 			>

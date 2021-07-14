@@ -26,7 +26,7 @@
 							src="/images/careers/hearth.svg"
 							alt="Intellectual Honesty"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Intellectual Honesty
 						</h4>
 						<p class="lead">
@@ -46,7 +46,7 @@
 							src="/images/careers/lightning.svg"
 							alt="Speed"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Speed
 						</h4>
 						<p class="lead">
@@ -66,7 +66,7 @@
 							src="/images/careers/star.svg"
 							alt="Excellence"
 						>
-						<h4 class="title _font-weight-bold _text-primary">
+						<h4 class="title font-weight-bold primary--text">
 							Excellence
 						</h4>
 						<p class="lead">

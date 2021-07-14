@@ -14,14 +14,14 @@
 			</div>
 
 			<div class="body">
-				<h4 class="cn-text-brand _font-weight-bold _text-center _margin-0">
+				<h4 class="cn-text-brand font-weight-bold text-center _margin-0">
 					{{ product.title }}
 				</h4>
-				<p class="cn-text-dark _margin-0 _text-center _flex-grow-1">
+				<p class="cn-text-dark _margin-0 text-center _flex-grow-1">
 					{{ product.subtitle }}
 				</p>
 				<nuxt-link
-					class="cn-text-brand _font-weight-bold menu-action"
+					class="cn-text-brand font-weight-bold menu-action"
 					:to="product.internalLink"
 					@click.native="$emit('close')"
 				>

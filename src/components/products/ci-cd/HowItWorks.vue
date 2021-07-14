@@ -11,7 +11,7 @@
 					<VueSlickCarousel v-bind="settings">
 						<div>
 							<i-card>
-								<h5 class="title _font-weight-bold _text-primary">
+								<h5 class="title font-weight-bold primary--text">
 									1. Sign up
 								</h5>
 								<p class="lead">
@@ -28,7 +28,7 @@
 						</div>
 						<div>
 							<i-card>
-								<h5 class="title _font-weight-bold _text-primary">
+								<h5 class="title font-weight-bold primary--text">
 									2. Create a unique identity
 								</h5>
 								<p class="lead">
@@ -41,7 +41,7 @@
 						</div>
 						<div>
 							<i-card>
-								<h5 class="title _font-weight-bold _text-primary">
+								<h5 class="title font-weight-bold primary--text">
 									3. Notarize your digital asset
 								</h5>
 								<p class="lead">
@@ -50,14 +50,14 @@
 								<p class="lead">
 									We at CodeNotary did everything to enable a highly secure (Blockchain-strong) service that timestamps a unique digital asset identity together with your unique identity (notarization).
 								</p>
-								<p class="lead _font-weight-bold">
+								<p class="lead font-weight-bold">
 									Your file is never uploaded!
 								</p>
 							</i-card>
 						</div>
 						<div>
 							<i-card>
-								<h5 class="title _font-weight-bold _text-primary">
+								<h5 class="title font-weight-bold primary--text">
 									4. Authenticate
 								</h5>
 								<p class="lead">

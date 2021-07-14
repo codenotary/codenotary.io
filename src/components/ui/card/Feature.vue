@@ -10,7 +10,7 @@
 			:alt="title"
 		>
 		<slot name="icon" />
-		<h3 v-if="title" class="title _text-primary">
+		<h3 v-if="title" class="title primary--text">
 			{{ title }}
 		</h3>
 		<h5 v-if="subtitle" class="title">

@@ -3,13 +3,13 @@
 		<v-app-bar
 			id="immudb-header"
 		>
-			<v-row class="_align-items-center main-content">
+			<v-row class="align-center main-content">
 				<v-col lg="5">
-					<h1 class="_font-weight-bold cn-text-white title first">
+					<h1 class="font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h1>
 					<h3
-						class="_font-weight-bold _font-uppercase cn-text-white title second"
+						class="font-weight-bold _font-uppercase cn-text-white title second"
 						v-html="content.headerSection.title2"
 					/>
 					<p class="cn-text-white title third">
@@ -48,7 +48,7 @@
 								src="/icons/research_paper.svg"
 								alt="research paper"
 							>
-							<span class="_margin-left-1-2 _text-decoration-underline">
+							<span class="ml-4-2 text-decoration-underline">
 								Research Paper
 							</span>
 						</a>
@@ -57,7 +57,7 @@
 								src="/icons/immutable_data_science.svg"
 								alt="immutable data science"
 							>
-							<span class="_margin-left-1-2 _text-decoration-underline">
+							<span class="ml-4-2 text-decoration-underline">
 								Immutable Data Science
 							</span>
 						</a>
@@ -69,7 +69,7 @@
 								src="/icons/github.svg"
 								alt="github"
 							>
-							<span class="_margin-left-1-2 _text-decoration-underline">
+							<span class="ml-4-2 text-decoration-underline">
 								GitHub
 							</span>
 						</a>

@@ -4,7 +4,7 @@
 		variant="gradient_inverse"
 		:top="6"
 	>
-		<v-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
+		<v-container class="container d-flex flex-column align-center justify-center">
 			<UiPageSectionHeader
 				weight="bold"
 				color="white"
@@ -12,10 +12,10 @@
 				:top="0"
 				:bottom="0"
 			/>
-			<p class="_text-center _margin-top-0 subtitle">
+			<p class="text-center _margin-top-0 subtitle">
 				{{ content.newsletterSection.subtitle }}
 			</p>
-			<div class="_display-flex _width-100 _justify-content-center _align-items-center">
+			<div class="d-flex _width-100 justify-center align-center">
 				<UiButtonCn
 					type="submit"
 					class="action-button"

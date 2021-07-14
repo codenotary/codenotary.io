@@ -6,10 +6,10 @@
 		<v-container>
 			<v-row>
 				<v-col>
-					<h5 class="description lead _text-center _margin-bottom-3">
+					<h5 class="description lead text-center _margin-bottom-3">
 						Ready to try? Get started in a fistful of clicks!
 					</h5>
-					<p class="action _text-center">
+					<p class="action text-center">
 						<v-btn
 							color="primary"
 							href="https://dashboard.codenotary.io/auth/signup"

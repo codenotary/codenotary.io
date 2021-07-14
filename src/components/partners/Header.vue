@@ -1,8 +1,8 @@
 <template>
 	<v-app-bar id="about-header">
-		<v-row class="_align-items-center">
+		<v-row class="align-center">
 			<v-col xs="12" md="8">
-				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
+				<h1 class="d6 font-weight-bold primary--text _margin-top-0">
 					Our Partners
 				</h1>
 				<div class="button-wrapper">

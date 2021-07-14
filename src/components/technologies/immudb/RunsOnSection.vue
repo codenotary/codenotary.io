@@ -24,12 +24,12 @@
 							:title="item.title"
 						>
 							<v-row
-								class="image-wrapper _padding-x-1 _display-flex _justify-content-center"
+								class="image-wrapper px-4 d-flex justify-center"
 							>
 								<v-col
 									v-for="(subitem, idx) in item.subitems"
 									:key="`${subitem}-${idx}`"
-									class="_display-flex _justify-content-center _align-items-center"
+									class="d-flex justify-center align-center"
 									xs="6"
 									sm="6"
 									md="2"

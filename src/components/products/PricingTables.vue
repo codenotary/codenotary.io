@@ -8,9 +8,9 @@
 				Get CodeNotary Immutable Ledger&reg; up and running in no time
 			</h5>
 		</div>
-		<v-row class="_display-flex _justify-content-center _align-items-start">
+		<v-row class="d-flex justify-center align-start">
 			<v-col
-				class="_display-flex _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
+				class="d-flex _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12"
 				sm="8"
 				md="4"
@@ -26,7 +26,7 @@
 					</template>
 					<template slot="cta">
 						<v-btn
-							class="_font-weight-bold"
+							class="font-weight-bold"
 							color="primary"
 							style="min-width: 144px; border-width: 2px;"
 							:outline="true"
@@ -36,7 +36,7 @@
 						</v-btn>
 					</template>
 					<hr
-						class="line _margin-top-2 _margin-bottom-1"
+						class="line _margin-top-2 mb-4"
 					>
 					<UiPricingTableRow>
 						10GB storage
@@ -68,7 +68,7 @@
 				</UiPricingTable>
 			</v-col>
 			<v-col
-				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
+				class="d-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12"
 				sm="8"
 				md="4"
@@ -87,7 +87,7 @@
 					</template>
 					<template slot="cta">
 						<v-btn
-							class="_font-weight-bold"
+							class="font-weight-bold"
 							color="primary"
 							style="min-width: 144px; border-width: 2px;"
 							:outline="true"
@@ -97,7 +97,7 @@
 						</v-btn>
 					</template>
 					<hr
-						class="line _margin-top-2 _margin-bottom-1"
+						class="line _margin-top-2 mb-4"
 					>
 					<UiPricingTableRow>
 						1TB storage limit
@@ -129,7 +129,7 @@
 				</UiPricingTable>
 			</v-col>
 			<v-col
-				class="_display-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
+				class="d-flex _padding-x-xs-1 _margin-top-xs-2 _padding-x-sm-1 _margin-top-sm-3 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 				xs="12"
 				sm="8"
 				md="4"
@@ -147,7 +147,7 @@
 						</v-btn>
 					</template>
 					<hr
-						class="line _margin-top-2 _margin-bottom-1"
+						class="line _margin-top-2 mb-4"
 					>
 					<UiPricingTableRow>
 						No storage limit
@@ -179,9 +179,9 @@
 				</UiPricingTable>
 			</v-col>
 		</v-row>
-		<v-row class="_margin-top-1">
+		<v-row class="mt-4">
 			<v-col
-				class="_display-flex _flex-direction-row _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
+				class="d-flex flex-row _padding-x-xs-1 _padding-x-sm-1 _padding-x-md-1-2  _padding-x-lg-1-2 _padding-x-xl-1-2"
 			>
 				<UiPricingTable
 					title="CodeNotary Immutable Ledger features"
@@ -192,14 +192,14 @@
 						<UiPricingTableRow
 							v-for="(item, idx) in parsedFeatures"
 							:key="idx"
-							class="_margin-top-1 _margin-right-1"
+							class="mt-4 mr-4"
 							icon="check-square"
 							:fill="isMobile"
 						>
 							{{ item && item.label }}
 						</UiPricingTableRow>
 						<v-btn
-							class="_margin-top-1"
+							class="mt-4"
 							link
 							style="height: 37px;"
 							color="secondary"

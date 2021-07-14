@@ -3,7 +3,7 @@
 		id="immudb-video-section"
 	>
 		<v-container>
-			<v-row class="_display-flex _justify-content-center">
+			<v-row class="d-flex justify-center">
 				<v-col
 					xs="12"
 					sm="12"
@@ -19,7 +19,7 @@
 					/>
 				</v-col>
 			</v-row>
-			<v-row class="_padding-x-0 _display-flex _justify-content-center">
+			<v-row class="_padding-x-0 d-flex justify-center">
 				<v-col
 					class="_margin-bottom-3 _margin-x-auto"
 					xs="12"
@@ -27,12 +27,12 @@
 					md="8"
 					lg="8"
 				>
-					<span class="_text-white _text-center">
+					<span class="white--text text-center">
 						immudb is a ledger database that has been developed with performance, scalability and versatility in mind. The user feedback has shown that they love the very high throughput and being able to store hashes as well as data. They see it as a great alternative to using a blockchain or ledger service.
 					</span>
 				</v-col>
 			</v-row>
-			<v-row class="_margin-bottom-1 _display-flex _justify-content-center">
+			<v-row class="mb-4 d-flex justify-center">
 				<v-col
 					xs="12"
 					sm="12"
@@ -42,7 +42,7 @@
 				>
 					<div class="video-features">
 						<div class="video-feature-items">
-							<v-row class="_margin-bottom-1 _display-flex _justify-content-center">
+							<v-row class="mb-4 d-flex justify-center">
 								<v-col
 									class="video-feature-item"
 									xs="6"
@@ -113,7 +113,7 @@
 					</div>
 				</v-col>
 			</v-row>
-			<v-row class="_display-flex _justify-content-center">
+			<v-row class="d-flex justify-center">
 				<v-col
 					xs="12"
 					sm="12"

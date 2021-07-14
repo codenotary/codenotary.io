@@ -1,9 +1,9 @@
 <template>
-	<section class="banner-codenotary _justify-content-center">
-		<div class="_display-flex _align-items-center">
-			<fa icon="chart-line" class="_margin-top-1-4 _margin-right-1" />
+	<section class="banner-codenotary justify-center">
+		<div class="d-flex align-center">
+			<fa icon="chart-line" class="mt-4-4 mr-4" />
 			<span
-				class="_font-weight-bold"
+				class="font-weight-bold"
 				style="font-size: 0.9rem;"
 			>
 				vChain Inc is now CodeNotary Inc

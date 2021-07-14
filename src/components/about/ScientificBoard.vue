@@ -11,7 +11,7 @@
 			</v-col>
 		</v-row>
 		<v-container>
-			<v-row class="scientific-team-member-items _justify-content-center">
+			<v-row class="scientific-team-member-items justify-center">
 				<v-col
 					xs="12"
 					sm="6"

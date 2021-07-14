@@ -1,8 +1,8 @@
 <template>
 	<section class="most-popular">
-		<v-row class="_margin-bottom-1">
+		<v-row class="mb-4">
 			<v-col class="_margin-0 _padding-xs-0" xs="12">
-				<h3 class="_margin-0 _padding-xs-0 _font-weight-bold">
+				<h3 class="_margin-0 _padding-xs-0 font-weight-bold">
 					Most popular
 				</h3>
 			</v-col>
@@ -15,7 +15,7 @@
 				class="_padding-left-0"
 			>
 				<nuxt-link :to="{ name: 'blog-post', params: { post: article.slug } }">
-					<i-card size="sm" class="popular-card _margin-bottom-1">
+					<i-card size="sm" class="popular-card mb-4">
 						<img
 							slot="image"
 							:src="article.image || `/images/blog-post.svg`"

@@ -4,7 +4,7 @@
 		data-aos="fade-zoom-in"
 	>
 		<v-row
-			class="_display-flex _flex-direction-xs-column _flex-direction-sm-row"
+			class="d-flex _flex-direction-xs-column _flex-direction-sm-row"
 			:class="`_flex-direction-md-row${ getContentSide === 'right' ? '' : '-reverse' }`"
 			style="height: 100%;"
 		>
@@ -35,7 +35,7 @@
 				</div>
 			</v-col>
 			<v-col
-				class="_margin-0 _padding-0 _display-flex _flex-direction-column _justify-content-space-between"
+				class="_margin-0 _padding-0 d-flex flex-column _justify-content-space-between"
 				style="height: 100%;"
 				xs="12"
 				:sm="image ? 8 : 12"
@@ -46,13 +46,13 @@
 				<div>
 					<h3
 						v-if="title"
-						class="_margin-0 -title _text-left _text-gray-80 _font-weight-bold"
+						class="_margin-0 -title _text-left _text-gray-80 font-weight-bold"
 					>
 						{{ title }}
 					</h3>
 					<p
 						v-if="hasDefaultSlot"
-						class="_margin-top-1 -body-1 _text-left"
+						class="mt-4 -body-1 _text-left"
 					>
 						<slot />
 					</p>
@@ -60,7 +60,7 @@
 				<div class="_visible-lg-and-up">
 					<v-row
 						v-if="innerContent && innerContent.length > 0"
-						class="_margin-top-2 _display-flex _justify-content-space-between"
+						class="_margin-top-2 d-flex _justify-content-space-between"
 					>
 						<v-col
 							v-for="(item, idx) in innerContent"
@@ -69,19 +69,19 @@
 						>
 							<div
 								v-if="item"
-								class="inner-content-box _padding-1"
+								class="inner-content-box pa-4"
 								data-aos="fade-zoom-in"
 								:data-delay="600"
 							>
 								<h5
 									v-if="item.title"
-									class="_margin-0 -title-1 _text-left _text-primary _font-weight-bold"
+									class="_margin-0 -title-1 _text-left primary--text font-weight-bold"
 								>
 									{{ item.title }}
 								</h5>
 								<p
 									v-if="item.text"
-									class="_margin-y-1-2 -body-1 _text-left _text-grey-60"
+									class="my-4-2 -body-1 _text-left _text-grey-60"
 								>
 									{{ item.text }}
 								</p>
@@ -94,29 +94,29 @@
 		<div class="_visible-md-and-down">
 			<v-row
 				v-if="innerContent && innerContent.length > 0"
-				class="_margin-top-2 _display-flex _justify-content-space-between"
+				class="_margin-top-2 d-flex _justify-content-space-between"
 			>
 				<v-col
 					v-for="(item, idx) in innerContent"
 					:key="`inner-content-${ idx }`"
-					class="_margin-bottom-1"
+					class="mb-4"
 					xs="12" sm="6"
 				>
 					<div
 						v-if="item"
-						class="inner-content-box _padding-1"
+						class="inner-content-box pa-4"
 						data-aos="fade-zoom-in"
 						:data-delay="600"
 					>
 						<h5
 							v-if="item.title"
-							class="_margin-0 -title-1 _text-left _text-primary _font-weight-bold"
+							class="_margin-0 -title-1 _text-left primary--text font-weight-bold"
 						>
 							{{ item.title }}
 						</h5>
 						<p
 							v-if="item.text"
-							class="_margin-y-1-2 -body-1 _text-left _text-grey-60"
+							class="my-4-2 -body-1 _text-left _text-grey-60"
 						>
 							{{ item.text }}
 						</p>
@@ -126,7 +126,7 @@
 		</div>
 		<v-row
 			v-if="hasButtonSlot"
-			class="cta-wrapper _margin-top-2 _margin-top-sm-4 _margin-bottom-sm-4 _display-flex _justify-content-center _align-items-center"
+			class="cta-wrapper _margin-top-2 _margin-top-sm-4 _margin-bottom-sm-4 d-flex justify-center align-center"
 		>
 			<slot name="button" />
 		</v-row>

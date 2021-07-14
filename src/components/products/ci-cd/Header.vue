@@ -1,10 +1,10 @@
 <template>
 	<v-app-bar id="ci-cd-header">
-		<v-row class="_align-items-center">
+		<v-row class="align-center">
 			<v-col
 				xs="12"
 				md="4"
-				class="_text-center _margin-bottom-1 _hidden-md-and-up"
+				class="text-center mb-4 _hidden-md-and-up"
 			>
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
 			</v-col>
@@ -12,7 +12,7 @@
 				<h5 class="-title" style="text-transform: uppercase; color: #444;">
 					Immutable Ledger (Cloud)
 				</h5>
-				<h1 class="d6 _font-weight-bold _text-primary _margin-top-0">
+				<h1 class="d6 font-weight-bold primary--text _margin-top-0">
 					Tamperproof ledger solutions for all your sensitive data
 				</h1>
 				<p class="lead _margin-bottom-0">
@@ -30,7 +30,7 @@
 					>
 						Sign in
 						<v-btn
-							class="_margin-left-1"
+							class="ml-4"
 							color="primary"
 							href="https://dashboard.codenotary.io/auth/signup"
 							target="_blank"
@@ -43,7 +43,7 @@
 			<v-col
 				xs="12"
 				md="4"
-				class="_text-center  _hidden-sm-and-down"
+				class="text-center  _hidden-sm-and-down"
 			>
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
 			</v-col>

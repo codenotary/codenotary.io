@@ -4,25 +4,25 @@
 			id="home-header"
 			size="sm"
 		>
-			<v-row class="_align-items-center main-content">
+			<v-row class="align-center main-content">
 				<v-col lg="5">
-					<h2 class="_font-weight-bold cn-text-white title first">
+					<h2 class="font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h2>
-					<h2 class="_font-weight-bold cn-text-secondary title first">
+					<h2 class="font-weight-bold cn-text-secondary title first">
 						{{ content.headerSection.title2 }}
 					</h2>
-					<h2 class="_font-weight-bold cn-text-white title">
+					<h2 class="font-weight-bold cn-text-white title">
 						{{ content.headerSection.title3 }}
 					</h2>
 
 					<p class="lead cn-text-muted_blue subtitle cn-text-sm">
 						{{ content.headerSection.subtitle }}
 					</p>
-					<!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
+					<!--				<h5 class="mt-4 _margin-bottom-2 font-weight-bold white--text">-->
 					<!--					Powered by the world’s fastest immutable database.-->
 					<!--				</h5>-->
-					<p class="action _display-flex _flex-direction-row">
+					<p class="action d-flex flex-row">
 						<UiButtonCn
 							variant="secondary"
 							href="https://dashboard.codenotary.io/auth/signup"
@@ -36,7 +36,7 @@
 						<UiButtonCn
 							variant="light"
 							size="lg"
-							class="_margin-left-1"
+							class="ml-4"
 							@click.native="onDownloadClick"
 						>
 							Self-Hosted

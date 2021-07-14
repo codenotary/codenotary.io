@@ -18,7 +18,7 @@
 			</v-row>
 			<v-row
 				v-if="tree"
-				class="_text-center"
+				class="text-center"
 			>
 				<v-col>
 					<img
