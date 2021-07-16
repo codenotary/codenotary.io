@@ -192,7 +192,7 @@ $mascot-height-small: 100px;
 
 	@media screen and (max-width: $mobile-max-width) {
 		transform: skewY(5deg);
-		bottom: 30px !important;
+		bottom: 95px !important;
 	}
 }
 
@@ -206,7 +206,7 @@ $mascot-height-small: 100px;
 
 .immutable-data-science-description-container {
 	background: $cn-color-background;
-	padding: 70px 30px 0;
+	padding: 65px 30px 0;
 
 	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 40px;
@@ -222,11 +222,15 @@ $mascot-height-small: 100px;
 		border-radius: 30px;
 
 		.line {
-			width: 30px;
 			border-radius: 10px;
 			background: $cn-color-primary_dark;
 			margin-right: 20px;
 			align-self: stretch;
+			flex: 1 0 30px;
+
+			@media screen and (max-width: $mobile-max-width) {
+				flex: 1 0 8px;
+			}
 		}
 
 		.content {
@@ -244,7 +248,7 @@ $mascot-height-small: 100px;
 
 .immutable-data-science-immutable-datasets-container {
 	background: $cn-color-background;
-	padding: 30px;
+	padding: 64px 30px;
 	text-align: center;
 
 	.immutable-data-science-immutable-datasets {
@@ -252,7 +256,7 @@ $mascot-height-small: 100px;
 			margin: 0;
 			color: $cn-color-brand;
 			font-weight: 700;
-			padding-bottom: 10px;
+			padding-bottom: 19px;
 			font-size: 32px !important;
 			line-height: 34px !important;
 

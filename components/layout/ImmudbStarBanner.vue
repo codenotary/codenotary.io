@@ -98,6 +98,11 @@ section.immudb-star-banner {
 		top: 0.4rem;
 		right: 1.6rem;
 		color: white;
+
+		&:hover {
+			background: none !important;
+			color: $cn-color-secondary !important;
+		}
 	}
 
 	@media (max-width: 480px) {

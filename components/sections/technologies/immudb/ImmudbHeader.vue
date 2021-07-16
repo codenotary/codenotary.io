@@ -173,6 +173,8 @@ $mascot-height-small: 100px;
 
 		@media screen and (max-width: $mobile-max-width) {
 			margin: 0 auto !important;
+			font-size: 24px !important;
+			line-height: 24px !important;
 		}
 	}
 
@@ -210,12 +212,6 @@ $mascot-height-small: 100px;
 	color: white !important;
 	margin-bottom: 20px;
 	margin-top: 20px;
-}
-
-@media screen and (min-width: 992px) {
-	.title.second {
-		text-transform: uppercase;
-	}
 }
 
 @media screen and (max-width: $mobile-max-width) {
@@ -316,6 +312,10 @@ $mascot-height-small: 100px;
 .main-content {
 	z-index: 3;
 
+	.title.second {
+		text-transform: uppercase;
+	}
+
 	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 16px;
 
@@ -381,21 +381,26 @@ $mascot-height-small: 100px;
 		.github-star-button {
 			display: flex;
 			height: $cn-button-height !important;
-			align-items: center;
+			align-items: stretch;
 			border: 1px solid transparent;
 
 			.github-logo {
-				height: $cn-button-height !important;
 				padding: 14px;
 				background: $cn-color-primary;
 				border-top-left-radius: 8px;
 				border-bottom-left-radius: 8px;
+				display: flex;
+				align-items: center;
+
+				img {
+					height: 30px;
+					width: 30px;
+				}
 			}
 
 			.github-count {
 				display: flex;
 				align-items: center;
-				height: $cn-button-height !important;
 				padding: 14px;
 				background: white;
 				border-top-right-radius: 8px;

@@ -75,7 +75,8 @@ export default {
 				padding: 0;
 
 				.column {
-					padding: 0 auto !important;
+					padding-bottom: 10px !important;
+					margin-top: 10px !important;
 
 					.square-card {
 						max-width: 100%;

@@ -34,7 +34,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .square-card {
 	max-width: 250px;
 	height: 100%;
@@ -50,6 +50,23 @@ export default {
 	&.wide {
 		max-width: 373px;
 		flex: 1;
+		padding: 25px 40px;
+		justify-content: stretch;
+
+		h3 {
+			margin: 0 !important;
+		}
+
+		p,
+		b {
+			color: $cn-color-dark !important;
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		p {
+			margin: 18px 0 0 !important;
+		}
 
 		.subtitle {
 			max-width: none;

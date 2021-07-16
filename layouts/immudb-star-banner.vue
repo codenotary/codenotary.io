@@ -91,6 +91,7 @@ section.immudb-star-banner-layout {
 		top: #{$banner-height}px !important;
 		left: 0;
 		padding: 0;
+		border-bottom: 1px solid $cn-color-light;
 	}
 
 	.global-menu {
@@ -140,7 +141,7 @@ section.immudb-star-banner-layout {
 	@media screen and (max-width: $mobile-max-width) {
 		#immudbStarBanner {
 			height: #{$banner-height * 2}px;
-			padding-right: 2.4rem;
+			padding: 0;
 
 			span {
 				font-size: 0.9rem;

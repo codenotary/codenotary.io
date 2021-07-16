@@ -80,6 +80,8 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 .immudb {
+	padding-top: 20px;
+
 	h2 {
 		font-weight: 700 !important;
 	}

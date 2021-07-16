@@ -2,7 +2,7 @@ export default {
 	// HomePage | Cards located under the main Hero Section (Title, CTAs and Video)
 	headerSection: {
 		title1: 'immudb', // +
-		title2: 'world\'s fastest <span class="cn-text-secondary">immutable</span> database', // +
+		title2: 'world\'s fastest<br><span class="cn-text-secondary">immutable</span> database', // +
 		title3: 'Open Source and easy to use in new applications and easy to integrate into existing application.', // +
 	},
 	heroCardsSection: {
@@ -50,8 +50,7 @@ export default {
 				subtitle: `
 					<p>
 						Data ownership is verifiable<br>
-						by clients and auditors.<br>
-						Support for Intel SGX enclaves.
+						by clients and auditors.
 					</p>
 					<p>
 						Sign your data using<br>
