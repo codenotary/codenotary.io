@@ -220,6 +220,7 @@ export default {
 	plugins: [
 		{ src: '~plugins/activecampaign', mode: 'client' },
 		{ src: '~plugins/leadfeeder', mode: 'client' },
+		{ src: '~plugins/leadinfo', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
 		{ src: '~plugins/tawk', mode: 'client' },
 		{ src: '~/plugins/vee-validate.js', ssr: false },
