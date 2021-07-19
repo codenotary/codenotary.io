@@ -65,7 +65,22 @@
 					>
 						<p>
 							Jerónimo Irazábal is a Software Engineer with research background. He has published academic articles in international conferences and co-authored a book for the courses of Program Verification and Theory of Computer Science.
+						</p>
+						<p>
 							He worked at IBM as a Research Scientist, made contributions to projects related to Watson, Hyperledger Fabric, and Advanced Access Control System, co-authored several patent applications and co-chaired a global team in charge of the evaluation and guidance of inventors in Blockchain Technology. He was awarded first Master Inventor at IBM Argentina.
+						</p>
+					</team-member>
+				</i-column>
+				<i-column lg="4">
+					<team-member
+						name="Sebastian Wind" position="Community Ambassador"
+						image="/images/teams/sebastian-wind.jpg"
+					>
+						<p>
+							Sebastian Wind is working for DATEV eG,  a technical information services provider for tax, accountant and attorneys, and is the Head of the Enterprise Computing Group of the Pattern Recognition Lab at the University of Erlangen–Nuremberg where he is pursuing a PhD. Sebastian was a GlobalWinner of IBM’s MTM Contest and was awarded by the IBM Champion program which recognizes innovative thought leaders in the technical community.
+						</p>
+						<p>
+							Sebastian is a strong networker, who loves to bring people and tech together to create an exceptional result greater than the sum of its parts.
 						</p>
 					</team-member>
 				</i-column>
