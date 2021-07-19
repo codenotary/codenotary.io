@@ -6,7 +6,7 @@
 				class="image -responsive"
 				:src="image"
 				:alt="name"
-				width="260"
+				width="200"
 			>
 			<h4 class="title">
 				{{ name }}
@@ -54,9 +54,10 @@ export default {
 	}
 
 	img {
-		width: 200px;
-		height: auto;
+		width: 200px !important;
+		height: 200px !important;
 		border-radius: 100%;
+		object-fit: cover;
 	}
 }
 </style>
