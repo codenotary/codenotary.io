@@ -73,6 +73,19 @@
 				</i-column>
 				<i-column lg="4">
 					<team-member
+						name="Bartłomiej Święcki" position="Core Developer & Security Champion"
+						image="/images/teams/bartlomiej-swiecki.jpg"
+					>
+						<p>
+							Bartłomiej Święcki is a Software Engineer passionate about cryptography and applied mathematics. Coming from a C++ and 3D graphics background he gained a practical DevOps experience while working on backend software at Opera Software and OVH.
+						</p>
+						<p>
+							While working on a large-scale 1500+ node distributed storage systems and deployments based on Kubernetes handling over 50k user requests per second, he gained practical knowledge about distributed systems, distributed troubleshooting and low-level optimizations. He spoke at multiple conferences about topics ranging from Linux kernel development to architecture of huge dataset backups.
+						</p>
+					</team-member>
+				</i-column>
+				<i-column lg="4">
+					<team-member
 						name="Sebastian Wind" position="Community Ambassador"
 						image="/images/teams/sebastian-wind.jpg"
 					>
