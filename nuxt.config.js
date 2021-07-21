@@ -219,6 +219,7 @@ export default {
     */
 	plugins: [
 		{ src: '~plugins/activecampaign', mode: 'client' },
+		{ src: '~plugins/hotjar', mode: 'client' },
 		{ src: '~plugins/leadfeeder', mode: 'client' },
 		{ src: '~plugins/leadinfo', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
@@ -234,7 +235,6 @@ export default {
 		{ src: '~plugins/vue-truncate-filter', ssr: false },
 		{ src: '~plugins/vue-typer', ssr: false },
 		{ src: '~plugins/vue-youtube', ssr: false },
-		{ src: '~plugins/hotjar', ssr: false },
 		'~plugins/vue-slick-carousel',
 	],
 	/*
