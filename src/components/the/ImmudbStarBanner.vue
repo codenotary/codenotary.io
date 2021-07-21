@@ -1,37 +1,40 @@
 <template>
-	<section class="immudb-star-banner justify-center">
-		<div class="d-flex align-center">
-			<span>
-				If you like immudb,
-				<a
-					class="font-weight-bold text-decoration-underline"
-					href="https://github.com/codenotary/immudb"
-					target="_blank"
-					rel="noopener"
-					@click="submit()"
-				>
-					give us a star on Github!
-				</a>
-				<v-icon
-					class="ml-2 secondary--text"
-					:size="20"
-				>
-					{{ mdiStar }}
-				</v-icon>
-			</span>
-		</div>
-		<v-btn
-			link
-			class="close-button"
-			@click="close()"
-		>
+	<v-banner
+		class="banner"
+		sticky
+	>
+		<p>
+			If you like immudb,
+			<a
+				href="https://github.com/codenotary/immudb"
+				target="_blank"
+				rel="noopener"
+				class="light"
+				@click="submit()"
+			>
+				give us a star on Github!
+			</a>
 			<v-icon
+				class="star-icon"
 				:size="20"
 			>
-				{{ mdiClose }}
+				{{ mdiStar }}
 			</v-icon>
-		</v-btn>
-	</section>
+		</p>
+		<template #actions>
+			<v-btn
+				icon
+				@click="close()"
+			>
+				<v-icon
+					:size="20"
+					color="#FAF9F8"
+				>
+					{{ mdiClose }}
+				</v-icon>
+			</v-btn>
+		</template>
+	</v-banner>
 </template>
 
 <script>
@@ -59,66 +62,28 @@ export default {
 };
 </script>
 
-<style lang="scss">
-section.immudb-star-banner {
-	position: relative;
-	background-color: var(--v-primary-darken3);
-	transition: all 0.15s ease-out;
-	z-index: 995;
+<style lang="scss" scoped>
+.banner {
+	z-index: 4;
+	background: var(--v-dark-base) !important;
 
-	&.-light {
-		border-bottom: 1px solid var(--v-primary-lighten3);
-		background: white !important;
-	}
-
-	span,
-	span > a {
-		font-size: 84% !important;
-	}
-
-	span {
-		font-weight: 300 !important;
-		color: white;
+	p {
+		color: #fff;
+		font-family: Proxima Nova;
+		text-align: right;
 
 		a {
-			color: white;
+			color: #fff;
+			font-weight: 700;
 			text-decoration: underline;
-			font-weight: 500;
-		}
-	}
 
-	.button {
-		&:hover,
-		&:active,
-		&.nuxt-link-active {
-			color: var(--v-grey-lighten1) !important;
+			&:hover {
+				color: #febf2d;
+			}
 		}
 
-		&:hover {
-			background: rgba(255, 255, 255, 0.15) !important;
-		}
-
-		&:active,
-		&.nuxt-link-active {
-			background: rgba(255, 255, 255, 0.05) !important;
-		}
-	}
-
-	.svg-inline--fa {
-		color: #ffce6e;
-	}
-
-	.close-button {
-		position: absolute;
-		top: 0.4rem;
-		right: 1.6rem;
-		color: white;
-	}
-
-	@media (max-width: $xs) {
-		.close-button {
-			top: 0.8rem;
-			right: 0.4rem;
+		.star-icon {
+			color: var(--v-secondary-base);
 		}
 	}
 }
