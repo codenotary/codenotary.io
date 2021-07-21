@@ -33,7 +33,7 @@
 						>
 							<div class="immudb-feature cn-bg-brand cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/integrity.svg">
-								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
+								<h4 class="cn-text-white font-weight-bold text-center ma-0 mt-4">
 									Transactional Integrity
 								</h4>
 							</div>
@@ -45,7 +45,7 @@
 						>
 							<div class="immudb-feature cn-bg-primary cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/acid_compliance.svg">
-								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
+								<h4 class="cn-text-white font-weight-bold text-center ma-0 mt-4">
 									ACID Compliance
 								</h4>
 							</div>
@@ -59,7 +59,7 @@
 						>
 							<div class="immudb-feature cn-bg-secondary cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/auditor.svg">
-								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
+								<h4 class="cn-text-white font-weight-bold text-center ma-0 mt-4">
 									Auditor
 								</h4>
 							</div>
@@ -71,7 +71,7 @@
 						>
 							<div class="immudb-feature cn-bg-cyan cn-text-white d-flex flex-column">
 								<img class="cn-icon" src="/icons/sdk.svg">
-								<h4 class="cn-text-white font-weight-bold text-center _margin-0 mt-4">
+								<h4 class="cn-text-white font-weight-bold text-center ma-0 mt-4">
 									SDKs for Python, Node.js, Java, Go
 								</h4>
 							</div>

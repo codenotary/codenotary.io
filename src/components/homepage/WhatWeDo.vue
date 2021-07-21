@@ -13,7 +13,7 @@
 			/>
 		</v-container>
 		<v-container class="d-flex align-center justify-center flex-column cn-text-dark _padding-left-0 _padding-right-0">
-			<h6 class="subheader _margin-0 text-center">
+			<h6 class="subheader ma-0 text-center">
 				{{ content.whatWeDoSection.subtitle }}
 			</h6>
 			<v-container class="what_we_do-cards">

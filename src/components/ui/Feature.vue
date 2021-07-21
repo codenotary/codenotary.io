@@ -10,7 +10,7 @@
 		>
 			<v-col
 				v-if="image"
-				class="_margin-bottom-4 _margin-bottom-sm-0 _margin-0 _padding-0"
+				class="_margin-bottom-4 _margin-bottom-sm-0 ma-0 pa-0"
 				xs="12" sm="4"
 				md="4" lg="5"
 				xl="6"
@@ -35,7 +35,7 @@
 				</div>
 			</v-col>
 			<v-col
-				class="_margin-0 _padding-0 d-flex flex-column _justify-content-space-between"
+				class="ma-0 pa-0 d-flex flex-column _justify-content-space-between"
 				style="height: 100%;"
 				xs="12"
 				:sm="image ? 8 : 12"
@@ -46,7 +46,7 @@
 				<div>
 					<h3
 						v-if="title"
-						class="_margin-0 -title _text-left _text-gray-80 font-weight-bold"
+						class="ma-0 -title _text-left _text-gray-80 font-weight-bold"
 					>
 						{{ title }}
 					</h3>
@@ -75,7 +75,7 @@
 							>
 								<h5
 									v-if="item.title"
-									class="_margin-0 -title-1 _text-left primary--text font-weight-bold"
+									class="ma-0 -title-1 _text-left primary--text font-weight-bold"
 								>
 									{{ item.title }}
 								</h5>
@@ -110,7 +110,7 @@
 					>
 						<h5
 							v-if="item.title"
-							class="_margin-0 -title-1 _text-left primary--text font-weight-bold"
+							class="ma-0 -title-1 _text-left primary--text font-weight-bold"
 						>
 							{{ item.title }}
 						</h5>

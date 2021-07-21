@@ -1,8 +1,8 @@
 <template>
 	<section class="most-popular">
 		<v-row class="mb-4">
-			<v-col class="_margin-0 _padding-xs-0" xs="12">
-				<h3 class="_margin-0 _padding-xs-0 font-weight-bold">
+			<v-col class="ma-0 _padding-xs-0" xs="12">
+				<h3 class="ma-0 _padding-xs-0 font-weight-bold">
 					Most popular
 				</h3>
 			</v-col>

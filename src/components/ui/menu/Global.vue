@@ -14,10 +14,10 @@
 			</div>
 
 			<div class="body">
-				<h4 class="cn-text-brand font-weight-bold text-center _margin-0">
+				<h4 class="cn-text-brand font-weight-bold text-center ma-0">
 					{{ product.title }}
 				</h4>
-				<p class="cn-text-dark _margin-0 text-center _flex-grow-1">
+				<p class="cn-text-dark ma-0 text-center _flex-grow-1">
 					{{ product.subtitle }}
 				</p>
 				<nuxt-link

@@ -13,7 +13,7 @@
 				</p>
 			</v-col>
 			<v-col md="4" class="_padding-left-4 _text-left">
-				<p class="_padding-0 margin-0 _margin-bottom-2">
+				<p class="pa-0 margin-0 _margin-bottom-2">
 					<img
 						src="/images/logo/logo_black.png"
 						alt="CodeNotary"
@@ -21,7 +21,7 @@
 						width="220"
 					>
 				</p>
-				<p class="_padding-0 _margin-0 _margin-bottom-2">
+				<p class="pa-0 ma-0 _margin-bottom-2">
 					<a
 						href="https://www.vmware.com/partners/work-with-vmware/tap.html"
 						target="_blank"
@@ -35,7 +35,7 @@
 						>
 					</a>
 				</p>
-				<p class="_padding-0 _margin-0">
+				<p class="pa-0 ma-0">
 					<a
 						href="https://www.ibm.com/partnerworld/public" target="_blank"
 						rel="nofollow"

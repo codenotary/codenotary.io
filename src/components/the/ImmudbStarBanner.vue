@@ -42,21 +42,22 @@ import {
 	mdiStar,
 	mdiClose,
 } from '@mdi/js';
-
 export default {
-	name: 'TheImmudbStarBanner',
-	data() {
+	name: 'TheBanner',
+	data () {
 		return {
 			mdiStar,
 			mdiClose,
+			height: 1,
+			open: true,
 		};
 	},
 	methods: {
-		submit () {
-			this.$emit('submit');
-		},
-		close () {
+		onClose () {
 			this.$emit('close');
+		},
+		onSubmit () {
+			this.$emit('submit');
 		},
 	},
 };

@@ -8,12 +8,13 @@
 	>
 		<v-app-bar-nav-icon
 			:to="{ name: 'index' }"
-			class="_padding-0"
+			class="pa-0"
 		>
 			<img
 				class="logo py-4-2"
 				:src="`/images/logo/logo_white.svg`"
 				alt="CodeNotary"
+				height="80"
 			>
 		</v-app-bar-nav-icon>
 		<v-container

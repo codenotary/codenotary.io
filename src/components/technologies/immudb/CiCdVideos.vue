@@ -4,8 +4,8 @@
 		class="_padding-top-0"
 	>
 		<v-container>
-			<v-row class="_margin-0 _padding-0">
-				<v-col class="_margin-0 _padding-0">
+			<v-row class="ma-0 pa-0">
+				<v-col class="ma-0 pa-0">
 					<UiPageSectioNHeader
 						title="Community videos"
 						:top="0"

@@ -1,7 +1,7 @@
 <template>
 	<v-app-vbar
 		id="tos-sub-navbar"
-		class="sub-navbar _padding-0"
+		class="sub-navbar pa-0"
 		fluid
 		:collapse="false"
 	>
