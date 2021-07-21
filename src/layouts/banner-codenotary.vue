@@ -1,5 +1,8 @@
 <template>
-	<section class="banner-layout" :class="{ scrolled, hover }">
+	<v-app
+		class="banner-layout"
+		:class="{ scrolled, hover }"
+	>
 		<TheBannerCodenotary
 			id="banner-codenotary"
 			@mouseenter.native="hover = true"
@@ -9,12 +12,12 @@
 			id="navbar"
 			:scrolled="scrolled"
 		/>
-		<div id="content">
+		<v-main>
 			<nuxt />
-		</div>
+		</v-main>
 		<TheFooter />
 		<TheCopyright />
-	</section>
+	</v-app>
 </template>
 
 <script>

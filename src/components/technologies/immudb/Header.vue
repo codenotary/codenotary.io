@@ -100,9 +100,20 @@
 					<h3>world's fastest <span class="highlighted">immutable</span> database.</h3>
 					<p>Open Source and easy to use in new applications and easy to integrate into existing application.</p>
 					<TheGithubButton />
-					<v-btn class="success--text" color="#5gsjh6">
+					<v-btn
+						class="secondary--text"
+						color="primary"
+					>
 						Get Started Now
 					</v-btn>
+				</v-col>
+				<v-col class="d-flex justify-center align-center">
+					<span
+						class="text-center primary--text font-weight-bold full-width"
+						style="background-color: rgba(0, 0, 255, 0.6);"
+					>
+						Lorem ipsum dolor sit amet
+					</span>
 				</v-col>
 			</v-row>
 		</v-container>
@@ -130,10 +141,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .immudb-header {
 	position: relative;
-	background: blue;
 
 	.boxes {
 		overflow: hidden;

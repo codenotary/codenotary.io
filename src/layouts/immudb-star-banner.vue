@@ -1,5 +1,8 @@
 <template>
-	<section class="immudb-star-banner-layout" :class="{ scrolled, hover, closed }">
+	<v-app
+		class="immudb-star-banner-layout"
+		:class="{ scrolled, hover, closed }"
+	>
 		<TheImmudbStarBanner
 			id="immudbStarBanner"
 			@mouseenter.native="hover = true"
@@ -10,12 +13,12 @@
 		<TheNavbar
 			:scrolled="scrolled"
 		/>
-		<div id="content">
+		<v-main>
 			<nuxt />
-		</div>
+		</v-main>
 		<TheFooter />
 		<TheCopyright />
-	</section>
+	</v-app>
 </template>
 
 <script>

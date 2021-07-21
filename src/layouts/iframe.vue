@@ -1,10 +1,10 @@
 <template>
-	<div class="iframe-layout">
+	<v-app class="iframe-layout">
 		<TheNavbar id="navbar" />
-		<div id="content">
+		<v-main>
 			<nuxt />
-		</div>
-	</div>
+		</v-main>
+	</v-app>
 </template>
 
 <script>

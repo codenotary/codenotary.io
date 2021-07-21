@@ -1,19 +1,24 @@
 <template>
-	<section class="default-layout" :class="{ scrolled, hover }">
+	<v-app
+		class="default-layout"
+		:class="{ scrolled, hover }"
+	>
 		<TheNavbar
 			:scrolled="scrolled"
 			@mouseenter.native="hover = true"
 			@mouseleave.native="hover = false"
 		/>
-		<div id="content">
+		<v-main>
 			<nuxt />
-		</div>
+		</v-main>
 		<TheFooter />
 		<TheCopyright />
 		<client-only>
-			<UiModalLedgerCompliance v-model="ledgerComplianceModalOpen" />
+			<LazyUiModalLedgerCompliance
+				v-model="ledgerComplianceModalOpen"
+			/>
 		</client-only>
-	</section>
+	</v-app>
 </template>
 
 <script>
