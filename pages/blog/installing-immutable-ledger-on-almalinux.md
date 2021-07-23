@@ -16,7 +16,7 @@ If you'd like to learn more about AlmaLinux OS, make sure to visit [their site](
 
 ## **Getting your system ready for the installation**
 
-Before installing your CodeNotary Immutable ledger, we have to do a couple of things to ensure that the system is prepared to run the service automatically which is the preferred way so we'll list out the steps and guide you through them to make this as easy as possible:
+Before installing your CodeNotary Immutable Ledger, we have to do a couple of things to ensure that the system is prepared to run the service automatically which is the preferred way so we'll list out the steps and guide you through them to make this as easy as possible:
 
 (Assuming a fresh AlmaLinux OS Install):
 
@@ -96,7 +96,6 @@ sudo dnf install docker-ce docker-ce-cli containerd.io
 sudo dnf install docker-ce docker-ce-cli containerd.io
 Last metadata expiration check: 0:02:54 ago on Thu Jul 22 17:49:05 2021.
 Error:
-Problem 1: problem with installed package podman-3.0.1-7.module_el8.4.0+2481+9da8acfb.x86_64
 -package podman-3.0.1-7.module_el8.4.0+2481+9da8acfb.x86_64 requires runc >= 1.0.0-57, but none of the providers can be installed
 - package podman-3.0.1-6.module_el8.4.0+2332+f4da7515.x86_64 requires runc >= 1.0.0-57, but none of the providers can be installed
 - package containerd.io-1.4.8-3.1.el8.x86_64 conflicts with runc provided by runc-1.0.0-73.rc93.module_el8.4.0+2481+9da8acfb.x86_64
@@ -164,7 +163,7 @@ $ sudo ./cnil_install-2.2.2.sh
 
 ## Wrapping up
 
-Upon a succesful installation you should see something similar to this:
+Upon a successful installation you should see something similar to this:
 
 ```bash
 Created symlink /etc/systemd/system/multi-user.target.wants/cnlc.service → /etc/systemd/system/cnlc.service.
@@ -174,7 +173,7 @@ Installation completed
 
 Once that's done you can almost start using your CodeNotary Immutable Ledger, there's only one thing left to do: **Enable systemd execution of docker-compose**
 
-SELinux enforces policies in which the docker-commpose binary is not allowed to be executed via systemd, so we just need to make sure we allow that and we'll be done; while theres's a chance this might not be your case depending on your installtion security policies, it's worth making sure.
+SELinux enforces policies in which the docker-commpose binary is not allowed to be executed via systemd, so we just need to make sure we allow that and we'll be done; while theres's a chance this might not be your case depending on your installation security policies, it's worth making sure.
 
 Verify that your clc service is running using:
 ```bash
@@ -187,7 +186,7 @@ $ sudo systemctl status cnlc.service
  Main PID: 104755 (code=exited, status=0/SUCCESS)
 ```
 
-If you see both "sucess" and "active", then your work is done, otherwise make sure to enable the SELinux policies to allow systemd to execute docker-compose.
+If you see both "success" and "active", then your work is done, otherwise make sure to enable the SELinux policies to allow systemd to execute docker-compose.
 
 If you don't see a success message, this more likely means that instead of creating the symolic link to docker-compose you chose some other method of adding it to the PATH, which is fine but the default SELinux policy only allows for binaries in the following directories to be executed:
 ```
@@ -206,8 +205,9 @@ And now you can start your CodeNotary Immutable Ledger service by running:
 $ sudo systemctl start cnlc.service
 ```
 
-And open up the application at [https://localhost](https://localhost)
+And open up the application at [https://localhost](https://localhost) or your network address using https://<dnsname-or-ip>
 
+**Summary**
 
 
 **References:**
