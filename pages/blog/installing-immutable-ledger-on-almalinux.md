@@ -19,10 +19,10 @@ Before installing your CodeNotary Immutable Ledger, we have to do a couple of th
 
 (Assuming a fresh AlmaLinux OS Install):
 
-1.- Ensure docker and docker-compose are installed in your system
-2.- Make sure SELinux policies allow systemd to execute docker and docker-compose
-3.- Download and run your installer
-4.- Start enjoying your Immutable Ledger
+1. Ensure docker and docker-compose are installed in your system
+2. Make sure SELinux policies allow systemd to execute docker and docker-compose
+3. Download and run your installer
+4. Start enjoying your Immutable Ledger
 
 ## **First steps**
 
@@ -166,7 +166,7 @@ Once that's done you can almost start using your CodeNotary Immutable Ledger, th
 
 SELinux enforces policies in which the docker-commpose binary is not allowed to be executed via systemd, so we just need to make sure we allow that and we'll be done; while theres's a chance this might not be your case depending on your installation security policies, it's worth making sure.
 
-Verify that your clc service is running using:
+Verify that your CodeNotary Immutable Ledger service is running using:
 
 ```bash
 $ sudo systemctl status cnlc.service
@@ -199,7 +199,7 @@ And now you can start your CodeNotary Immutable Ledger service by running:
 sudo systemctl start cnlc.service
 ```
 
-And open up the application at [https://localhost](https://localhost) or your network address using https://<dnsname-or-ip>
+And open up the application at [https://localhost](https://localhost) or your network address using https://\<dnsname-or-ip\>
 
 ![CNIL Running in AlmaLinux OS](/images/blog/almalinux-cnil.png)
 **Summary**
