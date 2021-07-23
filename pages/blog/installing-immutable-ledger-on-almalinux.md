@@ -1,12 +1,11 @@
 ---
 title: "Installing CodeNotary Immutable Ledger in AlmaLinux"
-image: pending.png
+image: /images/blog/almalinux-logo.png
 date: "2021-07-22"
+tags: ["CodeNotary", "AlmaLinux"]
 ---
 
  
-
-<!-- ![Global Verification Blockchain Based Code Signing](/images/blog/Global-Verification-Blockchain-Based-Code-Signing-300x232.png) -->
 
 ## **What is AlmaLinux OS**
 
@@ -33,12 +32,10 @@ On a fresh AlmaLinux OS Install we'll see that there is no docker or docker-comp
 The first thing we'll do is perform a system-wide update just for sanity's sake
 
 ```bash
-$ sudo dnf -y update
+sudo dnf -y update
 ```
 
-
 This will take a few minutes (more or less depending on your download speed and a few other things). In this case there was a pending kernel update so I went ahead and rebooted the system. This might or might not be your case so pay close attention to the dnf output and be on the lookout for lines such as these ones
-
 
 ```bash
 $ sudo dnf -y update
@@ -62,28 +59,19 @@ sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/dock
 ```
 
 And verify it was successfully enabled
+
 ```bash
 $ sudo dnf repolist
-repo id                                                                                                       repo name
-appstream                                                                                                     AlmaLinux 8 - AppStream
-baseos                                                                                                        AlmaLinux 8 - BaseOS
-docker-ce-stable                                                                                              Docker CE Stable - x86_64
-extras                                                                                                        AlmaLinux 8 - Extras
+repo id                  repo name
+appstream                AlmaLinux 8 - AppStream
+baseos                   AlmaLinux 8 - BaseOS
+docker-ce-stable         Docker CE Stable - x86_64
+extras                   AlmaLinux 8 - Extras
 
-```
-
-And to confirm the repository was sucessfully installed:
-
-```
-$ sudo dnf repolist
-repo id                                                                                                       repo name
-appstream                                                                                                     AlmaLinux 8 - AppStream
-baseos                                                                                                        AlmaLinux 8 - BaseOS
-docker-ce-stable                                                                                              Docker CE Stable - x86_64
-extras
 ```
 
 ## **Installing docker and docker-compose**
+
 Now that the repository is enabled we can just install docker and docker-compose by running the following command:
 
 ```bash
@@ -104,11 +92,13 @@ Error:
 conflicts with runc provided by runc-1.0.0-70.rc92.module_el8.4.0+2332+f4da7515.x86_64
 - package containerd.io-1.4.8-3.1.el8.x86_64 obsoletes runc provided by runc-1.0.0-70.rc92.module_el8.4.0+2332+f4da7515.x86_64
 ```
+
 If you come across this, re-try the previous command but this time add the **--allowerasing** flag as follows:
 
+```bash
+sudo dnf install docker-ce docker-ce-cli containerd.io --allowerasing
 ```
-$ sudo dnf install docker-ce docker-ce-cli containerd.io --allowerasing
-```
+
 One that's done, the docker binary will be installed and ready for using. Verify this by running the following commands:
 
 ```bash
@@ -119,7 +109,8 @@ Docker version 20.10.7, build f0df350
 ```
 
 **On installing docker-compose:** The docker installation does not come with a docker-compose binary, we'll quickly install it by running the following command:
-```
+
+```bash
 $ sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -131,11 +122,9 @@ $ sudo chmod +x /usr/local/bin/docker-compose
 
 Your system is now ready to install the CodeNotary Immutable Ledger service!
 
-
 ## **Install CodeNotary Immutable Ledger**
 
 The next step is to run the installer script, so [download it](https://codenotary-lc.s3.eu-west-1.amazonaws.com/cnil_install-2.2.2.sh) to your box and run it using the following command:
-[do we include the link?]()
 
 ```bash
 # Make sure you have write permissions otherwise change to your home directory
@@ -152,13 +141,15 @@ $ chmod +x ./cnil_install-2.2.2.sh
 $ sudo ./cnil_install-2.2.2.sh
 
 ```
-## **Errors during install** 
+
+## **Errors during install**
 
 * If you get an error message saying docker is not running, make sure to take a step back and make sure you're prefixing the script install with **sudo**, the installer currently only supports running with elevated permissions.
 
 * If you get an error saying docker-compose is not found, this means the root user can't see the binary in his path, you can fix this in a handful of different ways, we suggest just adding a symlink like this:
+
     ```bash
-    $ sudo ln -s $(which docker-compose) /usr/bin
+    sudo ln -s $(which docker-compose) /usr/bin
     ```
 
 ## Wrapping up
@@ -166,7 +157,7 @@ $ sudo ./cnil_install-2.2.2.sh
 Upon a successful installation you should see something similar to this:
 
 ```bash
-Created symlink /etc/systemd/system/multi-user.target.wants/cnlc.service → /etc/systemd/system/cnlc.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/cnlc.service → /etc/systemd/system/cnlc.service
 
 Installation completed
 ```
@@ -176,6 +167,7 @@ Once that's done you can almost start using your CodeNotary Immutable Ledger, th
 SELinux enforces policies in which the docker-commpose binary is not allowed to be executed via systemd, so we just need to make sure we allow that and we'll be done; while theres's a chance this might not be your case depending on your installation security policies, it's worth making sure.
 
 Verify that your clc service is running using:
+
 ```bash
 $ sudo systemctl status cnlc.service
 [sudo] password for codenotary:
@@ -189,28 +181,39 @@ $ sudo systemctl status cnlc.service
 If you see both "success" and "active", then your work is done, otherwise make sure to enable the SELinux policies to allow systemd to execute docker-compose.
 
 If you don't see a success message, this more likely means that instead of creating the symolic link to docker-compose you chose some other method of adding it to the PATH, which is fine but the default SELinux policy only allows for binaries in the following directories to be executed:
-```
+
+```bash
 /usr/bin /usr/sbin /usr/libexec /usr/local/bin
 ```
 
 At this point, you can either go back and create the symlink as suggested earlier or alternatively, you can allow the binaries in whatever directory you added to your path to be executed from systemd
 
-```
+```bash
  # Pay special attention to the directory
  $ sudo chcon -R -t bin_t /usr/local/bin/
 ```
 
 And now you can start your CodeNotary Immutable Ledger service by running:
+
 ```bash
-$ sudo systemctl start cnlc.service
+sudo systemctl start cnlc.service
 ```
 
 And open up the application at [https://localhost](https://localhost) or your network address using https://<dnsname-or-ip>
 
+![CNIL Running in AlmaLinux OS](/images/blog/almalinux-cnil.png)
 **Summary**
 
+To recap, we have:
+
+* Installed docker and docker-compose on AlmaLinux
+* Installed CodeNotary Immutable Ledger as a service
+* Allowed systemd to execute docker-compose either via the symbolic link or by putting the binary in one of the allowed directories
+
+By following the above outlined instructions you'll be able to get CodeNotary Immutable Ledger running in AlmaLinux OS in no time
 
 **References:**
 
 [https://almalinux.org/](https://almalinux.org/)
+
 [https://techviewleo.com/how-to-install-docker-ce-on-almalinux/](https://techviewleo.com/how-to-install-docker-ce-on-almalinux/)
