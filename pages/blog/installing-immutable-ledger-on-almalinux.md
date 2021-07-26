@@ -1,7 +1,7 @@
 ---
 title: "Installing CodeNotary Immutable Ledger in AlmaLinux"
 image: /images/blog/almalinux-logo.png
-date: "2021-07-22"
+date: "2021-07-26"
 tags: ["CodeNotary", "AlmaLinux"]
 ---
 
