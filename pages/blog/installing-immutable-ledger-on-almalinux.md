@@ -5,11 +5,11 @@ date: "2021-07-26"
 tags: ["CodeNotary", "AlmaLinux"]
 ---
 
- 
+ 
 
 ## **What is AlmaLinux OS**
 
-AlmaLinux OS is an up and coming enterprise Linux distribution that's not just open source but also 1:1 binary compatible with RHEL® and CentOS (prior to Stream). It is because of this that we conisder AlmaLinux OS to be a great choice for hosting CodeNotary Immutable Ledger.
+AlmaLinux OS (https://almalinux.org) is an up-and-coming enterprise Linux distribution that's not just open source but also 1:1 binary compatible with RHEL® and CentOS (prior to Stream). It is because of this that we consider AlmaLinux OS to be a great choice for hosting CodeNotary Immutable Ledger.
 
 If you'd like to learn more about AlmaLinux OS, make sure to visit [their site](https://almalinux.org/)
 
@@ -26,7 +26,7 @@ Before installing your CodeNotary Immutable Ledger, we have to do a couple of th
 
 ## **First steps**
 
-On a fresh AlmaLinux OS Install we'll see that there is no docker or docker-compose binaries available, but instead podman is available
+On a fresh AlmaLinux OS Install, we'll see that there is no docker or docker-compose binaries available, but instead, podman is available
 ![No docker binaries](/images/blog/almalinux-no-docker.png)
 
 The first thing we'll do is perform a system-wide update just for sanity's sake
@@ -35,7 +35,7 @@ The first thing we'll do is perform a system-wide update just for sanity's sake
 sudo dnf -y update
 ```
 
-This will take a few minutes (more or less depending on your download speed and a few other things). In this case there was a pending kernel update so I went ahead and rebooted the system. This might or might not be your case so pay close attention to the dnf output and be on the lookout for lines such as these ones
+This will take a few minutes (more or less depending on your download speed and a few other things). In this case, there was a pending kernel update so I went ahead and rebooted the system. This might or might not be your case so pay close attention to the dnf output and be on the lookout for lines such as these ones
 
 ```bash
 $ sudo dnf -y update
@@ -99,7 +99,7 @@ If you come across this, re-try the previous command but this time add the **--a
 sudo dnf install docker-ce docker-ce-cli containerd.io --allowerasing
 ```
 
-One that's done, the docker binary will be installed and ready for using. Verify this by running the following commands:
+Once that's done, the docker binary will be installed and ready for use. Verify this by running the following commands:
 
 ```bash
 $ which docker
@@ -164,7 +164,7 @@ Installation completed
 
 Once that's done you can almost start using your CodeNotary Immutable Ledger, there's only one thing left to do: **Enable systemd execution of docker-compose**
 
-SELinux enforces policies in which the docker-commpose binary is not allowed to be executed via systemd, so we just need to make sure we allow that and we'll be done; while theres's a chance this might not be your case depending on your installation security policies, it's worth making sure.
+SELinux enforces policies in which the docker-compose binary is not allowed to be executed via systemd, so we just need to make sure we allow that and we'll be done; while there's a chance this might not be your case depending on your installation security policies, it's worth making sure.
 
 Verify that your CodeNotary Immutable Ledger service is running using:
 
@@ -178,15 +178,15 @@ $ sudo systemctl status cnlc.service
  Main PID: 104755 (code=exited, status=0/SUCCESS)
 ```
 
-If you see both "success" and "active", then your work is done, otherwise make sure to enable the SELinux policies to allow systemd to execute docker-compose.
+If you see both "success" and "active", then your work is done, otherwise, make sure to enable the SELinux policies to allow systemd to execute docker-compose.
 
-If you don't see a success message, this more likely means that instead of creating the symolic link to docker-compose you chose some other method of adding it to the PATH, which is fine but the default SELinux policy only allows for binaries in the following directories to be executed:
+If you don't see a success message, this more likely means that instead of creating the symbolic link to docker-compose you chose some other method of adding it to the PATH, which is fine but the default SELinux policy only allows for binaries in the following directories to be executed:
 
 ```bash
 /usr/bin /usr/sbin /usr/libexec /usr/local/bin
 ```
 
-At this point, you can either go back and create the symlink as suggested earlier or alternatively, you can allow the binaries in whatever directory you added to your path to be executed from systemd
+At this point, you can either go back and create the symlink as suggested earlier or you can allow the binaries in whatever directory you added to your path to be executed from systemd
 
 ```bash
  # Pay special attention to the directory
@@ -210,7 +210,7 @@ To recap, we have:
 * Installed CodeNotary Immutable Ledger as a service
 * Allowed systemd to execute docker-compose either via the symbolic link or by putting the binary in one of the allowed directories
 
-By following the above outlined instructions you'll be able to get CodeNotary Immutable Ledger running in AlmaLinux OS in no time
+By following the above-outlined instructions you'll be able to get CodeNotary Immutable Ledger running in AlmaLinux OS in no time
 
 **References:**
 
