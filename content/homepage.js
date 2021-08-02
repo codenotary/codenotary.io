@@ -122,10 +122,13 @@ export default {
 				title: 'RESOURCES',
 				links: [
 					{
-						label: 'Videos', internalLink: null, href: 'https://www.youtube.com/channel/UCYDMxKTM74Acj8LerGrjUuw/videos',
+						label: 'Videos', internalLink: null, href: 'https://www.youtube.com/channel/UCYDMxKTM74Acj8LerGrjUuw/videos', target: '_blank',
 					},
 					{
 						label: 'Blogs', internalLink: '/blog', href: null,
+					},
+					{
+						label: 'RSS', internalLink: null, href: '/feed.xml', target: '_blank',
 					},
 					{
 						label: 'immudb', internalLink: '/technologies/immudb', href: null,

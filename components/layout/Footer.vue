@@ -65,6 +65,7 @@
 							v-else
 							class="table_link"
 							:href="link.href"
+							:target="link.target"
 						>
 							{{ link.label }}
 						</a>
