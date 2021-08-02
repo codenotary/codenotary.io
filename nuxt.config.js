@@ -19,11 +19,12 @@ const createFeedArticles = async function (feed) {
 	const { $content } = require('@nuxt/content');
 	const articles = await $content('blog').fetch();
 
-	articles.forEach(({ title, slug }) => {
+	articles.forEach(({ title, slug, date }) => {
 		feed.addItem({
 			title,
 			id: title,
 			link: `${ baseUrlArticles }/${ slug }`,
+			date: new Date(date),
 		});
 	});
 };
