@@ -1,4 +1,5 @@
 import Sass from 'sass';
+
 import { meta, DEFAULT_META } from './src/helpers/meta';
 import blogRoutes from './blog';
 import careersRoutes from './careers';
@@ -385,6 +386,12 @@ export default {
 		treeShake: true,
 		icons: {
 			iconfont: 'mdiSvg',
+			// values: {
+			// 	researchPaper: {
+			// 		component: import('./src/components/the/Icon.vue'),
+			// 		props: { name: 'ResearchPaper' },
+			// 	},
+			// },
 		},
 		defaultAssets: {
 			font: false,
@@ -408,7 +415,14 @@ export default {
 					warning: '#f08d49',
 					gray: '#616161',
 					grey: '#616161',
+					'light-gray': '#c1c1c1',
+					'light-grey': '#c1c1c1',
+					blue: '#147cb6',
+					cyan: '#36d6d0',
+					light: '#faf9f8',
 					dark: '#13274b',
+					'dark-blue': '#153954',
+					'darker-blue': '#0d3049',
 					bg: '#fff',
 					'bg-secondary': '#ebece9',
 					'bg-tertiary': '#dfe6ed',
@@ -432,6 +446,11 @@ export default {
 					warning: '#f08d49',
 					gray: '#616161',
 					grey: '#616161',
+					'light-gray': '#c1c1c1',
+					'light-grey': '#c1c1c1',
+					blue: '#147cb6',
+					cyan: '#36d6d0',
+					light: '#faf9f8',
 					dark: '#13274b',
 					bg: '#153954',
 					'bg-secondary': '#0d3049',

@@ -1,18 +1,18 @@
 <template>
 	<article class="immudb">
 		<TechnologiesImmudbHeader />
-		<!-- <LazyHydrate when-visible>
+		<LazyHydrate when-visible>
 			<TechnologiesImmudbCardsSection />
-		</LazyHydrate> -->
-		<!-- <LazyHydrate when-visible>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<TechnologiesImmudbFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<TechnologiesImmudbRunsOnSection />
 		</LazyHydrate>
-		<LazyHydrate when-visible>
+		<!-- <LazyHydrate when-visible>
 			<TechnologiesImmudbVideo />
-		</LazyHydrate>
+		</LazyHydrate> -->
 		<LazyHydrate when-visible>
 			<TechnologiesImmudbTerminalSection />
 		</LazyHydrate>
@@ -22,9 +22,9 @@
 		<LazyHydrate when-visible>
 			<TechnologiesImmudbEasySetup />
 		</LazyHydrate>
-		<LazyHydrate when-visible>
+		<!-- <LazyHydrate when-visible>
 			<TechnologiesImmudbByDevelopersForDeverlopers />
-		</LazyHydrate>
+		</LazyHydrate> -->
 		<LazyHydrate when-visible>
 			<TechnologiesImmudbPerformance />
 		</LazyHydrate>
@@ -37,7 +37,7 @@
 		<LazyHydrate when-visible>
 			<TechnologiesImmudbGetStarted />
 		</LazyHydrate>
-		<UiDiscordChatWidget id="chat-widget" /> -->
+		<UiDiscordChatWidget id="chat-widget" />
 	</article>
 </template>
 
@@ -47,14 +47,14 @@ import {
 	VIEW_MODULE,
 	SET_NAVBAR,
 } from '@/store/view/constants';
-// import LazyHydrate from 'vue-lazy-hydration';
+import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
 	name: 'ImmudbPage',
-	// components: {
-	// 	LazyHydrate,
-	// },
+	components: {
+		LazyHydrate,
+	},
 	layout: 'immudb-star-banner',
 	head() {
 		return {
@@ -77,9 +77,7 @@ export default {
 
 <style lang="scss">
 .immudb {
-	h2 {
-		font-weight: 700 !important;
-	}
+	background: var(--v-bg-secondary-base);
 
 	#chat-widget {
 		position: fixed;

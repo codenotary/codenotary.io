@@ -1,5 +1,5 @@
 <template>
-	<UiPageSection id="immudb-get-started-end-section">
+	<!-- <UiPageSection id="immudb-get-started-end-section">
 		<UiPageSectionHeader
 			color="white" title="The open-source immutable database"
 			:bottom="0"
@@ -34,7 +34,24 @@
 				</v-col>
 			</v-row>
 		</v-container>
-	</UiPageSection>
+	</UiPageSection> -->
+	<v-container fluid class="container py-16">
+		<h2 class="text-center white--text mb-6">
+			The Open-source Immutable Database
+		</h2>
+		<p class="text-center white--text">
+			Run immudb easily on Linux, FreeBSD, Microsoft Windows, and macOS, along with other systems<br>
+			derived from them, such as Kubernetes and Docker.
+		</p>
+		<p class="text-center ma-0">
+			<v-btn
+				color="secondary"
+				href="https://docs.immudb.io"
+			>
+				Get started today
+			</v-btn>
+		</p>
+	</v-container>
 </template>
 
 <script>
@@ -43,16 +60,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
-#immudb-get-started-end-section {
-	text-align: center;
+<style lang="scss" scoped>
+.container {
 	background: $cn-dark-gradient-inverse;
-	color: white;
-	padding-top: 168px !important;
-	padding-bottom: 54px !important;
-
-	@media (max-width: $sm) {
-		padding: 30px 20px 44px !important;
-	}
 }
 </style>

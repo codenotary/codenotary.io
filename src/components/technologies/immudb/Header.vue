@@ -92,28 +92,33 @@
 			v-model="researchPaperModalVisible"
 		/>
 	</div> -->
-	<div class="immudb-header">
+	<div class="immudb-header dark">
 		<v-container>
 			<v-row>
-				<v-col>
-					<h1>immudb</h1>
-					<h3>world's fastest <span class="highlighted">immutable</span> database.</h3>
-					<p>Open Source and easy to use in new applications and easy to integrate into existing application.</p>
+				<v-col xs="12" md="6">
+					<h1 class="text-h1 font-weight-700 white--text">
+						immudb
+					</h1>
+					<h3 class="text-h3 text-uppercase font-weight-700 white--text">
+						world's fastest <span class="secondary--text">immutable</span> database.
+					</h3>
+					<p class="text-subtitle-1 font-weight-400 white--text">
+						Open Source and easy to use in new applications and easy to integrate into existing application.
+					</p>
 					<TheGithubButton />
 					<v-btn
-						class="secondary--text"
-						color="primary"
+						class="dark--text text-capitalize"
+						color="secondary"
 					>
 						Get Started Now
 					</v-btn>
 				</v-col>
-				<v-col class="d-flex justify-center align-center">
-					<span
-						class="text-center primary--text font-weight-bold full-width"
-						style="background-color: rgba(0, 0, 255, 0.6);"
-					>
-						Lorem ipsum dolor sit amet
-					</span>
+				<v-col
+					xs="12"
+					md="6"
+					class="d-flex justify-center align-center"
+				>
+					<!-- <v-img src="/images/immudb-header-mascot.png" /> -->
 				</v-col>
 			</v-row>
 		</v-container>

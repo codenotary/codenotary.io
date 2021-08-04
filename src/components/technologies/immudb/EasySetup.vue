@@ -1,5 +1,5 @@
 <template>
-	<UiPageSection id="immudb-easy-setup-section">
+	<!-- <UiPageSection id="immudb-easy-setup-section">
 		<v-container>
 			<v-row>
 				<v-col>
@@ -35,14 +35,12 @@
 						md="12"
 						lg="12"
 					>
-						<!-- eslint-disable -->
 						<UiTerminal
 							language="bash"
 							rounded
 						>
 							docker run -it -d -p 3322:3322 -p 9497:9497 --name immudb codenotary/immudb:latest
 						</UiTerminal>
-						<!-- eslint-enable -->
 					</v-col>
 					<v-col
 						class="_margin-top-2 _margin-x-auto"
@@ -66,7 +64,32 @@
 				</v-row>
 			</v-row>
 		</v-container>
-	</UiPageSection>
+	</UiPageSection> -->
+	<v-container fluid class="container py-16">
+		<h2 class="text-center white--text mb-6">
+			Easy Setup
+		</h2>
+		<p class="text-center white--text">
+			Build Docker images based on the Dockerfiles in the GitHub repository for the most common<br>
+			architectures or use the prebuild ones on Dockerhub for Linux.
+		</p>
+		<div class="d-flex justify-center mb-6">
+			<UiTerminal
+				language="bash"
+				class="d-inline-block"
+			>
+				docker run -it -d -p 3322:3322 -p 9497:9497 --name immudb codenotary/immudb:latest
+			</UiTerminal>
+		</div>
+		<p class="text-center ma-0">
+			<v-btn
+				color="secondary"
+				href="https://docs.immudb.io"
+			>
+				Documentation
+			</v-btn>
+		</p>
+	</v-container>
 </template>
 
 <script>
@@ -75,27 +98,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
-#immudb-easy-setup-section {
-	padding: 120px 0 333px 0 !important;
-	text-align: center;
+<style lang="scss" scoped>
+.container {
 	background: $cn-dark-gradient-inverse;
-
-	@media (max-width: $sm) {
-		padding: 419px 0 351px 0 !important;
-	}
-
-	pre.language-bash {
-		width: auto;
-		display: inline-block;
-		max-width: 100%;
-		background: var(--v-primary-darken3);
-		border-radius: 30px;
-		padding: 1em 2em;
-
-		.line-numbers-rows {
-			display: none !important;
-		}
-	}
 }
 </style>

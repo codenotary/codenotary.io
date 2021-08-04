@@ -1,40 +1,50 @@
 <template>
-	<v-banner
-		class="banner"
-		sticky
+	<v-system-bar
+		v-if="open"
+		id="TheBanner"
+		class="dark d-flex justify-center align-center"
+		fixed
+		app
 	>
-		<p>
-			If you like immudb,
-			<a
-				href="https://github.com/codenotary/immudb"
-				target="_blank"
-				rel="noopener"
-				class="light"
-				@click="submit()"
+		<v-spacer />
+		<div class="d-flex justify-center align-center">
+			<p
+				class="ma-0 pa-0 caption white--text"
+				style="margin-top: 1px !important;"
 			>
-				give us a star on Github!
-			</a>
+				If you like immudb,
+				<a
+					href="https://github.com/codenotary/immudb"
+					target="_blank"
+					rel="noopener"
+				>give us a star on github</a>
+			</p>
 			<v-icon
-				class="star-icon"
-				:size="20"
+				class="ma-0 pa-0 ml-2"
+				color="secondary"
+				:size="18"
 			>
 				{{ mdiStar }}
 			</v-icon>
-		</p>
-		<template #actions>
-			<v-btn
-				icon
-				@click="close()"
+		</div>
+		<v-spacer />
+		<v-btn
+			class="ma-0 pa-0 text-center white--text"
+			text
+			icon
+			dense
+			x-small
+			@click="onClose"
+		>
+			<v-icon
+				color="white"
+				class="ma-0 pa-0"
+				:size="18"
 			>
-				<v-icon
-					:size="20"
-					color="#FAF9F8"
-				>
-					{{ mdiClose }}
-				</v-icon>
-			</v-btn>
-		</template>
-	</v-banner>
+				{{ mdiClose }}
+			</v-icon>
+		</v-btn>
+	</v-system-bar>
 </template>
 
 <script>
@@ -42,6 +52,7 @@ import {
 	mdiStar,
 	mdiClose,
 } from '@mdi/js';
+
 export default {
 	name: 'TheBanner',
 	data () {
@@ -63,28 +74,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.banner {
-	z-index: 4;
-	background: var(--v-dark-base) !important;
-
-	p {
-		color: #fff;
-		font-family: Proxima Nova;
-		text-align: right;
-
-		a {
-			color: #fff;
-			font-weight: 700;
-			text-decoration: underline;
-
-			&:hover {
-				color: #febf2d;
+<style lang="scss">
+#TheBanner {
+	a {
+		&:hover {
+			span {
+				text-decoration: underline !important;
 			}
-		}
-
-		.star-icon {
-			color: var(--v-secondary-base);
 		}
 	}
 }
