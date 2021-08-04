@@ -15,6 +15,7 @@
 		</div>
 		<Footer />
 		<Copyright />
+		<DiscordChatWidget />
 	</section>
 </template>
 

@@ -13,6 +13,7 @@
 		<client-only>
 			<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 		</client-only>
+		<DiscordChatWidget />
 	</section>
 </template>
 

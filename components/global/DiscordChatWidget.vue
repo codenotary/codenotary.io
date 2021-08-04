@@ -1,5 +1,9 @@
 <template>
-	<a href="https://discord.gg/ThSJxNEHhZ" target="_blank">
+	<a
+		id="chat-widget"
+		href="https://discord.gg/ThSJxNEHhZ"
+		target="_blank"
+	>
 		<button>
 			<fa :icon="['fab', 'discord']" />
 		</button>
@@ -13,6 +17,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#chat-widget {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 100;
+}
+
 button {
 	height: 50px;
 	width: 50px;

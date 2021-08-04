@@ -37,7 +37,6 @@
 		<LazyHydrate when-visible>
 			<ImmudbGetStarted />
 		</LazyHydrate>
-		<DiscordChatWidget id="chat-widget" />
 	</article>
 </template>
 
@@ -84,13 +83,6 @@ export default {
 
 	h2 {
 		font-weight: 700 !important;
-	}
-
-	#chat-widget {
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		z-index: 100;
 	}
 }
 </style>
