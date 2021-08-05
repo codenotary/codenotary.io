@@ -22,11 +22,11 @@
 			<WhatWeDoSection />
 		</LazyHydrate>
 
-		<!-- <LazyHydrate when-visible>
+		<LazyHydrate when-visible>
 			<CNILAroundTheWorldSection />
 		</LazyHydrate>
 
-		<LazyHydrate when-visible>
+		<!-- <LazyHydrate when-visible>
 			<WhatClientsSaySection />
 		</LazyHydrate> -->
 
