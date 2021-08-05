@@ -15,7 +15,9 @@ export default {
 				description: 'Trusted CI/CD, SBOM and artifact protection as a service that allows public verification.',
 				actionButton: {
 					text: 'Discover CNIL Cloud',
-					to: '/products/ci-cd',
+					to: {
+						path: '/products/ci-cd',
+					},
 				},
 				image: '/images/cnil-cloud.png',
 				primaryTextColor: 'blue',
@@ -26,12 +28,19 @@ export default {
 				description: 'Self-Hosted performance monitoring and compliant log analysis for VMware vSphere, container and much more.',
 				actionButton: {
 					text: 'Discover Metrics & Logs',
-					to: '/products/immutable-ledger-metrics-and-logs',
+					to: {
+						path: '/products/immutable-ledger-metrics-and-logs',
+					},
 				},
 				image: '/images/cnil-metrics-logs.png',
 				primaryTextColor: 'green',
 			},
 		],
+	},
+	builtOnSection: {
+		title1: 'immudb',
+		title2: 'built on the fastest<br><span class="cn-text-secondary">immutable</span> ledger technology',
+		title3: 'Open Source and easy to use in new applications and easy to integrate into existing application.',
 	},
 	heroCardsSection: {
 		cards: [

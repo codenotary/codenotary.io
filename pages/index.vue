@@ -6,11 +6,11 @@
 			<CNILSection />
 		</LazyHydrate>
 
-		<!-- <LazyHydrate when-visible>
+		<LazyHydrate when-visible>
 			<ImmudbBuiltOnSection />
 		</LazyHydrate>
 
-		<LazyHydrate when-visible>
+		<!-- <LazyHydrate when-visible>
 			<TrustedSupplyChainSection />
 		</LazyHydrate> -->
 
