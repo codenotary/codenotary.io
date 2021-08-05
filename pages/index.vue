@@ -3,12 +3,32 @@
 		<HomeHeader />
 
 		<LazyHydrate when-visible>
-			<WhatWeDoSection />
+			<CNILSection />
 		</LazyHydrate>
+
+		<!-- <LazyHydrate when-visible>
+			<ImmudbBuiltOnSection />
+		</LazyHydrate>
+
+		<LazyHydrate when-visible>
+			<TrustedSupplyChainSection />
+		</LazyHydrate> -->
 
 		<LazyHydrate when-visible>
 			<BenefitsSection />
 		</LazyHydrate>
+
+		<LazyHydrate when-visible>
+			<WhatWeDoSection />
+		</LazyHydrate>
+
+		<!-- <LazyHydrate when-visible>
+			<CNILAroundTheWorldSection />
+		</LazyHydrate>
+
+		<LazyHydrate when-visible>
+			<WhatClientsSaySection />
+		</LazyHydrate> -->
 
 		<LazyHydrate when-visible>
 			<NewsletterSection />
