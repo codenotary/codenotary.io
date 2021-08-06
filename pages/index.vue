@@ -26,9 +26,9 @@
 			<CNILAroundTheWorldSection />
 		</LazyHydrate>
 
-		<!-- <LazyHydrate when-visible>
+		<LazyHydrate when-visible>
 			<WhatClientsSaySection />
-		</LazyHydrate> -->
+		</LazyHydrate>
 
 		<LazyHydrate when-visible>
 			<NewsletterSection />

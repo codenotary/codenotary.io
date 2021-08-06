@@ -165,9 +165,6 @@ export default {
 			},
 		};
 	},
-	beforeDestroy () {
-		this.settings = null;
-	},
 };
 </script>
 
@@ -224,6 +221,8 @@ export default {
 			padding: 16px 16px 32px 16px !important;
 
 			.slick-arrow {
+				z-index: 1;
+
 				&.slick-prev,
 				&.slick-next {
 					&,
