@@ -10,9 +10,9 @@
 			<ImmudbBuiltOnSection />
 		</LazyHydrate>
 
-		<!-- <LazyHydrate when-visible>
+		<LazyHydrate when-visible>
 			<TrustedSupplyChainSection />
-		</LazyHydrate> -->
+		</LazyHydrate>
 
 		<LazyHydrate when-visible>
 			<BenefitsSection />
