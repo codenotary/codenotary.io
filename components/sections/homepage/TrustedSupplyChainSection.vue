@@ -22,7 +22,7 @@
 					<div class="action-buttons">
 						<cn-button
 							variant="secondary"
-							:to="{ path: '/technologies/immudb' }"
+							href="//vchain-ws.slack.com/files/UCUMSS0MB/F02ABURAYFQ/trusted_slc_-_sbom__3_.pdf"
 							class="discover-button"
 						>
 							<img src="/images/download.png"> Download PDF

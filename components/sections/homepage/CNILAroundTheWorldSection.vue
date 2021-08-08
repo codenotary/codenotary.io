@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
 	name: 'CNILAroundTheWorldSection',
@@ -43,31 +43,31 @@ export default {
 		return {
 			downloads: {
 				label: 'Downloads',
-				count: 0,
+				count: 5043476,
 				image: '/images/downloads.png',
 				primaryColor: 'light-green',
 			},
 			notarizations: {
 				label: 'Notarizations',
-				count: 0,
+				count: 910693,
 				image: '/images/notarizations.png',
 				primaryColor: 'green',
 			},
 			authentications: {
 				label: 'Authentications',
-				count: 0,
+				count: 223020890,
 				image: '/images/authentications.png',
 				primaryColor: 'blue',
 			},
 		};
 	},
-	async fetch() {
-		const { data } = await axios.get('https://us-east1-vchain-ops.cloudfunctions.net/fn-stats');
-		const { totalAuth, totalNotar } = data;
+	// async fetch() {
+	// 	const { data } = await axios.get('https://us-east1-vchain-ops.cloudfunctions.net/fn-stats');
+	// 	const { totalAuth, totalNotar } = data;
 
-		this.notarizations.count = totalNotar;
-		this.authentications.count = totalAuth;
-	},
+	// 	this.notarizations.count = totalNotar;
+	// 	this.authentications.count = totalAuth;
+	// },
 	computed: {
 		statistics() {
 			return [this.downloads, this.notarizations, this.authentications];

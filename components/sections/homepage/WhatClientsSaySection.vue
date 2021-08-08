@@ -24,11 +24,11 @@
 									{{ review.content }}
 								</p>
 								<hr>
-								<p class="review-author-name">
+								<p v-if="review.author.name" class="review-author-name">
 									{{ review.author.name }}
 								</p>
-								<p class="review-author-company">
-									{{ review.author.company }}
+								<p class="review-author-description">
+									{{ review.author.title }}, {{ review.author.company }}
 								</p>
 							</div>
 						</div>
@@ -93,6 +93,28 @@ export default {
 						name: 'Jan Unger',
 						title: 'Network and Datacenter Engineer',
 						company: 'Netcloud AG',
+					},
+				},
+				{
+					content: 'While looking for a suitable monitoring, analysis and troubleshooting product for our VMware vSphere infrastructure, we found Performance Analyzer. We were impressed by the flexibility and ease of deployment of the virtual appliance and the nearly instant time to value.',
+					author: {
+						name: 'Millie Cruz',
+						title: 'Network Administrator',
+						company: 'American College of Surgeons',
+					},
+				},
+				{
+					content: 'We receive all key indicators at a glance and no longer have to gather the information in various systems.',
+					author: {
+						title: 'Team Lead IT Platforms',
+						company: '3rd largest Bank in Germany',
+					},
+				},
+				{
+					content: 'Performance Analyzer was running in 25 minutes. CodeNotary CNIL Metrics and Logs has provided us with insights into our VMware cluster performance that we have never previously had and immediately alerted us to several issues we were unaware of.',
+					author: {
+						title: 'Head of Information Systems',
+						company: 'Brett Martin Ltd',
 					},
 				},
 			],
@@ -242,7 +264,7 @@ export default {
 
 			&-content,
 			&-author-name,
-			&-author-company {
+			&-author-description {
 				margin: 0;
 			}
 
@@ -266,7 +288,7 @@ export default {
 				line-height: 20px;
 			}
 
-			&-author-company {
+			&-author-description {
 				color: #768e98;
 				font-weight: 400;
 				font-size: 16px;
