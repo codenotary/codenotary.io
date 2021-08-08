@@ -61,6 +61,7 @@ export default {
 		display: flex;
 		align-items: center;
 		position: relative;
+		margin-top: calc(-4rem - 80px);
 
 		.row {
 			@media screen and (max-width: $mobile-max-width) {

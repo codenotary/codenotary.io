@@ -1,6 +1,8 @@
 <template>
 	<PageSection
 		id="cnil-around-the-world-section"
+		:top="8"
+		:bottom="8"
 	>
 		<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center">
 			CNIL Cloud Around The World

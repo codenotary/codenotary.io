@@ -125,7 +125,7 @@ export default {
 
 	.floating-container {
 		position: absolute;
-		top: -240px;
+		top: -80px;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
