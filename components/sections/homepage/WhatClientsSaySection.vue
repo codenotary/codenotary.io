@@ -2,19 +2,24 @@
 	<PageSection id="what-clients-say-section">
 		<i-container class="floating-container _padding-x-4">
 			<i-row>
+				<h3 class="title">
+					What Clients Say About Us
+				</h3>
+			</i-row>
+			<i-row>
 				<i-column>
-					<div>
-						<VueSlickCarousel v-bind="settings">
-							<div
-								v-for="review in reviews"
-								:key="review.author.name"
-								class="review"
+					<VueSlickCarousel v-bind="settings">
+						<div
+							v-for="review in reviews"
+							:key="review.author.name"
+							class="review"
+						>
+							<img
+								class="cn-icon review-quote-image"
+								src="/images/quotation.png"
+								alt="quote"
 							>
-								<img
-									class="cn-icon review-quote-image"
-									src="/images/quotation.png"
-									alt="quote"
-								>
+							<div class="review-content-wrapper">
 								<p class="review-content">
 									{{ review.content }}
 								</p>
@@ -26,21 +31,21 @@
 									{{ review.author.company }}
 								</p>
 							</div>
-							<template #prevArrow>
-								<div class="custom-arrow _display-flex _justify-content-center _align-items-center">
-									<img class="cn-icon" src="/icons/carousel-arrow-left.svg">
-								</div>
-							</template>
-							<template #nextArrow>
-								<div class="custom-arrow _display-flex _justify-content-center _align-items-center">
-									<img class="cn-icon" src="/icons/carousel-arrow-right.svg">
-								</div>
-							</template>
-							<template #customPaging>
-								<div class="custom-dot" />
-							</template>
-						</VueSlickCarousel>
-					</div>
+						</div>
+						<template #prevArrow>
+							<div class="custom-arrow _display-flex _justify-content-center _align-items-center">
+								<img class="cn-icon" src="/icons/carousel-arrow-left.svg">
+							</div>
+						</template>
+						<template #nextArrow>
+							<div class="custom-arrow _display-flex _justify-content-center _align-items-center">
+								<img class="cn-icon" src="/icons/carousel-arrow-right.svg">
+							</div>
+						</template>
+						<template #customPaging>
+							<div class="custom-dot" />
+						</template>
+					</VueSlickCarousel>
 				</i-column>
 			</i-row>
 		</i-container>
@@ -62,7 +67,7 @@ export default {
 				lazyLoad: 'progressive',
 				responsive: [
 					{
-						breakpoint: 768,
+						breakpoint: 991,
 						settings: {
 							slidesToShow: 1,
 							slidesToScroll: 1,
@@ -83,45 +88,7 @@ export default {
 					content: `
 					The tremendous flexibility and and the possibility to create your own dashboards with the metrics you want to keep one eye on it all the time across different infrastructure products from different vendors.
 
-					Also I like the very great support from the Merics and Logs team!			`,
-					author: {
-						name: 'Jan Unger',
-						title: 'Network and Datacenter Engineer',
-						company: 'Netcloud AG',
-					},
-				},
-				{
-					content: 'It makes for a great one-stop shop for monitoring key VMware metrics! I have been using CodeNotary CNIL Metrics and Logs for about a year. Setup and operational in less than 30 minutes. It comes pre-packaged with ready to use dashboards that are color coded with thresholds providing immediate feedback on performance, KPIs, health and areas of concerns. The team is skilled in this area and knows what their customer base is seeking. Overall, I’m very pleased with the application and the support team behind it. Highly recommended!',
-					author: {
-						name: 'Tarun Keswani',
-						title: 'Principal Staff Engineer',
-						company: 'Motorola Solutions',
-					},
-				},
-				{
-					content: `
-					The tremendous flexibility and and the possibility to create your own dashboards with the metrics you want to keep one eye on it all the time across different infrastructure products from different vendors.
-
-					Also I like the very great support from the Merics and Logs team!			`,
-					author: {
-						name: 'Jan Unger',
-						title: 'Network and Datacenter Engineer',
-						company: 'Netcloud AG',
-					},
-				},
-				{
-					content: 'It makes for a great one-stop shop for monitoring key VMware metrics! I have been using CodeNotary CNIL Metrics and Logs for about a year. Setup and operational in less than 30 minutes. It comes pre-packaged with ready to use dashboards that are color coded with thresholds providing immediate feedback on performance, KPIs, health and areas of concerns. The team is skilled in this area and knows what their customer base is seeking. Overall, I’m very pleased with the application and the support team behind it. Highly recommended!',
-					author: {
-						name: 'Tarun Keswani',
-						title: 'Principal Staff Engineer',
-						company: 'Motorola Solutions',
-					},
-				},
-				{
-					content: `
-					The tremendous flexibility and and the possibility to create your own dashboards with the metrics you want to keep one eye on it all the time across different infrastructure products from different vendors.
-
-					Also I like the very great support from the Merics and Logs team!			`,
+					Also I like the very great support from the Merics and Logs team!`,
 					author: {
 						name: 'Jan Unger',
 						title: 'Network and Datacenter Engineer',
@@ -143,6 +110,18 @@ export default {
 	background-color: $cn-color-background;
 	height: 760px !important;
 	overflow: unset !important;
+
+	.title {
+		text-transform: uppercase;
+		margin-bottom: -100px;
+		z-index: 1;
+		text-align: center;
+		width: 100%;
+		color: #244583;
+		font-weight: 700;
+		font-size: 32px !important;
+		line-height: 34px !important;
+	}
 
 	.floating-container {
 		position: absolute;
@@ -190,7 +169,7 @@ export default {
 	}
 
 	.slick-slider {
-		padding: 50px;
+		padding: 95px 50px 50px;
 		background: white;
 		border-radius: 30px;
 
@@ -238,6 +217,80 @@ export default {
 			img {
 				transform: scale(1.5);
 			}
+		}
+
+		.review {
+			overflow: hidden;
+			position: relative;
+			padding: 20px 10px 10px;
+			height: 100%;
+
+			&-content-wrapper {
+				background: #faf9f8;
+				border-radius: 30px;
+				border: 1px solid #244583;
+				box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+				padding: 90px 48px 48px 60px;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+
+				@media screen and (max-width: $mobile-max-width) {
+					padding-top: 60px;
+				}
+			}
+
+			&-content,
+			&-author-name,
+			&-author-company {
+				margin: 0;
+			}
+
+			&-quote-image {
+				position: absolute;
+				top: 0;
+				left: 70px;
+			}
+
+			&-content {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				flex: auto;
+			}
+
+			&-author-name {
+				color: #244583;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 20px;
+			}
+
+			&-author-company {
+				color: #768e98;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 22px;
+				margin-top: 5px;
+			}
+
+			hr {
+				border-top: 1px solid #c1c1c1;
+			}
+
+			@media screen and (max-width: $mobile-max-width) {
+				padding: 30px 35px 25px;
+			}
+		}
+	}
+
+	.slick-list {
+		overflow-y: visible;
+	}
+
+	.slick-slide {
+		& > div {
+			height: 100%;
 		}
 	}
 }
