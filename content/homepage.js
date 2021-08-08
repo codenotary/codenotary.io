@@ -12,7 +12,7 @@ export default {
 			{
 				bigTitle: 'CNIL',
 				smallTitle: 'Cloud',
-				description: 'Trusted CI/CD, SBOM and artifact protection as a service that allows public verification.',
+				description: 'Trusted CI/CD, SBOM and<br>artifact protection as<br>a service that allows<br>public verification.',
 				actionButton: {
 					text: 'Discover CNIL Cloud',
 					to: {
@@ -25,7 +25,7 @@ export default {
 			{
 				bigTitle: 'CNIL',
 				smallTitle: 'Metrics & Logs',
-				description: 'Self-Hosted performance monitoring and compliant log analysis for VMware vSphere, container and much more.',
+				description: 'Self-Hosted performance<br>monitoring and compliant log<br>analysis for VMware vSphere,<br>container and much more.',
 				actionButton: {
 					text: 'Discover Metrics & Logs',
 					to: {

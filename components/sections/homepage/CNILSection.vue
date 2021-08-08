@@ -16,8 +16,12 @@
 					:key="card.title"
 					class="cnil-card"
 				>
-					<div class="image">
-						<img :src="card.image" :alt="card.title">
+					<div class="image-container">
+						<img
+							:src="card.image"
+							:alt="card.title"
+							class="image -responsive"
+						>
 					</div>
 					<div class="content" :class="card.primaryTextColor">
 						<h2 class="big-title">
@@ -26,12 +30,11 @@
 						<p class="small-title">
 							{{ card.smallTitle }}
 						</p>
-						<p class="description">
-							{{ card.description }}
-						</p>
+						<p class="description" v-html="card.description" />
 						<cn-button
 							variant="primary"
 							:to="card.actionButton.to"
+							class="_margin-top-1"
 						>
 							{{ card.actionButton.text }}
 						</cn-button>
@@ -70,26 +73,21 @@ export default {
 		display: flex;
 		border: 1px solid $cn-color-brand;
 		box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-		padding: 35px 48px 48px 0;
+		padding: 35px 24px 48px 0;
+		justify-content: space-evenly;
+		flex: 1;
 
 		&:not(:first-child) {
 			margin-left: 20px;
 		}
 
-		.image {
-			width: 50%;
+		.image-container {
+			max-width: 50%;
 			display: flex;
-			justify-content: center;
 			align-items: center;
-
-			img {
-				max-width: 100%;
-			}
 		}
 
 		.content {
-			width: calc(50% - 48px);
-
 			&.blue {
 				.big-title {
 					background: -webkit-linear-gradient(left, $cn-color-blue, $cn-color-primary_light);
@@ -130,11 +128,17 @@ export default {
 				font-size: 24px;
 				line-height: 26px;
 			}
+
+			.description {
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+			}
 		}
 	}
 }
 
-@media screen and (max-width: $mobile-max-width) {
+@media screen and (max-width: 1200px) {
 	.cnil-body {
 		flex-direction: column;
 
