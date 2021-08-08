@@ -4,6 +4,7 @@
 			<i-row>
 				<i-column
 					sm="12" lg="6"
+					class="column first"
 				>
 					<h3
 						class="_font-weight-bold _text-uppercase cn-text-white title second"
@@ -30,7 +31,7 @@
 				</i-column>
 				<i-column
 					sm="12" lg="6"
-					class="_text-center"
+					class="column second _text-center"
 				>
 					<img
 						class="image -responsive"
@@ -53,6 +54,57 @@ export default {
 #trusted-supply-chain-section {
 	.container {
 		background: url(/images/sbom-bg.png);
+		border-radius: 30px;
+		border: 1px solid white;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		height: 600px;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		.row {
+			@media screen and (max-width: $mobile-max-width) {
+				max-height: 100% !important;
+			}
+		}
+
+		.column {
+			&.first {
+				padding-left: 4rem;
+			}
+
+			&.second {
+				padding-right: 4rem;
+			}
+
+			@media screen and (max-width: $mobile-max-width) {
+				padding: 0 30px !important;
+
+				&.second {
+					padding-top: 15px !important;
+					max-height: 50% !important;
+					padding-bottom: 20px !important;
+
+					img {
+						max-height: 100% !important;
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: $mobile-max-width) {
+			flex-direction: column;
+
+			.second,
+			.third {
+				text-align: center;
+			}
+
+			.action-buttons {
+				display: flex;
+				justify-content: center;
+			}
+		}
 	}
 }
 </style>
