@@ -4,7 +4,7 @@
 	>
 		<i-container fluid>
 			<i-row
-				class="_align-items-center"
+				class="row _align-items-center"
 			>
 				<i-column lg="6">
 					<img class="mascot-image" src="/images/immudb-header-mascot.png">
@@ -15,7 +15,7 @@
 						{{ content.title1 }}
 					</h1>
 					<h3
-						class="_font-weight-bold _font-uppercase cn-text-white title second"
+						class="_font-weight-bold _text-uppercase cn-text-white title second _margin-0 _margin-bottom-1"
 						v-html="content.title2"
 					/>
 					<p class="cn-text-white title third">
@@ -52,6 +52,30 @@ export default {
 <style lang="scss" scoped>
 #immudb-built-on-section {
 	background: $cn-dark-gradient_inverse;
+
+	.row {
+		@media screen and (max-width: $mobile-max-width) {
+			display: flex;
+			flex-direction: column-reverse;
+
+			.first,
+			.second,
+			.third {
+				text-align: center;
+			}
+
+			.second {
+				font-size: 24px !important;
+				line-height: 26px !important;
+				font-weight: 700 !important;
+			}
+
+			.action-buttons {
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
 
 	.mascot-image {
 		height: auto;
