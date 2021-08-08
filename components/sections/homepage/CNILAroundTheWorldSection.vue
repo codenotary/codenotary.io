@@ -16,8 +16,8 @@
 					:alt="stat.label"
 					class="image stat-image"
 				>
-				<p class="stat-count">
-					{{ Number(stat.count).toLocaleString() }}
+				<p class="stat-count" :class="stat.primaryColor">
+					{{ stat.count | commaDelimeter }}
 				</p>
 				<p class="stat-label cn-text-white _text-uppercase">
 					{{ stat.label }}
@@ -32,22 +32,30 @@ import axios from 'axios';
 
 export default {
 	name: 'CNILAroundTheWorldSection',
+	filters: {
+		commaDelimeter(value) {
+			return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+		},
+	},
 	data() {
 		return {
 			downloads: {
 				label: 'Downloads',
 				count: 0,
 				image: '/images/downloads.png',
+				primaryColor: 'light-green',
 			},
 			notarizations: {
 				label: 'Notarizations',
 				count: 0,
 				image: '/images/notarizations.png',
+				primaryColor: 'green',
 			},
 			authentications: {
 				label: 'Authentications',
 				count: 0,
 				image: '/images/authentications.png',
+				primaryColor: 'blue',
 			},
 		};
 	},
@@ -88,9 +96,20 @@ export default {
 			}
 
 			&-count {
-				color: #54eab4;
 				font-weight: 700;
 				font-size: 32px;
+
+				&.light-green {
+					color: #54eab4;
+				}
+
+				&.green {
+					color: #24c4a1;
+				}
+
+				&.blue {
+					color: #36d6d0;
+				}
 			}
 
 			&-label {
