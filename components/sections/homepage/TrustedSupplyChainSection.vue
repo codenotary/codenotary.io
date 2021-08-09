@@ -22,7 +22,8 @@
 					<div class="action-buttons">
 						<cn-button
 							variant="secondary"
-							href="//vchain-ws.slack.com/files/UCUMSS0MB/F02ABURAYFQ/trusted_slc_-_sbom__3_.pdf"
+							href="/resources/Trusted%20SLC%20-%20SBOM.pdf"
+							target="_blank"
 							class="discover-button"
 						>
 							<img src="/images/download.png"> Download PDF
