@@ -1,6 +1,8 @@
 <template>
 	<PageSection
 		id="benefits-section"
+		:top="0"
+		:bottom="0"
 	>
 		<i-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<PageSectionHeader
@@ -57,126 +59,127 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.container {
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 60px;
-}
-
-.main-container {
-	background-color: white;
-	border-radius: $cn-border-radius-lg;
-	z-index: 2;
-	position: relative;
-
-	::v-deep h2 {
-		margin-bottom: 24px;
-	}
-}
-
-.benefits-body {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: flex-start;
-	width: 100%;
-	flex-wrap: wrap;
-
-	@media screen and (max-width: 767px) {
-		justify-content: center;
+#benefits-section {
+	.container {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-bottom: 60px;
 	}
 
-	@media screen and (max-width: 1199px) {
-		& > * {
-			flex-basis: 50%;
-			display: flex;
-
-			&:nth-child(even) {
-				justify-content: flex-start;
-			}
-
-			&:nth-child(odd) {
-				justify-content: flex-end;
-			}
-		}
-	}
-
-	.benefit-card {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
-		height: 420px;
-		width: 250px;
+	.main-container {
+		background-color: white;
 		border-radius: $cn-border-radius-lg;
-		box-shadow: $cn-shadow-sm;
-		margin-left: 10px;
-		margin-right: 10px;
+		z-index: 2;
+		position: relative;
 
-		.benefit-card-header {
-			background-color: white;
-			position: relative;
-			flex: 0 0 0;
-			width: 100%;
-			min-height: 150px;
-			display: flex;
-			align-items: center;
+		::v-deep h2 {
+			margin-bottom: 24px;
+		}
+	}
+
+	.benefits-body {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+		flex-wrap: wrap;
+
+		@media screen and (max-width: 767px) {
 			justify-content: center;
-			margin-bottom: 39px;
-			box-shadow: $cn-shadow-sm;
-			border-radius: $cn-border-radius-lg;
+		}
 
-			&::after {
-				content: url('/icons/triangle.svg');
-				position: absolute;
-				bottom: -36px;
-				transform: rotate(180deg);
+		@media screen and (max-width: 1199px) {
+			& > * {
+				flex-basis: 50%;
+				display: flex;
+
+				&:nth-child(even) {
+					justify-content: flex-start;
+				}
+
+				&:nth-child(odd) {
+					justify-content: flex-end;
+				}
 			}
 		}
 
-		.benefit-card-body {
+		.benefit-card {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			padding: 8px 20px 30px;
-			flex: 1;
-
-			h4 {
-				min-height: 70px;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $mobile-max-width) {
-	::v-deep h2 {
-		font-size: 24px;
-		line-height: 24px;
-	}
-
-	.benefits-body {
-		.benefit-card {
-			width: 213px;
-			height: 353px;
+			height: 420px;
+			width: 250px;
+			border-radius: $cn-border-radius-lg;
+			box-shadow: $cn-shadow-sm;
 			margin-left: 10px;
 			margin-right: 10px;
 
-			.benefit-card-body {
-				padding: 16px;
-				min-height: 53px;
+			.benefit-card-header {
+				background-color: white;
+				position: relative;
+				flex: 0 0 0;
+				width: 100%;
+				min-height: 150px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 39px;
+				box-shadow: $cn-shadow-sm;
+				border-radius: $cn-border-radius-lg;
 
-				h4 {
-					font-size: 18px;
-					line-height: 24px;
-					min-height: 50px;
+				&::after {
+					content: url('/icons/triangle.svg');
+					position: absolute;
+					bottom: -36px;
+					transform: rotate(180deg);
 				}
 			}
 
-			.benefit-card-header {
-				min-height: 100px;
-				margin-bottom: 25px;
+			.benefit-card-body {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				padding: 8px 20px 30px;
+				flex: 1;
+
+				h4 {
+					min-height: 70px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		::v-deep h2 {
+			font-size: 24px;
+			line-height: 24px;
+		}
+
+		.benefits-body {
+			.benefit-card {
+				width: 213px;
+				height: 353px;
+				margin-left: 10px;
+				margin-right: 10px;
+
+				.benefit-card-body {
+					padding: 16px;
+					min-height: 53px;
+
+					h4 {
+						font-size: 18px;
+						line-height: 24px;
+						min-height: 50px;
+					}
+				}
+
+				.benefit-card-header {
+					min-height: 100px;
+					margin-bottom: 25px;
+				}
 			}
 		}
 	}

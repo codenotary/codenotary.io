@@ -36,10 +36,12 @@ export default {
 			default: false,
 		},
 	},
-	data: () => ({
-		ACTIVE_CAMPAIGN_FORM_ID,
-		injected: false,
-	}),
+	data() {
+		return {
+			ACTIVE_CAMPAIGN_FORM_ID,
+			injected: false,
+		};
+	},
 	watch: {
 		value (newVal) {
 			if (newVal && !this.injected) {
@@ -50,89 +52,153 @@ export default {
 			}
 		},
 	},
+	updated() {
+		const modalForm = document.querySelector('form._form._form_24');
+
+		if (modalForm !== null) {
+			modalForm.style.setProperty('background', 'transparent', 'important');
+		}
+	},
 };
 </script>
 
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-div._form_24 {
-	form._form._form_24 {
-		width: 100% !important;
-		margin: 0 !important;
-		padding: 0 !important;
-		font-family: inherit !important;
+.modal-overlay[id*="modal-"] {
+	.modal {
+		border-radius: 30px;
+		overflow: hidden;
 
-		div._x81034835 {
-			display: none !important;
+		.header,
+		.body {
+			border: none;
 		}
 
-		div._x30741568 {
-			display: none;
+		.header {
+			background: $cn-dark-gradient;
+			color: white;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 20px;
+			padding: 20px 32px;
 
-			p {
-				margin-top: 0 !important;
-				color: #343a40 !important;
-				line-height: 1.5;
-				font-size: 1rem !important;
-				font-weight: 400 !important;
-			}
-		}
-
-		div._form_element {
-			margin-bottom: $spacer !important;
-
-			label,
-			input {
-				font-family: inherit !important;
-				font-size: 16px !important;
-				font-weight: inherit !important;
-			}
-
-			input {
-				height: 44px !important;
-				padding: $spacer-1-2 $spacer !important;
-				border-color: #dee2e6 !important;
-
-				&::placeholder {
-					color: #999 !important;
+			.close {
+				&:hover,
+				&:focus {
+					background: none;
 				}
 
-				&:focus,
-				&:active {
-					border-color: $color-primary !important;
+				i {
+					color: white;
+					font-size: 20px;
 				}
 			}
 		}
 
-		div._field13 {
-			._form-label {
-				padding-top: $spacer-1;
-				margin: $spacer-1 0 !important;
-				border-top: 1px solid #dee2e6;
-				font-weight: 600 !important;
-			}
+		.body {
+			background: #faf9f8;
+			padding-left: 90px;
+			padding-right: 90px;
+			padding-bottom: 30px;
 
-			._checkbox-radio {
-				display: flex;
+			div._form_24 {
+				form._form._form_24[id*="_form_"] {
+					width: 100% !important;
+					margin: 0 !important;
+					padding: 0 !important;
+					font-family: inherit !important;
+					background: transparent !important;
 
-				span {
-					padding-left: $spacer-1-2;
+					div._x81034835 {
+						display: none !important;
+					}
+
+					div._x30741568 {
+						display: none;
+
+						p {
+							margin-top: 0 !important;
+							color: #343a40 !important;
+							line-height: 1.5;
+							font-size: 1rem !important;
+							font-weight: 400 !important;
+						}
+					}
+
+					div._form_element {
+						margin-bottom: $spacer !important;
+
+						label,
+						input {
+							font-family: inherit !important;
+							font-size: 16px !important;
+							font-weight: inherit !important;
+						}
+
+						label {
+							color: #244583;
+							font-weight: 400;
+							font-size: 12px;
+							line-height: 14px;
+						}
+
+						input {
+							height: 44px !important;
+							padding: 1.5rem $spacer !important;
+							border-color: #9fefde !important;
+							border-radius: 8px !important;
+							box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+
+							&::placeholder {
+								color: #999 !important;
+							}
+
+							&:focus,
+							&:active {
+								border-color: $color-primary !important;
+							}
+						}
+
+						a[href="https://codenotary.com/privacy-statement"] {
+							color: #24c4a1;
+						}
+					}
+
+					div._field13 {
+						._form-label {
+							padding-top: $spacer-1;
+							margin: $spacer-1 0 !important;
+							border-top: 1px solid #dee2e6;
+							font-weight: 600 !important;
+						}
+
+						._checkbox-radio {
+							display: flex;
+
+							span {
+								padding-left: $spacer-1-2;
+							}
+						}
+					}
+
+					div._button-wrapper {
+						text-align: center;
+
+						button#_form_24_submit {
+							width: 130px;
+							background-color: $color-secondary !important;
+							font-size: 16px !important;
+							font-weight: inherit !important;
+							color: $cn-color-dark;
+						}
+					}
+
+					._form-branding {
+						display: none !important;
+					}
 				}
 			}
-		}
-
-		div._button-wrapper {
-			button#_form_24_submit {
-				width: 100%;
-				background-color: $color-primary !important;
-				font-size: 16px !important;
-				font-weight: inherit !important;
-			}
-		}
-
-		._form-branding {
-			display: none !important;
 		}
 	}
 }

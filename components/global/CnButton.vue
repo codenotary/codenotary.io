@@ -122,7 +122,7 @@ a:active {
 		&:hover,
 		&:focus,
 		&:active { // Becomes primary inverse
-			color: $cn-color-primary;
+			color: $cn-color-primary !important;
 			background-color: white;
 			border: 1px solid $cn-color-primary;
 		}

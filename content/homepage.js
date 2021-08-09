@@ -6,6 +6,42 @@ export default {
 		title3: 'from supply chain attacks',
 		subtitle: 'Trust, integrity, and an auditable bill of material for all identities and artifacts of your software supply chain.',
 	},
+	cnilSection: {
+		title: 'CodeNotary Immutable Ledger',
+		cards: [
+			{
+				bigTitle: 'CNIL',
+				smallTitle: 'Cloud',
+				description: 'Trusted CI/CD, SBOM and<br>artifact protection as<br>a service that allows<br>public verification.',
+				actionButton: {
+					text: 'Discover CNIL Cloud',
+					to: {
+						path: '/products/ci-cd',
+					},
+				},
+				image: '/images/cnil-cloud.png',
+				primaryTextColor: 'blue',
+			},
+			{
+				bigTitle: 'CNIL',
+				smallTitle: 'Metrics & Logs',
+				description: 'Self-Hosted performance<br>monitoring and compliant log<br>analysis for VMware vSphere,<br>container and much more.',
+				actionButton: {
+					text: 'Discover Metrics & Logs',
+					to: {
+						path: '/products/immutable-ledger-metrics-and-logs',
+					},
+				},
+				image: '/images/cnil-metrics-logs.png',
+				primaryTextColor: 'green',
+			},
+		],
+	},
+	builtOnSection: {
+		title1: 'immudb',
+		title2: 'built on the fastest<br><span class="cn-text-secondary">immutable</span> ledger technology',
+		title3: 'Open Source and easy to use in new applications and easy to integrate into existing application.',
+	},
 	heroCardsSection: {
 		cards: [
 			{
