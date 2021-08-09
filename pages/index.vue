@@ -99,6 +99,14 @@ export default {
 	#newsletter-section {
 		margin-top: -250px;
 
+		@media screen and (max-width: 529px) {
+			margin-top: -380px;
+		}
+
+		@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
+			margin-top: -175px;
+		}
+
 		@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
 			margin-top: -125px;
 		}

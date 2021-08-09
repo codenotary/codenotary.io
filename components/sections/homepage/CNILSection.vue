@@ -67,7 +67,6 @@ export default {
 
 	.cnil-card {
 		max-width: 570px;
-		max-height: 330px;
 		border-radius: 30px;
 		background: white;
 		display: flex;
@@ -142,9 +141,16 @@ export default {
 	.cnil-body {
 		flex-direction: column;
 
-		.cnil-card:not(:first-child) {
-			margin-left: 0;
-			margin-top: 20px;
+		.cnil-card {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			padding-right: 0;
+
+			&:not(:first-child) {
+				margin-left: 0;
+				margin-top: 20px;
+			}
 		}
 	}
 }

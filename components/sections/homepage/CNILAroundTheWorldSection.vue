@@ -85,6 +85,11 @@ export default {
 		margin-bottom: 20px;
 		font-size: 32px !important;
 		font-weight: 700 !important;
+
+		@media screen and (max-width: $mobile-max-width) {
+			font-size: 24px !important;
+			line-height: 26px !important;
+		}
 	}
 
 	.stats {

@@ -58,7 +58,6 @@ export default {
 		border-radius: 30px;
 		border: 1px solid white;
 		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-		height: 600px;
 		display: flex;
 		align-items: center;
 		position: relative;
@@ -67,16 +66,19 @@ export default {
 		.row {
 			@media screen and (max-width: $mobile-max-width) {
 				max-height: 100% !important;
+				flex-direction: column;
 			}
 		}
 
 		.column {
 			&.first {
 				padding-left: 4rem;
+				flex: 1;
 			}
 
 			&.second {
 				padding-right: 4rem;
+				flex: 1;
 			}
 
 			@media screen and (max-width: $mobile-max-width) {
@@ -96,6 +98,8 @@ export default {
 
 		@media screen and (max-width: $mobile-max-width) {
 			flex-direction: column;
+			background-position: 550px bottom;
+			background-size: cover;
 
 			.second,
 			.third {

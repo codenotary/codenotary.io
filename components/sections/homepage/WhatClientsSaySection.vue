@@ -143,6 +143,11 @@ export default {
 		font-weight: 700;
 		font-size: 32px !important;
 		line-height: 34px !important;
+
+		@media screen and (max-width: $mobile-max-width) {
+			margin-top: -80px;
+			color: white;
+		}
 	}
 
 	.floating-container {
@@ -151,6 +156,10 @@ export default {
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
+
+		@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
+			top: -20px;
+		}
 	}
 
 	@include breakpoint-down(sm) {
@@ -211,6 +220,10 @@ export default {
 				.custom-dot {
 					background: $cn-color-primary;
 				}
+			}
+
+			@media screen and (max-width: 529px) {
+				bottom: 0;
 			}
 		}
 
@@ -302,6 +315,10 @@ export default {
 
 			@media screen and (max-width: $mobile-max-width) {
 				padding: 30px 35px 25px;
+			}
+
+			@media screen and (max-width: 529px) {
+				padding: 0;
 			}
 		}
 	}
