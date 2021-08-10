@@ -43,19 +43,19 @@ export default {
 		return {
 			downloads: {
 				label: 'Downloads',
-				count: 5043476,
+				count: 16043476,
 				image: '/images/downloads.png',
 				primaryColor: 'light-green',
 			},
 			notarizations: {
 				label: 'Notarizations',
-				count: 910693,
+				count: 91069357,
 				image: '/images/notarizations.png',
 				primaryColor: 'green',
 			},
 			authentications: {
-				label: 'Authentications',
-				count: 223020890,
+				label: 'Builds / week',
+				count: 83445,
 				image: '/images/authentications.png',
 				primaryColor: 'blue',
 			},
