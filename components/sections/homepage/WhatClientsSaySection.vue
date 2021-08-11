@@ -16,7 +16,7 @@
 						>
 							<img
 								class="cn-icon review-quote-image"
-								src="/images/quotation.png"
+								src="/images/quotation.svg"
 								alt="quote"
 							>
 							<div class="review-content-wrapper">
@@ -285,6 +285,7 @@ export default {
 				position: absolute;
 				top: 0;
 				left: 70px;
+				width: 100px;
 			}
 
 			&-content {

@@ -26,7 +26,7 @@
 							target="_blank"
 							class="discover-button"
 						>
-							<img src="/images/download.png"> Download PDF
+							<img src="/images/download.svg"> Download PDF
 						</cn-button>
 					</div>
 				</i-column>

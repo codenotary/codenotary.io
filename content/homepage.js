@@ -19,7 +19,7 @@ export default {
 						path: '/products/ci-cd',
 					},
 				},
-				image: '/images/cnil-cloud.png',
+				image: '/images/cnil-cloud.svg',
 				primaryTextColor: 'blue',
 			},
 			{
@@ -32,7 +32,7 @@ export default {
 						path: '/products/immutable-ledger-metrics-and-logs',
 					},
 				},
-				image: '/images/cnil-metrics-logs.png',
+				image: '/images/cnil-metrics-logs.svg',
 				primaryTextColor: 'green',
 			},
 		],
