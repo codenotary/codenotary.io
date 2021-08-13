@@ -10,17 +10,18 @@ export default {
 		title: 'CodeNotary Immutable Ledger',
 		cards: [
 			{
-				bigTitle: 'CNIL',
-				smallTitle: 'Cloud',
+				bigTitle: 'Cloud',
+				smallTitle: 'CodeNotary',
 				description: 'Trusted CI/CD, SBOM and<br>artifact protection as<br>a service that allows<br>public verification.',
 				actionButton: {
-					text: 'Discover CNIL Cloud',
+					text: 'Discover CodeNotary Cloud',
 					to: {
 						path: '/products/ci-cd',
 					},
 				},
 				image: '/images/cnil-cloud.svg',
 				primaryTextColor: 'blue',
+				reversedTitles: true,
 			},
 			{
 				bigTitle: 'CNIL',
@@ -102,7 +103,7 @@ export default {
 		],
 	},
 	benefitsSection: {
-		title: 'Key benefits of using CodeNotary Immutable Ledger',
+		title: 'Key benefits of using CodeNotary Cloud',
 		cards: [
 			{
 				iconName: '/icons/pipeline.svg',
@@ -147,7 +148,7 @@ export default {
 					},
 					*/
 					{
-						label: 'CNIL Cloud', internalLink: '/products/ci-cd', href: null,
+						label: 'CodeNotary Cloud', internalLink: '/products/ci-cd', href: null,
 					},
 					{
 						label: 'CNIL Metrics & Logs', internalLink: '/products/immutable-ledger-metrics-and-logs', href: null,

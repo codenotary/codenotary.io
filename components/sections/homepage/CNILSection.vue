@@ -24,12 +24,22 @@
 						>
 					</div>
 					<div class="content" :class="card.primaryTextColor">
-						<h2 class="big-title">
-							{{ card.bigTitle }}
-						</h2>
-						<p class="small-title">
-							{{ card.smallTitle }}
-						</p>
+						<template v-if="card.reversedTitles">
+							<p class="small-title _text-uppercase">
+								{{ card.smallTitle }}
+							</p>
+							<h2 class="big-title _text-uppercase">
+								{{ card.bigTitle }}
+							</h2>
+						</template>
+						<template v-else>
+							<h2 class="big-title _text-uppercase">
+								{{ card.bigTitle }}
+							</h2>
+							<p class="small-title _text-uppercase">
+								{{ card.smallTitle }}
+							</p>
+						</template>
 						<p class="description" v-html="card.description" />
 						<cn-button
 							variant="primary"
