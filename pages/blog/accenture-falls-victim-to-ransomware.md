@@ -1,8 +1,8 @@
 ---
 title: "Accenture - Another recent victim of ransomware"
-image: /images/blog/accenture_ransom.png
+image: /images/blog/codenotary-cloud-ransomware.png
 tags: ["CNIL", "ransomware", "cybersecurity"]
-date: "2021-08-12"
+date: "2021-08-13"
 ---
 # Accenture falls victim to ransomware
 Accenture; one of the biggest IT Consultancies in the world has recently been hit by a ransomware attack carried out by Lockbit 2.0 operators. This was publicly disclosed on Lockbit's leaks site where they were demanding a staggering ** $50,000,000**
@@ -19,8 +19,8 @@ According to the [Cyble research team](https://twitter.com/AuCyble/status/142542
 
 Although the main goal of a ransomware attack is usually to encrypt files in exchange for money, Accenture stated that they were able to quickly recover the affected system ["*We fully restored our affected systems from backup, and there was no impact on Accenture's operations, or on our clients' systems*."](https://www.nasdaq.com/articles/accenture-restores-affected-systems-after-reported-ransomware-attack-2021-08-11) but at this point, **the damage was already done, the attackers had already extracted the files from the affected systems**.
 
-## On CodeNotary Immutable Ledger
+## On CodeNotary Cloud
 At CodeNotary we understand how important it is to secure your systems to prevent this and many other similar incidents but more importantly, we detected the need for a robust solution that didn't [depend on digital dertificates](https://www.codenotary.com/blog/when-digital-certificates-fail) because of how cumbersome things can be once a certificate is revoked (For more information on digital certificates, read our [blog post on them](https://www.codenotary.com/blog/when-digital-certificates-fail)). 
-With our [Immutable Ledger](https://www.codenotary.com/products/ci-cd) and its multiple integrations you can prevent this and many other types of cyberattacks **by only introducing or releasing software that you can not only trust but also cryptographically verify to prevent unauthorized or tampered versions from ever reaching those systems**.
+With our [CodeNotary Cloud](https://www.codenotary.com/products/ci-cd) and its multiple integrations you can prevent this and many other types of cyberattacks **by only introducing or releasing software that you can not only trust but also cryptographically verify to prevent unauthorized or tampered versions from ever reaching those systems**.
 
 To learn more about how you can implement end-to-end zero-trust protection for your CI pipelines and deployments visit CodeNotary and [signup for the Cloud version](https://www.codenotary.com/products/ci-cd).
