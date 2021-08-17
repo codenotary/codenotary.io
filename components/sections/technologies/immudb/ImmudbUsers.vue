@@ -93,6 +93,10 @@ export default {
 				label: 'Cisco',
 				image: '/images/immudb/users/cisco.jpeg',
 			},
+			{
+				label: 'Fujitsu',
+				image: '/images/immudb/users/fujitsu.png',
+			},
 		],
 	}),
 	beforeDestroy () {

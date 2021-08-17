@@ -22,9 +22,9 @@
 					<div class="action-buttons">
 						<cn-button
 							variant="secondary"
-							href="/resources/Trusted%20SLC%20-%20SBOM.pdf"
 							target="_blank"
 							class="discover-button"
+							@click.native="SBOMModalOpen = true"
 						>
 							<img src="/images/download.svg"> Download PDF
 						</cn-button>
@@ -42,12 +42,18 @@
 				</i-column>
 			</i-row>
 		</i-container>
+		<SBOMModal v-model="SBOMModalOpen" />
 	</PageSection>
 </template>
 
 <script>
 export default {
 	name: 'TrustedSupplyChainSection',
+	data() {
+		return {
+			SBOMModalOpen: false,
+		};
+	},
 };
 </script>
 
