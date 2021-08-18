@@ -6,6 +6,11 @@ export const meta = meta => [
 		name: 'description',
 		content: (meta && meta.description) || DEFAULT_META.DESCRIPTION,
 	},
+	{
+		hid: 'keywords',
+		name: 'keywords',
+		content: (meta && meta.keywords) || DEFAULT_META.KEYWORDS,
+	},
 	// Open Graph Data
 	{
 		hid: 'og:type',
