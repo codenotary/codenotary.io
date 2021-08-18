@@ -54,7 +54,7 @@ export const DEFAULT_META = {
 	TYPE: 'website',
 	URL: 'https://codenotary.com',
 	SITE_URL: 'https://codenotary.com',
-	TITLE: 'Immutable Recording of Data and Processes - CodeNotary',
+	TITLE: 'Codenotary — Software Supply Chain Trust and Security Solutions for DevOps',
 	SITE_NAME: 'CodeNotary',
 	AUTHOR: 'CodeNotary',
 	HANDLE: '@CodeNotary',
