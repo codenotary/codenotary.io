@@ -5,7 +5,7 @@ type: "Full time"
 requires: "" 
 apply: "https://docs.google.com/forms/d/e/1FAIpQLSdiaOgQPxGL-MwYvGYoKjcRUyTQGGtXsC7PEc4-P42CSeOHtA/viewform?usp=sf_link"
 weight: 3
-active: true
+active: false
 ---
 
 We're looking for an experienced and highly technical project Manager with a software development background to
