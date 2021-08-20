@@ -11,6 +11,9 @@
 			<ImmudbRunsOnSection />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
+			<ImmudbAWSSection id="immudb-aws-section" />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<ImmudbVideo />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
@@ -83,6 +86,18 @@ export default {
 
 	h2 {
 		font-weight: 700 !important;
+	}
+}
+
+#immudb-aws-section {
+	margin-bottom: -85px;
+
+	@media screen and (max-width: $mobile-max-width) {
+		margin-bottom: -75px;
+	}
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: -160px;
 	}
 }
 </style>

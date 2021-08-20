@@ -14,7 +14,7 @@ export default {
 				smallTitle: 'CodeNotary',
 				description: 'Trusted CI/CD, SBOM and<br>artifact protection as<br>a service that allows<br>public verification.',
 				actionButton: {
-					text: 'Discover CodeNotary Cloud',
+					text: 'Discover Codenotary Cloud',
 					to: {
 						path: '/products/ci-cd',
 					},
@@ -103,7 +103,7 @@ export default {
 		],
 	},
 	benefitsSection: {
-		title: 'Key benefits of using CodeNotary Cloud',
+		title: 'Key benefits of using Codenotary Cloud',
 		cards: [
 			{
 				iconName: '/icons/pipeline.svg',
@@ -148,7 +148,7 @@ export default {
 					},
 					*/
 					{
-						label: 'CodeNotary Cloud', internalLink: '/products/ci-cd', href: null,
+						label: 'Codenotary Cloud', internalLink: '/products/ci-cd', href: null,
 					},
 					{
 						label: 'CNIL Metrics & Logs', internalLink: '/products/immutable-ledger-metrics-and-logs', href: null,

@@ -61,7 +61,7 @@
 						v-if="productsMenuOpen"
 						:to="{ name: 'products-ci-cd' }"
 					>
-						CodeNotary Cloud
+						Codenotary Cloud
 					</i-nav-item>
 					<i-nav-item
 						v-if="productsMenuOpen"

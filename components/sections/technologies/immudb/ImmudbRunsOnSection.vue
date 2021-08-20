@@ -1,5 +1,9 @@
 <template>
-	<PageSection id="immudb-runs-on-section">
+	<PageSection
+		id="immudb-runs-on-section"
+		:top="0"
+		:bottom="2"
+	>
 		<i-container class="floating-container">
 			<i-row>
 				<i-column>
@@ -180,27 +184,14 @@ export default {
 #immudb-runs-on-section {
 	position: relative;
 	background-color: $cn-color-background;
-	height: 0 !important;
-	overflow: unset !important;
-
-	.floating-container {
-		position: absolute;
-		bottom: -127px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 10;
-	}
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
-		padding: 0 12px 0 !important;
 
 		.floating-container {
 			position: relative;
-			margin: 0 !important;
 			padding: 0 !important;
 			width: 100% !important;
-			bottom: -34px !important;
 
 			h2 {
 				margin-top: 17px !important;

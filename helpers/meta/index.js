@@ -1,6 +1,7 @@
 const KEYWORDS = [
 	'CodeNotary',
 	'CodeNotary Cloud',
+	'Codenotary Cloud',
 	'CodeNotary Immutable',
 	'Cloud',
 	'Immutable Ledger',

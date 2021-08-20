@@ -1,8 +1,8 @@
 <template>
-	<page-section
+	<PageSection
 		id="immudb-features-section"
 		:top="2"
-		:bottom="2"
+		:bottom="0"
 	>
 		<i-container>
 			<i-row class="_display-flex _justify-content-center">
@@ -80,7 +80,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -95,7 +95,6 @@ export default {
 
 #immudb-features-section {
 	padding-top: 14px !important;
-	padding-bottom: 162px !important;
 
 	.immudb-feature {
 		margin: 16px 0;
@@ -111,7 +110,6 @@ export default {
 
 	@include breakpoint-down(sm) {
 		.container {
-			margin: 0 auto -170px !important;
 			padding: 0 22px !important;
 			width: 100% !important;
 			min-width: 100%;

@@ -5,7 +5,7 @@
 		:bottom="8"
 	>
 		<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center">
-			CodeNotary Cloud Around The World
+			Codenotary Cloud Around The World
 		</h3>
 		<div class="stats _display-flex _justify-content-center _align-items-center">
 			<div

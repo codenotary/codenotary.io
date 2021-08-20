@@ -325,4 +325,4 @@ If you want to check a major Open Source project [Home Assistant](https://github
 
 In summary, this process involved writing a Dockerfile to generate a clean working environment which calls an entrypoint script. Our action.yml file defined the inputs and outputs as well as the environment variables to be passed to our Docker image, and our sample Github Workflow utilizes all of this to create a test file and notarize it using the action we wrote.
 
-You can get started in minutes with your [CodeNotary Cloud account](https://dashboard.codenotary.io/auth/signup)
+You can get started in minutes with your [Codenotary Cloud account](https://dashboard.codenotary.io/auth/signup)
