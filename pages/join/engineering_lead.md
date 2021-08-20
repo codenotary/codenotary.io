@@ -4,7 +4,7 @@ location: "Remote (within Europe)"
 type: "Full time" 
 requires: "" 
 apply: "https://docs.google.com/forms/d/e/1FAIpQLSfGymwncK38ELW4Hw5I06JWUYMGOUiEjA4oIEO3qAfWBtgexw/viewform?usp=sf_link"
-weight: 12
+weight: 2
 active: true
 ---
 

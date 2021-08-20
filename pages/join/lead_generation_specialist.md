@@ -3,7 +3,7 @@ title: "Lead Generation Specialist"
 location: "Remote (within USA)" 
 type: "Full time" 
 requires: "" 
-weight: 2
+weight: 1
 active: true
 apply: https://docs.google.com/forms/d/e/1FAIpQLSdQQWBLshOC87ZzCjU6pwwgDPR3LMHLc4rlJkKS2P_UbBk0bA/viewform
 ---

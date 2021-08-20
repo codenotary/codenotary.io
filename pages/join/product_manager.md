@@ -3,7 +3,7 @@ title: "Product Manager"
 location: "Remote" 
 type: "Full time" 
 requires: "" 
-weight: 1
+weight: 3
 active: true
 apply: https://docs.google.com/forms/d/e/1FAIpQLScjxxOGgCCK8X7u9XGtNGXQ1qKqzvG9_4beYqc8sPDtwuDzhag/viewform?usp=sf_link
 ---
