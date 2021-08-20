@@ -3,7 +3,7 @@ title: "Bookkeper"
 location: "Bellaire, 6750 West Loop South, Suite 845" 
 type: "Full time" 
 requires: "" 
-weight: 7
+weight: 15
 active: true
 ---
 

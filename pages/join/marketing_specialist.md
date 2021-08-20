@@ -4,7 +4,7 @@ location: "Remote (within US)"
 type: "Full time" 
 requires: "" 
 apply: "https://docs.google.com/forms/d/e/1FAIpQLSdfrQg-yDi1nTecdJuIgvTlCqiR-3v1rZnCBZrErx8mec5GKw/viewform?usp=sf_link"
-weight: 2
+weight: 10
 active: true
 ---
 
