@@ -120,7 +120,7 @@ export default {
 			{
 				iconName: '/icons/granularity.svg',
 				title: 'Granular Revocation',
-				subtitle: 'Independent verification of artifacts, actions, and dependencies which can be revoked separately..',
+				subtitle: 'Independent verification of artifacts, actions, and dependencies which can be revoked separately.',
 				backgroundColor: 'secondary',
 			},
 			{
