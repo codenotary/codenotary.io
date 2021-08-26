@@ -20,7 +20,7 @@
 			/>
 		</div>
 	</i-modal> -->
-	<div>a</div>
+	<div>newsletter modal</div>
 </template>
 
 <script>

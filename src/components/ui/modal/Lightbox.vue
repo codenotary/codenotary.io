@@ -10,7 +10,7 @@
 		</template>
 		<img :src="src" :alt="alt">
 	</i-modal> -->
-	<div>a</div>
+	<div>lightbox modal</div>
 </template>
 
 <script>

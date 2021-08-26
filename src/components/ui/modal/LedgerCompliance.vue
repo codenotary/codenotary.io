@@ -20,7 +20,7 @@
 			/>
 		</div>
 	</i-modal> -->
-	<div>a</div>
+	<div>ledger compliance modal</div>
 </template>
 
 <script>

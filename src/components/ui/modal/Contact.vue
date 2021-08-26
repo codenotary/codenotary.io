@@ -20,7 +20,7 @@
 			/>
 		</div>
 	</i-modal> -->
-	<div>a</div>
+	<div>contact modal</div>
 </template>
 
 <script>

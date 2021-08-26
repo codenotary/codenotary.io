@@ -22,6 +22,7 @@
 		<LazyHydrate when-visible>
 			<!-- <ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL /> -->
 		</LazyHydrate>
+		<ProductsLedgerComplianceMetricsAndLogsSupportQuote id="metrics-and-logs-support-quote" />
 	</div>
 </template>
 
@@ -67,3 +68,12 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss">
+#metrics-and-logs-support-quote {
+	position: fixed;
+	right: 0;
+	bottom: 32px;
+	z-index: 5;
+}
+</style>
