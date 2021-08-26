@@ -2,19 +2,25 @@
 	<div>
 		<ProductsLedgerComplianceMetricsAndLogsHeader />
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsFeatures />
+			<!-- <ProductsLedgerComplianceMetricsAndLogsFeatures /> -->
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" />
+			<!-- <ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" /> -->
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsInfrastructure />
+			<!-- <ProductsLedgerComplianceMetricsAndLogsGotYouCovered /> -->
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<HomepageVideos class="_margin-top-4" />
+			<!-- <ProductsLedgerComplianceMetricsAndLogsTabs /> -->
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsTestimonials />
+			<!-- <ProductsLedgerComplianceMetricsAndLogsHowItWorks /> -->
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<!-- <ProductsLedgerComplianceMetricsAndLogsWhatsHappening /> -->
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<!-- <ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL /> -->
 		</LazyHydrate>
 	</div>
 </template>
@@ -33,14 +39,14 @@ export default {
 	components: {
 		LazyHydrate,
 	},
-	async asyncData ({ $content }) {
-		const integrations = await $content('products/integration')
-				.only(['title', 'date', 'image', 'slug', 'tags'])
-				.sortBy('date', 'desc')
-				.fetch();
+	// async asyncData ({ $content }) {
+	// 	const integrations = await $content('products/integration')
+	// 			.only(['title', 'date', 'image', 'slug', 'tags'])
+	// 			.sortBy('date', 'desc')
+	// 			.fetch();
 
-		return { integrations };
-	},
+	// 	return { integrations };
+	// },
 	head() {
 		return {
 			title: title('Immutable Ledger (Public Cloud)'),

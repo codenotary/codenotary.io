@@ -23,7 +23,7 @@
 				</p>
 				<p class="action">
 					<v-btn
-						outline
+						outlined
 						color="primary"
 						href="https://dashboard.codenotary.io/auth/signin"
 						target="_blank"

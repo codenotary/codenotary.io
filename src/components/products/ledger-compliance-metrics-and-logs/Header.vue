@@ -1,186 +1,152 @@
 <template>
-	<v-app-bar id="lc-metrics-and-logs-header">
-		<v-row class="align-center">
-			<v-col xs="12" md="6">
-				<h2 class="-title _margin-bottom-0" style="text-transform: uppercase;">
-					CNIL Metrics and Logs
-				</h2>
-				<p class="cn-text-xs _font-italic _margin-top-0">
-					(former Opvizor Performance Analyzer)
-				</p>
-				<h1 class="title font-weight-bold primary--text _margin-top-0">
-					VMware vSphere & Cloud - Performance monitoring, log analysis, license compliance!
-				</h1>
-				<p class="lead _margin-bottom-0">
-					Monitor and Analyze Performance and Log files:&nbsp;
-					<vue-typer
-						:text="typewriteOptions"
-						:repeat="Infinity"
-						:shuffle="false"
-						initial-action="typing"
-						:pre-type-delay="70"
-						:type-delay="70"
-						:pre-erase-delay="2000"
-						:erase-delay="70"
-						erase-style="backspace"
-						:erase-on-complete="false"
-						caret-animation="blink"
-					/>
-				</p>
-				<p class="lead _margin-bottom-0">
-					Systems and application performance monitoring, log analysis (tamperproof using immudb) and license compliance (RedHat, Oracle, SAP and more) in one virtual appliance
-				</p>
-				<p class="action">
-					<v-btn
-						outline
-						color="primary"
-						href="https://demoml.codenotary.io/"
-						target="_blank"
-						rel="nofollow"
-					>
-						Demo
-					</v-btn>
-					<v-btn
-						color="primary"
-						class="ml-4"
-						@click="startTrialModalOpen = true"
-					>
-						Start trial
-					</v-btn>
-				</p>
-			</v-col>
-			<v-col
-				xs="12"
-				md="6"
-				class="text-center _margin-top-xs-2"
-			>
-				<img
-					class="zoom"
-					:src="src"
-					:alt="alt"
-					@click="index = 0"
-				>
-				{{ index }}
-			</v-col>
-		</v-row>
-		<UiModalStartTrial
-			v-model="startTrialModalOpen"
-		/>
-		<CoolLightBox
-			:items="[src]"
-			:index="index"
-			use-zoom-bar
-			@close="index = null"
-		/>
-	</v-app-bar>
+	<div id="ledger-compliance-metrics-and-logs-header">
+		<v-container class="container" fluid>
+			<v-row>
+				<v-col md="1" />
+				<v-col sm="12" md="5">
+					<h1 class="info--text font-weight-700 text-h2">
+						CNIL<br>
+						Metrics and Logs
+					</h1>
+					<p class="white--text font-weight-400 caption--text ma-0">
+						(formerly, Opvizor Performance Analyzer)
+					</p>
+					<h3 class="font-weight-700 text-h3 white--text">
+						<span class="secondary--text">
+							VMware vSphere & Cloud
+						</span>
+						Performance monitoring, log analysis, license compliance!
+					</h3>
+					<p class="white--text font-weight-400 caption--text ma-0">
+						Monitor and Analyze Performance and Log files:
+					</p>
+					<p class="ma-0">
+						<client-only>
+							<vue-typer
+								:text="typewriteOptions"
+								:repeat="Infinity"
+								:shuffle="false"
+								initial-action="typing"
+								:pre-type-delay="70"
+								:type-delay="70"
+								:pre-erase-delay="2000"
+								:erase-delay="70"
+								erase-style="backspace"
+								:erase-on-complete="false"
+								caret-animation="blink"
+							/>
+							&nbsp;
+						</client-only>
+					</p>
+					<p class="white--text font-weight-400 caption--text ma-0">
+						Performance monitoring for your systems and applications with log analysis (tamperproof using immudb) and license compliance (RedHat, Oracle, SAP and more) in one virtual appliance!
+					</p>
+					<div class="d-flex">
+						<v-btn
+							color="secondary"
+							class="dark--text"
+							@click="startTrialModalOpen = true"
+						>
+							Free Trial
+						</v-btn>
+						<v-btn
+							color="light"
+							class="dark--text ml-2"
+							href="//demoml.codenotary.io/"
+							target="_blank"
+							rel="noopener nofollow"
+						>
+							Demo
+						</v-btn>
+					</div>
+				</v-col>
+				<v-col md="1" />
+				<v-col sm="12" md="5">
+					<v-img :src="src" :alt="alt" />
+				</v-col>
+			</v-row>
+			<UiModalStartTrial
+				:value="startTrialModalOpen"
+				@close="startTrialModalOpen = false"
+			/>
+		</v-container>
+		<div class="backdrops">
+			<div class="backdrop first" />
+			<div class="backdrop image" />
+			<div class="backdrop second secondary" />
+		</div>
+	</div>
 </template>
 
 <script>
 export default {
 	name: 'ProductsLedgerComplianceMetricsAndLogsHeader',
-	data: () => ({
-		src: '/images/cn-lc/ledger-compliance-diagram.png',
-		alt: 'ledger compliance diagram',
-		index: null,
-		typewriteOptions: [
-			'VMware vSAN',
-			'VMware Horizon',
-			'Microsoft Windows OS',
-			'Linux OS',
-			'Oracle Database',
-			'Microsoft SQL',
-			'PostgreSQL',
-		],
-		startTrialModalOpen: false,
-	}),
-	beforeDestroy () {
-		this.src = null;
-		this.alt = null;
-		this.index = null;
-		this.typewriteOptions = null;
-		this.startTrialModalOpen = null;
+	data() {
+		return {
+			src: '/images/cn-lc/ledger-compliance-diagram.png',
+			alt: 'ledger compliance diagram',
+			typewriteOptions: [
+				'VMware vSAN',
+				'VMware Horizon',
+				'Microsoft Windows OS',
+				'Linux OS',
+				'Oracle Database',
+				'Microsoft SQL',
+				'PostgreSQL',
+			],
+			startTrialModalOpen: false,
+		};
 	},
 };
 </script>
 
 <style lang="scss">
-#lc-metrics-and-logs-header {
-	background-color: white;
-	// background-image: url('~static/images/ztc/header.jpg');
-	// background-position: right top;
-	// background-size: 75% auto;
-	text-align: left;
+#ledger-compliance-metrics-and-logs-header {
+	position: relative;
 
-	img {
-		max-width: 100%;
-		width: auto;
-		height: auto;
-		object-fit: contain;
-
-		&.zoom {
-			cursor: zoom-in;
-		}
-	}
-
-	h1 {
-		margin-top: 0;
-		font-size: 2.5rem !important;
-		line-height: 1.1 !important;
-	}
-
-	.vue-typer {
-		display: flex;
-		justify-content: left;
-		min-width: 400px;
-		padding: 0 0.25rem;
-
-		.left {
-			position: relative;
-
-			&::after {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 3px;
-				background: #244484;
-				z-index: 5;
-			}
-
-			span {
-				font-weight: 400;
-			}
-		}
-	}
-
-	@media (max-width: $md) {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
-		text-align: center;
-	}
-
-	@media (max-width: $sm) {
-		background-image: none;
-		text-align: center;
-
-		h1 {
-			font-size: 2.5rem;
-		}
+	.container {
+		position: absolute;
+		z-index: 3;
 
 		.vue-typer {
-			justify-content: center;
-			padding-right: 54px;
-		}
+			.custom {
+				&.char {
+					color: var(--v-info-base);
+					text-decoration: underline;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+				}
 
-		img#mascot {
-			margin-left: auto;
-			margin-right: auto;
+				&.caret {
+					display: none;
+				}
+			}
 		}
 	}
 
-	@media screen and (min-width: 2280px) {
-		background-size: 1560px auto;
+	.backdrops {
+		.backdrop {
+			height: 550px;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			&.first {
+				z-index: 1;
+				background-image: $cn-dark-gradient;
+			}
+
+			&.image {
+				background-image: url(/images/cn-lc/header-background.png);
+				z-index: 2;
+			}
+
+			&.second {
+				z-index: 0;
+			}
+		}
 	}
 }
 </style>

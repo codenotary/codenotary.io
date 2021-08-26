@@ -1,5 +1,5 @@
 <template>
-	<i-modal
+	<!-- <i-modal
 		class="contact-modal"
 		size="lg"
 		:value="value"
@@ -19,7 +19,8 @@
 				variant="dark"
 			/>
 		</div>
-	</i-modal>
+	</i-modal> -->
+	<div>a</div>
 </template>
 
 <script>

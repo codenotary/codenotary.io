@@ -29,7 +29,7 @@
 							class="font-weight-bold"
 							color="primary"
 							style="min-width: 144px; border-width: 2px;"
-							:outline="true"
+							outlined
 							@click="trialModalOpen = true"
 						>
 							Start trial
@@ -90,7 +90,7 @@
 							class="font-weight-bold"
 							color="primary"
 							style="min-width: 144px; border-width: 2px;"
-							:outline="true"
+							outlined
 							@click="trialModalOpen = true"
 						>
 							Start trial

@@ -15,7 +15,7 @@
 				</p>
 				<p class="action">
 					<v-btn
-						outline
+						outlined
 						color="primary"
 						href="https://democnlc.codenotary.com"
 						target="_blank"

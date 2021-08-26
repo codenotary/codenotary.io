@@ -15,7 +15,7 @@
 				<a
 					class="_margin-left-0 _margin-sm-left-2 font-weight-bold text-decoration-underline"
 					variant="dark"
-					outline
+					outlined
 					size="sm"
 					:href="'https://timestamp.codenotary.com'"
 					target="_blank"
