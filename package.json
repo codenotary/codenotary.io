@@ -32,6 +32,8 @@
     "clipboard": "^2.0.6",
     "cookie-universal-nuxt": "^2.1.4",
     "nuxt": "^2.14.12",
+    "nuxt-client-init-module": "^0.3.0",
+    "nuxt-helmet": "^2.0.1",
     "prism-themes": "^1.5.0",
     "prismjs": "^1.23.0",
     "typeface-open-sans": "^1.1.13",

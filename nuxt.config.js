@@ -175,6 +175,8 @@ export default {
     ** Nuxt.js modules
     */
 	modules: [
+		// Doc: https://github.com/victor-perez/nuxt-helmet
+		'nuxt-helmet',
 		// Doc: https://content.nuxtjs.org/
 		'@nuxt/content',
 		// Doc: https://github.com/nuxt-community/style-resources-module
@@ -261,6 +263,8 @@ export default {
 				},
 			],
 		}],
+		// Doc: https://github.com/potato4d/nuxt-client-init-module
+		'nuxt-client-init-module',
 		// Doc: https://github.com/nuxt-community/robots-module
 		'@nuxtjs/robots',
 		// Doc: https://github.com/nuxt-community/sitemap-module
