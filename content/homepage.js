@@ -7,7 +7,7 @@ export default {
 		subtitle: 'Trust, integrity, and an auditable bill of material for all identities and artifacts of your software supply chain.',
 	},
 	cnilSection: {
-		title: 'CodeNotary Products',
+		title: 'CodeNotary Product',
 		cards: [
 			{
 				bigTitle: 'Cloud',
