@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="trusted-supply-chain-section">
+	<PageSection
+		id="trusted-supply-chain-section"
+		:bottom="0"
+	>
 		<i-container class="container">
 			<i-row>
 				<i-column
@@ -68,6 +71,7 @@ export default {
 		align-items: center;
 		position: relative;
 		margin-top: calc(-4rem - 80px);
+		margin-bottom: calc(-4rem - 20px);
 
 		.row {
 			@media screen and (max-width: $mobile-max-width) {

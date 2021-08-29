@@ -4,31 +4,37 @@
 		:top="0"
 		:bottom="0"
 	>
-		<i-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
-			<PageSectionHeader
-				:title="content.benefitsSection.title"
-				weight="bold"
-				class="_width-75 _text-uppercase"
-				:top="0"
-				:bottom="0"
-			/>
-			<div class="benefits-body">
-				<div v-for="(card, index) in content.benefitsSection.cards" :key="index">
-					<div class="benefit-card _margin-top-1" :class="`cn-bg-${card.backgroundColor}`">
-						<div class="benefit-card-header">
-							<img class="cn-icon" :src="card.iconName">
-						</div>
-						<div class="benefit-card-body">
-							<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">
-								{{ card.title }}
-							</h4>
-							<p class="cn-text-white _margin-0 _text-center">
-								{{ card.subtitle }}
-							</p>
+		<i-container>
+			<i-row>
+				<i-column sm="12">
+					<div class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
+						<PageSectionHeader
+							:title="content.benefitsSection.title"
+							weight="bold"
+							class="_width-75 _text-uppercase"
+							:top="0"
+							:bottom="0"
+						/>
+						<div class="benefits-body">
+							<div v-for="(card, index) in content.benefitsSection.cards" :key="index">
+								<div class="benefit-card _margin-top-1" :class="`cn-bg-${card.backgroundColor}`">
+									<div class="benefit-card-header">
+										<img class="cn-icon" :src="card.iconName">
+									</div>
+									<div class="benefit-card-body">
+										<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">
+											{{ card.title }}
+										</h4>
+										<p class="cn-text-white _margin-0 _text-center">
+											{{ card.subtitle }}
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+				</i-column>
+			</i-row>
 		</i-container>
 	</PageSection>
 </template>
@@ -71,6 +77,7 @@ export default {
 		border-radius: $cn-border-radius-lg;
 		z-index: 2;
 		position: relative;
+		margin-top: -4rem;
 
 		::v-deep h2 {
 			margin-bottom: 24px;

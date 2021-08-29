@@ -15,6 +15,10 @@
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
+			<BOMInfoSection class="section" />
+		</LazyHydrate>
+
+		<LazyHydrate when-visible>
 			<BenefitsSection class="section" />
 		</LazyHydrate>
 
