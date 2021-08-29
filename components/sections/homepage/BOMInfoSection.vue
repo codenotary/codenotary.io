@@ -118,11 +118,11 @@ export default {
 				},
 				{
 					image: 'C',
-					title: 'Switches',
+					title: 'C',
 				},
 				{
-					image: 'C++',
-					title: 'Firewalls',
+					image: 'CPP',
+					title: 'C++',
 				},
 			],
 			asciinemaId: 'Jnu5dIanEMzJQ8cNqjlN5su9Q',
