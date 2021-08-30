@@ -1,6 +1,6 @@
 const KEYWORDS = [
 	'CodeNotary',
-	'CodeNotary Cloud',
+	'Codenotary Cloud',
 	'Codenotary Cloud',
 	'CodeNotary Immutable',
 	'Cloud',
@@ -59,7 +59,7 @@ export const DEFAULT_META = {
 	SITE_NAME: 'CodeNotary',
 	AUTHOR: 'CodeNotary',
 	HANDLE: '@CodeNotary',
-	DESCRIPTION: `Immutable recording of data and processes with CodeNotary Immutable Ledger®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.\n\n${ KEYWORDS.join(',') }`,
+	DESCRIPTION: `Immutable recording of data and processes with Codenotary Cloud®. On-premise or in the cloud, easy to use tamperproof ledger with cryptographic verification, processing millions of transactions a second.\n\n${ KEYWORDS.join(',') }`,
 	MAIN_IMAGE: '/images/immudb_social_preview.gif',
 	KEYWORDS,
 };

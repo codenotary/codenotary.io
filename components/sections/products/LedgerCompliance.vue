@@ -3,10 +3,10 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<PageSectionHeader title="CodeNotary Immutable Ledger®" block>
-						With CodeNotary Immutable Ledger&reg; you can start keeping a tamper-proof and indelible
+					<PageSectionHeader title="Codenotary Cloud®" block>
+						With Codenotary Cloud® you can start keeping a tamper-proof and indelible
 						ledger for your mission-critical and sensitive applications. Whether you use Java, Node.js, Python,
-						Go, .NET, on-premise or in the cloud, CodeNotary Immutable Ledger® processes millions of
+						Go, .NET, on-premise or in the cloud, Codenotary Cloud® processes millions of
 						transactions per second reliably and with cryptographic verification.
 					</PageSectionHeader>
 				</i-column>

@@ -48,7 +48,7 @@ export default {
 		title2: '<span class="cn-text-secondary">protected</span> software supply chain',
 		paragraph1: 'Trusted CI/CD, SBOMT and artifact protection with cryptographic proof. One CLI to manage all.',
 		paragraph2: 'Our highly scalable service already processes tens of millions of transactions every single month.',
-		cta: 'Discover Codenotary cloud',
+		cta: 'Discover Codenotary Cloud',
 	},
 	heroCardsSection: {
 		cards: [

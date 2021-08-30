@@ -8,11 +8,11 @@ weight: 9
 active: true
 ---
 
-We are looking for a Marketing Specialist for our team to drive adoption of our Open-Source immutable database immudb and our product CodeNotary Immutable Ledger®. You will build community and awareness through developing and executing effective digital marketing strategies by creating articles, blogs, and videos across different mediums, managing email campaigns, social media content and channel management as well as analyzing and leveraging data to optimize the growth strategy.
+We are looking for a Marketing Specialist for our team to drive adoption of our Open-Source immutable database immudb and our product Codenotary Cloud®. You will build community and awareness through developing and executing effective digital marketing strategies by creating articles, blogs, and videos across different mediums, managing email campaigns, social media content and channel management as well as analyzing and leveraging data to optimize the growth strategy.
 
 [CodeNotary](https://codenotary.com/) is the leading company for trusted CI/CD. We bring trust and integrity into the DevOps process by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
 
-Our software solution can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with cryptographic verification of no-tampering. The core engine of CodeNotary Immutable Ledger® is open-source [immudb](https://codenotary.com/technologies/immudb/), the world’s fastest immutable database.
+Our software solution can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with cryptographic verification of no-tampering. The core engine of Codenotary Cloud® is open-source [immudb](https://codenotary.com/technologies/immudb/), the world’s fastest immutable database.
 
 
 ## Qualifications

@@ -39,7 +39,7 @@
 								Java SDK
 							</h5>
 							<p class="lead">
-								The SDKs enable your developers to write data to CodeNotary Immutable Ledger using a few lines of code.
+								The SDKs enable your developers to write data to Codenotary Cloud® using a few lines of code.
 							</p>
 						</i-column>
 						<i-column

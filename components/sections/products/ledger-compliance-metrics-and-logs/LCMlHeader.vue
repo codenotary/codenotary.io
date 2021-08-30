@@ -82,7 +82,7 @@ export default {
 	name: 'LCMlHeader',
 	data: () => ({
 		src: '/images/cn-lc/ledger-compliance-diagram.png',
-		alt: 'ledger compliance diagram',
+		alt: 'Codenotary Cloud diagram',
 		index: null,
 		typewriteOptions: [
 			'VMware vSAN',
