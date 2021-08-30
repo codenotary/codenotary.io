@@ -15,31 +15,24 @@
 				>
 					<div
 						id="video"
+						ref="video"
 						class="_embed"
 					>
-						<script
-							v-if="playing"
-							id="asciicast-Jnu5dIanEMzJQ8cNqjlN5su9Q"
-							src="https://asciinema.org/a/Jnu5dIanEMzJQ8cNqjlN5su9Q.js"
-							async
-							data-width="400"
-							data-size="small"
-							data-rows="13"
-							data-autoplay="true"
-						/>
-						<img
+						<template
 							v-if="!playing"
-							src="/videos/bom-info-screenshot.svg"
-						>
-						<div
-							v-if="!playing"
-							class="video-play_button"
 						>
 							<img
-								src="/icons/play.svg"
-								@click="playing = true"
+								src="/videos/bom-info-screenshot.svg"
 							>
-						</div>
+							<div
+								class="video-play_button"
+							>
+								<img
+									src="/icons/play.svg"
+									@click="playVideo"
+								>
+							</div>
+						</template>
 					</div>
 				</i-column>
 			</i-row>
@@ -127,6 +120,23 @@ export default {
 			],
 			asciinemaId: 'Jnu5dIanEMzJQ8cNqjlN5su9Q',
 		};
+	},
+	methods: {
+		playVideo() {
+			const videoScript = document.createElement('script');
+
+			videoScript.setAttribute('id', 'asciicast-Jnu5dIanEMzJQ8cNqjlN5su9Q');
+			videoScript.setAttribute('src', 'https://asciinema.org/a/Jnu5dIanEMzJQ8cNqjlN5su9Q.js');
+			videoScript.setAttribute('async', 'true');
+			videoScript.setAttribute('data-width', '400');
+			videoScript.setAttribute('data-size', 'small');
+			videoScript.setAttribute('data-rows', '13');
+			videoScript.setAttribute('data-autoplay', 'true');
+
+			this.$refs.video.appendChild(videoScript);
+
+			this.playing = true;
+		},
 	},
 };
 </script>
