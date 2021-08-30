@@ -26,8 +26,12 @@
 			<WhatWeDoSection class="section" />
 		</LazyHydrate>
 
-		<LazyHydrate when-visible>
+		<!-- <LazyHydrate when-visible>
 			<CNILAroundTheWorldSection class="section" />
+		</LazyHydrate> -->
+
+		<LazyHydrate when-whisible>
+			<CodenotaryCloud class="section" />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
