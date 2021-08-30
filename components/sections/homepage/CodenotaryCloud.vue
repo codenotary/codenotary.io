@@ -48,7 +48,7 @@ export default {
 	name: 'CodenotaryCloud',
 	data() {
 		return {
-			content: homepageContent.protectedSoftwareSupplyChain,
+			content: homepageContent.codenotaryCloud,
 		};
 	},
 };
