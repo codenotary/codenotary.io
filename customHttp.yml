@@ -1,5 +1,5 @@
 customHeaders:
-  - pattern: '*/**'
+  - pattern: '**/*'
     headers:
     - key: 'X-Frame-Options'
       value: 'DENY'
