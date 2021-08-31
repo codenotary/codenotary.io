@@ -10,7 +10,7 @@
 						title="Customer Use Cases"
 						:bottom="2"
 					>
-						With CodeNotary Immutable Ledger&reg; you can easily build immutable,
+						With Codenotary Cloud® you can easily build immutable,
 						tamper-proof solutions and comply with auditor requirements and regulations and laws.
 					</PageSectionHeader>
 				</i-column>

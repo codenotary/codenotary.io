@@ -9,7 +9,7 @@ This CodeNotary License Agreement ("**CLA**"), is by and between
 CodeNotary, Inc. ("**CodeNotary**") and you (either an individual or a
 legal entity - the "**Licensee**"), as follows:
 
-**WHEREAS** CodeNotary is the owner of CodeNotary Immutable Ledger
+**WHEREAS** CodeNotary is the owner of Codenotary Cloud®
 Metrics and Logs (**Performance Metrics)**, an application which
 supports the VMware administration and operations team in order to
 monitor and analyze VMware vSphere environments ("**Software**") which

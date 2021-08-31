@@ -11,7 +11,7 @@
 				<p class="lead _margin-bottom-0">
 					Simple to use online audit queries and reports and easily able to process millions of transactions per second.
 
-					CodeNotary Immutable Ledger provides the versatility of a key value store without the hazzle of blockchains.
+					Codenotary Cloud® provides the versatility of a key value store without the hazzle of blockchains.
 				</p>
 				<p class="action">
 					<i-button
@@ -62,7 +62,7 @@ export default {
 	name: 'LCHeader',
 	data: () => ({
 		src: '/images/products/lc/cnlcdataflow.gif',
-		alt: 'ledger compliance how it works',
+		alt: 'Codenotary Cloud how it works',
 		index: null,
 		typewriteOptions: [
 			'Credit card transactions',

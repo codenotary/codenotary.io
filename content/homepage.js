@@ -43,6 +43,13 @@ export default {
 		title2: 'built on the fastest<br><span class="cn-text-secondary">immutable</span> ledger technology',
 		title3: 'Open Source and easy to use in new applications and easy to integrate into existing application.',
 	},
+	codenotaryCloud: {
+		title1: 'Codenotary Cloud',
+		title2: '<span class="cn-text-secondary">protected</span> software supply chain',
+		paragraph1: 'Trusted CI/CD, SBOM and artifact protection with cryptographic proof. One CLI to manage all.',
+		paragraph2: 'Our highly scalable service already processes tens of millions of transactions every single month.',
+		cta: 'Discover Codenotary Cloud',
+	},
 	heroCardsSection: {
 		cards: [
 			{

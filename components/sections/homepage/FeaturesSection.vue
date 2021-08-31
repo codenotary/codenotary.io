@@ -90,8 +90,8 @@
 						]"
 					>
 						<p>
-							The SDKs enable your developers to write data to CodeNotary Immutable Ledger using a few lines of code.
-							Write and read your data records into Immutable Ledger making sure your data history trace is always available.
+							The SDKs enable your developers to write data to Codenotary Cloud® using a few lines of code.
+							Write and read your data records into Codenotary Cloud® making sure your data history trace is always available.
 							Use the powerful plugins to record all PostgreSQL database changes in an immutable Ledger using CDC (change data capture).
 						</p>
 					</Feature>

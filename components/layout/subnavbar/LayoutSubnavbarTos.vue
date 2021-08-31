@@ -17,7 +17,7 @@
 					class="_padding-1"
 					:to="{ name: 'terms-of-service-slug', params: { slug: 'subscription-agreement' } }"
 				>
-					Codenotary Immutable Ledger® Subscription Agreement
+					Codenotary Cloud® Subscription Agreement
 				</i-nav-item>
 				<i-nav-item
 					class="_padding-1"

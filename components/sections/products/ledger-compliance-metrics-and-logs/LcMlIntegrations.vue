@@ -6,7 +6,7 @@
 		<i-container>
 			<i-row>
 				<i-column>
-					<PageSectionHeader title="Immutable Ledger Integrations">
+					<PageSectionHeader title="Codenotary Cloud® Integrations">
 						<p class="lead">
 							Integrations for Hypervisor, Storage systems, OS and applications.
 						</p>

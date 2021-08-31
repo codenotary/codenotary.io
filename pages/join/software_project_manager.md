@@ -13,7 +13,7 @@ manage multiple development teams and their execution of our ambitious roadmap. 
 
 [CodeNotary](https://codenotary.com/) is the leading company for trusted CI/CD. We bring trust and integrity into the DevOps process by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
 
-Our solution can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with cryptographic verification of no-tampering. The core engine of CodeNotary Immutable Ledger® is open-source [immudb](https://codenotary.com/technologies/immudb/), the world’s fastest immutable database.
+Our solution can be used on-premise or in the cloud, is always easy to use and can process millions of transactions a second with cryptographic verification of no-tampering. The core engine of Codenotary Cloud® is open-source [immudb](https://codenotary.com/technologies/immudb/), the world’s fastest immutable database.
 
 We use the following environments and systems: Go, JavaScript, Vuejs, Nodejs, Linux, and low-level operating system technologies, as well as complex cloud infrastructure.
 

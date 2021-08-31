@@ -4,9 +4,9 @@
 		variant="white"
 	>
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center _margin-bottom-6">
-			<hr class="_width-100"/>
+			<hr class="_width-100">
 			<PageSectionHeader
-				title="Key benefits of using CodeNotary Immutable Ledger"
+				title="Key benefits of using Codenotary Cloud®"
 				:top="0"
 				:bottom="0"
 			/>
@@ -15,12 +15,13 @@
 		<i-container>
 			<VueSlickCarousel v-bind="carouselSettings" class="benefits-carousel">
 				<template #prevArrow>
-					<fa class="icon custom-arrow" icon="chevron-left"/>
+					<fa class="icon custom-arrow" icon="chevron-left" />
 				</template>
 				<template #nextArrow>
-					<fa class="icon custom-arrow" icon="chevron-right"/>
+					<fa class="icon custom-arrow" icon="chevron-right" />
 				</template>
-				<div v-for="(slide, slideIndex) in content.benefitsSection.slides" :key="slideIndex"
+				<div
+					v-for="(slide, slideIndex) in content.benefitsSection.slides" :key="slideIndex"
 					class="slide"
 				>
 					<div class="imageLabel">
@@ -39,9 +40,11 @@
 							</ul>
 						</div>
 
-						<cn-button link variant="dark"
+						<cn-button
+							link variant="dark"
 							class="action cn-text-muted_blue"
-							:to="slide.internalLink ? { name: slide.internalLink.type, params: { post: slide.internalLink.entry }} : null" :href="slide.href">
+							:to="slide.internalLink ? { name: slide.internalLink.type, params: { post: slide.internalLink.entry }} : null" :href="slide.href"
+						>
 							{{ slide.actionText }}
 							<fa class="icon _margin-left-2" icon="arrow-right" />
 						</cn-button>
