@@ -4,13 +4,7 @@ customHeaders:
     - key: 'X-Frame-Options'
       value: 'DENY'
     - key: 'Content-Security-Policy'
-      value: "frame-ancestors 'none'; base-uri 'self'; block-all-mixed-content; font-src 'self' https: data:; img-src 'self' data:; object-src 'none'; script-src-attr 'none'; style-src 'self' https: 'unsafe-inline'; upgrade-insecure-requests;"
-    - key: "Cross-Origin-Embedder-Policy"
-      value: "require-corp"
-    - key: "Cross-Origin-Opener-Policy"
-      value: "same-origin-allow-popups"
-    - key: "Cross-Origin-Resource-Policy"
-      value: "same-site"
+      value: "frame-ancestors 'none'; base-uri 'self'; block-all-mixed-content; font-src 'self' https: data:; img-src 'self' data:; object-src 'none'; style-src 'self' https: 'unsafe-inline'; upgrade-insecure-requests;"
     - key: "Expect-CT"
       value: 'max-age=86400, enforce, report-uri="https://example.com/report"'
     - key: "Referrer-Policy"
