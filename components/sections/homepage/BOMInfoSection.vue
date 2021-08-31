@@ -123,15 +123,27 @@ export default {
 	},
 	methods: {
 		playVideo() {
+			const screenWidth = window.innerWidth;
+			const columnsConfig = screenWidth < 768
+				? screenWidth > 575
+					? { 'data-cols': 70 }
+					: { 'data-cols': Math.floor(this.$refs.video.clientWidth / 7) }
+				: {};
+			const videoConfig = {
+				id: 'asciicast-Jnu5dIanEMzJQ8cNqjlN5su9Q',
+				src: 'https://asciinema.org/a/Jnu5dIanEMzJQ8cNqjlN5su9Q.js',
+				async: 'true',
+				'data-width': 400,
+				'data-size': 'small',
+				'data-rows': Math.ceil(this.$refs.video.clientHeight / 16),
+				...columnsConfig,
+				'data-autoplay': 'true',
+			};
 			const videoScript = document.createElement('script');
 
-			videoScript.setAttribute('id', 'asciicast-Jnu5dIanEMzJQ8cNqjlN5su9Q');
-			videoScript.setAttribute('src', 'https://asciinema.org/a/Jnu5dIanEMzJQ8cNqjlN5su9Q.js');
-			videoScript.setAttribute('async', 'true');
-			videoScript.setAttribute('data-width', '400');
-			videoScript.setAttribute('data-size', 'small');
-			videoScript.setAttribute('data-rows', '13');
-			videoScript.setAttribute('data-autoplay', 'true');
+			Object.entries(videoConfig).forEach((entry) => {
+				videoScript.setAttribute(...entry);
+			});
 
 			this.$refs.video.appendChild(videoScript);
 
@@ -197,6 +209,12 @@ export default {
 			transform: translate(-50%, -50%) scale(1.2);
 			cursor: pointer;
 			z-index: 1;
+
+			@media screen and (max-width: 767px) {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) scale(0.7);
+			}
 		}
 	}
 
