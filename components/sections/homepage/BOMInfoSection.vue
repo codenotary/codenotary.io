@@ -135,7 +135,7 @@ export default {
 				async: 'true',
 				'data-width': 400,
 				'data-size': 'small',
-				'data-rows': Math.ceil(this.$refs.video.clientHeight / 16),
+				'data-rows': Math.floor(this.$refs.video.clientHeight / 16),
 				...columnsConfig,
 				'data-autoplay': 'true',
 			};
