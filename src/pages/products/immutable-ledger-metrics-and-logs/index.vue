@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<ProductsLedgerComplianceMetricsAndLogsHeader />
+		<ProductsLedgerComplianceMetricsAndLogsHeader class="d-none" />
 		<LazyHydrate when-visible>
-			<!-- <ProductsLedgerComplianceMetricsAndLogsFeatures /> -->
+			<ProductsLedgerComplianceMetricsAndLogsFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<!-- <ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" /> -->

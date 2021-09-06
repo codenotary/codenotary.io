@@ -13,7 +13,7 @@
 				max-height="23"
 				contain
 			/>&nbsp;
-			<span class="d-sm-none d-md-inline">{{ text }}</span>
+			<span class="d-none d-md-inline">{{ text }}</span>
 		</v-btn>
 	</div>
 </template>
