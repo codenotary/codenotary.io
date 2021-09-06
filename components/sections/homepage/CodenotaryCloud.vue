@@ -10,7 +10,7 @@
 			>
 				<i-column lg="1" />
 				<i-column lg="5">
-					<h1 class="_font-weight-bold cn-text-white title first">
+					<h1 class="_font-weight-bold cn-text-primary-light title first">
 						{{ content.title1 }}
 					</h1>
 					<h3
@@ -59,6 +59,14 @@ export default {
 	background: $cn-dark-gradient_inverse;
 
 	.row {
+		.first {
+			margin-top: -2.5rem;
+		}
+
+		.third {
+			max-width: 360px;
+		}
+
 		@media screen and (max-width: $mobile-max-width) {
 			display: flex;
 			flex-direction: column-reverse;

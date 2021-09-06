@@ -35,6 +35,10 @@
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
+			<HomepageCustomers />
+		</LazyHydrate>
+
+		<LazyHydrate when-visible>
 			<WhatClientsSaySection class="section" />
 		</LazyHydrate>
 
