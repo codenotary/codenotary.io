@@ -20,7 +20,9 @@
 			/>
 		</div>
 	</i-modal> -->
-	<div>ledger compliance modal</div>
+	<v-dialog :value="value">
+		ledger compliance modal
+	</v-dialog>
 </template>
 
 <script>
@@ -37,19 +39,21 @@ export default {
 			default: false,
 		},
 	},
-	data: () => ({
-		ACTIVE_CAMPAIGN_FORM_ID,
-		injected: false,
-	}),
+	data() {
+		return {
+			ACTIVE_CAMPAIGN_FORM_ID,
+			injected: false,
+		};
+	},
 	watch: {
-		value (newVal) {
-			if (newVal && !this.injected) {
+		value (shouldShow) {
+			if (shouldShow && !this.injected) {
 				this.injectScript({
 					src: `https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`,
+					onload: () => {
+						this.injected = true;
+					},
 				});
-				setTimeout(() => {
-					this.injected = true;
-				}, 500);
 			}
 		},
 	},

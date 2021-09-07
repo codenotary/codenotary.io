@@ -8,7 +8,11 @@
 			</v-col>
 		</v-row>
 		<v-row>
-			<v-col cols="12" md="3" class="pa-0" />
+			<v-col
+				cols="12"
+				md="3"
+				class="pa-0"
+			/>
 			<v-col
 				v-for="{ text, image } in steps"
 				:key="text"
@@ -25,7 +29,11 @@
 					{{ text }}
 				</span>
 			</v-col>
-			<v-col cols="12" md="3" class="pa-0" />
+			<v-col
+				cols="12"
+				md="3"
+				class="pa-0"
+			/>
 		</v-row>
 	</v-container>
 </template>
