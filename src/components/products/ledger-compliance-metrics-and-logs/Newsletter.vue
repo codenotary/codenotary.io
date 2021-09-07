@@ -22,7 +22,6 @@
 				</div>
 			</v-col>
 		</v-row>
-		{{ newsletterModalOpen }}
 		<UiModalNewsletter v-model="newsletterModalOpen" />
 	</v-container>
 </template>
@@ -40,6 +39,6 @@ export default {
 
 <style lang="scss" scoped>
 #newsletter {
-	background-image: $cn-dark-gradient;
+	background-image: $cn-dark-gradient-inverse;
 }
 </style>

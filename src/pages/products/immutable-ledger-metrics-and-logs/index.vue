@@ -14,7 +14,7 @@
 			<!-- <ProductsLedgerComplianceMetricsAndLogsTabs /> -->
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<!-- <ProductsLedgerComplianceMetricsAndLogsHowItWorks /> -->
+			<ProductsLedgerComplianceMetricsAndLogsHowItWorks />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<!-- <ProductsLedgerComplianceMetricsAndLogsWhatsHappening /> -->
