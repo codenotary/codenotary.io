@@ -22,6 +22,9 @@
 		<LazyHydrate when-visible>
 			<!-- <ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL /> -->
 		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsNewsletter />
+		</LazyHydrate>
 		<ProductsLedgerComplianceMetricsAndLogsSupportQuote id="metrics-and-logs-support-quote" />
 	</div>
 </template>
