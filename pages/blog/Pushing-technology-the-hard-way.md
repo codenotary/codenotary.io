@@ -118,7 +118,7 @@ disk_quota: 400M
 
 path: ./target/immudb
 ```
-You app can now be seen in the [Apps Manager].(https://docs.pivotal.io/application-service/2-8/console/index.html)
+You app can now be seen in the [Apps Manager](https://docs.pivotal.io/application-service/2-8/console/index.html)
 ![A screenshot of the CF Apps Manager](/images/blog/cfblogappsmanager.jpg)
 Anyone in the company can now try out immudb via the webinterface. Simply create a user and a database for them. This can also be done in the webinterface using the initial user & password combination.
 ![A screenshot of the immudb loginpage](/images/blog/cfblogimmudblogin.jpg)
