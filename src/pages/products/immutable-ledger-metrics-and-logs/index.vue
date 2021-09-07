@@ -8,7 +8,7 @@
 			<!-- <ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" /> -->
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<!-- <ProductsLedgerComplianceMetricsAndLogsGotYouCovered /> -->
+			<ProductsLedgerComplianceMetricsAndLogsGotYouCovered />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<!-- <ProductsLedgerComplianceMetricsAndLogsTabs /> -->
