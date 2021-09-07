@@ -8,9 +8,9 @@ active: true
 apply: https://docs.google.com/forms/d/e/1FAIpQLScjxxOGgCCK8X7u9XGtNGXQ1qKqzvG9_4beYqc8sPDtwuDzhag/viewform?usp=sf_link
 ---
 
-Product ManagerLOCATION: REMOTEWe   are   looking   for adedicated   and highly   technicalProduct   Managerwho   iscontinuously adapting and excited to work on innovative, cutting-edgeproducts.
+We are looking for a dedicated and highly technical Product Manager who is continuously adapting and excited to work on innovative, cutting-edgeproducts.
 
-The Product Managerwill work closely with engineers, designers, marketers, and senior management to create strategic roadmaps and guide products from conception to launch by connecting the technical and business worlds. You will break down complex problems into steps that drive product development.
+The Product Manager will work closely with engineers, designers, marketers, and senior management to create strategic roadmaps and guide products from conception to launch by connecting the technical and business worlds. You will break down complex problems into steps that drive product development.
 
 [CodeNotary](https://codenotary.com/) is the leading company for trusted CI/CD. We bring trust and integrity into the DevOps process by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies.
 

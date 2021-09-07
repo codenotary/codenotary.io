@@ -12,7 +12,7 @@
 				</i-column>
 				<i-column lg="1" />
 				<i-column lg="5">
-					<h1 class="_font-weight-bold cn-text-white title first">
+					<h1 class="_font-weight-bold cn-text-primary-light title first">
 						{{ content.title1 }}
 					</h1>
 					<h3

@@ -146,7 +146,6 @@ export default {
 
 		@media screen and (max-width: $mobile-max-width) {
 			margin-top: -80px;
-			color: white;
 		}
 	}
 
