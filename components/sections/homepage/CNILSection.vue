@@ -82,7 +82,7 @@ export default {
 		display: flex;
 		border: 1px solid $cn-color-brand;
 		box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-		padding: 35px 24px 48px 0;
+		padding: 32px 0;
 		justify-content: space-evenly;
 		flex: 1;
 
@@ -91,7 +91,7 @@ export default {
 		}
 
 		.image-container {
-			max-width: 50%;
+			max-width: 35%;
 			display: flex;
 			align-items: center;
 		}
@@ -129,7 +129,7 @@ export default {
 				-webkit-text-fill-color: transparent;
 				font-weight: 700;
 				font-size: 68px !important;
-				line-height: 83px !important;
+				line-height: 58px !important;
 			}
 
 			.small-title {
@@ -142,6 +142,7 @@ export default {
 				font-weight: 400;
 				font-size: 16px;
 				line-height: 20px;
+				padding-top: 10px;
 			}
 		}
 	}

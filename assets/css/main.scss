@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 1200px) {
 	.container {
-		max-width: 1160px !important;
+		max-width: 1060px !important;
 
 		&.thin {
 			max-width: 750px;
@@ -52,6 +52,10 @@
 
 .cn-bg-cyan {
 	background-color: $cn-color-cyan;
+}
+
+.cn-bg-blue {
+	background-color: $cn-color-blue;
 }
 
 .cn-icon {

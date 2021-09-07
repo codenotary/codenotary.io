@@ -5,7 +5,7 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5">
+				<i-column lg="5" class="content">
 					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h2>
@@ -30,7 +30,7 @@
 							rel="nofollow"
 							size="lg"
 						>
-							Free Trial
+							FREE TRIAL
 						</cn-button>
 						<!--
 						<cn-button
@@ -55,7 +55,7 @@
 							<video
 								ref="videoPlayer"
 								src="/videos/ci-cd.mp4"
-								poster="/videos/ci-cd.jpg"
+								poster="/videos/cover-ci-cd.jpg"
 								width="1280"
 								height="720"
 								:controls="playing"
@@ -164,6 +164,10 @@ $mascot-height-small: 100px;
 	background: transparent;
 	z-index: 3;
 	position: relative;
+
+	.content {
+		padding-top: 40px;
+	}
 }
 
 ::v-deep #home-header {
@@ -338,11 +342,13 @@ $mascot-height-small: 100px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #15395475;
+	background-color: rgba(21, 57, 84, 0.2);
 	transition: opacity 0.15s ease-in-out;
 	opacity: 1;
+	cursor: pointer;
 
 	img {
+		border-radius: 50%;
 		transition: transform 100ms linear;
 
 		@media screen and (max-width: $mobile-max-width) {
@@ -351,7 +357,8 @@ $mascot-height-small: 100px;
 		}
 
 		&:hover {
-			transform: scale(1.1);
+			transform: scale(1.02);
+			box-shadow: $cn-shadow-hoverBtn;
 		}
 	}
 }

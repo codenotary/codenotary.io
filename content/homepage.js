@@ -19,7 +19,7 @@ export default {
 						path: '/products/ci-cd',
 					},
 				},
-				image: '/images/cnil-cloud.svg',
+				image: '/images/Codenotary-Cloud.svg',
 				primaryTextColor: 'blue',
 				reversedTitles: true,
 			},
@@ -40,7 +40,7 @@ export default {
 	},
 	builtOnSection: {
 		title1: 'immudb',
-		title2: 'built on the fastest<br><span class="cn-text-secondary">immutable</span> ledger technology',
+		title2: 'built on the fastest<br><span class="cn-text-secondary">immutable</span> ledger<br>technology',
 		title3: 'Open Source and easy to use in new applications and easy to integrate into existing application.',
 	},
 	codenotaryCloud: {
@@ -116,7 +116,7 @@ export default {
 				iconName: '/icons/pipeline.svg',
 				title: 'Complete & Fully Trusted Pipeline',
 				subtitle: 'Tamperproof bill of material for your workloads, all input data is cryptographically verified. Zero Trust DevOps pipeline.',
-				backgroundColor: 'brand',
+				backgroundColor: 'blue',
 			},
 			{
 				iconName: '/icons/tracking.svg',

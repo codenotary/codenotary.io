@@ -3,7 +3,7 @@
 		<div class="card-picture">
 			<img class="cn-icon" :src="imageUrl">
 		</div>
-		<h3 class="_font-weight-bold cn-text-brand _margin-top-1">
+		<h3 class="_font-weight-bold cn-text-brand">
 			{{ title }}
 		</h3>
 		<h6 class="subtitle cn-text-sm" v-html="subtitle" />
@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss">
 .square-card {
-	max-width: 250px;
+	max-width: 230px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -46,6 +46,11 @@ export default {
 	background-color: white;
 	padding: 25px;
 	box-shadow: $cn-shadow-sm;
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 8px;
+	}
 
 	&.wide {
 		max-width: 373px;

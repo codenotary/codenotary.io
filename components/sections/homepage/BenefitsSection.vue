@@ -1,13 +1,14 @@
 <template>
 	<PageSection
 		id="benefits-section"
+		variant="transparent"
 		:top="0"
 		:bottom="0"
 	>
 		<i-container>
 			<i-row>
 				<i-column sm="12">
-					<div class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
+					<div class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center _padding-bottom-2">
 						<PageSectionHeader
 							:title="content.benefitsSection.title"
 							weight="bold"
@@ -22,9 +23,9 @@
 										<img class="cn-icon" :src="card.iconName">
 									</div>
 									<div class="benefit-card-body">
-										<h4 class="cn-text-white _font-weight-bold _text-center _margin-0">
+										<h5 class="cn-text-white _font-weight-bold _text-center _margin-0">
 											{{ card.title }}
-										</h4>
+										</h5>
 										<p class="cn-text-white _margin-0 _text-center">
 											{{ card.subtitle }}
 										</p>
@@ -69,7 +70,6 @@ export default {
 	.container {
 		padding-left: 30px;
 		padding-right: 30px;
-		padding-bottom: 60px;
 	}
 
 	.main-container {
@@ -80,7 +80,7 @@ export default {
 		margin-top: -4rem;
 
 		::v-deep h2 {
-			margin-bottom: 24px;
+			margin-bottom: 8px;
 		}
 	}
 
@@ -116,8 +116,8 @@ export default {
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			height: 420px;
-			width: 250px;
+			height: 390px;
+			width: 220px;
 			border-radius: $cn-border-radius-lg;
 			box-shadow: $cn-shadow-sm;
 			margin-left: 10px;
@@ -128,7 +128,7 @@ export default {
 				position: relative;
 				flex: 0 0 0;
 				width: 100%;
-				min-height: 150px;
+				min-height: 125px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -139,7 +139,7 @@ export default {
 				&::after {
 					content: url('/icons/triangle.svg');
 					position: absolute;
-					bottom: -36px;
+					bottom: -25px;
 					transform: rotate(180deg);
 				}
 			}
@@ -149,11 +149,11 @@ export default {
 				flex-direction: column;
 				align-items: center;
 				justify-content: flex-start;
-				padding: 8px 20px 30px;
+				padding: 0 16px 16px;
 				flex: 1;
 
-				h4 {
-					min-height: 70px;
+				h5 {
+					min-height: 50px;
 				}
 			}
 		}
@@ -185,7 +185,7 @@ export default {
 
 				.benefit-card-header {
 					min-height: 100px;
-					margin-bottom: 25px;
+					margin-bottom: 8px;
 				}
 			}
 		}

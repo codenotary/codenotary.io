@@ -1,6 +1,7 @@
 <template>
 	<PageSection
 		id="trusted-supply-chain-section"
+		variant="transparent"
 		:bottom="0"
 	>
 		<i-container class="container">
@@ -26,10 +27,11 @@
 						<cn-button
 							variant="secondary"
 							target="_blank"
-							class="discover-button"
+							class="discover-button cn-button_icon"
 							@click.native="SBOMModalOpen = true"
 						>
-							<img src="/images/download.svg"> Download PDF
+							<img src="/images/download.svg">
+							<span>Download PDF</span>
 						</cn-button>
 					</div>
 				</i-column>
@@ -82,13 +84,18 @@ export default {
 
 		.column {
 			&.first {
-				padding-left: 4rem;
+				padding: 3rem 4rem;
 				flex: 1;
 			}
 
 			&.second {
 				padding-right: 4rem;
 				flex: 1;
+
+				img {
+					max-height: 500px;
+					padding: 30px;
+				}
 			}
 
 			@media screen and (max-width: $mobile-max-width) {

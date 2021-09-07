@@ -73,21 +73,27 @@ a:active {
 	border-radius: $cn-button-radius;
 	border: unset;
 	height: $cn-button-height !important;
-	padding: 14px 30px;
+	padding: 14px 24px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	transition: all 0.3s ease-out;
 
+	&:hover {
+		box-shadow: $cn-shadow-hoverBtn;
+		transform: scale(1.02);
+	}
+
 	&_lg {
 		height: 54px;
-		font-size: 24px !important;
-		line-height: 24px !important;
+		font-size: 20px !important;
+		line-height: 20px !important;
+		font-weight: bold;
 
 		@media screen and (max-width: $mobile-max-width) {
-			font-size: 18px !important;
-			line-height: 22px !important;
+			font-size: 16px !important;
+			line-height: 18px !important;
 		}
 	}
 
@@ -106,18 +112,21 @@ a:active {
 	&_secondary {
 		background-color: $cn-color-secondary;
 		color: $cn-color-dark;
+		border: 1px solid $cn-color-secondary;
 
 		&:hover,
 		&:focus,
-		&:active { // Becomes light
-			background-color: $cn-color-light;
-			color: $cn-color-dark;
+		&:active {
+			background-color: transparent;
+			color: $cn-color-secondary;
+			border: 1px solid $cn-color-secondary;
 		}
 	}
 
 	&_primary {
 		color: white !important;
 		background-color: $cn-color-primary;
+		border: 1px solid $cn-color-primary;
 
 		&:hover,
 		&:focus,
@@ -125,6 +134,10 @@ a:active {
 			color: $cn-color-primary !important;
 			background-color: white;
 			border: 1px solid $cn-color-primary;
+		}
+
+		a:hover {
+			color: $cn-color-primary !important;
 		}
 	}
 
@@ -142,6 +155,16 @@ a:active {
 		}
 	}
 
+	&_icon {
+		display: flex;
+		flex-direction: row;
+		padding: 14px 20px;
+
+		img {
+			padding-right: 10px;
+		}
+	}
+
 	&:disabled,
 	&:disabled:hover,
 	&:disabled:focus {
@@ -149,12 +172,6 @@ a:active {
 		opacity: 0.4;
 		pointer-events: none;
 	}
-
-	//&:hover,
-	//&:focus,
-	//&:active {
-	//	opacity: 0.9;
-	//}
 
 	&:active {
 		-webkit-animation: scale-animation 100ms linear;

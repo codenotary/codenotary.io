@@ -53,8 +53,8 @@ export default {
 	overflow: hidden;
 
 	&.variant- {
-		&white {
-			background-color: white;
+		&transparent {
+			background: transparent;
 		}
 
 		&blue {

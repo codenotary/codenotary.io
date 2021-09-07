@@ -240,6 +240,7 @@ export default {
 .navbar {
 	background: $cn-dark-gradient !important;
 	transition: all 0.15s ease-out;
+	border-bottom: 1px solid $cn-color-light;
 
 	&.-collapsed {
 		.cta-button {

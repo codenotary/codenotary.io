@@ -1,18 +1,19 @@
 <template>
-	<PageSection id="Homepage-users-section">
+	<PageSection id="Homepage-users-section" variant="transparent">
 		<i-container class="floating-container">
 			<i-row>
 				<i-column sm="12">
 					<PageSectionHeader
-					title="Customers"
-					:bottom="1"
-					weight="bold"
+						title="Customers"
+						:bottom="1"
+						class="_text-uppercase"
+						weight="bold"
 					/>
 				</i-column>
 			</i-row>
 			<i-row class="_padding-x-0 _display-flex _justify-content-center">
 				<i-column
-					class="_margin-bottom-1 _margin-x-auto _text-center" xs="12"
+					class="_margin-x-auto _text-center" xs="12"
 					sm="12" md="8"
 					lg="8"
 				>
@@ -98,9 +99,8 @@ export default {
 
 #Homepage-users-section {
 	position: relative;
-	background: $cn-color-grey_light;
 	height: auto;
-	min-height: 280px;
+	min-height: 240px;
 	overflow: unset !important;
 
 	.floating-container {
@@ -112,10 +112,6 @@ export default {
 		border-radius: 30px;
 		z-index: 10;
 		width: 81%;
-
-		h2 {
-			text-transform: uppercase;
-		}
 	}
 
 	.padding-x-15 {
@@ -144,14 +140,39 @@ export default {
 	.image-wrapper {
 		.image {
 			position: relative;
-			padding: 16px;
+			padding: 8px;
 			object-fit: contain !important;
-			height: 160px;
+			height: 130px;
+			transition: transform 100ms linear;
+
+			&:hover {
+				transform: scale(1.15);
+			}
 		}
 
 		@include breakpoint-down(sm) {
 			.image {
 				height: 100px;
+			}
+		}
+
+		.column {
+			&:nth-child(1) {
+				.image {
+					height: 110px;
+				}
+			}
+
+			&:nth-child(2) {
+				.image {
+					height: 100px;
+				}
+			}
+
+			&:nth-child(6) {
+				.image {
+					height: 90px;
+				}
 			}
 		}
 

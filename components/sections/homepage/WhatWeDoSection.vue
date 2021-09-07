@@ -1,6 +1,7 @@
 <template>
 	<PageSection
 		id="whatwedo-section"
+		variant="transparent"
 		:bottom="0"
 		:top="1"
 	>

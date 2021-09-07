@@ -1,6 +1,6 @@
 <template>
-	<PageSection id="what-clients-say-section">
-		<i-container class="floating-container _padding-x-4">
+	<PageSection id="what-clients-say-section" variant="transparent">
+		<i-container class="floating-container">
 			<i-row>
 				<h3 class="title">
 					What Clients Say About Us
@@ -130,7 +130,7 @@ export default {
 #what-clients-say-section {
 	position: relative;
 	background-color: $cn-color-background;
-	height: 760px !important;
+	height: 610px !important;
 	overflow: unset !important;
 
 	.title {
@@ -247,10 +247,6 @@ export default {
 			&::before {
 				content: none;
 			}
-
-			img {
-				transform: scale(1.5);
-			}
 		}
 
 		.review {
@@ -264,8 +260,9 @@ export default {
 				border-radius: 30px;
 				border: 1px solid #244583;
 				box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
-				padding: 90px 48px 48px 60px;
+				padding: 60px 38px 30px 38px;
 				height: 100%;
+				min-height: 330px;
 				display: flex;
 				flex-direction: column;
 
@@ -282,14 +279,14 @@ export default {
 
 			&-quote-image {
 				position: absolute;
-				top: 0;
-				left: 70px;
-				width: 100px;
+				top: -6px;
+				left: 48px;
+				width: 80px;
 			}
 
 			&-content {
 				font-weight: 400;
-				font-size: 16px;
+				font-size: 12px;
 				line-height: 20px;
 				flex: auto;
 			}
@@ -297,15 +294,15 @@ export default {
 			&-author-name {
 				color: #244583;
 				font-weight: 700;
-				font-size: 16px;
-				line-height: 20px;
+				font-size: 12px;
+				line-height: 10px;
 			}
 
 			&-author-description {
 				color: #768e98;
 				font-weight: 400;
-				font-size: 16px;
-				line-height: 22px;
+				font-size: 10px;
+				line-height: 10px;
 				margin-top: 5px;
 			}
 

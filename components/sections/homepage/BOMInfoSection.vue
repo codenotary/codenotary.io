@@ -36,42 +36,44 @@
 					</div>
 				</i-column>
 			</i-row>
-			<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center _margin-top-2">
-				Software Bill of Material for:
-			</h3>
-			<div class="tech-row">
-				<i-column
-					v-for="tech in technologies"
-					:key="tech.title"
-					xs="3"
-					sm="3"
-					md="3"
-					lg="1"
-					class="tech-column"
-				>
-					<div class="tech">
-						<img
-							:src="`/icons/${tech.image}.svg`"
-							:alt="tech.title"
-							width="90"
-							class="tech-image"
-						>
-						<p class="tech-title">
-							{{ tech.title }}
+			<div class="_margin-top-3 _margin-bottom-2">
+				<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center">
+					Software Bill of Material for:
+				</h3>
+				<div class="tech-row">
+					<i-column
+						v-for="tech in technologies"
+						:key="tech.title"
+						xs="3"
+						sm="3"
+						md="3"
+						lg="1"
+						class="tech-column"
+					>
+						<div class="tech">
+							<img
+								:src="`/icons/${tech.image}.svg`"
+								:alt="tech.title"
+								width="90"
+								class="tech-image"
+							>
+							<p class="tech-title">
+								{{ tech.title }}
+							</p>
+						</div>
+					</i-column>
+					<i-column
+						xs="12"
+						sm="12"
+						md="12"
+						lg="1"
+						class="tech-column"
+					>
+						<p class="and-more">
+							and more...
 						</p>
-					</div>
-				</i-column>
-				<i-column
-					xs="12"
-					sm="12"
-					md="12"
-					lg="1"
-					class="tech-column"
-				>
-					<p class="and-more">
-						and more...
-					</p>
-				</i-column>
+					</i-column>
+				</div>
 			</div>
 		</i-container>
 	</PageSection>
@@ -171,6 +173,8 @@ export default {
 	}
 
 	#video-column {
+		padding: 0;
+
 		#video {
 			display: flex;
 			justify-content: center;
@@ -179,11 +183,11 @@ export default {
 			height: 455.34px;
 
 			@media screen and (min-width: 992px) {
-				height: 362.28px;
+				height: 426px;
 			}
 
 			@media screen and (min-width: 768px) {
-				height: 270.88px;
+				height: 426px;
 			}
 
 			@media screen and (max-width: 767px) {
@@ -209,6 +213,16 @@ export default {
 			transform: translate(-50%, -50%) scale(1.2);
 			cursor: pointer;
 			z-index: 1;
+
+			img {
+				transition: transform 100ms linear;
+				border-radius: 50%;
+
+				&:hover {
+					transform: scale(1.02);
+					box-shadow: $cn-shadow-hoverBtn;
+				}
+			}
 
 			@media screen and (max-width: 767px) {
 				top: 50%;
@@ -239,6 +253,11 @@ export default {
 			&-image {
 				height: 45px;
 				margin-bottom: 10px;
+				transition: transform 100ms linear;
+
+				&:hover {
+					transform: scale(1.2);
+				}
 			}
 
 			&-title {

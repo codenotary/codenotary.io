@@ -85,7 +85,9 @@ export default {
 
 <style lang="scss" scoped>
 #homepage {
-	background-color: #e5e5e5;
+	background-color: $cn-color-background;
+	background-image: radial-gradient($cn-color-light 1.55px, $cn-color-background 1.55px);
+	background-size: 31px 31px;
 
 	.section {
 		overflow: visible !important;
@@ -93,6 +95,7 @@ export default {
 
 	#cnil-section {
 		margin-bottom: calc(-80px - 4rem);
+		padding-top: 20px !important;
 	}
 
 	#whatwedo-section {

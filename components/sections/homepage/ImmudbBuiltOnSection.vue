@@ -7,10 +7,10 @@
 			<i-row
 				class="row _align-items-center"
 			>
-				<i-column lg="6">
+				<i-column lg="1" />
+				<i-column lg="5">
 					<img class="mascot-image" src="/images/immudb-header-mascot.png">
 				</i-column>
-				<i-column lg="1" />
 				<i-column lg="5">
 					<h1 class="_font-weight-bold cn-text-primary-light title first">
 						{{ content.title1 }}
@@ -32,6 +32,7 @@
 						</cn-button>
 					</div>
 				</i-column>
+				<i-column lg="1" />
 			</i-row>
 		</i-container>
 	</PageSection>
@@ -55,6 +56,14 @@ export default {
 	background: $cn-dark-gradient_inverse;
 
 	.row {
+		.first {
+			margin-bottom: 10px;
+		}
+
+		.third {
+			max-width: 370px;
+		}
+
 		@media screen and (max-width: $mobile-max-width) {
 			display: flex;
 			flex-direction: column-reverse;
@@ -80,7 +89,7 @@ export default {
 
 	.mascot-image {
 		height: auto;
-		max-height: 480px;
+		max-height: 400px;
 		object-fit: contain;
 
 		@media screen and (max-width: $mobile-max-width) {
