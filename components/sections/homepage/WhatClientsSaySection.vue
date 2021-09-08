@@ -199,56 +199,6 @@ export default {
 	}
 
 	.slick-slider {
-		padding: 95px 50px 50px;
-		background: white;
-		border-radius: 30px;
-
-		.slick-dots {
-			bottom: 15px;
-			left: 0;
-
-			.custom-dot {
-				width: 15px;
-				height: 15px;
-				border-radius: 30px;
-				background: $cn-color-primary_light;
-				border: 1px solid $cn-color-dark !important;
-			}
-
-			.slick-active {
-				.custom-dot {
-					background: $cn-color-primary;
-				}
-			}
-
-			@media screen and (max-width: 529px) {
-				bottom: 0;
-			}
-		}
-
-		.slick-arrow {
-			img {
-				object-fit: contain;
-			}
-
-			&.slick-next {
-				right: -50px;
-			}
-
-			&.slick-prev {
-				left: -50px;
-			}
-		}
-
-		.custom-arrow {
-			width: 100px;
-			height: 100px;
-
-			&::before {
-				content: none;
-			}
-		}
-
 		.review {
 			overflow: hidden;
 			position: relative;

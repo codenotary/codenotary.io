@@ -100,6 +100,11 @@ export default {
 			lang: 'scss',
 			ssr: false,
 		},
+		{
+			src: './assets/css/slick-slider.scss',
+			lang: 'scss',
+			ssr: false,
+		},
 	],
 
 	build: {

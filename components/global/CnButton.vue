@@ -160,8 +160,8 @@ a:active {
 		flex-direction: row;
 		padding: 14px 20px;
 
-		img {
-			padding-right: 10px;
+		svg {
+			margin-right: 10px;
 		}
 	}
 

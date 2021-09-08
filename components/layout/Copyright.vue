@@ -12,7 +12,7 @@
 					Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
 				</i-column>
 				<i-column
-					class="_display-flex _justify-content-end _font-weight-bold"
+					class="_display-flex _justify-content-end"
 				>
 					<router-link :to="{ name: 'terms-of-service' }">
 						Terms of Service
@@ -49,6 +49,7 @@ export default {
 	font-size: 14px;
 	line-height: 17px;
 	background-color: $cn-color-primary_dark !important;
+	border-top: 1px solid $cn-color-light;
 
 	a {
 		padding: 0 $spacer-1-2;

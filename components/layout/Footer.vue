@@ -95,6 +95,7 @@ export default {
 
 .footer {
 	background-color: $cn-color-dark !important;
+	border-top: 1px solid $cn-color-light;
 	padding-top: 40px;
 	padding-bottom: 40px;
 
