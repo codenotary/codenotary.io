@@ -30,14 +30,14 @@ const SCROLL_THRESHOLD = 80;
 export default {
 	name: 'DefaultLayout',
 	mixins: LayoutMixin,
-	data: () => ({
-		scrolled: false,
-		hover: false,
-		ledgerComplianceModalOpen: false,
-	}),
+	data() {
+		return {
+			scrolled: false,
+			hover: false,
+			ledgerComplianceModalOpen: false,
+		};
+	},
 	beforeDestroy () {
-		this.scrolled = null;
-		this.hover = null;
 		eventHub.$off('displayTrialModal', this.displayTrialModal);
 	},
 	mounted () {
