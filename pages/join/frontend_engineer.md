@@ -25,6 +25,8 @@ We use the following environments and systems: JavaScript, Vue.js, Node.js and G
 - Excellent user empathy
 - Excellent programming skills: JavaScript, ES 6, Node.js
 - Excellent experience with Vue.js and other JavaScript frameworks
+- Experience with Vuetify
+- Experience with Nuxt
 - Experience accessing API driven architectures (e.g. REST, gRPC)
 - Experience with Software Version Control and Continuous Integration (e.g. Git, Jenkins, Travis)
 - Experience with Markdown, GitHub Actions, VuePress, and Linux
