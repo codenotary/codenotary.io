@@ -3,6 +3,7 @@
 		id="trusted-supply-chain-section"
 		variant="transparent"
 		:bottom="0"
+		:top="4"
 	>
 		<i-container class="container">
 			<i-row>
@@ -102,15 +103,16 @@ export default {
 			}
 
 			@media screen and (max-width: $mobile-max-width) {
-				padding: 0 30px !important;
+				padding: 0 20px !important;
 
 				&.second {
 					padding-top: 15px !important;
 					max-height: 50% !important;
-					padding-bottom: 20px !important;
+					padding-bottom: 10px !important;
 
 					img {
-						max-height: 100% !important;
+						max-height: 250px !important;
+						padding: 10px;
 					}
 				}
 			}

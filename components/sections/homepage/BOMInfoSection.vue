@@ -191,7 +191,7 @@ export default {
 			}
 
 			@media screen and (max-width: 767px) {
-				height: 203.56px;
+				height: 134px;
 			}
 
 			img {
@@ -267,6 +267,10 @@ export default {
 				line-height: 14px;
 				text-align: center;
 				color: white;
+
+				@media screen and (max-width: 767px) {
+					font-size: 10px;
+				}
 			}
 		}
 

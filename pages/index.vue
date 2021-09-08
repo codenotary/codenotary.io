@@ -96,6 +96,10 @@ export default {
 	#cnil-section {
 		margin-bottom: calc(-80px - 4rem);
 		padding-top: 20px !important;
+
+		@media screen and (min-width: 375px) and (max-width: 768px) {
+			padding-top: 0 !important;
+		}
 	}
 
 	#whatwedo-section {

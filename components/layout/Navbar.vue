@@ -212,7 +212,6 @@ export default {
 
 				.item {
 					color: white !important;
-					font-weight: bold;
 					font-size: 18px;
 					line-height: 22px;
 
@@ -393,7 +392,6 @@ export default {
 		border-bottom: 1px solid $color-gray-40;
 
 		> .header {
-			font-weight: 600;
 			font-size: 18px;
 			line-height: 22px;
 			margin-top: 50px;

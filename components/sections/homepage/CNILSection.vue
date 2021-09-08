@@ -156,11 +156,21 @@ export default {
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
+			padding: 16px 0;
 			padding-right: 0;
 
 			&:not(:first-child) {
 				margin-left: 0;
 				margin-top: 20px;
+			}
+
+			.content {
+				padding-top: 10px;
+
+				.big-title {
+					font-size: 46px !important;
+					line-height: 42px !important;
+				}
 			}
 		}
 	}
