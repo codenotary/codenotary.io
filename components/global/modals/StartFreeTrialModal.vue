@@ -57,7 +57,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 div._form_27 {
-	form._form._form_27#_form_613A0FAE84973_ {
+	form._form._form_27 {
 		width: 100% !important;
 		margin: 0 !important;
 		padding: 0 !important;
