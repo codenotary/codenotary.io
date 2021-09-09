@@ -35,7 +35,7 @@
 						size="lg"
 						class="_margin-left-1"
 						variant="primary"
-						@click.native="startTrialModalOpen = true"
+						@click.native="startFreeTrialModalOpen = true"
 					>
 						Sign up
 					</i-button>
@@ -49,8 +49,8 @@
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
 			</i-column>
 		</i-row>
-		<StartTrialModal
-			v-model="startTrialModalOpen"
+		<StartFreeTrialModal
+			v-model="startFreeTrialModalOpen"
 		/>
 	</i-header>
 </template>
@@ -60,7 +60,7 @@ export default {
 	name: 'CiCdHeader',
 	data() {
 		return {
-			startTrialModalOpen: false,
+			startFreeTrialModalOpen: false,
 		};
 	},
 };

@@ -26,7 +26,7 @@
 						<cn-button
 							variant="secondary"
 							size="lg"
-							@click.native="startTrialModalOpen = true"
+							@click.native="startFreeTrialModalOpen = true"
 						>
 							FREE TRIAL
 						</cn-button>
@@ -78,8 +78,8 @@
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="computedStyle" />
 		</client-only>
-		<StartTrialModal
-			v-model="startTrialModalOpen"
+		<StartFreeTrialModal
+			v-model="startFreeTrialModalOpen"
 		/>
 	</div>
 </template>
@@ -100,7 +100,7 @@ export default {
 			playing: false,
 			timeout: null,
 			rightBarBottom: '0px',
-			startTrialModalOpen: false,
+			startFreeTrialModalOpen: false,
 		};
 	},
 	computed: {
