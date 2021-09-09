@@ -25,10 +25,8 @@
 					<p class="action _display-flex _flex-direction-row">
 						<cn-button
 							variant="secondary"
-							href="https://dashboard.codenotary.io/auth/signup"
-							target="_blank"
-							rel="nofollow"
 							size="lg"
+							@click.native="startTrialModalOpen = true"
 						>
 							FREE TRIAL
 						</cn-button>
@@ -80,6 +78,9 @@
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="computedStyle" />
 		</client-only>
+		<StartTrialModal
+			v-model="startTrialModalOpen"
+		/>
 	</div>
 </template>
 
@@ -99,6 +100,7 @@ export default {
 			playing: false,
 			timeout: null,
 			rightBarBottom: '0px',
+			startTrialModalOpen: false,
 		};
 	},
 	computed: {
