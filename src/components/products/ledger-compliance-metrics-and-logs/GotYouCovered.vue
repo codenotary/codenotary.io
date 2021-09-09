@@ -1,29 +1,31 @@
 <template>
-	<v-container fluid class="container">
-		<v-row>
-			<v-col>
-				<h4 class="white--text font-weight-700 text-h4 text-center text-uppercase">
-					We've got you covered
-				</h4>
-			</v-col>
-		</v-row>
-		<v-row>
-			<v-col
-				v-for="{ text, image } in technologies"
-				:key="text"
-				cols="3"
-				lg="1"
-				class="d-flex flex-column align-center justify-center"
-			>
-				<v-img
-					:src="`/images/metrics-and-logs/${image}.svg`"
-					contain
-				/>
-				<span class="white--text font-weight-700">
-					{{ text }}
-				</span>
-			</v-col>
-		</v-row>
+	<v-container fluid class="section-container">
+		<v-container>
+			<v-row>
+				<v-col>
+					<h4 class="white--text font-weight-700 text-h4 text-center text-uppercase">
+						We've got you covered
+					</h4>
+				</v-col>
+			</v-row>
+			<v-row>
+				<v-col
+					v-for="{ text, image } in technologies"
+					:key="text"
+					cols="3"
+					lg="1"
+					class="d-flex flex-column align-center justify-center"
+				>
+					<v-img
+						:src="`/images/metrics-and-logs/${image}.svg`"
+						contain
+					/>
+					<span class="white--text font-weight-700">
+						{{ text }}
+					</span>
+				</v-col>
+			</v-row>
+		</v-container>
 	</v-container>
 </template>
 
@@ -88,7 +90,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
+.section-container {
 	background-image: $cn-dark-gradient-inverse;
 }
 </style>
