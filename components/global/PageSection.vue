@@ -1,5 +1,6 @@
 <template>
 	<section
+		class="section"
 		:class="sectionClass"
 	>
 		<slot />
@@ -35,6 +36,8 @@ const getOffsetPropName = (offset) => {
 
 	return `${ direction }${ firstLetter.toUpperCase() }${ otherLetters }`;
 };
+const getOffsetDirection = offset => offset.split('-')[0];
+
 const additionalProps = additionalOffsets.reduce((propsObject, offset) =>
 	Object.assign(
 		{},
@@ -72,15 +75,15 @@ export default {
 			const additionalClasses = additionalOffsets
 					.map((offset) => {
 						const prop = this[getOffsetPropName(offset)];
+						const offsetValue = prop === null
+							? this[getOffsetDirection(offset)]
+							: prop;
 
-						return prop === null
-							? null
-							: `_padding-${ offset }-${ prop }`;
+						return `_padding-${ offset }-${ offsetValue }`;
 					})
-					.filter(additionalClass => additionalClass !== null)
 					.join(' ');
 
-			return `section ${ this.colorVariant } _padding-top-${ this.top } _padding-bottom-${ this.bottom } ${ additionalClasses }`;
+			return `${ this.colorVariant } ${ additionalClasses }`;
 		},
 	},
 };
