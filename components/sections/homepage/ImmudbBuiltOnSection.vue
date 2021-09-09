@@ -1,7 +1,9 @@
 <template>
 	<PageSection
 		id="immudb-built-on-section"
-		class="_padding-bottom-6"
+		:bottom-sm="4"
+		:bottom="6"
+		:top="4"
 	>
 		<i-container fluid>
 			<i-row

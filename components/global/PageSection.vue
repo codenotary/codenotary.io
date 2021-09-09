@@ -1,6 +1,6 @@
 <template>
 	<section
-		:class="`section ${ getVariant } _padding-top-${ top } _padding-bottom-${bottom}`"
+		:class="sectionClass"
 	>
 		<slot />
 	</section>
@@ -17,8 +17,36 @@ const VARIANTS = [
 	'gradient',
 	'gradient_inverse',
 ];
+const additionalOffsets = [
+	'top-xs',
+	'top-sm',
+	'top-md',
+	'top-lg',
+	'top-xl',
+	'bottom-xs',
+	'bottom-sm',
+	'bottom-md',
+	'bottom-lg',
+	'bottom-xl',
+];
+const getOffsetPropName = (offset) => {
+	const [direction, size] = offset.split('-');
+	const [firstLetter, ...otherLetters] = size.split('');
+
+	return `${ direction }${ firstLetter.toUpperCase() }${ otherLetters }`;
+};
+const additionalProps = additionalOffsets.reduce((propsObject, offset) =>
+	Object.assign(
+		{},
+		propsObject, {
+			[getOffsetPropName(offset)]: {
+				type: Number,
+				default: null,
+			},
+		}), {});
+
 export default {
-	name: 'PageSection',
+	name: 'UiPageSection',
 	props: {
 		variant: {
 			type: String,
@@ -32,51 +60,62 @@ export default {
 			type: Number,
 			default: 4,
 		},
+		...additionalProps,
 	},
 	computed: {
-		getVariant () {
-			if (VARIANTS.includes(this.variant)) {
-				return `variant-${ this.variant }`;
-			}
-			return 'variant-white';
+		colorVariant () {
+			return VARIANTS.includes(this.variant)
+				? `variant-${ this.variant }`
+				: 'variant-white';
+		},
+		sectionClass () {
+			const additionalClasses = additionalOffsets
+					.map((offset) => {
+						const prop = this[getOffsetPropName(offset)];
+
+						return prop === null
+							? null
+							: `_padding-${ offset }-${ prop }`;
+					})
+					.filter(additionalClass => additionalClass !== null)
+					.join(' ');
+
+			return `section ${ this.colorVariant } _padding-top-${ this.top } _padding-bottom-${ this.bottom } ${ additionalClasses }`;
 		},
 	},
 };
 </script>
 
 <style lang="scss">
-@import "~@inkline/inkline/src/css/mixins";
-@import "~@inkline/inkline/src/css/config";
-
 .section {
 	width: 100%;
 	overflow: hidden;
 
 	&.variant- {
 		&transparent {
-			background: transparent;
+			background-color: transparent;
 		}
 
 		&blue {
-			background-color: $color-primary;
+			background-color: var(--v-primary-base);
 		}
 
 		&light-blue {
-			background-color: $color-primary-lightest;
+			background-color: var(--v-primary--lighten3);
 		}
 
 		&gray,
 		&grey {
-			background-color: $color-gray-30;
+			background-color: var(--v-grey-lighten1);
 		}
 
 		&light-gray,
 		&light-grey {
-			background-color: $background-grey;
+			background-color: var(--v-grey-base);
 		}
 
 		&standard {
-			background-color: $cn-color-background;
+			background-color: var(--v-grey-lighten3);
 		}
 
 		&gradient {
@@ -84,7 +123,7 @@ export default {
 		}
 
 		&gradient_inverse {
-			background: $cn-dark-gradient_inverse;
+			background: $cn-dark-gradient-inverse;
 		}
 	}
 }
