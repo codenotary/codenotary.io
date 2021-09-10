@@ -205,6 +205,7 @@ export default {
 
 	.main-content {
 		z-index: 3;
+		position: relative;
 
 		@media (max-width: $xs) {
 			padding-top: 16px;
