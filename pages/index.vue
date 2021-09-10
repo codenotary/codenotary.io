@@ -109,33 +109,5 @@ export default {
 	#what-clients-say-section {
 		background: transparent;
 	}
-
-	#newsletter-section {
-		margin-top: -250px;
-
-		@media screen and (min-width: 375px) and (max-width: 400px) {
-			margin-top: 125px !important;
-		}
-
-		@media screen and (min-width: 400px) and (max-width: 440px) {
-			margin-top: 50px !important;
-		}
-
-		@media screen and (min-width: 440px) and (max-width: 500px) {
-			margin-top: 0 !important;
-		}
-
-		@media screen and (max-width: 529px) {
-			margin-top: -380px;
-		}
-
-		@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
-			margin-top: -175px !important;
-		}
-
-		@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
-			margin-top: -125px !important;
-		}
-	}
 }
 </style>

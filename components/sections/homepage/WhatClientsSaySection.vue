@@ -1,10 +1,16 @@
 <template>
-	<PageSection id="what-clients-say-section" variant="transparent">
+	<PageSection
+		id="what-clients-say-section"
+		variant="transparent"
+		:top-md="0"
+		:top-sm="0"
+		:top-xs="0"
+	>
 		<i-container class="floating-container">
 			<i-row>
-				<h3 class="title">
+				<h2 class="title">
 					What Clients Say About Us
-				</h3>
+				</h2>
 			</i-row>
 			<i-row>
 				<i-column>
@@ -138,11 +144,17 @@ export default {
 		width: 100%;
 		color: #244583;
 		font-weight: 700;
-		font-size: 32px !important;
-		line-height: 34px !important;
+
+		@media screen and (min-width: $mobile-max-width) {
+			font-size: 32px !important;
+			line-height: 34px !important;
+		}
 
 		@media screen and (max-width: $mobile-max-width) {
-			margin-top: -80px;
+			font-size: 24px !important;
+			line-height: 26px !important;
+			max-width: 250px;
+			margin: 20px auto -100px;
 		}
 	}
 
@@ -154,7 +166,7 @@ export default {
 		z-index: 10;
 
 		@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
-			top: -20px;
+			top: -80px;
 		}
 	}
 
@@ -234,8 +246,12 @@ export default {
 				left: 48px;
 				width: 80px;
 
+				@media screen and (max-width: 767px) {
+					top: 66px;
+				}
+
 				@media screen and (max-width: 529px) {
-					top: 2px;
+					top: 60px;
 					left: 38px;
 					width: 60px;
 				}
@@ -271,9 +287,13 @@ export default {
 				padding: 30px 35px 25px;
 			}
 
+			@media screen and (max-width: 767px) {
+				padding: 100px 35px 25px;
+			}
+
 			@media screen and (max-width: 529px) {
 				padding: 0;
-				padding-top: 20px;
+				padding-top: 80px;
 			}
 		}
 	}

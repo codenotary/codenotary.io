@@ -2,7 +2,9 @@
 	<PageSection
 		id="Homepage-users-section"
 		variant="transparent"
-		:bottom-xs="3"
+		:bottom-xs="0"
+		:bottom-sm="1"
+		:bottom-md="0"
 	>
 		<i-container class="floating-container">
 			<i-row>
@@ -124,7 +126,7 @@ export default {
 		padding-right: 15px;
 	}
 
-	@include breakpoint-down(sm) {
+	@include breakpoint-down(md) {
 		height: auto !important;
 		padding-top: 40px !important;
 

@@ -3,6 +3,10 @@
 		id="newsletter-section"
 		variant="gradient_inverse"
 		:top="6"
+		:top-xl="6"
+		:top-md="3"
+		:top-sm="4"
+		:bottom-sm="3"
 	>
 		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<PageSectionHeader
@@ -46,7 +50,15 @@ export default {
 <style lang="scss" scoped>
 #newsletter-section {
 	color: white;
-	margin-top: -136px;
+	margin-top: -290px !important;
+
+	@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
+		margin-top: -250px !important;
+	}
+
+	@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
+		margin-top: -200px !important;
+	}
 
 	.container {
 		max-width: 500px;

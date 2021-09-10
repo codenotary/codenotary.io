@@ -16,13 +16,23 @@
 			border: 1px solid $cn-color-dark !important;
 			transition: all 0.3s ease-out;
 
+			@media screen and (max-width: 767px) {
+				width: 12px;
+				height: 12px;
+			}
+
 			&:hover {
 				background: $cn-color-primary;
 				transform: scale(1.2);
 			}
+		}
 
-			li {
-				margin: 0 3px;
+		li {
+			margin: 0 3px;
+
+			@media screen and (max-width: 767px) {
+				width: 15px !important;
+				height: 15px !important;
 			}
 		}
 
