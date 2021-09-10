@@ -64,10 +64,12 @@ export default {
 	background: $cn-dark-gradient_inverse;
 
 	.row {
+		.content {
+			padding-bottom: 80px;
+		}
+
 		.first {
-			font-size: 32px !important;
 			margin-top: 0 !important;
-			margin-bottom: 0 !important;
 		}
 
 		.second {
@@ -80,7 +82,7 @@ export default {
 
 		@media screen and (max-width: $mobile-max-width) {
 			.content {
-				padding-bottom: 48px;
+				padding-bottom: 48px !important;
 			}
 
 			.first,
@@ -91,6 +93,7 @@ export default {
 
 			.first {
 				font-size: 32px !important;
+				margin-bottom: 0 !important;
 			}
 		}
 
@@ -99,7 +102,7 @@ export default {
 			flex-direction: column-reverse;
 
 			.content {
-				padding-bottom: 0;
+				padding-bottom: 0 !important;
 			}
 
 			.first,
@@ -123,7 +126,7 @@ export default {
 
 	.mascot-image {
 		height: auto;
-		max-height: 480px;
+		max-height: 420px;
 		object-fit: contain;
 
 		@media screen and (max-width: $mobile-max-width) {
