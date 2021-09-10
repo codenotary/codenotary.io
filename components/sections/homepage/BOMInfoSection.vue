@@ -1,7 +1,9 @@
 <template>
 	<PageSection
 		id="bom-info-section"
+		:top-xs="7"
 		:top="8"
+		:bottom-xs="8"
 		:bottom="6"
 	>
 		<i-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
@@ -36,7 +38,7 @@
 					</div>
 				</i-column>
 			</i-row>
-			<div class="_margin-top-3 _margin-bottom-2">
+			<div class="_margin-top-3 _margin-bottom-2 _margin-bottom-xs-8">
 				<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center">
 					Software Bill of Material for:
 				</h3>
@@ -243,7 +245,7 @@ export default {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			min-width: 90px;
+			min-width: 70px;
 			margin-top: 20px;
 		}
 
@@ -254,6 +256,10 @@ export default {
 				height: 45px;
 				margin-bottom: 10px;
 				transition: transform 100ms linear;
+
+				@media screen and (max-width: 767px) {
+					height: 30px;
+				}
 
 				&:hover {
 					transform: scale(1.2);

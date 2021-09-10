@@ -1,5 +1,6 @@
 .slick-slider {
 	background: white;
+	box-shadow: $cn-shadow-sm;
 	padding: 95px 50px 50px;
 	border-radius: 30px;
 
@@ -53,6 +54,11 @@
 	.custom-arrow {
 		width: 80px;
 		height: 80px;
+
+		@media screen and (max-width: 529px) {
+			width: 60px;
+			height: 80px;
+		}
 
 		&::before {
 			content: none;

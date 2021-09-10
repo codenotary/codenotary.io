@@ -219,6 +219,10 @@ export default {
 				@media screen and (max-width: $mobile-max-width) {
 					padding-top: 60px;
 				}
+
+				@media screen and (max-width: 529px) {
+					padding-top: 50px;
+				}
 			}
 
 			&-content,
@@ -232,6 +236,12 @@ export default {
 				top: -6px;
 				left: 48px;
 				width: 80px;
+
+				@media screen and (max-width: 529px) {
+					top: 2px;
+					left: 38px;
+					width: 60px;
+				}
 			}
 
 			&-content {
@@ -266,6 +276,7 @@ export default {
 
 			@media screen and (max-width: 529px) {
 				padding: 0;
+				padding-top: 20px;
 			}
 		}
 	}

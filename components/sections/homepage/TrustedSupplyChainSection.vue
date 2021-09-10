@@ -8,18 +8,17 @@
 		<i-container class="container">
 			<i-row>
 				<i-column
-					sm="12" lg="6"
+					sm="12"
+					md="6"
+					lg="6"
 					class="column first"
 				>
 					<h3
 						class="_font-weight-bold _text-uppercase cn-text-white title second"
 					>
-						End-to-end<br>
-						<span class="cn-text-secondary">trusted supply chain</span><br>
-						integrity and authenticity<br>
-						including SBOM<br>
-						(Software Bill of<br>
-						Material)
+						End-to-end <br>
+						<span class="cn-text-secondary">trusted supply chain</span>
+						integrity and authenticity including SBOM (Software Bill of Material)
 					</h3>
 					<p class="cn-text-white title third">
 						Zero Trust infrastructures, SDLC evidence and SBOM are important to comply with the 2021 Cyber Security Executive Order!
@@ -40,7 +39,9 @@
 					</div>
 				</i-column>
 				<i-column
-					sm="12" lg="6"
+					sm="12"
+					md="6"
+					lg="6"
 					class="column second _text-center"
 				>
 					<img
@@ -80,7 +81,7 @@ export default {
 		margin-bottom: calc(-4rem - 20px);
 
 		.row {
-			@media screen and (max-width: $mobile-max-width) {
+			@media screen and (max-width: 767px) {
 				max-height: 100% !important;
 				flex-direction: column;
 			}
@@ -101,27 +102,44 @@ export default {
 					padding: 30px;
 				}
 			}
+		}
 
-			@media screen and (max-width: $mobile-max-width) {
-				padding: 0 20px !important;
+		@media screen and (max-width: $mobile-max-width) {
+			.first {
+				padding: 2rem 2rem !important;
+			}
 
-				&.second {
-					padding-top: 15px !important;
-					max-height: 50% !important;
-					padding-bottom: 10px !important;
+			.second {
+				padding-right: 2rem !important;
+				margin-top: 0 !important;
 
-					img {
-						max-height: 250px !important;
-						padding: 10px;
-					}
+				img {
+					max-height: 700px !important;
+					padding: 10px !important;
 				}
 			}
 		}
 
-		@media screen and (max-width: $mobile-max-width) {
+		@media screen and (max-width: 767px) {
 			flex-direction: column;
 			background-position: 550px bottom;
 			background-size: cover;
+			padding: 0 20px !important;
+
+			.first {
+				padding: 1rem 1rem 0 !important;
+			}
+
+			.second {
+				padding-top: 15px !important;
+				max-height: 50% !important;
+				padding-bottom: 10px !important;
+
+				img {
+					max-height: 250px !important;
+					padding: 10px;
+				}
+			}
 
 			.second,
 			.third {

@@ -88,3 +88,15 @@ a:hover:not(.no-hover) {
 .inline-block {
 	display: inline-block;
 }
+
+.desktop {
+	@media screen and (max-width: $mobile-max-width) {
+		display: none;
+	}
+}
+
+.mobile {
+	@media screen and (min-width: $mobile-max-width) {
+		display: none;
+	}
+}
