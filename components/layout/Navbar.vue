@@ -9,11 +9,7 @@
 			:to="{ name: 'index' }"
 			class="_padding-0"
 		>
-			<img
-				class="logo _padding-y-1-2"
-				:src="`/images/logo/logo_white.svg`"
-				alt="CodeNotary"
-			>
+			<LogoCodeNotary />
 		</i-navbar-brand>
 		<i-navbar-items class="_justify-content-end no-transform">
 			<i-nav>
@@ -121,6 +117,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
+// import Logo from './components/global/LogoCodeNotary'
 import {
 	VIEW_MODULE,
 	MOBILE,
@@ -244,18 +241,6 @@ export default {
 	&.-collapsed {
 		.cta-button {
 			display: none;
-		}
-	}
-
-	.logo {
-		height: #{$cn-logo-height}px;
-		width: 200px;
-		object-fit: cover;
-		margin-right: 8px;
-
-		@media screen and (max-width: $mobile-max-width) {
-			width: 150px;
-			height: auto;
 		}
 	}
 

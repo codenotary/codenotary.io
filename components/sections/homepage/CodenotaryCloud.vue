@@ -3,13 +3,18 @@
 		id="immudb-codenotary-cloud-section"
 		:top="6"
 		:bottom="6"
+		:bottom-md="8"
 	>
 		<i-container fluid>
 			<i-row
 				class="row _align-items-center"
 			>
-				<i-column lg="1" />
-				<i-column lg="5">
+				<i-column lg="1" md="0" />
+				<i-column
+					lg="5"
+					md="6"
+					class="content"
+				>
 					<h1 class="_font-weight-bold cn-text-primary-light title first">
 						{{ content.title1 }}
 					</h1>
@@ -33,7 +38,7 @@
 						</cn-button>
 					</div>
 				</i-column>
-				<i-column lg="6">
+				<i-column lg="6" md="6">
 					<img class="mascot-image" src="/images/immudb-codenotary-cloud.png">
 				</i-column>
 			</i-row>
@@ -60,7 +65,13 @@ export default {
 
 	.row {
 		.first {
-			margin-top: -2.5rem;
+			font-size: 32px !important;
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
+
+		.second {
+			max-width: 360px;
 		}
 
 		.third {
@@ -68,8 +79,28 @@ export default {
 		}
 
 		@media screen and (max-width: $mobile-max-width) {
+			.content {
+				padding-bottom: 48px;
+			}
+
+			.first,
+			.second,
+			.third {
+				max-width: 100%;
+			}
+
+			.first {
+				font-size: 32px !important;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
 			display: flex;
 			flex-direction: column-reverse;
+
+			.content {
+				padding-bottom: 0;
+			}
 
 			.first,
 			.second,
@@ -99,6 +130,11 @@ export default {
 			width: 100%;
 			max-width: unset;
 			margin-bottom: 40px;
+		}
+
+		@media screen and (max-width: 767px) {
+			max-height: 280px;
+			margin-bottom: 0;
 		}
 	}
 }

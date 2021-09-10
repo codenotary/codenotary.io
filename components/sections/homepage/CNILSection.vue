@@ -150,19 +150,12 @@ export default {
 
 @media screen and (max-width: 1200px) {
 	.cnil-body {
-		flex-direction: column;
-
 		.cnil-card {
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
 			padding: 16px 0;
 			padding-right: 0;
-
-			&:not(:first-child) {
-				margin-left: 0;
-				margin-top: 20px;
-			}
 
 			.content {
 				padding-top: 10px;
@@ -171,6 +164,19 @@ export default {
 					font-size: 46px !important;
 					line-height: 42px !important;
 				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.cnil-body {
+		flex-direction: column;
+
+		.cnil-card {
+			&:not(:first-child) {
+				margin-left: 0;
+				margin-top: 20px;
 			}
 		}
 	}

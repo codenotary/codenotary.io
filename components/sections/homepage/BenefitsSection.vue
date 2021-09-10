@@ -67,20 +67,48 @@ export default {
 
 <style lang="scss" scoped>
 #benefits-section {
+	@media screen and (max-width: 767px) {
+		border-top: 1px solid $cn-color-light;
+		margin-top: -100px;
+	}
+
+	@media screen and (max-width: 576px) {
+		margin-top: -140px;
+	}
+
 	.container {
 		padding-left: 30px;
 		padding-right: 30px;
+
+		@media screen and (max-width: 767px) {
+			padding-left: 0;
+			padding-right: 0;
+			margin-right: 0 !important;
+			margin-left: 0 !important;
+			max-width: 100% !important;
+		}
 	}
 
 	.main-container {
 		background-color: white;
 		border-radius: $cn-border-radius-lg;
+		box-shadow: $cn-shadow-sm;
 		z-index: 2;
 		position: relative;
 		margin-top: -4rem;
 
+		@media screen and (max-width: 767px) {
+			margin-top: 0;
+			background-color: transparent;
+			box-shadow: none;
+		}
+
 		::v-deep h2 {
 			margin-bottom: 8px;
+
+			@media screen and (max-width: 767px) {
+				color: #fff !important;
+			}
 		}
 	}
 
@@ -140,7 +168,7 @@ export default {
 					content: url('/icons/triangle.svg');
 					position: absolute;
 					bottom: -25px;
-					transform: rotate(180deg);
+					transform: rotate(180deg) scale(0.8);
 				}
 			}
 
@@ -154,6 +182,7 @@ export default {
 
 				h5 {
 					min-height: 50px;
+					width: 160px;
 				}
 			}
 		}
@@ -167,8 +196,8 @@ export default {
 
 		.benefits-body {
 			.benefit-card {
-				width: 213px;
-				height: 353px;
+				width: 230px;
+				height: 300px;
 				margin-left: 10px;
 				margin-right: 10px;
 
@@ -176,7 +205,7 @@ export default {
 					padding: 16px;
 					min-height: 53px;
 
-					h4 {
+					h5 {
 						font-size: 18px;
 						line-height: 24px;
 						min-height: 50px;
@@ -184,7 +213,7 @@ export default {
 				}
 
 				.benefit-card-header {
-					min-height: 100px;
+					min-height: 85px;
 					margin-bottom: 8px;
 				}
 			}

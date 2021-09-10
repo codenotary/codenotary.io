@@ -4,6 +4,7 @@
 		variant="transparent"
 		:bottom="0"
 		:top="1"
+		:top-xs="0"
 	>
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<PageSectionHeader
@@ -56,20 +57,21 @@ export default {
 	flex: 1 0 100%;
 	flex-wrap: wrap;
 	padding: 0;
-	//padding-top: 10px;
 	padding-bottom: 10px;
+	margin: 0 !important;
+	max-width: 100% !important;
 
 	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 10px;
 
 		& ::v-deep .square-card {
 			padding: 16px;
-			max-width: 213px;
-			height: 157px;
+			max-width: 150px;
+			height: 150px;
 
 			.card-picture {
 				height: 64px;
-				width: 200px;
+				width: 150px;
 			}
 
 			h3 {
@@ -92,7 +94,7 @@ export default {
 		margin-left: 10px;
 		margin-right: 10px;
 
-		@media screen and (max-width: 1199px) {
+		@media screen and (max-width: 767px) {
 			& {
 				flex-basis: calc(50% - 40px);
 				display: flex;
@@ -105,6 +107,12 @@ export default {
 					justify-content: flex-end;
 				}
 			}
+		}
+
+		@media screen and (max-width: 767px) {
+			margin-top: 10px;
+			margin-left: 5px;
+			margin-right: 5px;
 		}
 	}
 }

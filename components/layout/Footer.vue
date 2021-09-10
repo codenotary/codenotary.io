@@ -176,6 +176,7 @@ export default {
 			flex: 1 0 100%;
 			justify-content: center;
 			align-items: center;
+			text-align: center;
 
 			.brand-description {
 				max-width: unset;

@@ -1,6 +1,7 @@
 <template>
 	<PageSection
 		id="immudb-built-on-section"
+		:bottom-xs="3"
 		:bottom-sm="4"
 		:bottom="6"
 		:top="4"
@@ -9,11 +10,15 @@
 			<i-row
 				class="row _align-items-center"
 			>
-				<i-column lg="1" />
-				<i-column lg="5">
+				<i-column lg="1" md="0" />
+				<i-column lg="5" md="6">
 					<img class="mascot-image" src="/images/immudb-header-mascot.png">
 				</i-column>
-				<i-column lg="5">
+				<i-column
+					lg="5"
+					md="6"
+					class="content"
+				>
 					<h1 class="_font-weight-bold cn-text-primary-light title first">
 						{{ content.title1 }}
 					</h1>
@@ -34,7 +39,7 @@
 						</cn-button>
 					</div>
 				</i-column>
-				<i-column lg="1" />
+				<i-column lg="1" md="0" />
 			</i-row>
 		</i-container>
 	</PageSection>
@@ -58,33 +63,50 @@ export default {
 	background: $cn-dark-gradient_inverse;
 
 	.row {
-		.first {
-			margin-bottom: 10px;
-		}
+		.content {
+			.first {
+				margin-bottom: 10px;
+			}
 
-		.third {
-			max-width: 370px;
+			.third {
+				max-width: 370px;
+			}
 		}
 
 		@media screen and (max-width: $mobile-max-width) {
+			.first {
+				font-size: 32px !important;
+				margin-bottom: 0 !important;
+			}
+		}
+
+		@media screen and (max-width: 767px) {
 			display: flex;
 			flex-direction: column-reverse;
 
-			.first,
-			.second,
-			.third {
-				text-align: center;
-			}
+			.content {
+				padding-left: 10px;
 
-			.second {
-				font-size: 24px !important;
-				line-height: 26px !important;
-				font-weight: 700 !important;
-			}
+				.first,
+				.second,
+				.third {
+					text-align: center;
+				}
 
-			.action-buttons {
-				display: flex;
-				justify-content: center;
+				.second {
+					font-size: 24px !important;
+					line-height: 26px !important;
+					font-weight: 700 !important;
+				}
+
+				.third {
+					max-width: 100%;
+				}
+
+				.action-buttons {
+					display: flex;
+					justify-content: center;
+				}
 			}
 		}
 	}
@@ -97,7 +119,14 @@ export default {
 		@media screen and (max-width: $mobile-max-width) {
 			width: 100%;
 			max-width: unset;
-			margin-bottom: 40px;
+			max-height: 350px;
+		}
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			max-width: unset;
+			max-height: 250px;
+			margin-bottom: 20px;
 		}
 	}
 }

@@ -1,5 +1,9 @@
 <template>
-	<PageSection id="Homepage-users-section" variant="transparent">
+	<PageSection
+		id="Homepage-users-section"
+		variant="transparent"
+		:bottom-xs="3"
+	>
 		<i-container class="floating-container">
 			<i-row>
 				<i-column sm="12">
@@ -30,7 +34,7 @@
 					:key="`${item}-${idx}`"
 					class="_display-flex _justify-content-center _align-items-center"
 					xs="6"
-					sm="6"
+					sm="4"
 					md="2"
 					lg="2"
 				>
@@ -110,6 +114,7 @@ export default {
 		transform: translateX(-50%);
 		background-color: #fff;
 		border-radius: 30px;
+		box-shadow: $cn-shadow-sm;
 		z-index: 10;
 		width: 81%;
 	}
@@ -122,7 +127,6 @@ export default {
 	@include breakpoint-down(sm) {
 		height: auto !important;
 		padding-top: 40px !important;
-		padding-bottom: 81px !important;
 
 		.floating-container {
 			position: relative;
