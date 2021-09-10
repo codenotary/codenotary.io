@@ -25,7 +25,7 @@
 <script>
 import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 
-const ACTIVE_CAMPAIGN_FORM_ID = 20;
+const ACTIVE_CAMPAIGN_FORM_ID = 27;
 
 export default {
 	name: 'StartTrialModal',
@@ -56,8 +56,8 @@ export default {
 <style lang="scss">
 @import "~@inkline/inkline/src/css/config";
 
-div._form_20 {
-	form._form._form_20 {
+div._form_27 {
+	form._form._form_27 {
 		width: 100% !important;
 		margin: 0 !important;
 		padding: 0 !important;
@@ -122,7 +122,7 @@ div._form_20 {
 		}
 
 		div._button-wrapper {
-			button#_form_20_submit {
+			button#_form_27_submit {
 				width: 100%;
 				background-color: $color-primary !important;
 				font-size: 16px !important;

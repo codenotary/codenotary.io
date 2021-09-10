@@ -35,8 +35,7 @@
 						size="lg"
 						class="_margin-left-1"
 						variant="primary"
-						href="https://dashboard.codenotary.io/auth/signup"
-						target="_blank"
+						@click.native="startFreeTrialModalOpen = true"
 					>
 						Sign up
 					</i-button>
@@ -50,12 +49,20 @@
 				<img src="/images/mascot.png" alt="CodeNotary Mascot">
 			</i-column>
 		</i-row>
+		<StartFreeTrialModal
+			v-model="startFreeTrialModalOpen"
+		/>
 	</i-header>
 </template>
 
 <script>
 export default {
 	name: 'CiCdHeader',
+	data() {
+		return {
+			startFreeTrialModalOpen: false,
+		};
+	},
 };
 </script>
 
