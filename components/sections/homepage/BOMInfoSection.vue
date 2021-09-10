@@ -132,8 +132,8 @@ export default {
 					: { 'data-cols': Math.floor(this.$refs.video.clientWidth / 7) }
 				: {};
 			const videoConfig = {
-				id: 'asciicast-Jnu5dIanEMzJQ8cNqjlN5su9Q',
-				src: 'https://asciinema.org/a/Jnu5dIanEMzJQ8cNqjlN5su9Q.js',
+				id: 'asciicast-434900',
+				src: 'https://asciinema.org/a/434900.js',
 				async: 'true',
 				'data-width': 400,
 				'data-size': 'small',
