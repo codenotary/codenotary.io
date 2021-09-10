@@ -209,7 +209,7 @@ export default {
 				box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
 				padding: 60px 38px 30px 38px;
 				height: 100%;
-				min-height: 330px;
+				min-height: 280px;
 				display: flex;
 				flex-direction: column;
 
