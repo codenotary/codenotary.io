@@ -1,6 +1,6 @@
 <template>
 	<div id="ledger-compliance-metrics-and-logs-header">
-		<v-container class="container" fluid>
+		<v-container class="container main-content" fluid>
 			<v-row>
 				<v-col md="1" />
 				<v-col sm="12" md="5">
@@ -70,11 +70,10 @@
 				@close="startTrialModalOpen = false"
 			/>
 		</v-container>
-		<div class="backdrops">
-			<div class="backdrop first" />
-			<div class="backdrop image" />
-			<div class="backdrop second secondary" />
-		</div>
+		<client-only>
+			<div class="gradient-box" />
+			<div class="secondary-box" :style="{ bottom: rightBarBottom }" />
+		</client-only>
 	</div>
 </template>
 
@@ -95,7 +94,27 @@ export default {
 				'PostgreSQL',
 			],
 			startTrialModalOpen: false,
+			rightBarBottom: '0px',
 		};
+	},
+	mounted() {
+		if (typeof window !== 'undefined') {
+			this.calculateSecondaryBar();
+			window.addEventListener('resize', this.calculateSecondaryBar, { passive: true });
+		}
+	},
+	methods: {
+		calculateSecondaryBar() {
+			if (!process.browser) {
+				return;
+			}
+
+			const gradientDegrees = window.innerWidth >= 2800 ? 2 : window.innerWidth <= 991 ? 8 : 5; // Skew of the gradient div
+			const secondaryDegrees = window.innerWidth >= 2800 ? 1 : window.innerWidth <= 991 ? 5 : 3; // Skew of the secondary div
+			const gradientLineLength = window.innerWidth / Math.sin((90 - gradientDegrees) * Math.PI / 180) * Math.sin(90 * Math.PI / 180); // How long is the oblique line of the gradient div
+			const secondaryLineSideLength = gradientLineLength / 2 / Math.sin((90 - secondaryDegrees) * Math.PI / 180) * Math.sin((gradientDegrees + secondaryDegrees) * Math.PI / 180); // How long is the right side of the secondary div
+			this.rightBarBottom = (-secondaryLineSideLength + (window.innerWidth <= 991 ? 50 : 100)) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
+		},
 	},
 };
 </script>
@@ -105,9 +124,6 @@ export default {
 	position: relative;
 
 	.container {
-		position: absolute;
-		z-index: 3;
-
 		.vue-typer {
 			.custom {
 				&.char {
@@ -125,26 +141,76 @@ export default {
 		}
 	}
 
-	.backdrops {
-		.backdrop {
-			height: 550px;
+	.gradient-box {
+		width: 100vw;
+		max-width: 100%;
+		height: 150%;
+		position: absolute;
+		bottom: 100px;
+		left: 0;
+		transform: skewY(-5deg);
+		-webkit-transform-origin: right;
+		z-index: 2;
+		box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
+		overflow: hidden;
+		transition: transform 0.5s linear, bottom 0.5s linear;
+
+		@media screen and (min-width: 2800px) {
+			transform: skewY(-2deg);
+
+			&::after {
+				transform: skewY(2deg);
+			}
+		}
+
+		@media (max-width: $xs) {
+			transform: skewY(-8deg);
+			bottom: 50px;
+
+			&::after {
+				transform: skewY(8deg);
+			}
+		}
+
+		&::after {
+			content: '';
+			background: $cn-dark-gradient;
+			transform: skewY(5deg);
 			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
+			height: 200%;
+			position: inherit;
+		}
+	}
 
-			&.first {
-				z-index: 1;
-				background-image: $cn-dark-gradient;
-			}
+	.secondary-box {
+		background-color: var(--v-secondary-base);
+		width: 100%;
+		position: absolute;
+		right: 0;
+		height: 100%;
+		-webkit-transform-origin: right;
+		transform: skewY(3deg);
+		z-index: 1;
+		box-shadow: $cn-shadow-sm;
+		transition: transform 0.5s linear, bottom 0.5s linear;
 
-			&.image {
-				background-image: url(/images/cn-lc/header-background.png);
-				z-index: 2;
-			}
+		@media screen and (min-width: 2800px) {
+			transform: skewY(1deg);
+		}
 
-			&.second {
-				z-index: 0;
+		@media (max-width: $xs) {
+			transform: skewY(5deg);
+		}
+	}
+
+	.main-content {
+		z-index: 3;
+
+		@media (max-width: $xs) {
+			padding-top: 16px;
+
+			.title.first {
+				display: inline;
 			}
 		}
 	}
