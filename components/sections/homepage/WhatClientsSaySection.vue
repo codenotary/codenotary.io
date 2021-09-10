@@ -77,7 +77,7 @@ export default {
 			},
 			reviews: [
 				{
-					content: 'It makes for a great one-stop shop for monitoring key VMware metrics! I have been using CodeNotary CNIL Metrics and Logs for about a year. Setup and operational in less than 30 minutes. It comes pre-packaged with ready to use dashboards that are color coded with thresholds providing immediate feedback on performance, KPIs, health and areas of concerns. The team is skilled in this area and knows what their customer base is seeking. Overall, I’m very pleased with the application and the support team behind it. Highly recommended!',
+					content: 'I have been using CodeNotary for years. Setup and operational in less than 30 minutes and provides immediate feedback on performance, KPIs, health and areas of concerns. Highly recommended!',
 					author: {
 						name: 'Tarun Keswani',
 						title: 'Principal Staff Engineer',
@@ -85,10 +85,7 @@ export default {
 					},
 				},
 				{
-					content: `
-					The tremendous flexibility and and the possibility to create your own dashboards with the metrics you want to keep one eye on it all the time across different infrastructure products from different vendors.
-
-					Also I like the very great support from the Merics and Logs team!`,
+					content: 'It is amazing to have this tremendous flexibility and the possibilities of easy and fast integrations.',
 					author: {
 						name: 'Jan Unger',
 						title: 'Network and Datacenter Engineer',
@@ -236,23 +233,23 @@ export default {
 
 			&-content {
 				font-weight: 400;
-				font-size: 12px;
-				line-height: 20px;
+				font-size: 14px;
+				line-height: 22px;
 				flex: auto;
 			}
 
 			&-author-name {
 				color: #244583;
 				font-weight: 700;
-				font-size: 12px;
-				line-height: 10px;
+				font-size: 14px;
+				line-height: 12px;
 			}
 
 			&-author-description {
 				color: #768e98;
 				font-weight: 400;
-				font-size: 10px;
-				line-height: 10px;
+				font-size: 12px;
+				line-height: 12px;
 				margin-top: 5px;
 			}
 
