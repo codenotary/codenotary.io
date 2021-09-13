@@ -99,6 +99,11 @@ export default {
 	padding-top: 40px;
 	padding-bottom: 40px;
 
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.logo {
 		height: 40px;
 		width: auto;

@@ -51,6 +51,11 @@ export default {
 	background-color: $cn-color-primary_dark !important;
 	border-top: 1px solid $cn-color-light;
 
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	a {
 		padding: 0 $spacer-1-2;
 		color: $cn-color-primary;

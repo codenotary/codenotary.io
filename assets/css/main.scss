@@ -62,7 +62,7 @@
 	height: 80px;
 	width: auto;
 
-	@media screen and (max-width: $mobile-max-width) {
+	@media screen and (max-width: 1280px) {
 		height: 60px;
 	}
 }
@@ -104,4 +104,9 @@ a:hover:not(.no-hover) {
 .row {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+}
+
+.noPadding {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }

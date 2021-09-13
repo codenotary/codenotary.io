@@ -91,5 +91,30 @@ export default {
 		margin: 0;
 		text-align: center;
 	}
+
+	@media screen and (max-width: 1280px) {
+		padding: 16px;
+		max-width: 200px;
+		height: 180px;
+
+		.card-picture {
+			height: 64px;
+			width: 150px;
+		}
+
+		h3 {
+			margin-top: 10px !important;
+			margin-bottom: 4px !important;
+		}
+
+		.subtitle {
+			max-width: unset;
+		}
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		max-width: 150px;
+		height: 150px;
+	}
 }
 </style>

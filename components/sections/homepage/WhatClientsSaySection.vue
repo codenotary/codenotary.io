@@ -242,7 +242,7 @@ export default {
 
 			&-quote-image {
 				position: absolute;
-				top: -6px;
+				top: 2px;
 				left: 48px;
 				width: 80px;
 

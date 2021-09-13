@@ -169,6 +169,8 @@ $mascot-height-small: 100px;
 
 	.content {
 		padding-top: 40px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -179,6 +181,11 @@ $mascot-height-small: 100px;
 	h2 {
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	@include breakpoint-down(md) {
@@ -237,6 +244,10 @@ $mascot-height-small: 100px;
 }
 
 @media screen and (min-width: 992px) {
+	.content {
+		padding-left: 0 !important;
+	}
+
 	.title {
 		text-transform: uppercase;
 	}
@@ -256,6 +267,10 @@ $mascot-height-small: 100px;
 .home-header-container {
 	position: relative;
 	background-color: $cn-color-background;
+
+	.content {
+		padding-top: 40px;
+	}
 }
 
 // Oblique box on the bottom
