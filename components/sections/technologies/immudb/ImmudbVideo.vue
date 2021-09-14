@@ -7,9 +7,9 @@
 				<i-column
 					xs="12"
 					sm="12"
-					md="10"
-					lg="10"
-					xl="10"
+					md="12"
+					lg="12"
+					xl="12"
 				>
 					<PageSectionHeader
 						title="Why immudb?"
@@ -36,9 +36,9 @@
 				<i-column
 					xs="12"
 					sm="12"
-					md="10"
-					lg="10"
-					xl="10"
+					md="12"
+					lg="12"
+					xl="12"
 				>
 					<div class="video-features">
 						<div class="video-feature-items">
@@ -166,7 +166,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-video-section {
-	padding: 187px 0 297px !important;
+	padding: 140px 0 297px !important;
 	color: white;
 	background: $cn-dark-gradient;
 	text-align: center;
@@ -212,6 +212,7 @@ export default {
 	.video {
 		width: 100%;
 		max-height: 360px;
+		box-shadow: $cn-shadow-sm;
 	}
 
 	.video-features {
@@ -233,7 +234,8 @@ export default {
 				align-items: center;
 
 				p {
-					font-weight: 600;
+					font-weight: 700;
+					font-size: 14px;
 				}
 			}
 		}
