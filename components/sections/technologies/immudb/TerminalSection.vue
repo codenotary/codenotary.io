@@ -249,10 +249,6 @@ export default {
 		color: $color-primary;
 	}
 
-	img {
-		width: 4rem;
-	}
-
 	h2 {
 		margin-top: 1rem;
 	}
@@ -269,58 +265,6 @@ export default {
 
 		&:last-child {
 			margin-bottom: 0;
-		}
-	}
-
-	.slick-slider {
-		padding: 50px;
-		background: white;
-		border-radius: 30px;
-
-		.slick-dots {
-			bottom: 15px;
-			left: 0;
-
-			.custom-dot {
-				width: 15px;
-				height: 15px;
-				border-radius: 30px;
-				background: $cn-color-primary_light;
-				border: 1px solid $cn-color-dark !important;
-			}
-
-			.slick-active {
-				.custom-dot {
-					background: $cn-color-primary;
-				}
-			}
-		}
-
-		.slick-arrow {
-			img {
-				object-fit: contain;
-			}
-
-			&.slick-next {
-				right: -50px;
-			}
-
-			&.slick-prev {
-				left: -50px;
-			}
-		}
-
-		.custom-arrow {
-			width: 100px;
-			height: 100px;
-
-			&::before {
-				content: none;
-			}
-
-			img {
-				transform: scale(1.5);
-			}
 		}
 	}
 

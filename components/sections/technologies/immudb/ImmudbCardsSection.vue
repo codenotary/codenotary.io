@@ -53,6 +53,8 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-cards-section {
+	background-color: $cn-color-background;
+
 	@media screen and (max-width: $mobile-max-width) {
 		align-items: start;
 		padding: 0 0 16px 0 !important;

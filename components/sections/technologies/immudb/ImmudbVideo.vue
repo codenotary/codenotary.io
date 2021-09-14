@@ -166,7 +166,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-video-section {
-	padding: 140px 0 297px !important;
+	padding: 140px 0 270px !important;
 	color: white;
 	background: $cn-dark-gradient;
 	text-align: center;
@@ -206,13 +206,13 @@ export default {
 
 		img {
 			max-height: 360px;
+			box-shadow: $cn-shadow-sm;
 		}
 	}
 
 	.video {
 		width: 100%;
 		max-height: 360px;
-		box-shadow: $cn-shadow-sm;
 	}
 
 	.video-features {

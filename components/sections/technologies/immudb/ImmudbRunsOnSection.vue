@@ -192,6 +192,7 @@ export default {
 
 #immudb-runs-on-section {
 	position: relative;
+	background-color: $cn-color-background;
 
 	@include breakpoint-down(sm) {
 		height: auto !important;

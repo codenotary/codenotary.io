@@ -232,6 +232,7 @@ $mascot-height-small: 100px;
 
 .immudb-header-container {
 	position: relative;
+	background-color: $cn-color-background;
 
 	.get-started-button {
 		font-size: 16px !important;

@@ -99,6 +99,7 @@ export default {
 
 #immudb-features-section {
 	padding-top: 14px !important;
+	background-color: $cn-color-background;
 
 	.immudb-feature {
 		margin: 8px 0;

@@ -85,10 +85,6 @@ export default {
 
 <style lang="scss" scoped>
 #homepage {
-	background-color: $cn-color-background;
-	background-image: radial-gradient($cn-color-light 1.55px, $cn-color-background 1.55px);
-	background-size: 31px 31px;
-
 	.section {
 		overflow: visible !important;
 	}
