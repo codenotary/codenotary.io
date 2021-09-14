@@ -5,8 +5,8 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5">
-					<h1 class="_font-weight-bold cn-text-white title first">
+				<i-column lg="5" class="_padding-side-0">
+					<h1 class="_font-weight-bold cn-text-primary-light title first">
 						{{ content.headerSection.title1 }}
 					</h1>
 					<h3
@@ -159,6 +159,11 @@ $mascot-height-small: 100px;
 	overflow-x: hidden;
 	width: 100%;
 
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	h1 {
 		font-size: 68px !important;
 
@@ -227,7 +232,6 @@ $mascot-height-small: 100px;
 
 .immudb-header-container {
 	position: relative;
-	background-color: $cn-color-background;
 
 	.get-started-button {
 		font-size: 16px !important;
@@ -371,7 +375,7 @@ $mascot-height-small: 100px;
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
-	max-width: 340px;
+	max-width: 330px;
 
 	.github-link {
 		&:hover {

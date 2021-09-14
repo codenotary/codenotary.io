@@ -4,7 +4,11 @@
 		:class="`${ block ? '-block' : '' } _font-weight-${ weight } _${offsetType}-top-${top} _${offsetType}-bottom-${bottom} ${ round ? '-round' : '' }`"
 	>
 		<slot name="title">
-			<h2 :is="tag" :class="`cn-text-${ color } _font-weight-${ weight }`">
+			<h2
+				:is="tag"
+				class="_text-utransform-ppercase"
+				:class="`cn-text-${ color } _font-weight-${ weight }`"
+			>
 				{{ title }}
 			</h2>
 		</slot>

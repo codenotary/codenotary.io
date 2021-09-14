@@ -17,7 +17,7 @@
 				<i-column
 					v-for="(card, index) in content.heroCardsSection.cards"
 					:key="index"
-					class="_margin-top-1 _padding-bottom-1"
+					class="_margin-top-1 _padding-bottom-1 _padding-side-05"
 					xs="12"
 					sm="6"
 					md="4"
@@ -77,6 +77,8 @@ export default {
 				.column {
 					padding-bottom: 10px !important;
 					margin-top: 10px !important;
+					padding-left: 5px !important;
+					padding-right: 5px !important;
 
 					.square-card {
 						max-width: 100%;

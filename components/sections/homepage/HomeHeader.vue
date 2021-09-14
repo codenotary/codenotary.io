@@ -5,7 +5,7 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5" class="content">
+				<i-column lg="5" class="_padding-side-0 content">
 					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h2>
@@ -169,8 +169,6 @@ $mascot-height-small: 100px;
 
 	.content {
 		padding-top: 40px;
-		padding-left: 0;
-		padding-right: 0;
 	}
 }
 

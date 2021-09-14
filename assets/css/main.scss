@@ -62,7 +62,7 @@
 	height: 80px;
 	width: auto;
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1080px) {
 		height: 60px;
 	}
 }
@@ -107,6 +107,15 @@ a:hover:not(.no-hover) {
 }
 
 .noPadding {
+	padding: 0 !important;
+}
+
+._padding-side-0 {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
+}
+
+._padding-side-05 {
+	padding-left: 0.5rem !important;
+	padding-right: 0.5rem !important;
 }

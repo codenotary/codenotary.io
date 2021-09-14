@@ -142,7 +142,7 @@ export default {
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			height: 390px;
+			height: 380px;
 			width: 220px;
 			border-radius: $cn-border-radius-lg;
 			box-shadow: $cn-shadow-sm;
@@ -154,7 +154,7 @@ export default {
 				position: relative;
 				flex: 0 0 0;
 				width: 100%;
-				min-height: 125px;
+				min-height: 115px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -186,7 +186,7 @@ export default {
 		}
 	}
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1080px) {
 		::v-deep h2 {
 			font-size: 24px;
 			line-height: 24px;

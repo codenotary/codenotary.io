@@ -53,10 +53,11 @@ export default {
 	}
 
 	&.wide {
-		max-width: 373px;
+		max-width: 310px;
 		height: auto;
+		min-height: 376px;
 		flex: 1;
-		padding: 25px 40px;
+		padding: 24px 24px;
 		justify-content: stretch;
 
 		h3 {
@@ -71,7 +72,7 @@ export default {
 		}
 
 		p {
-			margin: 18px 0 0 !important;
+			margin: 10px 0 0 !important;
 		}
 
 		.subtitle {
@@ -85,6 +86,7 @@ export default {
 		justify-content: center;
 		height: 100px;
 		width: 200px;
+		margin-bottom: 10px;
 	}
 
 	.subtitle {
@@ -93,7 +95,7 @@ export default {
 		text-align: center;
 	}
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1080px) {
 		padding: 16px;
 		max-width: 200px;
 		height: 180px;

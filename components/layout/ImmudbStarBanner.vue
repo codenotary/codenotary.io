@@ -48,6 +48,7 @@ export default {
 section.immudb-star-banner {
 	position: relative;
 	background-color: $cn-color-dark;
+	box-shadow: $cn-shadow-sm;
 	transition: all 0.15s ease-out;
 	z-index: 995;
 
@@ -90,7 +91,7 @@ section.immudb-star-banner {
 	}
 
 	.svg-inline--fa {
-		color: #ffce6e;
+		color: $cn-color-secondary;
 	}
 
 	.close-button {
