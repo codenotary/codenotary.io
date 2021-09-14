@@ -34,6 +34,10 @@
 	}
 }
 
+body {
+	background-color: $cn-color-background !important;
+}
+
 .cn-bg-brand {
 	background-color: $cn-color-brand;
 }
@@ -110,12 +114,7 @@ a:hover:not(.no-hover) {
 	padding: 0 !important;
 }
 
-._padding-side-0 {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
-._padding-side-05 {
+._padding-x-05 {
 	padding-left: 0.5rem !important;
 	padding-right: 0.5rem !important;
 }

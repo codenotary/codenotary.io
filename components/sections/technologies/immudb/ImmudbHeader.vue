@@ -5,7 +5,7 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5" class="_padding-side-0">
+				<i-column lg="5" class="_padding-x-0">
 					<h1 class="_font-weight-bold cn-text-primary-light title first">
 						{{ content.headerSection.title1 }}
 					</h1>

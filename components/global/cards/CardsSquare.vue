@@ -55,7 +55,7 @@ export default {
 	&.wide {
 		max-width: 310px;
 		height: auto;
-		min-height: 376px;
+		min-height: 408px;
 		flex: 1;
 		padding: 24px 24px;
 		justify-content: stretch;

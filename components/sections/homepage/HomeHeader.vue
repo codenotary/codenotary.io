@@ -5,7 +5,7 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5" class="_padding-side-0 content">
+				<i-column lg="5" class="_padding-x-0 content">
 					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h2>
@@ -242,10 +242,6 @@ $mascot-height-small: 100px;
 }
 
 @media screen and (min-width: 992px) {
-	.content {
-		padding-left: 0 !important;
-	}
-
 	.title {
 		text-transform: uppercase;
 	}

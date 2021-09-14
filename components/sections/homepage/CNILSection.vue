@@ -71,6 +71,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#cnil-section {
+	background-color: $cn-color-background;
+}
+
 .cnil-body {
 	display: flex;
 	justify-content: center;
