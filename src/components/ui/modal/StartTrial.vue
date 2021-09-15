@@ -2,6 +2,7 @@
 	<v-dialog
 		:value="value"
 		max-width="580"
+		@click:outside="$emit('close')"
 	>
 		<v-sheet
 			id="start-trial-modal"
@@ -17,7 +18,7 @@
 						height="20"
 						class="cursor-pointer"
 						contain
-						@click="$emit('close')"
+						@click.native="$emit('close')"
 					/>
 				</v-btn>
 			</div>
@@ -51,10 +52,10 @@ export default {
 			if (newVal && !this.injected) {
 				this.injectScript({
 					src: `https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`,
+					onload: () => {
+						this.injected = true;
+					},
 				});
-				setTimeout(() => {
-					this.injected = true;
-				}, 500);
 			}
 		},
 	},

@@ -4,23 +4,25 @@
 			<v-row>
 				<v-col md="1" />
 				<v-col sm="12" md="5">
-					<h1 class="info--text font-weight-700 text-h2">
-						CNIL<br>
+					<h1 class="info--text font-weight-700 text-h2 text-center text-md-left">
+						CNIL<br class="d-none d-md-block">
 						Metrics and Logs
 					</h1>
-					<p class="white--text font-weight-400 caption--text ma-0">
+					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left">
 						(formerly, Opvizor Performance Analyzer)
 					</p>
-					<h3 class="font-weight-700 text-h3 white--text">
+					<h3 class="font-weight-700 text-h3 white--text text-center text-md-left">
 						<span class="secondary--text">
 							VMware vSphere & Cloud
+						</span><br class="d-md-none">
+						<span class="text-uppercase">
+							Performance monitoring, log analysis, license compliance!
 						</span>
-						Performance monitoring, log analysis, license compliance!
 					</h3>
-					<p class="white--text font-weight-400 caption--text ma-0">
+					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left">
 						Monitor and Analyze Performance and Log files:
 					</p>
-					<p class="ma-0">
+					<p class="ma-0 text-center text-md-left typer">
 						<client-only>
 							<vue-typer
 								:text="typewriteOptions"
@@ -35,23 +37,22 @@
 								:erase-on-complete="false"
 								caret-animation="blink"
 							/>
-							&nbsp;
 						</client-only>
 					</p>
-					<p class="white--text font-weight-400 caption--text ma-0">
+					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left">
 						Performance monitoring for your systems and applications with log analysis (tamperproof using immudb) and license compliance (RedHat, Oracle, SAP and more) in one virtual appliance!
 					</p>
-					<div class="d-flex">
+					<div class="d-flex justify-center justify-md-start">
 						<v-btn
 							color="secondary"
-							class="dark--text"
+							class="dark--text text-capitalize"
 							@click="startTrialModalOpen = true"
 						>
 							Free Trial
 						</v-btn>
 						<v-btn
 							color="light"
-							class="dark--text ml-2"
+							class="dark--text text-capitalize ml-2"
 							href="//demoml.codenotary.io/"
 							target="_blank"
 							rel="noopener nofollow"
@@ -62,7 +63,11 @@
 				</v-col>
 				<v-col md="1" />
 				<v-col sm="12" md="5">
-					<v-img :src="src" :alt="alt" />
+					<v-img
+						:src="src"
+						:alt="alt"
+						contain
+					/>
 				</v-col>
 			</v-row>
 			<UiModalStartTrial
@@ -123,7 +128,9 @@ export default {
 #ledger-compliance-metrics-and-logs-header {
 	position: relative;
 
-	.container {
+	.typer {
+		height: 22px;
+
 		.vue-typer {
 			.custom {
 				&.char {
