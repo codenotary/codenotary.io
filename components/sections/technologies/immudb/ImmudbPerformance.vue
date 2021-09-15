@@ -1,5 +1,9 @@
 <template>
-	<page-section id="immudb-performance-section" :top="1">
+	<PageSection
+		id="immudb-performance-section"
+		:top="1"
+		:bottom="2"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -67,7 +71,7 @@
 				</i-column>
 			</i-row>
 		</i-container>
-	</page-section>
+	</PageSection>
 </template>
 
 <script>
@@ -101,7 +105,7 @@ export default {
 
 	.container {
 		background: white;
-		padding: 30px 120px;
+		padding: 0 120px 30px;
 		border-radius: 30px;
 		box-shadow: $cn-shadow-sm;
 		border: none !important;
@@ -109,6 +113,8 @@ export default {
 		table {
 			margin: 0 auto;
 			overflow: hidden;
+			border-radius: 30px;
+			box-shadow: $cn-shadow-sm;
 
 			thead {
 				color: $cn-color-primary_light;

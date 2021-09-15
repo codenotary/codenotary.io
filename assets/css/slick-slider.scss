@@ -1,7 +1,7 @@
 .slick-slider {
 	background: white;
 	box-shadow: $cn-shadow-sm;
-	padding: 95px 50px 50px;
+	padding: 50px;
 	border-radius: 30px;
 
 	.slick-dots {
@@ -53,11 +53,19 @@
 		}
 
 		&.slick-next {
-			right: -30px;
+			right: -40px;
+
+			@media screen and (max-width: 1080px) {
+				right: -30px;
+			}
 		}
 
 		&.slick-prev {
-			left: -30px;
+			left: -40px;
+
+			@media screen and (max-width: 1080px) {
+				left: -30px;
+			}
 		}
 	}
 
@@ -86,5 +94,9 @@
 			box-shadow: $cn-shadow-hoverBtn;
 			transform: translate(0, -50%) scale(1.02);
 		}
+	}
+
+	.slick-list {
+		overflow-y: visible;
 	}
 }

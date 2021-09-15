@@ -207,6 +207,7 @@ export default {
 		img {
 			max-height: 360px;
 			box-shadow: $cn-shadow-sm;
+			border-radius: 30px;
 		}
 	}
 
@@ -224,7 +225,14 @@ export default {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
-				margin-bottom: 15px;
+
+				img {
+					transition: transform 100ms linear;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
 			}
 
 			&-item {
@@ -234,8 +242,8 @@ export default {
 				align-items: center;
 
 				p {
-					font-weight: 700;
 					font-size: 14px;
+					line-height: 18px;
 				}
 			}
 		}

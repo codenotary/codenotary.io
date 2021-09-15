@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="immudb-webconsole">
+	<PageSection
+		id="immudb-webconsole"
+		:top="2"
+	>
 		<i-container>
 			<i-row middle>
 				<i-column

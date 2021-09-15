@@ -1,5 +1,7 @@
 <template>
-	<PageSection id="immudb-users-section">
+	<PageSection
+		id="immudb-users-section"
+	>
 		<i-container class="floating-container">
 			<i-row>
 				<i-column>
@@ -51,11 +53,11 @@ export default {
 		items: [
 			{
 				label: 'TA Capital',
-				image: '/images/immudb/users/ta-capital.png',
+				image: '/images/immudb/users/ta-capital.svg',
 			},
 			{
 				label: 'Lacroix',
-				image: '/images/immudb/users/lacroix.png',
+				image: '/images/immudb/users/lacroix.svg',
 			},
 			{
 				label: 'Green Tube',
@@ -67,7 +69,7 @@ export default {
 			},
 			{
 				label: 'Lord Abbet',
-				image: '/images/immudb/users/lord-abbet.png',
+				image: '/images/immudb/users/lord_abbett.svg',
 			},
 			{
 				label: 'Naveum',
@@ -79,11 +81,11 @@ export default {
 			},
 			{
 				label: 'Us',
-				image: '/images/immudb/users/us.png',
+				image: '/images/immudb/users/us.svg',
 			},
 			{
 				label: 'Cognizant',
-				image: '/images/immudb/users/cognizant.png',
+				image: '/images/immudb/users/cognizant.svg',
 			},
 			{
 				label: 'Ruag',
@@ -91,11 +93,11 @@ export default {
 			},
 			{
 				label: 'Cisco',
-				image: '/images/immudb/users/cisco.jpeg',
+				image: '/images/immudb/users/cisco.svg',
 			},
 			{
 				label: 'Fujitsu',
-				image: '/images/immudb/users/fujitsu.png',
+				image: '/images/immudb/users/fujitsu.svg',
 			},
 		],
 	}),
@@ -113,7 +115,7 @@ export default {
 	position: relative;
 	background: $cn-color-grey_light;
 	height: auto;
-	min-height: 280px;
+	min-height: 220px;
 	overflow: unset !important;
 
 	.floating-container {
@@ -147,9 +149,14 @@ export default {
 	.image-wrapper {
 		.image {
 			position: relative;
-			padding: 16px;
+			padding: 8px 4px;
 			object-fit: contain !important;
-			height: 160px;
+			height: 130px;
+			transition: transform 100ms linear;
+
+			&:hover {
+				transform: scale(1.15);
+			}
 		}
 
 		// .column {

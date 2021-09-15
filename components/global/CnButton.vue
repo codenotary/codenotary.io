@@ -182,3 +182,57 @@ a:active {
 	}
 }
 </style>
+<style lang="scss">
+.cn-github {
+	&:hover {
+		text-decoration: none;
+
+		.github-star-button {
+			.github-logo img,
+			.github-count img {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+	.github-star-button {
+		display: flex;
+		height: $cn-button-height !important;
+		align-items: stretch;
+		border: 1px solid transparent;
+
+		.github-logo {
+			padding: 14px;
+			background: $cn-color-primary;
+			border-top-left-radius: 8px;
+			border-bottom-left-radius: 8px;
+			display: flex;
+			align-items: center;
+
+			img {
+				height: 30px;
+				width: 30px;
+				transition: all 0.3s ease-out;
+			}
+		}
+
+		.github-count {
+			display: flex;
+			align-items: center;
+			padding: 14px;
+			background: white;
+			border-top-right-radius: 8px;
+			border-bottom-right-radius: 8px;
+
+			img {
+				margin-left: 10px;
+				transition: all 0.3s ease-out;
+			}
+
+			span {
+				color: $cn-color-brand;
+			}
+		}
+	}
+}
+</style>

@@ -1,6 +1,9 @@
 <template>
-	<PageSection id="immudb-code-examples-section">
-		<i-container class="floating-container _padding-x-4">
+	<PageSection
+		id="immudb-code-examples-section"
+		:bottom="0"
+	>
+		<i-container class="floating-container _padding-x-0">
 			<i-row>
 				<i-column>
 					<div>
@@ -15,7 +18,7 @@
 										<h4 class="title _font-weight-bold _text-primary">
 											Very high throughput, immutable database with cryptographic verification
 										</h4>
-										<p class="lead">
+										<p>
 											immudb is an indispensable asset when it comes to tamper-proof data:
 										</p>
 										<ul>
@@ -194,8 +197,7 @@ export default {
 
 #immudb-code-examples-section {
 	position: relative;
-	background-color: $cn-color-background;
-	height: 760px !important;
+	height: 690px !important;
 	overflow: unset !important;
 
 	.floating-container {
@@ -249,14 +251,8 @@ export default {
 		color: $color-primary;
 	}
 
-	h2 {
-		margin-top: 1rem;
-	}
-
-	li {
-		&::marker {
-			color: $cn-color-secondary;
-		}
+	.title {
+		margin-top: 0;
 	}
 
 	.row {

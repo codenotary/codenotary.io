@@ -6,7 +6,7 @@
 		<slot name="title">
 			<h2
 				:is="tag"
-				class="_text-utransform-ppercase"
+				class="_text-transform-uppercase"
 				:class="`cn-text-${ color } _font-weight-${ weight }`"
 			>
 				{{ title }}

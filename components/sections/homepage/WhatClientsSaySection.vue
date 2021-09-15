@@ -138,24 +138,27 @@ export default {
 
 	.title {
 		text-transform: uppercase;
-		margin-bottom: -100px;
 		z-index: 1;
 		text-align: center;
 		width: 100%;
 		color: #244583;
 		font-weight: 700;
 		position: absolute;
-
-		@media screen and (min-width: $mobile-max-width) {
-			font-size: 32px !important;
-			line-height: 34px !important;
-		}
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 32px !important;
+		line-height: 34px !important;
 
 		@media screen and (max-width: $mobile-max-width) {
 			font-size: 24px !important;
 			line-height: 26px !important;
+			top: -12px;
+		}
+
+		@media screen and (max-width: 767px) {
 			max-width: 250px;
-			margin: 20px auto -100px;
+			top: -21px;
 		}
 	}
 
@@ -165,6 +168,10 @@ export default {
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
+
+		@media screen and (max-width: 1080px) {
+			top: -60px;
+		}
 
 		@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
 			top: -80px;
@@ -209,6 +216,12 @@ export default {
 	}
 
 	.slick-slider {
+		padding: 95px 50px 50px;
+
+		@media screen and (max-width: $mobile-max-width) {
+			padding: 70px 50px 50px;
+		}
+
 		.review {
 			overflow: hidden;
 			position: relative;
@@ -243,18 +256,22 @@ export default {
 
 			&-quote-image {
 				position: absolute;
-				top: 2px;
-				left: 48px;
+				top: -7px;
+				left: 49px;
 				width: 80px;
 
-				@media screen and (max-width: 767px) {
-					top: 66px;
+				@media screen and (max-width: 1080px) {
+					top: 3px;
 				}
 
-				@media screen and (max-width: 529px) {
-					top: 60px;
-					left: 38px;
+				@media screen and (max-width: $mobile-max-width) {
+					top: 2px;
+				}
+
+				@media screen and (max-width: 767px) {
 					width: 60px;
+					left: 38px;
+					top: 60px;
 				}
 			}
 
@@ -297,10 +314,6 @@ export default {
 				padding-top: 80px;
 			}
 		}
-	}
-
-	.slick-list {
-		overflow-y: visible;
 	}
 
 	.slick-slide {

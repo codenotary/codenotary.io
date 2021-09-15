@@ -1,5 +1,11 @@
 <template>
-	<page-section id="immudb-easy-setup-section">
+	<pageSection
+		id="immudb-easy-setup-section"
+		:top="6"
+		:top-xl="6"
+		:bottom="6"
+		:bottom-xl="6"
+	>
 		<i-container>
 			<i-row>
 				<i-column>
@@ -45,7 +51,7 @@
 						<!-- eslint-enable -->
 					</i-column>
 					<i-column
-						class="_margin-top-2 _margin-x-auto"
+						class="_margin-top-1 _margin-x-auto"
 						xs="12"
 						sm="12"
 						md="12"
@@ -66,7 +72,7 @@
 				</i-row>
 			</i-row>
 		</i-container>
-	</page-section>
+	</pageSection>
 </template>
 
 <script>
@@ -95,6 +101,8 @@ export default {
 		background: $cn-color-dark;
 		border-radius: 30px;
 		padding: 1em 2em;
+		box-shadow: $cn-shadow-sm;
+		border: 1px solid $cn-color-primary;
 
 		.line-numbers-rows {
 			display: none !important;
