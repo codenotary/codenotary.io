@@ -1,6 +1,6 @@
 ---
 title: Codenotary Cloud® Subscription Agreement
-download: "/resources/CNIL_LicenseAgreement_July2021.pdf"
+download: "/resources/CNIL_LicenseAgreement_September2021.pdf"
 ---
 
 ## **Codenotary Cloud® Subscription Agreement**
