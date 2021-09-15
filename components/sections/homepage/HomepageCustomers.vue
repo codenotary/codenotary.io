@@ -7,54 +7,56 @@
 		:bottom-md="0"
 	>
 		<i-container class="floating-container">
-			<i-row>
-				<i-column sm="12">
-					<PageSectionHeader
-						title="Customers"
-						:bottom="1"
-						class="_text-uppercase"
-						weight="bold"
-					/>
-				</i-column>
-			</i-row>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
-				<i-column
-					class="_margin-x-auto _text-center" xs="12"
-					sm="12" md="8"
-					lg="8"
-				>
-					<span class="_text-dark _text-center block padding-x-15">
-						Hundreds of happy customers trust our solutions to optimize their virtual environment.
-					</span>
-				</i-column>
-			</i-row>
-			<i-row
-				class="image-wrapper _padding-x-1 _padding-y-1 _display-flex _justify-content-center"
-			>
-				<i-column
-					v-for="(item, idx) in items"
-					:key="`${item}-${idx}`"
-					class="_display-flex _justify-content-center _align-items-center"
-					xs="6"
-					sm="4"
-					md="2"
-					lg="2"
-				>
-					<img
-						v-if="item && item.image"
-						class="image -responsive"
-						:class="{'image-only': !item.label }"
-						:src="item.image"
-						:alt="item.label"
+			<div class="main-container">
+				<i-row>
+					<i-column sm="12">
+						<PageSectionHeader
+							title="Customers"
+							:bottom="1"
+							class="_text-uppercase"
+							weight="bold"
+						/>
+					</i-column>
+				</i-row>
+				<i-row class="_padding-x-0 _display-flex _justify-content-center">
+					<i-column
+						class="_margin-x-auto _text-center" xs="12"
+						sm="12" md="8"
+						lg="8"
 					>
-					<StoryCard
-						v-else-if="item"
-						:title="item.label"
-						:color="getColor(6)"
-						outlined
-					/>
-				</i-column>
-			</i-row>
+						<span class="_text-dark _text-center block padding-x-15">
+							Hundreds of happy customers trust our solutions to optimize their virtual environment.
+						</span>
+					</i-column>
+				</i-row>
+				<i-row
+					class="image-wrapper _padding-x-1 _padding-y-1 _display-flex _justify-content-center"
+				>
+					<i-column
+						v-for="(item, idx) in items"
+						:key="`${item}-${idx}`"
+						class="_display-flex _justify-content-center _align-items-center"
+						xs="6"
+						sm="4"
+						md="2"
+						lg="2"
+					>
+						<img
+							v-if="item && item.image"
+							class="image -responsive"
+							:class="{'image-only': !item.label }"
+							:src="item.image"
+							:alt="item.label"
+						>
+						<StoryCard
+							v-else-if="item"
+							:title="item.label"
+							:color="getColor(6)"
+							outlined
+						/>
+					</i-column>
+				</i-row>
+			</div>
 		</i-container>
 	</PageSection>
 </template>
@@ -114,11 +116,16 @@ export default {
 		top: -140px;
 		left: 50%;
 		transform: translateX(-50%);
+		z-index: 10;
+		width: 100%;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.main-container {
 		background-color: #fff;
 		border-radius: 30px;
 		box-shadow: $cn-shadow-sm;
-		z-index: 10;
-		width: 81%;
 	}
 
 	.padding-x-15 {

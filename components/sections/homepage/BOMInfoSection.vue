@@ -192,7 +192,11 @@ export default {
 				height: 426px;
 			}
 
-			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 768px) {
+				height: 280px;
+			}
+
+			@media screen and (max-width: 680px) {
 				height: 134px;
 			}
 

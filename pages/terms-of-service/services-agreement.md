@@ -1,6 +1,6 @@
 ---
 title: CodeNotary Subscription Agreement
-download: "/resources/CNIL_SubscriptionAgreement_July2021.pdf"
+download: "/resources/CNIL_SubscriptionAgreement_September2021.pdf"
 ---
 
 ## **CodeNotary Subscription Agreement**

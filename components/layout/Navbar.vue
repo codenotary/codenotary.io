@@ -324,6 +324,11 @@ export default {
 		}
 	}
 
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.navbar-dropdown {
 		.menu {
 			min-width: 420px !important;

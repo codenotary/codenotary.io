@@ -77,12 +77,10 @@ export default {
 	}
 
 	.container {
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 0;
+		padding-right: 0;
 
 		@media screen and (max-width: 767px) {
-			padding-left: 0;
-			padding-right: 0;
 			margin-right: 0 !important;
 			margin-left: 0 !important;
 			max-width: 100% !important;
@@ -124,7 +122,7 @@ export default {
 			justify-content: center;
 		}
 
-		@media screen and (max-width: 1199px) {
+		@media screen and (max-width: 767px) {
 			& > * {
 				flex-basis: 50%;
 				display: flex;
@@ -144,7 +142,7 @@ export default {
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
-			height: 390px;
+			height: 380px;
 			width: 220px;
 			border-radius: $cn-border-radius-lg;
 			box-shadow: $cn-shadow-sm;
@@ -156,7 +154,7 @@ export default {
 				position: relative;
 				flex: 0 0 0;
 				width: 100%;
-				min-height: 125px;
+				min-height: 115px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -183,6 +181,38 @@ export default {
 				h5 {
 					min-height: 50px;
 					width: 160px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1080px) {
+		::v-deep h2 {
+			font-size: 24px;
+			line-height: 24px;
+		}
+
+		.benefits-body {
+			.benefit-card {
+				width: 180px;
+				height: 350px;
+				margin-left: 10px;
+				margin-right: 10px;
+
+				.benefit-card-body {
+					padding: 16px;
+					min-height: 53px;
+
+					h5 {
+						font-size: 18px;
+						line-height: 24px;
+						min-height: 50px;
+					}
+				}
+
+				.benefit-card-header {
+					min-height: 85px;
+					margin-bottom: 8px;
 				}
 			}
 		}

@@ -63,26 +63,6 @@ export default {
 
 	@media screen and (max-width: $mobile-max-width) {
 		padding-top: 10px;
-
-		& ::v-deep .square-card {
-			padding: 16px;
-			max-width: 150px;
-			height: 150px;
-
-			.card-picture {
-				height: 64px;
-				width: 150px;
-			}
-
-			h3 {
-				margin-top: 10px !important;
-				margin-bottom: 4px !important;
-			}
-
-			.subtitle {
-				max-width: unset;
-			}
-		}
 	}
 
 	@media screen and (max-width: 767px) {

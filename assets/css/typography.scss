@@ -121,6 +121,7 @@ h1 {
 h2 {
 	font-size: 32px !important;
 	line-height: 32px !important;
+	margin-bottom: 0.5rem !important;
 
 	@media screen and (max-width: $mobile-max-width) {
 		font-size: 24px !important;
@@ -131,6 +132,7 @@ h2 {
 h3 {
 	font-size: 24px !important;
 	line-height: 24px !important;
+	margin-bottom: 0.5rem !important;
 
 	@media screen and (max-width: $mobile-max-width) {
 		font-size: 16px !important;
@@ -156,4 +158,8 @@ h3 {
 
 ._text-decoration-underline {
 	text-decoration: underline !important;
+}
+
+._text-utransform-ppercase {
+	text-transform: uppercase !important;
 }

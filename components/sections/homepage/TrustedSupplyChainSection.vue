@@ -98,10 +98,14 @@ export default {
 				flex: 1;
 
 				img {
-					max-height: 500px;
-					padding: 30px;
+					max-height: 350px;
+					padding: 20px;
 				}
 			}
+		}
+
+		.title {
+			margin-top: 0 !important;
 		}
 
 		@media screen and (max-width: $mobile-max-width) {
@@ -111,7 +115,6 @@ export default {
 
 			.second {
 				padding-right: 2rem !important;
-				margin-top: 0 !important;
 
 				img {
 					max-height: 700px !important;

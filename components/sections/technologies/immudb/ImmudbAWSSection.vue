@@ -6,7 +6,7 @@
 	>
 		<i-container class="floating-container">
 			<i-row>
-				<i-column>
+				<i-column class="_padding-x-0">
 					<div class="content-box">
 						<p class="_text-uppercase cn-text-white _text-center _font-weight-bold">
 							immudb is available in:
@@ -76,6 +76,11 @@ export default {
 
 		img {
 			max-width: 300px;
+			transition: transform 100ms linear;
+
+			&:hover {
+				transform: scale(1.1);
+			}
 		}
 	}
 }

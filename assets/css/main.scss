@@ -34,6 +34,12 @@
 	}
 }
 
+body {
+	background-color: $cn-color-background;
+	background-image: radial-gradient($cn-color-light 1.55px, $cn-color-background 1.55px);
+	background-size: 31px 31px;
+}
+
 .cn-bg-brand {
 	background-color: $cn-color-brand;
 }
@@ -62,7 +68,7 @@
 	height: 80px;
 	width: auto;
 
-	@media screen and (max-width: $mobile-max-width) {
+	@media screen and (max-width: 1080px) {
 		height: 60px;
 	}
 }
@@ -104,4 +110,13 @@ a:hover:not(.no-hover) {
 .row {
 	margin-left: 0 !important;
 	margin-right: 0 !important;
+}
+
+.noPadding {
+	padding: 0 !important;
+}
+
+._padding-x-05 {
+	padding-left: 0.5rem !important;
+	padding-right: 0.5rem !important;
 }

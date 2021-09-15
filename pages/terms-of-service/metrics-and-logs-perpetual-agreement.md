@@ -1,6 +1,6 @@
 ---
 title: CodeNotary License Agreement
-download: "/resources/CNIL-ML-Perpetual_LicenseAgreement_2021.pdf"
+download: "/resources/CNIL-ML-Perpetual_LicenseAgreement_September2021.pdf"
 ---
 
 ## **CodeNotary License Agreement**

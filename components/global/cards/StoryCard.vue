@@ -1,8 +1,7 @@
 <template>
 	<div
 		v-if="!outlined && color"
-		class="story-card"
-		:style="`background-color: ${color}`"
+		class="story-card lable"
 	>
 		<img
 			v-if="image"
@@ -45,10 +44,10 @@
 			:src="image"
 			:alt="title"
 		>
-		<h5 v-if="title" class="title _text-black">
+		<h5 v-if="title" class="title _text-dark">
 			{{ title }}
 		</h5>
-		<p v-if="subtitle" class="subtitle _text-black">
+		<p v-if="subtitle" class="subtitle _text-dark">
 			{{ subtitle }}
 		</p>
 	</div>
@@ -84,10 +83,19 @@ export default {
 		display: block;
 		margin: 0 auto;
 		object-fit: contain;
+		transition: transform 100ms linear;
 
 		&.image-only {
 			width: 80%;
 		}
+
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
+
+	h5 {
+		font-size: 1rem !important;
 	}
 
 	.title {
@@ -104,10 +112,39 @@ export default {
 		line-height: 18px;
 	}
 
+	&.lable {
+		margin: 0 !important;
+		padding: 0 !important;
+
+		.subtitle {
+			font-weight: 500;
+			margin: 6px 0 0 0;
+			color: $cn-color-dark;
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+
 	&.small {
 		.title {
 			font-size: 18px;
 		}
+	}
+}
+
+.StoryCard-image {
+	position: relative;
+	padding: 16px;
+	object-fit: contain !important;
+	width: 130px;
+	transition: transform 100ms linear;
+
+	&._sm {
+		width: 100px;
+	}
+
+	&:hover {
+		transform: scale(1.15);
 	}
 }
 </style>

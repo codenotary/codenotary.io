@@ -5,7 +5,7 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5" class="content">
+				<i-column lg="5" class="_padding-x-0 content">
 					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h2>
@@ -181,6 +181,11 @@ $mascot-height-small: 100px;
 		margin-bottom: 0;
 	}
 
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	@include breakpoint-down(md) {
 		padding-top: 5rem;
 		padding-bottom: 6rem;
@@ -256,6 +261,10 @@ $mascot-height-small: 100px;
 .home-header-container {
 	position: relative;
 	background-color: $cn-color-background;
+
+	.content {
+		padding-top: 40px;
+	}
 }
 
 // Oblique box on the bottom

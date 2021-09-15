@@ -44,25 +44,29 @@
 										href="https://github.com/codenotary/immudb/releases/"
 										target="_blank"
 										rel="nofollow"
+										class="StoryCardLink"
 									>
 										<img
 											v-if="subitem && subitem.image"
-											class="image -responsive _padding-y-2"
+											class="StoryCard-image _sm -responsive _padding-y-1"
 											:class="{'image-only': !subitem.label }"
 											:src="subitem.image"
 											:alt="subitem.label"
 										>
 										<StoryCard
+											v-if="subitem"
+											:subtitle="subitem.label"
+										/>
+										<!-- <StoryCard
 											v-else-if="subitem"
 											:title="subitem.label"
 											:color="getColor(6)"
-											outlined
-										/>
+										/> -->
 									</a>
 									<template v-else>
 										<img
 											v-if="subitem && subitem.image"
-											class="image -responsive _padding-y-2"
+											class="StoryCard-image -responsive _padding-y-1"
 											:class="{'image-only': !subitem.label }"
 											:src="subitem.image"
 											:alt="subitem.label"
@@ -98,22 +102,27 @@ export default {
 					{
 						label: 'Windows',
 						image: '/images/immudb/runs-on/windows.svg',
+						subtitle: 'Windows',
 					},
 					{
 						label: 'Linux',
 						image: '/images/immudb/runs-on/linux.svg',
+						subtitle: 'Linux',
 					},
 					{
 						label: 'macOS',
 						image: '/images/immudb/runs-on/mac-os.svg',
+						subtitle: 'macOS',
 					},
 					{
 						label: 'FreeBSD',
 						image: '/images/immudb/runs-on/free-bsd.svg',
+						subtitle: 'FreeBSD',
 					},
 					{
 						label: 'z/OS',
 						image: '/images/immudb/runs-on/z-os.png',
+						subtitle: 'z/OS',
 					},
 				],
 			},
@@ -252,17 +261,10 @@ export default {
 	}
 
 	.image-wrapper {
-		.image {
-			position: relative;
-			padding: 16px;
-			object-fit: contain !important;
-			height: 160px;
-		}
-
 		.story-card {
 			margin: 51px 0;
 			width: 100%;
-			padding: 1rem !important;
+			padding: 1rem;
 
 			h5 {
 				margin: 0;

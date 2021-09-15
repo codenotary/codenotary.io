@@ -144,6 +144,7 @@ export default {
 		width: 100%;
 		color: #244583;
 		font-weight: 700;
+		position: absolute;
 
 		@media screen and (min-width: $mobile-max-width) {
 			font-size: 32px !important;
@@ -242,7 +243,7 @@ export default {
 
 			&-quote-image {
 				position: absolute;
-				top: -6px;
+				top: 2px;
 				left: 48px;
 				width: 80px;
 
