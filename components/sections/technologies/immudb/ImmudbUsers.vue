@@ -113,7 +113,6 @@ export default {
 
 #immudb-users-section {
 	position: relative;
-	background: $cn-color-grey_light;
 	height: auto;
 	min-height: 220px;
 	overflow: unset !important;

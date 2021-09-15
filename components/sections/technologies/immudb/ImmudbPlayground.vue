@@ -50,7 +50,6 @@ export default {
 #immudb-playground {
 	position: relative;
 	height: auto;
-	background: $cn-color-grey_light;
 
 	@include breakpoint-down(sm) {
 		height: auto !important;

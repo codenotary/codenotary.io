@@ -133,7 +133,6 @@ export default {
 
 #immudb-by-developers-for-developers {
 	position: relative;
-	background-color: $cn-color-background;
 	height: 0 !important;
 	padding: 0 !important;
 	overflow: unset !important;

@@ -85,7 +85,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-performance-section {
-	background: $cn-color-grey_light;
 	padding-top: 166px !important;
 
 	@include breakpoint-down(sm) {
