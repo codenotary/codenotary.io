@@ -1,33 +1,31 @@
 <template>
 	<div>
 		<ProductsLedgerComplianceMetricsAndLogsHeader />
-		<div class="d-none">
-			<LazyHydrate when-visible>
-				<ProductsLedgerComplianceMetricsAndLogsFeatures />
-			</LazyHydrate>
-			<LazyHydrate when-visible>
-				<!-- <ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" /> -->
-			</LazyHydrate>
-			<LazyHydrate when-visible>
-				<ProductsLedgerComplianceMetricsAndLogsGotYouCovered />
-			</LazyHydrate>
-			<LazyHydrate when-visible>
-				<!-- <ProductsLedgerComplianceMetricsAndLogsTabs /> -->
-			</LazyHydrate>
-			<LazyHydrate when-visible>
-				<ProductsLedgerComplianceMetricsAndLogsHowItWorks />
-			</LazyHydrate>
-			<LazyHydrate when-visible>
-				<!-- <ProductsLedgerComplianceMetricsAndLogsWhatsHappening /> -->
-			</LazyHydrate>
-			<LazyHydrate when-visible>
-				<!-- <ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL /> -->
-			</LazyHydrate>
-			<LazyHydrate when-visible>
-				<ProductsLedgerComplianceMetricsAndLogsNewsletter />
-			</LazyHydrate>
-			<ProductsLedgerComplianceMetricsAndLogsSupportQuote id="metrics-and-logs-support-quote" />
-		</div>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsFeatures />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<!-- <ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" /> -->
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsGotYouCovered />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<!-- <ProductsLedgerComplianceMetricsAndLogsTabs /> -->
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsHowItWorks />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsWhatsHappening />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<!-- <ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL /> -->
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsNewsletter />
+		</LazyHydrate>
+		<ProductsLedgerComplianceMetricsAndLogsSupportQuote id="metrics-and-logs-support-quote" />
 	</div>
 </template>
 

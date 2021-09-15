@@ -371,6 +371,7 @@ export default {
 				theme: 'prism-themes/themes/prism-dracula.css',
 			},
 		},
+		apiPrefix: 'blog-api',
 	},
 
 	/*
@@ -421,6 +422,7 @@ export default {
 					cyan: '#36d6d0',
 					light: '#faf9f8',
 					dark: '#13274b',
+					darker: '#1c273a',
 					'dark-blue': '#153954',
 					'darker-blue': '#0d3049',
 					bg: '#fff',
@@ -452,6 +454,7 @@ export default {
 					cyan: '#36d6d0',
 					light: '#faf9f8',
 					dark: '#13274b',
+					darker: '#1c273a',
 					bg: '#153954',
 					'bg-secondary': '#0d3049',
 					'bg-tertiary': '#45475b',
