@@ -44,16 +44,16 @@
 					</v-row>
 				</v-container>
 			</v-carousel-item>
+			<div class="delimiters d-flex justify-center align-center mt-4 mt-md-6">
+				<div
+					v-for="({ text }, index) in features"
+					:key="text"
+					:class="[index === currentFeature ? 'accent' : 'info', { 'ml-1': index > 0 }]"
+					class="delimiter rounded-xl cursor-pointer"
+					@click="currentFeature = index"
+				/>
+			</div>
 		</v-carousel>
-		<div class="delimiters d-flex justify-center align-center mt-4 mt-md-6">
-			<div
-				v-for="({ text }, index) in features"
-				:key="text"
-				:class="[index === currentFeature ? 'accent' : 'info', { 'ml-1': index > 0 }]"
-				class="delimiter rounded-xl cursor-pointer"
-				@click="currentFeature = index"
-			/>
-		</div>
 		<div class="d-flex justify-center mt-4 mt-md-6">
 			<v-btn color="secondary text-capitalize dark--text">
 				Start Free Trial

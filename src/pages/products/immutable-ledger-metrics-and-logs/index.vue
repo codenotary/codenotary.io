@@ -5,7 +5,7 @@
 			<ProductsLedgerComplianceMetricsAndLogsFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<!-- <ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" /> -->
+			<ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ProductsLedgerComplianceMetricsAndLogsGotYouCovered />
@@ -43,14 +43,14 @@ export default {
 	components: {
 		LazyHydrate,
 	},
-	// async asyncData ({ $content }) {
-	// 	const integrations = await $content('products/integration')
-	// 			.only(['title', 'date', 'image', 'slug', 'tags'])
-	// 			.sortBy('date', 'desc')
-	// 			.fetch();
+	async asyncData ({ $content }) {
+		const integrations = await $content('products/integration')
+				.only(['title', 'date', 'image', 'slug', 'tags'])
+				.sortBy('date', 'desc')
+				.fetch();
 
-	// 	return { integrations };
-	// },
+		return { integrations };
+	},
 	head() {
 		return {
 			title: title('Immutable Ledger (Public Cloud)'),
