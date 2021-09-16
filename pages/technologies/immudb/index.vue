@@ -35,6 +35,9 @@
 			<ImmudbPlayground />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
+			<ImmudbBenchmarks />
+		</LazyHydrate>
+		<LazyHydrate when-visible>
 			<ImmudbUsers />
 		</LazyHydrate>
 		<LazyHydrate when-visible>

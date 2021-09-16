@@ -2,7 +2,7 @@
 	<PageSection
 		id="immudb-playground"
 		:top="0"
-		:bottom="2"
+		:bottom="0"
 	>
 		<i-container>
 			<i-row middle>

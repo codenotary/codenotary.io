@@ -19,7 +19,7 @@
 						The only immutable and client-verifiable solutions capable of processing millions of transactions a
 						second.
 					</p>
-					<ul class="social-links list -inline">
+					<ul class="social-links -inline">
 						<li>
 							<a href="https://github.com/codenotary">
 								<fa :icon="['fab', 'github-square']" />
