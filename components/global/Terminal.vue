@@ -101,7 +101,7 @@ export default {
 
 	.body {
 		&.rounded {
-			border-radius: 30px;
+			border-radius: 25px;
 			overflow: hidden;
 		}
 
@@ -109,11 +109,13 @@ export default {
 			pre[class*="language-"] {
 				display: block;
 				margin: 0;
-				padding: 1rem;
-				background: $cn-color-dark !important;
+				padding: 1.2rem;
+				background: $cn-color-primary_dark !important;
+				box-shadow: $cn-shadow-sm;
 				box-sizing: border-box;
 				overflow: auto;
 				border-radius: 0;
+				font-size: 14px !important;
 			}
 
 			.toolbar {

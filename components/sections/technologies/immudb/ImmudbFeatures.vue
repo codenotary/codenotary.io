@@ -107,9 +107,19 @@ export default {
 		border-radius: $cn-border-radius-lg;
 		box-shadow: $cn-shadow-sm;
 		border: none;
+		transition: all 0.3s linear;
 
 		img {
 			object-fit: contain;
+			transition: all 0.3s linear;
+		}
+
+		&:hover {
+			box-shadow: none;
+
+			img {
+				transform: scale(1.1);
+			}
 		}
 	}
 

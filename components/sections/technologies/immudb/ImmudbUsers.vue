@@ -122,7 +122,8 @@ export default {
 		bottom: -140px;
 		left: 50%;
 		transform: translateX(-50%);
-		background-color: #fff;
+		width: 80%;
+		background-color: white;
 		border-radius: 30px;
 		z-index: 10;
 	}

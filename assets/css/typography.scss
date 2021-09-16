@@ -154,6 +154,17 @@ h3 {
 	line-height: 17px !important;
 }
 
+.title-pageHeader {
+	font-size: 68px !important;
+	letter-spacing: -4px;
+	font-weight: bold;
+	color: $cn-color-primary_light;
+
+	@media screen and (max-width: $mobile-max-width) {
+		font-size: 32px !important;
+	}
+}
+
 ._text-decoration-underline {
 	text-decoration: underline !important;
 }

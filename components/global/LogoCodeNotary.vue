@@ -32,12 +32,19 @@ export default {
 
 <style lang="scss" scoped>
 span {
-	transition: transform 100ms linear;
+	width: 200px;
+	height: 54.2px;
+	position: relative;
+	transition: transform 0.3s linear;
 
 	img {
 		width: 200px;
 		height: auto;
-		transition: transform 100ms linear;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 1;
+		transition: transform 0.3s linear;
 
 		@media screen and (max-width: $mobile-max-width) {
 			width: 150px;
@@ -48,8 +55,7 @@ span {
 	img.hovered {
 		width: 200px;
 		height: auto;
-		display: none;
-		transition: transform 100ms linear;
+		opacity: 0;
 
 		@media screen and (max-width: $mobile-max-width) {
 			width: 150px;
@@ -59,11 +65,12 @@ span {
 
 	&:hover {
 		img:not(.hovered) {
-			display: none;
+			opacity: 0;
 		}
 
 		img.hovered {
-			display: initial;
+			opacity: 1;
+			transform: scale(1.05);
 		}
 	}
 }

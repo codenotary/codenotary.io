@@ -90,10 +90,10 @@ export default {
 }
 
 #immudb-aws-section {
-	margin-bottom: -85px;
+	margin-bottom: -80px;
 
 	@media screen and (max-width: $mobile-max-width) {
-		margin-bottom: -75px;
+		margin-bottom: -80px;
 	}
 
 	@media screen and (max-width: 767px) {

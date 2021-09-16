@@ -134,7 +134,6 @@ export default {
 #immudb-by-developers-for-developers {
 	position: relative;
 	height: 0 !important;
-	padding: 0 !important;
 	overflow: unset !important;
 
 	.floating-container {
@@ -213,6 +212,10 @@ export default {
 			box-shadow: $cn-shadow-sm;
 			border: none !important;
 			z-index: 5;
+
+			.body {
+				padding: 0 !important;
+			}
 		}
 	}
 

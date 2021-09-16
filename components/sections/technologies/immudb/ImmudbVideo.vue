@@ -1,6 +1,8 @@
 <template>
 	<PageSection
 		id="immudb-video-section"
+		:top-xl="8"
+		:bottom-xl="8"
 	>
 		<i-container>
 			<i-row class="_display-flex _justify-content-center">
@@ -166,7 +168,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-video-section {
-	padding: 140px 0 270px !important;
 	color: white;
 	background: $cn-dark-gradient;
 	text-align: center;

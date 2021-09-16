@@ -73,16 +73,6 @@ body {
 	}
 }
 
-a:hover:not(.no-hover) {
-	color: $cn-color-secondary !important;
-}
-
-.nuxt-content a {
-	color: $cn-color-primary;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
 .block {
 	display: block;
 }

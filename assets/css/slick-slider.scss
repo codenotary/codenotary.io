@@ -1,7 +1,7 @@
 .slick-slider {
 	background: white;
 	box-shadow: $cn-shadow-sm;
-	padding: 50px;
+	padding: 40px 34px 10px;
 	border-radius: 30px;
 
 	.slick-dots {
@@ -88,7 +88,7 @@
 		border-radius: 50%;
 		box-shadow: $cn-shadow-sm;
 		transform: translate(0, -50%);
-		transition: all 0.3s ease-out;
+		transition: all 0.3s linear;
 
 		&:hover {
 			box-shadow: $cn-shadow-hoverBtn;

@@ -1,14 +1,23 @@
-ul {
+ul.list {
 	margin-bottom: 0 !important;
-	padding-left: 24px;
+	padding-left: 0 !important;
+	list-style: none;
 
 	li {
 		line-height: 20px;
-		margin-bottom: 0;
+		margin-bottom: 0 !important;
+		padding-left: 20px !important;
 
-		&::marker {
-			color: $cn-color-secondary;
-			font-size: 30px;
+		&::before {
+			content: url("/icons/bullet-secondary.svg");
+			display: inline-block;
+			vertical-align: middle;
+			text-indent: -20px;
 		}
+
+		// &::marker {
+		// 	color: $cn-color-secondary;
+		// 	font-size: 30px;
+		// }
 	}
 }

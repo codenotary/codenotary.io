@@ -46,6 +46,19 @@ export default {
 	background-color: white;
 	padding: 25px;
 	box-shadow: $cn-shadow-sm;
+	transition: all 0.3s ease-out;
+
+	img {
+		transition: all 0.3s linear;
+	}
+
+	&:hover {
+		box-shadow: none;
+
+		img {
+			transform: scale(1.1);
+		}
+	}
 
 	h3 {
 		margin-top: 0;

@@ -110,6 +110,11 @@ export default {
 			lang: 'scss',
 			ssr: false,
 		},
+		{
+			src: './assets/css/link.scss',
+			lang: 'scss',
+			ssr: false,
+		},
 	],
 
 	build: {

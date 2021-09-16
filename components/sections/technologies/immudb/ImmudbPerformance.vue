@@ -2,6 +2,7 @@
 	<PageSection
 		id="immudb-performance-section"
 		:top="1"
+		:top-xl="0"
 		:bottom="2"
 	>
 		<i-container>
@@ -85,8 +86,6 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-performance-section {
-	padding-top: 166px !important;
-
 	@include breakpoint-down(sm) {
 		position: relative;
 		padding: 30px 0 60px !important;
@@ -104,7 +103,8 @@ export default {
 
 	.container {
 		background: white;
-		padding: 0 120px 30px;
+		padding: 0 70px 30px;
+		width: 80%;
 		border-radius: 30px;
 		box-shadow: $cn-shadow-sm;
 		border: none !important;
@@ -166,7 +166,7 @@ export default {
 				background: $cn-color-primary_dark;
 				padding: 15px 40px;
 				text-align: center;
-				border: 1px solid white;
+				border: 1px solid $cn-color-primary;
 
 				@media screen and (max-width: 573px) {
 					padding: 15px 3px;

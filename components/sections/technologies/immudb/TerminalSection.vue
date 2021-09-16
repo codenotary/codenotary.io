@@ -21,7 +21,7 @@
 										<p>
 											immudb is an indispensable asset when it comes to tamper-proof data:
 										</p>
-										<ul>
+										<ul class="list">
 											<li>Store every update to sensitive database fields (credit card or bank account data) of an existing application database</li>
 											<li>Store CI/CD recipes to build and deployment pipelines</li>
 											<li>Store public certificates</li>
@@ -60,10 +60,10 @@
 										<h4 class="title _font-weight-bold _text-primary">
 											Intuitive setup
 										</h4>
-										<p class="lead">
+										<p>
 											immudb is built with simplicity in mind:
 										</p>
-										<ul>
+										<ul class="list">
 											<li>Use the prebuilt binaries or Docker container images for a fast start</li>
 											<li>Install, manage and run immudb and immugw as services (use 'immuadmin service')</li>
 											<li>Simple make command integration if you want to build the applications yourself</li>
@@ -102,10 +102,10 @@
 										<h4 class="title _font-weight-bold _text-primary">
 											Consistency check built-in
 										</h4>
-										<p class="lead">
+										<p>
 											immudb architecture has built-in verification and audit functionality:
 										</p>
-										<ul>
+										<ul class="list">
 											<li>immudb server is continuously checking disk/memory consistency</li>
 											<li>immugw is continuously checking the data consistency and integrity</li>
 											<li>immuclient has built-in data consistency and integrity checks</li>
@@ -197,15 +197,19 @@ export default {
 
 #immudb-code-examples-section {
 	position: relative;
-	height: 690px !important;
+	height: 730px !important;
 	overflow: unset !important;
 
 	.floating-container {
 		position: absolute;
-		top: -240px;
+		top: -67px;
 		left: 50%;
 		transform: translateX(-50%);
 		z-index: 10;
+	}
+
+	p {
+		margin-bottom: 0.5rem;
 	}
 
 	@include breakpoint-down(sm) {

@@ -78,7 +78,7 @@ a:active {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transition: all 0.3s ease-out;
+	transition: all 0.3s linear;
 
 	&:hover {
 		box-shadow: $cn-shadow-hoverBtn;
@@ -184,16 +184,8 @@ a:active {
 </style>
 <style lang="scss">
 .cn-github {
-	&:hover {
-		text-decoration: none;
-
-		.github-star-button {
-			.github-logo img,
-			.github-count img {
-				transform: scale(1.1);
-			}
-		}
-	}
+	border-radius: 8px;
+	transition: all 0.3s linear;
 
 	.github-star-button {
 		display: flex;
@@ -212,7 +204,7 @@ a:active {
 			img {
 				height: 30px;
 				width: 30px;
-				transition: all 0.3s ease-out;
+				transition: all 0.3s linear;
 			}
 		}
 
@@ -220,17 +212,39 @@ a:active {
 			display: flex;
 			align-items: center;
 			padding: 14px;
-			background: white;
+			background: $cn-color-light;
 			border-top-right-radius: 8px;
 			border-bottom-right-radius: 8px;
 
 			img {
 				margin-left: 10px;
-				transition: all 0.3s ease-out;
+				transition: all 0.3s linear;
 			}
 
 			span {
 				color: $cn-color-brand;
+			}
+		}
+	}
+
+	&:hover {
+		text-decoration: none;
+		box-shadow: $cn-shadow-hoverBtn;
+		transform: scale(1.02);
+
+		.github-star-button {
+			.github-logo img,
+			.github-count img {
+				transform: scale(1.15);
+			}
+		}
+
+		.github-count {
+			background: transparent;
+			border: 1px solid $cn-color-primary;
+
+			span {
+				color: $cn-color-primary;
 			}
 		}
 	}
