@@ -28,10 +28,4 @@ a:hover:not(.no-hover) {
 			transform: scale(1.2);
 		}
 	}
-
-	@media screen and (max-width: $mobile-max-width) {
-		justify-content: center;
-		text-align: center;
-		width: 100%;
-	}
 }

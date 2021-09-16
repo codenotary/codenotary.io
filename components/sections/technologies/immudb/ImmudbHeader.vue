@@ -5,7 +5,12 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5" class="_padding-x-0">
+				<i-column
+					sm="6"
+					mg="6"
+					lg="6"
+					class="_padding-x-0"
+				>
 					<h1 class="title-pageHeader first">
 						{{ content.headerSection.title1 }}
 					</h1>
@@ -88,9 +93,10 @@
 						</a>
 					</div>
 				</i-column>
-				<i-column lg="1" />
 				<i-column
 					id="mascot-column"
+					sm="6"
+					mg="6"
 					lg="6"
 				>
 					<img class="mascot-image" src="/images/immudb-header-mascot.png">
@@ -165,6 +171,10 @@ $mascot-height-small: 100px;
 	padding-bottom: 3rem;
 	z-index: 3;
 	position: relative;
+
+	.third {
+		max-width: 370px;
+	}
 }
 
 ::v-deep #immudb-header {
@@ -187,7 +197,7 @@ $mascot-height-small: 100px;
 		}
 	}
 
-	@include breakpoint-down(md) {
+	@media screen and (max-width: 768px) {
 		padding-top: 0;
 		padding-bottom: 0;
 		text-align: center;
@@ -220,10 +230,6 @@ $mascot-height-small: 100px;
 }
 
 @media screen and (max-width: $mobile-max-width) {
-	.title:first-of-type {
-		margin-top: 20px !important;
-	}
-
 	.action {
 		justify-content: center;
 		margin-bottom: 30px;
@@ -337,9 +343,15 @@ $mascot-height-small: 100px;
 
 	.link-icon {
 		margin-top: 10px;
+
+		@media screen and (max-width: 768px) {
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+		}
 	}
 
-	@media screen and (max-width: $mobile-max-width) {
+	@media screen and (max-width: 768px) {
 		align-items: flex-start;
 	}
 }
@@ -350,7 +362,7 @@ $mascot-height-small: 100px;
 	justify-content: space-between;
 	max-width: 330px;
 
-	@media screen and (max-width: $mobile-max-width) {
+	@media screen and (max-width: 768px) {
 		flex-direction: column;
 		align-items: center;
 		height: 112px;

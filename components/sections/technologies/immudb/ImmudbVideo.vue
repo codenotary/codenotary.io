@@ -1,7 +1,11 @@
 <template>
 	<PageSection
 		id="immudb-video-section"
+		:top-md="8"
+		:top-lg="8"
 		:top-xl="8"
+		:bottom-md="7"
+		:bottom-lg="7"
 		:bottom-xl="8"
 	>
 		<i-container>
@@ -49,7 +53,7 @@
 									class="video-feature-item"
 									xs="6"
 									sm="4"
-									md="3"
+									md="2"
 									lg="2"
 									xl="2"
 								>
@@ -62,7 +66,7 @@
 									class="video-feature-item"
 									xs="6"
 									sm="4"
-									md="3"
+									md="2"
 									lg="2"
 									xl="2"
 								>
@@ -75,7 +79,7 @@
 									class="video-feature-item"
 									xs="6"
 									sm="4"
-									md="3"
+									md="2"
 									lg="2"
 									xl="2"
 								>
@@ -88,7 +92,7 @@
 									class="video-feature-item"
 									xs="6"
 									sm="4"
-									md="3"
+									md="2"
 									lg="2"
 									xl="2"
 								>
@@ -101,7 +105,7 @@
 									class="video-feature-item"
 									xs="6"
 									sm="4"
-									md="3"
+									md="2"
 									lg="2"
 									xl="2"
 								>

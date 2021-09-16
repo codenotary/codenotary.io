@@ -123,7 +123,7 @@ export default {
 		}
 	}
 
-	@include breakpoint-down(sm) {
+	@media screen and (max-width: $mobile-max-width) {
 		.container {
 			padding: 0 22px !important;
 			width: 100% !important;
@@ -140,11 +140,15 @@ export default {
 			.immudb-feature {
 				margin: 0 !important;
 				width: 100% !important;
+			}
+		}
+	}
 
-				h4 {
-					min-height: 32px;
-					font-size: 0.75rem;
-				}
+	@media screen and (max-width: 768px) {
+		.immudb-feature {
+			h4 {
+				min-height: 32px;
+				font-size: 0.75rem;
 			}
 		}
 	}

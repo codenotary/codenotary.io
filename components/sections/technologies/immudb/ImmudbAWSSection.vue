@@ -59,7 +59,7 @@ export default {
 
 		@media screen and (max-width: $mobile-max-width) {
 			background-image: url(/images/immudb/AWS/tablet.png);
-			height: 150px;
+			height: 160px;
 			background-position-y: bottom;
 			padding: 10px 0;
 		}

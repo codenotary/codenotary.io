@@ -15,7 +15,7 @@
 					class="_margin-top-0 _margin-x-auto _text-center"
 					xs="12"
 					sm="12"
-					md="8"
+					md="10"
 					lg="8"
 				>
 					Codenotary vs immudb vs Oracle vs Amazon QLDB - Throughput and Cost Comparison

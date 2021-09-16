@@ -4,6 +4,10 @@
 	padding: 40px 34px 10px;
 	border-radius: 30px;
 
+	@media screen and (max-width: 1280px) {
+		padding: 40px 34px 60px;
+	}
+
 	.slick-dots {
 		bottom: 15px;
 		left: 0;
