@@ -1,42 +1,34 @@
 <template>
-	<v-container fluid class="section-container">
-		<v-container>
-			<v-row>
-				<v-col>
-					<h4 class="white--text font-weight-700 text-h4 text-center text-uppercase">
-						How it works
-					</h4>
-				</v-col>
-			</v-row>
-			<v-row>
-				<v-col
-					cols="12"
-					md="3"
-					class="pa-0"
-				/>
-				<v-col
-					v-for="{ text, image } in steps"
+	<v-container fluid class="section-container pb-16">
+		<v-row>
+			<v-col>
+				<h4 class="white--text font-weight-700 text-h4 text-center text-uppercase">
+					How it works
+				</h4>
+			</v-col>
+		</v-row>
+		<v-row class="pb-16">
+			<v-col class="d-flex flex-column flex-md-row justify-center align-center align-md-start">
+				<v-sheet
+					v-for="({ text, image }, index) in steps"
 					:key="text"
-					cols="12"
-					md="2"
-					class="text-center d-flex flex-column align-center justify-center"
+					max-width="250"
+					color="transparent"
+					:class="{ 'mt-9': index > 0 }"
+					class="d-flex flex-column align-center justify-center mt-md-0"
 				>
 					<v-img
 						:src="`/images/metrics-and-logs/${image}.svg`"
 						contain
+						height="145"
 						aspect-ratio="1.5"
 					/>
-					<span class="white--text text-heading-5">
+					<span class="white--text text-h5 text-center">
 						{{ text }}
 					</span>
-				</v-col>
-				<v-col
-					cols="12"
-					md="3"
-					class="pa-0"
-				/>
-			</v-row>
-		</v-container>
+				</v-sheet>
+			</v-col>
+		</v-row>
 	</v-container>
 </template>
 

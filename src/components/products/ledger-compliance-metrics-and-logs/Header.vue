@@ -1,17 +1,24 @@
 <template>
-	<div id="ledger-compliance-metrics-and-logs-header">
-		<v-container class="container main-content" fluid>
+	<v-container
+		id="ledger-compliance-metrics-and-logs-header"
+		fluid
+		class="lighter-gray"
+	>
+		<v-container class="container main-content py-16">
 			<v-row>
-				<v-col md="1" />
-				<v-col sm="12" md="5">
-					<h1 class="info--text font-weight-700 text-h2 text-center text-md-left">
+				<v-col
+					sm="12"
+					md="7"
+					class="pr-md-16"
+				>
+					<h1 class="info--text font-weight-700 text-h4 text-md-h2 text-center text-md-left">
 						CNIL<br class="d-none d-md-block">
 						Metrics and Logs
 					</h1>
-					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left">
+					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left mt-n1 mb-2">
 						(formerly, Opvizor Performance Analyzer)
 					</p>
-					<h3 class="font-weight-700 text-h3 white--text text-center text-md-left">
+					<h3 class="font-weight-700 text-h4 text-md-h3 white--text text-center text-md-left mb-2">
 						<span class="secondary--text">
 							VMware vSphere & Cloud
 						</span><br class="d-md-none">
@@ -19,10 +26,10 @@
 							Performance monitoring, log analysis, license compliance!
 						</span>
 					</h3>
-					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left">
+					<p class="white--text font-weight-400 text-subtitle-1 ma-0 text-center text-md-left">
 						Monitor and Analyze Performance and Log files:
 					</p>
-					<p class="ma-0 text-center text-md-left typer">
+					<p class="ma-0 text-center text-md-left typer mb-3">
 						<client-only>
 							<vue-typer
 								:text="typewriteOptions"
@@ -39,7 +46,7 @@
 							/>
 						</client-only>
 					</p>
-					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left">
+					<p class="white--text font-weight-400 text-subtitle-1 ma-0 text-center text-md-left mb-3">
 						Performance monitoring for your systems and applications with log analysis (tamperproof using immudb) and license compliance (RedHat, Oracle, SAP and more) in one virtual appliance!
 					</p>
 					<div class="d-flex justify-center justify-md-start">
@@ -61,8 +68,11 @@
 						</v-btn>
 					</div>
 				</v-col>
-				<v-col md="1" />
-				<v-col sm="12" md="5">
+				<v-col
+					sm="12"
+					md="5"
+					class="d-flex align-center"
+				>
 					<v-img
 						:src="src"
 						:alt="alt"
@@ -75,7 +85,7 @@
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="{ bottom: rightBarBottom }" />
 		</client-only>
-	</div>
+	</v-container>
 </template>
 
 <script>
@@ -132,7 +142,7 @@ export default {
 					color: var(--v-info-base);
 					text-decoration: underline;
 					font-weight: 400;
-					font-size: 16px;
+					font-size: 1rem;
 					line-height: 22px;
 				}
 
@@ -151,6 +161,7 @@ export default {
 		bottom: 100px;
 		left: 0;
 		transform: skewY(-5deg);
+		transform-origin: right;
 		-webkit-transform-origin: right;
 		z-index: 2;
 		box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
@@ -190,6 +201,7 @@ export default {
 		position: absolute;
 		right: 0;
 		height: 100%;
+		transform-origin: right;
 		-webkit-transform-origin: right;
 		transform: skewY(3deg);
 		z-index: 1;

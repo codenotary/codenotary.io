@@ -23,8 +23,15 @@
 						>
 							<v-img
 								:src="`/images/metrics-and-logs/whats-happening/${image}.png`"
-								contain
-								class="rounded-xl"
+								height="450"
+								cover
+								class="d-none d-md-block rounded-xl"
+							/>
+							<v-img
+								:src="`/images/metrics-and-logs/whats-happening/${image}.png`"
+								height="160"
+								cover
+								class="d-md-none rounded-xl"
 							/>
 						</v-col>
 						<v-col
@@ -37,7 +44,7 @@
 								{{ index + 1 }}
 							</p>
 							<hr class="accent mb-3 d-none b-md-block">
-							<p class="ma-0 white--text">
+							<p class="ma-0 white--text text-body-2">
 								{{ text }}
 							</p>
 						</v-col>

@@ -1,10 +1,10 @@
 <template>
 	<v-container
-		class="newsletter"
 		fluid
+		class="newsletter mt-n13"
 	>
-		<v-container>
-			<v-row>
+		<v-container class="pt-16">
+			<v-row class="pb-2 pt-16">
 				<v-col>
 					<div class="d-flex flex-column align-center">
 						<h4 class="text-h4 white--text font-weight-700 text-center">

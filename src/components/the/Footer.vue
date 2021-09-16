@@ -1,7 +1,7 @@
 <template>
 	<v-container fluid class="dark">
 		<v-container>
-			<v-row>
+			<v-row class="py-4">
 				<v-col
 					cols="12"
 					md="4"
@@ -19,7 +19,7 @@
 						height="40"
 						class="d-md-none"
 					/>
-					<p class="accent--text ma-0 font-weight-400">
+					<p class="accent--text mt-3 font-weight-400">
 						We bring trust and integrity into the software life cycle by providing end-to-end cryptographically verifiable tracking and provenance for all artifacts, actions, and dependencies. The only immutable and client-verifiable solutions capable of processing millions of transactions a second.
 					</p>
 					<div class="d-flex justify-md-start justify-center social-holder">
@@ -63,6 +63,7 @@
 									<v-hover
 										:key="text"
 										v-slot="{ hover }"
+										class="mt-2"
 									>
 										<nuxt-link
 											v-if="link === null"
@@ -123,11 +124,11 @@ export default {
 					items: [
 						{
 							text: 'Codenotary Cloud',
-							to: '',
+							to: { name: 'products-ci-cd' },
 						},
 						{
 							text: 'CNIL Metrics & Logs',
-							to: '',
+							to: { name: 'products-immutable-ledger-metrics-and-logs' },
 						},
 					],
 				},
@@ -140,11 +141,11 @@ export default {
 						},
 						{
 							text: 'Blogs',
-							to: '',
+							to: { name: 'blog' },
 						},
 						{
 							text: 'immudb',
-							to: '',
+							to: { name: 'technologies-immudb' },
 						},
 					],
 				},
@@ -153,19 +154,19 @@ export default {
 					items: [
 						{
 							text: 'About Us',
-							to: '',
+							to: { name: 'about' },
 						},
 						{
 							text: 'Join Us',
-							to: '',
+							to: { name: 'join' },
 						},
 						{
 							text: 'Partners',
-							to: '',
+							to: { name: 'partners' },
 						},
 						{
 							text: 'Contact',
-							to: '',
+							to: { name: 'contact' },
 						},
 					],
 				},

@@ -92,7 +92,7 @@ export default {
 
 <style lang="scss" scoped>
 .metrics-logs {
-	background-image: radial-gradient(#faf9f8 1.55px, #ebece9 0);
+	background-image: radial-gradient(var(--v-light-base) 1.55px, var(--v-bg-secondary-base) 0);
 	background-size: 31px 31px;
 	background-repeat: repeat;
 

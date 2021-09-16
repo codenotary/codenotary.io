@@ -1,7 +1,7 @@
 <template>
 	<v-container fluid class="dark-blue">
 		<v-container>
-			<v-row>
+			<v-row class="py-5">
 				<v-col
 					cols="12"
 					md="8"

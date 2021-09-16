@@ -1,5 +1,5 @@
 <template>
-	<div class="global-menu" :class="{'scrolled': scrolled}">
+	<div class="global-menu" :class="{ scrolled }">
 		<div
 			v-for="(product, index) in content.menu.products"
 			:key="index"
