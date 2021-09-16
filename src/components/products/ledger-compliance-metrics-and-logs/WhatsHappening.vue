@@ -55,7 +55,11 @@
 			</div>
 		</v-carousel>
 		<div class="d-flex justify-center mt-4 mt-md-6">
-			<v-btn color="secondary text-capitalize dark--text">
+			<v-btn
+				color="secondary"
+				class="text-capitalize dark--text"
+				@click="$emit('openStartTrial')"
+			>
 				Start Free Trial
 			</v-btn>
 		</div>

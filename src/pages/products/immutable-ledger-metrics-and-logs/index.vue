@@ -1,6 +1,8 @@
 <template>
-	<div>
-		<ProductsLedgerComplianceMetricsAndLogsHeader />
+	<div class="metrics-logs">
+		<ProductsLedgerComplianceMetricsAndLogsHeader
+			@openStartTrial="startTrialModalOpen = true"
+		/>
 		<LazyHydrate when-visible>
 			<ProductsLedgerComplianceMetricsAndLogsFeatures />
 		</LazyHydrate>
@@ -17,15 +19,21 @@
 			<ProductsLedgerComplianceMetricsAndLogsHowItWorks />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsWhatsHappening />
+			<ProductsLedgerComplianceMetricsAndLogsWhatsHappening
+				@openStartTrial="startTrialModalOpen = true"
+			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<!-- <ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL /> -->
+			<ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL :blog-posts="blogPosts" />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ProductsLedgerComplianceMetricsAndLogsNewsletter />
 		</LazyHydrate>
 		<ProductsLedgerComplianceMetricsAndLogsSupportQuote id="metrics-and-logs-support-quote" />
+		<UiModalStartTrial
+			:value="startTrialModalOpen"
+			@close="startTrialModalOpen = false"
+		/>
 	</div>
 </template>
 
@@ -49,7 +57,17 @@ export default {
 				.sortBy('date', 'desc')
 				.fetch();
 
-		return { integrations };
+		const blogPosts = await $content('blog')
+				.only(['title', 'date', 'image'])
+				.where({ tags: { $containsAny: ['metrics', 'logs'] } })
+				.fetch();
+
+		return { integrations, blogPosts };
+	},
+	data() {
+		return {
+			startTrialModalOpen: false,
+		};
 	},
 	head() {
 		return {
@@ -72,11 +90,17 @@ export default {
 };
 </script>
 
-<style lang="scss">
-#metrics-and-logs-support-quote {
-	position: fixed;
-	right: 0;
-	bottom: 32px;
-	z-index: 5;
+<style lang="scss" scoped>
+.metrics-logs {
+	background-image: radial-gradient(#faf9f8 1.55px, #ebece9 0);
+	background-size: 31px 31px;
+	background-repeat: repeat;
+
+	#metrics-and-logs-support-quote {
+		position: fixed;
+		right: 0;
+		bottom: 32px;
+		z-index: 5;
+	}
 }
 </style>

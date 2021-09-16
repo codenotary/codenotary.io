@@ -1,37 +1,43 @@
 <template>
 	<v-container>
+		<h4 class="rounded-xl brand--text text-uppercase text-center text-h4 font-weight-700 pt-6 pb-14">
+			Read more about CNIL Metrics and Logs
+		</h4>
 		<v-carousel
 			v-model="slide"
 			hide-delimiters
 			:height="null"
 			class="rounded-xl white"
 		>
-			<h4 class="text-h4 text-uppercase brand--text font-weight-700 text-center">
-				Immutable Ledger integrations
-			</h4>
-			<p class="dark--text text-center font-weight-400">
-				Integrations for Hypervisor, Storage systems, OS and applications.
-
-				{{ perSlide }}
-			</p>
 			<v-carousel-item
 				v-for="(currentSlide, currentSlideIndex) in slides"
-				:key="currentSlide[0].slug"
+				:key="currentSlide[0].title"
 			>
 				<v-container fluid>
 					<v-row>
 						<v-col
-							v-for="{ slug, image } in currentSlide"
-							:key="`${slug}-${currentSlideIndex}`"
-							cols="6"
-							md="2"
+							v-for="post in currentSlide"
+							:key="`${post.title}-${currentSlideIndex}`"
+							cols="12"
+							md="4"
 						>
-							<nuxt-link :to="{ name: 'products-integration-post', params: { post: slug } }">
-								<v-img
-									:src="image"
-									contain
-								/>
-							</nuxt-link>
+							<v-img
+								:src="post.image"
+								contain
+								class="rounded-xl"
+							/>
+							<v-sheet class="rounded-xl d-flex flex-column align-center" elevation="3">
+								<span>{{ post.date }}</span>
+								<span class="brand--text text-center">
+									{{ post.title }}
+								</span>
+								<nuxt-link
+									:to="post.path"
+									class="brand--text"
+								>
+									Read the blog
+								</nuxt-link>
+							</v-sheet>
 						</v-col>
 					</v-row>
 				</v-container>
@@ -39,7 +45,7 @@
 			<div class="delimiters d-flex justify-center align-center mt-4 mt-md-6">
 				<div
 					v-for="(currentSlide, index) in slides"
-					:key="currentSlide[0].slug"
+					:key="currentSlide[0].title"
 					:class="[index === slide ? 'accent' : 'info', { 'ml-1': index > 0 }]"
 					class="delimiter rounded-xl cursor-pointer"
 					@click="slide = index"
@@ -53,11 +59,11 @@
 import { chunk } from 'lodash';
 
 export default {
-	name: 'ProductsLedgerComplianceMetricsAndLogsIntegrations',
+	name: 'ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL',
 	props: {
-		integrations: {
+		blogPosts: {
 			type: Array,
-			default: () => [],
+			required: true,
 		},
 	},
 	data() {
@@ -68,7 +74,7 @@ export default {
 	},
 	computed: {
 		slides() {
-			return chunk(this.integrations, this.perSlide);
+			return chunk(this.blogPosts, this.perSlide);
 		},
 	},
 	mounted() {
@@ -81,8 +87,8 @@ export default {
 				const currentScreenWidth = window.innerWidth;
 
 				this.perSlide = currentScreenWidth >= this.$vuetify.breakpoint.thresholds.sm
-					? 12
-					: 8;
+					? 3
+					: 1;
 			});
 		},
 	},

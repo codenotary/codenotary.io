@@ -46,7 +46,7 @@
 						<v-btn
 							color="secondary"
 							class="dark--text text-capitalize"
-							@click="startTrialModalOpen = true"
+							@click="$emit('openStartTrial')"
 						>
 							Free Trial
 						</v-btn>
@@ -70,10 +70,6 @@
 					/>
 				</v-col>
 			</v-row>
-			<UiModalStartTrial
-				:value="startTrialModalOpen"
-				@close="startTrialModalOpen = false"
-			/>
 		</v-container>
 		<client-only>
 			<div class="gradient-box" />
@@ -98,7 +94,6 @@ export default {
 				'Microsoft SQL',
 				'PostgreSQL',
 			],
-			startTrialModalOpen: false,
 			rightBarBottom: '0px',
 		};
 	},

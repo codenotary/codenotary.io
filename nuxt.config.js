@@ -371,7 +371,6 @@ export default {
 				theme: 'prism-themes/themes/prism-dracula.css',
 			},
 		},
-		apiPrefix: 'blog-api',
 	},
 
 	/*
