@@ -1,5 +1,5 @@
 <template>
-	<v-container>
+	<v-container class="mt-n16">
 		<h4 class="rounded-xl accent white--text text-uppercase text-center text-h4 font-weight-700 pt-6 pb-14">
 			What's happening at metrics and logs
 		</h4>

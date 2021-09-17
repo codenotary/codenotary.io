@@ -5,7 +5,7 @@
 			hide-delimiters
 			:height="null"
 			:class="{ white: isMdOrWider }"
-			class="rounded-xl px-16 mb-n16"
+			class="rounded-xl px-16 mb-n12"
 		>
 			<h4 class="rounded-xl brand--text text-uppercase text-center text-h4 font-weight-700 pt-md-10 pb-5">
 				Read more about CNIL Metrics and Logs

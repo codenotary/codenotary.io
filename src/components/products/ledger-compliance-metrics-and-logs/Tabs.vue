@@ -1,10 +1,10 @@
 <template>
 	<v-container
 		fluid
-		class="lighter-gray metrics-logs-tabs"
+		class="lighter-gray metrics-logs-tabs pb-16"
 	>
-		<v-container>
-			<v-row>
+		<v-container class="mt-n16 pb-16">
+			<v-row class="mt-n10">
 				<v-col>
 					<v-tabs
 						v-model="tab"

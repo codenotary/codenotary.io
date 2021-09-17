@@ -3,12 +3,12 @@
 		fluid
 		class="lighter-gray"
 	>
-		<v-container>
+		<v-container class="mb-n16">
 			<v-carousel
 				v-model="slide"
 				hide-delimiters
 				:height="null"
-				class="rounded-xl white pt-10 px-15 pb-7 pb-md-9"
+				class="rounded-xl white pt-10 px-15 pb-7 pb-md-9 mb-n10"
 			>
 				<h4 class="text-h4 text-uppercase brand--text font-weight-700 text-center">
 					Immutable Ledger integrations

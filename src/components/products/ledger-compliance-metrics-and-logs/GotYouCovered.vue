@@ -1,6 +1,6 @@
 <template>
-	<v-container fluid class="section-container">
-		<v-container>
+	<v-container fluid class="section-container py-16">
+		<v-container class="py-16">
 			<v-row>
 				<v-col>
 					<h4 class="white--text font-weight-700 text-h4 text-center text-uppercase">
