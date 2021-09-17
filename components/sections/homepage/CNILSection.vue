@@ -127,15 +127,6 @@ export default {
 				margin: 0;
 			}
 
-			.big-title {
-				background-clip: text !important;
-				-webkit-background-clip: text !important;
-				-webkit-text-fill-color: transparent;
-				font-weight: 700;
-				font-size: 68px !important;
-				line-height: 58px !important;
-			}
-
 			.small-title {
 				font-weight: 700;
 				font-size: 24px;
@@ -163,11 +154,6 @@ export default {
 
 			.content {
 				padding-top: 10px;
-
-				.big-title {
-					font-size: 46px !important;
-					line-height: 42px !important;
-				}
 			}
 		}
 	}

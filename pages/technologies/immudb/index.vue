@@ -87,6 +87,10 @@ export default {
 .immudb {
 	padding-top: 20px;
 
+	@media screen and (max-width: 768px) {
+		padding-top: 60px;
+	}
+
 	h2 {
 		font-weight: 700 !important;
 	}
@@ -99,8 +103,8 @@ export default {
 		margin-bottom: -80px;
 	}
 
-	@media screen and (max-width: 767px) {
-		margin-bottom: -160px;
+	@media screen and (max-width: 768px) {
+		margin-bottom: -50px;
 	}
 }
 </style>

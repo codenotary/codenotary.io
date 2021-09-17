@@ -130,7 +130,7 @@ export default {
 			}
 
 			.second {
-				padding-right: 2rem !important;
+				padding-right: 1rem !important;
 
 				img {
 					max-height: 700px !important;
@@ -139,7 +139,7 @@ export default {
 			}
 		}
 
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 768px) {
 			flex-direction: column;
 			background-position: 550px bottom;
 			background-size: cover;

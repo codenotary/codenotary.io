@@ -115,6 +115,11 @@ export default {
 			lang: 'scss',
 			ssr: false,
 		},
+		{
+			src: './assets/css/video.scss',
+			lang: 'scss',
+			ssr: false,
+		},
 	],
 
 	build: {

@@ -1,5 +1,5 @@
 <template>
-	<section class="immudb-star-banner _justify-content-center">
+	<section class="immudb-star-banner">
 		<div class="_display-flex _align-items-center">
 			<span>
 				If you like immudb,
@@ -51,6 +51,7 @@ section.immudb-star-banner {
 	box-shadow: $cn-shadow-sm;
 	transition: all 0.15s ease-out;
 	z-index: 995;
+	justify-content: center !important;
 
 	&.-light {
 		border-bottom: 1px solid $border-color-light;
@@ -107,6 +108,8 @@ section.immudb-star-banner {
 	}
 
 	@media (max-width: 480px) {
+		justify-content: left !important;
+
 		.close-button {
 			right: 0.2rem;
 		}

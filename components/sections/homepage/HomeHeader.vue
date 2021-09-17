@@ -12,7 +12,7 @@
 					<h2 class="_font-weight-bold cn-text-secondary title first">
 						{{ content.headerSection.title2 }}
 					</h2>
-					<h2 class="_font-weight-bold cn-text-white title">
+					<h2 class="_font-weight-bold cn-text-white title second">
 						{{ content.headerSection.title3 }}
 					</h2>
 
@@ -46,6 +46,7 @@
 				<i-column
 					id="video-column"
 					lg="6"
+					class="_padding-x-0"
 					:class="{ 'playing': playing }"
 				>
 					<div id="video" class="_embed _embed-16by9">
@@ -169,6 +170,10 @@ $mascot-height-small: 100px;
 
 	.content {
 		padding-top: 40px;
+
+		@media screen and (max-width: $mobile-max-width) {
+			padding-top: 10px;
+		}
 	}
 }
 
@@ -199,10 +204,6 @@ $mascot-height-small: 100px;
 }
 
 #video-column {
-	#video {
-		border-radius: 30px;
-	}
-
 	&.playing {
 		#mascot {
 			left: 100%;
@@ -231,9 +232,9 @@ $mascot-height-small: 100px;
 	}
 }
 
-//.title {
-//	color: white !important;
-//}
+.title {
+	text-transform: uppercase;
+}
 
 .subtitle {
 	color: white !important;
@@ -241,15 +242,18 @@ $mascot-height-small: 100px;
 	margin-top: 20px;
 }
 
-@media screen and (min-width: 992px) {
-	.title {
-		text-transform: uppercase;
-	}
-}
-
 @media screen and (max-width: $mobile-max-width) {
 	.title:first-of-type {
 		margin-top: 20px !important;
+	}
+
+	.title.second {
+		margin-top: 0 !important;
+	}
+
+	.subtitle {
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	.action {
@@ -338,38 +342,6 @@ $mascot-height-small: 100px;
 
 		.title.first {
 			display: inline;
-		}
-	}
-}
-
-.video-play_button {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: rgba(21, 57, 84, 0.2);
-	transition: opacity 0.15s ease-in-out;
-	opacity: 1;
-	cursor: pointer;
-
-	img {
-		border-radius: 50%;
-		transition: transform 100ms linear;
-
-		@media screen and (max-width: $mobile-max-width) {
-			height: 70px;
-			width: 70px;
-		}
-
-		&:hover {
-			transform: scale(1.02);
-			box-shadow: $cn-shadow-hoverBtn;
 		}
 	}
 }

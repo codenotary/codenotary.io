@@ -3,6 +3,7 @@
 		id="immudb-codenotary-cloud-section"
 		:top="6"
 		:bottom="6"
+		:bottom-xs="8"
 		:bottom-md="4"
 	>
 		<i-container fluid>

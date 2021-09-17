@@ -150,6 +150,12 @@ export default {
 		}
 	}
 
+	@media screen and (max-width: 768px) {
+		width: 93%;
+		margin: 0 auto;
+		padding-top: 0 !important;
+	}
+
 	.image-wrapper {
 		.image {
 			position: relative;
@@ -188,21 +194,6 @@ export default {
 				}
 			}
 		}
-
-		//.column {
-		//	&:not(:last-child) {
-		//		&::before {
-		//			content: '';
-		//			position: absolute;
-		//			top: 10%;
-		//			right: 0;
-		//			width: 1px;
-		//			height: 80%;
-		//			background-color: $cn-color-grey;
-		//			z-index: 2;
-		//		}
-		//	}
-		//}
 
 		.story-card {
 			margin: 51px 0;

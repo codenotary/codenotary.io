@@ -80,6 +80,13 @@ a:active {
 	align-items: center;
 	transition: all 0.3s linear;
 
+	@media screen and (max-width: $mobile-max-width) {
+		height: $cn-button-height-sm !important;
+		padding: 10px 16px;
+		font-size: 14px;
+		display: inline-flex;
+	}
+
 	&:hover {
 		box-shadow: $cn-shadow-hoverBtn;
 		transform: scale(1.02);
@@ -192,6 +199,10 @@ a:active {
 		height: $cn-button-height !important;
 		align-items: stretch;
 		border: 1px solid transparent;
+
+		@media screen and (max-width: $mobile-max-width) {
+			height: $cn-button-height-sm !important;
+		}
 
 		.github-logo {
 			padding: 14px;

@@ -89,7 +89,7 @@ export default {
 	@include breakpoint-down(sm) {
 		position: relative;
 		padding: 30px 0 60px !important;
-		top: -193px !important;
+		top: -290px !important;
 
 		&.section.variant-standard {
 			padding-top: 161px !important;
@@ -105,6 +105,7 @@ export default {
 		background: white;
 		padding: 0 70px 30px;
 		width: 80%;
+		margin: 0 auto !important;
 		border-radius: 30px;
 		box-shadow: $cn-shadow-sm;
 		border: none !important;

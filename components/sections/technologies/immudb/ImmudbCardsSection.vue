@@ -2,6 +2,7 @@
 	<PageSection
 		id="immudb-cards-section"
 		:top="1"
+		:top-xs="0"
 		:bottom="0"
 	>
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
@@ -80,10 +81,6 @@ export default {
 					margin-top: 10px !important;
 					padding-left: 5px !important;
 					padding-right: 5px !important;
-
-					.square-card {
-						max-width: 100%;
-					}
 
 					h3 {
 						margin-top: 8px !important;

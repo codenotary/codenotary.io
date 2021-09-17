@@ -1,9 +1,9 @@
 <template>
 	<PageSection
 		id="bom-info-section"
-		:top-xs="7"
+		:top-xs="6"
 		:top="8"
-		:bottom-xs="8"
+		:bottom-xs="10"
 		:bottom="6"
 	>
 		<i-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
@@ -25,6 +25,7 @@
 						>
 							<img
 								src="/videos/bom-info-screenshot.svg"
+								class="coverVideo"
 							>
 							<div
 								class="video-play_button"
@@ -38,7 +39,7 @@
 					</div>
 				</i-column>
 			</i-row>
-			<div class="_margin-top-3 _margin-bottom-2 _margin-bottom-xs-8">
+			<div class="_margin-top-xl-3 _margin-top-lg-3 _margin-top-md-1 _margin-top-sm-3 _margin-top-xs-1 _margin-bottom-xl-2 _margin-bottom-lg-2 _margin-bottom-md-0 _margin-bottom-sm-2 _margin-bottom-xs-8 _padding-bottom-xs-6">
 				<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center">
 					Software Bill of Material for:
 				</h3>
@@ -189,7 +190,7 @@ export default {
 			}
 
 			@media screen and (min-width: 768px) {
-				height: 426px;
+				height: 320px;
 			}
 
 			@media screen and (max-width: 768px) {
@@ -200,7 +201,7 @@ export default {
 				height: 134px;
 			}
 
-			img {
+			.coverVideo {
 				width: 100%;
 			}
 		}
@@ -262,7 +263,7 @@ export default {
 				transition: transform 100ms linear;
 
 				@media screen and (max-width: 767px) {
-					height: 30px;
+					height: 35px;
 				}
 
 				&:hover {

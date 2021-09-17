@@ -369,7 +369,7 @@ $mascot-height-small: 100px;
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
 		align-items: center;
-		height: 112px;
+		height: 90px;
 		max-width: none;
 	}
 }

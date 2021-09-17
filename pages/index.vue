@@ -93,7 +93,11 @@ export default {
 		margin-bottom: calc(-80px - 4rem);
 		padding-top: 20px !important;
 
-		@media screen and (min-width: 375px) and (max-width: 768px) {
+		@media screen and (max-width: 768px) {
+			padding-top: 30px !important;
+		}
+
+		@media screen and (max-width: 375px) {
 			padding-top: 0 !important;
 		}
 	}

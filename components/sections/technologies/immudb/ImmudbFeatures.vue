@@ -21,7 +21,7 @@
 					A super-fast, immutable, and cryptographically verifiable ledger database that provides:
 				</i-column>
 				<i-column
-					class="_margin-top-1 _margin-x-auto" xs="12"
+					class="_margin-top-1 _margin-x-auto _padding-x-0" xs="12"
 					sm="12" md="10"
 					xl="10"
 				>
@@ -30,7 +30,7 @@
 							xs="6" sm="6"
 							md="6" lg="6"
 							xl="6"
-							class="_padding-x-05"
+							class="box _padding-x-05"
 						>
 							<div class="immudb-feature cn-bg-blue cn-text-white _display-flex _flex-direction-column">
 								<img class="cn-icon" src="/icons/integrity.svg">
@@ -43,7 +43,7 @@
 							xs="6" sm="6"
 							md="6" lg="6"
 							xl="6"
-							class="_padding-x-05"
+							class="box _padding-x-05"
 						>
 							<div class="immudb-feature cn-bg-primary cn-text-white _display-flex _flex-direction-column">
 								<img class="cn-icon" src="/icons/acid_compliance.svg">
@@ -58,7 +58,7 @@
 							xs="6" sm="6"
 							md="4" lg="4"
 							xl="4"
-							class="_padding-x-05"
+							class="box _padding-x-05"
 						>
 							<div class="immudb-feature cn-bg-secondary cn-text-white _display-flex _flex-direction-column">
 								<img class="cn-icon" src="/icons/auditor.svg">
@@ -71,7 +71,7 @@
 							xs="6" sm="6"
 							md="8" lg="8"
 							xl="8"
-							class="_padding-x-05"
+							class="box _padding-x-05"
 						>
 							<div class="immudb-feature cn-bg-cyan cn-text-white _display-flex _flex-direction-column">
 								<img class="cn-icon" src="/icons/sdk.svg">
@@ -124,15 +124,7 @@ export default {
 	}
 
 	@media screen and (max-width: $mobile-max-width) {
-		.container {
-			padding: 0 22px !important;
-			width: 100% !important;
-			min-width: 100%;
-		}
-
 		.column {
-			padding: 8px !important;
-
 			.section-header {
 				margin-bottom: -16px !important;
 			}
@@ -140,15 +132,25 @@ export default {
 			.immudb-feature {
 				margin: 0 !important;
 				width: 100% !important;
+
+				h4 {
+					font-size: 20px;
+				}
 			}
 		}
 	}
 
 	@media screen and (max-width: 768px) {
+		.box {
+			padding: 4px !important;
+		}
+
 		.immudb-feature {
+			padding: 20px 10px;
+
 			h4 {
 				min-height: 32px;
-				font-size: 0.75rem;
+				font-size: 16px !important;
 			}
 		}
 	}

@@ -73,6 +73,12 @@ export default {
 		padding: 24px 24px;
 		justify-content: stretch;
 
+		@media screen and (max-width: $mobile-max-width) {
+			max-width: 100%;
+			padding: 16px 16px;
+			min-height: auto;
+		}
+
 		h3 {
 			margin: 0 !important;
 		}
@@ -116,6 +122,7 @@ export default {
 		.card-picture {
 			height: 64px;
 			width: 150px;
+			margin-bottom: 0;
 		}
 
 		h3 {
@@ -131,6 +138,12 @@ export default {
 	@media screen and (max-width: $mobile-max-width) {
 		max-width: 150px;
 		height: 150px;
+
+		p,
+		b {
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 }
 </style>

@@ -158,7 +158,7 @@ export default {
 
 		@media screen and (max-width: 767px) {
 			max-width: 250px;
-			top: -21px;
+			top: -4px;
 		}
 	}
 
@@ -179,8 +179,6 @@ export default {
 	}
 
 	@include breakpoint-down(sm) {
-		margin-bottom: -260px;
-
 		.floating-container {
 			position: relative;
 			margin: 0 !important;
@@ -190,7 +188,7 @@ export default {
 		}
 
 		.slick-slider {
-			padding: 16px 16px 32px 16px !important;
+			padding: 16px 16px 0 16px !important;
 
 			.slick-arrow {
 				z-index: 1;

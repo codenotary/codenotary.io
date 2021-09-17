@@ -2,6 +2,7 @@
 	<PageSection
 		id="immudb-webconsole"
 		:top="2"
+		:top-x="8"
 	>
 		<i-container>
 			<i-row middle>
