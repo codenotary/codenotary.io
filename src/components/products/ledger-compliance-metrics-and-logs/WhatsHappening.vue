@@ -4,7 +4,7 @@
 			What's happening at metrics and logs
 		</h4>
 		<v-carousel
-			v-model="currentFeature"
+			v-model="currentFeatureIndex"
 			hide-delimiters
 			:height="null"
 			class="mt-n10"
@@ -50,16 +50,16 @@
 						</v-col>
 					</v-row>
 				</v-container>
+				<div class="delimiters d-flex justify-center align-center mt-4 mt-md-6">
+					<div
+						v-for="(feature, featureIndex) in features"
+						:key="feature.text"
+						:class="[featureIndex === currentFeatureIndex ? 'accent' : 'info', { 'ml-4': featureIndex > 0 }]"
+						class="delimiter rounded-xl cursor-pointer"
+						@click="currentFeatureIndex = featureIndex"
+					/>
+				</div>
 			</v-carousel-item>
-			<div class="delimiters d-flex justify-center align-center mt-4 mt-md-6">
-				<div
-					v-for="({ text }, index) in features"
-					:key="text"
-					:class="[index === currentFeature ? 'accent' : 'info', { 'ml-1': index > 0 }]"
-					class="delimiter rounded-xl cursor-pointer"
-					@click="currentFeature = index"
-				/>
-			</div>
 		</v-carousel>
 		<div class="d-flex justify-center mt-4 mt-md-6">
 			<v-btn
@@ -116,23 +116,23 @@ export default {
 					text: 'Monitor MSSQL-Server performance over time - see CPU and Memory, and many specific details.',
 				},
 			],
-			currentFeature: 0,
+			currentFeatureIndex: 0,
 		};
 	},
 	methods: {
 		prevSlide() {
-			const newSlideIndex = this.currentFeature > 0
-				? this.currentFeature - 1
+			const newSlideIndex = this.currentFeatureIndex > 0
+				? this.currentFeatureIndex - 1
 				: this.features.length - 1;
 
-			this.currentFeature = newSlideIndex;
+			this.currentFeatureIndex = newSlideIndex;
 		},
 		nextSlide() {
-			const newSlideIndex = this.currentFeature < this.features.length - 1
-				? this.currentFeature + 1
+			const newSlideIndex = this.currentFeatureIndex < this.features.length - 1
+				? this.currentFeatureIndex + 1
 				: 0;
 
-			this.currentFeature = newSlideIndex;
+			this.currentFeatureIndex = newSlideIndex;
 		},
 	},
 };

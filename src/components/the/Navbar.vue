@@ -6,7 +6,7 @@
 		elevation="2"
 		clipped-left
 		app
-		height="100"
+		:height="scrolled? 70 : 100"
 	>
 		<v-container
 			class="ma-0 d-flex flex-column justify-start align-center"
@@ -58,7 +58,6 @@
 					<v-menu
 						v-if="!mobile"
 						v-model="productsMenuOpen"
-						style="overflow: hidden;"
 						:nudge-bottom="48"
 						:max-height="342"
 						left
@@ -67,18 +66,52 @@
 						bottom
 					>
 						<template #activator="{ on, attrs }">
-							<span
-								v-bind="attrs"
-								v-on="on"
-							>
-								Products
-							</span>
+							<v-hover v-slot="{ hover }">
+								<span
+									v-bind="attrs"
+									:class="hover ? 'secondary--text' : 'white--text'"
+									class="text-h6 py-2 px-4"
+									v-on="on"
+								>
+									Products
+								</span>
+							</v-hover>
 						</template>
 						<UiMenuGlobal
 							:scrolled="scrolled"
 							@close="closeNavbar"
 						/>
 					</v-menu>
+
+					<v-hover v-slot="{ hover }">
+						<nuxt-link
+							:to="{ name: 'technologies-immudb' }"
+							:class="hover ? 'secondary--text' : 'white--text'"
+							class="text-h6 py-2 px-4"
+						>
+							immudb
+						</nuxt-link>
+					</v-hover>
+
+					<v-hover v-slot="{ hover }">
+						<nuxt-link
+							:to="{ name: 'blog' }"
+							:class="hover ? 'secondary--text' : 'white--text'"
+							class="text-h6 py-2 px-4"
+						>
+							Blog
+						</nuxt-link>
+					</v-hover>
+
+					<v-hover v-slot="{ hover }">
+						<nuxt-link
+							:to="{ name: 'contact' }"
+							:class="hover ? 'secondary--text' : 'white--text'"
+							class="text-h6 py-2 px-4"
+						>
+							Contact
+						</nuxt-link>
+					</v-hover>
 
 					<!-- <v-menu
 						v-if="user"

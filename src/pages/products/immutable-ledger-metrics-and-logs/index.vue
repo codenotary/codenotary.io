@@ -7,7 +7,9 @@
 			<ProductsLedgerComplianceMetricsAndLogsFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" />
+			<ProductsLedgerComplianceMetricsAndLogsIntegrations
+				:integrations="integrations"
+			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ProductsLedgerComplianceMetricsAndLogsGotYouCovered />
@@ -24,12 +26,18 @@
 			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL :blog-posts="blogPosts" />
+			<ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL
+				:blog-posts="blogPosts"
+			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ProductsLedgerComplianceMetricsAndLogsNewsletter />
 		</LazyHydrate>
-		<ProductsLedgerComplianceMetricsAndLogsSupportQuote id="metrics-and-logs-support-quote" />
+		<ProductsLedgerComplianceMetricsAndLogsSupportQuote
+			id="metrics-and-logs-support-quote"
+			class="d-none"
+		/>
+		<UiDiscordChatWidget id="chat-widget" />
 		<UiModalStartTrial
 			:value="startTrialModalOpen"
 			@close="startTrialModalOpen = false"
@@ -59,7 +67,8 @@ export default {
 
 		const blogPosts = await $content('blog')
 				.only(['title', 'date', 'image'])
-				.where({ tags: { $containsAny: ['metrics', 'logs'] } })
+				.where({ tags: { $containsAny: ['metrics', 'logs', 'opvizor'] } })
+				.limit(25)
 				.fetch();
 
 		return { integrations, blogPosts };
@@ -101,6 +110,13 @@ export default {
 		right: 0;
 		bottom: 32px;
 		z-index: 5;
+	}
+
+	#chat-widget {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 100;
 	}
 }
 </style>

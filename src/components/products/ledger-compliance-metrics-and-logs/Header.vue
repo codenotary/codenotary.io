@@ -83,7 +83,7 @@
 		</v-container>
 		<client-only>
 			<div class="gradient-box" />
-			<div class="secondary-box" :style="{ bottom: rightBarBottom }" />
+			<div class="secondary-box" :style="computedStyle" />
 		</client-only>
 	</v-container>
 </template>
@@ -104,8 +104,15 @@ export default {
 				'Microsoft SQL',
 				'PostgreSQL',
 			],
-			rightBarBottom: '0px',
+			rightBarBottom: 0,
 		};
+	},
+	computed: {
+		computedStyle() {
+			return {
+				bottom: `${ this.rightBarBottom }px`,
+			};
+		},
 	},
 	mounted() {
 		if (typeof window !== 'undefined') {
@@ -123,7 +130,7 @@ export default {
 			const secondaryDegrees = window.innerWidth >= 2800 ? 1 : window.innerWidth <= 991 ? 5 : 3; // Skew of the secondary div
 			const gradientLineLength = window.innerWidth / Math.sin((90 - gradientDegrees) * Math.PI / 180) * Math.sin(90 * Math.PI / 180); // How long is the oblique line of the gradient div
 			const secondaryLineSideLength = gradientLineLength / 2 / Math.sin((90 - secondaryDegrees) * Math.PI / 180) * Math.sin((gradientDegrees + secondaryDegrees) * Math.PI / 180); // How long is the right side of the secondary div
-			this.rightBarBottom = (-secondaryLineSideLength + (window.innerWidth <= 991 ? 50 : 100)) + 'px'; // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
+			this.rightBarBottom = (-secondaryLineSideLength + (window.innerWidth <= 991 ? 50 : 100)); // How far should I move the secondary div to the bottom in order to meet the gradient div exactly in the middle
 		},
 	},
 };
@@ -176,7 +183,7 @@ export default {
 			}
 		}
 
-		@media (max-width: $xs) {
+		@media (max-width: 991px) {
 			transform: skewY(-8deg);
 			bottom: 50px;
 
@@ -212,7 +219,7 @@ export default {
 			transform: skewY(1deg);
 		}
 
-		@media (max-width: $xs) {
+		@media (max-width: 991px) {
 			transform: skewY(5deg);
 		}
 	}

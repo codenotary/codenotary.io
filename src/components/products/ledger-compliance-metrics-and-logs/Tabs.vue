@@ -19,6 +19,7 @@
 							v-for="({ tabTitle }, index) in tabs"
 							:key="tabTitle"
 							:ripple="false"
+							:class="{ 'ml-n5': index > 0 }"
 						>
 							<v-sheet
 								elevation="3"

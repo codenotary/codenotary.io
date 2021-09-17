@@ -1,7 +1,7 @@
 <template>
 	<v-container
 		fluid
-		class="lighter-gray"
+		class="lighter-gray mt-10"
 	>
 		<v-container>
 			<h4 class="text-center text-uppercase brand--text font-weight-700 text-h4 mb-4">
