@@ -13,7 +13,7 @@
 			<ProductsLedgerComplianceMetricsAndLogsGotYouCovered />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<!-- <ProductsLedgerComplianceMetricsAndLogsTabs /> -->
+			<ProductsLedgerComplianceMetricsAndLogsTabs />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
 			<ProductsLedgerComplianceMetricsAndLogsHowItWorks />
