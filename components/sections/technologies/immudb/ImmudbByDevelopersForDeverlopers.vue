@@ -1,5 +1,8 @@
 <template>
-	<PageSection id="immudb-by-developers-for-developers">
+	<PageSection
+		id="immudb-by-developers-for-developers"
+		:bottom-md="2"
+	>
 		<i-container class="floating-container">
 			<i-row>
 				<i-column>

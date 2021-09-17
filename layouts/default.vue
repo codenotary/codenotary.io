@@ -67,6 +67,10 @@ section.default-layout {
 		top: 0;
 		left: 0;
 		padding: 0;
+
+		@media screen and (max-width: $mobile-max-width) {
+			height: #{$cn-navbar-scrolled-height}px;
+		}
 	}
 
 	#content {

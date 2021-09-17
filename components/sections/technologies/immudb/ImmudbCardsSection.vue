@@ -57,7 +57,6 @@ export default {
 
 	@media screen and (max-width: $mobile-max-width) {
 		align-items: start;
-		padding: 0 0 16px 0 !important;
 		margin-bottom: -18px !important;
 		width: 100% !important;
 		min-width: 100%;

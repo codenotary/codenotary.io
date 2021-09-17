@@ -292,6 +292,10 @@ $mascot-height-small: 100px;
 	max-height: 480px;
 	object-fit: contain;
 
+	@media screen and (max-width: 1080px) {
+		max-height: 380px;
+	}
+
 	@media screen and (max-width: $mobile-max-width) {
 		width: 100%;
 		max-width: unset;

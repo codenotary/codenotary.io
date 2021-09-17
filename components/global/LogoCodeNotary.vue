@@ -37,6 +37,11 @@ span {
 	position: relative;
 	transition: transform 0.3s linear;
 
+	@media screen and (max-width: $mobile-max-width) {
+		width: 150px;
+		height: 40.64px;
+	}
+
 	img {
 		width: 200px;
 		height: auto;

@@ -117,6 +117,10 @@ export default {
 	min-height: 220px;
 	overflow: unset !important;
 
+	@media screen and (max-width: $mobile-max-width) {
+		min-height: 150px;
+	}
+
 	.floating-container {
 		position: absolute;
 		bottom: -140px;
@@ -153,6 +157,10 @@ export default {
 			object-fit: contain !important;
 			height: 130px;
 			transition: transform 100ms linear;
+
+			@media screen and (max-width: 1080px) {
+				height: 100px;
+			}
 
 			&:hover {
 				transform: scale(1.15);

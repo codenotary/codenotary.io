@@ -3,6 +3,7 @@
 		id="immudb-easy-setup-section"
 		:top="6"
 		:top-xl="6"
+		:top-sm="4"
 		:bottom="6"
 		:bottom-xl="6"
 	>

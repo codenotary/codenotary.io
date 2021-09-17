@@ -93,6 +93,18 @@ section.immudb-star-banner-layout {
 		left: 0;
 		padding: 0;
 		border-bottom: 1px solid $cn-color-light;
+
+		@media screen and (max-width: $mobile-max-width) {
+			height: #{$cn-navbar-scrolled-height}px !important;
+		}
+
+		.navbar-items {
+			top: #{$cn-navbar-height}px !important;
+
+			@media screen and (max-width: $mobile-max-width) {
+				top: #{$cn-navbar-height}px !important;
+			}
+		}
 	}
 
 	.global-menu {
@@ -136,30 +148,6 @@ section.immudb-star-banner-layout {
 
 		#content {
 			margin-top: #{$cn-navbar-height}px !important;
-		}
-	}
-
-	@media screen and (max-width: $mobile-max-width) {
-		#immudbStarBanner {
-			height: #{$banner-height * 2}px;
-			padding: 0;
-
-			span {
-				font-size: 0.9rem;
-			}
-		}
-
-		#navbar {
-			position: fixed;
-			top: #{$banner-height * 2}px !important;
-			left: 0;
-			width: 100%;
-			z-index: 999;
-			transition: all 0.15s ease-out;
-		}
-
-		#content {
-			margin-top: #{$banner-height * 2 + $cn-navbar-height}px !important;
 		}
 	}
 }

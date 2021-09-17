@@ -108,8 +108,7 @@ section.immudb-star-banner {
 
 	@media (max-width: 480px) {
 		.close-button {
-			top: 0.8rem;
-			right: 0.4rem;
+			right: 0.2rem;
 		}
 	}
 }

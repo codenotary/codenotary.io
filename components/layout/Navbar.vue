@@ -192,7 +192,7 @@ export default {
 			transition: all 0.15s ease-out;
 			position: fixed;
 			left: 0;
-			top: #{$cn-navbar-height}px;
+			top: #{$cn-navbar-scrolled-height}px;
 
 			& > .nav {
 				width: 100%;

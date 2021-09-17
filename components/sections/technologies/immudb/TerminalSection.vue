@@ -200,6 +200,10 @@ export default {
 	height: 730px !important;
 	overflow: unset !important;
 
+	@media screen and (max-width: $mobile-max-width) {
+		height: 640px !important;
+	}
+
 	.floating-container {
 		position: absolute;
 		top: -67px;
@@ -272,7 +276,7 @@ export default {
 		background: $cn-color-dark;
 	}
 
-	@media screen and (max-width: 979px) {
+	@media screen and (max-width: 768px) {
 		text-align: center;
 
 		.inverse {
