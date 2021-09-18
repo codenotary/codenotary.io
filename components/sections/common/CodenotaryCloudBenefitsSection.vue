@@ -2,7 +2,6 @@
 	<PageSection
 		id="benefits-section"
 		variant="transparent"
-		512
 		:top-xs="2"
 		:top-md="5"
 		:top-lg="1"
