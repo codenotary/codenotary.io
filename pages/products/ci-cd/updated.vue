@@ -1,9 +1,9 @@
 <template>
 	<div id="codenotary-cloud">
-		<PageHeader />
+		<CodenotaryCloudPageHeader />
 
 		<LazyHydrate when-visible>
-			<CodenotaryCloudCNILSection id="cnil-section" class="section" />
+			<CodenotaryCloudBenefitsSection class="section" />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
@@ -12,10 +12,6 @@
 
 		<LazyHydrate when-visible>
 			<BOMInfoSection class="section" />
-		</LazyHydrate>
-
-		<LazyHydrate when-visible>
-			<BenefitsSection class="section" />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>

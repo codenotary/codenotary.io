@@ -42,7 +42,7 @@
 import homepageContent from '@/content/homepage';
 
 export default {
-	name: 'CodenotaryCloud',
+	name: 'CodenotaryCloudDescription',
 	data() {
 		return {
 			content: homepageContent.codenotaryCloud,

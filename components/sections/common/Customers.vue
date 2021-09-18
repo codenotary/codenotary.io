@@ -65,7 +65,7 @@
 import colorUtils from '~/mixins/colorUtils';
 
 export default {
-	name: 'ImmudbUsers',
+	name: 'Customers',
 	mixins: [colorUtils],
 	data: () => ({
 		items: [

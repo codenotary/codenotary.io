@@ -7,17 +7,21 @@
 			<i-row class="_align-items-center main-content">
 				<i-column lg="5" class="_padding-x-0 content">
 					<h2 class="_font-weight-bold cn-text-white title first">
-						{{ content.headerSection.title1 }}
+						{{ content.title1 }}
 					</h2>
 					<h2 class="_font-weight-bold cn-text-secondary title first">
-						{{ content.headerSection.title2 }}
+						{{ content.title2 }}
 					</h2>
 					<h2 class="_font-weight-bold cn-text-white title second">
-						{{ content.headerSection.title3 }}
+						{{ content.title3 }}
 					</h2>
 
-					<p class="lead cn-text-muted_blue subtitle cn-text-sm">
-						{{ content.headerSection.subtitle }}
+					<p
+						v-for="subtitle in content.subtitles"
+						:key="subtitle"
+						class="lead cn-text-muted_blue subtitle cn-text-sm"
+					>
+						{{ subtitle }}
 					</p>
 					<!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
 					<!--					Powered by the world’s fastest immutable database.-->
@@ -28,7 +32,7 @@
 							size="lg"
 							@click.native="startFreeTrialModalOpen = true"
 						>
-							FREE TRIAL
+							Demo
 						</cn-button>
 						<!--
 						<cn-button
@@ -87,17 +91,17 @@
 
 <script>
 import LazyHydrate from 'vue-lazy-hydration';
-import homepage from '@/content/homepage';
+import codenotaryCloudContent from '@/content/codenotaryCloud';
 import { eventHub } from '@/helpers/eventhub';
 
 export default {
-	name: 'PageHeader',
+	name: 'CodenotaryCloudPageHeader',
 	components: {
 		LazyHydrate,
 	},
 	data() {
 		return {
-			content: homepage,
+			content: codenotaryCloudContent.header,
 			playing: false,
 			timeout: null,
 			rightBarBottom: '0px',
