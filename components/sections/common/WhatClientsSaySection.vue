@@ -5,6 +5,7 @@
 		:top-md="0"
 		:top-sm="0"
 		:top-xs="0"
+		:style="`height: ${height}px`"
 	>
 		<i-container class="floating-container">
 			<i-row>
@@ -61,6 +62,12 @@
 <script>
 export default {
 	name: 'WhatClientsSaySection',
+	props: {
+		height: {
+			type: [Number, String],
+			default: 610,
+		},
+	},
 	data() {
 		return {
 			settings: {
@@ -133,7 +140,6 @@ export default {
 #what-clients-say-section {
 	position: relative;
 	background-color: $cn-color-background;
-	height: 610px !important;
 	overflow: unset !important;
 
 	.title {

@@ -1,17 +1,13 @@
 <template>
-	<div id="homepage">
+	<div id="codenotary-cloud">
 		<PageHeader />
 
 		<LazyHydrate when-visible>
-			<CNILSection id="cnil-section" class="section" />
+			<CodenotaryCloudCNILSection id="cnil-section" class="section" />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<ImmudbBuiltOnSection class="section" />
-		</LazyHydrate>
-
-		<LazyHydrate when-visible>
-			<TrustedSupplyChainSection overflow-top class="section" />
+			<TrustedSupplyChainSection class="section" />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
@@ -26,12 +22,8 @@
 			<WhatWeDoSection class="section" />
 		</LazyHydrate>
 
-		<!-- <LazyHydrate when-visible>
-			<CNILAroundTheWorldSection class="section" />
-		</LazyHydrate> -->
-
 		<LazyHydrate when-whisible>
-			<CodenotaryCloud class="section" />
+			<CodenotaryCloudDescription class="section" />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
@@ -39,11 +31,7 @@
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<WhatClientsSaySection class="section" />
-		</LazyHydrate>
-
-		<LazyHydrate when-visible>
-			<NewsletterSection id="newsletter-section" class="section" />
+			<WhatClientsSaySection height="450" class="section" />
 		</LazyHydrate>
 	</div>
 </template>
@@ -57,7 +45,7 @@ import {
 import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
-	name: 'Homepage',
+	name: 'CodenotaryCloud',
 	components: {
 		LazyHydrate,
 	},
@@ -84,13 +72,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#homepage {
+#codenotary-cloud {
 	.section {
 		overflow: visible !important;
 	}
 
 	#cnil-section {
-		margin-bottom: calc(-80px - 4rem);
 		padding-top: 20px !important;
 
 		@media screen and (max-width: 768px) {
