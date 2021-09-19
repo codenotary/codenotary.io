@@ -6,7 +6,7 @@
 		elevation="2"
 		clipped-left
 		app
-		:height="scrolled? 70 : 100"
+		:height="scrolled ? 70 : 100"
 	>
 		<v-container
 			class="ma-0 d-flex flex-column justify-start align-center"
@@ -54,119 +54,113 @@
 					</v-btn>
 
 					<v-spacer />
-					<!-- ACTIONS -->
+					<div class="d-none d-md-block">
+						<v-menu
+							v-model="navMenuOpen"
+							:nudge-bottom="48"
+							:max-height="342"
+							:z-index="APP_BAR_Z_INDEX + 5"
+							open-on-hover
+							bottom
+						>
+							<template #activator="{ on, attrs }">
+								<v-hover v-slot="{ hover }">
+									<span
+										v-bind="attrs"
+										:class="hover ? 'secondary--text' : 'white--text'"
+										class="text-h6 py-2 px-4"
+										v-on="on"
+									>
+										Products
+									</span>
+								</v-hover>
+							</template>
+							<v-card
+								style="
+									width: 100vw;
+									max-width: 100%;
+									height: 350px;"
+							>
+								<UiMenuGlobal
+									:scrolled="scrolled"
+									@close="closeNavbar"
+								/>
+							</v-card>
+						</v-menu>
+
+						<v-hover
+							v-for="{ text, to } in links"
+							:key="text"
+							v-slot="{ hover }"
+						>
+							<nuxt-link
+								:to="to"
+								:class="hover ? 'secondary--text' : 'white--text'"
+								class="text-h6 py-2 px-4"
+							>
+								{{ text }}
+							</nuxt-link>
+						</v-hover>
+					</div>
 					<v-menu
-						v-if="!mobile"
-						v-model="productsMenuOpen"
-						:nudge-bottom="48"
-						:max-height="342"
-						left
-						:z-index="APP_BAR_Z_INDEX + 5"
-						open-on-hover
+						v-model="mobileNavMenuOpen"
+						open-on-click
+						:nudge-bottom="40"
 						bottom
+						:close-on-content-click="false"
+						class="d-md-none"
 					>
 						<template #activator="{ on, attrs }">
-							<v-hover v-slot="{ hover }">
-								<span
-									v-bind="attrs"
-									:class="hover ? 'secondary--text' : 'white--text'"
-									class="text-h6 py-2 px-4"
-									v-on="on"
-								>
-									Products
-								</span>
-							</v-hover>
-						</template>
-						<UiMenuGlobal
-							:scrolled="scrolled"
-							@close="closeNavbar"
-						/>
-					</v-menu>
-
-					<v-hover v-slot="{ hover }">
-						<nuxt-link
-							:to="{ name: 'technologies-immudb' }"
-							:class="hover ? 'secondary--text' : 'white--text'"
-							class="text-h6 py-2 px-4"
-						>
-							immudb
-						</nuxt-link>
-					</v-hover>
-
-					<v-hover v-slot="{ hover }">
-						<nuxt-link
-							:to="{ name: 'blog' }"
-							:class="hover ? 'secondary--text' : 'white--text'"
-							class="text-h6 py-2 px-4"
-						>
-							Blog
-						</nuxt-link>
-					</v-hover>
-
-					<v-hover v-slot="{ hover }">
-						<nuxt-link
-							:to="{ name: 'contact' }"
-							:class="hover ? 'secondary--text' : 'white--text'"
-							class="text-h6 py-2 px-4"
-						>
-							Contact
-						</nuxt-link>
-					</v-hover>
-
-					<!-- <v-menu
-						v-if="user"
-						v-model="userMenuOpen"
-						left
-						:nudge-bottom="48"
-						:z-index="APP_BAR_Z_INDEX + 5"
-					>
-						<template #activator="{ on, attrs }">
-							<v-btn
-								text
-								dense
+							<v-icon
+								class="d-md-none white--text"
 								v-bind="attrs"
 								v-on="on"
 							>
-								<span
-									v-if="!mobile"
-									class="grey--text text--darken-2"
-								>
-									{{ user.username }}
-								</span>
-								<fa
-									class="ml-2 grey--text text--darken-2 title"
-									:icon="['fas', 'user-circle']"
-								/>
-								<fa
-									class="ml-2 grey--text text--darken-2 subtitle-1"
-									:icon="['fas', 'caret-down']"
-								/>
-							</v-btn>
+								{{ mdiMenu }}
+							</v-icon>
 						</template>
-
-						<v-list class="alerts-panel">
-							<v-list-item
-								:to="{ name: 'profile' }"
-								nuxt
+						<v-sheet
+							tile
+							elevation="0"
+							class="mobile-nav-bar py-10"
+						>
+							<v-expansion-panels accordion style="box-shadow: none;">
+								<v-expansion-panel
+									active-class="TEST"
+									style="background-color: transparent;"
+								>
+									<v-expansion-panel-header hide-actions>
+										<p class="text-center text-h6 mb-0 white--text">
+											Products
+										</p>
+									</v-expansion-panel-header>
+									<v-expansion-panel-content eager>
+										<nuxt-link
+											v-for="{ title, internalLink } in products"
+											:key="title"
+											:to="internalLink"
+											tag="p"
+											class="text-center text-h6 white--text mb-0"
+											@click.native="mobileNavMenuOpen = false"
+										>
+											{{ title }}
+										</nuxt-link>
+									</v-expansion-panel-content>
+								</v-expansion-panel>
+							</v-expansion-panels>
+							<nuxt-link
+								v-for="{ text, to } in links"
+								:key="text"
+								:to="to"
+								tag="p"
+								class="text-h6 py-4 white--text text-center mb-0"
+								style="border-top: 1px solid var(--v-accent-base);"
+								@click.native="mobileNavMenuOpen = false"
 							>
-								<v-list-item-title class="d-flex justify-start align-center">
-									<span class="body-2">
-										{{ $t('navbar.profile') }}
-									</span>
-								</v-list-item-title>
-							</v-list-item>
-							<v-list-item
-								:to="{ name: 'token' }"
-								nuxt
-							>
-								<v-list-item-title class="d-flex justify-start align-center">
-									<span class="body-2">
-										{{ $t('tokens.pageTitle') }}
-									</span>
-								</v-list-item-title>
-							</v-list-item>
-						</v-list>
-					</v-menu> -->
+								{{ text }}
+							</nuxt-link>
+						</v-sheet>
+					</v-menu>
 				</v-col>
 			</v-row>
 		</v-container>
@@ -175,6 +169,8 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import { mdiMenu } from '@mdi/js';
+
 import {
 	VIEW_MODULE,
 	MOBILE,
@@ -182,6 +178,8 @@ import {
 	NAVBAR_BACKGROUND,
 } from '@/store/view/constants';
 import { eventHub } from '@/helpers/eventhub';
+
+import global from '@/content/global';
 
 const APP_BAR_Z_INDEX = 50;
 
@@ -197,8 +195,32 @@ export default {
 		return {
 			APP_BAR_Z_INDEX,
 			isNavbarCollapsed: false,
-			productsMenuOpen: false,
+			navMenuOpen: false,
+			mobileNavMenuOpen: false,
+			mobileProductsMenuOpen: false,
 			technologiesMenuOpen: false,
+			mdiMenu,
+			products: global.menu.products,
+			links: [
+				{
+					text: 'immudb',
+					to: {
+						name: 'technologies-immudb',
+					},
+				},
+				{
+					text: 'Blog',
+					to: {
+						name: 'blog',
+					},
+				},
+				{
+					text: 'Contact',
+					to: {
+						name: 'contact',
+					},
+				},
+			],
 		};
 	},
 	computed: {
@@ -242,5 +264,20 @@ export default {
 		background-image: $cn-dark-gradient;
 		justify-content: center;
 	}
+}
+
+.v-menu__content {
+	max-width: 100vw !important;
+	left: 0 !important;
+	border-radius: 0 !important;
+}
+
+.mobile-nav-bar {
+	background: $cn-dark-gradient;
+	width: 100vw;
+}
+
+.v-expansion-panel::before {
+	box-shadow: none !important;
 }
 </style>

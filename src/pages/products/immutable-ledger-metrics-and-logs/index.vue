@@ -35,9 +35,7 @@
 		</LazyHydrate>
 		<ProductsLedgerComplianceMetricsAndLogsSupportQuote
 			id="metrics-and-logs-support-quote"
-			class="d-none"
 		/>
-		<UiDiscordChatWidget id="chat-widget" />
 		<UiModalStartTrial
 			:value="startTrialModalOpen"
 			@close="startTrialModalOpen = false"

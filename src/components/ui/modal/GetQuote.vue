@@ -32,10 +32,10 @@
 import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 import { mdiClose } from '@mdi/js';
 
-const ACTIVE_CAMPAIGN_FORM_ID = 24;
+const ACTIVE_CAMPAIGN_FORM_ID = 29;
 
 export default {
-	name: 'UiModalNewsletter',
+	name: 'UiModalGetQuote',
 	mixins: [scriptInjectMixin],
 	props: {
 		value: {
@@ -74,8 +74,8 @@ export default {
 	.body {
 		background: var(--v-light-base);
 
-		div._form_24 {
-			form._form._form_24 {
+		div._form_29 {
+			form._form._form_29 {
 				width: 100% !important;
 				margin: 0 !important;
 				padding: 0 !important;
@@ -149,7 +149,7 @@ export default {
 					display: flex;
 					justify-content: center;
 
-					button#_form_24_submit {
+					button#_form_29_submit {
 						width: auto;
 						background-color: var(--v-secondary-base) !important;
 						font-size: 16px !important;

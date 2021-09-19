@@ -62,7 +62,7 @@ export default {
 	height: 350px;
 	background-color: white;
 	color: var(--v-primary-darken3) !important;
-	top: #{$cn-navbar-height}px;
+	// top: #{$cn-navbar-height}px;
 	left: 0;
 	display: flex;
 	flex-direction: row;
@@ -75,9 +75,9 @@ export default {
 		display: none;
 	}
 
-	&.scrolled {
-		top: #{$cn-navbar-scrolled-height}px;
-	}
+	// &.scrolled {
+	// 	top: #{$cn-navbar-scrolled-height}px;
+	// }
 
 	//@media screen and (max-width: 991px) {
 	//	flex-direction: column;
@@ -135,8 +135,8 @@ export default {
 					content: '';
 					height: 7px;
 					width: 100%;
-					bottom: 7px;
-					background-color: var(--v-primary-lighten2);
+					top: 10px;
+					background-color: var(--v-accent-lighten2);
 					position: absolute;
 					z-index: -1;
 				}
