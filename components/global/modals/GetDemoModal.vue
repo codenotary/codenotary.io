@@ -6,7 +6,7 @@
 		@input="$emit('input', $event)"
 	>
 		<template slot="header">
-			Start your trial
+			Get demo
 		</template>
 		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 		<div
@@ -28,7 +28,7 @@ import scriptInjectMixin from '@/mixins/scriptInjectMixin';
 const ACTIVE_CAMPAIGN_FORM_ID = 27;
 
 export default {
-	name: 'StartTrialModal',
+	name: 'GetDemoModal',
 	mixins: [scriptInjectMixin],
 	props: {
 		value: {

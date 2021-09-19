@@ -1,7 +1,7 @@
 <template>
-	<div class="home-header-container">
+	<div class="cncl-page-header-container">
 		<i-header
-			id="home-header"
+			id="cncl-page-header"
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
@@ -30,9 +30,9 @@
 						<cn-button
 							variant="secondary"
 							size="lg"
-							@click.native="startFreeTrialModalOpen = true"
+							@click.native="getDemoModalOpen = true"
 						>
-							Demo
+							GET DEMO
 						</cn-button>
 						<!--
 						<cn-button
@@ -83,8 +83,8 @@
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="computedStyle" />
 		</client-only>
-		<StartFreeTrialModal
-			v-model="startFreeTrialModalOpen"
+		<GetDemoModal
+			v-model="getDemoModalOpen"
 		/>
 	</div>
 </template>
@@ -105,7 +105,7 @@ export default {
 			playing: false,
 			timeout: null,
 			rightBarBottom: '0px',
-			startFreeTrialModalOpen: false,
+			getDemoModalOpen: false,
 		};
 	},
 	computed: {
@@ -167,7 +167,7 @@ export default {
 $mascot-height: 164px;
 $mascot-height-small: 100px;
 
-#home-header {
+#cncl-page-header {
 	background: transparent;
 	z-index: 3;
 	position: relative;
@@ -181,7 +181,7 @@ $mascot-height-small: 100px;
 	}
 }
 
-::v-deep #home-header {
+::v-deep #cncl-page-header {
 	overflow-x: hidden;
 	width: 100%;
 
@@ -266,7 +266,7 @@ $mascot-height-small: 100px;
 	}
 }
 
-.home-header-container {
+.cncl-page-header-container {
 	position: relative;
 	background-color: $cn-color-background;
 
@@ -284,6 +284,7 @@ $mascot-height-small: 100px;
 	bottom: 100px;
 	left: 0;
 	transform: skewY(-5deg);
+	transform-origin: right;
 	-webkit-transform-origin: right;
 	z-index: 2;
 	box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
@@ -323,6 +324,7 @@ $mascot-height-small: 100px;
 	position: absolute;
 	right: 0;
 	height: 100%;
+	transform-origin: right;
 	-webkit-transform-origin: right;
 	transform: skewY(3deg);
 	z-index: 1;
