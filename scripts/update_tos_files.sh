@@ -3,7 +3,7 @@
 echo "updating t json list file"
 
 # change directory temporaly to ./pages/terms-of-service/
-pushd './pages/terms-of-service/'
+pushd './src/pages/terms-of-service/'
 
 TOS_FILE='../../tos.json'
 

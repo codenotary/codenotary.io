@@ -3,7 +3,7 @@
 echo "updating careers json list file"
 
 # change directory temporaly to ./pages/careers
-pushd './pages/join/'
+pushd './src/pages/join/'
 
 CAREERS_FILE='../../careers.json'
 

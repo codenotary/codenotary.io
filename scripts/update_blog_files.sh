@@ -3,7 +3,7 @@
 echo "updating blog json list file"
 
 # change directory temporaly to ./pages/blog
-pushd './pages/blog/'
+pushd './src/pages/blog/'
 
 BLOG_FILE='../../blog.json'
 
