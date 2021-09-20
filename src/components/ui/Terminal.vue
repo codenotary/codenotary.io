@@ -108,7 +108,7 @@ export default {
 				display: block;
 				margin: 0;
 				padding: 1rem;
-				background: var(--v-primary-darken3) !important;
+				background: var(--v-dark-base) !important;
 				box-sizing: border-box;
 				overflow: auto;
 				border-radius: 0;

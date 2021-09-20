@@ -1,123 +1,165 @@
 <template>
 	<v-app-bar
-		id="navbar"
-		:class="{
-			'-scrolled': scrolled,
-		}"
-		:elevation="2"
+		id="TheAppBar"
+		class="bg-secondary justify-start align-center ma-0 pb-16 mb-n16"
+		:style="`z-index: ${ APP_BAR_Z_INDEX }`"
+		elevation="2"
+		clipped-left
+		app
+		:height="scrolled ? 70 : 100"
 	>
-		<v-app-bar-nav-icon
-			:to="{ name: 'index' }"
-			class="pa-0"
-		>
-			<img
-				class="logo py-4-2"
-				:src="`/images/logo/logo_white.svg`"
-				alt="CodeNotary"
-				height="80"
-			>
-		</v-app-bar-nav-icon>
 		<v-container
-			class="ma-0 pa-0 d-flex flex-column justify-start align-center"
-			fluid
+			class="ma-0 d-flex flex-column justify-start align-center"
 		>
 			<v-row class="h-64 ma-0 pa-0 d-flex flex-start align-center fill-width">
 				<v-col
 					class="ma-0 pa-0 d-flex align-center"
 					cols="12"
 				>
-					<div class="d-none-md-and-down">
-						<v-menu
-							ref="dropdownRef"
-							class="navbar-dropdown _visible-lg-and-up"
-							trigger="hover"
-							:value="productsMenuOpen"
-							@change="productsMenuOpen = $event"
+					<!-- LOGO -->
+					<div
+						v-if="mobile"
+						class="d-flex justify-center align-center"
+					>
+						<v-btn
+							class="d-flex justify-center align-center no-hover no-active"
+							:width="48"
+							:ripple="false"
+							depressed
+							icon
+							@click="onCollapse"
 						>
-							<div
-								class="product-toggle"
-								:class="{
-									'-active': subRouteActive('/products'),
-									'open': productsMenuOpen,
-								}"
+							<fa
+								class="grey--text text--darken-2 headline"
+								:icon="['fas', 'bars']"
+							/>
+						</v-btn>
+					</div>
+					<v-btn
+						v-else
+						class="ma-0 pa-0 d-flex justify-start align-center no-hover no-active"
+						:to="{ name: 'index' }"
+						:ripple="false"
+						width="214"
+						min-width="214"
+						depressed
+						text
+						nuxt
+					>
+						<TheLogo
+							class="no-transation d-flex justify-start align-center fill-width"
+							size="small"
+							:icon="false"
+						/>
+					</v-btn>
+
+					<v-spacer />
+					<div class="d-none d-md-block">
+						<v-menu
+							v-model="navMenuOpen"
+							:nudge-bottom="scrolled ? 54 : 70"
+							:max-height="342"
+							:z-index="APP_BAR_Z_INDEX + 5"
+							bottom
+						>
+							<template #activator="{ on, attrs }">
+								<v-hover v-slot="{ hover }">
+									<span
+										v-bind="attrs"
+										:class="hover ? 'secondary--text' : 'white--text'"
+										class="text-h6 py-2 px-4"
+										v-on="on"
+									>
+										Products
+									</span>
+								</v-hover>
+							</template>
+							<v-card
+								style="
+									width: 100vw;
+									max-width: 100%;
+									height: 350px;"
 							>
-								Products
-							</div>
-							<v-menu>
 								<UiMenuGlobal
 									:scrolled="scrolled"
 									@close="closeNavbar"
 								/>
-							</v-menu>
+							</v-card>
 						</v-menu>
-					</div>
-					<div class="d-none-lg-and-up">
-						<p
-							class="header"
-							:class="{'cn-text-secondary': productsMenuOpen, 'white--text': !productsMenuOpen}"
-							@click.prevent.stop="productsMenuOpen = !productsMenuOpen"
-						>
-							Products
-						</p>
-						<div
-							v-if="productsMenuOpen"
-							:to="{ name: 'products-ci-cd' }"
-						>
-							CNIL Cloud
-						</div>
-						<div
-							v-if="productsMenuOpen"
-							:to="{ name: 'products-immutable-ledger-metrics-and-logs' }"
-						>
-							CNIL Metrics and Logs
-						</div>
-					</div>
 
-					<div
-						class="white--text"
-						:to="{ name: 'technologies-immudb' }"
+						<v-hover
+							v-for="{ text, to } in links"
+							:key="text"
+							v-slot="{ hover }"
+						>
+							<nuxt-link
+								:to="to"
+								:class="hover ? 'secondary--text' : 'white--text'"
+								class="text-h6 py-2 px-4"
+							>
+								{{ text }}
+							</nuxt-link>
+						</v-hover>
+					</div>
+					<v-menu
+						v-model="mobileNavMenuOpen"
+						open-on-click
+						:nudge-bottom="40"
+						bottom
+						:close-on-content-click="false"
+						class="d-md-none"
 					>
-						immudb
-					</div>
-
-					<!-- BLOG POSTS -->
-					<div
-						class="white--text"
-						:to="{ name: 'blog' }"
-					>
-						Blog
-					</div>
-
-					<!-- CONTACT US -->
-					<div
-						:to="{ name: 'contact' }"
-					>
-						Contact us
-					</div>
-
-					<!-- CTAs -->
-					<transition name="fade">
-						<UiButtonCn
-							v-if="scrolled && $route.name === 'index'"
-							class="cta-button"
-							variant="secondary"
-							@click.native="onDownloadClick"
+						<template #activator="{ on, attrs }">
+							<v-icon
+								class="d-md-none white--text"
+								v-bind="attrs"
+								v-on="on"
+							>
+								{{ mdiMenu }}
+							</v-icon>
+						</template>
+						<v-sheet
+							tile
+							elevation="0"
+							class="mobile-nav-bar py-10"
 						>
-							Download
-						</UiButtonCn>
-					</transition>
-					<transition name="fade">
-						<UiButtonCn
-							v-if="scrolled && $route.name === 'technologies-immudb'"
-							class="cta-button"
-							variant="secondary"
-							href="https://docs.immudb.io/"
-							target="_blank"
-							rel="nofollow"
-						>
-							Documentation
-						</UiButtonCn>
-					</transition>
+							<v-expansion-panels accordion style="box-shadow: none;">
+								<v-expansion-panel
+									active-class="TEST"
+									style="background-color: transparent;"
+								>
+									<v-expansion-panel-header hide-actions>
+										<p class="text-center text-h6 mb-0 white--text">
+											Products
+										</p>
+									</v-expansion-panel-header>
+									<v-expansion-panel-content eager>
+										<nuxt-link
+											v-for="{ title, internalLink } in products"
+											:key="title"
+											:to="internalLink"
+											tag="p"
+											class="text-center text-h6 white--text mb-0"
+											@click.native="mobileNavMenuOpen = false"
+										>
+											{{ title }}
+										</nuxt-link>
+									</v-expansion-panel-content>
+								</v-expansion-panel>
+							</v-expansion-panels>
+							<nuxt-link
+								v-for="{ text, to } in links"
+								:key="text"
+								:to="to"
+								tag="p"
+								class="text-h6 py-4 white--text text-center mb-0"
+								style="border-top: 1px solid var(--v-accent-base);"
+								@click.native="mobileNavMenuOpen = false"
+							>
+								{{ text }}
+							</nuxt-link>
+						</v-sheet>
+					</v-menu>
 				</v-col>
 			</v-row>
 		</v-container>
@@ -126,6 +168,8 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import { mdiMenu } from '@mdi/js';
+
 import {
 	VIEW_MODULE,
 	MOBILE,
@@ -133,6 +177,10 @@ import {
 	NAVBAR_BACKGROUND,
 } from '@/store/view/constants';
 import { eventHub } from '@/helpers/eventhub';
+
+import global from '@/content/global';
+
+const APP_BAR_Z_INDEX = 50;
 
 export default {
 	name: 'TheNavbar',
@@ -144,9 +192,34 @@ export default {
 	},
 	data() {
 		return {
+			APP_BAR_Z_INDEX,
 			isNavbarCollapsed: false,
-			productsMenuOpen: false,
+			navMenuOpen: true,
+			mobileNavMenuOpen: false,
+			mobileProductsMenuOpen: false,
 			technologiesMenuOpen: false,
+			mdiMenu,
+			products: global.menu.products,
+			links: [
+				{
+					text: 'immudb',
+					to: {
+						name: 'technologies-immudb',
+					},
+				},
+				{
+					text: 'Blog',
+					to: {
+						name: 'blog',
+					},
+				},
+				{
+					text: 'Contact',
+					to: {
+						name: 'contact',
+					},
+				},
+			],
 		};
 	},
 	computed: {
@@ -180,359 +253,31 @@ export default {
 </script>
 
 <style lang="scss">
-#navbar {
-	display: none;
+@import '~vuetify/src/styles/styles.sass';
+
+#TheAppBar {
+	transition: height 0.3s ease, color 0.3s ease;
+	background-image: $cn-dark-gradient;
+	border-bottom: 1px solid white;
+
+	.v-toolbar__content {
+		padding: 0 16px 0 4px;
+		justify-content: center;
+	}
 }
-// #navbar {
-// 	z-index: 50;
 
-// 	@media (max-width: $xs) {
-// 		text-align: center;
+.v-menu__content {
+	max-width: 100vw !important;
+	left: 0 !important;
+	border-radius: 0 !important;
+}
 
-// 		&.-scrolled {
-// 			.navbar-items {
-// 				top: #{$cn-navbar-scrolled-height}px;
-// 			}
-// 		}
+.mobile-nav-bar {
+	background: $cn-dark-gradient;
+	width: 100vw;
+}
 
-// 		.navbar-items {
-// 			transition: all 0.15s ease-out;
-// 			position: fixed;
-// 			left: 0;
-// 			top: #{$cn-navbar-height}px;
-
-// 			& > .nav {
-// 				width: 100%;
-// 				background: $cn-dark-gradient;
-
-// 				.dropdown-fallback-nav {
-// 					border-bottom: none;
-
-// 					.item.-disabled {
-// 						font-size: 1rem;
-// 						margin-top: 50px;
-// 					}
-// 				}
-
-// 				.item {
-// 					color: white !important;
-// 					font-weight: bold;
-// 					font-size: 18px;
-// 					line-height: 22px;
-
-// 					&.-active.nuxt-link-active {
-// 						color: var(--v-secondary-base) !important;
-// 					}
-// 				}
-
-// 				& > a {
-// 					border-top: 1px solid var(--v-accent-base);
-// 					align-items: center;
-// 					justify-content: center;
-// 					display: flex;
-// 					height: 60px;
-
-// 					&:last-of-type {
-// 						margin-bottom: 35px;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .navbar {
-// 	background: $cn-dark-gradient !important;
-// 	transition: all 0.15s ease-out;
-
-// 	&.-collapsed {
-// 		.cta-button {
-// 			display: none;
-// 		}
-// 	}
-
-// 	.logo {
-// 		height: #{$cn-logo-height}px;
-// 		width: 200px;
-// 		object-fit: cover;
-// 		margin-right: 8px;
-
-// 		@media (max-width: $xs) {
-// 			width: 150px;
-// 			height: auto;
-// 		}
-// 	}
-
-// 	& > a:not(.button),
-// 	span,
-// 	.item,
-// 	.title {
-// 		transition: all 0.3s ease-out;
-// 		color: white !important;
-
-// 		&:hover {
-// 			color: var(--v-secondary-base) !important;
-// 		}
-
-// 		&.-active.nuxt-link-active {
-// 			color: var(--v-secondary-base) !important;
-// 		}
-// 	}
-
-// 	&.-bg-white {
-// 		background-color: white !important;
-// 		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
-// 	}
-
-// 	&.-bg-primary {
-// 		background-color: var(--v-primary-base) !important;
-// 		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
-// 	}
-
-// 	.collapse-toggle {
-// 		opacity: 1 !important;
-
-// 		> .bars {
-// 			&::before,
-// 			&::after,
-// 			& {
-// 				background: white !important;
-// 			}
-// 		}
-// 	}
-
-// 	&.-bg-dark-transparent,
-// 	&.-bg-primary {
-// 		.container {
-// 			a,
-// 			.item,
-// 			.title {
-// 				color: var(--v-primary-lighten3);
-// 			}
-// 		}
-
-// 		.collapse-toggle {
-// 			> .bars {
-// 				&::before,
-// 				&::after,
-// 				& {
-// 					background-color: var(--v-primary-lighten3) !important;
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	&.-scrolled {
-// 		&.-bg-light-transparent,
-// 		&.-bg-dark-transparent,
-// 		&.-bg-white,
-// 		&.-bg-primary,
-// 		& {
-// 			padding: 0 !important;
-// 			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
-
-// 			.collapse-toggle {
-// 				> .bars {
-// 					&::before,
-// 					&::after,
-// 					& {
-// 						background-color: white !important;
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	.navbar-dropdown {
-// 		.menu {
-// 			min-width: 420px !important;
-// 			max-width: 800px !important;
-
-// 			a.freeform-item {
-// 				position: relative;
-// 				display: block;
-// 				text-decoration: none !important;
-// 				color: var(--v-primary-darken3);
-
-// 				&.-active {
-// 					&::before {
-// 						content: '';
-// 						position: absolute;
-// 						top: 10%;
-// 						left: 0;
-// 						bottom: 10%;
-// 						width: 4px;
-// 						background: var(--v-primary-base);
-// 						border-radius: 0 4px 4px 0;
-// 					}
-// 				}
-
-// 				a,
-// 				.title,
-// 				.subtitle {
-// 					color: var(--v-primary-darken3) !important;
-// 				}
-
-// 				.title {
-// 					line-height: 1.25em;
-// 					font-weight: 700;
-// 				}
-
-// 				.subtitle {
-// 					font-weight: 300;
-// 				}
-
-// 				&:hover {
-// 					background-color: rgba(0, 0, 0, 0.05);
-// 				}
-// 			}
-// 		}
-// 	}
-
-// 	.dropdown-fallback-nav {
-// 		width: 100%;
-// 		display: block;
-// 		border-top: 1px solid var(--v-blue-grey-lighten4);
-// 		border-bottom: 1px solid var(--v-blue-grey-lighten4);
-
-// 		> .header {
-// 			font-weight: 600;
-// 			font-size: 18px;
-// 			line-height: 22px;
-// 			margin-top: 50px;
-// 		}
-
-// 		> .item {
-// 			width: 100%;
-// 			font-weight: normal !important;
-// 			font-size: 18px;
-// 			line-height: 22px;
-// 			padding: 4px;
-
-// 			&:last-of-type {
-// 				margin-bottom: 28px;
-// 			}
-// 		}
-// 	}
-
-// 	@media (max-width: $md) {
-// 		max-height: 100%;
-
-// 		.container {
-// 			height: 100%;
-// 			max-height: 100%;
-// 			position: relative;
-
-// 			.row {
-// 				height: 100%;
-// 				max-height: 100%;
-
-// 				.navbar-items {
-// 					.nav {
-// 						a.item {
-// 							&:hover {
-// 								background-color: rgba(0, 0, 0, 0.05);
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-
-// 		.navbar-items {
-// 			> .nav {
-// 				box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
-
-// 				> .dropdown {
-// 					display: none !important;
-// 					width: 100%;
-// 					background: transparent !important;
-// 					border-top: 1px solid var(--v-blue-grey-lighten4);
-// 					border-bottom: 1px solid var(--v-blue-grey-lighten4);
-
-// 					> .item {
-// 						font-weight: 600;
-// 						font-size: 80%;
-// 						background: transparent !important;
-// 						cursor: default !important;
-// 					}
-
-// 					.menu {
-// 						display: block !important;
-// 						position: relative !important;
-// 						width: 100% !important;
-// 						background: transparent !important;
-// 						border-width: 0 !important;
-// 						padding: 0 !important;
-
-// 						.item {
-// 							&:hover,
-// 							&:focus {
-// 								background: #ced4db !important;
-// 							}
-// 						}
-// 					}
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-// .fade-enter-active {
-// 	transition: opacity 0.5s !important;
-// }
-
-// .fade-leave-active {
-// 	transition: opacity 0.25s !important;
-// }
-
-// .fade-enter,
-// .fade-leave-to {
-// 	opacity: 0;
-// }
-
-// .no-transform {
-// 	will-change: unset !important;
-// 	-webkit-transform: unset !important;
-// 	transform: unset !important;
-// 	-webkit-backface-visibility: unset !important;
-// 	backface-visibility: unset !important;
-// 	-webkit-perspective: unset !important;
-// 	perspective: unset !important;
-
-// 	.navbar-dropdown {
-// 		.menu {
-// 			background-color: transparent !important;
-// 			border: none !important;
-
-// 			&::after {
-// 				-webkit-transition: all 0.2s ease-out !important;
-// 				transition: all 0.2s ease-out !important;
-// 				transition-delay: 0.5s;
-// 				content: url('/icons/triangle.svg');
-// 				position: absolute;
-// 				left: calc(50% - 40.5px); // Half of the container - half of the icon in order to get the negative left position (centered)
-// 				bottom: -100%;
-// 			}
-
-// 			.arrow {
-// 				display: none !important;
-// 			}
-// 		}
-// 	}
-
-// 	.zoom-in-top-transition-enter-active {
-// 		transform: unset !important;
-// 		-webkit-transform: unset !important;
-// 		transition: opacity 0.15s ease-out !important;
-// 		-webkit-transition: opacity 0.15s ease-out !important;
-// 	}
-
-// 	.zoom-in-top-transition-leave-active {
-// 		-webkit-transform: unset !important;
-// 		transform: unset !important;
-// 		transition: opacity 0.15s ease-out !important;
-// 		-webkit-transition: opacity 0.15s ease-out !important;
-// 	}
-// }
+.v-expansion-panel::before {
+	box-shadow: none !important;
+}
 </style>

@@ -1,8 +1,9 @@
 import Sass from 'sass';
+
 import { meta, DEFAULT_META } from './src/helpers/meta';
-import blogRoutes from './blog';
-import careersRoutes from './careers';
-import tosRoutes from './tos';
+import blogRoutes from './blog.json';
+import careersRoutes from './careers.json';
+import tosRoutes from './tos.json';
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 const EXPERIMENTAL = false && !IS_PROD;
@@ -224,6 +225,7 @@ export default {
 		{ src: '~plugins/leadinfo', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
 		{ src: '~plugins/tawk', mode: 'client' },
+		{ src: '~plugins/helpcrunch', mode: 'client' },
 		{ src: '~/plugins/vee-validate.js', ssr: false },
 		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/vue-aos', ssr: false },
@@ -385,6 +387,12 @@ export default {
 		treeShake: true,
 		icons: {
 			iconfont: 'mdiSvg',
+			// values: {
+			// 	researchPaper: {
+			// 		component: import('./src/components/the/Icon.vue'),
+			// 		props: { name: 'ResearchPaper' },
+			// 	},
+			// },
 		},
 		defaultAssets: {
 			font: false,
@@ -408,7 +416,19 @@ export default {
 					warning: '#f08d49',
 					gray: '#616161',
 					grey: '#616161',
+					'light-gray': '#c1c1c1',
+					'light-grey': '#c1c1c1',
+					'lighter-gray': '#ebece9',
+					'lighter-grey': '#ebece9',
+					'dark-gray': '#768e98',
+					'dakr-grey': '#768e98',
+					blue: '#147cb6',
+					cyan: '#36d6d0',
+					light: '#faf9f8',
 					dark: '#13274b',
+					darker: '#1c273a',
+					'dark-blue': '#153954',
+					'darker-blue': '#0d3049',
 					bg: '#fff',
 					'bg-secondary': '#ebece9',
 					'bg-tertiary': '#dfe6ed',
@@ -432,7 +452,17 @@ export default {
 					warning: '#f08d49',
 					gray: '#616161',
 					grey: '#616161',
+					'light-gray': '#c1c1c1',
+					'light-grey': '#c1c1c1',
+					'lighter-gray': '#ebece9',
+					'lighter-grey': '#ebece9',
+					'dark-gray': '#768e98',
+					'dakr-grey': '#768e98',
+					blue: '#147cb6',
+					cyan: '#36d6d0',
+					light: '#faf9f8',
 					dark: '#13274b',
+					darker: '#1c273a',
 					bg: '#153954',
 					'bg-secondary': '#0d3049',
 					'bg-tertiary': '#45475b',

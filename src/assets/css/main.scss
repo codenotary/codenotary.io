@@ -95,16 +95,6 @@ a {
 			color: var(--v-primary-darken1) !important;
 		}
 	}
-
-	&.light {
-		&:hover,
-		&:focus {
-			&,
-			span {
-				color: var(--v-secondary-base) !important;
-			}
-		}
-	}
 }
 
 .v-input {

@@ -1,5 +1,5 @@
 <template>
-	<i-modal
+	<!-- <i-modal
 		class="start-trial-modal"
 		size="lg"
 		:value="value"
@@ -19,7 +19,10 @@
 				variant="dark"
 			/>
 		</div>
-	</i-modal>
+	</i-modal> -->
+	<v-dialog :value="value">
+		ledger compliance modal
+	</v-dialog>
 </template>
 
 <script>
@@ -36,17 +39,21 @@ export default {
 			default: false,
 		},
 	},
-	data: () => ({
-		ACTIVE_CAMPAIGN_FORM_ID,
-		injected: false,
-	}),
+	data() {
+		return {
+			ACTIVE_CAMPAIGN_FORM_ID,
+			injected: false,
+		};
+	},
 	watch: {
-		value (newVal) {
-			if (newVal && !this.injected) {
-				this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
-				setTimeout(() => {
-					this.injected = true;
-				}, 500);
+		value (shouldShow) {
+			if (shouldShow && !this.injected) {
+				this.injectScript({
+					src: `https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`,
+					onload: () => {
+						this.injected = true;
+					},
+				});
 			}
 		},
 	},

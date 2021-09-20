@@ -1,29 +1,41 @@
 <template>
-	<UiPageSection
-		class="copyright"
-		:top="2"
-		:bottom="2"
-	>
+	<v-container fluid class="dark-blue">
 		<v-container>
-			<v-row class="row-container">
+			<v-row class="py-5">
 				<v-col
-					class="d-flex justify-start"
+					cols="12"
+					md="8"
 				>
-					Copyright &copy; {{ year }} CodeNotary, Inc. All rights reserved.
+					<p class="white--text text-center text-md-left ma-0">
+						Copyright &copy; {{ new Date().getFullYear() }} CodeNotary, Inc. All rights reserved.
+					</p>
 				</v-col>
 				<v-col
-					class="d-flex justify-end font-weight-bold"
+					cols="12"
+					md="4"
+					class="d-flex justify-space-around justify-md-start"
 				>
-					<router-link :to="{ name: 'terms-of-service' }">
-						Terms of Service
-					</router-link>
-					<router-link :to="{ name: 'privacy-statement' }">
-						Privacy statement
-					</router-link>
+					<v-hover
+						v-for="({ title, to }, index) in internalLinks"
+						:key="title"
+						v-slot="{ hover }"
+					>
+						<nuxt-link
+							:to="to"
+							:class="[
+								hover ? 'secondary--text text-decoration-underline' : 'accent--text',
+								{
+									'ml-6': index > 0
+								}
+							]"
+						>
+							{{ title }}
+						</nuxt-link>
+					</v-hover>
 				</v-col>
 			</v-row>
 		</v-container>
-	</UiPageSection>
+	</v-container>
 </template>
 
 <script>
@@ -32,44 +44,17 @@ export default {
 	name: 'TheCopyright',
 	data() {
 		return {
-			year: new Date().getFullYear(),
+			internalLinks: [
+				{
+					title: 'Terms of Service',
+					to: '/terms-of-service',
+				},
+				{
+					title: 'Privacy statement',
+					to: '/privacy-statement',
+				},
+			],
 		};
 	},
 };
 </script>
-
-<style lang="scss">
-.copyright {
-	padding: 1.5rem 0 !important;
-	color: var(--v-grey-lighten1);
-	text-align: center;
-	font-size: 14px;
-	line-height: 17px;
-	background-color: var(--v-accent-darken3) !important;
-
-	a {
-		padding: 0 $spacer-1-2;
-		color: var(--v-accent-base-lighten1);
-
-		&:hover,
-		&:active {
-			color: var(--v-primary-lighten3);
-		}
-	}
-
-	@media (max-width: $xs) {
-		.row-container {
-			flex-direction: column;
-
-			.column {
-				flex: 1;
-				justify-content: center !important;
-
-				&:first-of-type {
-					margin-bottom: 10px;
-				}
-			}
-		}
-	}
-}
-</style>

@@ -1,5 +1,5 @@
 <template>
-	<i-modal
+	<!-- <i-modal
 		class="partner-modal"
 		size="lg"
 		:value="value"
@@ -19,7 +19,8 @@
 				variant="dark"
 			/>
 		</div>
-	</i-modal>
+	</i-modal> -->
+	<div>partner modal</div>
 </template>
 
 <script>
@@ -43,7 +44,9 @@ export default {
 	watch: {
 		value (newVal) {
 			if (newVal && !this.injected) {
-				this.injectScript(`https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`);
+				this.injectScript({
+					src: `https://vchain.activehosted.com/f/embed.php?id=${ ACTIVE_CAMPAIGN_FORM_ID }`,
+				});
 				setTimeout(() => {
 					this.injected = true;
 				}, 500);

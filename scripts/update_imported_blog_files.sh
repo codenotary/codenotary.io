@@ -3,7 +3,7 @@
 echo "updating imported blog files"
 
 # change directory temporaly to ./pages/blog
-pushd './pages/blog/imported/'
+pushd './src/pages/blog/imported/'
 
 # get number of filenames matching regex
 length=`find "." -type f -name "*.md" | wc -l`

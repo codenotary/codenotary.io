@@ -1,38 +1,34 @@
 <template>
-	<UiPageSection
-		id="immudb-cards-section"
-		:top="1"
-		:bottom="0"
-	>
-		<v-container class="d-flex flex-column align-center justify-center">
-			<UiPageSectionHeader
-				weight="bold"
-				:title="content.heroCardsSection.title"
-				:top="0"
-				:bottom="0"
-			/>
-		</v-container>
-		<v-container class="d-flex align-center justify-center flex-row-wrap cn-text-dark">
-			<v-row class="about-immudb-cards">
-				<v-col
-					v-for="(card, index) in content.heroCardsSection.cards"
-					:key="index"
-					class="mt-4 pb-4"
-					xs="12"
-					sm="6"
-					md="4"
-					lg="4"
+	<v-container>
+		<h4 class="brand--text text-h4 font-weight-700 text-center">
+			{{ content.aboutImmudbSection.title }}
+		</h4>
+		<div class="d-flex justify-center mt-5 flex-column flex-md-row align-center">
+			<v-sheet
+				v-for="(card, index) in content.aboutImmudbSection.cards"
+				:key="card.title"
+				elevation="3"
+				class="card white d-flex flex-column align-center rounded-xl py-5 px-10 flex-grow-1 flex-shrink-1"
+				:class="index > 0 ? 'ml-md-5 mt-5 mt-md-0' : ''"
+			>
+				<v-img :src="card.imageUrl" contain />
+				<h4 class="text-h4">
+					{{ card.title }}
+				</h4>
+				<p
+					v-for="phrases in card.subtitles"
+					:key="phrases[0].text"
+					class="text-center"
 				>
-					<UiCardSquare
-						wide
-						:title="card.title"
-						:image-url="card.imageUrl"
-						:subtitle="card.subtitle"
-					/>
-				</v-col>
-			</v-row>
-		</v-container>
-	</UiPageSection>
+					<template v-for="phrase in phrases">
+						<b v-if="phrase.type === 'bold'" :key="phrase.text">{{ phrase.text }}</b>
+						<span v-else-if="phrase.type === 'regular'" :key="phrase.text">{{ phrase.text }}</span>
+						<br v-if="hasBreak(phrase)" :key="phrase.text">
+					</template>
+				</p>
+			</v-sheet>
+		</div>
+	</v-container>
 </template>
 
 <script>
@@ -45,50 +41,16 @@ export default {
 			content: immudbContent,
 		};
 	},
+	methods: {
+		hasBreak({ nobreak = false }) {
+			return !nobreak;
+		},
+	},
 };
 </script>
 
-<style lang="scss">
-#immudb-cards-section {
-	@media (max-width: $xs) {
-		align-items: start;
-		padding: 0 0 16px 0 !important;
-		margin-bottom: -18px !important;
-		width: 100% !important;
-		min-width: 100%;
-		z-index: 2;
-
-		.container {
-			padding: 0 !important;
-
-			.row.about-immudb-cards {
-				display: flex;
-				flex-direction: row;
-				justify-content: center;
-				align-items: stretch;
-				flex: 1 0 100%;
-				flex-wrap: wrap;
-				margin: 0;
-				padding: 0;
-
-				.column {
-					padding: 0 auto !important;
-
-					.square-card {
-						max-width: 100%;
-					}
-
-					h3 {
-						margin-top: 8px !important;
-						margin-bottom: 4px !important;
-					}
-
-					.subtitle {
-						max-width: unset;
-					}
-				}
-			}
-		}
-	}
+<style lang="scss" scoped>
+.card {
+	max-width: 373px;
 }
 </style>

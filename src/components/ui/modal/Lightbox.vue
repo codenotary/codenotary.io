@@ -1,5 +1,5 @@
 <template>
-	<i-modal
+	<!-- <i-modal
 		id="lightbox-modal"
 		:class="classname"
 		:value="value"
@@ -9,7 +9,8 @@
 			<span v-if="title">{{ title }}</span>
 		</template>
 		<img :src="src" :alt="alt">
-	</i-modal>
+	</i-modal> -->
+	<div>lightbox modal</div>
 </template>
 
 <script>

@@ -1,21 +1,45 @@
 <template>
-	<div>
-		<ProductsLedgerComplianceMetricsAndLogsHeader />
+	<div class="metrics-logs">
+		<ProductsLedgerComplianceMetricsAndLogsHeader
+			@openStartTrial="startTrialModalOpen = true"
+		/>
 		<LazyHydrate when-visible>
 			<ProductsLedgerComplianceMetricsAndLogsFeatures />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsIntegrations :integrations="integrations" />
+			<ProductsLedgerComplianceMetricsAndLogsIntegrations
+				:integrations="integrations"
+			/>
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsInfrastructure />
+			<ProductsLedgerComplianceMetricsAndLogsGotYouCovered />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<HomepageVideos class="_margin-top-4" />
+			<ProductsLedgerComplianceMetricsAndLogsTabs />
 		</LazyHydrate>
 		<LazyHydrate when-visible>
-			<ProductsLedgerComplianceMetricsAndLogsTestimonials />
+			<ProductsLedgerComplianceMetricsAndLogsHowItWorks />
 		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsWhatsHappening
+				@openStartTrial="startTrialModalOpen = true"
+			/>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsReadMoreAboutCNIL
+				:blog-posts="blogPosts"
+			/>
+		</LazyHydrate>
+		<LazyHydrate when-visible>
+			<ProductsLedgerComplianceMetricsAndLogsNewsletter />
+		</LazyHydrate>
+		<ProductsLedgerComplianceMetricsAndLogsSupportQuote
+			id="metrics-and-logs-support-quote"
+		/>
+		<UiModalStartTrial
+			:value="startTrialModalOpen"
+			@close="startTrialModalOpen = false"
+		/>
 	</div>
 </template>
 
@@ -39,7 +63,18 @@ export default {
 				.sortBy('date', 'desc')
 				.fetch();
 
-		return { integrations };
+		const blogPosts = await $content('blog')
+				.only(['title', 'date', 'image'])
+				.where({ tags: { $containsAny: ['metrics', 'logs', 'opvizor'] } })
+				.limit(25)
+				.fetch();
+
+		return { integrations, blogPosts };
+	},
+	data() {
+		return {
+			startTrialModalOpen: false,
+		};
 	},
 	head() {
 		return {
@@ -61,3 +96,25 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss" scoped>
+.metrics-logs {
+	background-image: radial-gradient(var(--v-light-base) 1.55px, var(--v-bg-secondary-base) 0);
+	background-size: 31px 31px;
+	background-repeat: repeat;
+
+	#metrics-and-logs-support-quote {
+		position: fixed;
+		right: 0;
+		bottom: 32px;
+		z-index: 5;
+	}
+
+	#chat-widget {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 100;
+	}
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-	<UiPageSection id="immudb-code-examples-section">
+	<!-- <UiPageSection id="immudb-code-examples-section">
 		<v-container class="floating-container _padding-x-4">
 			<v-row>
 				<v-col>
@@ -30,7 +30,6 @@
 										sm="12"
 										md="6"
 									>
-										<!-- eslint-disable -->
 										<UiTerminal rounded language="go">
 											// Store any key, value auditproof and tamperproof
 											key2, value2 := []byte("myClient"), []byte("Visa 6679499384784022 11/23")
@@ -43,7 +42,6 @@
 											fmt.Println("   SafeSet - add and verify entry:")
 											printItem(key2, value2, verifiedIndex)
 										</UiTerminal>
-										<!-- eslint-enable -->
 									</v-col>
 								</v-row>
 							</div>
@@ -114,7 +112,6 @@
 										sm="12"
 										md="6"
 									>
-										<!-- eslint-disable vue/html-indent -->
 										<UiTerminal rounded language="go">
 												// built-in verification for every entry
 												verifiedItem, err := client.SafeGet(ctx, key2)
@@ -126,7 +123,6 @@
 												fmt.Println("   SafeGet - fetch and verify entry:")
 												printItem(nil, nil, verifiedItem)
 										</UiTerminal>
-										<!-- eslint-enable vue/html-indent -->
 									</v-col>
 								</v-row>
 							</div>
@@ -148,7 +144,69 @@
 				</v-col>
 			</v-row>
 		</v-container>
-	</UiPageSection>
+	</UiPageSection> -->
+	<v-container>
+		<v-carousel
+			v-model="activeSlideIndex"
+			class="white rounded-xl"
+			hide-delimiters
+			height="450"
+		>
+			<v-carousel-item
+				v-for="slide in slides"
+				:key="slide.title"
+				class="px-16"
+			>
+				<v-row class="fill-height">
+					<v-col class="d-flex flex-column justify-center">
+						<h4 class="text-h4 brand--text font-weight-700">
+							{{ slide.title }}
+						</h4>
+						<p class="font-weight-400 mt-4">
+							{{ slide.description }}
+						</p>
+						<ul class="slide-rows pl-4">
+							<li v-for="row in slide.rows" :key="row">
+								{{ row }}
+							</li>
+						</ul>
+					</v-col>
+					<v-col class="d-flex flex-column justify-center">
+						<UiTerminal :language="slide.terminal.language">
+							{{ slide.terminal.content }}
+						</UiTerminal>
+					</v-col>
+				</v-row>
+			</v-carousel-item>
+			<div class="delimeters d-flex justify-center">
+				<div
+					v-for="(slide, index) in slides"
+					:key="slide.title"
+					class="delimeter"
+					:class="{ active: activeSlideIndex === index, 'ml-2': index > 0 }"
+					@click="activeSlideIndex = index"
+				/>
+			</div>
+			<template #prev="{ on, attrs }">
+				<v-img
+					src="/icons/carousel-arrow-left.svg"
+					contain
+					height="70"
+					v-bind="attrs"
+					v-on="on"
+				/>
+			</template>
+			<template #next="{ on, attrs }">
+				<v-img
+					src="/icons/carousel-arrow-right.svg"
+					contain
+					height="70"
+					v-bind="attrs"
+					v-on="on"
+				/>
+			</template>
+		</v-carousel>
+	</v-container>
 </template>
 
 <script>
@@ -156,170 +214,115 @@ export default {
 	name: 'TechnologiesImmudbTerminalSection',
 	data() {
 		return {
-			settings: {
-				slidesToShow: 1,
-				arrows: true,
-				dots: true,
-				focusOnSelect: true,
-				lazyLoad: 'progressive',
-			},
+			// settings: {
+			// 	slidesToShow: 1,
+			// 	arrows: true,
+			// 	dots: true,
+			// 	focusOnSelect: true,
+			// 	lazyLoad: 'progressive',
+			// },
+			activeSlideIndex: 0,
+			slides: [
+				{
+					title: 'Very high throughput, immutable database with cryptographic verification',
+					description: 'immudb is an indispensable asset when it comes to tamper-proof data:',
+					rows: [
+						'Store every update to sensitive database fields (credit card or bank account data) of an existing application database',
+						'Store CI/CD recipes to build and deployment pipelines',
+						'Store public certificates',
+						'Store tamper-proof log streams (i. e. audit logs)',
+					],
+					terminal: {
+						language: 'go',
+						content: `
+							// Store any key, value auditproof and tamperproof
+							key2, value2 := []byte("myClient"), []byte("Visa 6679499384784022 11/23")
+							verifiedIndex, err := client.SafeSet(ctx, key2, value2)
+
+							if err != nil {
+								exit(err)
+							}
+
+							fmt.Println("   SafeSet - add and verify entry:")
+							printItem(key2, value2, verifiedIndex)`,
+					},
+				},
+				{
+					title: 'Intuitive setup',
+					description: 'immudb is an indispensable asset when it comes to tamper-proof data:',
+					rows: [
+						'Store every update to sensitive database fields (credit card or bank account data) of an existing application database',
+						'Store CI/CD recipes to build and deployment pipelines',
+						'Store public certificates',
+						'Store tamper-proof log streams (i. e. audit logs)',
+					],
+					terminal: {
+						language: 'go',
+						content: `
+							// Store any key, value auditproof and tamperproof
+							key2, value2 := []byte("myClient"), []byte("Visa 6679499384784022 11/23")
+							verifiedIndex, err := client.SafeSet(ctx, key2, value2)
+
+							if err != nil {
+								exit(err)
+							}
+
+							fmt.Println("   SafeSet - add and verify entry:")
+							printItem(key2, value2, verifiedIndex)`,
+					},
+				},
+				{
+					title: 'Consistency check built-in',
+					description: 'immudb is an indispensable asset when it comes to tamper-proof data:',
+					rows: [
+						'Store every update to sensitive database fields (credit card or bank account data) of an existing application database',
+						'Store CI/CD recipes to build and deployment pipelines',
+						'Store public certificates',
+						'Store tamper-proof log streams (i. e. audit logs)',
+					],
+					terminal: {
+						language: 'go',
+						content: `
+							// Store any key, value auditproof and tamperproof
+							key2, value2 := []byte("myClient"), []byte("Visa 6679499384784022 11/23")
+							verifiedIndex, err := client.SafeSet(ctx, key2, value2)
+
+							if err != nil {
+								exit(err)
+							}
+
+							fmt.Println("   SafeSet - add and verify entry:")
+							printItem(key2, value2, verifiedIndex)`,
+					},
+				},
+			],
 		};
-	},
-	beforeDestroy () {
-		this.settings = null;
 	},
 };
 </script>
 
-<style lang="scss">
-#immudb-code-examples-section {
-	position: relative;
-	background-color: var(--v-grey-lighten3);
-	height: 760px !important;
-	overflow: unset !important;
-
-	.floating-container {
-		position: absolute;
-		top: -240px;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 10;
+<style lang="scss" scoped>
+.slide-rows {
+	li::marker {
+		color: var(--v-secondary-base);
 	}
+}
 
-	@media (max-width: $sm) {
-		margin-bottom: -260px;
+.delimeters {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
 
-		.floating-container {
-			position: relative;
-			margin: 0 !important;
-			padding: 0 !important;
-			width: 100% !important;
-			bottom: -20px;
-		}
+	.delimeter {
+		background: var(--v-info-base);
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+		cursor: pointer;
+		border: 1px solid var(--v-brand-base);
 
-		.slick-slider {
-			padding: 16px 16px 32px 16px !important;
-
-			.slick-arrow {
-				&.slick-prev,
-				&.slick-next {
-					&,
-					img {
-						height: 40px !important;
-						max-width: 40px !important;
-					}
-				}
-
-				&.slick-next {
-					right: -8px !important;
-				}
-
-				&.slick-prev {
-					left: -8px !important;
-				}
-			}
-		}
-	}
-
-	svg {
-		width: 3rem;
-		height: 3rem;
-		color: var(--v-primary-base);
-	}
-
-	img {
-		width: 4rem;
-	}
-
-	h2 {
-		margin-top: 1rem;
-	}
-
-	li {
-		&::marker {
-			color: var(--v-secondary-base);
-		}
-	}
-
-	.row {
-		align-items: center;
-		margin-bottom: 5rem;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	.slick-slider {
-		padding: 50px;
-		background: white;
-		border-radius: 30px;
-
-		.slick-dots {
-			bottom: 15px;
-			left: 0;
-
-			.custom-dot {
-				width: 15px;
-				height: 15px;
-				border-radius: 30px;
-				background: var(--v-accent-lighten1);
-				border: 1px solid var(--v-primary-darken3) !important;
-			}
-
-			.slick-active {
-				.custom-dot {
-					background: var(--v-accent-base);
-				}
-			}
-		}
-
-		.slick-arrow {
-			img {
-				object-fit: contain;
-			}
-
-			&.slick-next {
-				right: -50px;
-			}
-
-			&.slick-prev {
-				left: -50px;
-			}
-		}
-
-		.custom-arrow {
-			width: 100px;
-			height: 100px;
-
-			&::before {
-				content: none;
-			}
-
-			img {
-				transform: scale(1.5);
-			}
-		}
-	}
-
-	pre {
-		background: var(--v-primary-darken3);
-	}
-
-	@media screen and (max-width: 979px) {
-		text-align: center;
-
-		.inverse {
-			flex-direction: column-reverse;
-		}
-
-		p,
-		ul:not(.slick-dots) {
-			text-align: left;
-		}
-
-		.terminal-wrapper {
-			margin-bottom: 1rem;
+		&.active {
+			background: var(--v-accent-base);
 		}
 	}
 }
