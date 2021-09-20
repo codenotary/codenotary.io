@@ -58,16 +58,21 @@ export default {
 		LazyHydrate,
 	},
 	async asyncData ({ $content }) {
-		const integrations = await $content('products/integration')
+		const integrationsPromise = $content('products/integration')
 				.only(['title', 'date', 'image', 'slug', 'tags'])
 				.sortBy('date', 'desc')
 				.fetch();
 
-		const blogPosts = await $content('blog')
+		const blogPostsPromise = $content('blog')
 				.only(['title', 'date', 'image'])
 				.where({ tags: { $containsAny: ['metrics', 'logs', 'opvizor'] } })
 				.limit(25)
 				.fetch();
+
+		const [integrations, blogPosts] = await Promise.all([
+			integrationsPromise,
+			blogPostsPromise,
+		]);
 
 		return { integrations, blogPosts };
 	},
