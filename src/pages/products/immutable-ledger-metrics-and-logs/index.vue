@@ -59,7 +59,6 @@ export default {
 		LazyHydrate,
 	},
 	async asyncData ({ $content }) {
-		console.log('sfasfsa');
 		const integrationsPromise = $content('products/integration')
 				.only(['title', 'date', 'image', 'slug', 'tags'])
 				.sortBy('date', 'desc')

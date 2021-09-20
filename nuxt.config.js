@@ -224,7 +224,6 @@ export default {
 		{ src: '~plugins/leadfeeder', mode: 'client' },
 		{ src: '~plugins/leadinfo', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
-		{ src: '~plugins/tawk', mode: 'client' },
 		{ src: '~plugins/helpcrunch', mode: 'client' },
 		{ src: '~/plugins/vee-validate.js', ssr: false },
 		{ src: '~plugins/vgo', mode: 'client' },

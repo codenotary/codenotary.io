@@ -246,7 +246,6 @@ export default {
 			eventHub.$emit('displayTrialModal', true);
 		},
 		closeNavbar() {
-			this.$refs.dropdownRef.visible = false;
 			this.productsMenuOpen = false;
 		},
 	},
