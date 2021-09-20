@@ -1,9 +1,9 @@
 import Sass from 'sass';
 
 import { meta, DEFAULT_META } from './src/helpers/meta';
-import blogRoutes from './blog';
-import careersRoutes from './careers';
-import tosRoutes from './tos';
+import blogRoutes from './blog.json';
+import careersRoutes from './careers.json';
+import tosRoutes from './tos.json';
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 const EXPERIMENTAL = false && !IS_PROD;
