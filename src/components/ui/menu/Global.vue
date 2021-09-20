@@ -97,7 +97,7 @@ export default {
 		padding-right: 30px;
 
 		&:not(:last-of-type) {
-			border-right: 1px solid var(--v-blue-grey-lighten4);
+			border-right: 1px solid var(--v-light-gray-base);
 		}
 		//padding: 40px;
 

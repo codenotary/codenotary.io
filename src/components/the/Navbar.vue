@@ -1,7 +1,7 @@
 <template>
 	<v-app-bar
 		id="TheAppBar"
-		class="bg-secondary justify-start align-center ma-0"
+		class="bg-secondary justify-start align-center ma-0 pb-16 mb-n16"
 		:style="`z-index: ${ APP_BAR_Z_INDEX }`"
 		elevation="2"
 		clipped-left
@@ -57,10 +57,9 @@
 					<div class="d-none d-md-block">
 						<v-menu
 							v-model="navMenuOpen"
-							:nudge-bottom="48"
+							:nudge-bottom="scrolled ? 54 : 70"
 							:max-height="342"
 							:z-index="APP_BAR_Z_INDEX + 5"
-							open-on-hover
 							bottom
 						>
 							<template #activator="{ on, attrs }">
@@ -195,7 +194,7 @@ export default {
 		return {
 			APP_BAR_Z_INDEX,
 			isNavbarCollapsed: false,
-			navMenuOpen: false,
+			navMenuOpen: true,
 			mobileNavMenuOpen: false,
 			mobileProductsMenuOpen: false,
 			technologiesMenuOpen: false,
@@ -258,10 +257,11 @@ export default {
 
 #TheAppBar {
 	transition: height 0.3s ease, color 0.3s ease;
+	background-image: $cn-dark-gradient;
+	border-bottom: 1px solid white;
 
 	.v-toolbar__content {
 		padding: 0 16px 0 4px;
-		background-image: $cn-dark-gradient;
 		justify-content: center;
 	}
 }
