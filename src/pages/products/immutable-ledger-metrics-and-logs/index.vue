@@ -44,13 +44,8 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
 import LazyHydrate from 'vue-lazy-hydration';
 
-import {
-	VIEW_MODULE,
-	SET_NAVBAR,
-} from '@/store/view/constants';
 import { title } from '~/helpers/meta';
 
 export default {
@@ -94,11 +89,6 @@ export default {
 				light: true,
 			});
 		});
-	},
-	methods: {
-		...mapActions(VIEW_MODULE, {
-			setNavbar: SET_NAVBAR,
-		}),
 	},
 };
 </script>
