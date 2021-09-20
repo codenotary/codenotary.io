@@ -197,7 +197,7 @@ export default {
 
 #immudb-code-examples-section {
 	position: relative;
-	height: 730px !important;
+	height: 770px !important;
 	overflow: unset !important;
 
 	@media screen and (max-width: $mobile-max-width) {
@@ -217,7 +217,7 @@ export default {
 	}
 
 	@include breakpoint-down(sm) {
-		margin-bottom: -260px;
+		margin-bottom: -90px;
 
 		.floating-container {
 			position: relative;
@@ -228,7 +228,7 @@ export default {
 		}
 
 		.slick-slider {
-			padding: 16px 16px 32px 16px !important;
+			padding: 16px !important;
 
 			.slick-arrow {
 				z-index: 1;
@@ -243,11 +243,11 @@ export default {
 				}
 
 				&.slick-next {
-					right: -8px !important;
+					right: -20px !important;
 				}
 
 				&.slick-prev {
-					left: -8px !important;
+					left: -20px !important;
 				}
 			}
 		}
@@ -289,7 +289,7 @@ export default {
 		}
 
 		.terminal-wrapper {
-			margin-bottom: 1rem;
+			margin-top: 1rem;
 		}
 	}
 }

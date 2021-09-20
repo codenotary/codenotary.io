@@ -125,10 +125,6 @@ export default {
 
 	@media screen and (max-width: $mobile-max-width) {
 		.column {
-			.section-header {
-				margin-bottom: -16px !important;
-			}
-
 			.immudb-feature {
 				margin: 0 !important;
 				width: 100% !important;

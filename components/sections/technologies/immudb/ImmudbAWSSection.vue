@@ -66,7 +66,7 @@ export default {
 
 		@media screen and (max-width: 767px) {
 			background-image: url(/images/immudb/AWS/mobile.jpg);
-			height: 320px;
+			height: 280px;
 			background-position-y: bottom;
 		}
 
