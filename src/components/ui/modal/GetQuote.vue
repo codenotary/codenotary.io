@@ -10,7 +10,7 @@
 		>
 			<div class="header d-flex py-5 px-9 white--text">
 				<span class="font-weight-700 text-subtitle-1">
-					Subscribe to our newsletter
+					Get a quote
 				</span>
 				<v-spacer />
 				<v-icon
