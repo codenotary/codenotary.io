@@ -57,6 +57,7 @@
 					<div class="d-none d-md-block">
 						<v-menu
 							v-model="navMenuOpen"
+							:close-delay="100"
 							:nudge-bottom="scrolled ? 54 : 70"
 							:max-height="342"
 							:z-index="APP_BAR_Z_INDEX + 5"
