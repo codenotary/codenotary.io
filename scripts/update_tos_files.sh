@@ -5,7 +5,7 @@ echo "updating t json list file"
 # change directory temporaly to ./pages/terms-of-service/
 pushd './src/pages/terms-of-service/'
 
-TOS_FILE='../../tos.json'
+TOS_FILE='../../../tos.json'
 
 # clear careers file
 > $TOS_FILE
