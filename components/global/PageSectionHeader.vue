@@ -1,7 +1,8 @@
 <template>
 	<header
-		class="section-header"
+		v-if="withHeader"
 		:class="`${ block ? '-block' : '' } _font-weight-${ weight } _${offsetType}-top-${top} _${offsetType}-bottom-${bottom} ${ round ? '-round' : '' }`"
+		class="section-header"
 	>
 		<slot name="title">
 			<h2
@@ -60,6 +61,10 @@ export default {
 		round: {
 			type: Boolean,
 			default: false,
+		},
+		withHeader: {
+			type: Boolean,
+			default: true,
 		},
 	},
 	computed: {

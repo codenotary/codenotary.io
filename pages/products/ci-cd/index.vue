@@ -1,26 +1,33 @@
 <template>
-	<div>
-		<CiCdHeader />
+	<div id="codenotary-cloud">
+		<CodenotaryCloudPageHeader />
+
 		<LazyHydrate when-visible>
-			<CiCdIntegrations />
+			<CodenotaryCloudBenefitsSection class="section" />
 		</LazyHydrate>
+
 		<LazyHydrate when-visible>
-			<CiCdFeatures />
+			<TrustedSupplyChainSection class="section" />
 		</LazyHydrate>
+
 		<LazyHydrate when-visible>
-			<HomeVideos class="_margin-bottom-4" />
+			<BOMInfoSection class="section" />
 		</LazyHydrate>
+
 		<LazyHydrate when-visible>
-			<CiCdHowItWorks />
+			<WhatWeDoSection class="section" />
 		</LazyHydrate>
-		<LazyHydrate when-visible>
-			<CiCdGetStarted />
+
+		<LazyHydrate when-whisible>
+			<CodenotaryCloudDescription class="section" />
 		</LazyHydrate>
+
 		<LazyHydrate when-visible>
-			<CiCdAnalyzeAndManage />
+			<Customers />
 		</LazyHydrate>
+
 		<LazyHydrate when-visible>
-			<CiCdVideos />
+			<WhatClientsSaySection height="450" class="section" />
 		</LazyHydrate>
 	</div>
 </template>
@@ -34,15 +41,21 @@ import {
 import LazyHydrate from 'vue-lazy-hydration';
 
 export default {
-	name: 'CiCdPage',
+	name: 'CodenotaryCloud',
 	components: {
 		LazyHydrate,
+	},
+	data() {
+		return {
+			ledgerComplianceModalOpen: false,
+			webinarModalOpen: false,
+		};
 	},
 	mounted () {
 		this.$nextTick(() => {
 			this.setNavbar({
-				background: 'light-transparent',
-				light: true,
+				background: 'dark-transparent',
+				light: false,
 			});
 		});
 	},
@@ -53,3 +66,31 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss" scoped>
+#codenotary-cloud {
+	.section {
+		overflow: visible !important;
+	}
+
+	#cnil-section {
+		padding-top: 20px !important;
+
+		@media screen and (max-width: 768px) {
+			padding-top: 30px !important;
+		}
+
+		@media screen and (max-width: 375px) {
+			padding-top: 0 !important;
+		}
+	}
+
+	#whatwedo-section {
+		margin-bottom: -80px;
+	}
+
+	#what-clients-say-section {
+		background: transparent;
+	}
+}
+</style>

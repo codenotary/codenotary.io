@@ -1,6 +1,6 @@
 <template>
 	<div id="homepage">
-		<HomeHeader />
+		<PageHeader />
 
 		<LazyHydrate when-visible>
 			<CNILSection id="cnil-section" class="section" />
@@ -11,7 +11,7 @@
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<TrustedSupplyChainSection class="section" />
+			<TrustedSupplyChainSection overflow-top class="section" />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
@@ -35,7 +35,7 @@
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>
-			<HomepageCustomers />
+			<Customers />
 		</LazyHydrate>
 
 		<LazyHydrate when-visible>

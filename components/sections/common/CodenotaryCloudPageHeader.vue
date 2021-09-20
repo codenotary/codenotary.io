@@ -1,23 +1,27 @@
 <template>
-	<div class="home-header-container">
+	<div class="cncl-page-header-container">
 		<i-header
-			id="home-header"
+			id="cncl-page-header"
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
 				<i-column lg="5" class="_padding-x-0 content">
 					<h2 class="_font-weight-bold cn-text-white title first">
-						{{ content.headerSection.title1 }}
+						{{ content.title1 }}
 					</h2>
 					<h2 class="_font-weight-bold cn-text-secondary title first">
-						{{ content.headerSection.title2 }}
+						{{ content.title2 }}
 					</h2>
 					<h2 class="_font-weight-bold cn-text-white title second">
-						{{ content.headerSection.title3 }}
+						{{ content.title3 }}
 					</h2>
 
-					<p class="lead cn-text-muted_blue subtitle cn-text-sm">
-						{{ content.headerSection.subtitle }}
+					<p
+						v-for="subtitle in content.subtitles"
+						:key="subtitle"
+						class="lead cn-text-muted_blue subtitle cn-text-sm"
+					>
+						{{ subtitle }}
 					</p>
 					<!--				<h5 class="_margin-top-1 _margin-bottom-2 _font-weight-bold _text-white">-->
 					<!--					Powered by the world’s fastest immutable database.-->
@@ -26,9 +30,9 @@
 						<cn-button
 							variant="secondary"
 							size="lg"
-							@click.native="startFreeTrialModalOpen = true"
+							@click.native="getDemoModalOpen = true"
 						>
-							FREE TRIAL
+							GET DEMO
 						</cn-button>
 						<!--
 						<cn-button
@@ -79,29 +83,29 @@
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="computedStyle" />
 		</client-only>
-		<StartFreeTrialModal
-			v-model="startFreeTrialModalOpen"
+		<GetDemoModal
+			v-model="getDemoModalOpen"
 		/>
 	</div>
 </template>
 
 <script>
 import LazyHydrate from 'vue-lazy-hydration';
-import homepage from '@/content/homepage';
+import codenotaryCloudContent from '@/content/codenotaryCloud';
 import { eventHub } from '@/helpers/eventhub';
 
 export default {
-	name: 'HomeHeader',
+	name: 'CodenotaryCloudPageHeader',
 	components: {
 		LazyHydrate,
 	},
 	data() {
 		return {
-			content: homepage,
+			content: codenotaryCloudContent.header,
 			playing: false,
 			timeout: null,
 			rightBarBottom: '0px',
-			startFreeTrialModalOpen: false,
+			getDemoModalOpen: false,
 		};
 	},
 	computed: {
@@ -163,7 +167,7 @@ export default {
 $mascot-height: 164px;
 $mascot-height-small: 100px;
 
-#home-header {
+#cncl-page-header {
 	background: transparent;
 	z-index: 3;
 	position: relative;
@@ -177,7 +181,7 @@ $mascot-height-small: 100px;
 	}
 }
 
-::v-deep #home-header {
+::v-deep #cncl-page-header {
 	overflow-x: hidden;
 	width: 100%;
 
@@ -262,7 +266,7 @@ $mascot-height-small: 100px;
 	}
 }
 
-.home-header-container {
+.cncl-page-header-container {
 	position: relative;
 	background-color: $cn-color-background;
 
@@ -280,6 +284,7 @@ $mascot-height-small: 100px;
 	bottom: 100px;
 	left: 0;
 	transform: skewY(-5deg);
+	transform-origin: right;
 	-webkit-transform-origin: right;
 	z-index: 2;
 	box-shadow: 3px 10px 10px -10px rgba(0, 0, 0, 0.15); // Custom bottom-only shadow
@@ -319,6 +324,7 @@ $mascot-height-small: 100px;
 	position: absolute;
 	right: 0;
 	height: 100%;
+	transform-origin: right;
 	-webkit-transform-origin: right;
 	transform: skewY(3deg);
 	z-index: 1;

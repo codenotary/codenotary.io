@@ -7,7 +7,10 @@
 		:left="2"
 	>
 		<div class="trusted-supply-chain-section">
-			<i-container class="container _padding-x-0">
+			<i-container
+				:class="{ 'overflow-top': overflowTop }"
+				class="container _padding-x-0"
+			>
 				<i-row>
 					<i-column
 						sm="12"
@@ -62,6 +65,12 @@
 <script>
 export default {
 	name: 'TrustedSupplyChainSection',
+	props: {
+		overflowTop: {
+			type: Boolean,
+			default: false,
+		},
+	},
 	data() {
 		return {
 			SBOMModalOpen: false,
@@ -93,8 +102,11 @@ export default {
 		display: flex;
 		align-items: center;
 		position: relative;
-		margin-top: calc(-4rem - 80px);
 		margin-bottom: calc(-4rem - 20px);
+
+		&.overflow-top {
+			margin-top: calc(-4rem - 80px);
+		}
 
 		.row {
 			@media screen and (max-width: 767px) {
