@@ -60,6 +60,7 @@
 							:nudge-bottom="scrolled ? 54 : 70"
 							:max-height="342"
 							:z-index="APP_BAR_Z_INDEX + 5"
+							open-on-hover
 							bottom
 						>
 							<template #activator="{ on, attrs }">
@@ -194,7 +195,7 @@ export default {
 		return {
 			APP_BAR_Z_INDEX,
 			isNavbarCollapsed: false,
-			navMenuOpen: true,
+			navMenuOpen: false,
 			mobileNavMenuOpen: false,
 			mobileProductsMenuOpen: false,
 			technologiesMenuOpen: false,
