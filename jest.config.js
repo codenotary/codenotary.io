@@ -17,7 +17,6 @@ module.exports = {
 		'.*\\.(vue)$': '<rootDir>/node_modules/vue-jest',
 		'.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$': '<rootDir>/node_modules/jest-transform-stub',
 	},
-	transformIgnorePatterns: ['/node_modules/(?!@inkline).\\.js$'],
 
 	snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
 

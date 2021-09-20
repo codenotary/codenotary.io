@@ -1,0 +1,115 @@
+<template>
+	<UiPageSection
+		id="open-positions-section"
+		variant="white"
+	>
+		<v-container>
+			<v-row>
+				<v-col>
+					<UiPageSectionHeader title="Open positions" />
+				</v-col>
+			</v-row>
+			<v-row>
+				<no-ssr>
+					<masonry
+						class="_width-100"
+						:cols="{default: 3, 1000: 2, 700: 1, 400: 1}"
+						:gutter="{default: '1rem', 700: '1rem'}"
+					>
+						<div
+							v-for="article in sortedOpenPositions"
+							:key="article.slug"
+							class="item"
+							column-width="33px"
+						>
+							<i-card v-if="article.active" class="career-post">
+								<div>
+									<nuxt-link :to="{ name: 'join-post', params: { post: article.slug } }">
+										<div v-if="article.title" class="_overlay-link title mb-4 _text-weight-bold">
+											{{ article.title | truncate(64, '...') }}
+										</div>
+									</nuxt-link>
+									<div v-if="article.location" class="location mb-4">
+										<fa icon="globe" style="margin-right: 0.5rem;" />
+										{{ article.location }}
+									</div>
+									<div v-if="article.type" class="type mb-4">
+										<fa icon="award" style="margin-right: 0.5rem;" />
+										{{ article.type }}
+									</div>
+									<div v-if="article.requires" class="requires lead mb-4">
+										{{ article.requires }}
+									</div>
+								</div>
+								<div>
+									<v-btn
+										color="primary"
+										block
+									>
+										More info
+									</v-btn>
+								</div>
+							</i-card>
+						</div>
+					</masonry>
+				</no-ssr>
+			</v-row>
+		</v-container>
+	</UiPageSection>
+</template>
+
+<script>
+import NoSSR from 'vue-no-ssr';
+
+export default {
+	name: 'CareersOpenPositions',
+	components: {
+		'no-ssr': NoSSR,
+	},
+	props: {
+		openPositions: { type: Array, default: () => {} },
+	},
+	computed: {
+		sortedOpenPositions () {
+			if (this.openPositions && this.openPositions.length) {
+				return this.openPositions
+						.slice()
+						.sort((a, b) => a.weight <= b.weight ? -1 : 1);
+			}
+			return [];
+		},
+	},
+};
+</script>
+
+<style lang="scss">
+#open-positions-section {
+	.career-post {
+		margin-bottom: 1rem;
+		height: 272px;
+
+		> .body {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.location,
+		.type,
+		.requires {
+			font-size: 80%;
+			// color: $text-muted;
+			text-decoration: none !important;
+			outline: none !important;
+		}
+
+		&:hover,
+		&:active {
+			* {
+				text-decoration: none !important;
+				outline: none !important;
+			}
+		}
+	}
+}
+</style>

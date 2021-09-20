@@ -1,0 +1,52 @@
+<template>
+	<article>
+		<UiPageSection>
+			<UiPageSectionHeader title="Privacy Statement" tag="h1" />
+			<v-container>
+				<v-row>
+					<v-col>
+						<nuxt-content :document="page" />
+					</v-col>
+				</v-row>
+			</v-container>
+		</UiPageSection>
+	</article>
+</template>
+
+<script>
+import { mapActions } from 'vuex';
+import {
+	VIEW_MODULE,
+	SET_NAVBAR,
+} from '@/store/view/constants';
+import { title } from '~/helpers/meta';
+
+export default {
+	name: 'PrivacyStatement',
+	async asyncData ({ $content }) {
+		const page = await $content('privacy-statement').fetch();
+
+		return {
+			page,
+		};
+	},
+	head() {
+		return {
+			title: title('Privacy Statement'),
+		};
+	},
+	mounted () {
+		this.$nextTick(() => {
+			this.setNavbar({
+				background: 'light-transparent',
+				light: true,
+			});
+		});
+	},
+	methods: {
+		...mapActions(VIEW_MODULE, {
+			setNavbar: SET_NAVBAR,
+		}),
+	},
+};
+</script>

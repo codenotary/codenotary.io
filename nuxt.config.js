@@ -1,10 +1,34 @@
-import { meta, DEFAULT_META } from './helpers/meta';
-import blogRoutes from './blog';
-import careersRoutes from './careers';
-import tosRoutes from './tos';
+import Sass from 'sass';
+
+import { meta, DEFAULT_META } from './src/helpers/meta';
+import blogRoutes from './blog.json';
+import careersRoutes from './careers.json';
+import tosRoutes from './tos.json';
 
 const IS_PROD = process.env.NODE_ENV === 'production';
 const EXPERIMENTAL = false && !IS_PROD;
+
+const baseUrlArticles = IS_PROD
+	? 'https://codenotary.com/blog'
+	: 'http://localhost:3000/blog';
+const createFeedArticles = async function (feed) {
+	feed.options = {
+		title: 'Blog — CodeNotary',
+		description: 'Blog posts by CodeNotary team',
+		link: baseUrlArticles,
+		generator: 'CodeNotary Inc.',
+	};
+	const { $content } = require('@nuxt/content');
+	const articles = await $content('blog').fetch();
+
+	articles.forEach(({ title, slug }) => {
+		feed.addItem({
+			title,
+			id: title,
+			link: `${ baseUrlArticles }/${ slug }`,
+		});
+	});
+};
 
 export default {
 	/*
@@ -24,12 +48,25 @@ export default {
     ** Doc: https://nuxtjs.org/api/configuration-components/
     */
 	components: true,
+
+	/*
+	** Nuxt rootDir value
+	** See https://nuxtjs.org/api/configuration-srcdir
+	*/
+	srcDir: 'src/',
+
+	/*
+	** Devtools enabled
+	** See https://https://nuxtjs.org/api/configuration-srcdir
+	*/
+	devtools: !IS_PROD,
+
 	/*
     ** Headers of the page
     */
 	head: {
 		htmlAttrs: { lang: 'en' },
-		title: DEFAULT_META.TITLE,
+		// title: DEFAULT_META.TITLE,
 		meta: [
 			...meta(),
 			{ charset: 'utf-8' },
@@ -52,64 +89,129 @@ export default {
 	},
 
 	/*
-    ** Customize the progress-bar color
-    */
-	loading: {
-		color: '#fff',
-	},
-
-	/*
     ** Global CSS
     */
 	css: [
-		{
-			src: './assets/css/colors.scss',
-			lang: 'scss',
-			ssr: false,
-		},
-		{
-			src: './assets/css/typography.scss',
-			lang: 'scss',
-			ssr: false,
-		},
 		{
 			src: './assets/css/main.scss',
 			lang: 'scss',
 			ssr: false,
 		},
+		{
+			src: './assets/css/scrollbar.scss',
+			lang: 'scss',
+			ssr: false,
+		},
+		{
+			src: './assets/css/tooltip.scss',
+			lang: 'scss',
+			ssr: false,
+		},
 	],
 
+	/*
+	** Build configuration
+	** See https://nuxtjs.org/api/configuration-build/
+	*/
 	build: {
+		analyze: false,
 		parallel: EXPERIMENTAL,
 		cache: EXPERIMENTAL,
 		hardSource: EXPERIMENTAL,
 		extractCSS: IS_PROD,
 		optimizeCSS: IS_PROD,
 		filenames: {
-			app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
-			chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
+			app: IS_PROD ? '[chunkhash].js' : '[name].[hash].js',
+			chunk: IS_PROD ? '[chunkhash].js' : '[name].[hash].js',
+			css: IS_PROD ? '[name].[contenthash].css' : '[name].js',
 		},
 		// Extend webpack config
-		extend: (config, ctx) => {
-			config.devtool = ctx.isClient ? 'eval-source-map' : 'inline-source-map';
+		extend: (config, { isDev, isClient }) => {
+			config.devtool = isClient ? 'eval-source-map' : 'inline-source-map';
+
+			// image-webpack-loader
+			config.module.rules.forEach((rule) => {
+				if (String(rule.test) === String(/\.(png|jpe?g|gif|svg|webp)$/)) {
+					// add a second loader when loading images
+					rule.use.push({
+						loader: 'image-webpack-loader',
+						options: {
+							svgo: {
+								plugins: [
+								// use these settings for internet explorer for proper scalable SVGs
+								// https://css-tricks.com/scale-svg/
+									{ removeViewBox: false },
+									{ removeDimensions: true },
+								],
+							},
+						},
+					});
+				}
+			});
 		},
 		loaders: {
 			vue: {
 				prettify: false,
 			},
+			sass: {
+				implementation: Sass,
+			},
 		},
 		transpile: [
-			'@inkline/inkline',
+			'/^vuetify/',
+			'vee-validate',
 			'vue-github-button',
+			'vue-toasted',
 		],
+		optimization: {
+			splitChunks: {
+				chunks: 'async',
+			},
+		},
 		babel: {
 			plugins: [
-				'@babel/plugin-proposal-optional-chaining',
+				['@babel/plugin-proposal-private-methods', { loose: true }],
 			],
+		},
+		postcss: {
+			plugins: {
+				'postcss-url': false,
+				'postcss-nested': {},
+				'postcss-responsive-type': {},
+				'postcss-hexrgba': {},
+			},
+			preset: {
+				autoprefixer: {
+					grid: true,
+				},
+			},
 		},
 	},
 
+	/*
+	** Serve static assets with cache policy
+	** Doc: https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-render/
+	*/
+	render: {
+		static: {
+			maxAge: 1000 * 60 * 60 * 24 * 7,
+		},
+		bundleRenderer: {
+			shouldPrefetch: (_, type) => ['script', 'style', 'font'].includes(type) &&
+				!_.includes('admin'),
+			shouldPreload: (_, type) => ['script', 'style', 'font'].includes(type) &&
+				!_.includes('admin'),
+		},
+	},
+
+	/*
+	** Set authenticated as default middleware
+	** Doc: https://nuxtjs.org/guides/configuration-glossary/configuration-router
+	*/
 	router: {
+		mode: 'history',
+		middleware: [],
+		base: '/',
 		linkExactActiveClass: '-active',
 	},
 
@@ -118,9 +220,13 @@ export default {
     */
 	plugins: [
 		{ src: '~plugins/activecampaign', mode: 'client' },
+		{ src: '~plugins/hotjar', mode: 'client' },
 		{ src: '~plugins/leadfeeder', mode: 'client' },
+		{ src: '~plugins/leadinfo', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
 		{ src: '~plugins/tawk', mode: 'client' },
+		{ src: '~plugins/helpcrunch', mode: 'client' },
+		{ src: '~/plugins/vee-validate.js', ssr: false },
 		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/vue-aos', ssr: false },
 		{ src: '~plugins/vue-cool-lightbox', mode: 'client' },
@@ -130,9 +236,8 @@ export default {
 		{ src: '~plugins/vue-meta', ssr: false },
 		{ src: '~plugins/vue-truncate-filter', ssr: false },
 		{ src: '~plugins/vue-typer', ssr: false },
+		{ src: '~plugins/vue-youtube', ssr: false },
 		'~plugins/vue-slick-carousel',
-		'~plugins/inkline',
-		{ src: '~plugins/hotjar', ssr: false },
 	],
 	/*
     ** Nuxt.js dev-modules
@@ -146,6 +251,8 @@ export default {
 		['@nuxtjs/google-analytics', {
 			id: 'UA-136167888-1',
 		}],
+		// Doc: https://github.com/nuxt-community/vuetify-module
+		'@nuxtjs/vuetify',
 	],
 	/*
     ** Nuxt.js modules
@@ -192,10 +299,11 @@ export default {
 				{
 					set: '@fortawesome/free-brands-svg-icons',
 					icons: [
+						'faDiscord',
 						'faFacebookSquare',
-						'faTwitterSquare',
-						'faLinkedin',
 						'faGithubSquare',
+						'faLinkedin',
+						'faTwitterSquare',
 					],
 				},
 			],
@@ -236,11 +344,23 @@ export default {
 				},
 			],
 		}],
+		// Doc: https://github.com/geeogi/nuxt-responsive-loader
+		'nuxt-responsive-loader',
 		// Doc: https://github.com/nuxt-community/robots-module
 		'@nuxtjs/robots',
 		// Doc: https://github.com/nuxt-community/sitemap-module
 		'@nuxtjs/sitemap',
+		// Doc: https://github.com/nuxt-community/feed-module
+		'@nuxtjs/feed',
 	],
+
+	/*
+	** The env Property
+	** https://nuxtjs.org/api/configuration-env/
+	*/
+	env: {
+		GITHUB_API_URL: 'https://api.github.com',
+	},
 
 	/*
     ** Build configuration
@@ -254,10 +374,109 @@ export default {
 		},
 	},
 
-	styleResources: {
-		scss: [
-			'~/assets/css/variables.scss',
+	/*
+	** vuetify module configuration
+	** https://github.com/nuxt-community/vuetify-module
+	*/
+	vuetify: {
+		customVariables: [
+			'./src/assets/css/typography.scss',
+			'./src/assets/css/variables.scss',
+			'./src/assets/css/spacer.scss',
 		],
+		treeShake: true,
+		icons: {
+			iconfont: 'mdiSvg',
+			// values: {
+			// 	researchPaper: {
+			// 		component: import('./src/components/the/Icon.vue'),
+			// 		props: { name: 'ResearchPaper' },
+			// 	},
+			// },
+		},
+		defaultAssets: {
+			font: false,
+			icons: false,
+		},
+		theme: {
+			options: {
+				customProperties: true,
+				variations: true,
+			},
+			dark: false,
+			themes: {
+				light: {
+					brand: '#244583',
+					primary: '#1460b6',
+					secondary: '#febf2d',
+					accent: '#24c4a1',
+					error: '#c06b6f',
+					info: '#9fefde',
+					success: '#7ec699',
+					warning: '#f08d49',
+					gray: '#616161',
+					grey: '#616161',
+					'light-gray': '#c1c1c1',
+					'light-grey': '#c1c1c1',
+					'lighter-gray': '#ebece9',
+					'lighter-grey': '#ebece9',
+					'dark-gray': '#768e98',
+					'dakr-grey': '#768e98',
+					blue: '#147cb6',
+					cyan: '#36d6d0',
+					light: '#faf9f8',
+					dark: '#13274b',
+					darker: '#1c273a',
+					'dark-blue': '#153954',
+					'darker-blue': '#0d3049',
+					bg: '#fff',
+					'bg-secondary': '#ebece9',
+					'bg-tertiary': '#dfe6ed',
+					'bg-terminal': '#768e98',
+					'bg-code': '#768e98',
+					'font-700': '#111',
+					'font-500': '#333',
+					'font-400': '#999',
+					'font-300': '#666',
+					'font-200': '#f1f1f1',
+					'font-100': '#fff',
+				},
+				dark: {
+					brand: '#244583',
+					primary: '#1460b6',
+					secondary: '#febf2d',
+					accent: '#24c4a1',
+					error: '#c06b6f',
+					info: '#9fefde',
+					success: '#7ec699',
+					warning: '#f08d49',
+					gray: '#616161',
+					grey: '#616161',
+					'light-gray': '#c1c1c1',
+					'light-grey': '#c1c1c1',
+					'lighter-gray': '#ebece9',
+					'lighter-grey': '#ebece9',
+					'dark-gray': '#768e98',
+					'dakr-grey': '#768e98',
+					blue: '#147cb6',
+					cyan: '#36d6d0',
+					light: '#faf9f8',
+					dark: '#13274b',
+					darker: '#1c273a',
+					bg: '#153954',
+					'bg-secondary': '#0d3049',
+					'bg-tertiary': '#45475b',
+					'bg-terminal': '#1c273a',
+					'bg-code': '#1c273a',
+					'font-700': '#fff',
+					'font-500': '#f1f1f1',
+					'font-400': '#666',
+					'font-300': '#999',
+					'font-200': '#333',
+					'font-100': '#111',
+				},
+			},
+		},
 	},
 
 	generate: {
@@ -354,4 +573,14 @@ export default {
 			lastmod: new Date(),
 		},
 	},
+
+	feed: [
+		{
+			path: '/feed.xml',
+			create: createFeedArticles,
+			cacheTime: 1000 * 60 * 15,
+			type: 'rss2',
+			data: [],
+		},
+	],
 };
