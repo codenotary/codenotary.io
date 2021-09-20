@@ -45,11 +45,12 @@
 
 <script>
 import { mapActions } from 'vuex';
+import LazyHydrate from 'vue-lazy-hydration';
+
 import {
 	VIEW_MODULE,
 	SET_NAVBAR,
 } from '@/store/view/constants';
-import LazyHydrate from 'vue-lazy-hydration';
 import { title } from '~/helpers/meta';
 
 export default {
@@ -58,6 +59,7 @@ export default {
 		LazyHydrate,
 	},
 	async asyncData ({ $content }) {
+		console.log('sfasfsa');
 		const integrationsPromise = $content('products/integration')
 				.only(['title', 'date', 'image', 'slug', 'tags'])
 				.sortBy('date', 'desc')
