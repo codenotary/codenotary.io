@@ -16,7 +16,7 @@
 						</i-column>
 					</i-row>
 					<i-row class="_margin-x-0">
-						<i-column>
+						<i-column class="_padding-x-0">
 							<table>
 								<thead>
 									<tr>
@@ -88,15 +88,15 @@ export default {
 #immudb-performance-section {
 	@include breakpoint-down(sm) {
 		position: relative;
-		padding: 30px 0 60px !important;
-		top: -290px !important;
+		padding: 30px 0 !important;
+		top: -160px !important;
 
 		&.section.variant-standard {
-			padding-top: 161px !important;
-			margin-bottom: -194px !important;
+			padding-top: 120px !important;
+			margin-bottom: -160px;
 
 			.container {
-				padding: 0 0 40px 0 !important;
+				padding: 0 0 20px 0 !important;
 			}
 		}
 	}
@@ -109,6 +109,10 @@ export default {
 		border-radius: 30px;
 		box-shadow: $cn-shadow-sm;
 		border: none !important;
+
+		@media screen and (max-width: 678px) {
+			width: 83%;
+		}
 
 		table {
 			margin: 0 auto;
@@ -193,7 +197,11 @@ export default {
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: center;
-			margin-top: 35px;
+			margin-top: 32px;
+
+			@include breakpoint-down(sm) {
+				margin-top: 16px;
+			}
 
 			.option {
 				padding: 20px 30px;
@@ -202,7 +210,10 @@ export default {
 				background: $cn-color-light;
 
 				@include breakpoint-down(sm) {
-					margin-bottom: 16px;
+					margin-bottom: 8px;
+					font-size: 14px;
+					text-align: center;
+					padding: 8px 16px;
 				}
 			}
 

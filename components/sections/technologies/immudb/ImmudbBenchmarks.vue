@@ -3,6 +3,7 @@
 		id="immudb-benchmarks-section"
 		:top="0"
 		:bottom="2"
+		:bottom-xs="0"
 	>
 		<i-container>
 			<i-row class="_display-flex _justify-content-center">
@@ -71,7 +72,7 @@ export default {
 		transition: all 0.3s linear;
 
 		@media screen and (max-width: $mobile-max-width) {
-			border-radius: 15px;
+			border-radius: 10px;
 		}
 
 		@media screen and (max-width: 767px) {

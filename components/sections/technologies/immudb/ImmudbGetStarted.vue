@@ -16,7 +16,7 @@
 			</i-row>
 			<i-row class="_padding-x-0 _display-flex _justify-content-center">
 				<i-column
-					class="_margin-top-2 _margin-x-auto" xs="12"
+					class="col-btn _margin-x-auto" xs="12"
 					sm="12" md="8"
 					lg="8"
 				>
@@ -54,8 +54,17 @@ export default {
 	padding-top: 168px !important;
 	padding-bottom: 54px !important;
 
+	.col-btn {
+		margin-top: 2rem;
+	}
+
 	@include breakpoint-down(sm) {
-		padding: 30px 20px 44px !important;
+		padding: 120px 20px 32px !important;
+		margin-top: -80px;
+
+		.col-btn {
+			margin-top: 0;
+		}
 	}
 }
 </style>

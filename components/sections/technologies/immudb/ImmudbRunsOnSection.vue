@@ -263,7 +263,7 @@ export default {
 			border: none !important;
 			z-index: 5;
 
-			@include breakpoint-down(sm) {
+			@media screen and (max-width: 768px) {
 				padding: 0 !important;
 			}
 
@@ -287,7 +287,7 @@ export default {
 
 			@include breakpoint-down(xs) {
 				margin: 0 !important;
-				padding: 8px 16px 8px !important;
+				padding: 8px 16px !important;
 
 				h5 {
 					font-size: 12px !important;

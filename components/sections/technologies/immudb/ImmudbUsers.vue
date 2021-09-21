@@ -1,6 +1,7 @@
 <template>
 	<PageSection
 		id="immudb-users-section"
+		:top-xs="0"
 	>
 		<i-container class="floating-container">
 			<i-row>
@@ -26,7 +27,7 @@
 				>
 					<img
 						v-if="item && item.image"
-						class="image -responsive _padding-y-2"
+						class="image -responsive"
 						:class="{'image-only': !item.label }"
 						:src="item.image"
 						:alt="item.label"
@@ -134,8 +135,9 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
-		padding-top: 40px !important;
 		padding-bottom: 81px !important;
+		padding-left: 20px;
+		padding-right: 20px;
 
 		.floating-container {
 			position: relative;
@@ -153,13 +155,20 @@ export default {
 	.image-wrapper {
 		.image {
 			position: relative;
-			padding: 8px 4px;
+			padding: 32px 16px;
 			object-fit: contain !important;
 			height: 130px;
 			transition: transform 100ms linear;
 
 			@media screen and (max-width: 1080px) {
 				height: 100px;
+				padding: 0 16px;
+			}
+
+			@include breakpoint-down(sm) {
+				height: 50px;
+				padding: 0 8px;
+				margin-bottom: 24px;
 			}
 
 			&:hover {

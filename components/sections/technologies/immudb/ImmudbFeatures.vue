@@ -146,7 +146,7 @@ export default {
 
 			h4 {
 				min-height: 32px;
-				font-size: 16px !important;
+				font-size: 14px !important;
 			}
 		}
 	}

@@ -34,7 +34,6 @@
 						block
 					>
 						<i-tab
-							class="_padding-top-2"
 							:title="'Connect to immudb'"
 						>
 							<i-row
@@ -150,7 +149,7 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
-		margin-bottom: -260px;
+		margin-bottom: -350px;
 
 		.floating-container {
 			position: relative;
@@ -162,6 +161,10 @@ export default {
 			.row {
 				.column {
 					padding: 0 12px !important;
+				}
+
+				.column._margin-bottom-2 {
+					margin-bottom: 1rem !important;
 				}
 			}
 		}
@@ -223,6 +226,15 @@ export default {
 
 			.body {
 				padding: 0 !important;
+			}
+
+			@media screen and (max-width: $mobile-max-width) {
+				padding: 16px 0;
+
+				.row,
+				.column {
+					padding: 0 !important;
+				}
 			}
 		}
 	}

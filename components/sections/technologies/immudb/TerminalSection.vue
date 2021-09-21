@@ -3,10 +3,10 @@
 		id="immudb-code-examples-section"
 		:bottom="0"
 	>
-		<i-container class="floating-container _padding-x-0">
+		<i-container class="floating-container">
 			<i-row>
 				<i-column>
-					<div>
+					<div class="immudb-code-examples-slider">
 						<VueSlickCarousel v-bind="settings">
 							<div>
 								<i-row middle>
@@ -202,6 +202,18 @@ export default {
 
 	@media screen and (max-width: $mobile-max-width) {
 		height: 640px !important;
+
+		.immudb-code-examples-slider {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.immudb-code-examples-slider {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 
 	.floating-container {
@@ -284,6 +296,7 @@ export default {
 		}
 
 		p,
+		h4,
 		ul:not(.slick-dots) {
 			text-align: left;
 		}

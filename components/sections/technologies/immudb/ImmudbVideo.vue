@@ -1,7 +1,7 @@
 <template>
 	<PageSection
 		id="immudb-video-section"
-		:top-md="8"
+		:top-md="6"
 		:top-lg="8"
 		:top-xl="8"
 		:bottom-xs="5"
@@ -28,10 +28,10 @@
 			</i-row>
 			<i-row class="_padding-x-0 _display-flex _justify-content-center">
 				<i-column
-					class="_margin-bottom-3 _margin-x-auto"
+					class="immudb-video-text _margin-x-auto"
 					xs="12"
 					sm="12"
-					md="8"
+					md="10"
 					lg="8"
 				>
 					<span class="_text-white _text-center">
@@ -49,7 +49,7 @@
 				>
 					<div class="video-features">
 						<div class="video-feature-items">
-							<i-row class="_margin-bottom-1 _display-flex _justify-content-center">
+							<i-row class="_margin-bottom-1 _display-flex _justify-content-center _padding-x-0">
 								<i-column
 									class="video-feature-item"
 									xs="6"
@@ -120,8 +120,9 @@
 					</div>
 				</i-column>
 			</i-row>
-			<i-row class="_display-flex _justify-content-center">
+			<i-row class="_display-flex _justify-content-center _padding-x-0">
 				<i-column
+					class="_padding-x-0"
 					xs="12"
 					sm="12"
 					md="10"
@@ -181,8 +182,12 @@ export default {
 		height: auto !important;
 		margin-bottom: -60px;
 
+		.row._margin-bottom-1 {
+			margin-bottom: 0 !important;
+		}
+
 		.column {
-			padding: 0;
+			margin-bottom: 10px !important;
 
 			.thumbnail {
 				height: auto;
@@ -195,6 +200,14 @@ export default {
 		margin-top: 0;
 		border-bottom: 0;
 		color: white;
+	}
+
+	.immudb-video-text {
+		margin-bottom: 3rem;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 2rem;
+		}
 	}
 
 	p {

@@ -100,10 +100,10 @@ export default {
 	margin-bottom: -80px;
 
 	@media screen and (max-width: $mobile-max-width) {
-		margin-bottom: -80px;
+		margin-bottom: -95px;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		margin-bottom: -50px;
 	}
 }

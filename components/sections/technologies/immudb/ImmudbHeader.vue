@@ -172,6 +172,11 @@ $mascot-height-small: 100px;
 	z-index: 3;
 	position: relative;
 
+	@media screen and (max-width: 768px) {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
 	.third {
 		max-width: 370px;
 	}
@@ -197,7 +202,7 @@ $mascot-height-small: 100px;
 		}
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 576px) {
 		padding-top: 0;
 		padding-bottom: 0;
 		text-align: center;
@@ -348,14 +353,14 @@ $mascot-height-small: 100px;
 	.link-icon {
 		margin-top: 10px;
 
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 576px) {
 			justify-content: center;
 			text-align: center;
 			width: 100%;
 		}
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 576px) {
 		align-items: flex-start;
 	}
 }
@@ -367,6 +372,10 @@ $mascot-height-small: 100px;
 	max-width: 330px;
 
 	@media screen and (max-width: 768px) {
+		max-width: 308px;
+	}
+
+	@media screen and (max-width: 576px) {
 		flex-direction: column;
 		align-items: center;
 		height: 90px;

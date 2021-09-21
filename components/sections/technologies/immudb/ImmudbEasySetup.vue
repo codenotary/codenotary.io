@@ -16,7 +16,7 @@
 					/>
 				</i-column>
 			</i-row>
-			<i-row class="_padding-x-0 _display-flex _justify-content-center">
+			<i-row class="_display-flex _justify-content-center">
 				<i-column
 					class="_margin-x-auto"
 					xs="12"
@@ -87,7 +87,7 @@ export default {
 @import "~@inkline/inkline/src/css/config";
 
 #immudb-easy-setup-section {
-	padding: 120px 0 333px 0 !important;
+	padding: 120px 0 330px 0 !important;
 	text-align: center;
 	background: $cn-dark-gradient_inverse;
 
@@ -103,6 +103,16 @@ export default {
 
 		.line-numbers-rows {
 			display: none !important;
+		}
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		p.action {
+			margin: 0 0 16px;
+		}
+
+		.column._margin-top-2 {
+			margin-top: 1rem !important;
 		}
 	}
 }

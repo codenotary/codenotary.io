@@ -3,6 +3,7 @@
 		id="immudb-cards-section"
 		:top="1"
 		:top-xs="0"
+		:top-md="2"
 		:bottom="0"
 	>
 		<i-container class="_display-flex _flex-direction-column _align-items-center _justify-content-center">
@@ -64,8 +65,6 @@ export default {
 		z-index: 2;
 
 		.container {
-			padding: 0 !important;
-
 			.row.about-immudb-cards {
 				display: flex;
 				flex-direction: row;

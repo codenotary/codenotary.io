@@ -3,9 +3,10 @@
 		id="immudb-aws-section"
 		:top="0"
 		:bottom="0"
+		:bottom-md="1"
 	>
 		<i-container class="floating-container">
-			<i-row>
+			<i-row class="_padding-x-0">
 				<i-column class="_padding-x-0">
 					<div class="content-box">
 						<p class="_text-uppercase cn-text-white _text-center _font-weight-bold">
@@ -81,6 +82,14 @@ export default {
 			&:hover {
 				transform: scale(1.02);
 			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.container,
+		.container.-fluid {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
 		}
 	}
 }
