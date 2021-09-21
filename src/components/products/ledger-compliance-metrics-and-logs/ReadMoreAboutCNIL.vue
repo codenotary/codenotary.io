@@ -55,13 +55,20 @@
 										{{ post.title }}
 									</p>
 									<nuxt-link
+										v-slot="{ navigate }"
 										:to="post.path"
-										tag="p"
+										custom
 										class="brand--text text-center mb-0 font-weight-700 cursor-pointer mt-3"
 									>
-										<span class="blog-link-text">
-											Read the blog
-										</span>
+										<p
+											role="link"
+											@click.native="navigate"
+											@keypress.enter="navigate"
+										>
+											<span class="blog-link-text">
+												Read the blog
+											</span>
+										</p>
 									</nuxt-link>
 								</v-sheet>
 							</v-col>

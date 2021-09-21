@@ -60,7 +60,7 @@ export default {
 				.fetch();
 
 		const blogPostsPromise = $content('blog')
-				.only(['title', 'date', 'image'])
+				.only(['title', 'date', 'image', 'path'])
 				.where({ tags: { $containsAny: ['metrics', 'logs', 'opvizor'] } })
 				.limit(25)
 				.fetch();
