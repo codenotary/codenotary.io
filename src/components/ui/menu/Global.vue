@@ -20,13 +20,13 @@
 				<p class="cn-text-dark ma-0 text-center _flex-grow-1">
 					{{ product.subtitle }}
 				</p>
-				<nuxt-link
+				<a
 					class="cn-text-brand font-weight-bold menu-action"
-					:to="product.internalLink"
-					@click.native="$emit('close')"
+					:href="`//codenotary.com${ product.internalLink }`"
+					@click="$emit('close')"
 				>
 					{{ product.actionText }}
-				</nuxt-link>
+				</a>
 			</div>
 		</div>
 	</div>

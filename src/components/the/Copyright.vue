@@ -16,12 +16,12 @@
 					class="d-flex justify-space-around justify-md-start"
 				>
 					<v-hover
-						v-for="({ title, to }, index) in internalLinks"
+						v-for="({ title, path }, index) in internalLinks"
 						:key="title"
 						v-slot="{ hover }"
 					>
-						<nuxt-link
-							:to="to"
+						<a
+							:href="`//codenotary.com/${ path }`"
 							:class="[
 								hover ? 'secondary--text text-decoration-underline' : 'accent--text',
 								{
@@ -30,7 +30,7 @@
 							]"
 						>
 							{{ title }}
-						</nuxt-link>
+						</a>
 					</v-hover>
 				</v-col>
 			</v-row>
@@ -47,11 +47,11 @@ export default {
 			internalLinks: [
 				{
 					title: 'Terms of Service',
-					to: '/terms-of-service',
+					path: 'terms-of-service',
 				},
 				{
 					title: 'Privacy statement',
-					to: '/privacy-statement',
+					path: 'privacy-statement',
 				},
 			],
 		};

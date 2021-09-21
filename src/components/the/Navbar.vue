@@ -90,17 +90,17 @@
 						</v-menu>
 
 						<v-hover
-							v-for="{ text, to } in links"
+							v-for="{ text, path } in links"
 							:key="text"
 							v-slot="{ hover }"
 						>
-							<nuxt-link
-								:to="to"
+							<a
+								:href="`//codenotary.com/${ path }`"
 								:class="hover ? 'secondary--text' : 'white--text'"
 								class="text-h6 py-2 px-4"
 							>
 								{{ text }}
-							</nuxt-link>
+							</a>
 						</v-hover>
 					</div>
 					<v-menu
@@ -136,30 +136,34 @@
 										</p>
 									</v-expansion-panel-header>
 									<v-expansion-panel-content eager>
-										<nuxt-link
+										<p
 											v-for="{ title, internalLink } in products"
 											:key="title"
-											:to="internalLink"
-											tag="p"
-											class="text-center text-h6 white--text mb-0"
-											@click.native="mobileNavMenuOpen = false"
 										>
-											{{ title }}
-										</nuxt-link>
+											<a
+												:href="`//codenotary.com${ internalLink }`"
+												class="text-center text-h6 white--text mb-0"
+												@click="mobileNavMenuOpen = false"
+											>
+												{{ title }}
+											</a>
+										</p>
 									</v-expansion-panel-content>
 								</v-expansion-panel>
 							</v-expansion-panels>
-							<nuxt-link
-								v-for="{ text, to } in links"
+							<p
+								v-for="{ text, path } in links"
 								:key="text"
-								:to="to"
-								tag="p"
-								class="text-h6 py-4 white--text text-center mb-0"
-								style="border-top: 1px solid var(--v-accent-base);"
-								@click.native="mobileNavMenuOpen = false"
 							>
-								{{ text }}
-							</nuxt-link>
+								<a
+									:href="`//codenotary.com/${ path }`"
+									class="text-h6 py-4 white--text text-center mb-0"
+									style="border-top: 1px solid var(--v-accent-base);"
+									@click="mobileNavMenuOpen = false"
+								>
+									{{ text }}
+								</a>
+							</p>
 						</v-sheet>
 					</v-menu>
 				</v-col>
@@ -205,21 +209,15 @@ export default {
 			links: [
 				{
 					text: 'immudb',
-					to: {
-						name: 'technologies-immudb',
-					},
+					path: 'technologies/immudb',
 				},
 				{
 					text: 'Blog',
-					to: {
-						name: 'blog',
-					},
+					path: 'blog',
 				},
 				{
 					text: 'Contact',
-					to: {
-						name: 'contact',
-					},
+					path: 'contact',
 				},
 			],
 		};

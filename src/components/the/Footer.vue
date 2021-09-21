@@ -59,19 +59,26 @@
 								<h4 class="white--text font-weight-700 text-uppercase">
 									{{ title }}
 								</h4>
-								<template v-for="{ text, to = null, link = null } in items">
+								<template v-for="{ text, to = null, link = null, path = null } in items">
 									<v-hover
 										:key="text"
 										v-slot="{ hover }"
 										class="mt-2"
 									>
-										<nuxt-link
-											v-if="link === null"
+										<a
+											v-if="to !== null"
 											:to="to"
 											:class="hover ? 'secondary--text text-decoration-underline' : 'accent--text'"
 										>
 											{{ text }}
-										</nuxt-link>
+										</a>
+										<a
+											v-else-if="path !== null"
+											:href="`//codenotary.com/${ path }`"
+											:class="hover ? 'secondary--text text-decoration-underline' : 'accent--text'"
+										>
+											{{ text }}
+										</a>
 										<a
 											v-else
 											:href="link"
@@ -124,7 +131,7 @@ export default {
 					items: [
 						{
 							text: 'Codenotary Cloud',
-							to: { name: 'products-ci-cd' },
+							path: 'products/ci-cd',
 						},
 						{
 							text: 'CNIL Metrics & Logs',
@@ -141,11 +148,11 @@ export default {
 						},
 						{
 							text: 'Blogs',
-							to: { name: 'blog' },
+							path: 'blog',
 						},
 						{
 							text: 'immudb',
-							to: { name: 'technologies-immudb' },
+							path: 'technologies/immudb',
 						},
 					],
 				},
@@ -154,19 +161,20 @@ export default {
 					items: [
 						{
 							text: 'About Us',
-							to: { name: 'about' },
+							path: 'about',
 						},
 						{
 							text: 'Join Us',
-							to: { name: 'join' },
+							path: 'join',
 						},
 						{
 							text: 'Partners',
+							path: 'partners',
 							to: { name: 'partners' },
 						},
 						{
 							text: 'Contact',
-							to: { name: 'contact' },
+							path: 'contact',
 						},
 					],
 				},
