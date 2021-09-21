@@ -64,9 +64,10 @@ export default {
 
 	@include breakpoint-down(sm) {
 		height: auto !important;
+		padding-bottom: 24rem !important;
 
 		.container {
-			bottom: -402px;
+			bottom: -100px;
 			padding: 0 !important;
 			left: 0;
 			right: 16px;

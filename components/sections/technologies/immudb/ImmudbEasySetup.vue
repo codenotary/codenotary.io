@@ -91,10 +91,6 @@ export default {
 	text-align: center;
 	background: $cn-dark-gradient_inverse;
 
-	@include breakpoint-down(sm) {
-		padding: 419px 0 351px 0 !important;
-	}
-
 	pre.language-bash {
 		width: auto;
 		display: inline-block;

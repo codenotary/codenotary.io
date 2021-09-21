@@ -110,6 +110,10 @@ export default {
 		color: white;
 		font-size: 16px;
 		line-height: 18px;
+
+		@media screen and (max-width: $mobile-max-width) {
+			font-size: 12px !important;
+		}
 	}
 
 	&.lable {
@@ -139,8 +143,17 @@ export default {
 	width: 130px;
 	transition: transform 100ms linear;
 
+	@media screen and (max-width: $mobile-max-width) {
+		width: 100px;
+	}
+
 	&._sm {
 		width: 100px;
+
+		@media screen and (max-width: $mobile-max-width) {
+			width: 70px;
+			padding: 8px;
+		}
 	}
 
 	&:hover {

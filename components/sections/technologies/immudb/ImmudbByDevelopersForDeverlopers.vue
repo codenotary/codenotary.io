@@ -2,6 +2,7 @@
 	<PageSection
 		id="immudb-by-developers-for-developers"
 		:bottom-md="2"
+		:top-xs="1"
 	>
 		<i-container class="floating-container">
 			<i-row>
@@ -182,6 +183,10 @@ export default {
 				box-shadow: $cn-shadow-sm;
 				border: none;
 				z-index: 1;
+
+				@media screen and (max-width: $mobile-max-width) {
+					border-radius: 20px 20px 0 0;
+				}
 
 				&.-active {
 					background-color: #fff !important;

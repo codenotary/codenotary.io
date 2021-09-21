@@ -3,13 +3,14 @@
 		id="immudb-runs-on-section"
 		:top="0"
 		:bottom="2"
+		:bottom-xs="1"
 	>
 		<i-container class="floating-container">
 			<i-row>
 				<i-column>
 					<PageSectionHeader
 						title="Runs on"
-						:bottom="2"
+						:bottom="1"
 						weight="bold"
 					/>
 				</i-column>
@@ -33,9 +34,9 @@
 								<i-column
 									v-for="(subitem, idx) in item.subitems"
 									:key="`${subitem}-${idx}`"
-									class="_display-flex _justify-content-center _align-items-center"
-									xs="6"
-									sm="6"
+									class="_display-flex _justify-content-center _align-items-center cn-text-center"
+									xs="4"
+									sm="4"
 									md="2"
 									lg="2"
 								>
@@ -229,6 +230,10 @@ export default {
 					background-color: #fff !important;
 				}
 
+				@media screen and (max-width: $mobile-max-width) {
+					border-radius: 20px 20px 0 0;
+				}
+
 				@media screen and (max-width: 380px) {
 					font-size: 10px;
 				}
@@ -257,6 +262,16 @@ export default {
 			box-shadow: $cn-shadow-sm;
 			border: none !important;
 			z-index: 5;
+
+			@include breakpoint-down(sm) {
+				padding: 0 !important;
+			}
+
+			.column {
+				@media screen and (max-width: $mobile-max-width) {
+					padding: 4px;
+				}
+			}
 		}
 	}
 
@@ -271,11 +286,11 @@ export default {
 			}
 
 			@include breakpoint-down(xs) {
-				margin: 16px !important;
-				padding: 16px !important;
+				margin: 0 !important;
+				padding: 8px 16px 8px !important;
 
 				h5 {
-					font-size: 1rem;
+					font-size: 12px !important;
 				}
 			}
 		}

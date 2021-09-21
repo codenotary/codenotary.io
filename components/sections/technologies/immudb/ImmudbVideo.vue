@@ -4,6 +4,7 @@
 		:top-md="8"
 		:top-lg="8"
 		:top-xl="8"
+		:bottom-xs="5"
 		:bottom-md="7"
 		:bottom-lg="7"
 		:bottom-xl="8"
