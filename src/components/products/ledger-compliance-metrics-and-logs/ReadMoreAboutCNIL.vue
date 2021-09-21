@@ -62,7 +62,7 @@
 									>
 										<p
 											role="link"
-											@click.native="navigate"
+											@click="navigate"
 											@keypress.enter="navigate"
 										>
 											<span class="blog-link-text">
