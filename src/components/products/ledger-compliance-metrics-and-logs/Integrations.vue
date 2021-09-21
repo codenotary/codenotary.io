@@ -33,12 +33,12 @@
 									md="2"
 									class="integration-item pa-8"
 								>
-									<nuxt-link :to="{ name: 'products-integration-post', params: { post: slug } }">
+									<a :href="`//codenotary.com/products/integration/${ slug }/`">
 										<v-img
 											:src="image"
 											contain
 										/>
-									</nuxt-link>
+									</a>
 								</v-col>
 							</v-row>
 						</v-container>

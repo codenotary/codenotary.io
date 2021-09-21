@@ -54,22 +54,15 @@
 									<p class="brand--text text-center mb-0 text-truncate font-weight-700 mt-2">
 										{{ post.title }}
 									</p>
-									<nuxt-link
-										v-slot="{ navigate }"
-										:to="post.path"
-										custom
-										class="brand--text text-center mb-0 font-weight-700 cursor-pointer mt-3"
-									>
-										<p
-											role="link"
-											@click="navigate"
-											@keypress.enter="navigate"
+									<p class="brand--text text-center mb-0 font-weight-700 cursor-pointer mt-3">
+										<a
+											:href="`//codenotary.com${ post.path }`"
 										>
 											<span class="blog-link-text">
 												Read the blog
 											</span>
-										</p>
-									</nuxt-link>
+										</a>
+									</p>
 								</v-sheet>
 							</v-col>
 						</v-row>
