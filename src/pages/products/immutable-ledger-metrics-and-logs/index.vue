@@ -82,14 +82,6 @@ export default {
 			title: title('Immutable Ledger (Public Cloud)'),
 		};
 	},
-	mounted () {
-		this.$nextTick(() => {
-			this.setNavbar({
-				background: 'light-transparent',
-				light: true,
-			});
-		});
-	},
 };
 </script>
 
