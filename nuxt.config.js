@@ -186,7 +186,6 @@ export default {
 				},
 			},
 		},
-		publicPath: 'https://codenotary-io-vuetify-staging.s3.eu-west-1.amazonaws.com/',
 	},
 
 	/*
