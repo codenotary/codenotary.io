@@ -38,7 +38,7 @@
 					<v-btn
 						v-else
 						class="ma-0 pa-0 d-flex justify-start align-center no-hover no-active"
-						:to="{ name: 'index' }"
+						href="//codenotary.com"
 						:ripple="false"
 						width="214"
 						min-width="214"
