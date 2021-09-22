@@ -135,7 +135,7 @@ export default {
 						},
 						{
 							text: 'CNIL Metrics & Logs',
-							link: '//ml.codenotary.com',
+							link: '//ml.codenotary.com/products/immutable-ledger-logs-and-metrics/',
 						},
 					],
 				},
