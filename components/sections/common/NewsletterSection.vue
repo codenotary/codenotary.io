@@ -7,6 +7,7 @@
 		:top-md="3"
 		:top-sm="4"
 		:bottom-sm="3"
+		:bottom-xs="3"
 	>
 		<i-container class="container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<PageSectionHeader
@@ -50,15 +51,6 @@ export default {
 <style lang="scss" scoped>
 #newsletter-section {
 	color: white;
-	margin-top: -290px !important;
-
-	@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
-		margin-top: -250px !important;
-	}
-
-	@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
-		margin-top: -200px !important;
-	}
 
 	.container {
 		max-width: 500px;
@@ -70,6 +62,24 @@ export default {
 
 	.subtitle {
 		max-width: 580px;
+	}
+}
+
+#homepage {
+	#newsletter-section {
+		margin-top: -290px !important;
+
+		@media screen and (max-width: 768px) {
+			margin-top: -310px !important;
+		}
+
+		@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
+			margin-top: -250px !important;
+		}
+
+		@media screen and (min-width: $mobile-max-width) and (max-width: 1199px) {
+			margin-top: -200px !important;
+		}
 	}
 }
 </style>

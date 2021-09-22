@@ -4,6 +4,7 @@
 		:top="0"
 		:bottom="2"
 		:bottom-xs="0"
+		:bottom-md="0"
 	>
 		<i-container>
 			<i-row class="_display-flex _justify-content-center">

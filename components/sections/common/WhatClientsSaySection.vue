@@ -176,7 +176,7 @@ export default {
 		z-index: 10;
 
 		@media screen and (max-width: 1080px) {
-			top: -60px;
+			top: -16px;
 		}
 
 		@media screen and (min-width: 768px) and (max-width: $mobile-max-width) {
@@ -191,6 +191,7 @@ export default {
 			padding: 0 !important;
 			width: 100% !important;
 			bottom: -20px;
+			top: -80px;
 		}
 
 		.slick-slider {

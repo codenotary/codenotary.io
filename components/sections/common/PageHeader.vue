@@ -5,7 +5,11 @@
 			size="sm"
 		>
 			<i-row class="_align-items-center main-content">
-				<i-column lg="5" class="_padding-x-0 content">
+				<i-column
+					lg="5"
+					md="6"
+					class="_padding-x-0 content"
+				>
 					<h2 class="_font-weight-bold cn-text-white title first">
 						{{ content.headerSection.title1 }}
 					</h2>
@@ -42,10 +46,14 @@
 						-->
 					</p>
 				</i-column>
-				<i-column lg="1" />
+				<i-column
+					lg="1"
+					class="desktop"
+				/>
 				<i-column
 					id="video-column"
 					lg="6"
+					md="6"
 					class="_padding-x-0"
 					:class="{ 'playing': playing }"
 				>
@@ -191,10 +199,9 @@ $mascot-height-small: 100px;
 		padding-right: 0;
 	}
 
-	@include breakpoint-down(md) {
+	@media screen and (max-width: 767px) {
 		padding-top: 5rem;
 		padding-bottom: 6rem;
-		//margin-bottom: 2rem;
 		text-align: center;
 
 		.button-wrapper {
@@ -255,7 +262,9 @@ $mascot-height-small: 100px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+}
 
+@media screen and (max-width: 767px) {
 	.action {
 		justify-content: center;
 		margin-bottom: 30px;

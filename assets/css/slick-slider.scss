@@ -8,6 +8,10 @@
 		padding: 40px 34px 60px;
 	}
 
+	@media screen and (max-width: $mobile-max-width) {
+		padding: 40px 34px 0;
+	}
+
 	.slick-dots {
 		bottom: 15px;
 		left: 0;

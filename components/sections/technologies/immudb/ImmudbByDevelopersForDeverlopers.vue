@@ -1,7 +1,8 @@
 <template>
 	<PageSection
 		id="immudb-by-developers-for-developers"
-		:bottom-md="2"
+		:bottom-md="0"
+		:bottom-sm="2"
 		:top-xs="1"
 	>
 		<i-container class="floating-container">

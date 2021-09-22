@@ -131,6 +131,10 @@ export default {
 		background-color: white;
 		border-radius: 30px;
 		z-index: 10;
+
+		@media screen and (max-width: $mobile-max-width) {
+			bottom: -120px;
+		}
 	}
 
 	@include breakpoint-down(sm) {
@@ -163,6 +167,11 @@ export default {
 			@media screen and (max-width: 1080px) {
 				height: 100px;
 				padding: 0 16px;
+			}
+
+			@media screen and (max-width: $mobile-max-width) {
+				height: 80px;
+				padding: 0 4px;
 			}
 
 			@include breakpoint-down(sm) {

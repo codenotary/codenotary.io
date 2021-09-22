@@ -110,6 +110,10 @@ export default {
 		box-shadow: $cn-shadow-sm;
 		border: none !important;
 
+		@media screen and (max-width: $mobile-max-width) {
+			padding: 0 30px 16px;
+		}
+
 		@media screen and (max-width: 678px) {
 			width: 83%;
 		}
@@ -199,7 +203,7 @@ export default {
 			justify-content: center;
 			margin-top: 32px;
 
-			@include breakpoint-down(sm) {
+			@media screen and (max-width: $mobile-max-width) {
 				margin-top: 16px;
 			}
 
@@ -209,7 +213,7 @@ export default {
 				border-radius: 8px;
 				background: $cn-color-light;
 
-				@include breakpoint-down(sm) {
+				@media screen and (max-width: $mobile-max-width) {
 					margin-bottom: 8px;
 					font-size: 14px;
 					text-align: center;

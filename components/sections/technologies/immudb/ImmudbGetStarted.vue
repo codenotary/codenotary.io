@@ -59,8 +59,12 @@ export default {
 	}
 
 	@include breakpoint-down(sm) {
-		padding: 120px 20px 32px !important;
-		margin-top: -80px;
+		padding: 60px 20px 32px !important;
+		margin-top: -180px;
+	}
+
+	@media screen and (max-width: $mobile-max-width) {
+		padding-top: 140px !important;
 
 		.col-btn {
 			margin-top: 0;
