@@ -20,7 +20,15 @@
 				<p class="cn-text-dark _margin-0 _text-center _flex-grow-1">
 					{{ product.subtitle }}
 				</p>
+				<a
+					v-if="product.href !== null"
+					:href="product.href"
+					class="cn-text-brand _font-weight-bold menu-action"
+				>
+					{{ product.actionText }}
+				</a>
 				<nuxt-link
+					v-else
 					class="cn-text-brand _font-weight-bold menu-action"
 					:to="product.internalLink"
 					@click.native="$emit('close')"

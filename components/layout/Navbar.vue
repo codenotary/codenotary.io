@@ -61,7 +61,7 @@
 					</i-nav-item>
 					<i-nav-item
 						v-if="productsMenuOpen"
-						:to="{ name: 'products-immutable-ledger-metrics-and-logs' }"
+						href="//ml.codenotary.com/products/immutable-ledger-logs-and-metrics"
 					>
 						CNIL Metrics and Logs
 					</i-nav-item>

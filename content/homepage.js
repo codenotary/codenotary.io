@@ -158,7 +158,7 @@ export default {
 						label: 'Codenotary Cloud', internalLink: '/products/ci-cd', href: null,
 					},
 					{
-						label: 'CNIL Metrics & Logs', internalLink: '/products/immutable-ledger-metrics-and-logs', href: null,
+						label: 'CNIL Metrics & Logs', internalLink: null, href: '//ml.codenotary.com/products/immutable-ledger-logs-and-metrics',
 					},
 				],
 			},
