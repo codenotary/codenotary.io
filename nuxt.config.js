@@ -186,7 +186,7 @@ export default {
 				},
 			},
 		},
-		publicPath: 'https://staging.d12or28m5czygt.amplifyapp.com/_nuxt-staging/',
+		publicPath: '/_nuxt-staging/',
 	},
 
 	/*
