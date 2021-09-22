@@ -186,7 +186,6 @@ export default {
 				},
 			},
 		},
-		publicPath: '/_nuxt-staging/',
 	},
 
 	/*
