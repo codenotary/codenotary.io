@@ -13,11 +13,6 @@
 		</v-main>
 		<TheFooter />
 		<TheCopyright />
-		<client-only>
-			<LazyUiModalLedgerCompliance
-				v-model="ledgerComplianceModalOpen"
-			/>
-		</client-only>
 	</v-app>
 </template>
 

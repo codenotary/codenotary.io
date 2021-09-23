@@ -308,41 +308,41 @@ export default {
 			],
 		}],
 		// Doc: https://github.com/GrabarzUndPartner/nuxt-font-loader-strategy
-		['nuxt-font-loader-strategy', {
-			useWorker: false,
-			ignoreLighthouse: true,
-			ignoredEffectiveTypes: ['2g', 'slow-2g'],
-			fonts: [
-				// Open Sans
-				{
-					fileExtensions: ['woff'],
-					fontFamily: 'Proxima nova',
-					fontFaces: [
-						// Font-Face
-						{
-							preload: true,
-							src: 'font-proxima-nova/fonts/ProximaNova-Regular',
-							fontWeight: 400,
-							fontStyle: 'normal',
-						},
-						// Font-Face
-						{
-							preload: true,
-							src: 'font-proxima-nova/fonts/ProximaNova-Light',
-							fontWeight: 300,
-							fontStyle: 'normal',
-						},
-						// Font-Face
-						{
-							preload: true,
-							src: 'font-proxima-nova/fonts/ProximaNova-Bold',
-							fontWeight: 700,
-							fontStyle: 'normal',
-						},
-					],
-				},
-			],
-		}],
+		// ['nuxt-font-loader-strategy', {
+		// 	useWorker: false,
+		// 	ignoreLighthouse: true,
+		// 	ignoredEffectiveTypes: ['2g', 'slow-2g'],
+		// 	fonts: [
+		// 		// Open Sans
+		// 		{
+		// 			fileExtensions: ['woff'],
+		// 			fontFamily: 'Proxima nova',
+		// 			fontFaces: [
+		// 				// Font-Face
+		// 				{
+		// 					preload: true,
+		// 					src: 'font-proxima-nova/fonts/ProximaNova-Regular',
+		// 					fontWeight: 400,
+		// 					fontStyle: 'normal',
+		// 				},
+		// 				// Font-Face
+		// 				{
+		// 					preload: true,
+		// 					src: 'font-proxima-nova/fonts/ProximaNova-Light',
+		// 					fontWeight: 300,
+		// 					fontStyle: 'normal',
+		// 				},
+		// 				// Font-Face
+		// 				{
+		// 					preload: true,
+		// 					src: 'font-proxima-nova/fonts/ProximaNova-Bold',
+		// 					fontWeight: 700,
+		// 					fontStyle: 'normal',
+		// 				},
+		// 			],
+		// 		},
+		// 	],
+		// }],
 		// Doc: https://github.com/geeogi/nuxt-responsive-loader
 		'nuxt-responsive-loader',
 		// Doc: https://github.com/nuxt-community/robots-module
