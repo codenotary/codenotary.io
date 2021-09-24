@@ -83,7 +83,7 @@ export default {
 	},
 	head() {
 		return {
-			title: title('Immutable Ledger (Public Cloud)'),
+			title: title('CodeNotary Metrics & Logs'),
 		};
 	},
 };
