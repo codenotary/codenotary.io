@@ -29,9 +29,7 @@ export default {
 				description: 'Self-Hosted performance<br>monitoring and compliant log<br>analysis for VMware vSphere,<br>container and much more.',
 				actionButton: {
 					text: 'Discover Metrics & Logs',
-					to: {
-						path: '/products/immutable-ledger-metrics-and-logs',
-					},
+					href: '//ml.codenotary.com/products/immutable-ledger-logs-and-metrics',
 				},
 				image: '/images/cnil-metrics-logs.svg',
 				primaryTextColor: 'green',

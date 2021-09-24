@@ -42,8 +42,17 @@
 						</template>
 						<p class="description" v-html="card.description" />
 						<cn-button
+							v-if="card.actionButton.to"
 							variant="primary"
 							:to="card.actionButton.to"
+							class="_margin-top-1"
+						>
+							{{ card.actionButton.text }}
+						</cn-button>
+						<cn-button
+							v-else
+							variant="primary"
+							:href="card.actionButton.href"
 							class="_margin-top-1"
 						>
 							{{ card.actionButton.text }}
