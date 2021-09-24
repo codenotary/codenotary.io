@@ -52,17 +52,19 @@
 					<div class="d-flex justify-center justify-md-start">
 						<v-btn
 							color="secondary"
-							class="dark--text text-capitalize"
+							large
+							class="dark--text text-capitalize px-8 text-h6 font-weight-400"
 							@click="$emit('openStartTrial')"
 						>
 							Free Trial
 						</v-btn>
 						<v-btn
 							color="light"
-							class="dark--text text-capitalize ml-2"
 							href="//demoml.codenotary.io/"
 							target="_blank"
 							rel="noopener nofollow"
+							large
+							class="dark--text text-capitalize ml-2 px-8 text-h6 font-weight-400"
 						>
 							Demo
 						</v-btn>
