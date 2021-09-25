@@ -2,7 +2,7 @@
 title: "Pushing technology the hard way (Part1)"
 author: "Sebastian Wind"
 date: "2021-08-24"
-image: "/images/blog/image.png"
+image: "/images/blog/cfbloglab.jpg"
 tags: ["guideline", "golang", "immudb", "linux", "cloudfoundry","innovation"]
 ---
 
