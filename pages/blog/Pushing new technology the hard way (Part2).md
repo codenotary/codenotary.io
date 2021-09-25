@@ -2,8 +2,8 @@
 title: "Pushing technology the hard way (Part2) immudb Kubernetes StatefulSet"
 author: "Sebastian Wind"
 date: "2021-09-25"
-image: "/images/blog/image.png"
-tags: ["guideline", "golang", "immudb", "linux", "cloudfoundry"]
+image: "/images/blog/minikubedashboard.jpg"
+tags: ["guideline", "golang", "immudb", "linux", "kubernetes","statefulset","application","replication"]
 ---
 
 
