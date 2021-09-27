@@ -1,5 +1,5 @@
 ---
-title: "Linux Systems Administrator (Junior DevOps)"
+title: "Linux Systems Administrator"
 location: "Remote" 
 type: "Full time" 
 requires: "" 

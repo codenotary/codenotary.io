@@ -91,6 +91,8 @@
 					>
 						<p>
 							Andrea Zanda is an Engineering Lead passionate about technology and entrepreneurship. On the one side, he has a solid background in computer science, possesses a PhD and authored more than 10 publications in the AI field.
+						</p>
+						<p>
 							On the other side, he is an experienced startup builder, he got a master in Entrepreneurship at Santa Clara University thanks to a Fulbright scholarship, and besides working in emerging companies in Europe and the Silicon Valley, he also worked as a CTO and co-founder at guidemeright.com and eventa.it.
 						</p>
 					</team-member>
