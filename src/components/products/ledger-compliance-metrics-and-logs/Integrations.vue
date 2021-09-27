@@ -9,7 +9,7 @@
 				class="pa-0 pt-10 white rounded-xl"
 			>
 				<h4 class="text-h4 text-uppercase brand--text font-weight-700 text-center">
-					Immutable Ledger integrations
+					Integrations
 				</h4>
 				<p class="dark--text text-center font-weight-400">
 					Integrations for Hypervisor, Storage systems, OS and applications.
