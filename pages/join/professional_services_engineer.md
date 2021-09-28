@@ -4,7 +4,7 @@ location: "Remote (within Europe)"
 type: "Full time" 
 requires: "That position requires willingness to travel for at least 50% of the time."
 weight: 12
-active: true
+active: false
 ---
 
 As we are growing rapidly, we are looking to add only the smartest people to join our highly motivated and skilled team to create products that are already having an impact on many customers around the world. If you feel addressed, you have the opportunity to help revolutionizing the way source code and software is seen and used in a zero-trust era!
