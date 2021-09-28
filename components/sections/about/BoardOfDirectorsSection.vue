@@ -40,13 +40,6 @@
 					sm="6"
 					md="4"
 				>
-					<board-team-member name="Shayne Higdon" position="Board Member" />
-				</i-column>
-				<i-column
-					xs="12"
-					sm="6"
-					md="4"
-				>
 					<board-team-member name="Bart Markus" position="Board Member" />
 				</i-column>
 				<i-column
