@@ -1,11 +1,11 @@
 ---
-title: "CNIL Metrics and Logs 7.5 released"
+title: "Metrics and Logs 7.5 released"
 image: /images/blog/acmgmt.png
 tags: ["Ops", "metrics", "logs", "compliance"]
 date: "2021-06-29"
 ---
 
-After a long period of adding new features, bug fixing and testing we're excited to announce the CNIL Metrics and Logs 7.5 release.  
+After a long period of adding new features, bug fixing and testing we're excited to announce the Metrics and Logs 7.5 release.  
 Before we get into bug fixes and improvements, we are thrilled to highlight an absolute innovation that brings significant savings in licensing costs. If you can reduce the number of CPU cores to license because you can now prove that nothing has moved or changed, you can potentially save tens of thousands, hundreds of thousands or more dollars/euros.
 
 ## Auditable Change Management

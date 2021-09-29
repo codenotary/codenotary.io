@@ -134,7 +134,7 @@ export default {
 							path: 'products/ci-cd',
 						},
 						{
-							text: 'CNIL Metrics & Logs',
+							text: 'Metrics & Logs',
 							link: '//ml.codenotary.com/products/immutable-ledger-logs-and-metrics/',
 						},
 					],

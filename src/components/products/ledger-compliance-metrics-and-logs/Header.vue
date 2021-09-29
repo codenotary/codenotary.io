@@ -12,8 +12,8 @@
 					class="pr-md-16"
 				>
 					<h1 class="info--text font-weight-700 text-h4 text-md-h2 text-center text-md-left">
-						CNIL<br class="d-none d-md-block">
-						Metrics and Logs
+						Metrics<br class="d-none d-md-block">
+						and Logs
 					</h1>
 					<p class="white--text font-weight-400 caption--text ma-0 text-center text-md-left mt-n1 mb-2">
 						(formerly, Opvizor Performance Analyzer)

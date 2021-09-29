@@ -6,7 +6,7 @@
 			class="pa-0 rounded-xl"
 		>
 			<h4 class="rounded-xl brand--text text-uppercase text-center text-h4 font-weight-700 pt-md-10 pb-5">
-				Read more about CNIL Metrics and Logs
+				Read more about Metrics and Logs
 			</h4>
 			<v-carousel
 				v-model="currentSlideIndex"

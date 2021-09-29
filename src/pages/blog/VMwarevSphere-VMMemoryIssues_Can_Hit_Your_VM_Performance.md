@@ -91,7 +91,7 @@ the set ballooning target. In the guest OS, monitoring of VMs offers
 little help in this regard, but monitoring the ballooning at host or
 hypervisor level proactively detects and controls memory excesses.
 
-[CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) offers to monitor the memory usage,
+[Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) offers to monitor the memory usage,
 memory ballooning, and memory swapping of a VMs in VMware vSphere
 environment.
 
@@ -99,7 +99,7 @@ environment.
 
 ![](/images/blog/vmmem1-image2.png)
 
-[Sign up](https://www.codenotary.com/products/metrics-and-logs/) for CNIL Metrics and Logs to check your VM memory
+[Sign up](https://www.codenotary.com/products/metrics-and-logs/) for Metrics and Logs to check your VM memory
 situation for free!
 
 To find the above-mentioned important metrics, go to VMware Starter -\>
@@ -143,7 +143,7 @@ virtual environment will track memory swapping at the guest OS level and
 the hypervisor-level, while auto-correlating the metrics, and accurately
 pinpointing what is affecting the performance of a VM.
 
-[CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is one of the best VMware vSphere
+[Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is one of the best VMware vSphere
 monitoring solutions that runs in minutes in your virtual environment
 and immediately starts monitoring the VM memory and other important
 metrics.
@@ -161,7 +161,7 @@ track the version and status of installed VMware Tools on each VM, and
 the usage of CPUs and vCPUs can also be monitored so that both the
 physical host and VMs are right sized with the right CPU resources.
 
-[CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within
+[Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within
 minutes in your VMware-based virtual environment and immediately starts
 monitoring the VM memory access slowdown indicators and tracks these
 metrics over time.

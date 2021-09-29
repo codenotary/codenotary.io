@@ -114,7 +114,7 @@ export default {
 						label: 'CNIL Cloud', internalLink: '/products/ci-cd', href: null,
 					},
 					{
-						label: 'CNIL Metrics & Logs', internalLink: '/products/immutable-ledger-metrics-and-logs', href: null,
+						label: 'Metrics & Logs', internalLink: '/products/immutable-ledger-metrics-and-logs', href: null,
 					},
 				],
 			},

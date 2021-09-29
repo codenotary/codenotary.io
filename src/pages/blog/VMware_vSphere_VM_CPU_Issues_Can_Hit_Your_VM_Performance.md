@@ -33,11 +33,11 @@ CPU usage acts as a percentage during the CPU usage interval and it will be the 
 
 ![](/images/blog/vmcpu1-image1.png)
 
-[**CNIL Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) offers to monitor the CPU usage of ESXi hosts in the VMware vSphere environment.
+[**Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) offers to monitor the CPU usage of ESXi hosts in the VMware vSphere environment.
 
 ![](/images/blog/vmcpu1-image2.png)
 
-[**CNIL Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) also helps you to monitor the following metrics effectively and without any hassle:
+[**Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) also helps you to monitor the following metrics effectively and without any hassle:
 
 **VM CPU Ready (Total Across All vCPUs)**
 
@@ -56,7 +56,7 @@ If the high percentage still exists, you need to check the configuration of virt
 
 ![](/images/blog/vmcpu1-image4.png)
 
-[**CNIL Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) is one of the best VMware vSphere monitoring solutions that run in minutes in your virtual environment and immediately start monitoring the VM vCPU and other important metrics.
+[**Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) is one of the best VMware vSphere monitoring solutions that run in minutes in your virtual environment and immediately start monitoring the VM vCPU and other important metrics.
 
 **VM CPU Ready (Average Across vCPUs)**
 
@@ -86,6 +86,6 @@ It is a high CPU ready percentage of a VM that is a clear indicator of a potenti
 
 To improve VM performance in a virtual environment, VMware admins should track the number of vCPUs on each VM and physical CPUs on the ESXi hosts, and the usage of CPUs and vCPUs can also be monitored so that both the physical host and VMs are right-sized with the right CPU resources.
 
-[**CNIL Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within minutes in your VMware-based virtual
+[**Metrics and Logs**](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within minutes in your VMware-based virtual
 environment and immediately starts monitoring the VM CPU slowdown
 indicators and tracks these metrics over time.

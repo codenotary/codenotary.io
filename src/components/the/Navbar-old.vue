@@ -69,7 +69,7 @@
 							v-if="productsMenuOpen"
 							:to="{ name: 'products-immutable-ledger-metrics-and-logs' }"
 						>
-							CNIL Metrics and Logs
+							Metrics and Logs
 						</div>
 					</div>
 

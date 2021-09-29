@@ -31,7 +31,7 @@ When you take VM performance serious, you need to monitor remote node usage and 
 
 As virtual machines migrate between hosts on a regular basis and only a few people are capable of watching 10 esxtop views live while trackikng the VM location, you need software that focus on NUMA.
 
-CNIL Metrics and Logs is a software that runs within a few minutes in your VMware vSphere environment and immediately starts monitoring the NUMA KPIs and tracks these metrics over time.
+Metrics and Logs is a software that runs within a few minutes in your VMware vSphere environment and immediately starts monitoring the NUMA KPIs and tracks these metrics over time.
 
 ![NUMA-ML](/images/blog/numa-KPIs.png)
 
@@ -84,7 +84,7 @@ There are great articles and documents for esxtop:
 
 [http://www.exitthefastlane.com/2016/04/vsphere-design-for-numa-architecture.html](http://www.exitthefastlane.com/2016/04/vsphere-design-for-numa-architecture.html)
 
-## CNIL Metrics and Logs
+## Metrics and Logs
 
 Your strategy needs to be supported by software that detects and tracks NUMA KPIs and your optimization efforts. 
 Metrics and Logs, collects all important NUMA metrics over a long period of time for all your ESXi hosts and VMs and visualize them. That way NUMA issues become visible and are not hidden anymore.
@@ -95,7 +95,7 @@ Metrics and Logs, collects all important NUMA metrics over a long period of time
 4) Behaviour over time
 5) Coloring codes (warning, critical)
 
-Check out [CNIL Metrics and Logs](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs). You can use the 30 day free trial to get started.
+Check out [Metrics and Logs](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs). You can use the 30 day free trial to get started.
 
 ![NUMA](/images/blog/numa-2.png)
 
@@ -132,5 +132,5 @@ Just make sure to use a vCenter role for the Metrics and Logs  user that allows 
 
 [http://frankdenneman.nl/2016/08/22/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/](http://frankdenneman.nl/2016/08/22/numa-deep-dive-part-5-esxi-vmkernel-numa-constructs/)
 
-### [Sign up](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs) for CNIL Metrics and Logs today and start 30 days for free!
+### [Sign up](https://www.codenotary.com/products/immutable-ledger-metrics-and-logs) for Metrics and Logs today and start 30 days for free!
 
