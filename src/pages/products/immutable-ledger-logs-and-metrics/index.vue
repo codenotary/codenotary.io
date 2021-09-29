@@ -62,7 +62,7 @@ export default {
 		const blogPostsPromise = $content('blog')
 				.only(['title', 'date', 'image', 'path'])
 				.where({
-					tags: { $containsAny: ['metrics', 'logs', 'opvizor'] },
+					tags: { $containsAny: ['metrics', 'logs', 'opvizor', 'Metrics&Logs', 'Metrics', 'Logs', 'Opvizor'] },
 					date: { $gte: '2020-01-01' },
 				})
 				.sortBy('date', 'desc')
