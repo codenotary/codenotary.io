@@ -24,8 +24,8 @@ export default {
 				reversedTitles: true,
 			},
 			{
-				bigTitle: 'CNIL',
-				smallTitle: 'Metrics & Logs',
+				bigTitle: 'Metrics',
+				smallTitle: '& Logs',
 				description: 'Self-Hosted performance<br>monitoring and compliant log<br>analysis for VMware vSphere,<br>container and much more.',
 				actionButton: {
 					text: 'Discover Metrics & Logs',
@@ -156,7 +156,7 @@ export default {
 						label: 'Codenotary Cloud', internalLink: '/products/ci-cd', href: null,
 					},
 					{
-						label: 'CNIL Metrics & Logs', internalLink: null, href: '//ml.codenotary.com/products/immutable-ledger-logs-and-metrics',
+						label: 'Metrics & Logs', internalLink: null, href: '//ml.codenotary.com/products/immutable-ledger-logs-and-metrics',
 					},
 				],
 			},

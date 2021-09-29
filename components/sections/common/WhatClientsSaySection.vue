@@ -121,7 +121,7 @@ export default {
 					},
 				},
 				{
-					content: 'Performance Analyzer was running in 25 minutes. CodeNotary CNIL Metrics and Logs has provided us with insights into our VMware cluster performance that we have never previously had and immediately alerted us to several issues we were unaware of.',
+					content: 'Performance Analyzer was running in 25 minutes. CodeNotary Metrics and Logs has provided us with insights into our VMware cluster performance that we have never previously had and immediately alerted us to several issues we were unaware of.',
 					author: {
 						title: 'Head of Information Systems',
 						company: 'Brett Martin Ltd',

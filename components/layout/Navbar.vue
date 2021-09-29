@@ -63,7 +63,7 @@
 						v-if="productsMenuOpen"
 						href="//ml.codenotary.com/products/immutable-ledger-logs-and-metrics"
 					>
-						CNIL Metrics and Logs
+						Metrics and Logs
 					</i-nav-item>
 				</i-nav>
 

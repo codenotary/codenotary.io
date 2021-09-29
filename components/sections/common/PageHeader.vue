@@ -30,9 +30,9 @@
 						<cn-button
 							variant="secondary"
 							size="lg"
-							@click.native="getDemoModalOpen = true"
+							@click.native="startDemoModalOpen = true"
 						>
-							GET DEMO
+							START DEMO
 						</cn-button>
 						<!--
 						<cn-button
@@ -87,8 +87,8 @@
 			<div class="gradient-box" />
 			<div class="secondary-box" :style="computedStyle" />
 		</client-only>
-		<GetDemoModal
-			v-model="getDemoModalOpen"
+		<StartDemoModal
+			v-model="startDemoModalOpen"
 		/>
 	</div>
 </template>
@@ -109,7 +109,7 @@ export default {
 			playing: false,
 			timeout: null,
 			rightBarBottom: '0px',
-			getDemoModalOpen: false,
+			startDemoModalOpen: false,
 		};
 	},
 	computed: {

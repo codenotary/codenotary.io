@@ -48,7 +48,7 @@ A good example is the following VMware KB article: [Large packet loss in the gue
 
 Also outgoing dropped packets can be caused by switch overload or misconfigurations that can be fixed by buffer adjustments or QoS activation.
 
-You can monitor the network received and network transmitted metric of VMs with [CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) in your VMware vSphere environment.
+You can monitor the network received and network transmitted metric of VMs with [Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) in your VMware vSphere environment.
 
 ![](/images/blog/net1-image3.png)
 
@@ -62,11 +62,11 @@ these metrics provide insights regarding the usage of iSCSI or NFS storage in th
 As we all pretty well know that the physical resources are shared in a virtualized environment, and it's a challenging task to ensure that
 every VM has the resources it needs to run the guest operating system and the application running on it. Monitoring vSphere metrics including
 network metrics helps you to ensure high performance in your virtual infrastructure. It also helps in identifying bottlenecks in both
-physical and virtual networks that compromise the overall performance of the infrastructure. With [CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/), you can
+physical and virtual networks that compromise the overall performance of the infrastructure. With [Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/), you can
 monitor all the key metrics including network received and transmitted or dropped packets in real-time that warn you at the earliest about the emerging issues in your virtual infrastructure and keep your VMs at high
 performance.
 
-[CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within minutes in your VMware-based virtual environment and immediately starts monitoring the network metrics that
+[Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within minutes in your VMware-based virtual environment and immediately starts monitoring the network metrics that
 can affect the VM performance due to any bottleneck in your virtual network.
 
 You can start your Free Trial now, deploy the virtual appliance in minutes and get results in under 15 minutes.

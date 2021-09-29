@@ -20,7 +20,7 @@ export default {
 			},
 			*/
 			{
-				title: 'CNIL Metrics and Logs',
+				title: 'Metrics and Logs',
 				subtitle: 'VMware vSphere and Cloud  performance monitoring, license compliance and log analysis. (former Opvizor Performance Analyzer)',
 				img: '/icons/cnlc_metrics.svg',
 				actionText: 'Discover More',
