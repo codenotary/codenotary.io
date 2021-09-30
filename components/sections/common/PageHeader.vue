@@ -61,7 +61,7 @@
 						<LazyHydrate when-idle>
 							<video
 								ref="videoPlayer"
-								src="/videos/ci-cd.mp4"
+								src="/videos/CodenotaryCloud.mp4"
 								poster="/videos/cover-ci-cd.jpg"
 								width="1280"
 								height="720"
