@@ -13,7 +13,7 @@
 		<client-only>
 			<ledger-compliance-modal v-model="ledgerComplianceModalOpen" />
 		</client-only>
-		<DiscordChatWidget />
+		<DiscordChatWidget v-show="showDiscordChatWidget" />
 	</section>
 </template>
 
@@ -26,14 +26,19 @@ const SCROLL_THRESHOLD = 80;
 export default {
 	name: 'DefaultLayout',
 	mixins: LayoutMixin,
-	data: () => ({
-		scrolled: false,
-		hover: false,
-		ledgerComplianceModalOpen: false,
-	}),
+	data() {
+		return {
+			scrolled: false,
+			hover: false,
+			ledgerComplianceModalOpen: false,
+		};
+	},
+	computed: {
+		showDiscordChatWidget() {
+			return this.$route.path !== '/';
+		},
+	},
 	beforeDestroy () {
-		this.scrolled = null;
-		this.hover = null;
 		eventHub.$off('displayTrialModal', this.displayTrialModal);
 	},
 	mounted () {

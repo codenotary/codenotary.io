@@ -74,6 +74,11 @@ export default {
 				light: false,
 			});
 		});
+
+		window.HelpCrunch('showChatWidget');
+	},
+	destroyed() {
+		window.HelpCrunch('hideChatWidget');
 	},
 	methods: {
 		...mapActions(VIEW_MODULE, {
