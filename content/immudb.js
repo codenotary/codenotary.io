@@ -30,7 +30,7 @@ export default {
 				title: 'Auditable',
 				subtitle: `
 					<p>
-						<b>Tamper-evident history system.</b>
+						<b>Zero Trust Tamper-evident system.</b>
 					<p>
 					<p>
 						Clients and auditors want<br>
