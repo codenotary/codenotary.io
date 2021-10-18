@@ -3,7 +3,7 @@
 		<i-row class="_align-items-center">
 			<i-column xs="12" md="6">
 				<h2 class="-title _margin-bottom-0" style="text-transform: uppercase;">
-					CNIL Metrics and Logs
+					Metrics and Logs
 				</h2>
 				<p class="cn-text-xs _font-italic _margin-top-0">
 					(former Opvizor Performance Analyzer)

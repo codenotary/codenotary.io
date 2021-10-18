@@ -15,7 +15,7 @@
 		</div>
 		<Footer />
 		<Copyright />
-		<DiscordChatWidget />
+		<DiscordChatWidget v-show="showDiscordChatWidget" />
 	</section>
 </template>
 
@@ -28,15 +28,17 @@ const IMMUDB_STAR_COOKIE = 'immudb-star-cookie';
 export default {
 	name: 'ImmudbStarBannerLayout',
 	mixins: LayoutMixin,
-	data: () => ({
-		scrolled: false,
-		hover: false,
-		closed: false,
-	}),
-	beforeDestroy () {
-		this.scrolled = null;
-		this.hover = null;
-		this.closed = null;
+	data() {
+		return {
+			scrolled: false,
+			hover: false,
+			closed: false,
+		};
+	},
+	computed: {
+		showDiscordChatWidget() {
+			return this.$route.path !== '/';
+		},
 	},
 	created () {
 		this.closed = !!this.$cookies.get(IMMUDB_STAR_COOKIE);

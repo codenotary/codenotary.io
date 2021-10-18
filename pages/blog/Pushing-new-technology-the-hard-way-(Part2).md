@@ -150,12 +150,12 @@ spec:
 ```
 The Headless [Service](https://kubernetes.io/docs/concepts/services-networking/service/) "immudb" is beeing defined with the attribute "clusterIP: None". That means it uses the DNS entries from the [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) controller. Pods are accessible by their pod-name.headless-service-name so for our [immudb](https://www.codenotary.com/technologies/immudb/) master pod that would be "immudb-0.immudb". The Service "immudb-read" is a Client Serivce. It is a standard [Service](https://kubernetes.io/docs/concepts/services-networking/service/) with its own cluster IP and is connecting to all [immudb](https://www.codenotary.com/technologies/immudb/) Pods including the master. The [Service](https://kubernetes.io/docs/concepts/services-networking/service/) "immudb-webserver" is connecting to the [immudb](https://www.codenotary.com/technologies/immudb/) master webserver "immudb-0" and providing read/write capabilities. The [Service](https://kubernetes.io/docs/concepts/services-networking/service/) "immudb-ext" is conneting to the webinterface of a replica server. These [Services](https://kubernetes.io/docs/concepts/services-networking/service/) have been assign to later test our [StatefulSet](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/) App comfortably from webbrowser.
 ```bash
-    # Apply the ConfigMap
-    kubectl apply -f service.yaml
-    # Show Services 
-    kubectl get services 
-    # Clean-up 
-    kubectl delete service <service-name>
+# Apply the ConfigMap
+kubectl apply -f service.yaml
+# Show Services 
+kubectl get services 
+# Clean-up 
+kubectl delete service <service-name>
 ```
 
 ### StatefulSet 
@@ -240,36 +240,36 @@ spec:
 ```
 The “initContainer” is copying the configs of the [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/) based on the Hostname into the mounted volumes for the Container. The Hostname of the [immudb](https://www.codenotary.com/technologies/immudb/) master database server is "immudb-0" and the replicas are called "immudb-1", "immudb-2", and so on. The "primary.cnf" is only copied into "immudb.toml" when the pod name ends with a zero, every pod name greater than that will get the replica config. The image from DockerHub for the containers is the "codenotary/immudb:latest-bullseye-slim" image with bash and hostname commands available. The [immudb](https://www.codenotary.com/technologies/immudb/) is then being started by using the command "immudb --config="/mnt/configs/immudb.toml" which translates into "command: ["immudb","--config","/mnt/configs/immudb.toml"]" in the immudb-statefulset.yaml file.
 ```bash
-    # Apply the statefulset
-    kubectl apply -f immudb-statefulset.yaml
-    # Clean-up
-    kubectl delete statefulset immudb
+# Apply the statefulset
+kubectl apply -f immudb-statefulset.yaml
+# Clean-up
+kubectl delete statefulset immudb
 ```
 ## Did it work?
 There are several ways to check if your application is running. Look up the status of the pods:
 ```bash
-    kubectl get pods -o wide
-    
-    NAME       READY   STATUS    RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
-    immudb-0   1/1     Running   0          40m   172.17.0.5   minikube   <none>           <none>
-    immudb-1   1/1     Running   0          40m   172.17.0.6   minikube   <none>           <none>
-    immudb-2   1/1     Running   0          40m   172.17.0.7   minikube   <none>           <none>    
+kubectl get pods -o wide
+
+NAME       READY   STATUS    RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
+immudb-0   1/1     Running   0          40m   172.17.0.5   minikube   <none>           <none>
+immudb-1   1/1     Running   0          40m   172.17.0.6   minikube   <none>           <none>
+immudb-2   1/1     Running   0          40m   172.17.0.7   minikube   <none>           <none>    
 ```
 Get the logs of a pod:
 ```bash
-    # Logs of pod-name immudb-1 in container (-c) immudb 
-    kubectl logs immudb-1 -c immudb
-    immudb  2021/09/25 16:46:20 INFO: Replication from 'systemdb@immudb-0.immudb:3322' to 'systemdb' succesfully initialized
-    immudb  2021/09/25 16:46:20 INFO: Creating database 'defaultdb' {replica = true}...
-    immudb  2021/09/25 16:46:20 INFO: Connecting to 'immudb-0.immudb':'3322' for database 'systemdb'...
+# Logs of pod-name immudb-1 in container (-c) immudb 
+kubectl logs immudb-1 -c immudb
+immudb  2021/09/25 16:46:20 INFO: Replication from 'systemdb@immudb-0.immudb:3322' to 'systemdb' succesfully initialized
+immudb  2021/09/25 16:46:20 INFO: Creating database 'defaultdb' {replica = true}...
+immudb  2021/09/25 16:46:20 INFO: Connecting to 'immudb-0.immudb':'3322' for database 'systemdb'...
 ```
 Jump into the pod's commandline to figure out problems like "no file or directory":
 ```bash
-    kubectl exec --stdin --tty immudb-o -c immudb -- bash
+kubectl exec --stdin --tty immudb-o -c immudb -- bash
 ```
 The most comfortable way is to start up the [Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/). [This is how it works with Minikube](https://minikube.sigs.k8s.io/docs/handbook/dashboard/):
 ```bash
-    minikube dashboard
+minikube dashboard
 ```
 The [dashboard](https://minikube.sigs.k8s.io/docs/handbook/dashboard/) is showing an overview about your apps and helps troubleshooting aswell as managing the cluster.
 ![minikube dashboard](/images/blog/minikubedashboard.jpg)
@@ -279,25 +279,25 @@ The [dashboard](https://minikube.sigs.k8s.io/docs/handbook/dashboard/) is showin
 The Apps can be accessed by running a minikube tunnel. Through the tunnel it is possible to connect to the defined [Services](https://kubernetes.io/docs/concepts/services-networking/service/)
 
 ```bash
-    minikube tunnel
-	Status:
-        machine: minikube
-        pid: 66484
-        route: 10.96.0.0/12 -> 192.168.99.101
-        minikube: Running
-        services: [immudb-ext]
-    errors:
-                minikube: no errors
+minikube tunnel
+Status:
+	machine: minikube
+	pid: 66484
+	route: 10.96.0.0/12 -> 192.168.99.101
+	minikube: Running
+	services: [immudb-ext]
+	errors:
+		minikube: no errors
 ```
 The [immudb](https://www.codenotary.com/technologies/immudb/) webinterface is now available the ip and port displayed in the [Services](https://kubernetes.io/docs/concepts/services-networking/service/) information.
 ```bash
-    kubectl get services
-    NAME               TYPE           CLUSTER-IP       EXTERNAL-IP      PORT(S)          AGE
-    immudb             ClusterIP      None             <none>           3322/TCP         3d14h
-    immudb-ext         LoadBalancer   10.104.160.179   10.104.160.179   9090:30184/TCP   57m
-    immudb-read        ClusterIP      10.107.246.97    <none>           3322/TCP         3d14h
-    immudb-webserver   ClusterIP      10.108.213.230   <none>           8080/TCP         57m
-    kubernetes         ClusterIP      10.96.0.1        <none>           443/TCP          3d17h
+kubectl get services
+NAME               TYPE           CLUSTER-IP       EXTERNAL-IP      PORT(S)          AGE
+immudb             ClusterIP      None             <none>           3322/TCP         3d14h
+immudb-ext         LoadBalancer   10.104.160.179   10.104.160.179   9090:30184/TCP   57m
+immudb-read        ClusterIP      10.107.246.97    <none>           3322/TCP         3d14h
+immudb-webserver   ClusterIP      10.108.213.230   <none>           8080/TCP         57m
+kubernetes         ClusterIP      10.96.0.1        <none>           443/TCP          3d17h
 ```
 
 That means the [immudb](https://www.codenotary.com/technologies/immudb/) master webserver is found on 10.108.213.230:8080 and the replica webservers use 10.104.160.179:9090. Each server is individually taking care of their users. Logon to test the replication feature with the default [immudb](https://www.codenotary.com/technologies/immudb/) credentials (user: immudb, password immudb). Add demo data to the default database in the master webserver. The data should now be available in the replica too. Refresh the replica and query the database table. 

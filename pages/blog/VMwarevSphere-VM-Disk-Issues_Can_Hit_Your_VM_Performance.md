@@ -41,7 +41,7 @@ Disk latencies are measured in milliseconds, where an ESXi host processes a requ
 
 Latency spikes indicate that there are some issues in your virtual environment due to several reasons, including resource-starvation or application issues.
 
-You can monitor the virtual disk usage of VMs with [CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) in your VMware vSphere environment.
+You can monitor the virtual disk usage of VMs with [Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) in your VMware vSphere environment.
 
 ![](/images/blog/disk1-image1.png)
 
@@ -51,7 +51,7 @@ If there is an issue with a total latency, the average latency of read/write ope
 
 High disk latency can also be correlated with other resource usage metrics to determine if the root cause is in lacking available memory or CPU resources, and can be identified which VMs on the ESXi host or cluster are consuming more resources and if VMs needed to allocate more resources or move them to other ESXi hosts or datastores with greater available resources. 
 
-[CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) provide a complete picture of Disk I/O of VMs in the VMware vSphere environment.
+[Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) provide a complete picture of Disk I/O of VMs in the VMware vSphere environment.
 
 ![](/images/blog/disk1-image3.png)
 
@@ -71,7 +71,7 @@ To improve VM performance in a virtual environment, VMware admins should track t
 ESXi hosts, and the usage of virtual and physical disks be monitored so that both the ESXi hosts and VMs could be right-sized with the right
 disk allocation.
 
-[CNIL Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within minutes in your VMware-based virtual environment and immediately starts monitoring the virtual disk metrics that can affect the VM performance. 
+[Metrics and Logs](https://www.codenotary.com/products/metrics-and-logs/) is a software that runs within minutes in your VMware-based virtual environment and immediately starts monitoring the virtual disk metrics that can affect the VM performance. 
 
 **You can start your Free Trial now, deploy the virtual appliance in minutes and get results in under 15 minutes.**
 

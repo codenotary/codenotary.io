@@ -163,6 +163,7 @@ export default {
 		{ src: '~plugins/activecampaign', mode: 'client' },
 		{ src: '~plugins/leadfeeder', mode: 'client' },
 		{ src: '~plugins/prism', ssr: false },
+		{ src: '~plugins/helpcrunch', mode: 'client' },
 		{ src: '~plugins/tawk', mode: 'client' },
 		{ src: '~plugins/vgo', mode: 'client' },
 		{ src: '~plugins/vue-aos', ssr: false },

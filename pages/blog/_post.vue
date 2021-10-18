@@ -143,6 +143,10 @@ section.article-section {
 			margin: $spacer-1-2 0;
 		}
 
+		pre {
+			padding-left: 1em;
+		}
+
 		@include breakpoint-up(md) {
 			border-right: 1px solid #e6e6e6;
 		}
