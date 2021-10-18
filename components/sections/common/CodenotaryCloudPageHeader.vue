@@ -34,6 +34,15 @@
 						>
 							START DEMO
 						</cn-button>
+						<cn-button
+							variant="light"
+							size="lg"
+							href="//cnc-demo.codenotary.com/"
+							target="_blank"
+							class="_margin-left-1"
+						>
+							OPEN SHOWCASE
+						</cn-button>
 						<!--
 						<cn-button
 							variant="light"
