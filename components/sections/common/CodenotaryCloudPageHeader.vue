@@ -125,8 +125,8 @@ export default {
 			this.calculateSecondaryBar();
 			window.addEventListener('resize', this.calculateSecondaryBar, { passive: true });
 
-			const { startDemoModalOpen = '0' } = this.$route.query;
-			this.startDemoModalOpen = startDemoModalOpen === '1';
+			const { openDialog = '0' } = this.$route.query;
+			this.startDemoModalOpen = openDialog === '1';
 		}
 	},
 	methods: {
