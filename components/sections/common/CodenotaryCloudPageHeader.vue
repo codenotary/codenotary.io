@@ -29,10 +29,18 @@
 					<p class="action _display-flex _flex-direction-row">
 						<cn-button
 							variant="secondary"
-							size="lg"
+							class="_font-weight-bold"
 							@click.native="startDemoModalOpen = true"
 						>
-							START DEMO
+							REQUEST DEMO
+						</cn-button>
+						<cn-button
+							variant="light"
+							href="//cnc-demo.codenotary.com/"
+							target="_blank"
+							class="_margin-left-1 _font-weight-bold"
+						>
+							OPEN SHOWCASE
 						</cn-button>
 						<!--
 						<cn-button
