@@ -110,9 +110,10 @@ a:active {
 
 		&:hover,
 		&:focus,
-		&:active { // Becomes secondary
-			background-color: $cn-color-secondary;
-			color: $cn-color-dark;
+		&:active {
+			background-color: transparent;
+			color: $cn-color-light;
+			border: 1px solid $cn-color-light;
 		}
 	}
 
