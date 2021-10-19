@@ -42,7 +42,7 @@ It wasn't a big open hole, the attackers used - it was a very sophisticated atta
 
 Of course, the big question to answer is, what can be done to avoid these widespread hacks in the future? Every vendor and security expert has its own favorite answer to it, but it all comes down to: There is a need for a comprehensive, holistic **DevSecOps** strategy, that aims to provide full observability:
 
-* what is being used (bill of material)
+* what is being used (bill of materials)
 * when are certain components or open-source projects used
 * what is currently running in my build process
 * what is currently running in my production environment
@@ -60,11 +60,11 @@ Therefore, our customers use CodeNotary to notarize every step and artifact with
 
 ![trustedcicd](/images/blog/trustedcicd.jpg)
 
-You can think of having the unique identity of every single artifact and the bill of material of your build cryptographically verifiably stored on an immutable ledger. Using CodeNotary Immutable Ledger you can choose to use a fast (up to 60.000 TX/min) worldwide distributed consortium blockchain (CodeNotary Immutable Ledger CI/CD) or an ultra-fast (up to 10.000.000 TX/sec) on-premise deployment (CodeNotary Immutable Ledger) or both.
+You can think of having the unique identity of every single artifact and the bill of materials of your build cryptographically verifiably stored on an immutable ledger. Using CodeNotary Immutable Ledger you can choose to use a fast (up to 60.000 TX/min) worldwide distributed consortium blockchain (CodeNotary Immutable Ledger CI/CD) or an ultra-fast (up to 10.000.000 TX/sec) on-premise deployment (CodeNotary Immutable Ledger) or both.
 
 When integrating the CodeNotary solution into your CI/CD pipeline, you gain **4 main benefits**:
 
-* Tamperproof history of all digital artifacts (single artifact and bill of material of the build)
+* Tamperproof history of all digital artifacts (single artifact and bill of materials of the build)
 * Machines and people can notarize and authenticate every individual artifact inside or outside of your premises
 * Notarization can be done for every individual artifact using different states (Trusted, Untrusted, Unsupported)
 * Authentication can be done publicly by anyone with internet access (i. e. to check the current state of the download or build)

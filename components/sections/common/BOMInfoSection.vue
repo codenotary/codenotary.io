@@ -8,7 +8,7 @@
 	>
 		<i-container class="main-container _display-flex _flex-direction-column _align-items-center _justify-content-center">
 			<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center">
-				Our CLI tool makes your software supply chain auditable with tamperproof Bill of Material
+				Our CLI tool makes your software supply chain auditable with tamperproof Bill of Materials
 			</h3>
 			<i-row style="width: 100%;">
 				<i-column
@@ -41,7 +41,7 @@
 			</i-row>
 			<div class="_margin-top-xl-3 _margin-top-lg-3 _margin-top-md-1 _margin-top-sm-3 _margin-top-xs-1 _margin-bottom-xl-2 _margin-bottom-lg-2 _margin-bottom-md-0 _margin-bottom-sm-2 _margin-bottom-xs-8 _padding-bottom-xs-6">
 				<h3 class="_font-weight-bold cn-text-white _text-uppercase _text-center">
-					Software Bill of Material for:
+					Software Bill of Materials for:
 				</h3>
 				<div class="tech-row">
 					<i-column

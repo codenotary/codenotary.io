@@ -4,7 +4,7 @@ export default {
 		title1: 'Protect',
 		title2: 'your software development pipeline',
 		title3: 'from supply chain attacks',
-		subtitle: 'Trust, integrity, and an auditable bill of material for all identities and artifacts of your software supply chain.',
+		subtitle: 'Trust, integrity, and an auditable bill of materials for all identities and artifacts of your software supply chain.',
 	},
 	cnilSection: {
 		title: 'CodeNotary Products',
@@ -102,7 +102,7 @@ export default {
 			},
 			{
 				title: 'Supply Chain',
-				subtitle: 'Bill of material for your workload',
+				subtitle: 'Bill of materials for your workload',
 				imageUrl: '/icons/collab.svg',
 			},
 		],
@@ -113,7 +113,7 @@ export default {
 			{
 				iconName: '/icons/pipeline.svg',
 				title: 'Complete & Fully Trusted Pipeline',
-				subtitle: 'Tamperproof bill of material for your workloads, all input data is cryptographically verified. Zero Trust DevOps pipeline.',
+				subtitle: 'Tamperproof bill of materials for your workloads, all input data is cryptographically verified. Zero Trust DevOps pipeline.',
 				backgroundColor: 'blue',
 			},
 			{

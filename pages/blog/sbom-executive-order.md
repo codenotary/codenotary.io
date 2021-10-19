@@ -1,31 +1,31 @@
 ---
-title: "President Biden’s Executive Order shows that every company needs an immutable Software Bill of Material (SBOM)"
+title: "President Biden’s Executive Order shows that every company needs an immutable Software Bill of Materials (SBOM)"
 date: "2021-06-24"
 image: "/images/blog/bom-headline.jpg"
 tags: ["Zero-Trust", "Trusted CI/CD", "BOM", "SBOM", CodeNotary"]
 ---
 
-# President Biden’s Executive Order shows that every company needs an immutable Software Bill of Material (SBOM) 
+# President Biden’s Executive Order shows that every company needs an immutable Software Bill of Materials (SBOM) 
 
 **Zero-Trust infrastructures and SBOM are important to comply with the 2021 Cyber Security Executive Order!**
 
-We believe that every company producing software needs to track the bill of material of its software (Software Bill of Material - [SBOM](https://www.linuxfoundation.org/blog/what-is-an-sbom/) or BOM). But it shouldn't just be tracked somewhere and stored in an archive system, it should be actively used. To make that possible, you need a solution that stores your BOM including its full history for every build immutably and tamper-proof - so it can become your single source of trust.
+We believe that every company producing software needs to track the bill of materials of its software (Software Bill of Materials - [SBOM](https://www.linuxfoundation.org/blog/what-is-an-sbom/) or BOM). But it shouldn't just be tracked somewhere and stored in an archive system, it should be actively used. To make that possible, you need a solution that stores your BOM including its full history for every build immutably and tamper-proof - so it can become your single source of trust.
 
-With the 2021 Cyber Security [Presidential Executive Order that has just been signed](https://www.whitehouse.gov/briefing-room/statements-releases/2021/05/12/fact-sheet-president-signs-executive-order-charting-new-course-to-improve-the-nations-cybersecurity-and-protect-federal-government-networks/), it becomes very clear that companies need to enhance the software supply chain security as one of the efforts to eventually improve the nation’s cybersecurity. That requires an auditable software bill of material using zero-trust technologies.
+With the 2021 Cyber Security [Presidential Executive Order that has just been signed](https://www.whitehouse.gov/briefing-room/statements-releases/2021/05/12/fact-sheet-president-signs-executive-order-charting-new-course-to-improve-the-nations-cybersecurity-and-protect-federal-government-networks/), it becomes very clear that companies need to enhance the software supply chain security as one of the efforts to eventually improve the nation’s cybersecurity. That requires an auditable software bill of materials using zero-trust technologies.
 
 Not just the [SolarWinds](https://www.codenotary.com/blog/the-trusted-CICD-pipeline) hack made clear that a vulnerable software pipeline quickly becomes a threat to every user of that software.
 
 The massive increase of software packages being built, distributed, and used must be tracked and it needs to be transparent what packages are used in running workloads. Many packages come with many vulnerabilities and third-party binaries, and open-source projects are pulled from potentially untrusted sources.
 
-It is important to mention that there is an obligation to disclose data and software breaches when companies become aware of it. The more information has been collected - and that includes a complete bill of material, recorded pipeline jobs, and the software approval process -, the better it is for further investigation and to get back to a normal business as fast as possible.
+It is important to mention that there is an obligation to disclose data and software breaches when companies become aware of it. The more information has been collected - and that includes a complete bill of materials, recorded pipeline jobs, and the software approval process -, the better it is for further investigation and to get back to a normal business as fast as possible.
 
 [CodeNotary](https://www.codenotary.com/products/ci-cd) provides the platform and the integration required to record a fully searchable and comprehensive catalog or inventory of all your software components including its dependencies and vulnerability check results for internally developed, third-party, and open-source code.
 
-### What is a Bill of Material / Software Bill of Material or BOM/SBOM?
+### What is a Bill of Materials / Software Bill of Materials or BOM/SBOM?
 
 You can think of **bill of materials** (BOM) as a complete list of all software artifacts that have been used in the build process to produce a software product. That includes the name, version and ideally the unique checksum for all of your internal components, third-party, and open-source code.
 
-The bill of material should be combined with vulnerability or dependency scanner results that were produced within your software pipeline. Storing all of that data tamper-proof including an immutable history makes your BOM easy to use and trustworthy without the fear of having an attacker changing your BOM as well.
+The bill of materials should be combined with vulnerability or dependency scanner results that were produced within your software pipeline. Storing all of that data tamper-proof including an immutable history makes your BOM easy to use and trustworthy without the fear of having an attacker changing your BOM as well.
 
 You need to keep in mind that many projects in the open-source world exist because of developers that solved a specific problem and shared the software with the community. You cannot expect that every project maintainer spends his spare time in making the code secure and bulletproof. 
 
@@ -51,7 +51,7 @@ A good supply chain provides reports and information about code, binaries, other
 
 Who, when, where for everything that made up your software.
 
-The software bill of material is not the only but a very important part of your software supply chain.
+The software bill of materials is not the only but a very important part of your software supply chain.
 
 #### The attack surface
 
@@ -75,7 +75,7 @@ If someone actively embeds malicious components in your software, having a compl
 
 But many vulnerabilities are simply part of approved and good software components that are detected way after you started using them. In these cases it's crucial that a software component that suddenly is marked critical by your vulnerability scanner can be detected everywhere it has been used before.
 
-**Having a reliable and trustable (ideally using a Zero-Trust technology) bill of material, puts you in the position to trace back everything that has been used in the past, in the current build process, or is already running as a workload. Suddenly a newly detected vulnerability can be the basis for revoking software components close to real-time.**
+**Having a reliable and trustable (ideally using a Zero-Trust technology) bill of materials, puts you in the position to trace back everything that has been used in the past, in the current build process, or is already running as a workload. Suddenly a newly detected vulnerability can be the basis for revoking software components close to real-time.**
 
 When reading all the news about recent software supply chain attacks, one big question remains: 
 
@@ -96,7 +96,7 @@ CodeNotary can cover the whole supply chain and instead of signing the final bin
 
 When integrating the CodeNotary solution into your CI/CD pipeline, you gain **4 main benefits**:
 
-1. Tamperproof history of all digital artifacts (single artifact and bill of material of the build)
+1. Tamperproof history of all digital artifacts (single artifact and bill of materials of the build)
 2. Machines and people can notarize and authenticate every individual artifact inside or outside your premises
 3. Notarization can be done for every individual artifact using different states (Trusted, Untrusted, Unsupported)
 4. Authentication can be done publicly by anyone with internet access (i. e. to check the current state of the download or build)
@@ -129,13 +129,13 @@ In the build process itself, all used dependencies and requirements are notarize
 
 Adding your vulnerability checker results to this notarization as well in our immutable ledger based platform ([uses immudb in its core](https://github.com/codenotary/immudb)) provides you with a fully auditable SBOM including an immutable history of past vulnerability or dependency checker results.
 
-![Python-BOM-Source](/images/blog/python-bom-verify.png "Python Build Bill of Material")
+![Python-BOM-Source](/images/blog/python-bom-verify.png "Python Build Bill of Materials")
 
 You can read more about it here: https://www.codenotary.com/blog/the-trusted-CICD-pipeline
 
-### Generating a bill of material from binary code using CodeNotary
+### Generating a bill of materials from binary code using CodeNotary
 
-Many of your software is already built, so you only have the binary code, but not the sources from the date of the build. As dependencies can be updated quite often, even builds between Monday and Tuesday can already differ when it comes to the bill of material.
+Many of your software is already built, so you only have the binary code, but not the sources from the date of the build. As dependencies can be updated quite often, even builds between Monday and Tuesday can already differ when it comes to the bill of materials.
 
 Therefore, having access to the source code or the build protocol doesn't help - you need to read the dependencies out of existing binary code.
 
@@ -143,7 +143,7 @@ At CodeNotary, we already have working integrations for Go and Java to gather de
 
 That allows customers to find all used dependencies (name, version, checksum) by simply running our command line tool with the --bom flag and the binary and immediately notarizing them in one step. Alternatively, all used dependencies can be authenticated, to find out if any of them should not be used anymore.
 
-![GO-BOM-Binary](/images/blog/bom-binary.png "Go extract Bill of Material from binary")
+![GO-BOM-Binary](/images/blog/bom-binary.png "Go extract Bill of Materials from binary")
 
 ### Summary
 

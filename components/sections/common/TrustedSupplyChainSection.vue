@@ -23,7 +23,7 @@
 						>
 							End-to-end <br>
 							<span class="cn-text-secondary">trusted supply chain</span>
-							integrity and authenticity including SBOM (Software Bill of Material)
+							integrity and authenticity including SBOM (Software Bill of Materials)
 						</h3>
 						<p class="cn-text-white title third">
 							Zero Trust infrastructures, SDLC evidence and SBOM are important to comply with the 2021 Cyber Security Executive Order!
@@ -52,7 +52,7 @@
 						<img
 							class="image -responsive"
 							src="/images/sbom.png"
-							alt="Software Bill of Material"
+							alt="Software Bill of Materials"
 						>
 					</i-column>
 				</i-row>
