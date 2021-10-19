@@ -6,7 +6,7 @@
 		@input="$emit('input', $event)"
 	>
 		<template slot="header">
-			Start demo
+			Request demo
 		</template>
 		<div :class="`_form_${ ACTIVE_CAMPAIGN_FORM_ID }`" />
 		<div

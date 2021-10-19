@@ -32,7 +32,7 @@
 							size="lg"
 							@click.native="startDemoModalOpen = true"
 						>
-							START DEMO
+							REQUEST DEMO
 						</cn-button>
 						<cn-button
 							variant="light"
